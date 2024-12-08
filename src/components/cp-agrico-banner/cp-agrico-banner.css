@@ -62,5 +62,16 @@
     top: 5rem;
   }
 }
+.cp-agrico-banner.typ-tiscon .title {
+  max-width: 57rem;
+  top: 10rem;
+}
+.cp-agrico-banner.typ-structura-ezyfit .title {
+  max-width: 20rem;
+  top: 12rem;
+  right: 1rem;
+  left: auto;
+  text-align: right;
+}
 
 /*# sourceMappingURL=cp-agrico-banner.css.map */

@@ -1,0 +1,67 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-coupon-code {
+  border-radius: 8px;
+  border: 2px dashed #999999;
+  padding: 1rem;
+  background: #FFFFFF;
+  margin-top: 1.2rem;
+  position: relative;
+  position: relative;
+  margin-bottom: 1.6rem;
+  margin-top: 0.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-coupon-code {
+    margin: 0;
+  }
+}
+.cp-coupon-code .code-info {
+  font-size: 1.2rem;
+  color: #333333;
+  font-family: "Poppins Regular";
+  display: block;
+}
+.cp-coupon-code .code {
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  color: #00A441;
+  text-align: center;
+  border: 1px dashed #00A441;
+  background: #E5F6EC;
+  border-radius: 4px;
+  padding: 0.2rem 0.8rem;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+.cp-coupon-code .code.remove-code {
+  background: #00A441;
+  color: #FFFFFF;
+  border: 0;
+}
+.cp-coupon-code .code.remove-code .icon {
+  font-size: 1.3rem;
+}
+.cp-coupon-code .btn-link {
+  text-decoration: underline;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+}
+.cp-coupon-code.typ-structura-pdp .btn-outline {
+  width: 100%;
+}
+.cp-coupon-code.typ-structura-pdp .apply-btn {
+  min-width: 9.2rem;
+  padding: 0.1rem 0;
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=cp-coupon-code.css.map */

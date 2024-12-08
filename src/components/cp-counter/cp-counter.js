@@ -8,28 +8,52 @@ $(window).resize(function() {
   productCount()
 });
 
-function productCount(){
-  $(document).on('click', '.btn-plus', function(e) {
-    let count = parseInt($('.number-product').val());
-    if (count < 10) {
-      $('.number-product').val(count + 1);
-    }
-    if (count >= 0) {
-      $('.btn-minus').prop('disabled', false);
-    }
-    if (count === 9) {
-      $(this).prop('disabled', true);
-    }
-  });
+const minCount = 1; // Minimum counter value
+ const maxCount = 100; // Maximum counter value (optional)
 
-  $(document).on('click', '.btn-minus', function(e) {
-    let count = parseInt($('.number-product').val());
-    if (count > 1) {
-      $('.number-product').val(count - 1);
-      $('.btn-plus').prop('disabled', false);
-    }
-    if (count - 1 === 1) {
-      $(this).prop('disabled', true);
-    }
+function productCount() {
+  $(".cp-counter").each(function () {
+    const counter = $(this); // Scope to the specific counter element
+
+    // Increment button
+    counter.find(".btn-plus").click(function () {
+      const input = counter.find(".number-product");
+      let value = parseInt(input.val());
+      value = isNaN(value) ? minCount : value + 1;
+
+      if (value <= maxCount) {
+        input.val(value);
+        counter.find(".btn-minus").removeAttr("disabled");
+      }
+    });
+
+    // Decrement button
+    counter.find(".btn-minus").click(function () {
+      const input = counter.find(".number-product");
+      let value = parseInt(input.val());
+      value = isNaN(value) ? minCount : value - 1;
+
+      if (value >= minCount) {
+        input.val(value);
+        if (value === minCount) {
+          $(this).attr("disabled", "disabled");
+        }
+      }
+    });
+
+    // Editable input
+    counter.find(".number-product").on("input", function () {
+      const input = $(this);
+      let value = parseInt(input.val());
+
+      if (isNaN(value) || value < minCount) {
+        value = minCount;
+      } else if (value > maxCount) {
+        value = maxCount;
+      }
+
+      input.val(value);
+      counter.find(".btn-minus").attr("disabled", value <= minCount);
+    });
   });
 }

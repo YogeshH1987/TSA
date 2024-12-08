@@ -64,5 +64,38 @@
 .lyt-grid.typ-category .grid-col {
   width: 30.8%;
 }
+.lyt-grid.typ-4 .grid-col:first-child {
+  width: 66.2%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-4 .grid-col:first-child {
+    width: 100%;
+  }
+}
+.lyt-grid.typ-4 .grid-col:last-child {
+  width: 30.3%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-4 .grid-col:last-child {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ5 {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.lyt-grid.typ5 .grid-col {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ5 .grid-col {
+    width: 48%;
+  }
+}
+.lyt-grid.typ-structure {
+  justify-content: flex-start;
+}
 
 /*# sourceMappingURL=lyt-grid.css.map */

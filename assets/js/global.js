@@ -2,6 +2,11 @@ var winWidth = $(window).width();
 var winHeight = $(window).height();
 
 $(document).ready(function() {
+    console.log('jQuery is working!');
+
+    $('.model-open').on('click', function () {
+        console.log('Modal open clicked!');
+    });
     tabFunction();
     commonPopup();
     if ($('.js-bg').length != 0) {
@@ -53,23 +58,26 @@ function bgImg() {
 
 
 // modalPopup js start
-
 function commonPopup() {
-    $(document).on('click', '.model-open[data-toggle="modal"]', function() {
-        var abc = $(this).attr('data-modal-id');
-        abc = abc.replace("#", "");
-        // alert(abc);
-        $('.bs-modal#' + abc).addClass('modal-show show');
+    // Open modal
+   
+    $('.model-open').on('click', function (e) {
+        e.preventDefault();
+        const modalId = $(this).data('modal-id');
+        console.log('Modal ID:', modalId);
+        $(modalId).addClass('modal-show');
         $('.cm-overlay').addClass('active');
-        $('body').css('overflow', 'hidden');
     });
-    $(document).on('click', '.js-close, .cm-overlay', function() {
-        $('.bs-modal').removeClass('modal-show show');
-        $('body').css('overflow', 'auto');
+
+    // Close modal
+    $('.js-close, .cm-overlay').on('click',function() {
+        console.log('Close clicked');
+        $('.bs-modal').removeClass('modal-show');
         $('.cm-overlay').removeClass('active');
-        $('#youtubevideo').attr('src', '');
     });
 }
+
+
 // modalPopup js end
 
 

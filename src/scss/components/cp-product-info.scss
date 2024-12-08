@@ -1,0 +1,55 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-product-info{
+ background: #ECF2FB;
+ border: 1px solid #B1CBF1;
+ border-radius: 12px;
+ display: flex;
+ padding: 1.6rem;
+ gap: 1.2rem;
+ .img-wrap{
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 12px;
+    border: 1px solid #dedede;
+    background: $clr-root;
+ }
+ .product-title{
+    font-size: 1.6rem;
+    font-family: $font-medium;
+    color: $clr-base;
+    padding-bottom: 0.5rem;
+ }
+ .desc{
+    color: $clr-base;
+ }
+ .list-wrap{
+    display: flex;
+    padding-top: 0.5rem;
+    .list-item{
+        font-size: 1.4rem;
+        color: $clr-base;
+        position: relative;
+        &:nth-child(1){
+            padding-right: 1.5rem;
+            &::after{
+            position: absolute;
+            right: 7px;
+            top: 4px;
+            width: 1px;
+            height: 12px;
+            content: '';
+            background: $clr-para;
+            }
+
+        }
+    }
+ }
+ .act-wrap{
+    display: flex;
+    gap: 1.6rem;
+    padding-top: 0.5rem;
+ }
+}

@@ -51,5 +51,14 @@
   background-color: #666666;
   content: "";
 }
+.cp-rating.typ-structura-pdp {
+  padding: 0;
+}
+.cp-rating.typ-structura-pdp .review-text .review-count {
+  color: #3D7EDB;
+}
+.cp-rating.typ-structura-pdp .review-text .review-count:first-child:after {
+  background: #3D7EDB;
+}
 
 /*# sourceMappingURL=cp-rating.css.map */

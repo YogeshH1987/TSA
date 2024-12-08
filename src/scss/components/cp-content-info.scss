@@ -1,0 +1,111 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-content-info{
+display: flex;
+border-radius: 16px;
+border: 1px solid #dedede;
+overflow: hidden;
+@media only screen and (max-width: $media-mobile){
+    flex-wrap: wrap;
+}
+.img-wrap{
+    width: 50%;
+    @media only screen and (max-width: $media-mobile){
+        width: 100%;
+    }
+}
+.cont-wrap{
+    width: 50%;
+    padding: 2.4rem;
+    @media only screen and (max-width: $media-mobile){
+        width: 100%;
+    }
+    .lebal{
+        background: $clr-bg;
+        font-size: 1.2rem;
+        font-family: $font-medium;
+        color: $clr-base;
+        display: inline-flex;
+        padding: 0.5rem 1.2rem;
+        justify-content: center;
+    }
+    .title{
+        font-size: 2.8rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        line-height: 40px;
+        margin: 1.6rem 0;
+        @media only screen and (max-width: $media-mobile){
+            font-size: 1.6rem;
+            margin: 0.8rem 0;
+        }
+    }
+    .desc{
+        font-size: 2rem;
+        font-family: $font-medium;
+        color: $clr-para;
+        margin-bottom: 1.6rem;
+        line-height: 28px;
+        @media only screen and (max-width: $media-mobile){
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+&.typ-struct-pdp{
+    background-color: $clr-bg;
+    padding: 1.6rem;
+    border: 1px solid #B1CBF1;
+    margin-bottom: 1.6rem;
+    @media only screen and (max-width: $media-mobile){
+        flex-wrap: nowrap;
+    }
+    .img-wrap{
+        border: 1px solid #dedede;
+        width: 6.4rem;
+        height: 6.4rem;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    .cont-wrap{
+        padding: 0 1.2rem;
+        width: 100%;
+    }
+    .title{
+        font-size: 1.6rem;
+        font-family: $font-medium;
+        margin: 0;
+        line-height: 24px;
+    }
+    .desc{
+        font-size: 1.4rem;
+        font-family: $font-regular;
+        margin-bottom: 0.8rem;
+    }
+    .list{
+        display: flex;
+        gap: 1.5rem;
+        .list-item{
+            font-size: 1.4rem;
+            color: $clr-base;
+            position: relative;
+            &:nth-child(1){
+                &::after{
+                    content: '';
+                    background: #999999;
+                    position: absolute;
+                    width: 1px;
+                    height: 14px;
+                    right: -7px;
+                    top: 3px;
+                }
+            }
+        }
+    }
+    .act-wrap{
+        display: flex;
+        gap: 1.6rem;
+        justify-content: flex-end;
+    }
+}
+}

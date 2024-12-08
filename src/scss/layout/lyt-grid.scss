@@ -56,4 +56,35 @@
       width: 30.8%;
     }
   }
+  &.typ-4{
+    .grid-col{
+      &:first-child{
+        width: 66.2%;
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
+      }
+      &:last-child{
+        width: 30.3%;
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &.typ5{
+    @media only screen and (max-width: $media-mobile){
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .grid-col{
+      width: 25%;
+      @media only screen and (max-width: $media-mobile) {
+        width: 48%;
+      }
+    }
+  }
+  &.typ-structure{
+    justify-content: flex-start;
+  }
 }

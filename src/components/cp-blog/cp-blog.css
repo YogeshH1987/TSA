@@ -153,6 +153,9 @@
     display: none;
   }
 }
+.cp-blog.typ-article {
+  width: 29.6rem;
+}
 
 .blog-btn-wrap {
   margin-top: 3.2rem;

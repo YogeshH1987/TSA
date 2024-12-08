@@ -60,6 +60,24 @@
 .cp-tab .tab-container .tab-content.active {
   display: block;
 }
+.cp-tab .tab-container .tab-content .list-sec {
+  display: flex;
+}
+.cp-tab .tab-container .tab-content .list-sec .list-item {
+  width: 50%;
+}
+.cp-tab .tab-container .tab-content .list-sec .list-item .bold-text {
+  font-family: "Poppins Semibold";
+  font-size: 2rem;
+  color: #333333;
+  display: block;
+}
+.cp-tab .tab-container .tab-content .list-sec .list-item .normal-text {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  color: #666666;
+  display: block;
+}
 .cp-tab .tab-container .content {
   font-size: 3rem;
 }
@@ -114,6 +132,131 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-struct-pdp {
+    margin-bottom: 0rem;
+  }
+}
+.cp-tab.typ-struct-pdp .tab-list {
+  background: #ECF2FB;
+  border-radius: 12px;
+  padding: 0.8rem;
+  max-width: 34.3rem;
+}
+.cp-tab.typ-struct-pdp .tab-list .tab-item.active .title {
+  background: #FFFFFF;
+  color: #3D7EDB;
+  border: 0;
+  font-family: "Poppins Medium";
+}
+.cp-tab.typ-struct-pdp .tab-list .title {
+  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  padding: 1rem 4.5rem;
+}
+.cp-tab.typ-tisco-cat {
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-tisco-cat .tab-container {
+    padding-top: 13rem;
+    padding-bottom: 2rem;
+  }
+}
+.cp-tab.typ-tisco-cat .video-sec {
+  display: flex;
+  gap: 2rem;
+}
+.cp-tab.typ-tisco-cat .tab-list {
+  border-bottom: 1px solid #dedede;
+}
+.cp-tab.typ-tisco-cat .tab-list .tab-item .title {
+  border: 0;
+  position: relative;
+  padding: 1.6rem 4rem;
+}
+.cp-tab.typ-tisco-cat .tab-list .tab-item .title::after {
+  position: absolute;
+  content: "";
+  background: #D2042D;
+  width: 0%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  transition: all ease-in 0.3s;
+}
+.cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title {
+  background: none;
+  color: #333333;
+  font-family: "Poppins Semibold";
+}
+.cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
+  width: 100%;
+}
+.cp-tab.typ-struct .tab-list .tab-item .title {
+  padding: 1.6rem 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-struct .tab-container {
+    padding-top: 2.4rem;
+  }
+}
+.cp-tab.typ-struct .category-content {
+  position: relative;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+}
+.cp-tab.typ-struct .category-content .act-buy {
+  min-width: 34.3rem;
+  display: inline-block;
+  margin: 3.2rem auto 0;
+}
+.cp-tab.typ-struct .category-content .title {
+  padding-bottom: 3.2rem;
+}
+.cp-tab .category-content {
+  max-width: 28.9rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content {
+    right: auto;
+    top: 13%;
+    transform: translateY(-13%);
+  }
+}
+.cp-tab .category-content .title {
+  font-size: 4rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+  padding-bottom: 1.6rem;
+  line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content .title {
+    font-size: 2.4rem;
+  }
+}
+.cp-tab .category-content .desc {
+  font-size: 1.6rem;
+  font-family: #666666;
+  font-family: "Poppins Regular";
+  padding-bottom: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content .desc {
+    font-size: 1.4rem;
   }
 }
 

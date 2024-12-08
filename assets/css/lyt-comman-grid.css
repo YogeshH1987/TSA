@@ -1,0 +1,101 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid {
+    gap: 1.2rem;
+    flex-direction: column;
+  }
+}
+.lyt-grid.typ-col-2 .grid-col {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-2 .grid-col {
+    width: 100%;
+  }
+}
+.lyt-grid.typ-col-3 .grid-col {
+  width: 33%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-3 .grid-col {
+    width: 100%;
+  }
+}
+.lyt-grid.typ-explore {
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 4.8rem;
+  border-bottom: 1px solid #DEDEDE;
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-explore {
+    flex-direction: row;
+    padding-bottom: 2.4rem;
+  }
+}
+.lyt-grid.typ-explore .grid-col {
+  width: 33%;
+}
+.lyt-grid.typ-explore .grid-col:last-child .cp-icon-details::after {
+  display: none;
+}
+.lyt-grid.typ-category {
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+.lyt-grid.typ-category .grid-col {
+  width: 30.8%;
+}
+.lyt-grid.typ-4 .grid-col:first-child {
+  width: 66.2%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-4 .grid-col:first-child {
+    width: 100%;
+  }
+}
+.lyt-grid.typ-4 .grid-col:last-child {
+  width: 30.3%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-4 .grid-col:last-child {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ5 {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.lyt-grid.typ5 .grid-col {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ5 .grid-col {
+    width: 48%;
+  }
+}
+.lyt-grid.typ-structure {
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=lyt-comman-grid.css.map */

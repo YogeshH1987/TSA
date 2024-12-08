@@ -1,9 +1,6 @@
-@import "../config/variables";
-@import "../config/mixin";
 
 @import "../config/variables";
 @import "../config/mixin";
-
 .cp-product-name-head {
   @media only screen and (max-width: $media-mobile) {
     display: none;
@@ -45,6 +42,7 @@
         font-family: $font-semiBold;
         font-size: 2rem;
         line-height: 2.8rem;
+        color: $clr-base;
       }
     }
   }
@@ -91,6 +89,15 @@
         border-bottom: 1px solid #ffe399;
         border-radius: 0;
       }
+    }
+  }
+  &.typ-structura-pdp{
+    margin-bottom: 1.6rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin: 0 -1.6rem;
+    }
+    .img-wrap{
+      background: $clr-root;
     }
   }
 }

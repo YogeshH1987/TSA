@@ -877,6 +877,49 @@ p {
   margin: 0 auto;
 }
 
+.cm-text-right {
+  text-align: right;
+}
+
+.cm-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cm-box {
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  padding: 1.6rem 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cm-box {
+    border: 0;
+    padding: 2.4rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .seperator {
+    background: #dedede;
+    width: 117%;
+    margin: 2.4rem -4rem;
+    height: 1px;
+  }
+}
+
+.m-bottom {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .m-bottom {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -924,6 +967,22 @@ p {
   .bs-sec .sec-title {
     font-size: 2.4rem;
     line-height: 3.2rem;
+  }
+}
+.bs-sec .sec-sub-title {
+  font-family: "Poppins Medium";
+  color: #333333;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title.typ-tiscon-qunty {
+    font-size: 2.4rem;
   }
 }
 .bs-sec .sec-desc {
@@ -1099,6 +1158,14 @@ p {
 .bs-sec.typ-eCommerce-banner {
   padding: 0;
   background-color: #f3f4f6;
+}
+.bs-sec.typ-eCommerce-banner.typ2 {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-eCommerce-banner.typ2 {
+    margin-bottom: 4.4rem;
+  }
 }
 .bs-sec.typ-quick-buy {
   position: relative;
@@ -1335,6 +1402,65 @@ p {
     padding-bottom: 0.8rem;
   }
 }
+.bs-sec.typ-structura-pdp .sec-head {
+  padding: 0;
+}
+.bs-sec.typ-structura-pdp .sec-head .sec-title {
+  font-size: 2rem;
+  line-height: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-structura-pdp .sec-head .sec-title {
+    font-size: 2.4rem;
+  }
+}
+.bs-sec.typ-structura-pdp .sec-head .sec-desc {
+  font-style: italic;
+}
+.bs-sec.typ-structura-pdp .add-btn {
+  float: right;
+  min-width: 34.3rem;
+  margin-top: 2.3rem;
+}
+.bs-sec.typ-tiscon-pdp .sec-sub-title {
+  position: relative;
+}
+.bs-sec.typ-pro-featur-bg {
+  text-align: center;
+}
+.bs-sec.typ-pro-featur-bg .sec-title {
+  text-align: left;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro {
+  background-color: #F7B592;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro img {
+  max-width: 37.5rem;
+  height: 48.9rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.bs-sec.typ-pro-featur-bg .btn {
+  margin-top: 3.2rem;
+  min-width: 34.3rem;
+}
+.bs-sec.typ-steel-wood-frame {
+  background-color: #F3F4F6;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-steel-wood-frame {
+    display: none;
+  }
+}
+.bs-sec.typ-architect {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-architect {
+    margin-top: 4.4rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -1444,6 +1570,16 @@ p {
   color: #333333;
   border: 1px solid #333333;
 }
+.btn.btn-outline.typ-2 {
+  border: 1px solid #dedede;
+  color: #B3B3B3;
+}
+.btn.btn-grey {
+  background: #EDEDED;
+  color: #B3B3B3;
+  font-size: 1.6rem;
+  border: 1px solid #dedede;
+}
 .btn.typ-add-cart {
   min-width: 34.3rem;
 }
@@ -1496,6 +1632,11 @@ p {
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding: 1.1rem 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn.full-width {
+    width: 100%;
   }
 }
 
@@ -2123,6 +2264,29 @@ p {
 .bs-swiper.typ-feature-banner .swiper-slide {
   width: 19rem;
 }
+.bs-swiper.typ-why-tiscon .swiper-slide {
+  width: 29.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-tiscon .swiper-slide {
+    width: 16rem;
+    margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-application .swiper-slide {
+  width: 29.7rem;
+  height: 26rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-application .swiper-slide {
+    width: 16rem;
+    height: 16rem;
+  }
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
@@ -2158,6 +2322,13 @@ p {
 .bs-radio input[type=radio] {
   opacity: 0;
   display: none;
+}
+.bs-radio.typ-structura-pdp {
+  display: block;
+}
+.bs-radio.typ-structura-pdp .custom-radio {
+  min-width: 10.9rem;
+  padding: 1.2rem 0;
 }
 
 .bs-modal {
@@ -2295,6 +2466,24 @@ p {
 }
 .bs-modal.type-prod-thumb .modal-body {
   padding: 0;
+}
+.bs-modal.typ-small {
+  max-width: 400px;
+  max-height: 328px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small {
+    max-width: 343px;
+    max-height: 240px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small .modal-body {
+    padding: 2.4rem;
+  }
+}
+.bs-modal.typ-small .modal-dialog {
+  border-radius: 12px;
 }
 @media only screen and (max-width: 768px) {
   .bs-modal .bs-applicant-form .title {

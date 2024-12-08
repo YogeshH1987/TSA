@@ -49,4 +49,19 @@
           
         }   
     }
+    &.typ-structura-pdp{
+        padding: 0;
+        .review-text{
+            .review-count{
+                color: $clr-primary;
+                &:first-child{
+                    &:after{
+                        background: $clr-primary;
+                    }
+                }
+                
+            }
+        }
+        
+    }
 }

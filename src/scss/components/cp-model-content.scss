@@ -1,0 +1,51 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-model-content{
+text-align: center;
+.desc{
+    font-size: 2.4rem;
+    font-family: $font-semiBold;
+    color: $clr-base;
+    padding-bottom: 3.2rem;
+    line-height: 32px;
+    @media only screen and (max-width: $media-mobile){
+        font-size: 1.6rem;
+        padding-bottom: 1.6rem;
+        line-height: 24px;
+ 
+    }
+}
+.icon{
+    font-size: 6.4rem;
+    display: block;
+    width: 6.4rem;
+    height: 6.4rem;
+    border: 1px solid #EE4400;
+    color: #EE4400;
+    font-size: 4rem;
+    border-radius: 50%;
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    @media only screen and (max-width: $media-mobile){
+        margin: 16px auto;
+
+    }
+
+}
+.act-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    .typ-model-btn{
+        min-width: 16.8rem;
+        @media only screen and (max-width: $media-mobile){
+            min-width: 14rem;
+        }    
+       
+    }
+}
+}

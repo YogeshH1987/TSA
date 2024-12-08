@@ -37,6 +37,20 @@
       line-height: 3.2rem;
     }
   }
+  .sec-sub-title{
+    font-family: $font-medium;
+    color: $clr-base;
+    font-size: 2rem;
+    @media only screen and (max-width: $media-mobile){
+        font-size: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+    &.typ-tiscon-qunty{
+      @media only screen and (max-width: $media-mobile){
+        font-size: 2.4rem;
+      }
+    }
+  }
   .sec-desc {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -46,6 +60,7 @@
       color: $clr-root;
     }
   }
+  
   .sec-cont {
   }
   &.typ-gray-bg {
@@ -192,6 +207,12 @@
   &.typ-eCommerce-banner {
     padding: 0;
     background-color: #f3f4f6;
+    &.typ2{
+      margin-bottom: 6.4rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 4.4rem;
+      }
+    }
   }
 
   &.typ-quick-buy {
@@ -403,6 +424,66 @@
     padding-bottom:2.8rem;
     @media only screen and (max-width: $media-sm){
       padding-bottom:0.8rem;
+    }
+  }
+  &.typ-structura-pdp{
+    .sec-head{
+        padding:0;
+      
+      .sec-title{
+        font-size: 2rem;
+        line-height: 24px;
+        @media only screen and (max-width: $media-sm){
+          font-size: 2.4rem;
+        }
+      }
+      .sec-desc{
+        font-style: italic;
+      }
+    }
+    .add-btn{
+      float: right;
+      min-width: 34.3rem;
+      margin-top: 2.3rem;
+    }
+  }
+  
+  &.typ-tiscon-pdp{
+    .sec-sub-title{
+      position: relative;
+    }
+  }
+  &.typ-pro-featur-bg{
+    text-align: center;
+    .sec-title{
+      text-align: left;
+    }
+    .bg-pro{
+      background-color: #F7B592;
+      img{
+      max-width: 37.5rem;
+      height: 48.9rem;
+      margin: 0 auto;
+      width: 100%;
+      }
+    }
+    .btn{
+      margin-top: 3.2rem;
+      min-width: 34.3rem;
+    }
+    
+  }
+  &.typ-steel-wood-frame{
+    background-color: #F3F4F6;
+    padding-bottom: 4rem;
+    @media only screen and (max-width: $media-sm){
+      display: none;
+    }
+  }
+  &.typ-architect{
+    margin-top: 6.4rem;
+    @media only screen and (max-width: $media-sm){
+      margin-top: 4.4rem;
     }
   }
 }

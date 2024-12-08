@@ -1,0 +1,125 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-price{
+    .price-list{
+        border-radius: 16px;
+        border: 1px solid #DEDEDE;
+        overflow: hidden;
+        @media only screen and (max-width: $media-mobile) {
+            border: 0;
+            border-radius: 0;
+        }
+    }
+        .price-list-item{
+            display: flex;
+            font-size: 1.6rem;
+            line-height: 24px;
+            font-family: $font-regular;
+            color: $clr-para;
+            justify-content: space-between;
+            position: relative;
+            padding: 2.4rem 2.4rem 0;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.4rem;
+                padding: 1.2rem 1.6rem 0;
+            }
+            &.total-price{
+                background: #F3F4F6;
+                font-family: $font-semiBold;
+                font-size: 2.4rem;
+                color: $clr-base;
+                padding: 2.4rem;
+                margin-top: 2.4rem;
+                @media only screen and (max-width: $media-mobile){
+                    font-size: 2rem;
+                    margin-top: 3.2rem;
+                    padding: 1.6rem 2rem;
+                }
+                .sub-text{
+                    font-size: 1.2rem;
+                    color: $clr-para;
+                    font-family: $font-medium;
+                    display: block;
+                }
+
+            }
+            &.typ-minimum{
+                background: #FFF8E5;
+                border-bottom: 1px solid #FFD466;
+                border-bottom: 1px solid #FFD466;
+                gap: 0.8rem;
+                padding: 1.2rem;
+                align-items: center;
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                    padding: 0.5rem 1.6rem;
+
+                }
+                .desc{
+
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
+                    }
+               
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                }
+                .icon{
+                    font-size: 2.4rem;
+                    color: #A77800;
+                }
+                .desc{
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
+                }
+            }
+        }
+        .bold-text{
+            color: $clr-base;
+            font-family: $font-medium;
+            &.typ-green{
+                color: #00A441;
+            }
+        }
+        .cancel-price{
+            text-decoration: line-through;
+            font-family: $font-regular;
+            color: #808080;
+        }
+    .cart-act-wrap{
+        margin-top: 1.6rem;
+        .btn{
+            min-width: 40rem;
+            @media only screen and (max-width: $media-mobile){
+                min-width: 34.3rem;
+            }
+        }
+    }
+    &.typ-tiscon-pdp,
+    &.typ-struct-pdp{
+        @media only screen and (max-width: $media-mobile){
+            position: fixed;
+            bottom: 0px;
+            left: 0;
+            z-index: 1;
+        }
+        .total-price{
+            margin-top: 0;
+            font-size: 2rem;
+            padding: 1.2rem;
+        }
+        .act-wrap{
+            display: flex;
+            background: $clr-root;
+            justify-content: center;
+            gap: 1.2rem;
+            padding: 1.6rem;
+            .btn{
+                min-width: 16.3rem;
+            }
+        }
+    }
+}

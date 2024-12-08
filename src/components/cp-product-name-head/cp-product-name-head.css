@@ -4,12 +4,6 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
-/* colors */
-/*font family*/
-/* breakpoints */
-/*transform*/
-/*opacity*/
-/*opacity- end*/
 @media only screen and (max-width: 768px) {
   .cp-product-name-head {
     display: none;
@@ -52,6 +46,7 @@
   font-family: "Poppins Semibold";
   font-size: 2rem;
   line-height: 2.8rem;
+  color: #333333;
 }
 @media only screen and (max-width: 768px) {
   .cp-product-name-head.typ-customer-review, .cp-product-name-head.typ-product-details, .cp-product-name-head.typ-review-stars {
@@ -96,6 +91,17 @@
   border: 0;
   border-bottom: 1px solid #ffe399;
   border-radius: 0;
+}
+.cp-product-name-head.typ-structura-pdp {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head.typ-structura-pdp {
+    margin: 0 -1.6rem;
+  }
+}
+.cp-product-name-head.typ-structura-pdp .img-wrap {
+  background: #FFFFFF;
 }
 
 /*# sourceMappingURL=cp-product-name-head.css.map */

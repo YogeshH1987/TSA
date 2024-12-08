@@ -32,4 +32,12 @@
         opacity: 0;
         display: none;
     }
+    &.typ-structura-pdp{
+        display: block;
+        .custom-radio{
+            min-width: 10.9rem;
+            padding: 1.2rem 0;
+        }
+       
+    }
 }

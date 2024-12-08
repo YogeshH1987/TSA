@@ -1,0 +1,58 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-product-info {
+  background: #ECF2FB;
+  border: 1px solid #B1CBF1;
+  border-radius: 12px;
+  display: flex;
+  padding: 1.6rem;
+  gap: 1.2rem;
+}
+.cp-product-info .img-wrap {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 12px;
+  border: 1px solid #dedede;
+  background: #FFFFFF;
+}
+.cp-product-info .product-title {
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding-bottom: 0.5rem;
+}
+.cp-product-info .desc {
+  color: #333333;
+}
+.cp-product-info .list-wrap {
+  display: flex;
+  padding-top: 0.5rem;
+}
+.cp-product-info .list-wrap .list-item {
+  font-size: 1.4rem;
+  color: #333333;
+  position: relative;
+}
+.cp-product-info .list-wrap .list-item:nth-child(1) {
+  padding-right: 1.5rem;
+}
+.cp-product-info .list-wrap .list-item:nth-child(1)::after {
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  width: 1px;
+  height: 12px;
+  content: "";
+  background: #666666;
+}
+.cp-product-info .act-wrap {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 0.5rem;
+}
+
+/*# sourceMappingURL=cp-product-info.css.map */

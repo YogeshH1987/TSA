@@ -1,0 +1,135 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-price .price-list {
+  border-radius: 16px;
+  border: 1px solid #DEDEDE;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list {
+    border: 0;
+    border-radius: 0;
+  }
+}
+.cp-price .price-list-item {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-family: "Poppins Regular";
+  color: #666666;
+  justify-content: space-between;
+  position: relative;
+  padding: 2.4rem 2.4rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.6rem 0;
+  }
+}
+.cp-price .price-list-item.total-price {
+  background: #F3F4F6;
+  font-family: "Poppins Semibold";
+  font-size: 2.4rem;
+  color: #333333;
+  padding: 2.4rem;
+  margin-top: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item.total-price {
+    font-size: 2rem;
+    margin-top: 3.2rem;
+    padding: 1.6rem 2rem;
+  }
+}
+.cp-price .price-list-item.total-price .sub-text {
+  font-size: 1.2rem;
+  color: #666666;
+  font-family: "Poppins Medium";
+  display: block;
+}
+.cp-price .price-list-item.typ-minimum {
+  background: #FFF8E5;
+  border-bottom: 1px solid #FFD466;
+  border-bottom: 1px solid #FFD466;
+  gap: 0.8rem;
+  padding: 1.2rem;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item.typ-minimum {
+    border-top: 1px solid #FFD466;
+    padding: 0.5rem 1.6rem;
+  }
+}
+.cp-price .price-list-item.typ-minimum .desc {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #A77800;
+}
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item.typ-minimum {
+    border-top: 1px solid #FFD466;
+  }
+}
+.cp-price .price-list-item.typ-minimum .icon {
+  font-size: 2.4rem;
+  color: #A77800;
+}
+.cp-price .price-list-item.typ-minimum .desc {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #A77800;
+}
+.cp-price .bold-text {
+  color: #333333;
+  font-family: "Poppins Medium";
+}
+.cp-price .bold-text.typ-green {
+  color: #00A441;
+}
+.cp-price .cancel-price {
+  text-decoration: line-through;
+  font-family: "Poppins Regular";
+  color: #808080;
+}
+.cp-price .cart-act-wrap {
+  margin-top: 1.6rem;
+}
+.cp-price .cart-act-wrap .btn {
+  min-width: 40rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-price .cart-act-wrap .btn {
+    min-width: 34.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-price.typ-tiscon-pdp, .cp-price.typ-struct-pdp {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+  }
+}
+.cp-price.typ-tiscon-pdp .total-price, .cp-price.typ-struct-pdp .total-price {
+  margin-top: 0;
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+.cp-price.typ-tiscon-pdp .act-wrap, .cp-price.typ-struct-pdp .act-wrap {
+  display: flex;
+  background: #FFFFFF;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.6rem;
+}
+.cp-price.typ-tiscon-pdp .act-wrap .btn, .cp-price.typ-struct-pdp .act-wrap .btn {
+  min-width: 16.3rem;
+}
+
+/*# sourceMappingURL=cp-price.css.map */

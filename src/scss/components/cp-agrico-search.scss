@@ -49,5 +49,21 @@
       }
     }
   }
+  &.typ-structura-ezyfit{
+    flex-direction: column;
+    align-items: flex-start;
+    .desc{
+      font-size: 1.4rem;
+      font-family: $font-regular;
+      color: $clr-para;
+      align-items: flex-start;
+      padding-top: 1.6rem;
+    }
+    .left-wrapper{
+      .brand-title{
+        width: auto;
+      }
+    }
+  }
 }
 

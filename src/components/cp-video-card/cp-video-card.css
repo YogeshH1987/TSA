@@ -4,6 +4,10 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+.cp-video-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
 .cp-video-card .cont-sec {
   position: absolute;
   left: 0;
@@ -41,6 +45,17 @@
   font-size: 6rem;
   z-index: 3;
   cursor: pointer;
+}
+.cp-video-card.typ-tiscon {
+  position: relative;
+  width: 29.7rem;
+  height: 52.8rem;
+}
+.cp-video-card.typ-application .cont-sec {
+  background: 180deg, rgba(0, 0, 0, 0) 0%, #000000 100%;
+}
+.cp-video-card.typ-application .cont-sec .video-title {
+  bottom: 23px;
 }
 
 /*# sourceMappingURL=cp-video-card.css.map */

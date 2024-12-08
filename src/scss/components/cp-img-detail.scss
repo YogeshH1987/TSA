@@ -58,4 +58,69 @@
             line-height: 2.2rem;
         }
     }
+    &.type-structura {
+        height: 100%;
+        .detail-wrap {
+            height: 100%;
+            padding: 1.6rem;
+            .detail-tile {
+                display: flex;
+                align-items: start;
+                gap: 1.2rem;
+                margin-bottom: 0;
+ 
+                .number {
+                    font-size: 4rem;
+                    font-family: $font-semiBold;
+                    margin-top: 7px;
+ 
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 3.6rem;
+                    }
+                }
+ 
+                .description {
+                    font-family: $font-medium;
+                    font-size: 1.4rem;
+                    color: $clr-base;
+                }
+            }
+ 
+            &.blue-bg {
+                background-color: #ECF2FB;
+ 
+                .number {
+                    color: #8BB2E9;
+                }
+            }
+ 
+            &.pink-bg {
+                background-color: #FAE6EA;
+ 
+                .number {
+                    color: #E46881;
+                }
+            }
+ 
+            &.yellow-bg {
+                background-color: #FFF8E5;
+ 
+                .number {
+                    color: #FFD466;
+                }
+            }
+        }
+ 
+        .img-wrap {
+            border-bottom-left-radius:0;
+            border-bottom-right-radius:0;
+ 
+            img {
+                border-bottom-left-radius:0;
+                border-bottom-right-radius:0;
+            }
+        }
+ 
+ 
+    }
 }

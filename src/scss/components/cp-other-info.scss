@@ -91,6 +91,32 @@
             }
         }
     }
+    &.typ-tiscon{
+        .other-info-list{
+            display: flex;
+            align-items: flex-start;
+            gap:2rem;
+            @media only screen and (max-width: $media-mobile){
+                flex-wrap: wrap;
+                gap: 1.2rem;
+                margin-bottom: 0;
+            }
+            .other-info-item{
+                flex-wrap: nowrap;
+                flex-direction: row;
+                width: 50%;
+                gap: 1.2rem;
+                align-items: center;
+                @media only screen and (max-width: $media-mobile){
+                    margin-bottom: 0;
+                    width: 100%;
+                }
+                .icon{
+                    color: $clr-primary;
+                }
+            }
+        }
+    }
 }
 
 

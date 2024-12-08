@@ -55,5 +55,19 @@
     line-height: 4rem;
   }
 }
+.cp-agrico-search.typ-structura-ezyfit {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cp-agrico-search.typ-structura-ezyfit .desc {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+  align-items: flex-start;
+  padding-top: 1.6rem;
+}
+.cp-agrico-search.typ-structura-ezyfit .left-wrapper .brand-title {
+  width: auto;
+}
 
 /*# sourceMappingURL=cp-agrico-search.css.map */

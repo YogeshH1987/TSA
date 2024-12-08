@@ -1,6 +1,13 @@
 @import "../config/variables";
 @import "../config/mixin";
 
+.select-size-quntity-wrap{
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem;
+    margin-top: 1.6rem;
+}
+
 .cp-trade-hand-tool-card{
 display: flex;
 align-items: center;
@@ -59,6 +66,31 @@ justify-content: center;
             color:$clr-base;
         }
        
+    }
+}
+&.typ-struct-pdp{
+    width: 19.0rem;
+    height: 14.0rem;
+    @media only screen and (max-width: $media-mobile){
+        width: 10.6rem;
+        height: 9.6rem;
+    }
+}
+&.typ-why-structure{
+    border: 0;
+    height: 295px;
+    text-align: left;
+    @media only screen and (max-width: $media-mobile){
+        height: 188px;
+        width: 166px;
+    }
+    .img-wrap{
+        width: 295px;
+        height: 260px;
+        @media only screen and (max-width: $media-mobile){
+            height: 160px;
+            width: 166px;
+        }
     }
 }
 }
