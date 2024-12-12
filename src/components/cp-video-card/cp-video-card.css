@@ -8,9 +8,9 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+  background: #000;
   width: 100%;
-  height: 295px;
+  height: 100px;
   z-index: 1;
 }
 .cp-video-card .cont-sec .video-title {
