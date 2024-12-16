@@ -1040,13 +1040,23 @@
                   reel users</h2>
               <p class="sec-desc">Discover how real users bring their projects to life with TATA Agrico tools, trusted by pros and DIYers alike.</p>
           </div>
-          <div class="bs-swiper swiper typ-real-stories js-real-stories">
+          <div class="bs-swiper swiper typ-real-stories">
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class="cp-video-card">
+
                           <div class="img-wrap">
-                            <iframe width="297" height="430" src="https://www.youtube.com/embed/E5tkNLTf9qM?si=izj79orStMiKY0R-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </div>
+                            <button id="customPlayButton" class="play-button">Play</button>
+                            <iframe
+                        id="youtubeIframe"
+                        width="297"
+                        height="430"
+                        src="https://www.youtube.com/embed/E5tkNLTf9qM?enablejsapi=1&rel=0&modestbranding=1&controls=0&autohide=1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                        </iframe>               
+                           </div>
                           <div class="cont-sec">
                               <h3 class="video-title">
                                 Discover Your Dream Home</h3>
