@@ -1,74 +1,115 @@
 $(document).ready(function () {
-  // chatBotScript();
   chatbotOnButton();
+
+  console.log("document is ready");
+  $('a:contains("Start a chat")').on("click", function (e) {
+    e.stopPropagation();
+    console.log("element ", $(this).text());
+    // alert($(this).text());
+  });
 });
 
-// directly adding chatbot script
-function chatBotScript() {
-      var script = document.createElement("script");
-      script.id = "chatbot-script";
-      script.src =
-        "https://assets.adoberesources.net/loader.js?orgId=7C75630961C0BAC70A495E36%40AdobeOrg&instanceId=tatasteel&env=dev&geo=va7";
-       script.async = true;
-       //    script.onload = () => {
-    //         console.log('Chatbot script loaded');
-    //         window.Chatbot.init({
-    //         //   dialogId: 'your-dialog-id',
-    //           instanceId:'tatasteel',
-    //           orgId: '7C75630961C0BAC70A495E36%40AdobeOrg',
-    //           env: 'dev',
-    //           debug: true,
-    //         });
-    //       };
-       script.onerror = () => console.error('Failed to load chatbot script');
+//  if (chatbotButton) {
+//               chatbotButton.click();
+//           } else {
+//               console.error('Chatbot button not found!');
+//           }
 
-       document.head.appendChild(script);
+// $('element:contains("Start a chat ")').on('click', function() {
+//   alert("You clicked an element containing 'something'!");
+//   });
+
+function chatbotOnButton() {
+  console.log("Hello");
+  // const chatBot = $('.typ-need-expert').find(function () {
+  //   return $(this).text().trim() === "Start a Chat";
+  // });
+
+  $("element:contains(Start a chat)").on("click", function () {
+    alert("You clicked an element containing 'something'!");
+  });
+
+  // var startChat=$('.typ-need-expert .cmp-teaser__action-link >:first-child');
+  // var startchat=$('.notify-btn')
+  // chatBot.on("click", function () {
+  //        alert("Hello");
+  // })
 }
 
+// $('.hb_button').trigger('click');
 
-// on click adding chatbot script 
-function chatbotOnButton(){
-  $("#chatBot").on("click", function () {
-    console.log("clicked");
-    if (!$("#chatbot-script").length){
-      var script = document.createElement("script");
-      script.id='chatbot-script'
-      script.src =
-        "https://assets.adoberesources.net/loader.js?orgId=7C75630961C0BAC70A495E36%40AdobeOrg&instanceId=tatasteel&env=prod&geo=va7"
-       script.async = true,
-    //    script.onload = () => {
-    //         console.log('Chatbot script loaded');
-    //         window.Chatbot.init({
-    //         //   dialogId: 'your-dialog-id',
-    //           instanceId:'tatasteel',
-    //           orgId: '7C75630961C0BAC70A495E36%40AdobeOrg',
-    //           env: 'dev',
-    //           debug: true,
-    //         });
-    //       };
-       script.onerror = () => console.error('Failed to load chatbot script');
-        document.head.appendChild(script);
-      
-    }
-  })
-}
+// let startChatButton = document.querySelector('#teaser-972a69aef9-cta-900e08d9bc')
+
+// let chatbutton = document.querySelector('.hb_button');
+// let startChat=document.querySelector('.typ-need-expert .cmp-teaser__action-link >:first-child');
+// let startChat = document.querySelector('#chatBot')
+// startChat.addEventListener('click',()=>{
+//   if (chatbutton){
+//     chatbutton.click();
+//   }
+// })
+
+// function chatBotOpen(){
+//   document.addEventListener('DOMContentLoaded', () => {
+//     let chatbutton = document.querySelector('.hb_button');
+
+//     if (chatbutton){
+//       chatbutton.click();
+//     }
+//   })
+// }
+
+//  <script>
+//   document.onload('DOMContentLoaded', () => {
+//       var myButton = document.getElementById('#chatBot');
+//       myButton.addEventListener('click', () => {
+//           const chatbotButton = document.querySelector('.hb_button');
+
+//           if (chatbotButton) {
+//               chatbotButton.click();
+//           } else {
+//               console.error('Chatbot button not found!');
+//           }
+//       });
+//   });
+// </script>
+
+// on click adding chatbot script
+
+// function chatbotOnButton(){
+//   $("#chatBot").on("click", function () {
+//     var chatbotButton= $('.hb_button');
+//     if(chatbotButton){
+//       chatbotButton.click();
+//     }
+
+// if (!$("#chatbot-script").length){
+// var script = document.createElement("script");
+// script.id='chatbot-script'
+// script.src =
+//   "https://assets.adoberesources.net/loader.js?orgId=7C75630961C0BAC70A495E36%40AdobeOrg&instanceId=tatasteel&env=prod&geo=va7"
+//  script.async = true,
+//    script.onload = () => {
+//         console.log('Chatbot script loaded');
+//         window.Chatbot.init({
+//         //   dialogId: 'your-dialog-id',
+//           instanceId:'tatasteel',
+//           orgId: '7C75630961C0BAC70A495E36%40AdobeOrg',
+//           env: 'dev',
+//           debug: true,
+//         });
+//       };
+//  script.onerror = () => console.error('Failed to load chatbot script');
+//   document.head.appendChild(script);
+
+//     }
+//   })
+// }
 
 
-
-
-
-
-
-
-
-
-
-
-{/* <script src="https://assets.adoberesources.net/loader.js?orgId=7C75630961C0BAC70A495E36%40AdobeOrg&amp;instanceId=tatasteel&amp;env=prod&amp;geo=va7"></script>
+/* <script src="https://assets.adoberesources.net/loader.js?orgId=7C75630961C0BAC70A495E36%40AdobeOrg&amp;instanceId=tatasteel&amp;env=prod&amp;geo=va7"></script>
 <script async="" src="https://assets.adoberesources.net/builds/a9003c40a9fbd8edefc244f3ff896ab7a0cdcc2b/dist/core-ui/src/index.js"></script>
-<script async="" src="https://assets.adoberesources.net/builds/a9003c40a9fbd8edefc244f3ff896ab7a0cdcc2b/dist/core/src/index.js"></script> */}
-
-
+<script async="" src="https://assets.adoberesources.net/builds/a9003c40a9fbd8edefc244f3ff896ab7a0cdcc2b/dist/core/src/index.js"></script> */
 
 // ! function() {
 //     var t, e, r, n;
