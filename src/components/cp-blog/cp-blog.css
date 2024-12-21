@@ -153,6 +153,16 @@
     display: none;
   }
 }
+.cp-blog.typ-article {
+  width: 29.6rem;
+}
+.cp-blog.typ-durashine .c-desc {
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.cp-blog.typ-durashine .content-wrap {
+  height: 89px;
+}
 
 .blog-btn-wrap {
   margin-top: 3.2rem;

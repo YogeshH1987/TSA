@@ -33,10 +33,116 @@
         display: none;
     }
     &.typ-structura-pdp{
+        display: block;
         .custom-radio{
             min-width: 10.9rem;
             padding: 1.2rem 0;
         }
        
+    }
+    &.typ2 {
+        margin-bottom: 0;
+
+        .dot {
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: #F1F3E6;
+            flex: 0 0 1.4rem;
+            @include border-radius(50%);
+
+            &.c-blue {
+                background-color: #007ABD;
+            }
+
+            &.n-blue {
+                background-color: #004A8E;
+            }
+
+            &.b-green {
+                background-color: #038562;
+            }
+
+            &.p-green {
+                background-color: #007654;
+            }
+
+            &.p-red {
+                background-color: #BC1627;
+            }
+
+            &.s-grey {
+                background-color: #46484E;
+            }
+
+            &.c-red {
+                background-color: #851013;
+            }
+
+            &.ca-red {
+                background-color: #A7352B;
+            }
+        }
+        .ellipsis{    overflow: hidden;
+            white-space: nowrap;
+            display: block;
+            text-overflow: ellipsis;}
+
+        .custom-radio {
+            padding: 1.3rem 0.8rem;
+            flex-direction: row;
+            font-size: 1.2rem;
+            font-family: $font-medium ;
+            min-width: 10.9rem;
+            color: $clr-base;
+            gap: 0.8rem;
+            border: none;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                border: 1px solid #DEDEDE;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+            }
+
+            @media only screen and (max-width: $media-sm) {
+                min-width: 100%;
+                gap: 0.8rem;
+                flex-wrap: nowrap;
+
+            }
+        }
+
+        input[type="radio"]:checked+.custom-radio {
+            border: none;
+            background: #fff;
+            color: $clr-base;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                border: 2px solid $clr-primary;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+            }
+        }
+
+        @media only screen and (max-width: $media-sm) {
+            width: 31%;
+            white-space: nowrap;
+
+        }
+
     }
 }

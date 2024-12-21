@@ -49,5 +49,36 @@
       }
     }
   }
+  &.typ-structura-ezyfit{
+    flex-direction: column;
+    align-items: flex-start;
+    .desc{
+      font-size: 1.4rem;
+      font-family: $font-regular;
+      color: $clr-para;
+      align-items: flex-start;
+      padding-top: 1.6rem;
+    }
+    .left-wrapper{
+      .brand-title{
+        width: auto;
+      }
+    }
+  }
+  &.typ-durashine{
+    flex-direction: column;
+    align-items: flex-start;
+
+    .desc{
+      font-size: 1.4rem;
+      font-family: $font-regular;
+      color: $clr-para;
+      align-items: flex-start;
+      padding-top: 1.6rem;
+      position: relative;
+      left: 7rem;
+      top: -2rem;
+    }
+  }
 }
 

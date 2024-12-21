@@ -16,5 +16,15 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.cp-prod-size .radio-wrap.typ2 {
+  justify-content: start;
+  gap: 1.3rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-prod-size .radio-wrap.typ2 {
+    gap: 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=cp-prod-size.css.map */

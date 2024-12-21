@@ -2,6 +2,8 @@
 @import "../config/mixin";
 
 .cp-video-card{
+  border-radius: 16px;
+  overflow: hidden;
       .cont-sec{
         position: absolute;
         left: 0;
@@ -41,4 +43,48 @@
         z-index: 3;
         cursor: pointer;
       }
+  &.typ-tiscon{
+      position: relative;
+      width: 29.7rem;
+      height: 52.8rem;
+  } 
+  &.typ-application{
+    .cont-sec{
+        background: (180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    .video-title{
+        bottom: 23px;
+        }
+    }
+}
+&.typ-durashine{
+  .img-wrap{
+    width: 61rem;
+    height: 40rem;
+    @media only screen and (max-width: $media-sm){
+      width: 34.4rem;
+      height: 36.0rem;
+    }
+  }
+  .cont-sec{
+    width: 59.5rem;
+    height: 29.5rem;
+    border-radius: 16px;
+    right: 0;
+    left: auto;
+    bottom: 8rem;
+    @media only screen and (max-width: $media-sm){
+      width: 34rem;
+      height: 26.0rem;
+    }
+    .video-title{
+      font-size: 2.4rem;
+      max-width: 33.5rem;
+      @media only screen and (max-width: $media-sm){
+        font-size: 1.6rem;
+        width: 24.4rem;
+        bottom: 38px;
+      }
+    }
+  }
+}
 }

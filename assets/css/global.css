@@ -707,11 +707,45 @@ th {
   box-sizing: border-box;
 }
 
-html,
+html {
+  font-size: 10px;
+  overflow-x: hidden !important;
+}
+@media (min-width: 780px) and (max-width: 1000px) {
+  html {
+    font-size: 7.8px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  html {
+    font-size: 8.2px;
+  }
+}
+@media (min-width: 1279px) and (max-width: 1399px) {
+  html {
+    font-size: 8.9px;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1599px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1921px) and (max-width: 2500px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   font-family: "Poppins Regular";
   color: #666666;
-  font-size: 62.5%;
+  font-size: 10px;
   height: 100%;
   position: relative;
   scroll-behavior: smooth;
@@ -722,20 +756,16 @@ body {
   /* Handle */
   /* Handle on hover */
 }
-html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 0.8rem;
 }
-html::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
 }
-html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
   background: #3D7EDB;
   opacity: 0.8;
 }
-html::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
 }
@@ -882,8 +912,14 @@ p {
 }
 
 .cm-flex {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.cm-flex.typ-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0.8rem;
 }
 
 .cm-box {
@@ -905,6 +941,50 @@ p {
     margin: 2.4rem -4rem;
     height: 1px;
   }
+}
+
+.m-bottom {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .m-bottom {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-sec {
+  display: flex;
+}
+.list-sec .list-item {
+  width: 50%;
+}
+.list-sec .list-item .bold-text {
+  font-family: "Poppins Semibold";
+  font-size: 2rem;
+  color: #333333;
+  display: block;
+}
+.list-sec .list-item .normal-text {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  color: #666666;
+  display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.M-top16 {
+  margin-top: 1.6rem;
 }
 
 /*transform*/
@@ -960,11 +1040,17 @@ p {
   font-family: "Poppins Medium";
   color: #333333;
   font-size: 2rem;
+  padding-bottom: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-sec .sec-sub-title {
     font-size: 1.6rem;
-    padding-bottom: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title.typ-tiscon-qunty {
+    font-size: 2.4rem;
+    padding-left: 1rem;
   }
 }
 .bs-sec .sec-desc {
@@ -1140,6 +1226,14 @@ p {
 .bs-sec.typ-eCommerce-banner {
   padding: 0;
   background-color: #f3f4f6;
+}
+.bs-sec.typ-eCommerce-banner.typ2 {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-eCommerce-banner.typ2 {
+    margin-bottom: 4.4rem;
+  }
 }
 .bs-sec.typ-quick-buy {
   position: relative;
@@ -1398,6 +1492,62 @@ p {
 }
 .bs-sec.typ-tiscon-pdp .sec-sub-title {
   position: relative;
+}
+.bs-sec.typ-pro-featur-bg {
+  text-align: center;
+}
+.bs-sec.typ-pro-featur-bg .sec-title {
+  text-align: left;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro {
+  background-color: #F7B592;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro img {
+  max-width: 37.5rem;
+  height: 48.9rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.bs-sec.typ-pro-featur-bg .btn {
+  margin-top: 3.2rem;
+  min-width: 34.3rem;
+}
+.bs-sec.typ-steel-wood-frame {
+  background-color: #F3F4F6;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-steel-wood-frame {
+    display: none;
+  }
+}
+.bs-sec.typ-architect {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-architect {
+    margin-top: 4.4rem;
+  }
+}
+.bs-sec.typ-durshine-category {
+  margin: 6.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-durshine-category {
+    margin: 4rem 0;
+  }
+}
+.bs-sec.typ-size-quantity .size-btn {
+  min-width: 34.3rem;
+  margin-top: 1.6rem;
+}
+.bs-sec.typ-customers {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-customers {
+    margin-top: 4.4rem;
+  }
 }
 
 .btn {
@@ -2202,6 +2352,29 @@ p {
 .bs-swiper.typ-feature-banner .swiper-slide {
   width: 19rem;
 }
+.bs-swiper.typ-why-tiscon .swiper-slide {
+  width: 29.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-tiscon .swiper-slide {
+    width: 16rem;
+    margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-application .swiper-slide {
+  width: 29.7rem;
+  height: 26rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-application .swiper-slide {
+    width: 16rem;
+    height: 16rem;
+  }
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
@@ -2238,9 +2411,108 @@ p {
   opacity: 0;
   display: none;
 }
+.bs-radio.typ-structura-pdp {
+  display: block;
+}
 .bs-radio.typ-structura-pdp .custom-radio {
   min-width: 10.9rem;
   padding: 1.2rem 0;
+}
+.bs-radio.typ2 {
+  margin-bottom: 0;
+}
+.bs-radio.typ2 .dot {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #F1F3E6;
+  flex: 0 0 1.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.bs-radio.typ2 .dot.c-blue {
+  background-color: #007ABD;
+}
+.bs-radio.typ2 .dot.n-blue {
+  background-color: #004A8E;
+}
+.bs-radio.typ2 .dot.b-green {
+  background-color: #038562;
+}
+.bs-radio.typ2 .dot.p-green {
+  background-color: #007654;
+}
+.bs-radio.typ2 .dot.p-red {
+  background-color: #BC1627;
+}
+.bs-radio.typ2 .dot.s-grey {
+  background-color: #46484E;
+}
+.bs-radio.typ2 .dot.c-red {
+  background-color: #851013;
+}
+.bs-radio.typ2 .dot.ca-red {
+  background-color: #A7352B;
+}
+.bs-radio.typ2 .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}
+.bs-radio.typ2 .custom-radio {
+  padding: 1.3rem 0.8rem;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  min-width: 10.9rem;
+  color: #333333;
+  gap: 0.8rem;
+  border: none;
+  position: relative;
+}
+.bs-radio.typ2 .custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ2 .custom-radio {
+    min-width: 100%;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+}
+.bs-radio.typ2 input[type=radio]:checked + .custom-radio {
+  border: none;
+  background: #fff;
+  color: #333333;
+  position: relative;
+}
+.bs-radio.typ2 input[type=radio]:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 2px solid #3D7EDB;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ2 {
+    width: 31%;
+    white-space: nowrap;
+  }
 }
 
 .bs-modal {
@@ -2380,8 +2652,19 @@ p {
   padding: 0;
 }
 .bs-modal.typ-small {
-  max-width: 343px;
-  max-height: 240px;
+  max-width: 400px;
+  max-height: 328px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small {
+    max-width: 343px;
+    max-height: 240px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small .modal-body {
+    padding: 2.4rem;
+  }
 }
 .bs-modal.typ-small .modal-dialog {
   border-radius: 12px;

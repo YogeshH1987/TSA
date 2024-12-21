@@ -13,7 +13,7 @@
         margin-bottom: 1.6rem;
         margin-top: 0.2rem;
         @media only screen and (max-width: $media-mobile) {
-            margin-top: 1.2rem;
+            margin:0;
 
         }
         .code-info{
@@ -34,6 +34,14 @@
             padding: 0.2rem 0.8rem;
             display: inline-block;
             margin-top: 0.8rem;
+        &.remove-code{
+            background: #00A441;
+            color: $clr-root;
+            border: 0;
+            .icon{
+                font-size: 1.3rem;
+            }
+        }
         }
         .btn-link{
             text-decoration: underline;

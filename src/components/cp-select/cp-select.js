@@ -2,11 +2,11 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
     productSelectList(); // Initialize dropdown functionality
-    selectDropdown(); // Check radio count and toggle visibility
+    //selectDropdown(); // Check radio count and toggle visibility
 });
 
 $(window).resize(function () {  
-    selectDropdown(); // Only call selectDropdown on resize
+   //selectDropdown(); // Only call selectDropdown on resize
 });
 
 function productSelectList() {
@@ -38,7 +38,7 @@ function selectDropdown() {
     if ($('.bs-radio').length > 4) {
         // Show cp-select if bs-radio elements are more than 4
         $('.cp-select.typ-pdp').show();
-        $('.radio-wrap').hide();
+       // $('.radio-wrap').hide();
     } else {
         $('.cp-select.typ-pdp').hide();
         $('.radio-wrap').show(); // Show radio-wrap if bs-radio is 4 or fewer

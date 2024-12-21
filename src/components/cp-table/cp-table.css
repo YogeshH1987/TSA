@@ -1,0 +1,62 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-table {
+  border: 1px solid #dedede;
+  position: relative;
+  border-radius: 12px;
+  border-collapse: unset;
+}
+@media only screen and (max-width: 768px) {
+  .cp-table {
+    width: 100%;
+  }
+}
+.cp-table .list-item {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding: 1rem 1.6rem;
+  border-bottom: 1px solid #dedede;
+}
+@media only screen and (max-width: 768px) {
+  .cp-table .list-item {
+    width: 50%;
+  }
+}
+.cp-table .list-item.no-border {
+  border: 0;
+}
+.cp-table .list-item.list-head {
+  background: #F3F4F6;
+  font-family: "Poppins Semibold";
+}
+.cp-table .small-text {
+  font-size: 1.2rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+}
+.cp-table.typ1 .list-item {
+  width: 45%;
+}
+.cp-table.typ2 {
+  border: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-table.typ2 .list-item:nth-child(3n-1) {
+    display: none;
+  }
+}
+.cp-table.typ2 .list-item:nth-child(3n) {
+  width: 23%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-table.typ2 .list-item:nth-child(3n) {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=cp-table.css.map */

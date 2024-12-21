@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/config/_variables.scss","../../scss/config/_mixin.scss","../../scss/components/cp-footer.scss"],"names":[],"mappings":"AAAA;AAWA;AAQA;ACEA;AAUA;AAOA;AClCI;EADJ;IAEQ;;;AAEJ;EACI;;AAEJ;EACI","file":"cp-footer.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/config/_variables.scss","../../scss/config/_mixin.scss","../../scss/components/cp-footer.scss"],"names":[],"mappings":"AAAA;AAWA;AAQA;ACEA;AAUA;AAOA;ACnCA;EACI;;AACA;EAFJ;IAGQ;IACA;;;AAEJ;EACI;;AAEJ;EACI","file":"cp-footer.css"}

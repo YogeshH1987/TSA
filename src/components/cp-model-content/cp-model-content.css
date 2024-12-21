@@ -8,16 +8,37 @@
   text-align: center;
 }
 .cp-model-content .desc {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-family: "Poppins Semibold";
   color: #333333;
-  padding-bottom: 1.6rem;
+  padding-bottom: 3.2rem;
+  line-height: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-model-content .desc {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+    line-height: 24px;
+  }
 }
 .cp-model-content .icon {
   font-size: 6.4rem;
   display: block;
   width: 6.4rem;
   height: 6.4rem;
+  border: 1px solid #EE4400;
+  color: #EE4400;
+  font-size: 4rem;
+  border-radius: 50%;
+  margin: 32px auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-model-content .icon {
+    margin: 16px auto;
+  }
 }
 .cp-model-content .act-wrap {
   display: flex;
@@ -25,7 +46,12 @@
   gap: 1.6rem;
 }
 .cp-model-content .act-wrap .typ-model-btn {
-  min-width: 14rem;
+  min-width: 16.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-model-content .act-wrap .typ-model-btn {
+    min-width: 14rem;
+  }
 }
 
 /*# sourceMappingURL=cp-model-content.css.map */

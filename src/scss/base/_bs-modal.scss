@@ -119,8 +119,17 @@
         }
     }
     &.typ-small{
-        max-width: 343px;
+        max-width: 400px;
+        max-height: 328px;
+        @media only screen and (max-width: $media-mobile) {
+            max-width: 343px;
         max-height: 240px;
+        }
+        .modal-body{
+            @media only screen and (max-width: $media-mobile) {
+                padding: 2.4rem;
+            }
+        }
         .modal-dialog {
             border-radius: 12px;
         }

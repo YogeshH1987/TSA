@@ -1,0 +1,111 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-bank-offer .offer-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info {
+    gap: 1.6rem;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list {
+  display: flex;
+  border: 1px solid #DEDEDE;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  flex: 0 0 calc(50% - 2rem);
+  max-width: 50%;
+  gap: 1.2rem;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info .offer-info-list {
+    max-width: 100%;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    flex: 0 0 100%;
+    padding-bottom: 5rem;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list .icon {
+  display: flex;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  flex: 0 0 6.8rem;
+  width: 6.8rem;
+  height: 6.8rem;
+  border: 1px solid #DEDEDE;
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info .offer-info-list .icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    flex: 0 0 4.6rem;
+    padding: 0.6rem;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list .offer-description .title {
+  color: #333333;
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info .offer-info-list .offer-description .title {
+    font-size: 1.4rem;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list .offer-description .detail {
+  color: #666666;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info .offer-info-list .offer-description .detail {
+    font-size: 1.2rem;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list .offer-description .btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info .offer-info-list .offer-description .btn-wrap {
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1.2rem;
+    width: 100%;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list .offer-description .btn-wrap .btn {
+  min-width: 9.2rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-bank-offer .offer-info .offer-info-list .offer-description .btn-wrap .btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+  }
+}
+.cp-bank-offer .offer-info .offer-info-list .offer-description .btn-wrap .view-detail {
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+  text-decoration: underline;
+  padding-right: 2.4rem;
+}
+
+/*# sourceMappingURL=cp-bank-offer.css.map */

@@ -248,4 +248,19 @@
             color: $clr-para;
         }
     }
+    &.typ-grey-bg{
+        background-color: $clr-bg ;
+        flex-direction: row;
+        .notify-title{
+            color: $clr-base;
+        }
+        .notify-desc{
+            color: $clr-base;
+        }
+        .btn-wrap{
+            display: flex;
+            gap: 0.8rem;
+        }
+    }
+    
 }

@@ -1,0 +1,61 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-table{
+    border: 1px solid #dedede;
+    position: relative;
+    border-radius: 12px;
+    border-collapse: unset;
+    @media only screen and (max-width: $media-mobile){
+        width: 100%;
+        
+    }
+    .list-item{
+        font-size: 1.4rem;
+        font-family: $font-medium;
+        color: $clr-base;
+        padding: 1rem 1.6rem;
+        border-bottom: 1px solid #dedede;
+        @media only screen and (max-width: $media-mobile){
+            width: 50%;
+        } 
+        &.no-border{
+            border: 0;
+        } 
+     
+    &.list-head{
+        background: #F3F4F6;
+        font-family: $font-semiBold;
+
+    }
+    }
+    
+    .small-text{
+        font-size: 1.2rem;
+        font-family: $font-regular;
+        color: $clr-para;
+    }
+    
+    &.typ1{
+        .list-item{
+            width: 45%;
+        }
+    }
+    &.typ2{
+        border: 0;
+        .list-item{
+            &:nth-child(3n-1){
+                @media only screen and (max-width: $media-mobile){
+                    display: none;
+                }  
+            }
+            &:nth-child(3n){
+                width: 23%;
+                @media only screen and (max-width: $media-mobile){
+                    width: 50%;
+                }  
+            }
+        }
+    }
+}

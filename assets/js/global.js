@@ -12,6 +12,7 @@ $(document).ready(function() {
     if ($('.js-bg').length != 0) {
         bgImg();
     };
+    tabInsideFunction();
 });
 
 
@@ -28,22 +29,53 @@ $(window).on('scroll', function(event) {
 });
 
 function tabFunction() {
-    // Hide all tab contents except the active one
-    $('.tab-content').hide();
-    $('.tab-content.active').show();
-
-    // Tab click handler
-    $('.tab-item').click(function() {
-        // Remove 'active' class from all tab items and contents
-        $('.tab-item').removeClass('active');
-        $('.tab-content').removeClass('active').fadeOut(200);
-
-        // Add 'active' class to clicked tab and show corresponding content
-        const target = $(this).data('target');
-        $(this).addClass('active');
-        $(target).addClass('active').fadeIn(200);
-    });    
+    $('.cp-tab').each(function () {
+        const $tabContainer = $(this); // Reference to the current tab container
+    
+        // Hide all tab contents except the active one within the current tab container
+        $tabContainer.find('.tab-content').hide();
+        $tabContainer.find('.tab-content.active').show();
+    
+        // Tab click handler
+        $tabContainer.find('.tab-item').off('click').on('click', function (e) {
+            e.stopPropagation(); // Prevent propagation to parent handlers
+            
+            // Remove 'active' class from all tab items and contents within the current tab container
+            $tabContainer.find('.tab-item').removeClass('active');
+            $tabContainer.find('.tab-content').removeClass('active').fadeOut(200);
+    
+            // Add 'active' class to clicked tab and show corresponding content
+            const target = $(this).data('target');
+            $(this).addClass('active');
+            $tabContainer.find(target).addClass('active').fadeIn(200);
+        });
+    });
 }
+
+function tabInsideFunction() {
+    $('.cp-inside-tab').each(function () {
+        const $tabContainer = $(this); // Reference to the current tab container
+    
+        // Hide all tab contents except the active one within the current tab container
+        $tabContainer.find('.tab-content').hide();
+        $tabContainer.find('.tab-content.active').show();
+    
+        // Tab click handler
+        $tabContainer.find('.tab-item').off('click').on('click', function (e) {
+            e.stopPropagation(); // Prevent propagation to parent handlers
+            
+            // Remove 'active' class from all tab items and contents within the current tab container
+            $tabContainer.find('.tab-item').removeClass('active');
+            $tabContainer.find('.tab-content').removeClass('active').fadeOut(200);
+    
+            // Add 'active' class to clicked tab and show corresponding content
+            const target = $(this).data('target');
+            $(this).addClass('active');
+            $tabContainer.find(target).addClass('active').fadeIn(200);
+        });
+    });
+}
+
 
 function bgImg() {
     $('.js-bg').each(function() {

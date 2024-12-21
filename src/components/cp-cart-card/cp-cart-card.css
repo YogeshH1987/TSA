@@ -10,44 +10,9 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-cart-card {
-    margin: 1.2rem -1.2rem;
+    margin-left: -3rem;
     padding: 1.6rem 1.2rem;
   }
-}
-.cp-cart-card .cart-list {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #dedede;
-  padding-bottom: 1.4rem;
-  position: relative;
-}
-.cp-cart-card .cart-list .list-item {
-  width: 38%;
-  font-size: 1.4rem;
-  font-family: "Poppins Regular";
-  color: #333333;
-  padding: 0.6rem 1.6rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card .cart-list .list-item {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card .cart-list .list-item:nth-child(3n-1) {
-    display: none;
-  }
-}
-.cp-cart-card .cart-list .list-item:nth-child(3n) {
-  width: 23%;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card .cart-list .list-item:nth-child(3n) {
-    width: 50%;
-  }
-}
-.cp-cart-card .cart-list .list-item.list-head {
-  background: #F3F4F6;
 }
 .cp-cart-card .bottom-link-list {
   display: flex;
@@ -109,6 +74,11 @@
   width: 20%;
   padding: 1.6rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-tiscon-pdp .cart-list .list-item {
+    padding: 1.2rem;
+  }
+}
 .cp-cart-card.typ-tiscon-pdp .cart-list .list-item .list-head {
   padding: 0.6rem;
 }
@@ -150,6 +120,11 @@
   position: absolute;
   left: 150px;
   top: 10px;
+}
+.cp-cart-card.typ-tiscon-pdp .btn.delete-btn::after {
+  width: 90%;
+  left: auto;
+  right: 0;
 }
 
 /*# sourceMappingURL=cp-cart-card.css.map */

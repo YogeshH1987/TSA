@@ -99,5 +99,8 @@
     line-height: 2.8rem;
   }
 }
+.cp-icon-details .no-seprator::after {
+  display: none;
+}
 
 /*# sourceMappingURL=cp-icon-details.css.map */

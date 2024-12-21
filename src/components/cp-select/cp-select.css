@@ -104,6 +104,9 @@
   color: #666666;
   margin-bottom: 0.8rem;
 }
+.cp-select.typ-structura-pdp {
+  margin-bottom: 1.6rem;
+}
 @media only screen and (max-width: 991px) {
   .cp-select.typ-structura-pdp .select-dropdown {
     margin-bottom: 2.4rem;

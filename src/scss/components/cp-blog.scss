@@ -131,6 +131,18 @@
             }
         }
     }
+    &.typ-article{
+        width: 29.6rem;
+    }
+    &.typ-durashine{
+        .c-desc{
+            font-family: $font-semiBold;
+            color: $clr-base;
+        }
+        .content-wrap{
+            height: 89px;
+        }
+    }
 }
 
 .blog-btn-wrap{

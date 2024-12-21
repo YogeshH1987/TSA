@@ -28,5 +28,13 @@
     margin: 0px;
   }
 }
+.lyt-stage.type2 .stage-item {
+  width: 33.333333%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-stage.type2 .stage-item {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=lyt-stage.css.map */

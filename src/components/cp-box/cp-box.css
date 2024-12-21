@@ -28,5 +28,8 @@
     z-index: 1;
   }
 }
+.cp-box.typ-durshine-pdp {
+  justify-content: flex-end;
+}
 
 /*# sourceMappingURL=cp-box.css.map */

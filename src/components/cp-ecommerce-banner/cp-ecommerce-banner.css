@@ -125,5 +125,13 @@
     line-height: 1.6rem;
   }
 }
+.cp-ecommerce-banner.typ-durashine .container {
+  position: relative;
+}
+.cp-ecommerce-banner.typ-durashine .container .view-btn {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
 
 /*# sourceMappingURL=cp-ecommerce-banner.css.map */

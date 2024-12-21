@@ -9,6 +9,7 @@
   margin-bottom: 3.2rem;
   border: 1px solid #dedede;
   border-radius: 12px;
+  margin-top: 1.6rem;
 }
 @media only screen and (max-width: 991px) {
   .cp-dimensions {
@@ -37,7 +38,15 @@
   }
 }
 .cp-dimensions .list-item:nth-child(2) {
-  padding: 1.6rem;
+  padding: 1.6rem 1.6rem 0;
+}
+.cp-dimensions.typ-durashine .img-wrap {
+  width: 36.3rem;
+  height: 30.8rem;
+  background: #ECF2FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=cp-dimensions.css.map */

@@ -7,11 +7,33 @@
     box-sizing: border-box
 }
 
-html,
+html {
+  font-size: 10px;
+  overflow-x: hidden !important;
+  @media (min-width: 780px) and (max-width: 1000px) {
+    font-size: 7.8px;
+  }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    font-size: 8.2px;
+  }
+  @media (min-width: 1279px) and (max-width: 1399px) {
+    font-size: 8.9px;
+  }
+  @media (min-width: 1441px) and (max-width: 1599px) {
+    font-size: 12px;
+  }
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1921px) and (max-width: 2500px) {
+    font-size: 16px;
+  }
+}
+
 body {
   font-family: $font-regular; 
   color: $clr-para;
-  font-size: 62.5%; 
+  font-size: 10px; 
   height: 100%;
   position: relative;
   scroll-behavior: smooth;
@@ -173,8 +195,15 @@ position: -webkit-sticky;
   text-align: right;
 }
 .cm-flex{
-  display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  &.typ-2{
+    display: flex;
+    justify-content:flex-start;
+    gap:0.8rem;
+  }
+ 
 }
 .cm-box{
   border: 1px solid #dedede;
@@ -194,4 +223,46 @@ position: -webkit-sticky;
   margin: 2.4rem -4rem;
   height: 1px;
   }
+}
+.m-bottom{
+  margin-bottom: 6.4rem;
+  @media only screen and (max-width: $media-mobile) {
+    margin-bottom: 4.8rem;
+
+  }
+}
+.text-center{
+  text-align: center;
+}
+
+.list-sec{
+  display: flex;
+
+  .list-item{
+    width: 50%;
+    .bold-text{
+      font-family: $font-semiBold;
+    font-size: 2rem;
+    color: $clr-base;
+    display: block;
+    }
+    .normal-text{
+      font-family: $font-regular;
+    font-size: 1.4rem;
+    color: $clr-para;
+    display: block;
+    }
+    
+  }
+}
+
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+
+.M-top16{
+  margin-top: 1.6rem;
 }

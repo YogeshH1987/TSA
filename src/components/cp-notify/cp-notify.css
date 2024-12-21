@@ -296,5 +296,19 @@
 .cp-notify.typ-notification .notify-desc {
   color: #666666;
 }
+.cp-notify.typ-grey-bg {
+  background-color: #ECF2FB;
+  flex-direction: row;
+}
+.cp-notify.typ-grey-bg .notify-title {
+  color: #333333;
+}
+.cp-notify.typ-grey-bg .notify-desc {
+  color: #333333;
+}
+.cp-notify.typ-grey-bg .btn-wrap {
+  display: flex;
+  gap: 0.8rem;
+}
 
 /*# sourceMappingURL=cp-notify.css.map */

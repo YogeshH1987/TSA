@@ -17,7 +17,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-coupon-code {
-    margin-top: 1.2rem;
+    margin: 0;
   }
 }
 .cp-coupon-code .code-info {
@@ -37,6 +37,14 @@
   padding: 0.2rem 0.8rem;
   display: inline-block;
   margin-top: 0.8rem;
+}
+.cp-coupon-code .code.remove-code {
+  background: #00A441;
+  color: #FFFFFF;
+  border: 0;
+}
+.cp-coupon-code .code.remove-code .icon {
+  font-size: 1.3rem;
 }
 .cp-coupon-code .btn-link {
   text-decoration: underline;

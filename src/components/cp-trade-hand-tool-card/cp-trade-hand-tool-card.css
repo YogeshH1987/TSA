@@ -8,6 +8,7 @@
   display: flex;
   gap: 1.2rem;
   margin-bottom: 3.2rem;
+  margin-top: 1.6rem;
 }
 
 .cp-trade-hand-tool-card {
@@ -48,10 +49,10 @@
     font-size: 1.4rem;
   }
 }
-.cp-trade-hand-tool-card:hover {
+.cp-trade-hand-tool-card.active, .cp-trade-hand-tool-card:hover {
   border-color: #3D7EDB;
 }
-.cp-trade-hand-tool-card:hover .title {
+.cp-trade-hand-tool-card.active .title, .cp-trade-hand-tool-card:hover .title {
   color: #3D7EDB;
 }
 .cp-trade-hand-tool-card.typ-why-wiron {
@@ -78,6 +79,27 @@
   .cp-trade-hand-tool-card.typ-struct-pdp {
     width: 10.6rem;
     height: 9.6rem;
+  }
+}
+.cp-trade-hand-tool-card.typ-why-structure {
+  border: 0;
+  height: 295px;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-why-structure {
+    height: 188px;
+    width: 166px;
+  }
+}
+.cp-trade-hand-tool-card.typ-why-structure .img-wrap {
+  width: 295px;
+  height: 260px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-why-structure .img-wrap {
+    height: 160px;
+    width: 166px;
   }
 }
 
