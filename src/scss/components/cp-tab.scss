@@ -316,11 +316,12 @@
     }
   }
   &.typ-offer {
+    margin-top: 1.2rem;
     .tab-container {
+      padding-top: 1.2rem;
       @media only screen and (max-width: $media-mobile) {
         padding-top: 0rem;
-      }
- 
+      } 
     }
   }
 }

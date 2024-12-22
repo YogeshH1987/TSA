@@ -20,13 +20,14 @@
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
     <link rel="stylesheet" href="/components/cp-cart/cp-cart.css" />
     <link rel="stylesheet" href="/components/cp-other-info/cp-other-info.css" />
-    <link rel="stylesheet" href="../../components/cp-price/cp-price.css" />
-    <link rel="stylesheet" href="../../components/cp-cart-card/cp-cart-card.css" />
-    <link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
+    <link rel="stylesheet" href="/components/cp-price/cp-price.css" />
+    <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
+    <link rel="stylesheet" href="/components/cp-counter/cp-counter.css" />
     <link rel="stylesheet" href="/components/cp-product-card/cp-product-card.css" />
-    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-drawer/cp-drawer.css" />
     <link rel="stylesheet" href="/components/cp-offers/cp-offers.css" />
-    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="/components/cp-table/cp-table.css" />
+    <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
 
   </head>
 
@@ -168,7 +169,7 @@
                     </div>
                     
                     <div class="sec-cont">
-                        <div class="cp-cart-card">
+                        <div class="cp-cart-card separator">
                             <ul class="prod-head">
                                 <li class="prod-item typ-grey">
                                     <div class="logo-wrap">
@@ -182,39 +183,53 @@
                                 <li class="prod-item typ-grey">
                                     <span>₹ 23,25,848</span>
                                 </li>
-                                </ul>
-                             <ul class="cart-list">
-                                <li class="list-item list-head">Size</li>
-                                <li class="list-item list-head">Price</li>
-                                <li class="list-item list-head">Quantity</li>
-                                <li class="list-item">8mm</li>
-                                <li class="list-item">₹220/piece</li>
-                                <li class="list-item">
-                                    <div class="cp-counter typ-cart">
-                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                    <input type="text" readonly class="number-product" value="1">
-                                    <button class="btn-count btn-plus">+</button>
-                                  </div>
-                                </li>
-                                <li class="list-item">12mm</li>
-                                <li class="list-item">₹220/piece</li>
-                                <li class="list-item">
-                                    <div class="cp-counter typ-cart">
-                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                    <input type="text" readonly class="number-product" value="1">
-                                    <button class="btn-count btn-plus">+</button>
-                                  </div>
-                                </li>
-                                <li class="list-item">16mm</li>
-                                <li class="list-item">₹220/piece</li>
-                                <li class="list-item">
-                                    <div class="cp-counter typ-cart">
-                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                    <input type="text" readonly class="number-product" value="1">
-                                    <button class="btn-count btn-plus">+</button>
-                                  </div>
-                                </li>
-                             </ul>  
+                              </ul>
+                              <div class="cart-list-wrap">
+                                <table class="cp-table typ-cart">
+                                  <thead>
+                                    <tr>
+                                      <td class="list-item list-head">Size</td>
+                                      <td class="list-item list-head">Price</td>
+                                      <td class="list-item list-head">Quantity</td>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="cart-list">
+                                      <td class="list-item">8mm</td>
+                                      <td class="list-item">₹220/piece</td>
+                                      <td class="list-item">
+                                        <div class="cp-counter typ-cart">
+                                          <button class="btn-count no-active btn-minus" disabled>-</button>
+                                          <input type="text" readonly class="number-product" value="1">
+                                          <button class="btn-count btn-plus">+</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="cart-list">
+                                      <td class="list-item">12mm</td>
+                                      <td class="list-item">₹220/piece</td>
+                                      <td class="list-item">
+                                          <div class="cp-counter typ-cart">
+                                          <button class="btn-count no-active btn-minus" disabled>-</button>
+                                          <input type="text" readonly class="number-product" value="1">
+                                          <button class="btn-count btn-plus">+</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="cart-list">
+                                      <td class="list-item">16mm</td>
+                                      <td class="list-item">₹220/piece</td>
+                                      <td class="list-item">
+                                          <div class="cp-counter typ-cart">
+                                          <button class="btn-count no-active btn-minus" disabled>-</button>
+                                          <input type="text" readonly class="number-product" value="1">
+                                          <button class="btn-count btn-plus">+</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                              <ul class="bottom-link-list">
                                 <li  class="link-item">
                                   <span class="icon icon-heart-fill"></span>
@@ -231,6 +246,72 @@
                                 </li>
                              </ul> 
                         </div>
+                        <div class="cp-cart-card">
+                          <ul class="prod-head">
+                              <li class="prod-item typ-grey">
+                                  <div class="logo-wrap">
+                                      <img src="/components/cp-cart/images/rebars.png" alt="logo">
+                                  </div>
+                                  <h3>Superlinks
+                                      <span class="desc">Silver iron frames</span>   
+                                  </h3>
+                                
+                              </li>
+                              <li class="prod-item typ-grey">
+                                  <span>₹ 4,448</span>
+                              </li>
+                            </ul>
+                            <div class="cart-list-wrap">
+                              <table class="cp-table typ-cart">
+                                <thead>
+                                  <tr>
+                                    <td class="list-item list-head">Size</td>
+                                    <td class="list-item list-head">Price</td>
+                                    <td class="list-item list-head">Quantity</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="cart-list">
+                                    <td class="list-item">10 mm x 1.6 mm x 25.5 mm</td>
+                                    <td class="list-item">₹220/piece</td>
+                                    <td class="list-item">
+                                      <div class="cp-counter typ-cart">
+                                        <button class="btn-count no-active btn-minus" disabled>-</button>
+                                        <input type="text" readonly class="number-product" value="1">
+                                        <button class="btn-count btn-plus">+</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="cart-list">
+                                    <td class="list-item">20 mm x 1.6 mm x 25.5 mm</td>
+                                    <td class="list-item">₹220/piece</td>
+                                    <td class="list-item">
+                                        <div class="cp-counter typ-cart">
+                                        <button class="btn-count no-active btn-minus" disabled>-</button>
+                                        <input type="text" readonly class="number-product" value="1">
+                                        <button class="btn-count btn-plus">+</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                           <ul class="bottom-link-list">
+                              <li  class="link-item">
+                                <span class="icon icon-heart-fill"></span>
+                                <h3 class="link-text">Save for later</h3> 
+                                 
+                              </li>
+                              <li class="link-item">
+                                  <span class="icon icon-delate"></span>
+                                  <h3 class="link-text">Remove</h3>
+                              </li>
+                              <li class="link-item">
+                                  <span class="icon icon-plus"></span>
+                                  <h3 class="link-text">Add sizes</h3>
+                              </li>
+                           </ul> 
+                      </div>
                     </div>
                     
                     <div class="sec-cont">
@@ -308,7 +389,107 @@
                 </div>
                 <!--cart card end-->
               </div>
-               
+              <div class="cp-cart">
+
+                <!--cart card start-->
+                <div class="cart-prod-wrapper">
+                    <div class="sec-cont">
+                        <ul class="prod-head">
+                            <li class="prod-item">
+                                <div class="logo-wrap">
+                                    <img src="/components/cp-cart/images/Icon.png" alt="logo">
+                                </div>
+                                <h3>Wiron</h3>
+                            </li>
+                            <li class="prod-item">
+                                <span>₹ 31,848</span>
+                            </li>
+                            </ul>
+                    </div>
+                                     
+                    <div class="sec-cont">
+                        <div class="cp-cart-card">
+                            <ul class="prod-head">
+                                <li class="prod-item typ-grey">
+                                    <div class="logo-wrap">
+                                        <img src="/components/cp-cart/images/rebars.png" alt="logo">
+                                    </div>
+                                    <h3>Ayush knotted fence
+                                      <span class="desc">Product technical name</span>   
+                                      <span class="tag"></span>
+                                    </h3>
+                                  
+                                </li>
+                                <li class="prod-item typ-grey">
+                                    <span>₹ 23,25,848</span>
+                                </li>
+                              </ul>
+                              <div class="cart-list-wrap">
+                                <table class="cp-table typ-cart">
+                                  <thead>
+                                    <tr>
+                                      <td class="list-item list-head">Size</td>
+                                      <td class="list-item list-head">Price</td>
+                                      <td class="list-item list-head">Quantity</td>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="cart-list">
+                                      <td class="list-item">8mm</td>
+                                      <td class="list-item">₹220/piece</td>
+                                      <td class="list-item">
+                                        <div class="cp-counter typ-cart">
+                                          <button class="btn-count no-active btn-minus" disabled>-</button>
+                                          <input type="text" readonly class="number-product" value="1">
+                                          <button class="btn-count btn-plus">+</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="cart-list">
+                                      <td class="list-item">12mm</td>
+                                      <td class="list-item">₹220/piece</td>
+                                      <td class="list-item">
+                                          <div class="cp-counter typ-cart">
+                                          <button class="btn-count no-active btn-minus" disabled>-</button>
+                                          <input type="text" readonly class="number-product" value="1">
+                                          <button class="btn-count btn-plus">+</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="cart-list">
+                                      <td class="list-item">16mm</td>
+                                      <td class="list-item">₹220/piece</td>
+                                      <td class="list-item">
+                                          <div class="cp-counter typ-cart">
+                                          <button class="btn-count no-active btn-minus" disabled>-</button>
+                                          <input type="text" readonly class="number-product" value="1">
+                                          <button class="btn-count btn-plus">+</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                             <ul class="bottom-link-list">
+                                <li  class="link-item">
+                                  <span class="icon icon-heart-fill"></span>
+                                  <h3 class="link-text">Save for later</h3> 
+                                   
+                                </li>
+                                <li class="link-item">
+                                    <span class="icon icon-delate"></span>
+                                    <h3 class="link-text">Remove</h3>
+                                </li>
+                                <li class="link-item">
+                                    <span class="icon icon-plus"></span>
+                                    <h3 class="link-text">Add sizes</h3>
+                                </li>
+                             </ul> 
+                        </div>                       
+                    </div>
+                </div>
+                <!--cart card end-->
+              </div>
             </div>
             <div class="grid-col-rhs">
                 <div class="cp-other-info">
@@ -385,18 +566,19 @@
 
 
       <!---offer drawer start-->
-      <div class="cp-drawer" id="availableOffers">
+      <div class="cp-drawer typ-offer" id="availableOffers">
         <div class="head-sec">
           <h2 class="drawer-title">Offers & discounts</h2>
           <a href="#" class="icon icon-close js-close-btn"></a>
         </div>
         <div class="cont-wrap">
-          <div class="cp-search">
+          <div class="cp-search typ-offer">
             <div class="search-wrap">
                 <input type="text"class="search-input" placeholder="Enter coupon code">
                 <span class="apply-link">Apply</span>
             </div>
-        </div>
+          </div>
+          <h2 class="drawer-sub-title">Site wide offers</h2>
           <ul class="offers-list">
             <li class="offers-item">
               <div class="cp-offers">
@@ -422,59 +604,116 @@
                   </div>
               </div>
             </li>
-            <li class="offers-item">
-              <div class="cp-offers">
-                  <div class="lft typ-green">
-                    <span>CASHBACK</span>  
-                  </div>
-                  <div class="rht typ-green-border">
-                      <h3 class="title">Instant cashback</h3>
-                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-                      <span class="offer-valid">Valid till 31 Oct 2024</span>
-                  </div>
-              </div>
-            </li>
-            <li class="offers-item">
-              <div class="cp-offers">
-                  <div class="lft typ-green">
-                      <span>CASHBACK</span> 
-                  </div>
-                  <div class="rht typ-green-border">
-                      <h3 class="title">Instant cashback</h3>
-                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-                      <span class="offer-valid">Valid till 31 Oct 2024</span>
-                  </div>
-              </div>
-            </li>
-           
-            <li class="offers-item">
-              <div class="cp-offers">
-                  <div class="lft typ-yellow">
-                    <span>Discount</span> 
-                  </div>
-                  <div class="rht typ-yellow-border">
-                      <h3 class="title">Navratri special</h3>
-                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-                      <span class="offer-valid">Valid till 31 Oct 2024</span>
-                  </div>
-              </div>
-            </li>
           </ul>
+          <h2 class="drawer-sub-title">Brand offers</h2>
+          <div class="cp-tab typ-offer">
+            <ul class="tab-list">
+              <li class="tab-item active" data-target="#tab1">
+                <h3 class="title">Tiscon</h3>
+              </li>
+              <li class="tab-item" data-target="#tab2">
+                <h3 class="title">Wiron</h3>
+              </li>
+              <li class="tab-item" data-target="#tab3">
+                <h3 class="title">Shaktee</h3>
+              </li>
+              <li class="tab-item" data-target="#tab4">
+                <h3 class="title">Pravesh</h3>
+              </li>
+            </ul>
+            <div class="tab-container">
+              <div class="tab-content active" id="tab1">
+                <ul class="offers-list">
+                  <li class="offers-item">
+                    <div class="cp-offers typ-disable">
+                        <div class="lft">
+                          <span>Discount</span> 
+                        </div>
+                        <div class="rht">
+                            <h3 class="title">Navratri special</h3>
+                            <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="offers-item">
+                    <div class="cp-offers">
+                        <div class="lft typ-red">
+                           <span>FLAT OFF</span> 
+                        </div>
+                        <div class="rht typ-red-border">
+                            <h3 class="title">B1G1 surprise</h3>
+                            <p class="desc">Buy any 1 product and get a surprise product for free. Minimum value of product should be Rs. 5,000</p>
+                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="offers-item">
+                    <div class="cp-offers">
+                        <div class="lft typ-green">
+                          <span>CASHBACK</span>  
+                        </div>
+                        <div class="rht typ-green-border">
+                            <h3 class="title">Instant cashback</h3>
+                            <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="offers-item">
+                    <div class="cp-offers">
+                        <div class="lft typ-green">
+                            <span>CASHBACK</span> 
+                        </div>
+                        <div class="rht typ-green-border">
+                            <h3 class="title">Instant cashback</h3>
+                            <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                        </div>
+                    </div>
+                  </li>
+                 
+                  <li class="offers-item">
+                    <div class="cp-offers">
+                        <div class="lft typ-yellow">
+                          <span>Discount</span> 
+                        </div>
+                        <div class="rht typ-yellow-border">
+                            <h3 class="title">Navratri special</h3>
+                            <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="tab2">
+                <h3 class="content">tab-content 2</h3>
+              </div>
+              <div class="tab-content" id="tab3">
+                <h3 class="content">tab-content 3</h3>
+              </div>
+              <div class="tab-content" id="tab4">
+                <h3 class="content">tab-content 4</h3>
+              </div>
+            </div>
+          </div>	
+          
         </div>
       </div>
       <!---offer drawer end-->
       <div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
-    <script src="/js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
-    <script src="../../components/cp-counter/cp-counter.js"></script>
-    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-counter/cp-counter.js"></script>
+    <script src="/components/cp-drawer/cp-drawer.js"></script>
     <!-- endbuild -->
   </body>
 </html>

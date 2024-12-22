@@ -299,6 +299,12 @@
 .cp-tab.typ-select .tab-list .tab-item:hover .title::after, .cp-tab.typ-select .tab-list .tab-item.active .title::after {
   width: 100%;
 }
+.cp-tab.typ-offer {
+  margin-top: 1.2rem;
+}
+.cp-tab.typ-offer .tab-container {
+  padding-top: 1.2rem;
+}
 @media only screen and (max-width: 768px) {
   .cp-tab.typ-offer .tab-container {
     padding-top: 0rem;

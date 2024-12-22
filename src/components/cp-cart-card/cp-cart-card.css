@@ -14,6 +14,12 @@
     padding: 1.6rem 1.2rem;
   }
 }
+.cp-cart-card.separator {
+  border-bottom: 2px solid #DEDEDE;
+}
+.cp-cart-card:last-child {
+  border-radius: 0 16px 0 16px;
+}
 .cp-cart-card .bottom-link-list {
   display: flex;
   justify-content: flex-end;

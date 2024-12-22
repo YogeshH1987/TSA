@@ -13,6 +13,7 @@
     }
     .list-item{
         font-size: 1.4rem;
+        line-height: 2rem;
         font-family: $font-medium;
         color: $clr-base;
         padding: 1rem 1.6rem;
@@ -24,11 +25,10 @@
             border: 0;
         } 
      
-    &.list-head{
-        background: #F3F4F6;
-        font-family: $font-semiBold;
-
-    }
+        &.list-head{
+            background: #F3F4F6;
+            font-family: $font-semiBold;
+        }
     }
     
     .small-text{
@@ -57,5 +57,34 @@
                 }  
             }
         }
+    }
+    &.typ-cart{
+        border: 0;
+        width: 100%;
+        .list-item{
+            border: 0;
+            padding: 0.8rem 1.6rem;
+            font-family: $font-regular;
+            vertical-align: middle;
+            &.list-head{
+                font-family: $font-regular;
+                &:first-child{
+                    @include border-radius(0.4rem 0 0 0.4rem);
+                }
+                &:nth-child(3){
+                    @include border-radius(0 0.4rem 0.4rem);
+                }
+            }
+            &:first-child{
+                width: 40%;
+            }
+            &:nth-child(2){
+                width: 40%;
+            }
+            &:nth-child(3){
+                width: 20%;
+            }
+        }
+        
     }
 }

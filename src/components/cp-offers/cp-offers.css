@@ -69,12 +69,31 @@
 .cp-offers .rht.typ-yellow-border {
   border: 1px solid #FFB800;
 }
+.cp-offers.typ-disable {
+  cursor: none;
+}
+.cp-offers.typ-disable .lft {
+  background: #999999;
+}
+.cp-offers.typ-disable .rht {
+  border: 1px solid #DEDEDE;
+  background-color: #F3F4F6;
+}
+.cp-offers.typ-disable .rht .title,
+.cp-offers.typ-disable .rht .desc {
+  color: #808080;
+}
+.cp-offers.typ-disable .rht .offer-valid {
+  color: #333333;
+}
 
 .offers-list {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   gap: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 3.6rem;
 }
 
 /*# sourceMappingURL=cp-offers.css.map */

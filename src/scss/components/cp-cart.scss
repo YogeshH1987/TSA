@@ -2,13 +2,14 @@
 @import "../config/mixin";
 
 .cp-cart{
-.cart-head{
-    display: flex;
-    justify-content: space-between;
-    .sec-title{
-        position: relative;
-      }
-}
+    margin-bottom: 2rem;
+    .cart-head{
+        display: flex;
+        justify-content: space-between;
+        .sec-title{
+            position: relative;
+        }
+    }
 .top-share-list{
     display: flex;
     justify-content: flex-start;
@@ -87,7 +88,7 @@
     }
     .coupon-code-info{
         border-radius: 8px;
-        border: 2px dashed #999999;
+        border: 1px dashed #999999;
         padding: 1rem;
         background: $clr-root;
         margin-top: 1.2rem;

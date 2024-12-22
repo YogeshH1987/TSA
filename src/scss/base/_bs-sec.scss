@@ -35,7 +35,7 @@
     @media only screen and (max-width: $media-sm) {
       font-size: 2.4rem;
       line-height: 3.2rem;
-    }
+    }    
   }
   .sec-sub-title{
     font-family: $font-medium;
@@ -509,5 +509,15 @@
 
     }
 
+  }
+  &.typ-myCart {
+    .sec-head{
+      margin-top: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+    .sec-title{
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
   }
 }

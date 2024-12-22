@@ -8,6 +8,12 @@
         margin-left: -3rem;
         padding: 1.6rem 1.2rem;
     }
+    &.separator{
+        border-bottom: 2px solid $clr-border;
+    }
+    &:last-child{
+        border-radius: 0 16px 0 16px;
+    }
   
     .bottom-link-list{
         display: flex;

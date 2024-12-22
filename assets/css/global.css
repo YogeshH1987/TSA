@@ -1549,6 +1549,14 @@ p {
     margin-top: 4.4rem;
   }
 }
+.bs-sec.typ-myCart .sec-head {
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.bs-sec.typ-myCart .sec-title {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
 
 .btn {
   display: inline-block;
