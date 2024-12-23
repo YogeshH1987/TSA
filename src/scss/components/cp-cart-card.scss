@@ -5,7 +5,7 @@
     background: $clr-root;
     padding: 1.6rem 2.4rem;
     @media only screen and (max-width: $media-mobile){
-        margin-left: -3rem;
+        // margin-left: -3rem;
         padding: 1.6rem 1.2rem;
     }
     &.separator{

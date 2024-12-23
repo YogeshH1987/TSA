@@ -10,7 +10,6 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-cart-card {
-    margin-left: -3rem;
     padding: 1.6rem 1.2rem;
   }
 }

@@ -23,8 +23,7 @@
         } 
         &.no-border{
             border: 0;
-        } 
-     
+        }      
         &.list-head{
             background: #F3F4F6;
             font-family: $font-semiBold;
@@ -77,6 +76,9 @@
             }
             &:first-child{
                 width: 40%;
+                @media only screen and (max-width: $media-mobile){
+                    width: 80%;
+                }
             }
             &:nth-child(2){
                 width: 40%;

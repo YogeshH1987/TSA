@@ -85,6 +85,11 @@
 .cp-table.typ-cart .list-item:first-child {
   width: 40%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-table.typ-cart .list-item:first-child {
+    width: 80%;
+  }
+}
 .cp-table.typ-cart .list-item:nth-child(2) {
   width: 40%;
 }

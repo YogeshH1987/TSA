@@ -567,5 +567,8 @@
 .cp-product-card.typ-cart .img-wrap {
   height: 12rem;
 }
+.cp-product-card.typ-cart .price-wrap {
+  margin: 0;
+}
 
 /*# sourceMappingURL=cp-product-card.css.map */
