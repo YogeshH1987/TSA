@@ -34,5 +34,25 @@
   font-family: "Poppins Medium";
   color: #666666;
 }
+.cp-prod-thumb-slider.pravesh-product {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: 2.4rem;
+}
+.cp-prod-thumb-slider.pravesh-product .bs-swiper.type-thumb {
+  margin-top: 0;
+  order: -1;
+  width: 12rem;
+  height: 500px;
+}
+.cp-prod-thumb-slider.pravesh-product .bs-swiper.type-thumb .swiper-wrapper {
+  gap: 0.6rem;
+}
+.cp-prod-thumb-slider.pravesh-product .bs-swiper.type-big-img-slider {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
 
 /*# sourceMappingURL=cp-prod-thumb-slider.css.map */
