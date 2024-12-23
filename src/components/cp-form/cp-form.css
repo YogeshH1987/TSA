@@ -13,23 +13,42 @@
   line-height: 2.4rem;
   margin-bottom: 1.2rem;
 }
-.cp-form .feedback-personal-data .form-group .form-label {
+.cp-form .form-group {
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-form .form-group {
+    margin-bottom: 2.4rem;
+  }
+}
+.cp-form .form-group.typ-border {
+  padding-top: 1.6rem;
+  border-top: 1px solid #DEDEDE;
+}
+.cp-form .form-group .form-label {
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 2rem;
+  color: #666666;
   margin-bottom: 0.8rem;
   display: block;
 }
-.cp-form .feedback-personal-data .form-group .form-control {
+.cp-form .form-group .form-label sup {
+  color: #D2042D;
+}
+.cp-form .form-group .form-label .clr-gray {
+  color: #999999;
+}
+.cp-form .form-group .form-control {
   width: 100%;
-  padding: 1.2rem 1.6rem;
+  padding: 1.1rem 1.6rem;
   border: 1px solid #DEDEDE;
   font-family: "Poppins Regular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   border-radius: 1.2rem;
 }
-.cp-form .feedback-personal-data .form-group .form-textarea {
+.cp-form .form-group .form-textarea {
   width: 100%;
   padding: 1.2rem 1.6rem;
   border: 1px solid #DEDEDE;
@@ -39,7 +58,7 @@
   border-radius: 1.2rem;
   min-height: 15.6rem;
 }
-.cp-form .feedback-personal-data .form-group .err-mgs {
+.cp-form .form-group .err-mgs {
   color: #D2042D;
   font-family: "Poppins Medium";
   font-size: 1rem;
@@ -74,6 +93,23 @@
 }
 .cp-form .star-rating .star-selected {
   color: #ffb800;
+}
+.cp-form.typ-book-demo {
+  margin: 0;
+}
+.cp-form.typ-book-demo .form-group .form-label {
+  margin-bottom: 1.6rem;
+}
+.cp-form.typ-book-demo .form-group .form-control {
+  max-width: 34.4rem;
+}
+.cp-form.typ-book-demo .btn-default {
+  min-width: 22rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-form.typ-book-demo .btn-default {
+    min-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=cp-form.css.map */

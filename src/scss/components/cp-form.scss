@@ -9,49 +9,62 @@
     line-height: 2.4rem;
     margin-bottom: 1.2rem;
   }
-  .feedback-personal-data {
-    .form-group {
-      .form-label {
-        font-family: $font-regular;
-        font-size: 1.4rem;
-        line-height: 2rem;
-        margin-bottom: 0.8rem;
-        display: block;
-      }
-
-      .form-control {
-        width: 100%;
-        padding: 1.2rem 1.6rem;
-        border: 1px solid $clr-border;
-        font-family: $font-regular;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        border-radius: 1.2rem;
-        
-       
-      }
-
-      .form-textarea {
-        width: 100%;
-        padding: 1.2rem 1.6rem;
-        border: 1px solid $clr-border;
-        font-family: $font-regular;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        border-radius: 1.2rem;
-        min-height: 15.6rem;
-      
-      }
-      .err-mgs {
+ 
+  .form-group {
+    margin-bottom: 3.2rem;
+    @media only screen and (max-width: $media-sm) {
+      margin-bottom: 2.4rem;
+    }
+    &.typ-border{
+      padding-top: 1.6rem;
+      border-top: 1px solid $clr-border;  
+    }
+    .form-label {
+      font-family: $font-regular;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: $clr-para;
+      margin-bottom: 0.8rem;
+      display: block;
+      sup{
         color: $clr-secondary;
-        font-family: $font-medium;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-bottom: 2.4rem;
-        display: block;
       }
-    } 
-  }
+      .clr-gray{
+        color: #999999;
+      }
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1.1rem 1.6rem;
+      border: 1px solid $clr-border;
+      font-family: $font-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-radius: 1.2rem;
+    }
+
+    .form-textarea {
+      width: 100%;
+      padding: 1.2rem 1.6rem;
+      border: 1px solid $clr-border;
+      font-family: $font-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-radius: 1.2rem;
+      min-height: 15.6rem;
+    
+    }
+    .err-mgs {
+      color: $clr-secondary;
+      font-family: $font-medium;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.4rem;
+      display: block;
+    }
+  } 
+  
   .act-wrap {
     .btn-submit {
       width: 100%;
@@ -81,6 +94,23 @@
     }
     .star-selected {
       color: #ffb800;
+    }
+  }
+  &.typ-book-demo{
+    margin: 0;
+    .form-group {
+      .form-label{
+        margin-bottom: 1.6rem;
+      }
+      .form-control {
+        max-width: 34.4rem;
+      }
+    }
+    .btn-default{
+      min-width: 22rem;
+      @media only screen and (max-width: $media-mobile) {
+        min-width: 100%;
+      }
     }
   }
 }
