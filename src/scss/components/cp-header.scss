@@ -573,6 +573,7 @@
 .open-inner-menu,
 .open-region-menu,
 .open-budget-menu,
+.open-stage-menu,
 .open-category-menu {
     display: none; /* Hide by default */
 }
@@ -581,6 +582,7 @@
 .open-inner-menu.active,
 .open-region-menu.active,
 .open-budget-menu.active,
+.open-stage-menu.active,
 .open-category-menu.active {
     display: block ; /* Show when active */
     &.menu-list{
