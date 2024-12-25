@@ -232,7 +232,7 @@ function navigationDropdown() {
 }
 
 function profileDropDown() {
-  $(document).on('click', '.js-profile-state', function() {
+  $(document).on('click focusin', '.js-profile-state', function() {
     $(".profile-wrap").fadeIn();
   });
 

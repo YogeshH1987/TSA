@@ -44,9 +44,9 @@ justify-content: center;
 }
 &.active,
 &:hover{
-    border-color: #3D7EDB;
+    border-color: $clr-primary;
     .title{
-        color: #3D7EDB;
+        color: $clr-primary;
     }
    
 }

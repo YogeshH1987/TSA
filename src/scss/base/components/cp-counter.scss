@@ -4,7 +4,7 @@
 
 
 .cp-counter{
-    border: 1px solid #dedede;
+    border: 1px solid $clr-border;
     border-radius:12px;
     width: 100%;
     max-width: 14.4rem;
@@ -22,8 +22,8 @@
     width: 4.8rem;
     height: 4.8rem;
     text-align: center;
-    border-left: 1px solid #dedede;
-    border-right: 1px solid #dedede;
+    border-left: 1px solid $clr-border;
+    border-right: 1px solid $clr-border;
 
    }
 }

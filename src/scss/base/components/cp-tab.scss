@@ -14,7 +14,7 @@
     .tab-item {
       flex-shrink: 0;
       .title {
-        border: 1px solid #dedede;
+        border: 1px solid $clr-border;
         font-family: $font-regular;
         font-size: 1.4rem;
         line-height: 1.8rem;
@@ -32,7 +32,7 @@
       &:hover,
       &.active {
         .title {
-          border: 1px solid #dedede;
+          border: 1px solid $clr-border;
           font-family: $font-semiBold;
           color: $clr-root;
           background: $clr-primary;

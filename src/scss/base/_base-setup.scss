@@ -94,7 +94,7 @@ p {
   left: 0;
   display: none;
   transition: 0.5s ease-in-out;
-  background: #000000;
+  background: $clr-black;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   touch-action: auto;

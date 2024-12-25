@@ -383,7 +383,7 @@
     left: 0;
     z-index: 3;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     padding: 0 2rem;
     overflow-y: scroll;
   }

@@ -107,7 +107,7 @@
             background: transparent;
             &.btn-white{
                 background: $clr-root;
-                color: #333333;
+                color: $clr-base;
             }
         }
         .notify-icon{
@@ -237,7 +237,7 @@
     }
     }
     &.typ-notification{
-        background: #ECF2FB;
+        background: $clr-bg;
         .notify-icon{
             color: #D8E5F8;
         }

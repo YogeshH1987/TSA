@@ -1126,7 +1126,7 @@ p {
   color: #FFFFFF;
 }
 .bs-sec.typ-gray-bg {
-  background: #ecf2fb;
+  background: #ECF2FB;
 }
 .bs-sec.typ-curve {
   border-radius: 4.8rem 4.8rem 0 0;
@@ -2784,6 +2784,13 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-modal.modal-show {
     width: 100%;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 }
 .bs-modal.modal-show .modal-dialog {
@@ -2792,6 +2799,17 @@ p {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.modal-show .modal-dialog {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
 }
 .bs-modal .modal-body {
   flex: none;
@@ -2817,7 +2835,7 @@ p {
   transform: translate(-50%, -75%);
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   background: #FFFFFF;
-  border-radius: 0px;
+  border-radius: 2.4rem;
   padding: 1.5rem;
 }
 .bs-modal .modal-content {
@@ -2860,6 +2878,39 @@ p {
   text-decoration: underline;
   font-family: "Poppins Medium";
   color: #3D7EDB;
+}
+.bs-modal.type-sm .sec-title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-sm .sec-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+.bs-modal.type-sm .sub-title {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.bs-modal.type-sm .modal-dialog {
+  padding: 2.4rem 1.6rem;
+  max-width: 40rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-sm .modal-dialog {
+    padding: 2rem 1.5rem;
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+    height: auto;
+  }
 }
 .bs-modal.type-md .small-title {
   font-size: 4rem;

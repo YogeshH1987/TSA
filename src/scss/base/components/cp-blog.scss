@@ -54,7 +54,7 @@
                     font-family: $font-medium;
                     font-size: 1.2rem;
                     line-height: 1.6rem;
-                    color: #333333; 
+                    color: color: $clr-base;; 
                     padding: 0.4rem 0.8rem;
                     @media only screen and (max-width: $media-mobile) {
                     }
@@ -75,7 +75,7 @@
             font-family: $font-semiBold;
             font-size: 1.6rem;
             line-height: 2.3rem;
-            color: #333333;            
+            color: color: $clr-base;;            
             margin-bottom: 1.2rem;
             overflow: hidden;
             text-overflow: ellipsis;

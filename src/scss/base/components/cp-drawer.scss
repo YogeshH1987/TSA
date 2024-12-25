@@ -38,7 +38,7 @@
             font-family: $font-medium;
             font-size: 2.4rem;
             line-height: 3.2rem;
-            color: #333333;
+            color: color: $clr-base;;
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.6rem;
                 line-height: 2.4rem;

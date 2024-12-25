@@ -4,7 +4,7 @@
 .cp-price{
     .price-list{
         border-radius: 16px;
-        border: 1px solid #DEDEDE;
+        border: 1px solid $clr-border;
         overflow: hidden;
         @media only screen and (max-width: $media-mobile) {
             border: 0;

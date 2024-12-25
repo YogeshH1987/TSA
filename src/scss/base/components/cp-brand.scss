@@ -16,7 +16,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #dedede;
+        border: 1px solid $clr-border;
         margin-right: 2rem;
         padding: 3rem;
         @media only screen and (max-width: $media-mobile) {
