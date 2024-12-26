@@ -423,6 +423,18 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-full-screen:before {
+  content: "\e946";
+}
+
+.icon-check_circle:before {
+  content: "\e944";
+}
+
+.icon-assistance-available:before {
+  content: "\e945";
+}
+
 .icon-grid:before {
   content: "\e942";
 }
@@ -1075,6 +1087,15 @@ p {
     font-size: 2.4rem;
   }
 }
+.bs-sec .sec-title.typ2 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec .sec-title.typ2 {
+    font-size: 2rem;
+  }
+}
 .bs-sec .sec-sub-title {
   font-family: "Poppins Medium";
   color: #333333;
@@ -1683,6 +1704,167 @@ p {
 }
 .bs-sec.typ-windows-pro .sec-title {
   font-size: 2rem;
+}
+.bs-sec.typ-pravesh-pdp-sec .container {
+  max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .container {
+    padding: 0;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp {
+  align-items: normal;
+  gap: 0;
+}
+.bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:first-child {
+  background-color: #F3F4F6;
+  padding-left: 10rem;
+  padding-right: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:first-child {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1rem;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child {
+  padding-right: 0;
+  padding-top: 3rem;
+  padding-left: 0;
+}
+.bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont {
+  padding: 0 10rem 0 3.2rem;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont {
+    padding: 0 1.6rem 0 1.6rem;
+    border-bottom: 0;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont .view-wrap {
+  margin-bottom: 2rem;
+}
+.bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.border-0 {
+  border: 0;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.typ-pravesh-head-mobile {
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    padding: 1.6rem;
+  }
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.typ-pravesh-head-mobile .typ-detail-btn {
+    padding: 0;
+    border: 0;
+    gap: 1.6rem;
+    display: flex !important;
+  }
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.typ-pravesh-head-mobile .typ-detail-btn .btn {
+    width: 50%;
+  }
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.typ-pravesh-head-mobile .cont-wrap {
+    padding-right: 9rem;
+  }
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.typ-pravesh-head-mobile .cont-wrap .tag-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    display: flex !important;
+  }
+  .bs-sec.typ-pravesh-pdp-sec .container .lyt-pdp .grid-col:last-child .sec-cont.typ-pravesh-head-mobile .cont-wrap .tag-list .tag-link {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    background: #F3F4F6;
+    font-size: 2rem;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .container .sec-head {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.bs-sec.typ-pravesh-pdp-sec .container .sec-head .view-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bs-sec.typ-pravesh-pdp-sec .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dedede;
+  position: relative;
+  padding: 0 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .btn-wrap {
+    padding: 0 1.6rem;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .btn-wrap .btn {
+  min-width: 10.4rem;
+}
+.bs-sec.typ-pravesh-pdp-sec .btn-wrap .price {
+  font-size: 2.4rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .btn-wrap .price {
+    font-size: 2rem;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .btn-wrap .price .total-cost {
+  font-size: 1.6rem;
+  font-family: "Poppins Regular";
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .btn-wrap .price .total-cost {
+    font-size: 1.4rem;
+  }
+}
+.bs-sec.typ-pravesh-pdp-sec .btn-wrap .price .price-icon {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+}
+.bs-sec.typ-pravesh-pdp-sec .btn-wrap.typ-pravesh-sticky {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .btn-wrap.typ-pravesh-sticky .btn {
+    min-width: 5rem;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec .btn-wrap.typ-pravesh-sticky .btn .icon {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec.typ-head-sec .grid-col:first-child {
+    background-color: #fff !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp-sec.typ-head-sec .grid-col:last-child {
+    padding-top: 0 !important;
+  }
 }
 
 .btn {
@@ -2523,6 +2705,22 @@ p {
 .bs-swiper.right-space {
   margin-right: -2rem;
 }
+.bs-swiper.typ-pravesh-select {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-pravesh-select .swiper-wrapper .swiper-slide {
+    width: 29.5% !important;
+  }
+}
+.bs-swiper.typ-pravesh-accessory {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-pravesh-accessory .swiper-wrapper .swiper-slide {
+    width: 46.5% !important;
+  }
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
@@ -2726,6 +2924,56 @@ p {
 }
 .bs-radio.typ-shade .custom-radio input[type=radio]:checked + .custom-radio::after {
   border-radius: 50%;
+}
+.bs-radio.typ-pravesh-pdp {
+  margin-bottom: 0;
+}
+.bs-radio.typ-pravesh-pdp .custom-radio {
+  min-width: 100%;
+  width: 100%;
+  padding: 0.5rem 1.6rem;
+}
+.bs-radio.typ-pravesh-pdp .custom-radio .ellipsis {
+  font-size: 1.6rem;
+  color: #666666;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-pravesh-pdp .custom-radio .ellipsis {
+    font-size: 1.2rem;
+  }
+}
+.bs-radio.typ-pravesh-pdp .custom-radio .ellipsistitle {
+  font-family: "Poppins Semibold";
+  margin-bottom: 0.4rem;
+}
+.bs-radio.typ-pravesh-pdp .custom-radio .pro-title {
+  font-size: 1.4rem;
+  color: #666666;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-pravesh-pdp .custom-radio .pro-title {
+    font-size: 1.2rem;
+  }
+}
+.bs-radio.typ-pravesh-pdp .custom-radio .price {
+  font-size: 1.6rem;
+  color: #333333;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-pravesh-pdp .custom-radio .price {
+    font-size: 1.4rem;
+  }
+}
+.bs-radio.typ-pravesh-pdp .custom-radio input[type=radio]:checked + .custom-radio {
+  background-color: #fff;
+}
+.bs-radio.typ-pravesh-pdp .custom-radio.typ-package {
+  padding: 2rem 2rem;
+  min-width: 11rem;
+  width: auto;
 }
 
 .bs-modal {

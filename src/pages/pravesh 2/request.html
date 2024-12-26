@@ -38,7 +38,8 @@
     <link rel="stylesheet" href="../../components/cp-request-recieve/cp-request-recieve.css" />
     <link rel="stylesheet" href="../../components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="../../components/cp-table/cp-table.css" />
-
+    <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
+    <link rel="stylesheet" href="../../components/cp-dealer-card/cp-dealer-card.css" />
 </head>
 
 <body>
@@ -171,7 +172,7 @@
                     <div class="grid-col">
 
                         <div class="sec-cont">
-                            <div class="cp-cart-card cm-box typ-tiscon-pdp">
+                            <div class="cp-cart-card cm-box typ-pravesh">
                                 <div class="sec-head">
                                     <h2 class="sec-title">Classic pro</h2>
                                     <p class="sec-desc">Collection description comes here</p>
@@ -181,7 +182,7 @@
                                                 screen</span></button>
                                         <button class="btn btn-icon"><span class="icon  icon-share"></span></button>
                                         <button class="btn btn-icon js-plp-favorite"><span
-                                                class="icon icon-unfill-like"></span></button>
+                                                class="icon js-add-favorite icon-unfill-like"></span></button>
                                     </div>
                                 </div>
                                 <div class="sec-cont">
@@ -203,8 +204,8 @@
 
 
                             </div>
-                            <div class="seperator"></div>
-                            <button class="btn btn-outline add-btn" type="button">+ Add one more shape/size</button>
+                          
+                         
 
                         </div>
 
@@ -212,172 +213,229 @@
                     </div>
                     <div class="grid-col">
                         <div class="sec-cont">
-                            <div class="cp-cart-card cm-box typ-tiscon-pdp">
-                                <h3 class="sec-sub-title typ-tiscon-qunty ">Summary</h3>
-                                 <table class="cp-table typ2">
+                            <div class="cp-cart-card cm-box typ-pravesh-card">
+                                <h3 class="sec-sub-title">Summary</h3>
+                                <table class="cp-table typ2 w-100 summary">
                                     <thead>
                                         <tr>
-                                            <th class="text-left list-head list-item">Size</th>
-                                            <th class="text-center list-head list-item">Price</th>
-                                            <th class="text-center list-head list-item">Quantity</th>
-                                            <th class="text-center list-head list-item">Weight</th>
-                                            <th class="text-right list-head list-item">Cost</th>
+                                            <th class="text-left list-head list-item"><span class="cm-mobile">Amount</span><span class="cm-desktop">Price per item</span></th>
+                                            <th class="text-left list-head list-item">Quantity</th>
+                                            <th class="text-left list-head list-item"><span class="cm-mobile">Quantity</span><span class="cm-desktop">Total amount</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <!-- Item 1 -->
                                         <tr class="sepretor">
-                                            <td class="text-left list-item">8mm
-                                              <span class="cm-mobile small-text">₹320/piece</span>
+                                            <td class="text-left list-item text-typ-1">₹72,000
+                                               <span class="inline-mobile grey-text">per door</span>
                                             </td>
-                                            <td class="text-center list-item">₹220/piece</td>
-                                            <td class="text-center list-item">
-                                                <div class="cp-counter typ-cart">
-                                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                                    <input type="text" readonly class="number-product" value="1">
-                                                    <button class="btn-count btn-plus">+</button>
-                                                </div>
-                                                <span class="cm-mobile small-text">~500.7 kg </span> 
-                                            </td>
-                                            <td class="text-center list-item">-500.7kg</td>
-                                            <td class="text-right list-item">₹220/piece</td>
+                                            <td class="text-left list-item text-typ-1">10</td>
+                                            <td class="text-left list-item text-typ-2"><span class="cm-desktop">₹7,20,000</span><span class="cm-mobile">10</span></td>
+
                                         </tr>
-                                        
-                                        <!-- Item 2 -->
-                                        <tr class="sepretor">
-                                            <td class="text-left list-item">12mm
-                                              <span class="cm-mobile small-text">₹320/piece</span>
-                                            </td>
-                                            <td class="text-center list-item">₹220/piece</td>
-                                            <td class="list-item text-center">
-                                                <div class="cp-counter typ-cart">
-                                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                                    <input type="text" readonly class="number-product" value="1">
-                                                    <button class="btn-count btn-plus">+</button>
-                                                </div>
-                                                <span class="cm-mobile small-text">~500.7 kg </span> 
-                                            </td>
-                                            <td class="list-item text-center">-600.8kg</td>
-                                            <td class="list-item text-right">₹220/piece</td>
-                                        </tr>
-                                
-                                        <!-- Item 3 -->
                                         <tr>
-                                            <td class="list-item text-left">16mm</td>
-                                            <td class="list-item text-center">₹220/piece</td>
-                                            <td class="list-item text-center">
-                                                <div class="cp-counter typ-cart">
-                                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                                    <input type="text" readonly class="number-product" value="1">
-                                                    <button class="btn-count btn-plus">+</button>
-                                                </div>
+                                            <td class="text-left list-item text-typ-2 table-cell-mobile border-b-0">Total amount
                                             </td>
-                                            <td class="list-item text-center">-700.9kg</td>
-                                            <td class="list-item text-right">₹220/piece</td>
+                                            <td class="text-left list-item text-typ-2 d-none border-b-0"></td>
+                                            <td class="text-left list-item text-typ-2 table-cell-mobile border-b-0">₹7,20,000</td>
+
                                         </tr>
                                     </tbody>
                                 </table>
-                                <h3 class="sec-sub-title M-top16">Binding wires
-                                  <span class="tag-label">Also bought together
-                                  </span>
-                                </h3>
-                                
-                                <table class="cp-table typ2">
-                                   <thead>
-                                       <tr>
-                                           <th class="text-left list-head list-item">Size</th>
-                                           <th class="text-center list-head list-item">Price</th>
-                                           <th class="text-center list-head list-item">Quantity</th>
-                                           <th class="text-center list-head list-item">Weight</th>
-                                           <th class="text-right list-head list-item">Cost</th>
-                                       </tr>
-                                   </thead>
-                                   <tbody>
-                                       <!-- Item 1 -->
-                                       <tr class="sepretor">
-                                           <td class="text-left list-item">8mm</td>
-                                           <td class="text-center list-item">₹220/piece</td>
-                                           <td class="text-center list-item">
-                                               <div class="cp-counter typ-cart">
-                                                   <button class="btn-count no-active btn-minus" disabled>-</button>
-                                                   <input type="text" readonly class="number-product" value="1">
-                                                   <button class="btn-count btn-plus">+</button>
-                                               </div>
-                                           </td>
-                                           <td class="text-center list-item">-500.7kg</td>
-                                           <td class="text-right list-item">₹220/piece</td>
-                                       </tr>
-                                       
-                                       <!-- Item 2 -->
-                                       <tr class="sepretor">
-                                           <td class="text-left list-item">12mm</td>
-                                           <td class="text-center list-item">₹220/piece</td>
-                                           <td class="list-item text-center">
-                                               <div class="cp-counter typ-cart">
-                                                   <button class="btn-count no-active btn-minus" disabled>-</button>
-                                                   <input type="text" readonly class="number-product" value="1">
-                                                   <button class="btn-count btn-plus">+</button>
-                                               </div>
-                                           </td>
-                                           <td class="list-item text-center">-600.8kg</td>
-                                           <td class="list-item text-right">₹220/piece</td>
-                                       </tr>
-                               
-                                       <!-- Item 3 -->
-                                       <tr>
-                                           <td class="list-item text-left">16mm</td>
-                                           <td class="list-item text-center">₹220/piece</td>
-                                           <td class="list-item text-center">
-                                               <div class="cp-counter typ-cart">
-                                                   <button class="btn-count no-active btn-minus" disabled>-</button>
-                                                   <input type="text" readonly class="number-product" value="1">
-                                                   <button class="btn-count btn-plus">+</button>
-                                               </div>
-                                           </td>
-                                           <td class="list-item text-center">-700.9kg</td>
-                                           <td class="list-item text-right">₹220/piece</td>
-                                       </tr>
-                                   </tbody>
-                               </table>
                             </div>
                         </div>
+
                         <div class="sec-cont">
-                            <div class="cp-price typ-tiscon-pdp">
-                                <ul class="price-list">
-
-                                    <li class="price-list-item typ-minimum">
-                                        <span class="icon icon-info"></span>
-                                        <p class="desc">Minimum order quantity for Structura should be ₹15000.00</p>
-                                    </li>
-                                    <li class="price-list-item total-price">
-                                        <span>Total price</span>
-                                        <span class="bold-text">
-                                            ₹25,600
-                                        </span>
-                                    </li>
-                                    <div class="act-wrap">
-                                        <button class="btn btn-outline btn-disable" type="button">Add to cart</button>
-                                        <button class="btn btn-disable btn-grey">Buy now</button>
-
-                                </ul>
-
+                            <div class="cp-accordion">
+                              <div class="cp-cart-card cm-box typ-pravesh-card  mr-t acc-item-card active">
+                                <div class="acc-head-card">
+                                  <h3 class="sec-sub-title">
+                                    Customizations
+                                  </h3>
+                                </div>
+                                <div class="acc-cont-card">
+                                    <table class="cp-table typ2 typ-pravesh-pdp w-100">
+                                        <tbody>
+                                            <!-- Item 1 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Finish</span>
+                                                    Emboss
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+    
+                                            <!-- Item 2 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Emboss finish</span>
+                                                    E32
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+    
+                                            <!-- Item 3 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Shade</span>
+                                                    B-04-01
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+    
+                                            <!-- Item 4 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Orientation</span>
+                                                    Right
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+    
+                                            <!-- Item 5 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Orientation</span>
+                                                    Right
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+    
+                                            <!-- Item 6 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Accessories package</span>
+                                                    TP-EXTD-MS-PH-07
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+    
+                                            <!-- Item 7 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Additional features</span>
+                                                    No special features
+                                                </td>
+                                                <td class="text-right list-item">₹2,395</td>
+                                            </tr>
+                                            <!-- Item 8 -->
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <span class="small-text">Measurement</span>
+                                                    <span class="text">Length</span>
+                                                    <span class="text">Height</span>
+                                                </td>
+                                                <td class="text-right list-item"><span class="text">1000 mm</span>
+                                                    <span class="text"> 1000 mm</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                              </div>
+                         
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--product detail end-->
-
-        <!-- Tips for selecting doors start -->
-        <section class="bs-sec typ-gray-bg typ-curve">
+        <!-- windows start -->
+        <section class="bs-sec typ-windows-pro typ-dealer typ-no-top-padding mt-2">
             <div class="container">
                 <div class="sec-head">
-                    <h2 class="sec-title">Tips for selecting doors</h2>
+                    <h2 class="sec-title">Add a dose of style to your home with our wide range of windows</h2>
                 </div>
                 <div class="sec-cont">
                     <div class="customer-testimonial">
-                        <a href="#" class="btn btn-link view-btn"> View All</a>
+                        <div class="bs-swiper swiper typ-why-tiscon js-blog right-space">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="cp-blog typ-window">
+                                        <a href="#" class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-product-card/images/window-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-product-card/images/window-1.png">
+                                                <img src="../components/cp-product-card/images/window-1.png"
+                                                    alt="product_img" />
+                                            </picture>
+                                        </a>
+                                        <div class="content-wrap">
+                                          
+                                            <h3 class="c-title">
+                                                Canvas window
+                                            </h3>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cp-blog typ-window">
+                                        <a href="#" class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-product-card/images/window-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-product-card/images/window-1.png">
+                                                <img src="../components/cp-product-card/images/window-1.png"
+                                                    alt="product_img" />
+                                            </picture>
+                                        </a>
+                                        <div class="content-wrap">
+                                          
+                                            <h3 class="c-title">
+                                                Canvas window
+                                            </h3>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="cp-blog typ-window">
+                                        <a href="#" class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-product-card/images/window-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-product-card/images/window-1.png">
+                                                <img src="../components/cp-product-card/images/window-1.png"
+                                                    alt="product_img" />
+                                            </picture>
+                                        </a>
+                                        <div class="content-wrap">
+                                          
+                                            <h3 class="c-title">
+                                                Canvas window
+                                            </h3>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap typ-dealer cm-mobile">
+                        <button class="btn btn-outline">
+                            Explore now
+                        </button>
+                    </div>
+                </div>
+           
+            </div>
+        </section>
+        <!-- windows end -->
+        <!-- Tips for selecting doors start -->
+        <section class="bs-sec typ-gray-bg typ-curve typ-dealer typ-pravesh mt-2">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Tips for selecting doors</h2>
+                    <a href="#" class="btn btn-link view-btn"> View All</a>
+                </div>
+                <div class="sec-cont">
+                    <div class="customer-testimonial">
                         <div class="bs-swiper swiper typ-home-testimonial js-home-testimonial">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -508,6 +566,7 @@
                         </div>
                     </div>
                 </div>
+        
             </div>
         </section>
         <!-- Tips for selecting doors end -->
@@ -604,6 +663,7 @@
     <script src="/components/cp-select/cp-select.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
     <script src="/components/cp-accordion/cp-accordion.js"></script>
+    <script src="/components/cp-product-card/cp-product-card.js"></script>
     <script src="/components/cp-blog/cp-blog.js"></script>
     <script src="/components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
     <!-- endbuild -->

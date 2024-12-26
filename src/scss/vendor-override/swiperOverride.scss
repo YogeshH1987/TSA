@@ -723,4 +723,20 @@
   &.right-space {
     margin-right: -2rem;
   }
+  &.typ-pravesh-select{ margin-bottom: 1.6rem;
+    .swiper-wrapper{
+     
+      .swiper-slide{
+        @media only screen and (max-width: $media-mobile) {  width: 29.5% !important;}
+      }
+    }
+  }
+  &.typ-pravesh-accessory{ margin-bottom: 1.6rem;
+    .swiper-wrapper{
+     
+      .swiper-slide{
+        @media only screen and (max-width: $media-mobile) {  width: 46.5% !important;}
+      }
+    }
+  }
 }

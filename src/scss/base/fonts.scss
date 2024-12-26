@@ -102,6 +102,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.icon-full-screen:before {
+  content: "\e946";
+}
+.icon-check_circle:before {
+  content: "\e944";
+}
+.icon-assistance-available:before {
+  content: "\e945";
+}
 .icon-grid:before {
   content: "\e942";
 }

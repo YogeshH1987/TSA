@@ -2,32 +2,158 @@
 @import "../config/mixin";
 
 
-.cp-prod-thumb-slider{
-   position: relative;
-   @media only screen and (max-width: $media-mobile)  {
-    height: 100%;
-   }
-    .seller-tag{
+.cp-prod-thumb-slider {
+    position: relative;
+
+    @media only screen and (max-width: $media-mobile) {
+        height: 100%;
+    }
+
+    .seller-tag {
         background: #D8E5F8;
         border-radius: 26px;
-        color:$clr-primary;
+        color: $clr-primary;
         font-size: 1.2rem;
         font-family: $font-medium;
         position: absolute;
         left: 12px;
-        top:12px;
+        top: 12px;
         padding: 0.2rem 0.8rem;
     }
-    .plus-two-slide{
+
+    .plus-two-slide {
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .plus-two{
+
+    .plus-two {
         font-size: 1.4rem;
         font-family: $font-medium;
         color: $clr-para;
+
+    }
+
+    &.pravesh-product {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-top: -3.5rem;
+        position: relative;
+        @media only screen and (max-width: $media-mobile) { margin-top: 2.4rem;}
+        .bs-swiper {
+            &.type-thumb {
+                margin-top: 0;
+                order: -1;
+                width: 12rem;
+                height: 44.5rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    width: 5rem;
+                    height: 33.5rem;
+                }
+
+                .swiper-wrapper {
+                    gap: 0.6rem;
+                }
+
+                .swiper-slide {
+                    height: 8.3rem !important;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        height: 4.7rem !important;
+                    }
+                }
+            }
+
+            &.type-big-img-slider {
+                height: 100%;
+                border: none;
+                border-radius: 0;
+
+                .swiper-slide {
+                    align-items: start;
+
+                    img {
+                        @media only screen and (max-width: $media-mobile) {
+                            height: 33.5rem;
+                        }
+                    }
+                }
+
+                // @media only screen and (max-width: $media-mobile) { width: 23rem;}
+            }
+
+        }
+
+        .cont-wrap {
+            .tag-list {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                gap: 0.8rem;
+                z-index: 1;
+
+                .tag-link {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 0.8rem;
+                    -webkit-border-radius: 0.8rem;
+                    -moz-border-radius: 0.8rem;
+                    background: #fff;
+                    border: 1px solid #DEDEDE;
+                    font-size: 2rem;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        width: 3.6rem;
+                        height: 3.6rem;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &.typ-popup-slider {
+        margin-top: 0;
+        @media only screen and (max-width: $media-mobile) {
+            display: block;
+        }
+
+        .bs-swiper {
+            &.type-big-img-slider {
+                @media only screen and (max-width: $media-mobile) {
+                    height: 72vh;
+                    width: 100%;
+                    background: #F3F4F6;
+                    padding: 1.6rem 0;
+                }
+
+                .swiper-slide {
+                    img {
+                        height: 400px;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            height: 64vh;
+                        }
+                    }
+                }
+            }
+
+            &.type-thumb {
+                @media only screen and (max-width: $media-mobile) {
+                    order: 1;
+                    width: 100%;
+                    height: 4.7rem !important;
+                    margin-top: 2rem;
+                }
+                .swiper-wrapper{  @media only screen and (max-width: $media-mobile) {justify-content: center;}}
+            }
+        }
 
     }
 }

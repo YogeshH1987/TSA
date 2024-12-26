@@ -144,7 +144,7 @@
 
         @media only screen and (max-width: $media-sm) {
           font-size: 1.4rem;
-          line-height: 1.8rem;
+          line-height:0;
           content: "\e90e";
         }
       }
@@ -155,7 +155,7 @@
       .acc-head-card {
         &:before {
           content: none;
-          @media only screen and (max-width: $media-sm) {  content: "\e92a";}
+          @media only screen and (max-width: $media-sm) { content: "\e90e";  rotate: 180deg;}
         }
       }
 

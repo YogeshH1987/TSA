@@ -2,11 +2,13 @@ var winWidth = $(window).width();
 
 $(document).ready(function() {
     // addedFavorite();
-    blogSlider();
+    blogSlider()
+    whyPraveshSlider()
 });
 
 $(window).resize(function() {
-    blogSlider();
+    blogSlider()
+    whyPraveshSlider()
 });
 
 // function addedFavorite() {
@@ -28,4 +30,13 @@ function blogSlider() {
         loop: false,
         navigation: false
     });
+}
+
+function whyPraveshSlider(){
+    var swiper = new Swiper(".js-why-pravesh", {
+        slidesPerView: 2.5,
+        loop: false,
+        navigation: false,
+        spaceBetween: 20,
+    }); 
 }
