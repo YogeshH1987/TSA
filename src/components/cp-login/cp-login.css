@@ -1,0 +1,207 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-login {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #dedede;
+  border-radius: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login {
+    border: 0;
+  }
+}
+.cp-login .lhs {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .lhs {
+    display: none;
+  }
+}
+.cp-login .lhs .img-wrap {
+  width: 507px;
+  height: 766px;
+  overflow: hidden;
+}
+.cp-login .rhs {
+  width: 50%;
+  padding: 2.4rem 4.8rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs {
+    width: 100%;
+    padding: 0;
+  }
+}
+.cp-login .rhs .title {
+  font-size: 2.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  line-height: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .title {
+    font-size: 2.4rem;
+  }
+}
+.cp-login .rhs .desc {
+  font-size: 1.4rem;
+  color: #666666;
+  font-family: "Poppins Regular";
+}
+.cp-login .rhs .desc.typ2 {
+  font-family: "Poppins Medium";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cp-login .rhs .form-wrap {
+  margin-top: 3.2rem;
+}
+.cp-login .rhs .form-wrap .form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .form-wrap .form-group {
+    margin-bottom: 25px;
+  }
+}
+.cp-login .rhs .form-wrap .form-group .form-label {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+  padding-bottom: 0.8rem;
+}
+.cp-login .rhs .form-wrap .form-group .form-input {
+  border-radius: 12px;
+  border: 1px solid #dedede;
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding: 1rem;
+}
+.cp-login .rhs .form-wrap .form-group .forgot-link {
+  position: absolute;
+  bottom: -33px;
+  right: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .form-wrap .form-group .forgot-link {
+    font-size: 1.2rem;
+    bottom: -25px;
+  }
+}
+.cp-login .rhs .act-wrap .login-btn {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .act-wrap .desc {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .act-wrap .btn-account {
+    font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .sign-up-sec {
+  margin-top: 24px;
+}
+.cp-login .rhs .sign-up-sec .title {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #808080;
+  position: relative;
+  text-align: center;
+}
+.cp-login .rhs .sign-up-sec .title::after {
+  position: absolute;
+  background: #dedede;
+  width: 132px;
+  left: 0;
+  top: 20px;
+  content: "";
+  height: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .title::after {
+    width: 106px;
+  }
+}
+.cp-login .rhs .sign-up-sec .title::before {
+  position: absolute;
+  background: #dedede;
+  width: 132px;
+  right: 0;
+  top: 20px;
+  content: "";
+  height: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .title::before {
+    width: 106px;
+  }
+}
+.cp-login .rhs .sign-up-sec .option-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 32px;
+}
+.cp-login .rhs .sign-up-sec .option-list .option-list-item {
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.cp-login .rhs .sign-up-sec .option-list .option-list-item img {
+  width: 24px;
+  height: 24px;
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
+  border: 0;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item .btn {
+    font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child {
+  position: relative;
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child::after {
+  content: "";
+  background: #dedede;
+  width: 1px;
+  height: 28px;
+  right: -28px;
+  top: 12px;
+  position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child::after {
+    height: 19px;
+    right: -17px;
+    top: 12px;
+  }
+}
+
+/*# sourceMappingURL=cp-login.css.map */

@@ -1,0 +1,191 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-login{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #dedede;
+    border-radius: 24px;
+    @media only screen and (max-width: $media-mobile){
+        border: 0;
+    }
+    .lhs{
+        width: 50%;
+        @media only screen and (max-width: $media-mobile){
+            display: none;
+        }
+        .img-wrap{
+            width: 507px;
+            height: 766px;
+            overflow: hidden;
+        }
+    }
+    .rhs{
+        width: 50%;
+        padding: 2.4rem 4.8rem 0;
+        @media only screen and (max-width: $media-mobile){
+            width: 100%;
+            padding:0;
+        }
+        .title{
+            font-size: 2.8rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+            line-height: 40px;
+         @media only screen and (max-width: $media-mobile){
+            font-size: 2.4rem;
+         }
+        }
+        .desc{
+            font-size: 1.4rem;
+            color: $clr-para;
+            font-family: $font-regular;
+            &.typ2{
+                font-family: $font-medium;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .form-wrap{
+            margin-top: 3.2rem;
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 35px;
+                @media only screen and (max-width: $media-mobile){
+                    margin-bottom: 25px;
+                }
+                .form-label{
+                    font-size: 1.4rem;
+                    font-family: $font-regular;
+                    color: $clr-para;
+                    padding-bottom: 0.8rem;
+                }
+                .form-input{
+                    border-radius: 12px;
+                    border: 1px solid #dedede;
+                    font-size: 1.6rem;
+                    font-family: $font-medium;
+                    color:$clr-base;
+                    padding: 1rem;
+                }
+                .forgot-link{
+                    position: absolute;
+                    bottom: -33px;
+                    right: 0;
+                    @media only screen and (max-width: $media-mobile){
+                        font-size: 1.2rem;
+                        bottom: -25px;
+                    }
+                }
+            }
+        }
+        .act-wrap{
+            .login-btn{
+                width: 100%;
+                margin-bottom: 1.6rem;
+                
+            }
+            .desc{
+                @media only screen and (max-width: $media-mobile){
+                    font-size: 1.2rem;
+                }
+            }
+            .btn-account{
+                @media only screen and (max-width: $media-mobile){
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .sign-up-sec{
+            margin-top: 24px;
+            .title{
+                font-size: 1.4rem;
+                font-family: $font-regular;
+                color: #808080;
+                position: relative;
+                text-align: center;
+                &::after{
+                    position: absolute;
+                    background: #dedede;
+                    width: 132px;
+                    left: 0;
+                    top: 20px;
+                    content: '';
+                    height: 1px;
+                    @media only screen and (max-width: $media-mobile){
+                        width: 106px;
+                    }
+                }
+                &::before{
+                    position: absolute;
+                    background: #dedede;
+                    width: 132px;
+                    right: 0;
+                    top: 20px;
+                    content: '';
+                    height: 1px;
+                    @media only screen and (max-width: $media-mobile){
+                        width: 106px;
+                    }
+                }
+            }
+            .option-list{
+                display: flex;
+                justify-content: space-between;
+                gap: 1.6rem;
+                margin-bottom: 32px;
+            .option-list-item{
+                border: 1px solid #dedede;
+                border-radius: 12px;
+                text-align: center;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                padding: 1rem;
+                img{
+                    width: 24px;
+                    height: 24px;
+    
+                }
+            }
+            &.typ2{
+                .option-list-item{
+                    border: 0;
+                    margin-right: 2rem;
+                    @media only screen and (max-width: $media-mobile){
+                        margin-right: 0;
+                    }
+                    .btn{
+                        @media only screen and (max-width: $media-mobile){
+                            font-size: 1.2rem;
+                        }
+                    }
+                   
+                    &:first-child{
+                      position: relative;
+                      &::after{
+                        content: '';
+                        background: #dedede;
+                        width: 1px;
+                        height: 28px;
+                        right: -28px;
+                        top: 12px;
+                        position: absolute;
+                        @media only screen and (max-width: $media-mobile){
+                            height: 19px;
+                            right: -17px;
+                            top: 12px;
+                        }
+                      }
+                    }
+                }
+            }
+            }
+        }
+        
+    }
+
+}

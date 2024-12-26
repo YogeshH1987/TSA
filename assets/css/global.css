@@ -1904,6 +1904,13 @@ p {
 .bs-sec.typ-windows-pro .sec-title {
   font-size: 2rem;
 }
+.bs-sec.typ-login {
+  margin-top: 19rem;
+}
+.bs-sec.typ-login .container {
+  max-width: 103rem;
+  width: 100%;
+}
 
 .btn {
   display: inline-block;

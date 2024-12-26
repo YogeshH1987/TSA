@@ -1,0 +1,41 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-verification{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+.img-wrap{
+    width: 20rem;
+    height: 20rem;
+    @media only screen and (max-width: $media-mobile) {
+        height: 15.2rem;
+        width: 15.2rem;
+    }
+}
+.cont-info{
+    max-width: 36.3rem;
+    width: 100%;
+    text-align: center;
+    .title{
+        font-size: 2.8rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        padding-bottom: 1.6rem;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2rem;
+        }
+
+    }
+    .desc{
+        font-size: 1.6rem;
+        font-family: $font-regular;
+        color: $clr-base;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+        }
+    }
+}
+}
