@@ -1911,6 +1911,22 @@ p {
   max-width: 103rem;
   width: 100%;
 }
+.bs-sec.typ-login .container .successful-msg {
+  background: #E5F6EC;
+  border-radius: 8px;
+  border: 1px solid #66C88D;
+  display: flex;
+  max-width: 34.3rem;
+  margin: 0 auto 1.2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #00A441;
+  gap: 1rem;
+}
+.bs-sec.typ-login .container .successful-msg .icon {
+  font-size: 2rem;
+}
 
 .btn {
   display: inline-block;

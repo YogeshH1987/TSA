@@ -9,6 +9,7 @@
   justify-content: flex-start;
   border: 1px solid #dedede;
   border-radius: 24px;
+  /* For Firefox */
 }
 @media only screen and (max-width: 768px) {
   .cp-login {
@@ -43,11 +44,18 @@
   font-family: "Poppins Semibold";
   color: #333333;
   line-height: 40px;
+  padding-bottom: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-login .rhs .title {
     font-size: 2.4rem;
   }
+}
+.cp-login .rhs .title .sub-title {
+  font-size: 2rem;
+  color: #333333;
+  line-height: 28px;
+  display: block;
 }
 .cp-login .rhs .desc {
   font-size: 1.4rem;
@@ -61,7 +69,11 @@
   justify-content: center;
 }
 .cp-login .rhs .form-wrap {
-  margin-top: 3.2rem;
+  margin-top: 1.5rem;
+}
+.cp-login .rhs .form-wrap.typ2 {
+  position: relative;
+  height: 100vh;
 }
 .cp-login .rhs .form-wrap .form-group {
   display: flex;
@@ -88,6 +100,16 @@
   color: #333333;
   padding: 1rem;
 }
+.cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
+  width: 75px;
+  height: 64px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
+    width: 60px;
+  }
+}
 .cp-login .rhs .form-wrap .form-group .forgot-link {
   position: absolute;
   bottom: -33px;
@@ -98,6 +120,10 @@
     font-size: 1.2rem;
     bottom: -25px;
   }
+}
+.cp-login .rhs .form-wrap .form-group .otp-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 .cp-login .rhs .act-wrap .login-btn {
   width: 100%;
@@ -111,6 +137,30 @@
 @media only screen and (max-width: 768px) {
   .cp-login .rhs .act-wrap .btn-account {
     font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .act-wrap.typ2 {
+  position: absolute;
+  bottom: 0;
+  left: -53px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  right: 35px;
+  width: 124%;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .act-wrap.typ2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 97%;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border: 0;
+    background: #FFFFFF;
   }
 }
 .cp-login .rhs .sign-up-sec {
@@ -202,6 +252,95 @@
     right: -17px;
     top: 12px;
   }
+}
+.cp-login .rhs .bottom-sec {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .bottom-sec {
+    margin-bottom: 0.8rem;
+  }
+}
+.cp-login .rhs .bottom-sec .otp-timer {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #EE4400;
+}
+.cp-login .rhs .bottom-sec .re-send-link {
+  color: #B3B3B3;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+}
+.cp-login .rhs .valid-message {
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: "Poppins Medium";
+  text-align: center;
+}
+.cp-login .rhs .pass-verification {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+  margin-top: -2rem;
+}
+.cp-login .rhs .pass-verification .verify-item {
+  font-size: 1rem;
+  font-family: "Poppins Regular";
+  color: #999;
+  position: relative;
+  padding-left: 2rem;
+}
+.cp-login .rhs .pass-verification .verify-item:first-child {
+  padding-left: 0;
+  padding-bottom: 0.8rem;
+}
+.cp-login .rhs .pass-verification .verify-item:first-child::after {
+  display: none;
+}
+.cp-login .rhs .pass-verification .verify-item::after {
+  content: "\e92e";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #999;
+  font-family: "icomoon" !important;
+}
+.cp-login .rhs .pass-verification .verify-item.completed {
+  color: #00A441;
+  position: relative;
+}
+.cp-login .rhs .pass-verification .verify-item.completed::after {
+  content: "\e92e";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #00A441;
+  font-family: "icomoon" !important;
+}
+.cp-login .rhs .pass-verification .verify-item.error {
+  color: #EE4400;
+}
+.cp-login .rhs .pass-verification .verify-item.error::after {
+  content: "\e92e";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #EE4400;
+  font-family: "icomoon" !important;
+}
+.cp-login input[type=number]::-webkit-inner-spin-button,
+.cp-login input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cp-login input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*# sourceMappingURL=cp-login.css.map */
