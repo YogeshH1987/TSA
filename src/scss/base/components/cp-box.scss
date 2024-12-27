@@ -1,0 +1,29 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-box{
+    display: flex;
+    justify-content: flex-start;
+    .title{
+        font-size:1.6rem;
+        font-family: $font-medium;
+        color: $clr-base;
+        padding-block: 1.6rem;
+    }
+    &.type-quntity{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .title{
+            width: 100%;
+        }
+
+    }
+        .act-wrap{
+            @media only screen and (max-width: $media-mobile) {
+                position: sticky;
+                top: 10px; /* Adjust as needed */
+                z-index: 1;
+            }
+            
+        }
+}

@@ -1,0 +1,75 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-budget-list{
+    display: flex;
+    justify-content: space-between;
+    .budget-list-item{
+       width: 29.5rem;
+       height: 20.0rem;
+       border-radius: 12px;
+       border: 2px solid;
+       text-align: center;
+       padding: 0.5rem;
+       display: flex;
+       justify-content: center;
+       @media only screen and (max-width: $media-mobile) {
+        width: 7.6rem;
+        height: 11.0rem;
+       }
+       &:nth-child(1){
+        border-color: #F8B499;
+       }
+       &:nth-child(2){
+        border-color: #FFE399
+       }
+       &:nth-child(3){
+        border-color:#B1CBF1
+       }
+       &:nth-child(4){
+        border-color: #99DAB3
+       }
+       .img-wrap{
+       
+       
+        img{
+            width: 18.4rem;
+            height: 9.2rem;
+            margin: 0 auto 3rem;
+            @media only screen and (max-width: $media-mobile) {
+                width: 4.8rem;
+                height: 4.8rem;
+                margin: 0 auto 0.4rem;
+    
+            }
+        }
+       }
+       .shop-text{
+        font-size: 2rem;
+        font-family: $font-medium;
+        color: $clr-base;
+        display: block;
+        padding-bottom: 0.2rem;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1rem;
+        }
+       }
+       .rupee{
+        font-size: 1.6rem;
+        position: relative;
+        top: -0.2rem;
+
+       
+       }
+       .price{
+        font-family: $font-semiBold;
+        font-size: 2.4rem;
+        color: $clr-base;
+        line-height: 2rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        
+       }
+    }
+}

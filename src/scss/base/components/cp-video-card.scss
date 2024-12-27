@@ -1,0 +1,44 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-video-card{
+      .cont-sec{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+        width: 100%;
+        height: 295px;
+        z-index: 1;
+        .video-title{
+            font-size: 1.6rem;
+            color:$clr-root;
+            font-family: $font-medium;
+            position: absolute;
+            left: 24px;
+            bottom: 64px;
+        }
+        .video-desc{
+            font-size: 1.2rem;
+            color:$clr-root;
+            font-family: $font-regular;
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+        }
+      }
+      .img-wrap{
+        position: relative;
+      
+      }
+      .play-btn{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color: $clr-root;
+        font-size: 6rem;
+        z-index: 3;
+        cursor: pointer;
+      }
+}

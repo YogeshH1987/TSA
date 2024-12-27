@@ -1,0 +1,85 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-customer-review{
+      border-bottom:1px solid $clr-border;
+
+      &:first-child{
+        border-top: 1px solid $clr-border;
+        @media only screen and (max-width: $media-tab) {
+          border-top: none;
+        }
+      }
+      
+    .review-star{
+      margin-top: 1.6rem;
+      .icon{
+        font-size: 1.6rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        color: #CCCCCC;
+        &.typ-active{
+            color: #FFB800;
+        }
+      }
+    }
+    .post-date{
+        font-family: $font-regular;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: $clr-para;
+        margin-bottom:1.2rem;
+        display: block;
+    }
+    .title{
+        font-family: $font-medium;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $clr-base;
+        margin-bottom:0.4rem;
+    }
+    .desc{
+        font-family: $font-regular;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: $clr-para;
+        margin-bottom:1.6rem;
+    }
+    .customer-detail{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+           .customer-name{
+            font-family: $font-medium;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            margin-bottom: 2px;
+           }
+           .verified{
+            font-family: $font-regular;
+            font-size: 1rem;
+            line-height: 1.2rem;
+             color: #00A441;
+           }
+        
+            .helpful{
+                font-family: $font-medium;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-base;
+                text-transform: capitalize;
+                .count-text{
+                 background-color: #D8E5F8;
+                 padding: 0.4rem 0.6rem;
+                 border-radius: 0.4rem;
+                 margin-left: 0.4rem;
+                }
+                .count-number{
+
+                }
+            }  
+    }
+}

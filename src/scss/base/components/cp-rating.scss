@@ -1,0 +1,67 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-rating{
+    padding: 1.6rem 2rem;
+    padding-top: 2.4rem;
+    @media only screen and (max-width: $media-sm){
+        padding: 1.6rem;
+    }
+    .rating-number-sec{
+        display: flex;
+        justify-content: flex-start;
+        gap: 1.6rem;
+        .rating-num{
+            font-size: 4rem;
+            color: $clr-base;
+            font-family: $font-semiBold;
+        }
+    }
+    .review-star{
+        margin-top: 1rem;
+        .icon{
+            font-size: 1.6rem;
+            &.active{
+                color: #FFB800;
+            }
+        }
+    }
+    .review-text{
+        display: flex;
+        .review-count{
+            font-family: $font-regular;
+            font-size: 1.4rem;
+            color: $clr-para;
+            position: relative;
+            padding-right: 1.5rem;
+
+            &:first-child{
+                &::after{
+                    position: absolute;
+                right: 7px;
+                top:4px;
+                width: 2px;
+                height: 14px;
+                background-color: $clr-para;
+                content: '';
+                }
+            }
+          
+        }   
+    }
+    &.typ-structura-pdp{
+        padding: 0;
+        .review-text{
+            .review-count{
+                color: $clr-primary;
+                &:first-child{
+                    &:after{
+                        background: $clr-primary;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}

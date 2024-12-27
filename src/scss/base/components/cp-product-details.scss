@@ -1,0 +1,242 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-product-details{
+    .product-img{
+        position: relative;        
+        margin-bottom: 3.6rem;
+        width: 43.6rem;
+        @media only screen and (max-width: $media-mobile) {
+            margin-bottom: 1.6rem;
+        }
+        .product-tag{
+            position: absolute;
+            top: 1.2rem;
+            left: 1.2rem;
+            padding: 0.2rem 0.8rem;
+            background: #D8E5F8;
+            font-family: $font-medium;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-primary;
+            text-align: center;
+            z-index: 2;
+            @include border-radius(1.2rem);
+        }
+        .img-wrap{
+            margin: 4.2rem 6rem;
+            max-width: 31rem;
+            height: 15.5rem;   
+            @media only screen and (max-width: $media-mobile) {
+                margin: 4.15rem 1.6rem;                 
+            }
+            
+            img {
+                height: 100%;
+                object-fit: cover;
+            }   
+        }
+    }
+    .cont-wrap{
+        position: relative;
+        .prod-title{
+            font-family: $font-semiBold;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            color: $clr-base;
+            margin-bottom: 0.2rem;
+            max-width: 80%;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
+        }
+        .prod-code{
+            font-family: $font-regular;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: $clr-base;
+            margin-bottom: 0.8rem;
+            max-width: 70%;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                margin-bottom: 0.4rem;
+            }
+        }
+        .cm-medium {
+            color: #5A245A;
+        }
+        .review-list{
+            margin-bottom: 1.6rem;
+            .review-item{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 1px;
+                    height: 1.6rem;
+                    background: $clr-para;
+                    position: absolute;
+                    top: -0.2rem;
+                    right: -0.6rem;
+                }
+                &:last-child{
+                    &::before{
+                        display: none;
+                    }
+                }    
+            }
+            .review-star{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .icon{
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+                    color: #CCCCCC;
+                    &.typ-active{
+                        color: #FFB800;
+                    }
+                }
+            }  
+            .product-buy{
+                font-family: $font-regular;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-para;
+            }
+        }
+        .price-wrap{
+            margin-bottom: 1.2rem;
+            .text{
+                font-family: $font-regular;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-para;
+                margin-bottom: 0.2rem;
+            }
+            .discounted-price{
+                display: inline-block;
+                margin-right: 1.6rem;
+                font-family: $font-regular;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                color: $clr-para;
+                @media only screen and (max-width: $media-mobile) {
+                    display:block;
+                     margin-right: 0rem;
+                     margin-bottom: 0.6rem;
+                }
+                .amt{
+                    font-family: $font-semiBold;
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                    color: $clr-base;
+                    .rupee{
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        vertical-align: top;
+                    }
+                }
+            }
+            .regular-price{
+                font-family: $font-regular;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-para;
+                margin-right: 0.6rem;
+                display: inline-block;
+                text-decoration: line-through;
+            }
+            .off-price{
+                font-family: $font-medium;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-root;
+                background: $clr-secondary;
+                padding: 0.15rem 0.5rem;
+                text-align: center;
+                @include border-radius(2.4rem);
+                max-width: 4.8rem;
+            }
+        }        
+        .delivery-info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 3.2rem;
+            .icon{
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: #999999;
+                &.icon-up-arrow{
+                   width: 1.6rem;
+                   height: 1.6rem;
+                   @include border-radius(50%);
+                   background: #CCEDD9;
+                   font-size: 1.2rem;
+                   color: #00A441;
+                   position: relative;
+                   &::before{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include transform(translate(-50%, -50%));
+                   }
+                }
+            }
+            .delivery-text{
+                font-family: $font-regular;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-para;
+                .highlight{
+                    font-family: $font-medium;
+                }
+            }
+        }
+        .action-wrap{
+            padding-top: 3.2rem;           
+            .btn{
+                min-width: 100%;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                padding: 1.1rem 1.2rem;
+            }
+        }
+        .tag-list{
+            position: absolute;
+            top: 0;
+            right: 0;        
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 0.8rem;
+            .tag-link{
+                width: 4rem;
+                height: 4rem;
+                @include border-radius(0.8rem);
+                background: #F3F4F6;
+                font-size: 2rem;
+            }
+        }
+    }
+    &.typ-pdp{  
+        .cont-wrap{
+            .review-list{
+                display: flex;
+                .review-item{
+                    padding-right: 1.2rem;
+                    &::before{
+                        top:0rem;
+                        right: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

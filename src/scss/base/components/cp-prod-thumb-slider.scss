@@ -1,0 +1,33 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-prod-thumb-slider{
+   position: relative;
+   @media only screen and (max-width: $media-mobile)  {
+    height: 100%;
+   }
+    .seller-tag{
+        background: #D8E5F8;
+        border-radius: 26px;
+        color:$clr-primary;
+        font-size: 1.2rem;
+        font-family: $font-medium;
+        position: absolute;
+        left: 12px;
+        top:12px;
+        padding: 0.2rem 0.8rem;
+    }
+    .plus-two-slide{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .plus-two{
+        font-size: 1.4rem;
+        font-family: $font-medium;
+        color: $clr-para;
+
+    }
+}
