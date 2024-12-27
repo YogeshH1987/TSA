@@ -1,0 +1,36 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .img-wrap{
+        width: 32.5rem;
+        height: 20rem;
+        margin-bottom: 2.4rem;
+        @media only screen and (max-width: $media-sm) {
+            width: 26.7rem;
+            height: 16.4rem;
+            margin-bottom: 1.6rem;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    .success-title{
+        font-family: $font-semiBold;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $clr-base;
+        margin-bottom : 0.4rem;
+    }
+    .desc{
+        font-family: $font-semiBold;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $clr-para;
+    }
+}

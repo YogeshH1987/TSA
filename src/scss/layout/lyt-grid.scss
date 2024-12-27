@@ -32,6 +32,16 @@
     }
   }
 
+  &.typ-col-4 {
+    .grid-col {
+      width: 25%;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+      }
+    }
+  }
+
   &.typ-explore {
     align-items: center;
     justify-content: space-around;

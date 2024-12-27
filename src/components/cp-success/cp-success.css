@@ -1,0 +1,43 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cp-success .img-wrap {
+  width: 32.5rem;
+  height: 20rem;
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-success .img-wrap {
+    width: 26.7rem;
+    height: 16.4rem;
+    margin-bottom: 1.6rem;
+  }
+}
+.cp-success .img-wrap img {
+  object-fit: cover;
+  height: 100%;
+}
+.cp-success .success-title {
+  font-family: "Poppins Semibold";
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #333333;
+  margin-bottom: 0.4rem;
+}
+.cp-success .desc {
+  font-family: "Poppins Semibold";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #666666;
+}
+
+/*# sourceMappingURL=cp-success.css.map */

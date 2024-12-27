@@ -1,0 +1,47 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-switch {
+  display: inline-block;
+}
+.cp-switch input {
+  display: none;
+}
+.cp-switch input:checked ~ label {
+  border-color: #FFFFFF;
+}
+.cp-switch input:checked ~ label::after {
+  translate: 3rem 0;
+  background: #FFFFFF;
+}
+.cp-switch input:disabled ~ label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.cp-switch label {
+  display: block;
+  width: 5.8rem;
+  height: 2.8rem;
+  padding: 2px;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  background: #00A441;
+  border: 1px solid #00A441;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cp-switch label::after {
+  content: "";
+  display: inherit;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 12px;
+  background: #FFFFFF;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=cp-switch.css.map */

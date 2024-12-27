@@ -140,6 +140,14 @@
     width: 100%;
   }
 }
+.lyt-grid.typ-col-4 .grid-col {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-4 .grid-col {
+    width: 100%;
+  }
+}
 .lyt-grid.typ-explore {
   align-items: center;
   justify-content: space-around;

@@ -1,0 +1,43 @@
+@import "../config/variables";
+@import "../config/mixin";
+.cp-switch {
+	display: inline-block;
+	input {
+		display: none;
+		&:checked {
+			& ~ label {
+				border-color: $clr-root;
+				&::after {
+					translate: 3rem 0;
+					background: $clr-root;
+				}
+			}
+		}
+		&:disabled {
+			& ~ label {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+		}
+	}
+	label {
+		display: block;
+		width: 5.8rem;
+		height: 2.8rem;
+		padding: 2px;
+		@include border-radius(1.5rem);
+		background: #00A441;
+		border: 1px solid #00A441;
+		cursor: pointer;
+		transition: 0.3s;
+		&::after {
+			content: "";
+			display: inherit;
+			width: 2.1rem;
+			height: 2.1rem;
+			border-radius: 12px;
+			background: $clr-root;
+			transition: 0.3s;
+		}
+	}
+}

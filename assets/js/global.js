@@ -1,3 +1,4 @@
+let TSA = {};
 var winWidth = $(window).width();
 var winHeight = $(window).height();
 
