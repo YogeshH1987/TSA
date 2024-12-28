@@ -31,5 +31,43 @@
 .cp-box.typ-durshine-pdp {
   justify-content: flex-end;
 }
+.cp-box.typ-calculate {
+  border: 1px solid #3D7EDB;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  background: #ECF2FB;
+  padding: 4rem 3.2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-calculate {
+    width: 100%;
+    gap: 2rem;
+  }
+}
+.cp-box.typ-calculate .img-wrap,
+.cp-box.typ-calculate .cont-wrap {
+  width: 47%;
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-calculate .img-wrap,
+  .cp-box.typ-calculate .cont-wrap {
+    width: 100%;
+  }
+}
+.cp-box.typ-calculate .img-wrap {
+  width: 55.5rem;
+  height: 34.2rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+.cp-box.typ-calculate .img-wrap img {
+  height: 100%;
+  object-fit: contain;
+}
 
 /*# sourceMappingURL=cp-box.css.map */

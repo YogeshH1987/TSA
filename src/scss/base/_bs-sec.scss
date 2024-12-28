@@ -770,4 +770,15 @@
       font-size: 2rem;
     }
   }
+
+  &.typ-home-loan{
+    .container{
+      max-width: 103rem;
+      @media only screen and (max-width: $media-tab) {
+        width: 100%;
+        padding: 0rem 1.6rem;
+        max-width: auto;
+      }
+    }
+  }
 }

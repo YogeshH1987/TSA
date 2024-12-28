@@ -7,5 +7,18 @@
 .cp-calculator-box {
   position: relative;
 }
+.cp-calculator-box .calc-title {
+  font-family: "Poppins Semibold";
+  color: #333333;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin-bottom: 0.8rem;
+}
+.cp-calculator-box .calc-desc {
+  margin-bottom: 4rem;
+  color: #333333;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
 
 /*# sourceMappingURL=cp-calculator-box.css.map */

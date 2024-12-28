@@ -3,4 +3,17 @@
 
 .cp-calculator-box{
     position: relative;
+    .calc-title{
+        font-family: $font-semiBold;
+        color: $clr-base;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        margin-bottom: 0.8rem;
+    }
+    .calc-desc{
+        margin-bottom: 4rem;
+        color: $clr-base;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
 }

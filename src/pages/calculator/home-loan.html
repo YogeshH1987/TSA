@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="/images/favicon.png" />
 
-    <title>Building Cost Estimator</title>
+    <title>Home Loan</title>
     <meta name="description" content="description goes here" />
 	<link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/global.css" />
@@ -14,10 +14,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
 	<link rel="stylesheet" href="/css/home.css" />
 	<link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
-	<link rel="stylesheet" href="/components/cp-box/cp-box.css" />
-    <link rel="stylesheet" href="../../components/cp-calculator-box/cp-calculator-box.css" />
-    <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
 	<link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
+    <link rel="stylesheet" href="../../components/cp-range/cp-range.css" />
+    <link rel="stylesheet" href="../../components/cp-loan-calculate/cp-loan-calculate.css" />
+    <link rel="stylesheet" href="../../components/cp-note/cp-note.css" />
+    <link rel="stylesheet" href="../../components/cp-table/cp-table.css" />
     <link rel="stylesheet" href="../../components/cp-range/cp-range.css" />
 
 	
@@ -25,66 +26,59 @@
 
   <body>
     <main class="main">
-		<!-- Manage your home construction start-->
-		<section class="bs-sec">
+		<!-- Calculate your home loan EMI start-->
+		<section class="bs-sec typ-home-loan">
 			<div class="container">
 				<div class="sec-head">
-					<h2 class="sec-title">Building cost estimator</h2>
-					<p class="sec-desc">Used by homeowners, contractors, architects and dealers to budget efficiently within minutes.</p>
+					<h2 class="sec-title">Calculate your home loan EMI</h2>
 				</div>
-				<div class="sec-cont">
-					<div class="cp-box typ-calculate">
-						<div class="img-wrap">
-							<picture>
-								<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/white box.png">
-								<img src="../../components/cp-calculator-box/images/white box.png" alt="Timeline_Cards"/>
-							</picture>
-						</div>
-						<div class="cont-wrap">
-							<div class="cp-calculator-box">
-								<h2 class="calc-title">Built up area</h2>
-								<p class="calc-desc">This is the total area of a property, including the carpet area, walls, balconies, and other areas</p>
-								<div class="cp-range" id="builtUpAreaRange"></div>
-								<div class="act-form">
-									<input type="text" id="builtUpAreaValue" value="700 Sq.ft">
-									<button class="btn btn-primary">Next</button>
+				<div class="sec-cont">					
+					<div class="cp-loan-calculate">
+						<div class="form-wrap">
+							<div class="slider-container">
+								<div class="slider-input">
+									<label class="slider-label">Loan Amount (₹):</label>
+									<input type="text" class="slider-input" readonly id="loanAmountValue" value="500000"></input>
+								</div>							
+								<div id="loanAmountSlider" class="cp-range"></div>
+							</div>
+							<div class="slider-container">
+								<div class="slider-input">
+									<span class="slider-label">Annual Interest Rate (%):</span>
+									<input type="text" class="slider-input" readonly id="interestRateValue" value="5.0"></input>
 								</div>
-							</div>						
+								<div id="interestRateSlider" class="cp-range"></div>
+							</div>
+					
+							<div class="slider-container">
+								<div class="slider-input">
+									<span class="slider-label">Loan Tenure (years):</span>
+									<input type="text" class="slider-input" readonly  id="loanTenureValue" value="10"></input>
+								</div>
+								<div id="loanTenureSlider" class="cp-range"></div>
+							</div>
+						</div>
+						<div class="graph-wrap">
+							<div class="donut-chart-section" id="donutChart"></div>        
+							<div class="legend"></div>
+							<div id="emiOutput"></div>
 						</div>
 					</div>
-					<ul class="cp-add-info-list typ-calculate">
-						<li class="add-info-item">
-						  <div class="info-card">
-							<span class="icon icon-straighten"></span>
-							<div class="info-wrap">
-							  <h2 class="info-title">Accurate projections</h2>
-							  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
-							</div>
-						  </div>
-						</li>
-						<li class="add-info-item">
-						  <div class="info-card">
-							<span class="icon icon-touch_app"></span>
-							<div class="info-wrap">
-							  <h2 class="info-title">Easy usage</h2>
-							  <p class="info-desc">No expertise needed, just input basic details.</p>
-							</div>
-						  </div>
-						</li>
-						<li class="add-info-item">
-						  <div class="info-card">
-							<span class="icon icon-people_outline"></span>
-							<div class="info-wrap">
-							  <h2 class="info-title">Negotiate confidently</h2>
-							  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
-							</div>
-						  </div>
-						</li>
-					  </ul>
+					<div class="cp-note typ-warning">
+						<span class="icon icon-info"></span>
+						<p class="text">The results provided by these tools and calculators are for informational purposes only. Actual costs, estimates, and outcomes may vary based on market conditions, individual project specifications, and other variables. Please consult with professionals or experts for precise planning and decisions.</p>
+					</div>
+					<div class="table-wrap">
+						<h2 class="title">Yearly Home Loan Amortization Schedule</h2>
+						<button class="btn btn-link" id="toggleTableBtn">View all</button>
+						<div class="table-wrapper" id="wrapper">
+							<div id="amortizationSchedule"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Manage your home construction end-->
+		<!-- Calculate your home loan EMI end-->
 		<!--Learn about the home building journey start -->
 		<section class="bs-sec">
 			<div class="container">
@@ -261,16 +255,65 @@
 		<!-- Other calculators you may like ends -->
     </main>
 
-	<div class="cm-overlay"></div>
+	<div class="cm-overlay"></div><!-- EMI Output Template -->
+	<script id="legend-template" type="text/x-handlebars-template">
+		<div class="graph-legend">
+			<div class="legend-item">
+				<h3 class="title"> <span class="dots" style="background: #FFD466;"></span>Total Principal</h3>
+				₹{{totalPrincipal}}
+			</div> 
+			<div class="legend-item">
+				<h3 class="title"><span class="dots" style="background: #8BB2E9;"></span>Total Interest</h3>
+				₹{{totalInterest}}
+			</div>
+		</div>
+		
+	</script>
+
+	<script id="emi-output-template" type="text/x-handlebars-template">
+		<div class="result-wrap">
+			<h2 class="title">EMI Details</h2>
+			<p class="amt"> ₹{{emi}}</p>
+		</div>
+		
+	</script>
+	
+	<!-- Amortization Table Template -->
+	<script id="amortization-template" type="text/x-handlebars-template">
+		<table class="cp-table typ-loan" id="amortizationSchedule">
+			<thead>
+				<tr>
+					<th class="text-center list-head list-item">Year</th>
+					<th class="text-center list-head list-item">Principal Paid (₹)</th>
+					<th class="text-center list-head list-item">Interest Charged (₹)</th>
+					<th class="text-center list-head list-item">Total Payment (₹)</th>
+					<th class="text-center list-head list-item">Balance (₹)</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each schedule}}
+					<tr>
+						<td class="list-item text-center">{{year}}</td>
+						<td class="list-item text-center">₹{{principalPaid}}</td>
+						<td class="list-item text-center">₹{{interestCharged}}</td>
+						<td class="list-item text-center">₹{{totalPayment}}</td>
+						<td class="list-item text-center">₹{{balance}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</script>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-    <script src="/js/buildingCostEst.js"></script>
+    <script src="/js/homeLoan.js"></script>
     <!-- endbuild -->
   </body>
 </html>

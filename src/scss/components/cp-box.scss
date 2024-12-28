@@ -31,6 +31,32 @@
     }
 
     &.typ-calculate{
-        
+        border: 1px solid $clr-primary;
+        @include border-radius(1.6rem);
+        background: #ECF2FB;
+        padding: 4rem 3.2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4rem;
+        @media only screen and (max-width: $media-sm) {
+            width: 100%;
+            gap: 2rem;
+        }
+        .img-wrap,
+        .cont-wrap{
+            width: 47%;
+            @media only screen and (max-width: $media-sm) {
+                width: 100%;
+            }
+        }
+        .img-wrap{
+            width:55.5rem;
+            height:34.2rem;
+            @include border-radius(1.6rem);
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
 }
