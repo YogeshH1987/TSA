@@ -26,8 +26,8 @@ var getTrackStyle = function (el) {
 
   // Change background gradient
   for (var i = 0; i < prefs.length; i++) {
-    style += `.range {background: linear-gradient(to right, #670015 0%, #D2042D ${val}%, #fff ${val}%, #fff 100%)}`;
-    style += `.range input::-` + prefs[i] + `{background: linear-gradient(to right, #670015 0%, #D2042D ${val}%, #DEDEDE ${val}%, #b2b2b2 100%)}`;
+    style += `.range {background: linear-gradient(to right, #670015 0%, #D2042D ${val}%, #fff ${val}%, #fff 100%) !important}`;
+    style += `.range input::-` + prefs[i] + `{background: linear-gradient(to right, #670015 0%, #D2042D ${val}%, #DEDEDE ${val}%, #b2b2b2 100%)!important}`;
   }
 
   return style;

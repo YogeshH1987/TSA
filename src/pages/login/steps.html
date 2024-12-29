@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
     <link rel="stylesheet" href="/components/cp-price/cp-price.css" />
+    <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
 
 
 
@@ -121,200 +122,289 @@
                             <img src="../../components/cp-login/image/Frame 1597882851.png" alt="login image" />
                         </div>
                     </div>
-                    <div class="rhs relative typ-2">
+                    <div class="rhs relative typ-2" id="regForm">
                         <div class="step-sec">
                             <span class="steps-num">Step - 1/4</span>
                             <div class="step-main">
-                                <div class="progress-bar active"></div>
-                                <div class="progress-bar"></div>
-                                <div class="progress-bar"></div>
-                                <div class="progress-bar"></div>
+                                <div class="step"></div>
+                                <div class="step"></div>
+                                <div class="step"></div>
+                                <div class="step"></div>
                             </div>
                         </div>
-                        <div class="steps-content">
-                            <!-- step1 -->
-                            <div>
-                                <h2 class="title">I am</h2>
 
-                                <div class="radio-wrap">
-                                    <div class="bs-radio typ-steps">
-                                        <input id="radio1" name="size" type="radio">
-                                        <label for="radio1" class="custom-radio">
-                                            <span class="icon orange icon-home-guide">
 
-                                            </span>
-                                            <span>Planning to build a home</span>
-                                        </label>
+                          <!-- MultiStep Form -->
+                            <!-- One "tab" for each step in the form: -->
+                            <div class="steps-content">
+                                <div class="tab">
+                                    <h2 class="title">I am</h2>
+
+                                    <div class="radio-wrap">
+                                        <div class="bs-radio typ-steps">
+                                            <input id="radio1" name="size" type="radio">
+                                            <label for="radio1" class="custom-radio">
+                                                <span class="icon orange icon-home-guide">
+
+                                                </span>
+                                                <span>Planning to build a home</span>
+                                            </label>
+                                        </div>
+                                        <div class="bs-radio typ-steps">
+                                            <input id="radio2" name="size" type="radio">
+                                            <label for="radio2" class="custom-radio">
+                                                <span class="icon blue icon-home-guide">
+
+                                                </span>
+                                                <span>In progress with home construction</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio typ-steps">
+                                            <input id="radio3" name="size" type="radio">
+                                            <label for="radio3" class="custom-radio">
+                                                <span class="icon red icon-home-guide">
+
+                                                </span>
+                                                <span>Doing interiors for my home</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio typ-steps">
+                                            <input id="radio4" name="size" type="radio">
+                                            <label for="radio4" class="custom-radio">
+                                                <span class="icon green icon-home-guide">
+
+                                                </span>
+                                                <span>Here for something else</span>
+                                            </label>
+                                        </div>
+
                                     </div>
-                                    <div class="bs-radio typ-steps">
-                                        <input id="radio2" name="size" type="radio">
-                                        <label for="radio2" class="custom-radio">
-                                            <span class="icon blue icon-home-guide">
+                                </div>
+                                <div class="tab">
 
-                                            </span>
-                                            <span>In progress with home construction</span>
-                                        </label>
+                                    <h2 class="title">Tell us little more about your dream home</h2>
+                                    <div class="form-wrap">
+                                        <div class="form-group">
+                                            <label class="form-label">Location</label>
+                                            <input type="text" name="" class="form-input" value="302020" placeholder="">
+                                            <icon class="icon icon-edit-1"></icon>
+                                        </div>
+                                    </div>
+                                    <h2 class="title typ-small">Plot size area (square feet)</h2>
+
+                                    <div class="radio-wrap typ-size">
+                                        <div class="bs-radio">
+                                            <input id="size1" name="size" type="radio">
+                                            <label for="size1" class="custom-radio">
+                                                <span>Less than 800</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio">
+                                            <input id="size2" name="size" type="radio">
+                                            <label for="size2" class="custom-radio">
+                                                <span>800-1200</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio">
+                                            <input id="size3" name="size" type="radio">
+                                            <label for="size3" class="custom-radio">
+                                                <span>1200-1600</span>
+                                            </label>
+                                        </div>
+                                        <div class="bs-radio">
+                                            <input id="size4" name="size" type="radio">
+                                            <label for="size4" class="custom-radio">
+                                                <span>1600-2000</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio">
+                                            <input id="size5" name="size" type="radio">
+                                            <label for="size5" class="custom-radio">
+                                                <span>More than 2000</span>
+                                            </label>
+                                        </div>
+
                                     </div>
 
-                                    <div class="bs-radio typ-steps">
-                                        <input id="radio3" name="size" type="radio">
-                                        <label for="radio3" class="custom-radio">
-                                            <span class="icon red icon-home-guide">
+                                    <div class="form-wrap">
+                                        <div class="form-group">
+                                            <label class="form-label">Estimated budget (Optional)</label>
+                                            <input type="text" name="" class="form-input" placeholder="₹ 5,00,000">
+                                        </div>
+                                    </div>
+                                    <h2 class="title typ-small">No. of floors</h2>
 
-                                            </span>
-                                            <span>Doing interiors for my home</span>
-                                        </label>
+                                    <div class="range-main">
+                                        <div class="range">
+                                            <input type="range" min="1" max="5" steps="1" value="1">
+                                        </div>
+
+                                        <ul class="range-labels">
+                                            <li class="active selected">1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>More</li>
+                                        </ul>
                                     </div>
 
-                                    <div class="bs-radio typ-steps">
-                                        <input id="radio4" name="size" type="radio">
-                                        <label for="radio4" class="custom-radio">
-                                            <span class="icon green icon-home-guide">
+                                    <h2 class="title typ-small">No. of bedrooms</h2>
+                                    <div class="radio-wrap typ-size typ-login">
+                                        <div class="bs-radio">
+                                            <input id="bedroom1" name="size" type="radio">
+                                            <label for="bedroom1" class="custom-radio">
+                                                <span>1</span>
+                                            </label>
+                                        </div>
 
-                                            </span>
-                                            <span>Here for something else</span>
-                                        </label>
+                                        <div class="bs-radio">
+                                            <input id="bedroom2" name="size" type="radio">
+                                            <label for="bedroom2" class="custom-radio">
+                                                <span>2</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio">
+                                            <input id="bedroom3" name="size" type="radio">
+                                            <label for="bedroom3" class="custom-radio">
+                                                <span>3</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio">
+                                            <input id="bedroom4" name="size" type="radio">
+                                            <label for="bedroom4" class="custom-radio">
+                                                <span>4</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="bs-radio">
+                                            <input id="bedroom5" name="size" type="radio">
+                                            <label for="bedroom5" class="custom-radio">
+                                                <span>More than 4</span>
+                                            </label>
+                                        </div>
+
                                     </div>
+
+
+                                </div>
+                                <div class="tab">
+
+                                    <h2 class="title">What have you completed?<br> Select all that apply.</h2>
+                                    <div class="check-wrap">
+                                        <div class="form-group typ-border">
+                                            <div class="cp-checkbox typ-2">
+                                                <input type="checkbox" id="check1">
+                                                <label for="check1">I have a plot</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group typ-border">
+                                            <div class="cp-checkbox typ-2">
+                                                <input type="checkbox" id="check2">
+                                                <label for="check2">I have an architectural plan</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group typ-border">
+                                            <div class="cp-checkbox typ-2">
+                                                <input type="checkbox" id="check3">
+                                                <label for="check3">I have finances ready for building </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group typ-border">
+                                            <div class="cp-checkbox typ-2">
+                                                <input type="checkbox" id="check4">
+                                                <label for="check4">I have building approvals & permits</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="tab">
+
+                                    <h2 class="title">What are you interested in?</h2>
+                                    <div class="form-group typ-check-main">
+                                        <div class="cp-checkbox typ-3">
+                                            <input type="checkbox" id="idea1">
+                                            <label for="idea1">
+                                                <span class="icon icon-home-guide">
+
+                                                </span>
+                                                <span>Explore home <br>
+                                                    design ideas</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="cp-checkbox typ-3">
+                                            <input type="checkbox" id="idea2">
+                                            <label for="idea2">
+                                                <span class="icon icon-home-guide">
+
+                                                </span>
+                                                <span>Purchase material</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="cp-checkbox typ-3">
+                                            <input type="checkbox" id="idea3">
+                                            <label for="idea3">
+                                                <span class="icon icon-rupee">
+
+                                                </span>
+                                                <span>Estimate costs</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="cp-checkbox typ-3">
+                                            <input type="checkbox" id="idea4">
+                                            <label for="idea4">
+                                                <span class="icon icon-home-guide">
+
+                                                </span>
+                                                <span>Information <br>about approvals</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="cp-checkbox typ-3">
+                                            <input type="checkbox" id="idea5">
+                                            <label for="idea5">
+                                                <span class="icon icon-home-guide">
+
+                                                </span>
+                                                <span>Information <br>about home loans</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="cp-checkbox typ-3">
+                                            <input type="checkbox" id="idea6">
+                                            <label for="idea6">
+                                                <span class="icon icon-home-guide">
+
+                                                </span>
+                                                <span>Just<br>exploring</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
 
                                 </div>
                             </div>
+                       
+                
+                        <!-- /.MultiStep Form -->
 
-                            <!-- step2 -->
-                            <div>
-                                <h2 class="title">Tell us little more about your dream home</h2>
-                                <div class="form-wrap">
-                                    <div class="form-group">
-                                        <label class="form-label">Location</label>
-                                        <input type="text" name="" class="form-input" value="302020" placeholder="">
-                                        <icon class="icon icon-edit-1"></icon>
-                                    </div>
-                                </div>
-                                <h2 class="title typ-small">Plot size area (square feet)</h2>
 
-                                <div class="radio-wrap typ-size">
-                                    <div class="bs-radio">
-                                        <input id="size1" name="size" type="radio">
-                                        <label for="size1" class="custom-radio">
-                                            <span>Less than 800</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="bs-radio">
-                                        <input id="size2" name="size" type="radio">
-                                        <label for="size2" class="custom-radio">
-                                            <span>800-1200</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="bs-radio">
-                                        <input id="size3" name="size" type="radio">
-                                        <label for="size3" class="custom-radio">
-                                            <span>1200-1600</span>
-                                        </label>
-                                    </div>
-                                    <div class="bs-radio">
-                                        <input id="size4" name="size" type="radio">
-                                        <label for="size4" class="custom-radio">
-                                            <span>1600-2000</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="bs-radio">
-                                        <input id="size5" name="size" type="radio">
-                                        <label for="size5" class="custom-radio">
-                                            <span>More than 2000</span>
-                                        </label>
-                                    </div>
-
-                                </div>
-
-                                <div class="form-wrap">
-                                    <div class="form-group">
-                                        <label class="form-label">Estimated budget (Optional)</label>
-                                        <input type="text" name="" class="form-input" placeholder="₹ 5,00,000">
-                                    </div>
-                                </div>
-                                <h2 class="title typ-small">No. of floors</h2>
-
-                                <div class="range-main">
-                                    <div class="range">
-                                        <input type="range" min="1" max="5" steps="1" value="1">
-                                    </div>
-
-                                    <ul class="range-labels">
-                                        <li class="active selected">1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                        <li>4</li>
-                                        <li>5</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- step3 -->
-                            <div>
-                                <h2 class="title">What have you completed? Select all that apply.</h2>
-                                <div class="form-wrap">
-                                    <div class="form-group">
-                                        <label class="form-label">Location</label>
-                                        <input type="text" name="" class="form-input" value="302020" placeholder="">
-                                        <icon class="icon icon-edit-1"></icon>
-                                    </div>
-                                </div>
-                                <h2 class="title typ-small">Plot size area (square feet)</h2>
-
-                                <div class="radio-wrap typ-size">
-                                    <div class="bs-radio">
-                                        <input id="size1" name="size" type="radio">
-                                        <label for="size1" class="custom-radio">
-                                            <span>Less than 800</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="bs-radio">
-                                        <input id="size2" name="size" type="radio">
-                                        <label for="size2" class="custom-radio">
-                                            <span>800-1200</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="bs-radio">
-                                        <input id="size3" name="size" type="radio">
-                                        <label for="size3" class="custom-radio">
-                                            <span>1200-1600</span>
-                                        </label>
-                                    </div>
-                                    <div class="bs-radio">
-                                        <input id="size4" name="size" type="radio">
-                                        <label for="size4" class="custom-radio">
-                                            <span>1600-2000</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="bs-radio">
-                                        <input id="size5" name="size" type="radio">
-                                        <label for="size5" class="custom-radio">
-                                            <span>More than 2000</span>
-                                        </label>
-                                    </div>
-
-                                </div>
-
-                                <div class="form-wrap">
-                                    <div class="form-group">
-                                        <label class="form-label">Estimated budget (Optional)</label>
-                                        <input type="text" name="" class="form-input" placeholder="₹ 5,00,000">
-                                    </div>
-                                </div>
-                                <h2 class="title typ-small">No. of floors</h2>
-
-                            </div>
-                        </div>
+                    
                         <div class="act-wrap sticky">
                             <p class="desc"><a href="#" class="btn btn-link btn-account">Skip this step</a> </p>
-                            <button class="btn btn-outline btn-steps" type="button">Back</button>
-                            <button class="btn btn-steps" type="button">Next</button>
-
+                            <button type="button" class="btn btn-outline btn-steps" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                            <button type="button" class="btn btn-steps" id="nextBtn" onclick="nextPrev(1)">Next</button>
                         </div>
 
 
@@ -324,14 +414,14 @@
         </section>
     </div>
     <!-- Footer Start -->
-    <footer>
+    <!-- <footer>
         <div class="cp-footer">
             <picture>
                 <source media="(max-width:768px)" srcset="/images/footer_mob.png">
                 <img src="/images/footer.png" alt="Footer" />
             </picture>
         </div>
-    </footer>
+    </footer> -->
     <!-- Footer end -->
     <div class="cm-overlay"></div>
 
@@ -344,6 +434,7 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-login/range.js"></script>
+    <script src="/components/cp-login/steps.js"></script>
 
     <!-- endbuild -->
 </body>
