@@ -131,4 +131,41 @@
     &.w-100 {
         width: 100%;
     }
+    &.typ-loan{
+        border: 0;
+        background: $clr-root;
+        width: 100%;
+        tr{
+            &:first-child{
+                .list-item{
+                    background: #D8E5F8;
+                }
+            }
+            &:nth-child(even){
+                .list-item{
+                    background: $clr-root;
+                }
+            }
+            &:nth-child(odd){
+                .list-item{
+                    background: #F3F4F6;
+                }
+            }
+        }
+        .list-item{
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-base;
+            border: 0;
+            
+            &.list-head{
+                color: #00398C;
+                background: #D8E5F8;
+                font-family: $font-medium;
+                line-height: 2rem;
+                border: 0;
+                padding: 16px 5px;
+            }
+        }    
+    }
 }

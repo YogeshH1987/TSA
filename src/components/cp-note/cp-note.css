@@ -1,3 +1,33 @@
-
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+/* colors */
+/*font family*/
+/* breakpoints */
+.cp-note {
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  padding: 1.2rem;
+  margin: 2.4rem 0;
+}
+.cp-note .icon {
+  font-size: 2rem;
+}
+.cp-note .text {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.cp-note.typ-warning {
+  border: 1px solid #FFD466;
+  background: #FFF8E5;
+  color: #A77800;
+}
+.cp-note.typ-warning .text {
+  color: #A77800;
+}
 
 /*# sourceMappingURL=cp-note.css.map */
