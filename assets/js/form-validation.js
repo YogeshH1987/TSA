@@ -115,10 +115,22 @@ $(document).ready(function() {
     $(document).on("click", ".trigger-date", function(e) {
         $(this).siblings('input').trigger("focus");
     });
-
-    // validations
     $(document).on("focusout", ".validate-field", function () {
         var field_container = $(this).parents(".otp-wrap");
+    
+        // Check if the field is empty
+        if (!$(this).val()) {
+            field_container.addClass('error'); // Add error class
+            field_container.find('.error-msg').html('Please fill out this field.').show(); // Show error message
+        } else {
+            field_container.removeClass('error'); // Remove error class
+            field_container.find('.error-msg').html('').hide(); // Hide error message
+        }
+    });
+    // validations
+
+    $(document).on("focusout", ".validate-field", function () {
+        var field_container = $(this).parents(".form-group");
     
         // Check if the field is empty
         if (!$(this).val()) {

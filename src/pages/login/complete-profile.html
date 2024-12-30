@@ -128,22 +128,27 @@
                             <div class="form-wrap">
                                 <div class="form-group">
                                     <label class="form-label">Mobile number</label>
-                                    <input type="number" name="" class="form-input" placeholder="Enter mobile number" />
+                                    <input type="number" name="" class="form-input validate-mobile" placeholder="Enter mobile number" />
+                                    <span class="error-msg"></span>
+
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label">Email ID</label>
-                                    <input type="password" name="" class="form-input" placeholder="Enter Email Id" />
+                                    <input type="password" name="" class="form-input validate-email" placeholder="Enter Email Id " />
+                                    <span class="error-msg"></span>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Pincode</label>
-                                    <input type="number" name="" class="form-input" placeholder="Enter mobile number" />
+                                    <input type="number" name="" class="form-input validate-field" placeholder="Enter Pincode number" />
+                                    <span class="error-msg"></span>
                                     <icon class="icon icon-edit-1"></icon>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label">GST number (Optional)</label>
-                                    <input type="number" name="" class="form-input" placeholder="Enter GST number" />
+                                    <input type="number" name="" class="form-input validate-field" placeholder="Enter GST number" />
+                                    <span class="error-msg"></span>
                                 </div>
                             </div>
 
@@ -322,6 +327,7 @@ addressed vis-a-vis the processing of personal data relating to you. Please cont
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
+    <script src="/js/form-validation.js"></script>
 
     <script src="../components/cp-drawer/cp-drawer.js"></script>
     <!-- endbuild -->
