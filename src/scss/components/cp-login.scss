@@ -37,13 +37,15 @@
          @media only screen and (max-width: $media-mobile){
             font-size: 2.4rem;
          }
-         .sub-title{
+        }
+        .sub-title{
             font-size: 2rem;
             color: $clr-base;
             line-height: 28px;
             display: block;
+            font-family: $font-semiBold;
+
          }
-        }
         .desc{
             font-size: 1.4rem;
             color: $clr-para;
@@ -90,6 +92,15 @@
                             width: 60px;
                         }
                     }
+                    &::placeholder {
+                        color:#B3B3B3;
+                        opacity: 1; /* Firefox */
+                      }
+                      
+                      &::-ms-input-placeholder { /* Edge 12 -18 */
+                        color:#B3B3B3;
+                        opacity: 1;
+                      }
                 }
                 .forgot-link{
                     position: absolute;

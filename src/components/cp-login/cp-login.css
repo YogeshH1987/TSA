@@ -51,11 +51,12 @@
     font-size: 2.4rem;
   }
 }
-.cp-login .rhs .title .sub-title {
+.cp-login .rhs .sub-title {
   font-size: 2rem;
   color: #333333;
   line-height: 28px;
   display: block;
+  font-family: "Poppins Semibold";
 }
 .cp-login .rhs .desc {
   font-size: 1.4rem;
@@ -109,6 +110,14 @@
   .cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
     width: 60px;
   }
+}
+.cp-login .rhs .form-wrap .form-group .form-input::placeholder {
+  color: #B3B3B3;
+  opacity: 1; /* Firefox */
+}
+.cp-login .rhs .form-wrap .form-group .form-input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #B3B3B3;
+  opacity: 1;
 }
 .cp-login .rhs .form-wrap .form-group .forgot-link {
   position: absolute;
