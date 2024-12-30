@@ -107,5 +107,27 @@
 .cp-table.w-100 {
   width: 100%;
 }
+.cp-table.typ-book-demo {
+  border: 0;
+}
+.cp-table.typ-book-demo .list-item {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .cp-table.typ-book-demo thead .list-head {
+    font-size: 1.2rem;
+  }
+}
+.cp-table.typ-book-demo thead .list-head:first-child {
+  border-radius: 0.4rem 0 0 0.4rem;
+  -webkit-border-radius: 0.4rem 0 0 0.4rem;
+  -moz-border-radius: 0.4rem 0 0 0.4rem;
+}
+.cp-table.typ-book-demo thead .list-head:last-child {
+  border-radius: 0 0.4rem 0.4rem 0;
+  -webkit-border-radius: 0 0.4rem 0.4rem 0;
+  -moz-border-radius: 0 0.4rem 0.4rem 0;
+}
 
 /*# sourceMappingURL=cp-table.css.map */
