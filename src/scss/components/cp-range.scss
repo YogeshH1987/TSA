@@ -9,10 +9,12 @@
     width: 100%;
     height: 0.6rem;
     .noUi-handle {
-      width: 2.4rem;
-      height: 2.1rem;
-      background: $clr-root url('./assets/images/tsa-pointer.png') 0 0 no-repeat;
+      width: 3.4rem;
+      height: 3rem;
+      background: transparent url('/components/cp-range/image/tsa-pointer.png') 0 0 no-repeat;
       @include border-radius(5px);
+      border: 0;
+      box-shadow: none;
     }
   
     .noUi-tooltip {
@@ -31,22 +33,27 @@
   
 }
 
-// .rangeslider{
-//     background: #CCCCCC;
-//     position: relative;
-//     box-shadow: none;
-//     &__fill{
-//         background: linear-gradient(90deg, #670015 -18.73%, #D2042D 29.33%);
-//     }
-//     &__handle{
-//         &::after{
-//             width: 2.4rem;
-//             height: 2.2rem;
-//             background: url('./assets/images/tsa-pointer.png') 0 0 no-repeat;
-//         }
-//     }
-// }
-
 .noUi-handle:after, .noUi-handle:before{
   display: none;
+}
+.noUi-horizontal .noUi-handle{
+  top: -11px;
+}
+.noUi-marker-horizontal.noUi-marker{
+  display: none;
+}
+
+.noUi-value {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: $clr-para;
+}
+.noUi-value-horizontal{
+  &:first-child{
+    left: 5% !important;
+  }
+  &:last-child{
+    left: 94% !important;
+  }
+ 
 }

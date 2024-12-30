@@ -44,4 +44,66 @@
   transition: 0.3s;
 }
 
+.cp-switch-toggle {
+  position: relative;
+  width: 8.1rem;
+  height: 3.6rem;
+  padding: 0.4rem;
+  background: #ECF2FB;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-family: "Poppins Regular";
+}
+.cp-switch-toggle input[type=checkbox] {
+  cursor: pointer;
+  position: absolute;
+  inset: 0;
+  appearance: none;
+  z-index: 2;
+}
+.cp-switch-toggle input[type=checkbox] + label.switch-toggle-label {
+  position: absolute;
+  inset: 0.4rem;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+  display: grid;
+  gap: 0.2rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  place-items: center;
+}
+.cp-switch-toggle input[type=checkbox] + label.switch-toggle-label:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  inset: 0;
+  background: #FFFFFF;
+  border-radius: 0.4rem;
+  box-shadow: 0px 10px 20px 0px rgba(16, 39, 68, 0.1);
+  translate: 0 0;
+  transition: translate 250ms cubic-bezier(0.93, 0.26, 0.07, 0.69);
+}
+.cp-switch-toggle input[type=checkbox] + label.switch-toggle-label span {
+  position: relative;
+  transition: 200ms linear;
+}
+.cp-switch-toggle input[type=checkbox] + label.switch-toggle-label span:nth-child(1) {
+  color: #3D7EDB;
+}
+.cp-switch-toggle input[type=checkbox] + label.switch-toggle-label span:nth-child(2) {
+  color: #333333;
+}
+.cp-switch-toggle input[type=checkbox]:checked + label.switch-toggle-label:before {
+  translate: 100% 0;
+}
+.cp-switch-toggle input[type=checkbox]:checked + label.switch-toggle-label span:nth-child(1) {
+  color: #333333;
+}
+.cp-switch-toggle input[type=checkbox]:checked + label.switch-toggle-label span:nth-child(2) {
+  color: #3D7EDB;
+}
+
 /*# sourceMappingURL=cp-switch.css.map */

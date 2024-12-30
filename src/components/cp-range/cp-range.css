@@ -11,12 +11,14 @@
   height: 0.6rem;
 }
 .cp-range.noUi-target .noUi-handle {
-  width: 2.4rem;
-  height: 2.1rem;
-  background: #FFFFFF url("./assets/images/tsa-pointer.png") 0 0 no-repeat;
+  width: 3.4rem;
+  height: 3rem;
+  background: transparent url("/components/cp-range/image/tsa-pointer.png") 0 0 no-repeat;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  border: 0;
+  box-shadow: none;
 }
 .cp-range.noUi-target .noUi-tooltip {
   background-color: #007bff;
@@ -31,6 +33,27 @@
 
 .noUi-handle:after, .noUi-handle:before {
   display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -11px;
+}
+
+.noUi-marker-horizontal.noUi-marker {
+  display: none;
+}
+
+.noUi-value {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #666666;
+}
+
+.noUi-value-horizontal:first-child {
+  left: 5% !important;
+}
+.noUi-value-horizontal:last-child {
+  left: 94% !important;
 }
 
 /*# sourceMappingURL=cp-range.css.map */

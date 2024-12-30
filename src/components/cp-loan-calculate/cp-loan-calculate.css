@@ -10,16 +10,32 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
   background: #FFFFFF;
-  padding: 5.5rem 4.8em;
+  padding: 5.5rem 4.8rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1023px) {
+  .cp-loan-calculate {
+    border: 0;
+    padding: 0;
+  }
+}
 .cp-loan-calculate .form-wrap {
   width: 58%;
 }
+@media only screen and (max-width: 1023px) {
+  .cp-loan-calculate .form-wrap {
+    width: 100%;
+  }
+}
 .cp-loan-calculate .graph-wrap {
   width: 35%;
+}
+@media only screen and (max-width: 1023px) {
+  .cp-loan-calculate .graph-wrap {
+    width: 100%;
+  }
 }
 .cp-loan-calculate .graph-wrap .donut-chart-section {
   text-align: center;
@@ -83,6 +99,7 @@
 .cp-loan-calculate .slider-container .slider-input {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0.8rem;
   gap: 1rem;
 }
@@ -105,6 +122,21 @@
   max-width: 12.4rem;
   width: 100%;
 }
+@media only screen and (max-width: 1023px) {
+  .cp-loan-calculate .slider-container .slider-input .slider-input {
+    padding: 0.6rem;
+  }
+}
+.cp-loan-calculate .slider-container .slider-input .slider-input.typ-year {
+  max-width: 4.8rem;
+}
+.cp-loan-calculate .slider-container .slider-input .slider-input.typ-rate {
+  max-width: 6.9rem;
+}
+.cp-loan-calculate .input-wrap {
+  display: flex;
+  gap: 1.2rem;
+}
 .loan-calc-table-wrap {
   border: 1px solid #DEDEDE;
   border-radius: 2.4rem;
@@ -112,7 +144,7 @@
   -moz-border-radius: 2.4rem;
 }
 @media only screen and (max-width: 1023px) {
-  .loan-calc-table-wrap {
+  .loan-calc-table-wrap .table-wrapper {
     overflow: hidden;
     overflow-x: scroll;
   }

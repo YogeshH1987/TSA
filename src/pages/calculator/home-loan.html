@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../../components/cp-note/cp-note.css" />
     <link rel="stylesheet" href="../../components/cp-table/cp-table.css" />
     <link rel="stylesheet" href="../../components/cp-range/cp-range.css" />
+    <link rel="stylesheet" href="../../components/cp-switch/cp-switch.css" />
 
 	
   </head>
@@ -44,8 +45,8 @@
 							</div>
 							<div class="slider-container">
 								<div class="slider-input">
-									<span class="slider-label">Annual Interest Rate (%):</span>
-									<input type="text" class="slider-input" readonly id="interestRateValue" value="5.0"></input>
+									<span class="slider-label">Annual Interest Rate (%):</span>									
+									<input type="text" class="slider-input typ-rate" readonly id="interestRateValue" value="5.0"></input>
 								</div>
 								<div id="interestRateSlider" class="cp-range"></div>
 							</div>
@@ -53,8 +54,18 @@
 							<div class="slider-container">
 								<div class="slider-input">
 									<span class="slider-label">Loan Tenure (years):</span>
-									<input type="text" class="slider-input" readonly  id="loanTenureValue" value="10"></input>
-								</div>
+									<div class="input-wrap">
+										<input type="text" class="slider-input typ-year" readonly  id="loanTenureValue" value="10"></input>							
+										<div class="cp-switch-toggle">
+											<input class="switch-toggle-checkbox" type="checkbox" id="pricing-plan-switch" />
+											<label class="switch-toggle-label" for="pricing-plan-switch">
+												<span>Yr</span>
+												<span>Mo</span>
+											</label>
+										</div>
+									</div>
+									
+								</div>								
 								<div id="loanTenureSlider" class="cp-range"></div>
 							</div>
 						</div>

@@ -13,10 +13,14 @@ TSA.HomeLoanCalculator = {
                 'max': 10000000
             },
             step: 10000,
-            // pips: {
-            //     mode: 'range',
-            //     density: 2
-            // }
+            pips: {
+                mode: 'positions',
+                values: [0, 100], // Only show min and max
+                density: 100, // This ensures only the start and end values are displayed
+                format: {
+                    to: (value) => '₹' + value.toLocaleString() // Format values as currency
+                }
+            }
         });
 
         noUiSlider.create(interestRateSlider, {
@@ -26,7 +30,15 @@ TSA.HomeLoanCalculator = {
                 'min': 1,
                 'max': 15
             },
-            step: 0.1
+            step: 0.1,
+            pips: {
+                mode: 'positions',
+                values: [0, 100], // Only show min and max
+                density: 100, // This ensures only the start and end values are displayed
+                format: {
+                    to: (value) => value.toFixed(1) + '% p.a' // Format values as percentage
+                }
+            }
         });
 
         noUiSlider.create(loanTenureSlider, {
@@ -36,7 +48,15 @@ TSA.HomeLoanCalculator = {
                 'min': 1,
                 'max': 30
             },
-            step: 1
+            step: 1,
+            pips: {
+                mode: 'positions',
+                values: [0, 100], // Only show min and max
+                density: 100, // This ensures only the start and end values are displayed
+                format: {
+                    to: (value) => value + ' years' // Format values as years
+                }
+            }
         });
 
         loanAmountSlider.noUiSlider.on('update', (values) => {
@@ -123,7 +143,6 @@ TSA.HomeLoanCalculator = {
             if (balance === 0) break;
         }
 
-        // Compile and render the amortization table
         const amortizationTemplate = Handlebars.compile($('#amortization-template').html());
         const html = amortizationTemplate({ schedule });
         $('#amortizationSchedule').replaceWith(html);
@@ -153,7 +172,6 @@ TSA.HomeLoanCalculator = {
             .attr('d', arc)
             .attr('fill', d => color(d.data.label));
 
-        // Add the total payment label in the center
         svg.append('text')
             .attr('text-anchor', 'middle')
             .attr('font-size', '18px')
