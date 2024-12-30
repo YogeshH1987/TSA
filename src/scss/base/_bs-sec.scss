@@ -794,4 +794,28 @@
     }
     
   }
+  &.typ-blog{
+    margin-top: 18rem;
+    .filter-sec{
+      display: flex;
+      gap: 1rem;
+      .title{
+        font-size: 1.6rem;
+        font-family: $font-semiBold;
+        color: $clr-para;
+      }
+      .filter-tag{
+        background: $clr-bg;
+        text-align: center;
+        color: $clr-para;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        padding: 0.2rem 1rem;
+        .close{
+          color:$clr-para;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }

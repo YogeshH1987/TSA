@@ -1955,6 +1955,30 @@ p {
 .bs-sec.typ-login .container .successful-msg .icon {
   font-size: 2rem;
 }
+.bs-sec.typ-blog {
+  margin-top: 18rem;
+}
+.bs-sec.typ-blog .filter-sec {
+  display: flex;
+  gap: 1rem;
+}
+.bs-sec.typ-blog .filter-sec .title {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #666666;
+}
+.bs-sec.typ-blog .filter-sec .filter-tag {
+  background: #ECF2FB;
+  text-align: center;
+  color: #666666;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 0.2rem 1rem;
+}
+.bs-sec.typ-blog .filter-sec .filter-tag .close {
+  color: #666666;
+  font-size: 1.2rem;
+}
 
 .btn {
   display: inline-block;
