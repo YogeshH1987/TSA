@@ -26,8 +26,11 @@
 }
 .cp-login .lhs .img-wrap {
   width: 100%;
-  height: 100%;
+  height: 768px;
   overflow: hidden;
+}
+.cp-login .lhs .img-wrap img {
+  object-fit: cover;
 }
 .cp-login .rhs {
   width: 50%;
