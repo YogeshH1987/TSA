@@ -613,6 +613,14 @@
   display: none;
   padding-left: 0;
 }
+.cp-product-card.typ-pravesh .action-wrap.border-0 {
+  border: 0;
+  padding-top: 0;
+}
+.cp-product-card.typ-pravesh .action-wrap.border-0 .btn {
+  font-size: 1.2rem;
+  padding: 0.9rem 1.2rem;
+}
 .cp-product-card.img-pravesh {
   height: 69.7rem;
 }

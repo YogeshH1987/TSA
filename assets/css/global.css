@@ -2941,11 +2941,12 @@ p {
 .bs-radio.typ-pravesh-pdp .custom-radio {
   min-width: 100%;
   width: 100%;
-  padding: 0.5rem 1.6rem;
+  padding: 0.5rem;
 }
 .bs-radio.typ-pravesh-pdp .custom-radio .ellipsis {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #666666;
+  text-align: center;
 }
 @media only screen and (max-width: 991px) {
   .bs-radio.typ-pravesh-pdp .custom-radio .ellipsis {

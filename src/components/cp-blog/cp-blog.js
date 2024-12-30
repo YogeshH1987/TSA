@@ -4,11 +4,13 @@ $(document).ready(function() {
     // addedFavorite();
     blogSlider()
     whyPraveshSlider()
+    whyPraveshDrawerSlider()
 });
 
 $(window).resize(function() {
     blogSlider()
     whyPraveshSlider()
+    whyPraveshDrawerSlider()
 });
 
 // function addedFavorite() {
@@ -38,5 +40,13 @@ function whyPraveshSlider(){
         loop: false,
         navigation: false,
         spaceBetween: 20,
+    }); 
+}
+function whyPraveshDrawerSlider(){
+    var swiper = new Swiper(".js-why-pravesh-drawer", {
+        slidesPerView: 2.2,
+        loop: false,
+        navigation: false,
+        spaceBetween: 10,
     }); 
 }
