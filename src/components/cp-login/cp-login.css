@@ -343,6 +343,22 @@
   color: #EE4400;
   font-family: "icomoon" !important;
 }
+.cp-login .rhs.relative {
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs.relative {
+    position: static;
+  }
+}
+.cp-login .rhs.typ-2 {
+  padding-right: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs.typ-2 {
+    padding-right: 0;
+  }
+}
 .cp-login input[type=number]::-webkit-inner-spin-button,
 .cp-login input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -350,6 +366,422 @@
 }
 .cp-login input[type=number] {
   -moz-appearance: textfield;
+}
+.cp-login .step-sec {
+  background-color: #612D61;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  margin-bottom: 3.2rem;
+  padding: 1.2rem 1.6rem;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .step-sec {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+}
+.cp-login .step-sec .steps-num {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+}
+.cp-login .step-sec .step-main {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.cp-login .step-sec .step-main .step {
+  width: 25%;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+}
+.cp-login .step-sec .step-main .step.active {
+  background-color: #FFB800;
+}
+.cp-login .step-sec .step-main .step.finish {
+  background-color: #FFB800;
+}
+.cp-login.mt-2 {
+  margin-top: 2.4rem;
+}
+.cp-login .sticky {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #DEDEDE;
+  padding: 2.4rem 4.8rem;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem;
+  border-radius: 0 0 24px 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky {
+    padding: 3.4rem 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky .desc {
+    width: 100%;
+  }
+}
+.cp-login .sticky .btn-steps {
+  min-width: auto;
+  padding: 1.1rem 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky .btn-steps {
+    min-width: 47%;
+  }
+}
+.cp-login .sticky .btn-link {
+  font-size: 1.4rem;
+}
+.cp-login .steps-content {
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content {
+    max-height: 100%;
+    padding-right: 0rem;
+    margin-top: 7rem;
+  }
+}
+.cp-login .steps-content .title {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+.cp-login .steps-content .title.typ-small {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.cp-login .steps-content .typ-steps {
+  margin-bottom: 1.2rem;
+}
+.cp-login .steps-content .typ-steps .custom-radio {
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1.2rem;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon {
+  width: 40px;
+  height: 40px;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 50%;
+  flex: 0 0 4rem;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.blue {
+  background: #ECF2FB;
+  color: #3D7EDB;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.orange {
+  background: #FFF8E5;
+  color: #FFB800;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.red {
+  background: #FAE6EA;
+  color: #D2042D;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.green {
+  background: #E5F6EC;
+  color: #00A441;
+}
+.cp-login .steps-content .typ-steps .custom-radio span:last-child {
+  flex: 0 0 calc(100% - 5rem);
+}
+.cp-login .steps-content .typ-steps input[type=radio]:checked + .custom-radio {
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+.cp-login .steps-content .typ-size {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.cp-login .steps-content .typ-size .bs-radio {
+  margin-bottom: 0;
+}
+.cp-login .steps-content .typ-size .bs-radio .custom-radio {
+  min-width: auto;
+  padding: 1.2rem 1.6rem;
+}
+.cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
+  min-width: 76px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
+    min-width: 74px;
+  }
+}
+.cp-login .steps-content .form-wrap .form-group {
+  position: relative;
+}
+.cp-login .steps-content .form-wrap .form-group .form-input {
+  padding-right: 4rem;
+}
+.cp-login .steps-content .form-wrap .form-group .icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 2.4rem;
+  color: #999999;
+}
+.cp-login .steps-content .range-main {
+  display: block;
+  padding: 0 11px 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main {
+    padding: 0 15px 0 0;
+  }
+}
+.cp-login .steps-content .range-main .range {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+.cp-login .steps-content .range-main .range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+.cp-login .steps-content .range-main .range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 42px;
+  height: 44px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-login .steps-content .range-main .range input::-moz-range-thumb {
+  width: 42px;
+  height: 44px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-login .steps-content .range-main .range input::-ms-thumb {
+  width: 42px;
+  height: 44px;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-login .steps-content .range-main .range input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.4rem;
+  cursor: pointer;
+  background: #DEDEDE;
+  border-radius: 1.2rem;
+}
+.cp-login .steps-content .range-main .range input::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+.cp-login .steps-content .range-main .range input::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+.cp-login .steps-content .range-main .range input:focus {
+  background: none;
+  outline: none;
+}
+.cp-login .steps-content .range-main .range .range input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.cp-login .steps-content .range-main .range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main .range-labels {
+    margin: 18px -19px 0;
+  }
+}
+.cp-login .steps-content .range-main .range-labels li {
+  position: relative;
+  width: 96.25px;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main .range-labels li {
+    width: 75.25px;
+  }
+}
+.cp-login .steps-content .range-main .range-labels .active {
+  color: #333333;
+  font-size: 3.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main .range-labels .active {
+    font-size: 2rem;
+  }
+}
+.cp-login .steps-content .range-main .range-labels .selected::before {
+  background: #333333;
+}
+.cp-login .steps-content .range-main .range-labels .active.selected::before {
+  display: none;
+}
+
+.typ-get-started {
+  margin-top: 16rem;
+  padding-bottom: 0;
+}
+.typ-get-started .img-wrap {
+  height: calc(100vh - 150px);
+  position: relative;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap {
+    height: calc(100vh - 130px);
+  }
+}
+.typ-get-started .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.typ-get-started .img-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  height: 100%;
+}
+.typ-get-started .img-wrap .get-started-main {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  max-width: 124rem;
+  right: 0;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main {
+    width: 100%;
+    padding: 0rem 1.6rem;
+    bottom: 50px;
+    transform: none;
+    top: auto;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .title {
+  color: #FFFFFF;
+  font-family: "Poppins Semibold";
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .title {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .small-text {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  margin-bottom: 2.4rem;
+  color: #FFFFFF;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .small-text {
+    font-size: 2.4rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .small-text.underline-text {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  margin-top: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .small-text.underline-text {
+    text-align: center;
+    margin-top: 2.4rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .brand {
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .brand {
+    font-size: 1.6rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .get-started-btn {
+  min-width: 23.6rem;
+  margin-top: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .get-started-btn {
+    min-width: 100%;
+  }
+}
+
+.tab {
+  display: none;
 }
 
 /*# sourceMappingURL=cp-login.css.map */

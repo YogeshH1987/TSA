@@ -1,0 +1,156 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-checkbox {
+	display: block;
+
+	input {
+		padding: 0;
+		height: initial;
+		width: initial;
+		margin-bottom: 0;
+		display: none;
+		cursor: pointer;
+
+		&:checked {
+			&+label {
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 2px;
+					left: 9px;
+					width: 5px;
+					height: 10px;
+					border: solid #999999;
+					border-width: 0 2px 2px 0;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+
+	label {
+		position: relative;
+		cursor: pointer;
+		font-size: 1.4rem;
+		line-height: 2rem;
+		padding-left: 4rem;
+
+		&:before {
+			content: '';
+			-webkit-appearance: none;
+			background-color: transparent;
+			border: 1px solid #999999;
+			width: 1.6rem;
+			height: 1.6rem;
+			@include border-radius(0.4rem);
+			display: inline-block;
+			position: relative;
+			vertical-align: middle;
+			cursor: pointer;
+			position: absolute;
+			top: 5px;
+			left: 0;
+		}
+	}
+
+	&.typ-2 {
+		display: flex;
+		align-items: center;
+		padding: 2.4rem 0;
+		border-bottom: 1px solid #DEDEDE;
+
+		input {
+			&:checked {
+				&+label {
+					&:after {
+						top: 6px;
+						left: 9px;
+						border: solid #fff;
+						border-width: 0 2px 2px 0;
+					}
+				}
+			}
+
+			&:checked {
+				&+label {
+					font-family: $font-medium;
+
+					&:before {
+						background-color: #3D7EDB;
+						border: 2px solid #3D7EDB;
+					}
+				}
+			}
+		}
+
+		label {
+			padding-left: 3.6rem;
+			color: $clr-base;
+			line-height: normal;
+
+			&:before {
+				width: 2.4rem;
+				height: 2.4rem;
+				top: 0;
+				border: 2px solid #808080;
+			}
+		}
+	}
+
+	&.typ-3 {
+		display: flex;
+		flex-wrap: wrap;
+		width: 48%;
+		@media only screen and (max-width: $media-mobile) { width: 47%;}
+		label {
+			width: 100%;
+			border: 1px solid #DEDEDE;
+			border-radius: 1.6rem;
+			padding: 1.6rem;
+
+			.icon {
+				border: 1px solid #DEDEDE;
+				width: 5.6rem;
+				height: 5.6rem;
+				padding: 1.2rem;
+				color: $clr-base;
+				font-size: 3.2rem;
+				border-radius: 1.2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 1.6rem;
+				background-color: $clr-root;
+			}
+
+			&:before {
+				content: none;
+			}
+			&::after {
+				content: none;
+			}
+		}
+
+		input {
+			&:checked {
+				&+label {
+					background-color: #ECF2FB;
+					border: 2px solid #3D7EDB;
+					font-family: $font-medium;
+					&::after {
+						content: none;
+					}
+					.icon { border-color: #fff;}
+				}
+			}
+		}
+	}
+}
+
+.typ-check-main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.6rem;
+}
