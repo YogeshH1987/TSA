@@ -1,8 +1,7 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-range {
-
+.cp-noui-range-slide{
   &.noUi-target {
     background: #EDEDED; // Matches the background of the container
     border-radius: 0.6rem;
@@ -11,7 +10,7 @@
     .noUi-handle {
       width: 3.4rem;
       height: 3rem;
-      background: transparent url('/components/cp-range/image/tsa-pointer.png') 0 0 no-repeat;
+      background: transparent url('/components/cp-noui-range-slider/image/tsa-pointer.png') 0 0 no-repeat;
       @include border-radius(5px);
       border: 0;
       box-shadow: none;
@@ -28,9 +27,7 @@
       background: linear-gradient(90deg, #670015 -18.73%, #D2042D 29.33%);
     }
     
-  }
-
-  
+  }  
 }
 
 .noUi-handle:after, .noUi-handle:before{
@@ -47,6 +44,7 @@
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: $clr-para;
+  left: 5% !important;
 }
 .noUi-value-horizontal{
   &:first-child{

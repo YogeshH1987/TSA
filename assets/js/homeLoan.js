@@ -4,7 +4,9 @@ TSA.HomeLoanCalculator = {
         const loanAmountSlider = document.getElementById('loanAmountSlider');
         const interestRateSlider = document.getElementById('interestRateSlider');
         const loanTenureSlider = document.getElementById('loanTenureSlider');
+        const pricingPlanSwitch = document.getElementById('pricing-plan-switch');
 
+        // Initialize sliders
         noUiSlider.create(loanAmountSlider, {
             start: 500000,
             connect: [true, false],
@@ -16,7 +18,7 @@ TSA.HomeLoanCalculator = {
             pips: {
                 mode: 'positions',
                 values: [0, 100], // Only show min and max
-                density: 100, // This ensures only the start and end values are displayed
+                density: 100,
                 format: {
                     to: (value) => '₹' + value.toLocaleString() // Format values as currency
                 }
@@ -33,8 +35,8 @@ TSA.HomeLoanCalculator = {
             step: 0.1,
             pips: {
                 mode: 'positions',
-                values: [0, 100], // Only show min and max
-                density: 100, // This ensures only the start and end values are displayed
+                values: [0, 100],
+                density: 100,
                 format: {
                     to: (value) => value.toFixed(1) + '% p.a' // Format values as percentage
                 }
@@ -51,14 +53,69 @@ TSA.HomeLoanCalculator = {
             step: 1,
             pips: {
                 mode: 'positions',
-                values: [0, 100], // Only show min and max
-                density: 100, // This ensures only the start and end values are displayed
+                values: [0, 100],
+                density: 100,
                 format: {
-                    to: (value) => value + ' years' // Format values as years
+                    to: (value) => value + ' years'
                 }
             }
         });
 
+        // Handle pricing plan switch (monthly/yearly toggle)
+        pricingPlanSwitch.addEventListener('change', () => {
+            const isMonthly = pricingPlanSwitch.checked; // Assume checked = Monthly, unchecked = Yearly
+            const loanTenureValue = $('#loanTenureValue');
+            const currentValue = parseInt(loanTenureValue.val());
+
+            if (isMonthly) {
+                // Switch to monthly mode
+                loanTenureSlider.noUiSlider.updateOptions({
+                    range: {
+                        'min': 12,  // Minimum tenure in months
+                        'max': 360  // Maximum tenure in months
+                    },
+                    step: 1,
+                    pips: {
+                        mode: 'positions',
+                        values: [0, 100],
+                        density: 100,
+                        format: {
+                            to: (value) => value + ' months'
+                        }
+                    }
+                });
+                // Convert current value from years to months if applicable
+                const newValue = currentValue * 12;
+                loanTenureSlider.noUiSlider.set(newValue);
+                loanTenureValue.val(newValue);
+            } else {
+                // Switch to yearly mode
+                loanTenureSlider.noUiSlider.updateOptions({
+                    range: {
+                        'min': 1,  // Minimum tenure in years
+                        'max': 30  // Maximum tenure in years
+                    },
+                    step: 1,
+                    pips: {
+                        mode: 'positions',
+                        values: [0, 100],
+                        density: 100,
+                        format: {
+                            to: (value) => value + ' years'
+                        }
+                    }
+                });
+                // Convert current value from months to years if applicable
+                const newValue = Math.round(currentValue / 12);
+                loanTenureSlider.noUiSlider.set(newValue);
+                loanTenureValue.val(newValue);
+            }
+
+            // Recalculate and update results
+            TSA.HomeLoanCalculator.calculateAndDisplayResults();
+        });
+
+        // Sliders event listeners
         loanAmountSlider.noUiSlider.on('update', (values) => {
             $('#loanAmountValue').val(parseInt(values[0]));
             this.calculateAndDisplayResults();
@@ -73,6 +130,80 @@ TSA.HomeLoanCalculator = {
             $('#loanTenureValue').val(parseInt(values[0]));
             this.calculateAndDisplayResults();
         });
+
+        // Input event listeners to update sliders when the input fields change
+        $('#loanAmountValue').on('input change keyup', (e) => {
+            let value = e.target.value.trim(); // Trim the value to remove any extra spaces
+            console.log(value)
+            // Allow empty input (so you can clear the field)
+            // if (value === '') {
+            //     loanAmountSlider.noUiSlider.set(null); // Reset the slider if the input is empty
+            //     return;
+            // }
+        
+            value = parseInt(value);
+            const minValue = loanAmountSlider.noUiSlider.options.range.min;
+            const maxValue = loanAmountSlider.noUiSlider.options.range.max;
+        
+            // Ensure the value is within the range
+            // if (value < minValue) {
+            //     value = minValue;
+            // } else if (value > maxValue) {
+            //     value = maxValue;
+            // }
+        
+            loanAmountSlider.noUiSlider.set(value);
+            this.calculateAndDisplayResults();
+        });
+        
+        $('#interestRateValue').on('input change keyup', (e) => {
+            let value = e.target.value.trim();
+            
+            // Allow empty input (so you can clear the field)
+            if (value === '') {
+                interestRateSlider.noUiSlider.set(null); // Reset the slider if the input is empty
+                return;
+            }
+        
+            value = parseFloat(value);
+            const minValue = interestRateSlider.noUiSlider.options.range.min;
+            const maxValue = interestRateSlider.noUiSlider.options.range.max;
+        
+            // Ensure the value is within the range
+            if (value < minValue) {
+                value = minValue;
+            } else if (value > maxValue) {
+                value = maxValue;
+            }
+        
+            interestRateSlider.noUiSlider.set(value);
+            this.calculateAndDisplayResults();
+        });
+        
+        $('#loanTenureValue').on('input change keyup', (e) => {
+            let value = e.target.value.trim();
+            
+            // Allow empty input (so you can clear the field)
+            if (value === '') {
+                loanTenureSlider.noUiSlider.set(null); // Reset the slider if the input is empty
+                return;
+            }
+        
+            value = parseInt(value);
+            const minValue = loanTenureSlider.noUiSlider.options.range.min;
+            const maxValue = loanTenureSlider.noUiSlider.options.range.max;
+        
+            // Ensure the value is within the range
+            if (value < minValue) {
+                value = minValue;
+            } else if (value > maxValue) {
+                value = maxValue;
+            }
+        
+            loanTenureSlider.noUiSlider.set(value);
+            this.calculateAndDisplayResults();
+        });
+        
 
         this.calculateAndDisplayResults();
     },

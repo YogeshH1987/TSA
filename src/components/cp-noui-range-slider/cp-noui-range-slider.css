@@ -4,30 +4,30 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
-.cp-range.noUi-target {
+.cp-noui-range-slide.noUi-target {
   background: #EDEDED;
   border-radius: 0.6rem;
   width: 100%;
   height: 0.6rem;
 }
-.cp-range.noUi-target .noUi-handle {
+.cp-noui-range-slide.noUi-target .noUi-handle {
   width: 3.4rem;
   height: 3rem;
-  background: transparent url("/components/cp-range/image/tsa-pointer.png") 0 0 no-repeat;
+  background: transparent url("/components/cp-noui-range-slider/image/tsa-pointer.png") 0 0 no-repeat;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border: 0;
   box-shadow: none;
 }
-.cp-range.noUi-target .noUi-tooltip {
+.cp-noui-range-slide.noUi-target .noUi-tooltip {
   background-color: #007bff;
   color: #fff;
   font-size: 12px;
   border-radius: 4px;
   padding: 2px 5px;
 }
-.cp-range.noUi-target .noUi-connect {
+.cp-noui-range-slide.noUi-target .noUi-connect {
   background: linear-gradient(90deg, #670015 -18.73%, #D2042D 29.33%);
 }
 
@@ -57,4 +57,4 @@
   left: 94% !important;
 }
 
-/*# sourceMappingURL=cp-range.css.map */
+/*# sourceMappingURL=cp-noui-range-slider.css.map */
