@@ -220,6 +220,7 @@
             }
         }
     }
+<<<<<<< HEAD
     &.typ-circle-radio{
         .custom-radio{ position: relative; padding: 0; padding-left: 4rem; display: block; border: none; background: none; color: $clr-base;}
         .checkmark {
@@ -260,5 +261,19 @@
             background:none;
             font-family: $font-medium;
         }   
+=======
+    
+    &.typ-book-demo{
+        .custom-radio {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.2rem 1.6rem;
+    
+            @media only screen and (max-width: $media-sm) {
+                min-width: 16.5rem;
+                align-items: flex-start;
+            }
+        }
+>>>>>>> 04c9dda (book a demo page)
     }
 }

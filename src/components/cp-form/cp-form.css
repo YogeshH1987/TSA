@@ -1,99 +1,17 @@
-/*transform*/
-/*opacity*/
-/*opacity- end*/
-/* colors */
-/*font family*/
-/* breakpoints */
-.cp-form {
-  margin-top: 3.2rem;
-}
-.cp-form .feedback-title {
-  font-family: "Poppins Medium";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  margin-bottom: 1.2rem;
-}
-.cp-form .form-group .form-label {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-.cp-form .form-group .form-control {
-  width: 100%;
-  padding: 1.2rem 1.6rem;
-  border: 1px solid #DEDEDE;
-  font-family: "Poppins Regular";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  border-radius: 1.2rem;
-}
-.cp-form .form-group .form-textarea {
-  width: 100%;
-  padding: 1.2rem 1.6rem;
-  border: 1px solid #DEDEDE;
-  font-family: "Poppins Regular";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  border-radius: 1.2rem;
-  min-height: 15.6rem;
-}
-.cp-form .form-group .err-mgs {
-  color: #D2042D;
-  font-family: "Poppins Medium";
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-bottom: 2.4rem;
-  display: block;
-}
-.cp-form .act-wrap .btn-submit {
-  width: 100%;
-}
-.cp-form .disabled {
-  background-color: #ededed;
-  color: #b3b3b3;
-  border: none;
-}
-.cp-form .star-label,
-.cp-form .review-label,
-.cp-form .title-label {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  margin-bottom: 0.8rem;
-}
-.cp-form .star-rating {
-  padding-bottom: 2.4rem;
-  border-bottom: 1px solid #DEDEDE;
-  margin-bottom: 2.4rem;
-}
-.cp-form .star-rating .icon {
-  font-size: 4.8rem;
-  color: #cccccc;
-}
-.cp-form .star-rating .star-selected {
-  color: #ffb800;
-}
-.cp-form.typ-location .act-wrap, .cp-form.typ-language .act-wrap {
-  margin-top: 2.4rem;
-  text-align: center;
-}
-.cp-form.typ-location .act-wrap .btn-submit, .cp-form.typ-language .act-wrap .btn-submit {
-  margin-bottom: 2.4rem;
-}
-.cp-form.typ-location .radio-wrap, .cp-form.typ-language .radio-wrap {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-.cp-form.typ-location .bs-radio, .cp-form.typ-language .bs-radio {
-  margin-bottom: 0;
-}
-.cp-form.typ-location .bs-radio .custom-radio, .cp-form.typ-language .bs-radio .custom-radio {
-  min-width: 8.4rem;
-  padding: 1.25rem 0;
-}
+/* Error: expected "{".
+ *    ,
+ * 31 |       margin-bottom: 0.8rem;
+ *    |                            ^
+ *    '
+ *   src/scss/components/cp-form.scss 31:28  root stylesheet */
 
-/*# sourceMappingURL=cp-form.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 31 \2502        margin-bottom: 0.8rem;\a    \2502                             ^\a    \2575 \a   src/scss/components/cp-form.scss 31:28  root stylesheet';
+}

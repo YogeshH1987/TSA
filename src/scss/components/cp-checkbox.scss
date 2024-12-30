@@ -1,9 +1,14 @@
 @import "../config/variables";
 @import "../config/mixin";
 
+<<<<<<< HEAD
 .cp-checkbox {
 	display: block;
 
+=======
+.cp-checkbox{
+	display: block;
+>>>>>>> 04c9dda (book a demo page)
 	input {
 		padding: 0;
 		height: initial;
@@ -11,9 +16,14 @@
 		margin-bottom: 0;
 		display: none;
 		cursor: pointer;
+<<<<<<< HEAD
 
 		&:checked {
 			&+label {
+=======
+		&:checked {
+			& + label {
+>>>>>>> 04c9dda (book a demo page)
 				&:after {
 					content: '';
 					display: block;
@@ -29,6 +39,7 @@
 			}
 		}
 	}
+<<<<<<< HEAD
 
 	label {
 		position: relative;
@@ -37,18 +48,33 @@
 		line-height: 2rem;
 		padding-left: 4rem;
 
+=======
+	label {
+		position: relative;
+		cursor: pointer;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding-left: 4rem;
+>>>>>>> 04c9dda (book a demo page)
 		&:before {
 			content: '';
 			-webkit-appearance: none;
 			background-color: transparent;
 			border: 1px solid #999999;
+<<<<<<< HEAD
 			width: 1.6rem;
 			height: 1.6rem;
 			@include border-radius(0.4rem);
+=======
+            width: 1.6rem;
+            height: 1.6rem;
+            @include border-radius(0.4rem);
+>>>>>>> 04c9dda (book a demo page)
 			display: inline-block;
 			position: relative;
 			vertical-align: middle;
 			cursor: pointer;
+<<<<<<< HEAD
 			position: absolute;
 			top: 5px;
 			left: 0;
@@ -176,3 +202,11 @@
 	flex-wrap: wrap;
 	gap: 1.6rem;
 }
+=======
+            position: absolute;
+            top: 5px;
+            left: 0;
+		}
+	}
+}
+>>>>>>> 04c9dda (book a demo page)
