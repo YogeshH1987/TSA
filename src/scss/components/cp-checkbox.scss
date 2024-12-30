@@ -103,7 +103,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: 48%;
-		@media only screen and (max-width: $media-mobile) { width: 47%;}
+
+		@media only screen and (max-width: $media-mobile) {
+			width: 47%;
+		}
+
 		label {
 			width: 100%;
 			border: 1px solid #DEDEDE;
@@ -128,6 +132,7 @@
 			&:before {
 				content: none;
 			}
+
 			&::after {
 				content: none;
 			}
@@ -139,10 +144,27 @@
 					background-color: #ECF2FB;
 					border: 2px solid #3D7EDB;
 					font-family: $font-medium;
+
 					&::after {
 						content: none;
 					}
-					.icon { border-color: #fff;}
+
+					.icon {
+						border-color: #fff;
+						color: #3D7EDB;
+					}
+				}
+			}
+		}
+	}
+
+	&.typ-border-0 {
+		border: none;
+		label{ color: $clr-para;}
+		input {
+			&:checked {
+				&+label {
+					font-family: $font-regular;
 				}
 			}
 		}

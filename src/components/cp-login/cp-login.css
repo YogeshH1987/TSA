@@ -25,8 +25,8 @@
   }
 }
 .cp-login .lhs .img-wrap {
-  width: 507px;
-  height: 766px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .cp-login .rhs {
@@ -51,6 +51,10 @@
     font-size: 2.4rem;
   }
 }
+.cp-login .rhs .title.typ-small {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
 .cp-login .rhs .sub-title {
   font-size: 2rem;
   color: #333333;
@@ -74,13 +78,12 @@
 }
 .cp-login .rhs .form-wrap.typ2 {
   position: relative;
-  height: 100vh;
 }
 .cp-login .rhs .form-wrap .form-group {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 2.4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-login .rhs .form-wrap .form-group {
@@ -113,9 +116,11 @@
 }
 .cp-login .rhs .form-wrap .form-group .form-input::placeholder {
   color: #B3B3B3;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
-.cp-login .rhs .form-wrap .form-group .form-input::-ms-input-placeholder { /* Edge 12 -18 */
+.cp-login .rhs .form-wrap .form-group .form-input::-ms-input-placeholder {
+  /* Edge 12 -18 */
   color: #B3B3B3;
   opacity: 1;
 }
@@ -133,6 +138,15 @@
 .cp-login .rhs .form-wrap .form-group .otp-wrap {
   display: flex;
   justify-content: space-between;
+}
+.cp-login .rhs .form-wrap .icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 2.4rem;
+  color: #999999;
 }
 .cp-login .rhs .act-wrap .login-btn {
   width: 100%;
@@ -428,12 +442,17 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-login .sticky {
-    padding: 3.4rem 0 0;
+    padding: 1.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: static;
   }
 }
 @media only screen and (max-width: 768px) {
   .cp-login .sticky .desc {
     width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
   }
 }
 .cp-login .sticky .btn-steps {
@@ -447,6 +466,14 @@
 }
 .cp-login .sticky .btn-link {
   font-size: 1.4rem;
+}
+.cp-login .sticky .login-btn {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky.typ-p-0 {
+    padding: 1.6rem 0;
+  }
 }
 .cp-login .steps-content {
   max-height: 550px;
@@ -464,10 +491,6 @@
   font-size: 2rem;
   line-height: 2.8rem;
   margin-bottom: 2rem;
-}
-.cp-login .steps-content .title.typ-small {
-  font-size: 1.6rem;
-  margin-bottom: 1.6rem;
 }
 .cp-login .steps-content .typ-steps {
   margin-bottom: 1.2rem;
@@ -533,20 +556,14 @@
     min-width: 74px;
   }
 }
+.cp-login .steps-content .typ-size.typ-2 .bs-radio {
+  width: 48%;
+}
 .cp-login .steps-content .form-wrap .form-group {
   position: relative;
 }
 .cp-login .steps-content .form-wrap .form-group .form-input {
   padding-right: 4rem;
-}
-.cp-login .steps-content .form-wrap .form-group .icon {
-  width: 3.2rem;
-  height: 3.2rem;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  font-size: 2.4rem;
-  color: #999999;
 }
 .cp-login .steps-content .range-main {
   display: block;
@@ -676,6 +693,15 @@
 .cp-login .steps-content .range-main .range-labels .active.selected::before {
   display: none;
 }
+.cp-login .steps-content.typ-content {
+  max-height: 610px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content.typ-content {
+    max-height: 100%;
+    margin-top: 0;
+  }
+}
 
 .typ-get-started {
   margin-top: 16rem;
@@ -782,6 +808,23 @@
 
 .tab {
   display: none;
+}
+
+.typ-drawer-login .cont-wrap .cont-phara {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 3.2rem;
+}
+.typ-drawer-login .cont-wrap .small-head {
+  font-family: "Poppins Semibold";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+}
+.typ-drawer-login .typ-privacy .btn {
+  min-width: 47%;
+  border-color: #fff;
 }
 
 /*# sourceMappingURL=cp-login.css.map */

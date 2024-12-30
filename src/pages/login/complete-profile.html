@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
     <link rel="stylesheet" href="/components/cp-price/cp-price.css" />
-
-   
+    <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
 
 </head>
 
@@ -113,44 +113,94 @@
     </header>
     <!-- Header end -->
     <div class="main">
-     <section class="bs-sec typ-first-sec typ-login">
-      <div class="container">
-       
-        <div class="cp-login">
-            <div class="lhs">
-                <div class="img-wrap">
-                    <img src="../../components/cp-login/image/Frame 1597882851.png" alt="login image"/>
+        <section class="bs-sec typ-first-sec typ-login">
+            <div class="container">
+
+                <div class="cp-login">
+                    <div class="lhs">
+                        <div class="img-wrap">
+                            <img src="../../components/cp-login/image/Frame 1597882851.png" alt="login image" />
+                        </div>
+                    </div>
+                    <div class="rhs relative typ-2">
+                        <div class="steps-content typ-content">
+                            <h2 class="sub-title">Complete your details</h2>
+                            <div class="form-wrap">
+                                <div class="form-group">
+                                    <label class="form-label">Mobile number</label>
+                                    <input type="number" name="" class="form-input" placeholder="Enter mobile number" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Email ID</label>
+                                    <input type="password" name="" class="form-input" placeholder="Enter Email Id" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Pincode</label>
+                                    <input type="number" name="" class="form-input" placeholder="Enter mobile number" />
+                                    <icon class="icon icon-edit-1"></icon>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">GST number (Optional)</label>
+                                    <input type="number" name="" class="form-input" placeholder="Enter GST number" />
+                                </div>
+                            </div>
+
+                            <h2 class="title typ-small">How did you come to know about Aashiyana?</h2>
+
+                            <div class="radio-wrap typ-size typ-2">
+                                <div class="bs-radio">
+                                    <input id="radio1" name="size" type="radio">
+                                    <label for="radio1" class="custom-radio">
+                                        <span>Friends/family</span>
+                                    </label>
+                                </div>
+
+                                <div class="bs-radio">
+                                    <input id="radio2" name="size" type="radio">
+                                    <label for="radio2" class="custom-radio">
+                                        <span>Dealers</span>
+                                    </label>
+                                </div>
+
+                                <div class="bs-radio">
+                                    <input id="radio3" name="size" type="radio">
+                                    <label for="radio3" class="custom-radio">
+                                        <span>Online ads</span>
+                                    </label>
+                                </div>
+                                <div class="bs-radio">
+                                    <input id="radio4" name="size" type="radio">
+                                    <label for="radio4" class="custom-radio">
+                                        <span>Others</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="check-wrap">
+                                <div class="form-group">
+                                    <div class="cp-checkbox typ-2 typ-border-0">
+                                        <input type="checkbox" id="check1" class="js-drawer" data-id="privacy">
+                                        <label for="check1">I hereby expressly agree to receive all types of
+                                            communications, including but not limited to
+                                            promotional messages, through SMS, phone calls,
+                                            emails, VOIP calls and messaging applications
+                                            such as Whatsapp on my registered mobile
+                                            number and/or my registered email address from
+                                            and/or on behalf of TATA Steel Limited</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="act-wrap sticky typ-p-0">
+                            <button class="btn login-btn" type="button">Create my account</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="rhs">
-                <h2 class="sub-title">Complete your details</h2>
-                <div class="form-wrap">
-                    <div class="form-group">
-                        <label class="form-label">Mobile number</label>
-                        <input type="number" name="" class="form-input" placeholder="Enter mobile number"/>
-                    </div>
-    
-                    <div class="form-group">
-                        <label class="form-label">Email ID</label>
-                        <input type="password" name="" class="form-input" placeholder="Enter Email Id" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Pincode</label>
-                        <input type="number" name="" class="form-input" placeholder="Enter mobile number"/>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">GST number (Optional)</label>
-                        <input type="number" name="" class="form-input" placeholder="Enter GST number"/>
-                    </div>
-                </div>
-           
-
-           
-            </div>
-           </div>
-      </div>
-     </section>
+        </section>
     </div>
     <!-- Footer Start -->
     <footer>
@@ -162,7 +212,107 @@
         </div>
     </footer>
     <!-- Footer end -->
+    <!-- Data privacy: Notice & consent -->
     <div class="cm-overlay"></div>
+    <div class="cp-drawer typ-drawer-login" id="privacy">
+        <div class="head-sec">
+            <h2 class="drawer-title">Data privacy: Notice & consent</h2>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+            <p class="cont-phara">
+                At TATA Steel Limited, India (TSL) we recognise that your privacy is important. TSL’s Privacy Policy
+                aims to
+                maintain the privacy of and
+                protect the personal information of employees, contractors, vendors, interns, associates, customers and
+                business partners of TSL (that we collect from you post your consent) and ensure compliance with laws
+                and
+                regulations applicable to TSL. For further
+                details kindly visit on TSL’s Data Privacy Policy (Intranet/Web) and applicable Notice (Intranet/Web).
+                We
+                have conducted a specific
+                review of our processes (hard-copy) & applications (soft-copy) collecting these details in order to make
+                sure that we have taken appropriate measures to protect the personal data processed and stored at TSL.
+                For
+                relevant business requirements, your personal data is processed (including transfers outside the
+                European
+                Union) in accordance with applicable legal requirements and professional regulations in your
+                jurisdiction.
+                TATA Steel Limited, India is the owner of these application. Please provide your acknowledgement and
+                consent
+                on the applicable privacy notice as per your role/s with TSL:</p>
+            <div class="radio-wrap">
+                <div class="bs-radio typ-circle-radio">
+                    <input id="role1" name="role" type="radio">
+                    <label for="role1" class="custom-radio">
+                        
+                    <span class="checkmark"></span>
+                        <span>Customer or Visitor</span>
+                    </label>
+                </div>
+
+                <div class="bs-radio typ-circle-radio">
+                    <input id="role2" name="role" type="radio">
+                    <label for="role2" class="custom-radio">
+                        <span class="checkmark"></span>
+                        <span>Employee</span>
+                    </label>
+                </div>
+
+                <div class="bs-radio typ-circle-radio">
+                    <input id="role3" name="role" type="radio">
+                    <label for="role3" class="custom-radio">
+                        <span class="checkmark"></span>
+                        <span>Prospective Employee</span>
+                    </label>
+                </div>
+                <div class="bs-radio typ-circle-radio">
+                    <input id="role4" name="role" type="radio">
+                    <label for="role4" class="custom-radio">
+                        <span class="checkmark"></span>
+                        <span>Vendor or Third Party</span>
+                    </label>
+                </div>
+                <div class="bs-radio typ-circle-radio">
+                    <input id="role5" name="role" type="radio">
+                    <label for="role5" class="custom-radio">
+                        <span class="checkmark"></span>
+                        <span>Foreign Travel or Visa</span>
+                    </label>
+                </div>
+            </div>
+
+            <p class="cont-phara">
+                We request you to kindly select the applicablerole/s amongst the above listed Privacy Notice & Consent
+                forms and go through the same; however once your have provided your consent, the same would be recorded
+                against the role association with TSL.
+            </p>
+            <p class="cont-phara">
+                <span class="small-head">Note: </span> In case of ‘selection of wrong role parameter/s” or “role change” in future, the
+                applicable role as per TSL management’s
+                discretion would be considered prior provided consent received.
+            </p>
+            <p class="cont-phara">Since use personal information is taken seriously at TSL; in case you disgaree to give your consent to
+                TSL’s Privacy Policy & Notice,
+                you may not be bale to access the respective services / applications. Kindly provide your consent to
+                proceed further/continue with business operations relating to TSL. If you still wish to disagree, kindly
+                exit by closing the window.</p>
+                <h3 class="small-head">
+                    Question
+                </h3>
+                <p class="cont-phara">
+                    If you would like further information on the way in which TSL processes and protects your personal data, how to access and correct your personal data or how to have your queries 
+addressed vis-a-vis the processing of personal data relating to you. Please contact your Data Protection Officer or alternatively your Functional Privacy co-odinator by emailing at 
+privacygovernance@tatasteel.com
+                </p>
+
+
+        </div>
+        <div class="act-wrap typ-privacy">
+            <button class="btn btn-outline" type="button">Disagree</button>
+            <button class="btn login-btn" type="button">Agree</button>
+        </div>
+    </div>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
@@ -173,8 +323,8 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
 
-
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
     <!-- endbuild -->
 </body>
 
-</html> 
+</html>
