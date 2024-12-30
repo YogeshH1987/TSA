@@ -74,17 +74,21 @@
         margin-top: 4.8rem;
       }
     }
-    .search-reasult-wrap{
-      background: #fff;
-    border: 1px solid;
-    padding: 2rem;
-    position: absolute;
-    width: 100%;
-    border: 1px solid #DEDEDE;
-    border-radius: 12px;
-    box-shadow: 5px 5px 5px #0000000D;
-    top: 53px;
-    left: 0;
-
+    &.typ-blog-search{
+      position: relative;
+      .search-reasult-wrap{
+        background: #fff;
+      border: 1px solid;
+      padding: 2rem;
+      position: absolute;
+      width: 100%;
+      border: 1px solid #DEDEDE;
+      border-radius: 12px;
+      box-shadow: 5px 5px 5px #0000000D;
+      top: 53px;
+      left: 0;
+  
+      }
     }
+    
 }

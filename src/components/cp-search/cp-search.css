@@ -79,7 +79,10 @@
     margin-top: 4.8rem;
   }
 }
-.cp-search .search-reasult-wrap {
+.cp-search.typ-blog-search {
+  position: relative;
+}
+.cp-search.typ-blog-search .search-reasult-wrap {
   background: #fff;
   border: 1px solid;
   padding: 2rem;
