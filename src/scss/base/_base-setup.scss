@@ -94,7 +94,7 @@ p {
   left: 0;
   display: none;
   transition: 0.5s ease-in-out;
-  background: $clr-black;
+  background: #000000;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   touch-action: auto;
@@ -212,7 +212,7 @@ p {
 }
 
 .cm-box {
-  border: 1px solid $clr-border;
+  border: 1px solid #dedede;
   border-radius: 16px;
   padding: 1.6rem 3.2rem;
 
@@ -225,7 +225,7 @@ p {
 .seperator {
   @media only screen and (max-width: $media-mobile) {
 
-    background: $clr-border;
+    background: #dedede;
     width: 117%;
     margin: 2.4rem -4rem;
     height: 1px;

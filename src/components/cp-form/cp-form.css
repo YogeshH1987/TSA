@@ -13,14 +13,14 @@
   line-height: 2.4rem;
   margin-bottom: 1.2rem;
 }
-.cp-form .form-group .form-label {
+.cp-form .feedback-personal-data .form-group .form-label {
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 2rem;
   margin-bottom: 0.8rem;
   display: block;
 }
-.cp-form .form-group .form-control {
+.cp-form .feedback-personal-data .form-group .form-control {
   width: 100%;
   padding: 1.2rem 1.6rem;
   border: 1px solid #DEDEDE;
@@ -29,7 +29,7 @@
   line-height: 2.4rem;
   border-radius: 1.2rem;
 }
-.cp-form .form-group .form-textarea {
+.cp-form .feedback-personal-data .form-group .form-textarea {
   width: 100%;
   padding: 1.2rem 1.6rem;
   border: 1px solid #DEDEDE;
@@ -39,7 +39,7 @@
   border-radius: 1.2rem;
   min-height: 15.6rem;
 }
-.cp-form .form-group .err-mgs {
+.cp-form .feedback-personal-data .form-group .err-mgs {
   color: #D2042D;
   font-family: "Poppins Medium";
   font-size: 1rem;
@@ -74,26 +74,6 @@
 }
 .cp-form .star-rating .star-selected {
   color: #ffb800;
-}
-.cp-form.typ-location .act-wrap, .cp-form.typ-language .act-wrap {
-  margin-top: 2.4rem;
-  text-align: center;
-}
-.cp-form.typ-location .act-wrap .btn-submit, .cp-form.typ-language .act-wrap .btn-submit {
-  margin-bottom: 2.4rem;
-}
-.cp-form.typ-location .radio-wrap, .cp-form.typ-language .radio-wrap {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-.cp-form.typ-location .bs-radio, .cp-form.typ-language .bs-radio {
-  margin-bottom: 0;
-}
-.cp-form.typ-location .bs-radio .custom-radio, .cp-form.typ-language .bs-radio .custom-radio {
-  min-width: 8.4rem;
-  padding: 1.25rem 0;
 }
 
 /*# sourceMappingURL=cp-form.css.map */

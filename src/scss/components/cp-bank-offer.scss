@@ -13,7 +13,7 @@
 
         .offer-info-list {
             display: flex;
-            border: 1px solid $clr-border;
+            border: 1px solid #DEDEDE;
             border-radius: 1.6rem;
             padding: 1.6rem;
             flex: 0 0 calc(50% - 2rem);
@@ -36,7 +36,7 @@
                 flex: 0 0 6.8rem;
                 width: 6.8rem;
                 height: 6.8rem;
-                border: 1px solid $clr-border;
+                border: 1px solid #DEDEDE;
 
                 @media only screen and (max-width: $media-mobile) {
                     width: 4.4rem;
@@ -94,7 +94,7 @@
                     .view-detail {
                         font-size: 1.2rem;
                         font-family: "Poppins Medium";
-                        color: $clr-primary;
+                        color: #3D7EDB;
                         text-decoration: underline;
                         padding-right: 2.4rem;
                     }

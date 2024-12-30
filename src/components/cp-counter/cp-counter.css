@@ -5,7 +5,7 @@
 /*opacity*/
 /*opacity- end*/
 .cp-counter {
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   border-radius: 12px;
   width: 100%;
   max-width: 14.4rem;
@@ -24,8 +24,8 @@
   width: 4.8rem;
   height: 4.8rem;
   text-align: center;
-  border-left: 1px solid #DEDEDE;
-  border-right: 1px solid #DEDEDE;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
 }
 
 /*# sourceMappingURL=cp-counter.css.map */

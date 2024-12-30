@@ -3,7 +3,7 @@
 
 
 .cp-table {
-    border: 1px solid $clr-border;
+    border: 1px solid #dedede;
     position: relative;
     border-radius: 12px;
     border-collapse: unset;
@@ -18,7 +18,7 @@
         font-family: $font-medium;
         color: $clr-base;
         padding: 1rem 1.6rem;
-        border-bottom: 1px solid $clr-border;
+        border-bottom: 1px solid #dedede;
 
         @media only screen and (max-width: $media-mobile) {
             width: 50%;

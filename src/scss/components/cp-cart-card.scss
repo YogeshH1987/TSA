@@ -34,7 +34,7 @@
                 top: 0;
                 height: 20px;
                 width: 1px;
-                background: $clr-border;
+                background: #DEDEDE;
                 content: '';
             }
 
@@ -98,11 +98,11 @@
             }
 
             .sepretor {
-                border-bottom: 1px solid $clr-border;
+                border-bottom: 1px solid #dedede;
             }
 
             &::after {
-                background-color: $clr-border;
+                background-color: #dedede;
                 width: 106%;
                 position: absolute;
                 left: -23px;
@@ -161,7 +161,7 @@
         }
 
         .border-b {
-            border-bottom: 1px solid $clr-border;
+            border-bottom: 1px solid #DEDEDE;
         }
     }
 
@@ -194,7 +194,7 @@
         .action-wrap {
             .icon {
                 &.active {
-                    color: $clr-secondary;
+                    color: #D2042D;
                 }
             }
         }

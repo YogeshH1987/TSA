@@ -36,6 +36,16 @@
   font-size: 1.4rem;
   padding-bottom: 0.4rem;
 }
+.cp-prod-size.typ-pravesh .title.step-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cp-prod-size.typ-pravesh .title.step-wrap .steps {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  color: #666666;
+}
 .cp-prod-size.typ-pravesh .add-feature {
   display: flex;
   flex-wrap: wrap;

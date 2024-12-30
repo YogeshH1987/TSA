@@ -30,13 +30,26 @@
 
     &.typ-pravesh {
         margin-bottom: 1.2rem;
+
         .radio-wrap {
             width: 100%;
         }
 
         .title {
             font-size: 1.4rem;
-            padding-bottom:0.4rem;
+            padding-bottom: 0.4rem;
+
+            &.step-wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .steps {
+                    font-family: $font-medium;
+                    font-size: 1.4rem;
+                    color: $clr-para;
+                }
+            }
         }
 
         .add-feature {
@@ -44,18 +57,21 @@
             flex-wrap: wrap;
             margin-bottom: 1.2rem;
 
-            & li+li::before{
+            & li+li::before {
                 content: '|';
                 font-size: 1.2rem;
                 padding-inline: 0.8rem;
+
                 @media only screen and (max-width: $media-sm) {
                     font-size: 1.2rem;
                 }
             }
+
             .feature {
                 color: $clr-para;
                 font-size: 1.2rem;
             }
         }
     }
+
 }

@@ -9,47 +9,49 @@
     line-height: 2.4rem;
     margin-bottom: 1.2rem;
   }
-  .form-group {
-    .form-label {
-      font-family: $font-regular;
-      font-size: 1.4rem;
-      line-height: 2rem;
-      margin-bottom: 0.8rem;
-      display: block;
-    }
+  .feedback-personal-data {
+    .form-group {
+      .form-label {
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 0.8rem;
+        display: block;
+      }
 
-    .form-control {
-      width: 100%;
-      padding: 1.2rem 1.6rem;
-      border: 1px solid $clr-border;
-      font-family: $font-regular;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      border-radius: 1.2rem;
+      .form-control {
+        width: 100%;
+        padding: 1.2rem 1.6rem;
+        border: 1px solid $clr-border;
+        font-family: $font-regular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        border-radius: 1.2rem;
+        
+       
+      }
+
+      .form-textarea {
+        width: 100%;
+        padding: 1.2rem 1.6rem;
+        border: 1px solid $clr-border;
+        font-family: $font-regular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        border-radius: 1.2rem;
+        min-height: 15.6rem;
       
-     
-    }
-
-    .form-textarea {
-      width: 100%;
-      padding: 1.2rem 1.6rem;
-      border: 1px solid $clr-border;
-      font-family: $font-regular;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      border-radius: 1.2rem;
-      min-height: 15.6rem;
-    
-    }
-    .err-mgs {
-      color: $clr-secondary;
-      font-family: $font-medium;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-bottom: 2.4rem;
-      display: block;
-    }
-  } 
+      }
+      .err-mgs {
+        color: $clr-secondary;
+        font-family: $font-medium;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2.4rem;
+        display: block;
+      }
+    } 
+  }
   .act-wrap {
     .btn-submit {
       width: 100%;
@@ -79,29 +81,6 @@
     }
     .star-selected {
       color: #ffb800;
-    }
-  }
-  &.typ-location,
-  &.typ-language{
-    .act-wrap{
-      margin-top: 2.4rem;
-      text-align: center;
-      .btn-submit {
-        margin-bottom: 2.4rem;
-      }
-    }
-    .radio-wrap {
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-    .bs-radio {
-      margin-bottom: 0;
-      .custom-radio{
-        min-width: 8.4rem;
-        padding: 1.25rem 0;
-      }
     }
   }
 }

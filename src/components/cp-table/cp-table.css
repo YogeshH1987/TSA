@@ -5,7 +5,7 @@
 /*opacity*/
 /*opacity- end*/
 .cp-table {
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   position: relative;
   border-radius: 12px;
   border-collapse: unset;
@@ -20,7 +20,7 @@
   font-family: "Poppins Medium";
   color: #333333;
   padding: 1rem 1.6rem;
-  border-bottom: 1px solid #DEDEDE;
+  border-bottom: 1px solid #dedede;
 }
 @media only screen and (max-width: 768px) {
   .cp-table .list-item {

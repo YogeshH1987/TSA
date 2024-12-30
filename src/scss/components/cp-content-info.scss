@@ -4,7 +4,7 @@
 .cp-content-info{
 display: flex;
 border-radius: 16px;
-border: 1px solid $clr-border;
+border: 1px solid #dedede;
 overflow: hidden;
 @media only screen and (max-width: $media-mobile){
     flex-wrap: wrap;
@@ -61,7 +61,7 @@ overflow: hidden;
         flex-wrap: nowrap;
     }
     .img-wrap{
-        border: 1px solid $clr-border;
+        border: 1px solid #dedede;
         width: 6.4rem;
         height: 6.4rem;
         overflow: hidden;
@@ -113,7 +113,7 @@ overflow: hidden;
     background-color: #F3F4F6;
     padding: 7rem 1.6rem;
     border: 0;
-    @media only screen and (max-width: $media-sm) {  padding: 0;   background-color: $clr-root;border-radius: 0;}
+    @media only screen and (max-width: $media-sm) {  padding: 0;   background-color: #ffffff;border-radius: 0;}
     .img-wrap { width: 54%; margin: auto;
         @media only screen and (max-width: $media-sm) {width: 100%; }
     }

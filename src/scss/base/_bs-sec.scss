@@ -42,7 +42,7 @@
         color: #999999;
         min-width: auto;
         background: #fff;
-        border: 1px solid $clr-border;
+        border: 1px solid #DEDEDE;
 
         &.full-screen {
           width: 11.5rem;
@@ -91,6 +91,15 @@
         font-size: 2.4rem;
       }
     }
+
+    &.typ2 {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+
+      @media only screen and (max-width: $media-sm) {
+        font-size: 2rem;
+      }
+    }
   }
 
   .sec-sub-title {
@@ -126,7 +135,7 @@
   .sec-cont {}
 
   &.typ-gray-bg {
-    background: $clr-bg;
+    background: #ecf2fb;
   }
 
   &.typ-curve {
@@ -718,12 +727,18 @@
 
   &.mt-2 {
     margin-top: 2.4rem;
-    @media only screen and (max-width: $media-sm) {  margin-top: 0;}
+
+    @media only screen and (max-width: $media-sm) {
+      margin-top: 0;
+    }
   }
 
   &.mb-2 {
     margin-bottom: 2.4rem;
-    @media only screen and (max-width: $media-sm) {  margin-bottom: 0;}
+
+    @media only screen and (max-width: $media-sm) {
+      margin-bottom: 0;
+    }
   }
 
   &.typ-pravesh-pdp {
@@ -770,28 +785,199 @@
       font-size: 2rem;
     }
   }
-  &.typ-login{
-    margin-top: 19rem;
-    .container{
-      max-width: 103.0rem;
-      width: 100%;
-      .successful-msg{
-        background: #E5F6EC;
-        border-radius: 8px;
-        border: 1px solid #66C88D;
-        display: flex;
-        max-width: 34.3rem;
-    margin: 0 auto 1.2rem;
-    padding: 1rem;
-    font-size: 1.4rem;
-    font-family: $font-medium;
-    color: #00A441;
-    gap: 1rem;
-    .icon{
-      font-size: 2rem;
+
+  &.typ-pravesh-pdp-sec {
+    .container {
+      max-width: 100%;
+
+      @media only screen and (max-width: $media-mobile) {
+        padding: 0;
+      }
+
+      .lyt-pdp {
+        align-items: normal;
+        gap: 0;
+
+        .grid-col {
+
+          // height: 100vh;
+          &:first-child {
+            background-color: #F3F4F6;
+            padding-left: 10rem;
+            padding-right: 3.2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+              padding-left: 1.6rem;
+              padding-right: 1.6rem;
+              padding-bottom: 1rem;
+            }
+          }
+
+          &:last-child {
+            padding-right: 0;
+            padding-top: 3rem;
+            padding-left: 0;
+
+            .sec-cont {
+              padding: 0 10rem 0 3.2rem;
+              border-bottom: 1px solid #DEDEDE;
+              margin-bottom: 2rem;
+
+              @media only screen and (max-width: $media-mobile) {
+                padding: 0 1.6rem 0 1.6rem;
+                border-bottom: 0
+              }
+
+              .view-wrap {
+                margin-bottom: 2rem;
+              }
+
+              &.border-0 {
+                border: 0;
+              }
+
+              &.typ-pravesh-head-mobile {
+                @media only screen and (max-width: $media-mobile) {
+                  // position: absolute;
+                  // top: 0;
+                  // left: 0;
+                  // right: 0;
+                  background-color: #fff;
+                  z-index: 1;
+                  width: 100%;
+                  padding: 1.6rem;
+
+                  .typ-detail-btn {
+                    padding: 0;
+                    border: 0;
+                    gap: 1.6rem;
+                    display: flex !important;
+
+                    .btn {
+                      width: 50%;
+                    }
+                  }
+
+                  .cont-wrap {
+                    padding-right: 9rem;
+
+                    .tag-list {
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-end;
+                      gap: 0.8rem;
+                      display: flex !important;
+
+                      .tag-link {
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 0.8rem;
+                        -webkit-border-radius: 0.8rem;
+                        -moz-border-radius: 0.8rem;
+                        background: #F3F4F6;
+                        font-size: 2rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .sec-head {
+        margin-bottom: 2rem;
+        position: relative;
+
+        .view-btn {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
     }
-    }
-    }
+
+    .btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #dedede;
+      position: relative;
+      padding: 0 3.2rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        padding: 0 1.6rem;
+      }
+
+      .btn {
+        min-width: 10.4rem;
+
     
+      }
+
+      .price {
+        font-size: 2.4rem;
+        color: $clr-base;
+        font-family: $font-semiBold;
+
+        @media only screen and (max-width: $media-mobile) {
+          font-size: 2rem;
+        }
+
+        .total-cost {
+          font-size: 1.6rem;
+          font-family: $font-regular;
+
+          @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+          }
+        }
+
+        .price-icon {
+          font-size: 1.4rem;
+          font-family: $font-regular;
+        }
+      }
+
+      &.typ-pravesh-sticky {
+        position: sticky;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 1;
+        .btn{
+          @media only screen and (max-width: $media-mobile) {
+            min-width: 5rem;
+            font-size: 0;
+            line-height: 0;
+          }
+  
+          .icon {
+            @media only screen and (max-width: $media-mobile) {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.typ-head-sec {
+      .grid-col {
+        &:first-child {
+          @media only screen and (max-width: $media-mobile) {
+            background-color: #fff !important;
+          }
+        }
+
+        &:last-child {
+          @media only screen and (max-width: $media-mobile) {
+            padding-top: 0 !important
+          }
+        }
+      }
+    }
   }
 }
