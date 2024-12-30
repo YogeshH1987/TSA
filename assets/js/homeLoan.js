@@ -136,21 +136,21 @@ TSA.HomeLoanCalculator = {
             let value = e.target.value.trim(); // Trim the value to remove any extra spaces
             console.log(value)
             // Allow empty input (so you can clear the field)
-            // if (value === '') {
-            //     loanAmountSlider.noUiSlider.set(null); // Reset the slider if the input is empty
-            //     return;
-            // }
+            if (value === '') {
+                loanAmountSlider.noUiSlider.set(null); // Reset the slider if the input is empty
+                return;
+            }
         
             value = parseInt(value);
             const minValue = loanAmountSlider.noUiSlider.options.range.min;
             const maxValue = loanAmountSlider.noUiSlider.options.range.max;
         
             // Ensure the value is within the range
-            // if (value < minValue) {
-            //     value = minValue;
-            // } else if (value > maxValue) {
-            //     value = maxValue;
-            // }
+            if (value < minValue) {
+                value = minValue;
+            } else if (value > maxValue) {
+                value = maxValue;
+            }
         
             loanAmountSlider.noUiSlider.set(value);
             this.calculateAndDisplayResults();
