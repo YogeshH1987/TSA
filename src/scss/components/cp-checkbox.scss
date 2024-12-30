@@ -1,9 +1,8 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-checkbox {
+.cp-checkbox{
 	display: block;
-
 	input {
 		padding: 0;
 		height: initial;
@@ -11,9 +10,8 @@
 		margin-bottom: 0;
 		display: none;
 		cursor: pointer;
-
 		&:checked {
-			&+label {
+			& + label {
 				&:after {
 					content: '';
 					display: block;
@@ -29,22 +27,20 @@
 			}
 		}
 	}
-
 	label {
 		position: relative;
 		cursor: pointer;
-		font-size: 1.4rem;
-		line-height: 2rem;
-		padding-left: 4rem;
-
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding-left: 4rem;
 		&:before {
 			content: '';
 			-webkit-appearance: none;
 			background-color: transparent;
 			border: 1px solid #999999;
-			width: 1.6rem;
-			height: 1.6rem;
-			@include border-radius(0.4rem);
+            width: 1.6rem;
+            height: 1.6rem;
+            @include border-radius(0.4rem);
 			display: inline-block;
 			position: relative;
 			vertical-align: middle;
