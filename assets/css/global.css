@@ -926,6 +926,17 @@ p {
   gap: 0.8rem;
 }
 
+.typ-book-wrap {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .typ-book-wrap {
+    gap: 1rem;
+  }
+}
+
 .cm-box {
   border: 1px solid #dedede;
   border-radius: 1.6rem;
@@ -944,7 +955,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .cm-box.typ-book-demo {
-    padding: 0;
+    padding: 0 1.6rem;
   }
 }
 
@@ -1874,6 +1885,11 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-sec.typ-pravesh-pdp-sec.typ-head-sec .grid-col:last-child {
     padding-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-book-sec .container {
+    padding: 0;
   }
 }
 
@@ -2989,12 +3005,25 @@ p {
 .bs-radio.typ-book-demo .custom-radio {
   font-size: 1.6rem;
   line-height: 2.4rem;
-  padding: 1.2rem 1.6rem;
+  padding: 1.2rem 2.4rem;
+  min-width: auto;
 }
 @media only screen and (max-width: 991px) {
   .bs-radio.typ-book-demo .custom-radio {
-    min-width: 16.5rem;
-    align-items: flex-start;
+    padding: 1.2rem 1.2rem;
+  }
+}
+.bs-radio.typ-book-demo.typ2-book-demo .custom-radio {
+  align-items: start;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-w-100 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-w-100 .custom-radio {
+    width: 100%;
   }
 }
 

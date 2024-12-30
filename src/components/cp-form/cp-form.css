@@ -98,7 +98,11 @@
   margin: 0;
 }
 .cp-form.typ-book-demo .form-group .form-label {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+.cp-form.typ-book-demo .form-group .form-label.typ-bold {
+  color: #333333;
+  font-family: "Poppins Medium";
 }
 .cp-form.typ-book-demo .form-group .form-control {
   max-width: 34.4rem;

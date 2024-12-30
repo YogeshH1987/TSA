@@ -129,5 +129,9 @@
   -webkit-border-radius: 0 0.4rem 0.4rem 0;
   -moz-border-radius: 0 0.4rem 0.4rem 0;
 }
+.cp-table.typ-book-demo .clr-grey {
+  color: #999999;
+  font-family: "Poppins Regular";
+}
 
 /*# sourceMappingURL=cp-table.css.map */

@@ -100,7 +100,10 @@
     margin: 0;
     .form-group {
       .form-label{
-        margin-bottom: 1.6rem;
+        margin-bottom: 0.8rem;
+        &.typ-bold{
+          color: $clr-base;
+          font-family: $font-medium;}
       }
       .form-control {
         max-width: 34.4rem;
