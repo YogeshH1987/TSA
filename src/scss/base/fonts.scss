@@ -103,6 +103,27 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-eye:before {
+  content: "\e982";
+}
+.icon-economy:before {
+  content: "\e97f";
+}
+.icon-standard:before {
+  content: "\e980";
+}
+.icon-exit:before {
+  content: "\e981";
+}
+.icon-straighten:before {
+  content: "\e97b";
+}
+.icon-people_outline:before {
+  content: "\e97c";
+}
+.icon-touch_app:before {
+  content: "\e97d";
+}
 .icon-angle:before {
   content: "\e94a";
 }

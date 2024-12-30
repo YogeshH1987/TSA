@@ -71,4 +71,33 @@
             margin-top: 3.2rem;
         }
     }
+    
+&.typ-drawer-login {
+    .cont-wrap {
+        .cont-phara {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            margin-bottom: 3.2rem;
+        }
+
+        .small-head {
+            font-family: $font-semiBold;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+        }
+
+        .blue-text {
+            color: #3D7EDB;
+        }
+    }
+
+    .typ-privacy {
+        .btn {
+            min-width: 47%;
+            border-color: #fff
+        }
+    }
+}
 }
