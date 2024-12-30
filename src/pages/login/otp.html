@@ -127,20 +127,25 @@
                 <p class="desc">An OTP has been sent to your mobile number</p>
                 <p class="desc"><span class="cm-medium">+91-XXXXXX8200</span> and email id <span class="cm-medium">aXXXXXXXXt@abc.com</span></p>
 
+               <form action="">
                 <div class="form-wrap">
                     <div class="form-group">
                         <label class="form-label">Enter OTP</label>
                        <div class="otp-wrap">
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp" placeholder=""/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp" placeholder=""/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp" placeholder=""/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp" placeholder=""/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp" placeholder=""/>
-                       </div>
+                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder=""/>
+                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder=""/>
+                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder=""/>
+                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder=""/>
+                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder=""/>
+                        <span class="error-msg"></span>
+
+                    </div>
+
                     </div>
     
                     
                 </div>
+               </form>
            
             <div class="act-wrap">
                 <button class="btn login-btn" type="button">Submit OTP</button> 
@@ -177,6 +182,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
+    <script src="/js/form-validation.js"></script>
 
 
     <!-- endbuild -->

@@ -131,13 +131,15 @@
                 <div class="form-wrap">
                     <div class="form-group">
                         <label class="form-label">Username</label>
-                        <input type="text" name="" class="form-input" placeholder=""/>
+                        <input type="text" name="" class="form-input validate-name" placeholder=""/>
+                        <span class="error-msg"></span>
                         <span class="btn btn-link forgot-link">Forgot username?</span>
                     </div>
     
                     <div class="form-group">
                         <label class="form-label">Password</label>
                         <input type="password" name="" class="form-input" />
+                        <span class="error-msg"></span>
                         <span class="btn btn-link forgot-link">Forgot password?</span>
                     </div>
                 </div>
@@ -202,6 +204,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
+    <script src="/js/form-validation.js"></script>
 
 
     <!-- endbuild -->
