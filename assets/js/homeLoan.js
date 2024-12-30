@@ -132,7 +132,7 @@ TSA.HomeLoanCalculator = {
         });
 
         // Input event listeners to update sliders when the input fields change
-        $('#loanAmountValue').on('input change keyup', (e) => {
+        $('#loanAmountValue').on('input', (e) => {
             let value = e.target.value.trim(); // Trim the value to remove any extra spaces
             console.log(value)
             // Allow empty input (so you can clear the field)
@@ -156,7 +156,7 @@ TSA.HomeLoanCalculator = {
             this.calculateAndDisplayResults();
         });
         
-        $('#interestRateValue').on('input change keyup', (e) => {
+        $('#interestRateValue').on('input', (e) => {
             let value = e.target.value.trim();
             
             // Allow empty input (so you can clear the field)
@@ -180,7 +180,7 @@ TSA.HomeLoanCalculator = {
             this.calculateAndDisplayResults();
         });
         
-        $('#loanTenureValue').on('input change keyup', (e) => {
+        $('#loanTenureValue').on('input', (e) => {
             let value = e.target.value.trim();
             
             // Allow empty input (so you can clear the field)

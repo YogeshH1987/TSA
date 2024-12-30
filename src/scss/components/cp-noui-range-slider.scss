@@ -44,14 +44,12 @@
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: $clr-para;
-  left: 5% !important;
 }
 .noUi-value-horizontal{
-  &:first-child{
-    left: 5% !important;
-  }
+  @include transform(translate(0, 0));
   &:last-child{
-    left: 94% !important;
+    left: auto !important;
+    right: 0;
   }
  
 }

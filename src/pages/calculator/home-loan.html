@@ -287,7 +287,7 @@
 		<table class="cp-table typ-loan" id="amortizationSchedule">
 			<thead>
 				<tr>
-					<th class="text-center list-head list-item">Year</th>
+					<th class="text-center list-head list-item sticky-column">Year</th>
 					<th class="text-center list-head list-item">Principal Paid (₹)</th>
 					<th class="text-center list-head list-item">Interest Charged (₹)</th>
 					<th class="text-center list-head list-item">Total Payment (₹)</th>
@@ -297,7 +297,7 @@
 			<tbody>
 				{{#each schedule}}
 					<tr>
-						<td class="list-item text-center">{{year}}</td>
+						<td class="list-item text-center sticky-column">{{year}}</td>
 						<td class="list-item text-center">₹{{principalPaid}}</td>
 						<td class="list-item text-center">₹{{interestCharged}}</td>
 						<td class="list-item text-center">₹{{totalPayment}}</td>

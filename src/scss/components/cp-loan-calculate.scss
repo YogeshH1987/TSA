@@ -23,6 +23,9 @@
         width: 35%;
         @media only screen and (max-width: $media-tab) {
             width: 100%;
+            overflow: hidden;
+            border: 1px solid $clr-border;
+            @include border-radius(1.2rem);
         }
         .donut-chart-section{
             text-align: center;
@@ -35,17 +38,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 2.4rem;
+        gap: 1rem;
+        margin: 0 2.4rem 2.4rem;
         .legend-item{
-            width: 50%;
+            width: 46%;
             display: flex;
             justify-content: flex-start;
-            gap: 1rem;
+            gap: 0.5rem;
         }
         .dots{
             width: 1rem;
             height: 1rem;
             @include border-radius(50%);
+            margin-top: 0.5rem;
         }
         .legend-cont{
             color: $clr-base;
@@ -67,6 +72,11 @@
         padding: 0.8rem 1.8rem;
         text-align: center;
         @include border-radius(1.6rem);
+        @media only screen and (max-width: $media-tab) {
+            padding: 1.6rem;
+            @include border-radius(0);
+            border: 0;
+        }
         .title{
             font-size: 1.2rem;
             line-height: 1.6rem;
@@ -77,10 +87,16 @@
             line-height: 4rem;
             color: $clr-base;
             font-family: $font-semiBold;
+            @media only screen and (max-width: $media-tab) {
+                line-height: 3.2rem;
+            }
         }
     }  
     .slider-container{
         margin-bottom: 6.4rem;
+        @media only screen and (max-width: $media-tab) {
+            margin-bottom: 4.8rem;
+        }
         .slider-input{
             display: flex;
             justify-content: space-between;
@@ -104,11 +120,14 @@
                 max-width: 12.4rem;
                 width: 100%;
                 @media only screen and (max-width: $media-tab) {
-                    padding: 0.6rem;
+                    padding: 0.4rem;
                 }
                 &.typ-year,
                 &.typ-rate{
                     max-width: 6.9rem;
+                    @media only screen and (max-width: $media-tab) {
+                        max-width: 5rem;
+                    }
                 }
             } 
         }
@@ -125,7 +144,9 @@
 .loan-calc-table-wrap{
     border: 1px solid $clr-border;
     @include border-radius(2.4rem);
-    
+    @media only screen and (max-width: $media-tab) {
+        @include border-radius(1.6rem);
+    }
     .table-wrapper{
         @media only screen and (max-width: $media-tab) {
             overflow: hidden;
@@ -140,6 +161,10 @@
             line-height: 2.4rem;
             font-family: $font-medium;
             color: $clr-base;
+            @media only screen and (max-width: $media-tab) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
         }
     }
 }

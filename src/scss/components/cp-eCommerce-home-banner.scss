@@ -815,43 +815,43 @@
                     height: 13rem;
                     order: initial;
                 }
+                &:nth-child(1){
+                    .feature-card {
+                        .f-img {
+                            &::after {
+                                background: #B1CBF1;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .feature-card {
+                        .f-img {
+                            &::after {
+                                background: #FFD466;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .feature-card {
+                        .f-img {
+                            &::after {
+                                background: #CCEDD9;
+                            }
+                        }
+                    }
+                } 
+                &:nth-child(4){
+                    .feature-card {
+                        .f-img {
+                            &::after {
+                                background: #ED9BAB;
+                            }
+                        }
+                    }
+                } 
             }
-            &:nth-child(1){
-                .feature-card {
-                    .f-img {
-                        &::after {
-                            background: #B1CBF1;
-                        }
-                    }
-                }
-            }
-            &:nth-child(2){
-                .feature-card {
-                    .f-img {
-                        &::after {
-                            background: #FFD466;
-                        }
-                    }
-                }
-            }
-            &:nth-child(3){
-                .feature-card {
-                    .f-img {
-                        &::after {
-                            background: #CCEDD9;
-                        }
-                    }
-                }
-            } 
-            &:nth-child(4){
-                .feature-card {
-                    .f-img {
-                        &::after {
-                            background: #ED9BAB;
-                        }
-                    }
-                }
-            }  
         }
     }
 }

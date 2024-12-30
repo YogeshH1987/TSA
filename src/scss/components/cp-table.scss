@@ -10,7 +10,6 @@
 
     @media only screen and (max-width: $media-mobile) {
         width: 100%;
-
     }
 
     .list-item {
@@ -137,7 +136,7 @@
         width: 100%;
         tr{
             &:first-child{
-                .list-item{
+                th.list-item{
                     background: #D8E5F8;
                 }
             }
@@ -168,4 +167,9 @@
             }
         }    
     }
+    .sticky-column {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+      }
 }

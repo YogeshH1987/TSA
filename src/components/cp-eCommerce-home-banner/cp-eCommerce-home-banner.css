@@ -631,16 +631,16 @@
     order: initial;
   }
 }
-.cp-eCommerce-home-banner.typ-calculate .feature:nth-child(1) .feature-card .f-img::after {
+.cp-eCommerce-home-banner.typ-calculate .feature .feature-item:nth-child(1) .feature-card .f-img::after {
   background: #B1CBF1;
 }
-.cp-eCommerce-home-banner.typ-calculate .feature:nth-child(2) .feature-card .f-img::after {
+.cp-eCommerce-home-banner.typ-calculate .feature .feature-item:nth-child(2) .feature-card .f-img::after {
   background: #FFD466;
 }
-.cp-eCommerce-home-banner.typ-calculate .feature:nth-child(3) .feature-card .f-img::after {
+.cp-eCommerce-home-banner.typ-calculate .feature .feature-item:nth-child(3) .feature-card .f-img::after {
   background: #CCEDD9;
 }
-.cp-eCommerce-home-banner.typ-calculate .feature:nth-child(4) .feature-card .f-img::after {
+.cp-eCommerce-home-banner.typ-calculate .feature .feature-item:nth-child(4) .feature-card .f-img::after {
   background: #ED9BAB;
 }
 
