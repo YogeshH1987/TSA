@@ -423,6 +423,38 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-page-info:before {
+  content: "\e97e";
+}
+
+.icon-eye:before {
+  content: "\e982";
+}
+
+.icon-economy:before {
+  content: "\e97f";
+}
+
+.icon-standard:before {
+  content: "\e980";
+}
+
+.icon-exit:before {
+  content: "\e981";
+}
+
+.icon-straighten:before {
+  content: "\e97b";
+}
+
+.icon-people-outline:before {
+  content: "\e97c";
+}
+
+.icon-touch-app:before {
+  content: "\e97d";
+}
+
 .icon-angle:before {
   content: "\e94a";
 }
@@ -2092,6 +2124,17 @@ p {
     width: 100%;
   }
 }
+.btn.typ-rebar-cal {
+  min-width: 13.6rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .btn.typ-rebar-cal {
+    min-width: 4.8rem;
+  }
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
@@ -2295,6 +2338,34 @@ p {
 }
 .bs-radio.typ-shade .custom-radio input[type=radio]:checked + .custom-radio::after {
   border-radius: 50%;
+}
+.bs-radio.typ-flr-plan {
+  padding: 0;
+  width: 48%;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-flr-plan {
+    width: 100%;
+  }
+}
+.bs-radio.typ-flr-plan .custom-radio {
+  padding: 0;
+}
+.bs-radio.typ-flr-plan input[type=radio]:checked + .custom-radio {
+  background: #FFFFFF;
+  border: 1px solid #D2042D;
+}
+.bs-radio.typ-house .custom-radio {
+  padding: 0;
+  border: 0;
+}
+.bs-radio.typ-house input[type=radio]:checked + .custom-radio {
+  background: #FFFFFF;
+  border: 0;
+}
+.bs-radio.typ-house input[type=radio]:checked + .custom-radio .home-typ-card .img-wrap {
+  border: 6px solid #D2042D;
 }
 
 .bs-modal {

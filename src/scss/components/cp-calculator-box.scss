@@ -20,6 +20,7 @@
     &.typ-rebar{
         @media only screen and (max-width: $media-sm) {
            text-align: center;
+           padding-bottom: 5.5rem;  
         }
         .calc-title{
             @media only screen and (max-width: $media-sm) {
@@ -33,6 +34,59 @@
             @media only screen and (max-width: $media-sm) {
                 font-size: 1.2rem;
                 line-height: 1.6rem;
+            }
+        }
+        .input-group{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 5rem;
+            @media only screen and (max-width: $media-sm) {
+                gap: 0.8rem;
+                margin-bottom: 2.4rem;
+            }  
+        }
+        .btn,
+        .step-btn{
+            font-size: 2rem;
+            line-height: 2.8rem;
+            min-width: 25.5rem;
+            padding: 1.5rem 1.6rem;
+            font-family: $font-semiBold;
+            @media only screen and (max-width: $media-sm) {
+                min-width: 16rem;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                padding: 0.9rem 1.6rem;
+            }
+        }
+        .input-field{
+            border: 1px solid $clr-border;
+            color: $clr-base;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-family: $font-semiBold;
+            text-align: center;
+            padding: 1.3rem;
+            max-width: 31.9rem;
+            @include border-radius(1.2rem);
+            @media only screen and (max-width: $media-sm) {
+                max-width: 15.1rem;
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+                padding: 0.7rem 1rem;
+            }
+        }
+        .btn-wrap{       
+            @media only screen and (max-width: $media-sm) {
+                padding: 1.6rem;
+                background: $clr-root;
+                position: absolute;
+                left: -1.6rem;
+                width: 110%;
+                bottom: -2.3rem;
+                @include border-radius(0 0 1.2rem 1.2rem);
             }
         }
     }

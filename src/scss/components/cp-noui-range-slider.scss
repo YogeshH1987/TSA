@@ -28,6 +28,35 @@
     }
     
   }  
+  &.typ-rebar{
+    max-width: 53.2rem;
+    margin: 0 auto;
+    &.noUi-target {      
+      height: 1.2rem;
+      .noUi-handle {
+        width: 3.4rem;
+        height: 3rem;
+        background: transparent url('../../components/cp-noui-range-slider/image/rebar-pointer.png') 0 0 no-repeat;
+        background-size: contain;
+        @include border-radius(5px);
+        border: 0;
+        box-shadow: none;
+      }
+      .noUi-connect{
+        @include border-radius(1.2rem);
+      }
+    }
+    .noUi-value{
+      font-size: 2rem;
+      line-height: 2.8rem;
+      font-family: $font-semiBold;
+      color: #999;
+      @media only screen and (max-width: $media-mobile){
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+    }
+  }
 }
 
 .noUi-handle:after, .noUi-handle:before{
@@ -39,7 +68,6 @@
 .noUi-marker-horizontal.noUi-marker{
   display: none;
 }
-
 .noUi-value {
   font-size: 1.2rem;
   line-height: 1.6rem;

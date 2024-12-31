@@ -164,4 +164,13 @@
         width: 100%;
         }
     }
+    &.typ-rebar-cal{
+        min-width: 13.6rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        padding: 1.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            min-width: 4.8rem;
+        }
+    }
 }

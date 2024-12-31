@@ -21,6 +21,11 @@
       }
     }
   }
+  &.typ-col-2-no-wrap{
+    .grid-col {
+      width: 50%;
+    }
+  }
 
   &.typ-col-3 {
     .grid-col {

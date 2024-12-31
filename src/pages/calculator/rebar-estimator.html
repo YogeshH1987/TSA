@@ -20,8 +20,9 @@
 	<link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
     <link rel="stylesheet" href="../../components/cp-switch/cp-switch.css" />
     <link rel="stylesheet" href="../../components/cp-rebar-estimator/cp-rebar-estimator.css" />
-
-	
+    <link rel="stylesheet" href="../../components/cp-stop-progressbar/cp-stop-progressbar.css" />	
+	<link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />
+	<link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />	
   </head>
 
   <body>
@@ -34,477 +35,275 @@
 					<p class="sec-desc">Accurate, hassle-free rebar calculations for slabs, beams, columns, and more..</p>
 				</div>
 				<div class="sec-cont">
+					<div class="calc-step step-1 hide">
+						<div class="cp-box typ-calculate typ-rebar">
+							<!-- <div class="sec-head cm-mobile">
+								<h2 class="sec-title typ-center">Rebar estimator</h2>
+							</div> -->
+							<div class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/rebar-img.png">
+									<img src="../../components/cp-calculator-box/images/rebar-img.png" alt="Timeline_Cards"/>
+								</picture>
+							</div>
+							<div class="cont-wrap">
+								<div class="cp-calculator-box typ-rebar">
+									<h2 class="calc-title">Ground floor area</h2>
+									<p class="calc-desc">Enter area between 578 sq ft - 1934 sq ft</p>
+									<div class="input-group">
+										<input type="text" class="input-field" id="builtUpAreaValue" value="700">
+										<div class="cp-switch-toggle typ-area">
+											<input class="switch-toggle-checkbox" type="checkbox" id="area-mesurement" />
+											<label class="switch-toggle-label" for="area-mesurement">
+												<span>Sq. Ft</span>
+												<span>Sq. Mts</span>
+											</label>
+										</div>
+										<p class="error hide"></p>
+									</div>
+									<div class="btn-wrap">
+										<button class="btn btn-primary step-btn">Next</button>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<ul class="cp-add-info-list typ-calculate">
+							<li class="add-info-item">
+							  <div class="info-card">
+								<span class="icon icon-goal"></span>
+								<div class="info-wrap">
+								  <h2 class="info-title">Accurate projections</h2>
+								  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
+								</div>
+							  </div>
+							</li>
+							<li class="add-info-item">
+							  <div class="info-card">
+								<span class="icon icon-measurement"></span>
+								<div class="info-wrap">
+								  <h2 class="info-title">Easy usage</h2>
+								  <p class="info-desc">No expertise needed, just input basic details.</p>
+								</div>
+							  </div>
+							</li>
+							<li class="add-info-item">
+							  <div class="info-card">
+								<span class="icon icon-cash"></span>
+								<div class="info-wrap">
+								  <h2 class="info-title">Negotiate confidently</h2>
+								  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
+								</div>
+							  </div>
+							</li>
+						</ul>
+					</div>
 					<div class="cp-rebar-estimator">
-						<div class="cp-stop-progressbar hide">
+						<div class="cp-stop-progressbar">
 							<div class="calc-progress-bar">
 								<div class="step-text">Step - 1/5</div>
-								<button class="close-btn">Exit<span class="icon icon-close"></span></button>
+								<button class="close-btn"><span class="text">Exit</span><span class="icon icon-exit"></span></button>
 							</div>
 							<ul class="progress-bar">
-								<li class="progress-item active"></li>
+								<li class="progress-item complete"></li>
 								<li class="progress-item ongoing"></li>
 								<li class="progress-item"></li>
 								<li class="progress-item"></li>
 								<li class="progress-item"></li>
 							</ul>
+						</div>						
+						<div class="calc-step step-2 hide">
+							<h2 class="calc-title">Rebar estimator</h2>
+							<p class="calc-desc">Select the number of floors</p>
+							<div class="img-wrap typ-no-flr">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-rebar-estimator/images/frame.png">
+									<img src="../../components/cp-rebar-estimator/images/frame.png" alt="frame" />
+								  </picture>
+							</div>
+							<div id="numberFlr" class="cp-noui-range-slide typ-rebar"></div>						
 						</div>
-						<div class="calc-step step-1">
-							<div class="cp-box typ-calculate typ-rebar">
-								<!-- <div class="sec-head cm-mobile">
-									<h2 class="sec-title typ-center">Rebar estimator</h2>
-								</div> -->
-								<div class="img-wrap">
-									<picture>
-										<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/rebar-img.png">
-										<img src="../../components/cp-calculator-box/images/rebar-img.png" alt="Timeline_Cards"/>
-									</picture>
-								</div>
-								<div class="cont-wrap">
-									<div class="cp-calculator-box typ-rebar">
-										<h2 class="calc-title">Ground floor area</h2>
-										<p class="calc-desc">Enter area between 578 sq ft - 1934 sq ft</p>
-										<div class="input-group">
-											<input type="text" class="input-field" id="builtUpAreaValue" value="700">
-											<div class="cp-switch-toggle typ-area">
-												<input class="switch-toggle-checkbox" type="checkbox" id="area-mesurement" />
-												<label class="switch-toggle-label" for="area-mesurement">
-													<span>Sq. Ft</span>
-													<span>Sq. Mts</span>
+						<div class="calc-step step-3 hide">
+							<h2 class="calc-title">Rebar estimator</h2>
+							<p class="calc-desc">Select a floor plan similar to your home design</p>
+							<div class="scroll-container">
+								<div class="cp-tab typ-rebar js-plan-flr">
+									<ul class="tab-list">
+									  <li class="tab-item active" data-target="#2bhk">
+										<h3 class="title">2BHK</h3>
+									  </li>
+									  <li class="tab-item" data-target="#3bhk">
+										<h3 class="title">3BHK</h3>
+									  </li>
+									  <li class="tab-item" data-target="#4bhk">
+										<h3 class="title">4BHK</h3>
+									  </li>					   
+									</ul>
+									<div class="tab-container">
+										<div class="radio-wrap">
+											<div class="bs-radio typ-flr-plan" data-val="2bhk">
+												<input id="radio1" name="size" type="radio">
+												<label for="radio1" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="2bhk">
+												<input id="radio2" name="size" type="radio">
+												<label for="radio2" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="2bhk">
+												<input id="radio3" name="size" type="radio">
+												<label for="radio3" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>											
+											<div class="bs-radio typ-flr-plan" data-val="3bhk">
+												<input id="radio4" name="size" type="radio">
+												<label for="radio4" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="4bhk">
+												<input id="radio5" name="size" type="radio">
+												<label for="radio5" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="3bhk">
+												<input id="radio6" name="size" type="radio">
+												<label for="radio6" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
 												</label>
 											</div>
 										</div>
-										<button class="btn btn-primary step-btn">Next</button>
 									</div>
 								</div>
-							</div>
-							<ul class="cp-add-info-list typ-calculate">
-								<li class="add-info-item">
-								  <div class="info-card">
-									<span class="icon icon-goal"></span>
-									<div class="info-wrap">
-									  <h2 class="info-title">Accurate projections</h2>
-									  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
-									</div>
-								  </div>
-								</li>
-								<li class="add-info-item">
-								  <div class="info-card">
-									<span class="icon icon-measurement"></span>
-									<div class="info-wrap">
-									  <h2 class="info-title">Easy usage</h2>
-									  <p class="info-desc">No expertise needed, just input basic details.</p>
-									</div>
-								  </div>
-								</li>
-								<li class="add-info-item">
-								  <div class="info-card">
-									<span class="icon icon-cash"></span>
-									<div class="info-wrap">
-									  <h2 class="info-title">Negotiate confidently</h2>
-									  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
-									</div>
-								  </div>
-								</li>
-							</ul>
+							</div>							
 						</div>
-						<div class="calc-step step-2 hide">
-							<h2 class="calc-title">Building cost estimator</h2>
-							<p class="calc-desc">Select your space requirements</p>
-	
-							<ul class="lyt-grid typ-col-4">
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Living room"
-										/>
+						<div class="calc-step step-4 ">
+							<h2 class="calc-title">Rebar estimator</h2>
+							<p class="calc-desc">What do you want to calculate rebar estimate for</p>
+							<div class="scroll-container ">
+								<ul class="lyt-grid typ-col-2-no-wrap">
+									<li class="grid-col">
+										<div class="bs-radio typ-house">
+											<input id="typ1" name="material" type="radio">
+											<label for="typ1" class="custom-radio">	
+												<div class="home-typ-card">
+													<div class="img-wrap">
+														<img src="../../components/cp-rebar-estimator/images/Hills.png" alt="">
+													</div>
+													<h2 class="title">Full house</h2>
+												</div>
+											</label>
 										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Living room</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
+									</li>
+									<li class="grid-col">
+										<div class="bs-radio typ-house">
+											<input id="typ2" name="material" type="radio">
+											<label for="typ2" class="custom-radio">	
+												<div class="home-typ-card">
+													<div class="img-wrap">
+														<img src="../../components/cp-rebar-estimator/images/flat.png" alt="">
+													</div>
+													<h2 class="title">A part of the house</h2>
+												</div>
+											</label>
 										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Kitchen"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Kitchen</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Bathroom"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Bedroom</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Bedroom"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Bathroom</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Balcony"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Balcony</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Puja room"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Puja room</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Dinning area"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Dinning area</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Storage room"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Storage room</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Garage"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Garage</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Servant room"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Servant room</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Hall"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Hall</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="cp-img-detail typ-build-cost">
-										<div class="img-wrap">
-										<img
-											src="../../components/cp-img-detail/images/living-room.png"
-											alt="Study"
-										/>
-										</div>
-										<div class="detail-wrap">
-											<h3 class="detail-tile">Study</h3>
-											<div class="cp-counter">
-												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
-												<button class="btn-count btn-plus">+</button>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="calc-step step-3 hide">
-							<h2 class="calc-title">Building cost estimator</h2>
-							<p class="calc-desc">Select the number of floors</p>
-							<div class="cp-range">
-								<input type="range" min="1" max="5" step="1">
-							</div>
-							<div class="option-wrap">
-								<p class="option-txt">House with basement</p>
-								<div class="cp-switch">
-									<input id="switch-rounded" type="checkbox" />
-									<label for="switch-rounded"></label>
-								  </div>
+									</li>							
+								</ul>
 							</div>
 						</div>
-						<div class="calc-step step-4 hide">
-							<h2 class="calc-title">Building cost estimator</h2>
-							<p class="calc-desc">Do you have material preferences?</p>
-							<ul class="lyt-grid typ-col-3">
-								<li class="grid-col">
-									<div class="bs-radio typ-build-cost typ-yellow">
-										<input id="material1" name="material" type="radio">
-										<label for="material1" class="custom-radio">	
-											<div class="material-wrap">
-												<div class="img-wrap"><span class="icon icon-economy"></span></div>
-												<h2 class="home-typ">economy</h2>
-												<ul class="detail-list">
-													<li class="detail-item">
-														<h3 class="title">Steel</h3>
-														<p class="desc">Secondary TMT</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Cement</h3>
-														<p class="desc">Grade 33</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Flooring</h3>
-														<p class="desc">Ceramic tiles</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Paint</h3>
-														<p class="desc">Lime wash</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Doors / Windows</h3>
-														<p class="desc">Hardwood ply</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Bathroom fixtures</h3>
-														<p class="desc">Bathroom fixtures</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Lighting fixtures</h3>
-														<p class="desc">Basic LED</p>
-													</li>
-												</ul>
-											</div>
-											
-										</label>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="bs-radio typ-build-cost typ-yellow">
-										<input id="material2" name="material" type="radio">
-										<label for="material2" class="custom-radio">	
-											<div class="material-wrap">
-												<div class="img-wrap"><span class="icon icon-standard"></span></div>
-												<h2 class="home-typ">Standard</h2>
-												<ul class="detail-list">
-													<li class="detail-item">
-														<h3 class="title">Steel</h3>
-														<p class="desc">Primary TMT</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Cement</h3>
-														<p class="desc">Grade 33</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Flooring</h3>
-														<p class="desc">Ceramic tiles</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Paint</h3>
-														<p class="desc">Lime wash</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Doors / Windows</h3>
-														<p class="desc">Hardwood ply</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Bathroom fixtures</h3>
-														<p class="desc">Bathroom fixtures</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Lighting fixtures</h3>
-														<p class="desc">Basic LED</p>
-													</li>
-												</ul>
-											</div>
-											
-										</label>
-									</div>
-								</li>
-								<li class="grid-col">
-									<div class="bs-radio typ-build-cost typ-red">
-										<input id="material3" name="material" type="radio">
-										<label for="material3" class="custom-radio">	
-											<div class="material-wrap">
-												<div class="img-wrap"><span class="icon icon-premium"></span></div>
-												<h2 class="home-typ">Premium</h2>
-												<ul class="detail-list">
-													<li class="detail-item">
-														<h3 class="title">Steel</h3>
-														<p class="desc">Primary Super ductile</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Cement</h3>
-														<p class="desc">Grade 33</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Flooring</h3>
-														<p class="desc">Ceramic tiles</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Paint</h3>
-														<p class="desc">Lime wash</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Doors / Windows</h3>
-														<p class="desc">Hardwood ply</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Bathroom fixtures</h3>
-														<p class="desc">Bathroom fixtures</p>
-													</li>
-													<li class="detail-item">
-														<h3 class="title">Lighting fixtures</h3>
-														<p class="desc">Basic LED</p>
-													</li>
-												</ul>
-											</div>
-											
-										</label>
-									</div>
-								</li>
-							</ul>
-							<a class="btn btn-link" href="#">Skip for now</a>
-						</div>
-						<div class="calc-step step-5 hide">
-							<h2 class="calc-title">Building cost estimator</h2>
-							<p class="calc-desc">Do you have an architectural plan?</p>
-							<div class="radio-wrap">
-								<div class="bs-radio">
-									<input id="plan1" name="plan" type="radio">
-									<label for="plan1" class="custom-radio">
-										My home design is ready
-									</label>
-								</div>
-								<div class="bs-radio">
-									<input id="plan2" name="plan" type="radio">
-									<label for="plan2" class="custom-radio">
-										My home design is in progress
-									</label>
-								</div>
-								<div class="bs-radio">
-									<input id="plan3" name="plan" type="radio">
-									<label for="plan3" class="custom-radio">
-										I need professional help with plans
-									</label>
-								</div>
-							</div> 
-							<a href="#" class="btn btn-link text-center">Skip for now</a>
-						</div>
-						<div class="act-wrap hide">
-							<button class="btn btn-outline">Back</button>
-							<button class="btn">Next</button>
+						
+						<div class="act-wrap">
+							<button class="btn btn-outline typ-rebar-cal"><span class="icon icon-Left-arrow cm-mobile"></span><span class="cm-desktop">Back</span></button>
+							<button class="btn typ-rebar-cal"><span class="icon icon-right-arrow cm-mobile"></span><span class="cm-desktop">Next</span></button>
 						</div>
 					</div>	
 				</div>

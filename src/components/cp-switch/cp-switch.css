@@ -120,7 +120,10 @@
     height: 4.8rem;
   }
 }
-.cp-switch-toggle.typ-area input[type=checkbox] + label.switch-toggle-label:before {
+.cp-switch-toggle.typ-area input[type=checkbox] + label.switch-toggle-label {
+  inset: 0.8rem;
+}
+.cp-switch-toggle.typ-area input[type=checkbox] + label.switch-toggle-label :before {
   background: #ECF2FB;
 }
 .cp-switch-toggle.typ-area input[type=checkbox]:checked + label.switch-toggle-label span:nth-child(1) {

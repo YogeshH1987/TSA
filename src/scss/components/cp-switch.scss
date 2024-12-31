@@ -124,8 +124,11 @@
 			width: 15.1rem;
 			height: 4.8rem;
 		}
-		input[type=checkbox] + label.switch-toggle-label:before{
-			background: $clr-bg;
+		input[type=checkbox] + label.switch-toggle-label{
+			inset: 0.8rem;
+			:before{
+				background: $clr-bg;
+			}
 		}
 		input[type=checkbox]:checked {
 			& + label {

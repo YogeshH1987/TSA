@@ -1,69 +1,77 @@
 var TSA = TSA || {};
+
 TSA.RebarsCalculator = {
-    init: function() {
-        // const loanAmountSlider = document.getElementById('loanAmountSlider');
-        // const interestRateSlider = document.getElementById('interestRateSlider');
-        // const loanTenureSlider = document.getElementById('loanTenureSlider');
-        // const pricingPlanSwitch = document.getElementById('pricing-plan-switch');
+    init: function () {
+        // Initialize tabs and filtering
+        this.setupTabs();
 
-        // // Initialize sliders
-        // noUiSlider.create(loanAmountSlider, {
-        //     start: 500000,
-        //     connect: [true, false],
-        //     range: {
-        //         'min': 100000,
-        //         'max': 10000000
-        //     },
-        //     step: 10000,
-        //     pips: {
-        //         mode: 'positions',
-        //         values: [0, 100], // Only show min and max
-        //         density: 100,
-        //         format: {
-        //             to: (value) => '₹' + value.toLocaleString() // Format values as currency
-        //         }
-        //     }
-        // });
+        // Initialize the slider
+        this.initSlider();
+    },
 
-        // noUiSlider.create(interestRateSlider, {
-        //     start: 5.0,
-        //     connect: [true, false],
-        //     range: {
-        //         'min': 1,
-        //         'max': 15
-        //     },
-        //     step: 0.1,
-        //     pips: {
-        //         mode: 'positions',
-        //         values: [0, 100],
-        //         density: 100,
-        //         format: {
-        //             to: (value) => value.toFixed(1) + '% p.a' // Format values as percentage
-        //         }
-        //     }
-        // });
+    setupTabs: function () {
+        $('.js-plan-flr .tab-item').on('click', function () {
+            // Remove active class from all tabs
+            $('.js-plan-flr .tab-item').removeClass('active');
+            // Add active class to the clicked tab
+            $(this).addClass('active');
 
-        // noUiSlider.create(loanTenureSlider, {
-        //     start: 10,
-        //     connect: [true, false],
-        //     range: {
-        //         'min': 1,
-        //         'max': 30
-        //     },
-        //     step: 1,
-        //     pips: {
-        //         mode: 'positions',
-        //         values: [0, 100],
-        //         density: 100,
-        //         format: {
-        //             to: (value) => value + ' years'
-        //         }
-        //     }
-        // });    
+            // Get the data-target of the clicked tab
+            const target = $(this).data('target').substring(1); // Remove the "#" from the value
 
+            // Filter radio buttons based on data-val
+            TSA.RebarsCalculator.filterByDataVal(target);
+        });
+
+        // Trigger the first tab by default
+        $('.js-plan-flr .tab-item.active').trigger('click');
+    },
+
+    filterByDataVal: function (target) {
+        $('.js-plan-flr .bs-radio').each(function () {
+            // Show only elements with matching data-val
+            if ($(this).data('val') === target) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    },
+
+    initSlider: function () {
+        const numberFlrSlider = document.getElementById('numberFlr');
+
+        // Check if the slider element exists
+        if (!numberFlrSlider) {
+            console.error('Slider element not found!');
+            return;
+        }
+
+        // Initialize the slider
+        noUiSlider.create(numberFlrSlider, {
+            start: 0, // Default starting position (Ground)
+            connect: [true, false],
+            range: {
+                min: 0, // Ground
+                max: 2  // G+2
+            },
+            step: 1,
+            pips: {
+                mode: 'values',
+                values: [0, 1, 2], // Ground, G+1, G+2
+                density: 2,
+                format: {
+                    to: (value) => {
+                        if (value === 0) return 'Ground';
+                        if (value === 1) return 'G+1';
+                        if (value === 2) return 'G+2';
+                    }
+                }
+            }
+        });
     }
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
     TSA.RebarsCalculator.init();
 });
