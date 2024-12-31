@@ -310,5 +310,32 @@
   display: flex;
   gap: 0.8rem;
 }
+.cp-notify.typ-blog-detail {
+  margin-top: 0;
+  display: block;
+}
+.cp-notify.typ-blog-detail .notify-title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  max-width: 75%;
+  margin-bottom: 0.8rem;
+}
+.cp-notify.typ-blog-detail .notify-desc {
+  margin-bottom: 1.6rem;
+}
+.cp-notify.typ-blog-detail .notify-btn {
+  background-color: #FFFFFF;
+  color: #5a245a;
+  padding: 0.9rem 1.6rem;
+  min-width: auto;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: inline-block;
+}
+.cp-notify.typ-blog-detail .notify-icon {
+  top: -1.6rem;
+  right: 3.5rem;
+  transform: none;
+}
 
 /*# sourceMappingURL=cp-notify.css.map */
