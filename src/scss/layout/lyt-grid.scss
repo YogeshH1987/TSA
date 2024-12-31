@@ -121,4 +121,14 @@
       }
     }
   }
+  &.typ-7{
+    .grid-col{
+      &:first-child{
+        width: 30%;
+      }
+      &:nth-child(2){
+        width:70%;
+      }
+    }
+  }
 }

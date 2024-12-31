@@ -115,5 +115,11 @@
     width: 100%;
   }
 }
+.lyt-grid.typ-7 .grid-col:first-child {
+  width: 30%;
+}
+.lyt-grid.typ-7 .grid-col:nth-child(2) {
+  width: 70%;
+}
 
 /*# sourceMappingURL=lyt-grid.css.map */
