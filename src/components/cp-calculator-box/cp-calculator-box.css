@@ -20,5 +20,13 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box.typ-rebar {
+    text-align: center;
+  }
+}
+.cp-calculator-box.typ-rebar .calc-desc {
+  margin-bottom: 1.6rem;
+}
 
 /*# sourceMappingURL=cp-calculator-box.css.map */

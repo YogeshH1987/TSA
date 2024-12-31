@@ -112,4 +112,27 @@
 			}
 		}
 	}
+	&.typ-area{
+		width: 20rem;
+		height: 6rem;
+		padding: 1.2rem;
+		border: 1px solid $clr-border;
+		background: $clr-root;
+		border-radius: 1.2rem;
+		font-size: 1.4rem;
+		input[type=checkbox]:checked {
+			& + label {
+				&.switch-toggle-label {
+					span {
+						&:nth-child(1) {
+							color: $clr-base;
+						}
+						&:nth-child(2) {
+							color: $clr-primary;
+						}
+					}
+				}
+			}
+		}
+	}
 }

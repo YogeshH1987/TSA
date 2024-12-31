@@ -59,4 +59,16 @@
             }
         }
     }
+    &.typ-rebar{
+        .img-wrap{
+            width:55.5rem;
+            height:25rem;
+            @media only screen and (max-width: $media-sm) {
+                height: 14rem;
+            }
+        }
+        @media only screen and (max-width: $media-sm) {
+            padding: 2.4rem 1.6rem;
+        }
+    }
 }

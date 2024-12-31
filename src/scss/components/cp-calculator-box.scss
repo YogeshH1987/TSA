@@ -15,5 +15,14 @@
         color: $clr-base;
         font-size: 1.6rem;
         line-height: 2.4rem;
+       
+    }
+    &.typ-rebar{
+        @media only screen and (max-width: $media-sm) {
+           text-align: center;
+        }
+        .calc-desc{
+            margin-bottom: 1.6rem;
+        }
     }
 }

@@ -1,0 +1,37 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-rebar-estimator{
+    .input-group{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.2rem;
+        margin-bottom: 5rem;        
+    }
+    .btn,
+    .step-btn{
+        font-size: 2rem;
+        line-height: 2.8rem;
+        min-width: 25.5rem;
+        padding: 1.5rem 1.6rem;
+        font-family: $font-semiBold;
+        @media only screen and (max-width: $media-sm) {
+            max-width: 15.1rem;
+        }
+    }
+    .input-field{
+        border: 1px solid $clr-border;
+        color: $clr-base;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-family: $font-semiBold;
+        text-align: center;
+        padding: 1.3rem;
+        max-width: 31.9rem;
+        @include border-radius(1.2rem);
+        @media only screen and (max-width: $media-sm) {
+            max-width: 15.1rem;
+        }
+    }
+}

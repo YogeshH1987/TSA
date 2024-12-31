@@ -116,12 +116,15 @@
   }
 }
 .cp-loan-calculate .slider-container {
-  margin-bottom: 6.4rem;
+  margin-bottom: 8.8rem;
 }
 @media only screen and (max-width: 1023px) {
   .cp-loan-calculate .slider-container {
     margin-bottom: 4.8rem;
   }
+}
+.cp-loan-calculate .slider-container:last-child {
+  margin-bottom: 0;
 }
 .cp-loan-calculate .slider-container .slider-input {
   display: flex;

@@ -1,5 +1,12 @@
 var TSA = TSA || {};
 TSA.HomeLoanCalculator = {
+    formatCurrency: function (amount) {
+        return amount.toLocaleString('en-IN', {
+            style: 'currency',
+            currency: 'INR'
+        });
+    },
+
     init: function() {
         const loanAmountSlider = document.getElementById('loanAmountSlider');
         const interestRateSlider = document.getElementById('interestRateSlider');
@@ -20,7 +27,7 @@ TSA.HomeLoanCalculator = {
                 values: [0, 100], // Only show min and max
                 density: 100,
                 format: {
-                    to: (value) => '₹' + value.toLocaleString() // Format values as currency
+                    to: (value) => TSA.HomeLoanCalculator.formatCurrency(value) // Format values as currency
                 }
             }
         });
@@ -117,7 +124,7 @@ TSA.HomeLoanCalculator = {
 
         // Sliders event listeners
         loanAmountSlider.noUiSlider.on('update', (values) => {
-            $('#loanAmountValue').val(parseInt(values[0]));
+            $('#loanAmountValue').val(TSA.HomeLoanCalculator.formatCurrency(parseInt(values[0])));
             this.calculateAndDisplayResults();
         });
 
@@ -134,82 +141,82 @@ TSA.HomeLoanCalculator = {
         // Input event listeners to update sliders when the input fields change
         $('#loanAmountValue').on('input', (e) => {
             let value = e.target.value.trim(); // Trim the value to remove any extra spaces
-            console.log(value)
+
             // Allow empty input (so you can clear the field)
             if (value === '') {
                 loanAmountSlider.noUiSlider.set(null); // Reset the slider if the input is empty
                 return;
             }
-        
+
+            value = value.replace(/[^\d]/g, ''); // Remove non-numeric characters for validation
             value = parseInt(value);
             const minValue = loanAmountSlider.noUiSlider.options.range.min;
             const maxValue = loanAmountSlider.noUiSlider.options.range.max;
-        
+
             // Ensure the value is within the range
             if (value < minValue) {
                 value = minValue;
             } else if (value > maxValue) {
                 value = maxValue;
             }
-        
+
             loanAmountSlider.noUiSlider.set(value);
             this.calculateAndDisplayResults();
         });
-        
+
         $('#interestRateValue').on('input', (e) => {
             let value = e.target.value.trim();
-            
+
             // Allow empty input (so you can clear the field)
             if (value === '') {
                 interestRateSlider.noUiSlider.set(null); // Reset the slider if the input is empty
                 return;
             }
-        
+
             value = parseFloat(value);
             const minValue = interestRateSlider.noUiSlider.options.range.min;
             const maxValue = interestRateSlider.noUiSlider.options.range.max;
-        
+
             // Ensure the value is within the range
             if (value < minValue) {
                 value = minValue;
             } else if (value > maxValue) {
                 value = maxValue;
             }
-        
+
             interestRateSlider.noUiSlider.set(value);
             this.calculateAndDisplayResults();
         });
-        
+
         $('#loanTenureValue').on('input', (e) => {
             let value = e.target.value.trim();
-            
+
             // Allow empty input (so you can clear the field)
             if (value === '') {
                 loanTenureSlider.noUiSlider.set(null); // Reset the slider if the input is empty
                 return;
             }
-        
+
             value = parseInt(value);
             const minValue = loanTenureSlider.noUiSlider.options.range.min;
             const maxValue = loanTenureSlider.noUiSlider.options.range.max;
-        
+
             // Ensure the value is within the range
             if (value < minValue) {
                 value = minValue;
             } else if (value > maxValue) {
                 value = maxValue;
             }
-        
+
             loanTenureSlider.noUiSlider.set(value);
             this.calculateAndDisplayResults();
         });
-        
 
         this.calculateAndDisplayResults();
     },
 
     calculateAndDisplayResults: function() {
-        const loanAmount = parseFloat($('#loanAmountValue').val());
+        const loanAmount = parseFloat($('#loanAmountValue').val().replace(/[^\d.-]/g, '')); // Remove non-numeric characters
         const annualInterestRate = parseFloat($('#interestRateValue').val());
         const loanTenure = parseInt($('#loanTenureValue').val());
 
@@ -232,15 +239,21 @@ TSA.HomeLoanCalculator = {
     },
 
     displayEMIOutput: function(emi, loanAmount, totalInterest, totalPayment) {
+        const emiFormatted = TSA.HomeLoanCalculator.formatCurrency(emi.toFixed(2));
+        const loanAmountFormatted = TSA.HomeLoanCalculator.formatCurrency(loanAmount);
+        const totalInterestFormatted = TSA.HomeLoanCalculator.formatCurrency(totalInterest);
+        const totalPaymentFormatted = TSA.HomeLoanCalculator.formatCurrency(totalPayment);
+    
         const emiOutputTemplate = Handlebars.compile($('#emi-output-template').html());
         const emiData = {
-            emi: emi.toFixed(2),
-            principal: loanAmount.toFixed(2),
-            interest: totalInterest.toFixed(2),
-            totalPayment: totalPayment.toFixed(2)
+            emi: emiFormatted,
+            principal: loanAmountFormatted,
+            interest: totalInterestFormatted,
+            totalPayment: totalPaymentFormatted
         };
+    
         $('#emiOutput').html(emiOutputTemplate(emiData));
-    },
+    },    
 
     generateAmortizationSchedule: function(loanAmount, monthlyInterestRate, emi, loanTenure) {
         let balance = loanAmount;
@@ -265,10 +278,10 @@ TSA.HomeLoanCalculator = {
 
             schedule.push({
                 year: year,
-                principalPaid: principalPaidYearly.toFixed(2),
-                interestCharged: interestPaidYearly.toFixed(2),
-                totalPayment: totalPaymentYearly.toFixed(2),
-                balance: balance.toFixed(2)
+                principalPaid: TSA.HomeLoanCalculator.formatCurrency(principalPaidYearly),
+                interestCharged: TSA.HomeLoanCalculator.formatCurrency(interestPaidYearly),
+                totalPayment: TSA.HomeLoanCalculator.formatCurrency(totalPaymentYearly),
+                balance: TSA.HomeLoanCalculator.formatCurrency(balance)
             });
 
             if (balance === 0) break;
@@ -280,43 +293,48 @@ TSA.HomeLoanCalculator = {
     },
 
     updateDonutChart: function(totalPayment, totalInterest, loanAmount) {
-        const svg = d3.select('#donutChart').html('').append('svg')
-            .attr('width', 300)
-            .attr('height', 300)
+        d3.select('#donutChart svg').remove();
+    
+        const svg = d3.select('#donutChart').append('svg')
+            .style('width', '100%')
+            .style('height', 'auto')
+            .attr('viewBox', '0 0 240 240')
+            .attr('preserveAspectRatio', 'xMidYMid meet')
             .append('g')
-            .attr('transform', 'translate(150,150)');
-
+            .attr('transform', 'translate(120,120)');
+    
         const radius = 120;
         const arc = d3.arc().outerRadius(radius).innerRadius(radius - 30);
         const pie = d3.pie().value(d => d.value);
-
+    
         const data = [
             { label: 'Total Principal', value: loanAmount },
             { label: 'Total Interest', value: totalInterest }
         ];
-
-        const color = d3.scaleOrdinal().range(['#FFD466','#8BB2E9']);
-
-        const path = svg.selectAll('path')
+    
+        const color = d3.scaleOrdinal().range(['#FFD466', '#8BB2E9']);
+    
+        svg.selectAll('path')
             .data(pie(data))
             .enter().append('path')
             .attr('d', arc)
-            .attr('fill', d => color(d.data.label));
-
+            .style('fill', d => color(d.data.label));
+    
+        // Update the label in the center with formatted currency
+        const totalFormatted = TSA.HomeLoanCalculator.formatCurrency(totalPayment);
+    
         svg.append('text')
             .attr('text-anchor', 'middle')
-            .attr('font-size', '18px')
             .attr('dy', '.35em')
-            .text(`₹${totalPayment.toFixed(2)}`);
+            .attr('font-size', '18px')
+            .attr('class', 'donut-chart-label')
+            .text(totalFormatted);
     },
-
+   
     updateLegends: function(totalPayment, totalInterest) {
-        const legendTemplate = Handlebars.compile($('#legend-template').html());
-        const legendHtml = legendTemplate({
-            totalPrincipal: (totalPayment-totalInterest).toFixed(2),
-            totalInterest: totalInterest.toFixed(2)
-        });
-        $('.legend').html(legendHtml);
+        // Update legend labels with formatted currency values
+        $('#principalLegend').text('₹' + TSA.HomeLoanCalculator.formatCurrency(totalPayment));
+        $('#interestLegend').text('₹' + TSA.HomeLoanCalculator.formatCurrency(totalInterest));
     }
 };
 

@@ -69,5 +69,19 @@
   height: 100%;
   object-fit: contain;
 }
+.cp-box.typ-rebar .img-wrap {
+  width: 55.5rem;
+  height: 25rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-rebar .img-wrap {
+    height: 14rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-rebar {
+    padding: 2.4rem 1.6rem;
+  }
+}
 
 /*# sourceMappingURL=cp-box.css.map */

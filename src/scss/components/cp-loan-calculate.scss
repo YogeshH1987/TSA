@@ -93,9 +93,12 @@
         }
     }  
     .slider-container{
-        margin-bottom: 6.4rem;
+        margin-bottom: 8.8rem;
         @media only screen and (max-width: $media-tab) {
             margin-bottom: 4.8rem;
+        }
+        &:last-child{
+            margin-bottom: 0;
         }
         .slider-input{
             display: flex;
