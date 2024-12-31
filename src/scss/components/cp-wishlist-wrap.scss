@@ -2,5 +2,53 @@
 @import "../config/mixin";
 
 .cp-wishlist-wrap{
-    
+    display: flex;
+    gap: 2.1rem;
+    .lhs{
+        width: 25.5%;
+       
+        .left-side-menu{
+            border: 1px solid #dedede;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .left-side-menu-item{
+            display: flex;
+            gap: 1.2rem;
+            padding: 2.4rem;
+            border-bottom: 1px solid #dedede;
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                background-color: $clr-bg;
+                &::before{
+                    width: 8px;
+                    height: 75px;
+                    background: $clr-secondary;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                }
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            .icon{
+                font-size: 2.4rem;
+                color: $clr-base;
+            }
+            .left-menu-link{
+                font-size: 1.6rem;
+                font-family: $font-medium;
+                color: $clr-base;
+            }
+        }
+    }
+    .rhs{
+        width: 75%;
+        @media only screen and (max-width: $media-mobile) {
+           width: 100%;
+        }
+    }
 }

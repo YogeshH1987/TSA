@@ -22,7 +22,7 @@
   }
 }
 .cp-design-card:hover {
-  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 8px 24px 0px #00000014;
   border: 2px solid #DEDEDE;
 }
 .cp-design-card .img-wrap {

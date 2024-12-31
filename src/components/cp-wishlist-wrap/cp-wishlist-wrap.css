@@ -4,5 +4,57 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+.cp-wishlist-wrap {
+  display: flex;
+  gap: 2.1rem;
+}
+.cp-wishlist-wrap .lhs {
+  width: 25.5%;
+}
+.cp-wishlist-wrap .lhs .left-side-menu {
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.cp-wishlist-wrap .lhs .left-side-menu-item {
+  display: flex;
+  gap: 1.2rem;
+  padding: 2.4rem;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+  overflow: hidden;
+}
+.cp-wishlist-wrap .lhs .left-side-menu-item:hover {
+  background-color: #ECF2FB;
+}
+.cp-wishlist-wrap .lhs .left-side-menu-item:hover::before {
+  width: 8px;
+  height: 75px;
+  background: #D2042D;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.cp-wishlist-wrap .lhs .left-side-menu-item:last-child {
+  border-bottom: 0;
+}
+.cp-wishlist-wrap .lhs .left-side-menu-item .icon {
+  font-size: 2.4rem;
+  color: #333333;
+}
+.cp-wishlist-wrap .lhs .left-side-menu-item .left-menu-link {
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+.cp-wishlist-wrap .rhs {
+  width: 75%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-wishlist-wrap .rhs {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=cp-wishlist-wrap.css.map */

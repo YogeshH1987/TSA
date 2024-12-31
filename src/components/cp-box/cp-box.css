@@ -24,7 +24,8 @@
 @media only screen and (max-width: 768px) {
   .cp-box .act-wrap {
     position: sticky;
-    top: 10px; /* Adjust as needed */
+    top: 10px;
+    /* Adjust as needed */
     z-index: 1;
   }
 }

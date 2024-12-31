@@ -1955,6 +1955,14 @@ p {
 .bs-sec.typ-login .container .successful-msg .icon {
   font-size: 2rem;
 }
+.bs-sec.typ-wishlist {
+  margin-top: 22rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-wishlist {
+    margin-top: 16rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -2085,12 +2093,17 @@ p {
 @media only screen and (max-width: 991px) {
   .btn.typ-add-cart.fixedBtn {
     position: sticky;
-    bottom: 0; /* Stick to the bottom of the parent container */
+    bottom: 0;
+    /* Stick to the bottom of the parent container */
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 10; /* Ensure it's above other content */
-    background-color: #fff; /* Optional: Add a background to prevent overlap with content */
-    width: 90%; /* Adjust the width of the button */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    z-index: 10;
+    /* Ensure it's above other content */
+    background-color: #fff;
+    /* Optional: Add a background to prevent overlap with content */
+    width: 90%;
+    /* Adjust the width of the button */
     padding: 15px;
   }
 }

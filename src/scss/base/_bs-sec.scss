@@ -794,4 +794,10 @@
     }
     
   }
+  &.typ-wishlist{
+    margin-top: 22rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-top: 16rem;
+    }
+  }
 }

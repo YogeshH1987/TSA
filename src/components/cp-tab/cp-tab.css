@@ -385,6 +385,31 @@
     padding-top: 0rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-wishlist .tab-container {
+    padding-top: 1.6rem;
+  }
+}
+.cp-tab.typ-wishlist .tab-container .product-wrap {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cp-tab.typ-wishlist .tab-container .product-wrap .sub-title {
+  font-size: 2.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  width: 100%;
+  padding-top: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-wishlist .tab-container .product-wrap .sub-title {
+    font-size: 2.4rem;
+  }
+}
+.cp-tab.typ-wishlist .tab-container .product-wrap .slick-track {
+  display: flex;
+}
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

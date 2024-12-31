@@ -729,4 +729,19 @@
             height: 28rem;
         }
     }
+    &.typ-wishlist{
+            max-width: 29.5rem;
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 100%;
+            }
+            .lhs{
+                @media only screen and (max-width: $media-mobile) {
+                    display: block;
+                }
+            }
+            .img-wrap{
+                border-bottom: 1px solid #dedede;
+            }
+        }
+    
 }
