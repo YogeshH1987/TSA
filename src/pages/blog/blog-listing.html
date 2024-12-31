@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="/images/favicon.png" />
 
-    <title>Login</title>
+    <title>Blog</title>
     <meta name="description" content="description goes here" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/global.css" />
@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
     <link rel="stylesheet" href="../../components/cp-toast/cp-toast.css" />
     <link rel="stylesheet" href="/components/cp-drawer/cp-drawer.css" />
-
-
-
+    <link rel="stylesheet" href="/components/cp-blog-filter/cp-blog-filter.css" />
+    <link rel="stylesheet" href="../../components/cp-checkbox/cp-checkbox.css" />
+    <link rel="stylesheet" href="../../components/cp-verification/cp-verification.css" />
 
 </head>
 
@@ -460,6 +460,7 @@
        
         <section class="bs-sec typ-first-sec typ-plp typ-blog">
             <div class="container">
+                
                 <div class="sec-cont">
                     <div class="cp-agrico-search typ-blog">
                       <div class="left-wrapper">
@@ -469,10 +470,13 @@
                         <div class="search-wrap">
                           <input type="text" class="search-input" placeholder="Search for Agrico products">
                           <span class="search-icon icon-search"></span>
+                          <span class="search-icon icon-close close-icon js-close"></span>
                         </div>
                         <ul class="search-reasult-wrap">
-                            <li class="result-item">How to choose the right <span>roof</span>ing for your home</li>
-                            <li class="result-item">Durashine: Best <span>roof</span>ing solutions for every climate</li>
+                            <li class="result-item">How to choose the right <span class="cm-bold">roof</span>ing for your home</li>
+                            <li class="result-item">Durashine: Best <span class="cm-bold">roof</span>ing solutions for every climate</li>
+                            <li class="result-item"><span class="cm-bold">Roof</span>ing for hilly areas</li>
+                            <li class="result-item">Durable <span class="cm-bold">roof</span>ing for coastal homes</li>
 
                         </ul>
                       </div>
@@ -480,6 +484,15 @@
                         <span class="count">1</span>
                       </button>
                     </div>
+                    <div class="cp-verification typ-blog">
+                        <div class="img-wrap">
+                            <img src="../../components/cp-verification/images/Noresult1.png" alt="image"/>
+                        </div>
+                        <div class="cont-info">
+                            <h3 class="title">We are sorry!</h3>
+                            <p class="desc">Sometimes even the strongest steel needs the right support. Adjust your search, and let’s try again!</p>
+                        </div>
+                       </div>
                     <div class="filter-sec">
                         <h3 class="title">Filter applied :</h3>
                         <span class="filter-tag">
@@ -787,7 +800,7 @@
     </footer> -->
     <!-- Footer end -->
      <!---policy detail drawer start-->
-<div class="cp-drawer" id="blog-filter">
+<div class="cp-drawer typ-blog" id="blog-filter">
     <div class="head-sec">
       <h2 class="drawer-title">Filters</h2>
       <a href="#" class="icon icon-close js-close-btn"></a>
@@ -796,23 +809,74 @@
     <div class="cp-blog-filter">
         <div class="lhs">
             <ul class="category-list">
-                <li class="list-item"> Category</li>
-                <li class="list-item"> Brand</li>
+                <li class="list-item"> Category
+                    <ul class="filter-menu-list active">
+                        <li class="menu-list-item title">Planning stage
+                            <ul class="inner-menu-list">
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Planning" >
+                                        <label for="Planning">Planning</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Construction" >
+                                        <label for="Construction">Construction</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Interiors" >
+                                        <label for="Interiors">Interiors</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="honeloan" >
+                                        <label for="homeloans">Home loans</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                     </ul>
+                </li>
+                <li class="list-item"> Brand
+                    <ul class="filter-menu-list">
+                        <li class="menu-list-item title">brand
+                            <ul class="inner-menu-list">
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Planning" >
+                                        <label for="Planning">Planning</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Construction" >
+                                        <label for="Construction">Construction</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Interiors" >
+                                        <label for="Interiors">Interiors</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="honeloan" >
+                                        <label for="homeloans">Home loans</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                     </ul>
+                </li>
                 <li class="list-item"> Content type</li>
             </ul>
         </div>
-        <div class="rhs">
-            <ul class="filter-menu-list">
-                <li class="menu-list-item">Planning stage
-                    <ul class="inner-menu-list">
-                        <li class="menu-list-item">Planning</li>
-                        <li class="menu-list-item">Construction</li>
-                        <li class="menu-list-item">Interiors</li>
-                        <li class="menu-list-item">Home loans</li>
-                    </ul>
-                </li>
-             </ul>
-        </div>
+        
         <div class="act-wrap">
             <button type="button" class="btn btn-outline">Clear all</button>
             <button type="button" class="btn">Apply filters</button>
@@ -834,6 +898,8 @@
     <script src="/components/cp-blog/cp-blog.js"></script>
     <script src="/components/cp-product-card/cp-product-card.js"></script>
     <script src="/components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-search/cp-search.js"></script>
+    <script src="/components/cp-blog-filter/cp-blog-filter.js"></script>
 
 
     <!-- endbuild -->

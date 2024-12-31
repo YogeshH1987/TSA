@@ -1962,10 +1962,20 @@ p {
   display: flex;
   gap: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-blog .filter-sec {
+    display: none;
+  }
+}
 .bs-sec.typ-blog .filter-sec .title {
   font-size: 1.6rem;
   font-family: "Poppins Semibold";
   color: #666666;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-blog .filter-sec .title {
+    display: none;
+  }
 }
 .bs-sec.typ-blog .filter-sec .filter-tag {
   background: #ECF2FB;

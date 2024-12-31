@@ -799,10 +799,16 @@
     .filter-sec{
       display: flex;
       gap: 1rem;
+      @media only screen and (max-width: $media-mobile) {
+        display: none;
+      }
       .title{
         font-size: 1.6rem;
         font-family: $font-semiBold;
         color: $clr-para;
+        @media only screen and (max-width: $media-mobile) {
+          display: none;
+        }
       }
       .filter-tag{
         background: $clr-bg;
