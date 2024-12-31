@@ -1,7 +1,6 @@
 var winWidth = $(window).width();
 
 $(document).ready(function () { 
-  prodictSlickSlider();
   
   addedFavorite();
   if ($(window).width() < 769) {
@@ -102,26 +101,3 @@ function vegetablePatchSlider() {
   });
 }
 
-function prodictSlickSlider() {
-  // Check if the window width is less than 769px (mobile)
-  if ($(window).width() < 769) {
-    // Initialize Slick slider if not already initialized
-    if (!$('.js-product-need-slider').hasClass('slick-initialized')) {
-      $('.js-product-need-slider').slick({
-        infinite: true,
-        slidesToShow: 1.1,    // Show 1 slide at a time
-        slidesToScroll: 1,   // Scroll 1 slide at a time
-        dots: true,          // Enable pagination dots
-        arrows: false,       // Disable next/prev arrows
-        autoplay: false,      // Enable autoplay
-        autoplaySpeed: 2000,
-        variableWidth: true 
-      });
-    }
-  } else {
-    // Destroy Slick slider on devices larger than 768px
-    if ($('.js-product-need-slider').hasClass('slick-initialized')) {
-      $('.js-product-need-slider').slick('unslick');
-    }
-  }
-}
