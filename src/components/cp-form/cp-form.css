@@ -95,5 +95,40 @@
   min-width: 8.4rem;
   padding: 1.25rem 0;
 }
+.cp-form.typ-newsletter {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0;
+}
+.cp-form.typ-newsletter .form-group {
+  width: 100%;
+}
+.cp-form.typ-newsletter .btn {
+  min-width: auto;
+}
+.cp-form.typ-comment {
+  padding: 1.2rem 1.8rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  background-color: #F3F4F6;
+  margin-top: 0;
+}
+.cp-form.typ-comment .form-group {
+  position: relative;
+}
+.cp-form.typ-comment .form-group textarea {
+  resize: none;
+}
+.cp-form.typ-comment .form-group .icon {
+  position: absolute;
+  right: 1.2rem;
+  top: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #CCCCCC;
+  font-size: 3.2rem;
+  margin: auto;
+}
 
 /*# sourceMappingURL=cp-form.css.map */

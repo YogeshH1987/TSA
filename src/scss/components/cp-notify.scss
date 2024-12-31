@@ -341,4 +341,20 @@
             transform: none;
         }
     }
+
+    &.typ-newsletter {
+        background-color: #ECF2FB;
+
+        .notify-title {
+            color: $clr-base;
+        }
+
+        .notify-desc {
+            color: $clr-base;
+        }
+
+        .notify-icon {
+            color: #B1CBF1;
+        }
+    }
 }

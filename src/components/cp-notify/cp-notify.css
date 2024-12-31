@@ -337,5 +337,17 @@
   right: 3.5rem;
   transform: none;
 }
+.cp-notify.typ-newsletter {
+  background-color: #ECF2FB;
+}
+.cp-notify.typ-newsletter .notify-title {
+  color: #333333;
+}
+.cp-notify.typ-newsletter .notify-desc {
+  color: #333333;
+}
+.cp-notify.typ-newsletter .notify-icon {
+  color: #B1CBF1;
+}
 
 /*# sourceMappingURL=cp-notify.css.map */
