@@ -135,4 +135,26 @@
       }
     }
   }
+  &.typ-7 {
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: column-reverse;
+    }
+    .grid-col {      
+      &:first-child {
+        width: 66.2%;
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
+      }
+
+      &:last-child {
+        width: 32.3%;
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

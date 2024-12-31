@@ -171,5 +171,25 @@
         position: sticky;
         left: 0;
         z-index: 1;
-      }
+    }
+    &.typ-book-demo{
+        border: 0;
+        .list-item{
+            font-size: 1.6rem;
+            font-family: $font-semiBold;
+        }
+        thead{
+            .list-head {
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.2rem;
+                }
+                &:first-child{
+                    @include border-radius(0.4rem 0 0 0.4rem);
+                }
+                &:last-child{
+                    @include border-radius(0 0.4rem 0.4rem 0);
+                }
+            }
+        }
+    }
 }
