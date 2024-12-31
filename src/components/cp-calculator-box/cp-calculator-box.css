@@ -25,8 +25,21 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box.typ-rebar .calc-title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.6rem;
+  }
+}
 .cp-calculator-box.typ-rebar .calc-desc {
   margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box.typ-rebar .calc-desc {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=cp-calculator-box.css.map */

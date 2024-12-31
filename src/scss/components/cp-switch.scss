@@ -120,6 +120,13 @@
 		background: $clr-root;
 		border-radius: 1.2rem;
 		font-size: 1.4rem;
+		@media only screen and (max-width: $media-sm) {
+			width: 15.1rem;
+			height: 4.8rem;
+		}
+		input[type=checkbox] + label.switch-toggle-label:before{
+			background: $clr-bg;
+		}
 		input[type=checkbox]:checked {
 			& + label {
 				&.switch-toggle-label {

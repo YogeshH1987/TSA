@@ -239,11 +239,10 @@ TSA.HomeLoanCalculator = {
     },
 
     displayEMIOutput: function(emi, loanAmount, totalInterest, totalPayment) {
-        const emiFormatted = TSA.HomeLoanCalculator.formatCurrency(emi.toFixed(2));
+        const emiFormatted = TSA.HomeLoanCalculator.formatCurrency(emi);
         const loanAmountFormatted = TSA.HomeLoanCalculator.formatCurrency(loanAmount);
         const totalInterestFormatted = TSA.HomeLoanCalculator.formatCurrency(totalInterest);
         const totalPaymentFormatted = TSA.HomeLoanCalculator.formatCurrency(totalPayment);
-    
         const emiOutputTemplate = Handlebars.compile($('#emi-output-template').html());
         const emiData = {
             emi: emiFormatted,
@@ -332,9 +331,15 @@ TSA.HomeLoanCalculator = {
     },
    
     updateLegends: function(totalPayment, totalInterest) {
+        const totalInterestFormatted = TSA.HomeLoanCalculator.formatCurrency(totalInterest);
+        const totalPrincipalFormatted = TSA.HomeLoanCalculator.formatCurrency(totalPayment-totalInterest);
         // Update legend labels with formatted currency values
-        $('#principalLegend').text('₹' + TSA.HomeLoanCalculator.formatCurrency(totalPayment));
-        $('#interestLegend').text('₹' + TSA.HomeLoanCalculator.formatCurrency(totalInterest));
+        const legendTemplate = Handlebars.compile($('#legend-template').html());
+        const legendHtml = legendTemplate({
+            totalPrincipal: totalPrincipalFormatted,
+            totalInterest: totalInterestFormatted
+        });
+        $('.legend').html(legendHtml);
     }
 };
 

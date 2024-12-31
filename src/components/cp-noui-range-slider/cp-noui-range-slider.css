@@ -22,7 +22,7 @@
 }
 .cp-noui-range-slide.noUi-target .noUi-tooltip {
   background-color: #007bff;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 12px;
   border-radius: 4px;
   padding: 2px 5px;
@@ -36,7 +36,7 @@
 }
 
 .noUi-horizontal .noUi-handle {
-  top: -11px;
+  top: -1.1rem;
 }
 
 .noUi-marker-horizontal.noUi-marker {
@@ -47,7 +47,7 @@
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: #666666;
-  top: 2rem;
+  top: 1.5rem;
 }
 
 .noUi-value-horizontal {

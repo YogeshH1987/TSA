@@ -11,6 +11,11 @@
   gap: 1.2rem;
   margin-bottom: 5rem;
 }
+@media only screen and (max-width: 991px) {
+  .cp-rebar-estimator .input-group {
+    gap: 0.8rem;
+  }
+}
 .cp-rebar-estimator .btn,
 .cp-rebar-estimator .step-btn {
   font-size: 2rem;
@@ -41,6 +46,9 @@
 @media only screen and (max-width: 991px) {
   .cp-rebar-estimator .input-field {
     max-width: 15.1rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding: 0.7rem 1rem;
   }
 }
 

@@ -18,7 +18,7 @@
   
     .noUi-tooltip {
       background-color: #007bff;
-      color: #fff;
+      color: $clr-root;
       font-size: 12px;
       border-radius: 4px;
       padding: 2px 5px;
@@ -34,7 +34,7 @@
   display: none;
 }
 .noUi-horizontal .noUi-handle{
-  top: -11px;
+  top: -1.1rem;
 }
 .noUi-marker-horizontal.noUi-marker{
   display: none;
@@ -44,13 +44,12 @@
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: $clr-para;
-  top: 2rem;
+  top: 1.5rem;
 }
 .noUi-value-horizontal{
   @include transform(translate(0, 0));
   &:last-child{
     left: auto !important;
     right: 0;
-  }
- 
+  } 
 }

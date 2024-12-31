@@ -21,8 +21,19 @@
         @media only screen and (max-width: $media-sm) {
            text-align: center;
         }
+        .calc-title{
+            @media only screen and (max-width: $media-sm) {
+               font-size: 1.6rem;
+               line-height: 2.4rem;
+               margin-bottom: 0.6rem;
+            }
+        }
         .calc-desc{
             margin-bottom: 1.6rem;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }
         }
     }
 }

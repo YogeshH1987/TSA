@@ -114,6 +114,15 @@
   border-radius: 1.2rem;
   font-size: 1.4rem;
 }
+@media only screen and (max-width: 991px) {
+  .cp-switch-toggle.typ-area {
+    width: 15.1rem;
+    height: 4.8rem;
+  }
+}
+.cp-switch-toggle.typ-area input[type=checkbox] + label.switch-toggle-label:before {
+  background: #ECF2FB;
+}
 .cp-switch-toggle.typ-area input[type=checkbox]:checked + label.switch-toggle-label span:nth-child(1) {
   color: #333333;
 }
