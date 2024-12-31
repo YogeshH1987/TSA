@@ -24,6 +24,7 @@
             padding-bottom: 8rem;
         }
         &.step-4{
+            .flr-list,
             .lyt-grid{
                 max-width: 58rem;
                 margin: 0 auto;
@@ -140,6 +141,13 @@
             line-height: 2.4rem;
             color: $clr-base;
             text-align: left;
+        }
+    }
+    .flr-list{
+        .flr-item{
+            padding: 2.4rem 0;
+            border-bottom: 1px solid $clr-border;
+           
         }
     }
 }

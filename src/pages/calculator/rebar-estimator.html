@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../../components/cp-stop-progressbar/cp-stop-progressbar.css" />	
 	<link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />
 	<link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />	
+	<link rel="stylesheet" href="../../components/cp-checkbox/cp-checkbox.css" />	
   </head>
 
   <body>
@@ -270,7 +271,7 @@
 							<h2 class="calc-title">Rebar estimator</h2>
 							<p class="calc-desc">What do you want to calculate rebar estimate for</p>
 							<div class="scroll-container ">
-								<ul class="lyt-grid typ-col-2-no-wrap">
+								<ul class="lyt-grid typ-col-2-no-wrap js-">
 									<li class="grid-col">
 										<div class="bs-radio typ-house">
 											<input id="typ1" name="material" type="radio">
@@ -297,6 +298,26 @@
 											</label>
 										</div>
 									</li>							
+								</ul>
+								<ul class="flr-list hide">
+									<li class="flr-item">
+										<div class="cp-checkbox typ-flr">
+                                            <input type="checkbox" id="Foundation">
+                                            <label for="Foundation">Foundation</label>
+                                        </div>
+									</li>
+									<li class="flr-item">
+										<div class="cp-checkbox typ-flr">
+                                            <input type="checkbox" id="Ground floor">
+                                            <label for="Ground floor">Ground floor</label>
+                                        </div>
+									</li>
+									<li class="flr-item">
+										<div class="cp-checkbox typ-flr">
+                                            <input type="checkbox" id="First floor">
+                                            <label for="First floor">First floor</label>
+                                        </div>
+									</li>
 								</ul>
 							</div>
 						</div>

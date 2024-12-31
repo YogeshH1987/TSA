@@ -7,6 +7,9 @@ TSA.RebarsCalculator = {
 
         // Initialize the slider
         this.initSlider();
+
+        // Setup radio button change events for showing/hiding floor list
+        this.setupRadioEvents();
     },
 
     setupTabs: function () {
@@ -69,6 +72,16 @@ TSA.RebarsCalculator = {
                 }
             }
         });
+    },
+
+    setupRadioEvents: function () {
+        $('input[name="material"]').on('change', function () {
+            // Always show the floor list when any radio button is selected
+            $('.flr-list').removeClass('hide');
+        });
+
+        // Trigger change for the default selected radio button
+        $('input[name="material"]:checked').trigger('change');
     }
 };
 

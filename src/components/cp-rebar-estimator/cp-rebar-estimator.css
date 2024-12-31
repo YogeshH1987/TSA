@@ -38,6 +38,7 @@
 .cp-rebar-estimator .calc-step.step-2 {
   padding-bottom: 8rem;
 }
+.cp-rebar-estimator .calc-step.step-4 .flr-list,
 .cp-rebar-estimator .calc-step.step-4 .lyt-grid {
   max-width: 58rem;
   margin: 0 auto;
@@ -162,6 +163,10 @@
   line-height: 2.4rem;
   color: #333333;
   text-align: left;
+}
+.cp-rebar-estimator .flr-list .flr-item {
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #DEDEDE;
 }
 
 /*# sourceMappingURL=cp-rebar-estimator.css.map */
