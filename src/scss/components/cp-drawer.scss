@@ -100,4 +100,34 @@
         }
     }
 }
+&.typ-blog{
+    padding-left: 0;
+    .head-sec{
+        border-bottom: 1px solid #dedede;
+        padding-left: 2rem;
+    }
+    .act-wrap{
+        background: $clr-root;
+       padding: 1.2rem;
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        @media only screen and (max-width: $media-mobile) {
+            position: absolute;
+        }
+        .btn{
+            min-width: 22.6rem;
+            @media only screen and (max-width: $media-mobile) {
+                min-width: 16.3rem;
+            }
+        }
+    }
+    &.active{
+        .act-wrap{
+            position: fixed;
+        }
+    }
+}
 }

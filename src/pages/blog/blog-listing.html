@@ -806,10 +806,25 @@
       <a href="#" class="icon icon-close js-close-btn"></a>
     </div>
     <div class="sec-cont">
-    <div class="cp-blog-filter">
-        <div class="lhs">
-            <ul class="category-list">
-                <li class="list-item"> Category
+        <div class="cp-tab typ-blog-filter">
+           
+            <ul class="tab-list">
+                <li class="tab-item active" data-target="#tab1">
+                    <h3 class="title">Category
+                        <span class="count">01</span>
+                    </h3>
+                    
+                </li>
+                <li class="tab-item" data-target="#tab2">
+                    <h3 class="title">Brand</h3>
+                </li>
+                <li class="tab-item" data-target="#tab3">
+                    <h3 class="title">Content type</h3>
+                </li>
+
+            </ul>
+            <div class="tab-container">
+                <div class="tab-content active" id="tab1">
                     <ul class="filter-menu-list">
                         <li class="menu-list-item title">Planning stage
                             <ul class="inner-menu-list">
@@ -840,10 +855,10 @@
                             </ul>
                         </li>
                      </ul>
-                </li>
-                <li class="list-item"> Brand
+                </div>
+                <div class="tab-content" id="tab2">
                     <ul class="filter-menu-list">
-                        <li class="menu-list-item title">brand
+                        <li class="menu-list-item title">Brands
                             <ul class="inner-menu-list">
                                 <li class="menu-list-item">
                                     <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
@@ -872,17 +887,48 @@
                             </ul>
                         </li>
                      </ul>
-                </li>
-                <li class="list-item"> Content type</li>
-            </ul>
-        </div>
-        
-        <div class="act-wrap">
-            <button type="button" class="btn btn-outline">Clear all</button>
-            <button type="button" class="btn">Apply filters</button>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <ul class="filter-menu-list">
+                        <li class="menu-list-item title">Content Type
+                            <ul class="inner-menu-list">
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Planning" >
+                                        <label for="Planning">Planning</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Construction" >
+                                        <label for="Construction">Construction</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="Interiors" >
+                                        <label for="Interiors">Interiors</label>
+                                    </div>
+                                </li>
+                                <li class="menu-list-item">
+                                    <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
+                                        <input type="checkbox" id="honeloan" >
+                                        <label for="homeloans">Home loans</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                     </ul>
+                </div>
+
+            </div>
+            <div class="act-wrap">
+                <button type="button" class="btn btn-outline">Clear all</button>
+                <button type="button" class="btn">Apply filters</button>
+            </div>
         </div>
     </div>
-    </div>
+   
     </div>
   <!---policy detail drawer end-->
     <div class="cm-overlay"></div>
