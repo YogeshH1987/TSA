@@ -36,71 +36,8 @@
 					<p class="sec-desc">Accurate, hassle-free rebar calculations for slabs, beams, columns, and more..</p>
 				</div>
 				<div class="sec-cont">
-					<div class="calc-step step-1 hide">
-						<div class="cp-box typ-calculate typ-rebar">
-							<!-- <div class="sec-head cm-mobile">
-								<h2 class="sec-title typ-center">Rebar estimator</h2>
-							</div> -->
-							<div class="img-wrap">
-								<picture>
-									<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/rebar-img.png">
-									<img src="../../components/cp-calculator-box/images/rebar-img.png" alt="Timeline_Cards"/>
-								</picture>
-							</div>
-							<div class="cont-wrap">
-								<div class="cp-calculator-box typ-rebar">
-									<h2 class="calc-title">Ground floor area</h2>
-									<p class="calc-desc">Enter area between 578 sq ft - 1934 sq ft</p>
-									<div class="input-group">
-										<input type="text" class="input-field" id="builtUpAreaValue" value="700">
-										<div class="cp-switch-toggle typ-area">
-											<input class="switch-toggle-checkbox" type="checkbox" id="area-mesurement" />
-											<label class="switch-toggle-label" for="area-mesurement">
-												<span>Sq. Ft</span>
-												<span>Sq. Mts</span>
-											</label>
-										</div>
-										<p class="error hide"></p>
-									</div>
-									<div class="btn-wrap">
-										<button class="btn btn-primary step-btn">Next</button>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-						<ul class="cp-add-info-list typ-calculate">
-							<li class="add-info-item">
-							  <div class="info-card">
-								<span class="icon icon-goal"></span>
-								<div class="info-wrap">
-								  <h2 class="info-title">Accurate projections</h2>
-								  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
-								</div>
-							  </div>
-							</li>
-							<li class="add-info-item">
-							  <div class="info-card">
-								<span class="icon icon-measurement"></span>
-								<div class="info-wrap">
-								  <h2 class="info-title">Easy usage</h2>
-								  <p class="info-desc">No expertise needed, just input basic details.</p>
-								</div>
-							  </div>
-							</li>
-							<li class="add-info-item">
-							  <div class="info-card">
-								<span class="icon icon-cash"></span>
-								<div class="info-wrap">
-								  <h2 class="info-title">Negotiate confidently</h2>
-								  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
-								</div>
-							  </div>
-							</li>
-						</ul>
-					</div>
-					<div class="cp-rebar-estimator">
-						<div class="cp-stop-progressbar">
+					<div class="cp-rebar-estimator ">
+						<div class="cp-stop-progressbar hide">
 							<div class="calc-progress-bar">
 								<div class="step-text">Step - 1/5</div>
 								<button class="close-btn"><span class="text">Exit</span><span class="icon icon-exit"></span></button>
@@ -112,7 +49,69 @@
 								<li class="progress-item"></li>
 								<li class="progress-item"></li>
 							</ul>
-						</div>						
+						</div>
+						<div class="calc-step step-1">
+							<div class="cp-box typ-calculate typ-rebar">
+								<!-- <div class="sec-head cm-mobile">
+									<h2 class="sec-title typ-center">Rebar estimator</h2>
+								</div> -->
+								<div class="img-wrap">
+									<picture>
+										<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/rebar-img.png">
+										<img src="../../components/cp-calculator-box/images/rebar-img.png" alt="Timeline_Cards"/>
+									</picture>
+								</div>
+								<div class="cont-wrap">
+									<div class="cp-calculator-box typ-rebar">
+										<h2 class="calc-title">Ground floor area</h2>
+										<p class="calc-desc">Enter area between 578 sq ft - 1934 sq ft</p>
+										<div class="input-group">
+											<input type="text" class="input-field" id="builtUpAreaValue" value="700">
+											<div class="cp-switch-toggle typ-area">
+												<input class="switch-toggle-checkbox" type="checkbox" id="area-mesurement" />
+												<label class="switch-toggle-label" for="area-mesurement">
+													<span>Sq. Ft</span>
+													<span>Sq. Mts</span>
+												</label>
+											</div>
+											<p class="error hide">Sorry, we only accept area between 578-1934 sq ft for now.</p>
+										</div>
+										<div class="btn-wrap">
+											<button class="btn btn-primary step-btn" id="step1-btn">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="cp-add-info-list typ-calculate">
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-goal"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Accurate projections</h2>
+									  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
+									</div>
+								  </div>
+								</li>
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-measurement"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Easy usage</h2>
+									  <p class="info-desc">No expertise needed, just input basic details.</p>
+									</div>
+								  </div>
+								</li>
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-cash"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Negotiate confidently</h2>
+									  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
+									</div>
+								  </div>
+								</li>
+							</ul>
+						</div>
 						<div class="calc-step step-2 hide">
 							<h2 class="calc-title">Rebar estimator</h2>
 							<p class="calc-desc">Select the number of floors</p>
@@ -267,14 +266,14 @@
 								</div>
 							</div>							
 						</div>
-						<div class="calc-step step-4 ">
+						<div class="calc-step step-4 hide">
 							<h2 class="calc-title">Rebar estimator</h2>
 							<p class="calc-desc">What do you want to calculate rebar estimate for</p>
 							<div class="scroll-container ">
 								<ul class="lyt-grid typ-col-2-no-wrap js-">
 									<li class="grid-col">
 										<div class="bs-radio typ-house">
-											<input id="typ1" name="material" type="radio">
+											<input id="typ1" name="material" type="radio" class="js-select-house">
 											<label for="typ1" class="custom-radio">	
 												<div class="home-typ-card">
 													<div class="img-wrap">
@@ -287,7 +286,7 @@
 									</li>
 									<li class="grid-col">
 										<div class="bs-radio typ-house">
-											<input id="typ2" name="material" type="radio">
+											<input id="typ2" name="material" type="radio" class="js-select-house">
 											<label for="typ2" class="custom-radio">	
 												<div class="home-typ-card">
 													<div class="img-wrap">
@@ -320,13 +319,12 @@
 									</li>
 								</ul>
 							</div>
+						</div>						
+						<div class="act-wrap hide">
+							<button class="btn btn-outline typ-rebar-cal btn-back"><span class="icon icon-Left-arrow cm-mobile"></span><span class="cm-desktop">Back</span></button>
+							<button class="btn typ-rebar-cal btn-next"><span class="icon icon-right-arrow cm-mobile"></span><span class="cm-desktop">Next</span></button>
 						</div>
-						
-						<div class="act-wrap">
-							<button class="btn btn-outline typ-rebar-cal"><span class="icon icon-Left-arrow cm-mobile"></span><span class="cm-desktop">Back</span></button>
-							<button class="btn typ-rebar-cal"><span class="icon icon-right-arrow cm-mobile"></span><span class="cm-desktop">Next</span></button>
-						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</section>

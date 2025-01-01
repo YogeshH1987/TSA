@@ -28,9 +28,14 @@
             .lyt-grid{
                 max-width: 58rem;
                 margin: 0 auto;
-            } 
+                @media only screen and (max-width: $media-mobile){
+                    max-width: 100%;
+                    flex-direction: row;
+                }
+            }
         }
     }
+
     .act-wrap{
         display: flex;
         justify-content: space-between;
@@ -120,6 +125,7 @@
     }
     .scroll-container{
         max-height: 60rem;
+        overflow: hidden;
         overflow-y: scroll;
     }
 
@@ -128,9 +134,12 @@
             max-width: 28rem;
             height: 19.2rem;
             @include border-radius(1.6rem);
+            @media only screen and (max-width: $media-mobile){
+                max-width: 16.6rem;
+            }
             img{
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
                 @include border-radius(1.6rem);
             }
         }
@@ -151,3 +160,4 @@
         }
     }
 }
+

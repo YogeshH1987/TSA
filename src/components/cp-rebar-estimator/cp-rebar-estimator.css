@@ -43,6 +43,13 @@
   max-width: 58rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+  .cp-rebar-estimator .calc-step.step-4 .flr-list,
+  .cp-rebar-estimator .calc-step.step-4 .lyt-grid {
+    max-width: 100%;
+    flex-direction: row;
+  }
+}
 .cp-rebar-estimator .act-wrap {
   display: flex;
   justify-content: space-between;
@@ -140,6 +147,7 @@
 }
 .cp-rebar-estimator .scroll-container {
   max-height: 60rem;
+  overflow: hidden;
   overflow-y: scroll;
 }
 .cp-rebar-estimator .home-typ-card .img-wrap {
@@ -149,9 +157,14 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-rebar-estimator .home-typ-card .img-wrap {
+    max-width: 16.6rem;
+  }
+}
 .cp-rebar-estimator .home-typ-card .img-wrap img {
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
