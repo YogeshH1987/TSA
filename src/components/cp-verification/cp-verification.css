@@ -47,5 +47,11 @@
     font-size: 1.4rem;
   }
 }
+.cp-verification.typ-article-video {
+  height: auto;
+}
+.cp-verification.typ-article-video .cont-info {
+  max-width: 85.7rem;
+}
 
 /*# sourceMappingURL=cp-verification.css.map */
