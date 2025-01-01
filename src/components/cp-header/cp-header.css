@@ -35,12 +35,11 @@
 .cp-header .top-sec .lhs {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .cp-header .top-sec .lhs .logo-wrap {
   width: 12rem;
   height: 5.6rem;
-  margin-right: 3rem;
+  margin-right: 4rem;
   position: relative;
 }
 .cp-header .top-sec .lhs .logo-wrap::after {
@@ -58,7 +57,7 @@
   }
 }
 .cp-header .top-sec .lhs .location-wrap {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .lhs .location-wrap {
@@ -572,7 +571,6 @@
 .open-inner-menu,
 .open-region-menu,
 .open-budget-menu,
-.open-stage-menu,
 .open-category-menu {
   display: none; /* Hide by default */
 }
@@ -582,7 +580,6 @@
 .open-inner-menu.active,
 .open-region-menu.active,
 .open-budget-menu.active,
-.open-stage-menu.active,
 .open-category-menu.active {
   display: block; /* Show when active */
 }
@@ -591,7 +588,6 @@
 .open-inner-menu.active.menu-list,
 .open-region-menu.active.menu-list,
 .open-budget-menu.active.menu-list,
-.open-stage-menu.active.menu-list,
 .open-category-menu.active.menu-list {
   height: calc(100vh - 9rem);
 }

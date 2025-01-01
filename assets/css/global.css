@@ -423,230 +423,6 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-eye:before {
-  content: "\e982";
-}
-
-.icon-economy:before {
-  content: "\e97f";
-}
-
-.icon-standard:before {
-  content: "\e980";
-}
-
-.icon-exit:before {
-  content: "\e981";
-}
-
-.icon-straighten:before {
-  content: "\e97b";
-}
-
-.icon-people_outline:before {
-  content: "\e97c";
-}
-
-.icon-touch_app:before {
-  content: "\e97d";
-}
-
-.icon-angle:before {
-  content: "\e94a";
-}
-
-.icon-argio:before {
-  content: "\e94b";
-}
-
-.icon-article:before {
-  content: "\e94c";
-}
-
-.icon-book-spark:before {
-  content: "\e94d";
-}
-
-.icon-box:before {
-  content: "\e94e";
-}
-
-.icon-build:before {
-  content: "\e94f";
-}
-
-.icon-calculatar:before {
-  content: "\e950";
-}
-
-.icon-camera:before {
-  content: "\e951";
-}
-
-.icon-cash:before {
-  content: "\e952";
-}
-
-.icon-catogry:before {
-  content: "\e953";
-}
-
-.icon-cerify:before {
-  content: "\e954";
-}
-
-.icon-doc-search:before {
-  content: "\e955";
-}
-
-.icon-door:before {
-  content: "\e956";
-}
-
-.icon-engineering:before {
-  content: "\e957";
-}
-
-.icon-explore-style:before {
-  content: "\e958";
-}
-
-.icon-exterior-construction:before {
-  content: "\e959";
-}
-
-.icon-fabrication:before {
-  content: "\e95a";
-}
-
-.icon-fence:before {
-  content: "\e95b";
-}
-
-.icon-furniture:before {
-  content: "\e95c";
-}
-
-.icon-goal:before {
-  content: "\e95d";
-}
-
-.icon-group:before {
-  content: "\e95e";
-}
-
-.icon-home:before {
-  content: "\e95f";
-}
-
-.icon-interiors:before {
-  content: "\e960";
-}
-
-.icon-learning-zone:before {
-  content: "\e961";
-}
-
-.icon-location-copy:before {
-  content: "\e962";
-}
-
-.icon-measurement:before {
-  content: "\e963";
-}
-
-.icon-offer:before {
-  content: "\e964";
-}
-
-.icon-oil:before {
-  content: "\e965";
-}
-
-.icon-parking:before {
-  content: "\e966";
-}
-
-.icon-pause:before {
-  content: "\e967";
-}
-
-.icon-pencil:before {
-  content: "\e968";
-}
-
-.icon-planning-stage:before {
-  content: "\e969";
-}
-
-.icon-play-2:before {
-  content: "\e96a";
-}
-
-.icon-power:before {
-  content: "\e96b";
-}
-
-.icon-reset:before {
-  content: "\e96c";
-}
-
-.icon-return:before {
-  content: "\e96d";
-}
-
-.icon-rod:before {
-  content: "\e96e";
-}
-
-.icon-roof:before {
-  content: "\e96f";
-}
-
-.icon-rupee:before {
-  content: "\e970";
-}
-
-.icon-save-timer:before {
-  content: "\e971";
-}
-
-.icon-stock:before {
-  content: "\e972";
-}
-
-.icon-success:before {
-  content: "\e973";
-}
-
-.icon-testimonials:before {
-  content: "\e974";
-}
-
-.icon-toggle:before {
-  content: "\e975";
-}
-
-.icon-tool:before {
-  content: "\e976";
-}
-
-.icon-variant32-42:before {
-  content: "\e977";
-}
-
-.icon-wallet:before {
-  content: "\e978";
-}
-
-.icon-web:before {
-  content: "\e979";
-}
-
-.icon-website:before {
-  content: "\e97a";
-}
-
 .icon-youtube:before {
   content: "\e947";
 }
@@ -1350,7 +1126,7 @@ p {
   color: #FFFFFF;
 }
 .bs-sec.typ-gray-bg {
-  background: #ECF2FB;
+  background: #ecf2fb;
 }
 .bs-sec.typ-curve {
   border-radius: 4.8rem 4.8rem 0 0;
@@ -1930,29 +1706,6 @@ p {
   background-color: #FFFBF2;
 }
 .bs-sec.typ-windows-pro .sec-title {
-  font-size: 2rem;
-}
-.bs-sec.typ-login {
-  margin-top: 19rem;
-}
-.bs-sec.typ-login .container {
-  max-width: 103rem;
-  width: 100%;
-}
-.bs-sec.typ-login .container .successful-msg {
-  background: #E5F6EC;
-  border-radius: 8px;
-  border: 1px solid #66C88D;
-  display: flex;
-  max-width: 34.3rem;
-  margin: 0 auto 1.2rem;
-  padding: 1rem;
-  font-size: 1.4rem;
-  font-family: "Poppins Medium";
-  color: #00A441;
-  gap: 1rem;
-}
-.bs-sec.typ-login .container .successful-msg .icon {
   font-size: 2rem;
 }
 
@@ -2998,51 +2751,6 @@ p {
 .bs-radio.typ-shade .custom-radio input[type=radio]:checked + .custom-radio::after {
   border-radius: 50%;
 }
-.bs-radio.typ-circle-radio .custom-radio {
-  position: relative;
-  padding: 0;
-  padding-left: 4rem;
-  display: block;
-  border: none;
-  background: none;
-  color: #333333;
-}
-.bs-radio.typ-circle-radio .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 21px;
-  width: 21px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  border: 2px solid #999999;
-  transition: all 0.3s;
-}
-.bs-radio.typ-circle-radio input[type=radio]:checked + .custom-radio .checkmark {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #3D7EDB;
-}
-.bs-radio.typ-circle-radio .checkmark::after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.bs-radio.typ-circle-radio .checkmark::after {
-  top: 2px;
-  left: 2px;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #3D7EDB;
-}
-.bs-radio.typ-circle-radio input[type=radio]:checked + .custom-radio .checkmark::after {
-  display: block;
-}
-.bs-radio.typ-circle-radio input[type=radio]:checked + .custom-radio {
-  border: none;
-  background: none;
-  font-family: "Poppins Medium";
-}
 
 .bs-modal {
   position: relative;
@@ -3076,13 +2784,6 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-modal.modal-show {
     width: 100%;
-    top: auto;
-    bottom: 0;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
   }
 }
 .bs-modal.modal-show .modal-dialog {
@@ -3091,17 +2792,6 @@ p {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 768px) {
-  .bs-modal.modal-show .modal-dialog {
-    top: auto;
-    bottom: 0;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
 }
 .bs-modal .modal-body {
   flex: none;
@@ -3127,7 +2817,7 @@ p {
   transform: translate(-50%, -75%);
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   background: #FFFFFF;
-  border-radius: 2.4rem;
+  border-radius: 0px;
   padding: 1.5rem;
 }
 .bs-modal .modal-content {
@@ -3170,39 +2860,6 @@ p {
   text-decoration: underline;
   font-family: "Poppins Medium";
   color: #3D7EDB;
-}
-.bs-modal.type-sm .sec-title {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  margin-bottom: 3.2rem;
-  font-family: "Poppins Semibold";
-  color: #333333;
-}
-@media only screen and (max-width: 768px) {
-  .bs-modal.type-sm .sec-title {
-    font-size: 2rem;
-    line-height: 2.8rem;
-  }
-}
-.bs-modal.type-sm .sub-title {
-  margin-bottom: 1.6rem;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  font-family: "Poppins Semibold";
-  color: #333333;
-}
-.bs-modal.type-sm .modal-dialog {
-  padding: 2.4rem 1.6rem;
-  max-width: 40rem;
-}
-@media only screen and (max-width: 768px) {
-  .bs-modal.type-sm .modal-dialog {
-    padding: 2rem 1.5rem;
-    border-radius: 2.4rem 2.4rem 0 0;
-    -webkit-border-radius: 2.4rem 2.4rem 0 0;
-    -moz-border-radius: 2.4rem 2.4rem 0 0;
-    height: auto;
-  }
 }
 .bs-modal.type-md .small-title {
   font-size: 4rem;

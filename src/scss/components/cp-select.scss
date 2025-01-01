@@ -65,7 +65,7 @@
             transition: all ease-in-out .3s;
             z-index: 2;
             background:$clr-root;
-            border: 1px solid  $clr-bg;
+            border: 1px solid  #ECF2FB;
             border-radius: 6px;
     
             &.active {
@@ -98,7 +98,7 @@
         border-top: 1px solid #e6e6e6;
         padding: 1rem;
         &:hover{
-            background: $clr-bg;
+            background: #ECF2FB;
 
         }
     }

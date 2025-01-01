@@ -113,7 +113,7 @@ overflow: hidden;
     background-color: #F3F4F6;
     padding: 7rem 1.6rem;
     border: 0;
-    @media only screen and (max-width: $media-sm) {  padding: 0;   background-color: $clr-root;border-radius: 0;}
+    @media only screen and (max-width: $media-sm) {  padding: 0;   background-color: #ffffff;border-radius: 0;}
     .img-wrap { width: 54%; margin: auto;
         @media only screen and (max-width: $media-sm) {width: 100%; }
     }

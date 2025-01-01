@@ -333,7 +333,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 768px) {
   .cp-sub-menu .top-sec .lhs .cat-grid .col.typ2 .col-title {

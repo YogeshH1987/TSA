@@ -25,17 +25,9 @@
         -moz-transition: opacity 0.1s ease-in-out;
         @media only screen and (max-width: $media-mobile)  {
             width: 100%;
-            top: auto;
-            bottom: 0;
-            @include transform(translate(-50%, 0));
         }
         .modal-dialog {
             @include transform(translate(-50%, -50%));
-            @media only screen and (max-width: $media-mobile)  {
-                top: auto;
-                bottom: 0;
-                @include transform(translate(-50%, 0));
-            }
         }
     }
     .modal-body {
@@ -58,7 +50,7 @@
         @include transform(translate(-50%, -75%));
         transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         background: $clr-root;
-        border-radius: 2.4rem;
+        border-radius: 0px;
         padding: 1.5rem;
     }
     .modal-content {
@@ -71,7 +63,7 @@
         top: 16px;
         right: 16px;
         font-size: 2.4rem;
-        color: $clr-black;
+        color: #000000;
         padding: 0;
         z-index: 5;
         @media only screen and (max-width: $media-mobile) {
@@ -96,35 +88,6 @@
             text-decoration: underline;
             font-family: $font-medium;
             color: $clr-primary;
-            }
-        }
-    }
-    &.type-sm {
-        .sec-title {
-            font-size: 2.4rem;
-            line-height: 3.2rem;
-            margin-bottom: 3.2rem;
-            font-family: $font-semiBold;
-            color: $clr-base;
-            @media only screen and (max-width: $media-mobile) {
-                font-size: 2rem;
-                line-height: 2.8rem;
-            }
-        }
-        .sub-title {
-            margin-bottom: 1.6rem;
-            font-size: 2rem;
-            line-height: 2.8rem;
-            font-family: $font-semiBold;
-            color: $clr-base;
-        }
-        .modal-dialog {
-            padding: 2.4rem 1.6rem;
-            max-width: 40rem;
-            @media only screen and (max-width: $media-mobile) {
-                padding: 2rem 1.5rem;
-                @include border-radius( 2.4rem 2.4rem 0 0);
-                height: auto;
             }
         }
     }

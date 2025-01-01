@@ -13,6 +13,7 @@
     left: 50%;
     @include transform(translateX(-50%));
     z-index: 10;
+    display: none;
     .msg{
         font-family: $font-semiBold;
         font-size: 1.6rem;
