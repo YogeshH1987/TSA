@@ -22,6 +22,7 @@
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 10;
+  display: none;
 }
 .cp-toast .msg {
   font-family: "Poppins Semibold";

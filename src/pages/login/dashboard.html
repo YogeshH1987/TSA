@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Login</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/css/plp.css" />
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
+    <link rel="stylesheet" href="/components/cp-price/cp-price.css" />
+
+
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="cp-header">
+                <div class="container">
+                    <div class="top-sec">
+                        <div class="hamburger-menu">
+                            <div class="open-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    <div class="lhs">                    
+                        <div class="logo-wrap">
+						<picture>
+							<source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+							<source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+							<img src="/images/TSA-logo.png" alt="logo tsa" />
+						</picture>
+                        </div>
+						<div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+						<div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text"class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+
+						<div class="quick-link-wrap">
+							<ul class="quick-link-list">
+								<li class="quick-link-icon-item">
+									<a href="#" class="icon-search quick-link-item"></a>
+								</li>
+								<li class="quick-link-icon-item">
+									<a href="#" class="icon-cart quick-link-item"></a>
+								</li>
+								<li class="quick-link-icon-item">
+									<a href="#" class="icon-profile quick-link-item"></a>
+								</li>
+								<li class="quick-link-icon-item">
+									<a href="#" class="icon-language quick-link-item"></a>
+								</li>
+								
+							</ul>
+						</div>
+						<button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+                </div>
+                <div class="bottom-sec">
+                    <div class="container">  
+						<span class="close icon-close js-close-nav"></span>
+
+						<div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text"class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>                 
+						 <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+								<span class="nav-icon icon-cart typ1"></span>
+                                <a href="javascript:void(0)" class="nav-link">Shop products</a>
+								<span class="arrow"></span>
+                                <div class="sub-nav-menu">
+									<div class="cp-sub-menu">
+										<div class="top-sec">
+											<div class="lhs">
+												
+												<h2 class="title js-shop-cat">
+													<span class="header-icon icon-cart"></span>
+													Shop by category
+												</h2>
+												
+												<ul class="cat-grid open-inner-menu">
+													<h2 class="title cm-mobile inner-heading">
+														<span class="inside-icon icon-arrow"></span>
+														Shop by category
+													</h2>
+													<li class="col js-category-menu">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/image 4868.png" alt="menu-img"/>
+															<h3 class="col-title">Home construction</h3>
+														</div>
+														<ul class="cont-wrap open-category-menu">
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Rebars</a>
+															<span class="new-lable">New</span>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Superlinks</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Roof designs</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Binding wire fencing</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Green blocks</a>
+														</li>	
+														</ul>
+													</li>
+													<li class="col">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/fabrication.png" alt="menu-img"/>
+															<h3 class="col-title">Fabrication</h3>
+														</div>
+														<ul class="cont-wrap">
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Rectangular tubes</a>
+															
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Square tubes</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Circlular tubes</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">GI Roofing sheets</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Colored roofing sheets</a>
+														</li>
+														<li class="inner-menu-item">
+															<h3 class="title typ2">Fabricated homes </h3>
+														</li>	
+														</ul>
+													</li>
+													<li class="col">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/interior.png" alt="menu-img"/>
+															<h3 class="col-title">Interiors</h3>
+														</div>
+														<ul class="cont-wrap">
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Doors</a>
+															
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Windows</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Door frames</a>
+														</li>
+														</ul>
+													</li>
+													<li class="col">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/tool&diya.png" alt="menu-img"/>
+															<h3 class="col-title">Tools & DIY</h3>
+														</div>
+														<ul class="cont-wrap">
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Trade hand tools</a>
+															
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">DIY tool kits</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Files</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Industrial & hardware</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Garden tools</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Agri tool</a>
+														</li>
+														<li class="inner-menu-item"> 
+															<a href="#" class="inner-menu-link">Soil conditioner</a>
+														</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<div class="rhs ">
+												
+												<h2 class="title js-brand-menu">
+													<span class="header-icon icon-cart "></span>
+													Shop by brand
+												</h2>
+												<ul class="menu-list open-inner-menu">
+													<h2 class="title cm-mobile inner-heading">
+														<span class="inside-icon icon-arrow"></span>
+														Shop by brand
+													</h2>
+													<li class="menu-item">
+														
+														<a class="menu-link" href="#">
+															<span class="brand-logo">
+																<img src="/images/TataTisconLogo 1.png" alt="brand">
+															</span>
+															Tiscon
+														</a>
+													</li>
+													<li class="menu-item">
+														<a class="menu-link" href="#">
+															<span class="brand-logo">
+																<img src="/images/Frame 1597882718.png" alt="brand">
+															</span>
+															Wiron</a>
+													</li>
+													
+													<li class="menu-item">
+														<a href="#"  class="menu-link">
+															<span class="brand-logo">
+																<img src="/images/TataTisconLogo 2.png" alt="brand">
+															</span>
+															Structura
+														</a>
+													</li>
+													<li class="menu-item">
+														<a  class="menu-link" href="#">
+														<span class="brand-logo">
+																<img src="/images/TataTisconLogo 2 (1).png" alt="brand">
+														</span>
+															Agrico
+														</a>
+													</li>
+													<li class="menu-item">
+														<a href="#"  class="menu-link">
+															<span class="brand-logo">
+																<img src="/images/Frame 1597882714.png" alt="brand">
+														</span>
+															Durashine
+														</a>
+													</li>
+													<li class="menu-item">
+														<a href="#"  class="menu-link">
+														<span class="brand-logo">
+															<img src="/images/Frame 1597882713.png" alt="brand">
+														</span>
+															Pravesh
+														</a>
+													</li>
+													<li class="menu-item">
+														<a href="#" class="menu-link">
+															<span class="brand-logo">
+																<img src="/images/Frame 1597882715.png" alt="brand">
+															</span>
+															DhurviGold
+														
+														</a>
+													</li>
+													<li class="menu-item">
+														<a href="#" class="menu-link">
+													<span class="brand-logo">
+														<img src="/images/TataTisconLogo 2 (2).png" alt="brand">
+													</span>		
+														Tiscobuild
+													</a>
+													</li>
+													<li class="menu-item">
+														<a href="#" class="menu-link">
+													<span class="brand-logo">
+														<img src="/images/Frame 1597882713 (1).png" alt="brand">
+													</span>		
+													Nestin
+													</a>
+													</li>
+												</ul> 
+												<a href="#" class="btn btn-link text-right cm-desktop">View all offers</a>
+											</div>
+										</div>
+										<div class="bottom-menu-sec">
+											
+											<h2 class="title js-offers-menu">
+												<span class="header-icon icon-cart"></span>
+												Available offers
+											</h2>
+											
+											<ul class="offers-list typ-sub-menu open-inner-menu">
+												<h2 class="title cm-mobile inner-heading">
+													<span class="inside-icon icon-arrow"></span>
+													Available offers
+												</h2>
+												<li class="offers-item">
+												  <div class="cp-offers">
+													  <div class="lft typ-blue">
+														<span>Discount</span> 
+													  </div>
+													  <div class="rht typ-blue-border">
+														  <h3 class="title">Navratri special</h3>
+														  <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+														  <span class="offer-valid">Valid till 31 Oct 2024</span>
+													  </div>
+												  </div>
+												</li>
+												
+												<li class="offers-item">
+												  <div class="cp-offers">
+													  <div class="lft typ-green">
+														<span>CASHBACK</span>  
+													  </div>
+													  <div class="rht typ-green-border">
+														  <h3 class="title">Instant cashback</h3>
+														  <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+														  <span class="offer-valid">Valid till 31 Oct 2024</span>
+													  </div>
+												  </div>
+												</li>
+												
+												<li class="offers-item">
+												  <div class="cp-offers">
+													  <div class="lft typ-yellow">
+														<span>Discount</span> 
+													  </div>
+													  <div class="rht typ-yellow-border">
+														  <h3 class="title">Navratri special</h3>
+														  <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+														  <span class="offer-valid">Valid till 31 Oct 2024</span>
+													  </div>
+												  </div>
+												</li>
+											  </ul>
+										</div>
+									</div>
+									</div>
+                            </li>
+                            <li class="nav-item">
+								<span class="nav-icon icon-brochure typ2"></span>
+                                <a href="#" class="nav-link">Home building guide</a>
+								<span class="arrow"></span>
+								 <div class="sub-nav-menu">
+									<div class="cp-sub-menu">
+										<div class="top-sec typ2">
+											<div class="lhs">
+												<h2 class="title">Explore by stage   </h2>
+												<ul class="cat-grid">
+													<li class="col typ2">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/planning.png" alt="menu-img"/>
+														</div>
+														<a href="#" class="col-title">Planning stage</a>
+
+														
+													</li>
+													<li class="col typ2">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/planning.png" alt="menu-img"/>
+														</div>
+														<a href="#" class="col-title">Exterior construction</a>
+
+														
+													</li>
+													<li class="col typ2">
+														<div class="img-wrap">
+															<img src="../components/cp-sub-menu/images/planning.png" alt="menu-img"/>
+														</div>
+														<a href="#" class="col-title">Interior construction</a>
+
+														
+													</li>
+												
+												</ul>
+											</div>
+											<div class="rhs ">
+												<h2 class="title">Learning centre </h2>
+												<ul class="menu-list">
+													<li class="menu-item active">
+														<a class="menu-link" href="#">Popular articles</a>
+													</li>
+													<li class="menu-item">
+														<a class="menu-link" href="#">Trending videos</a>
+													</li>
+													<li class="menu-item">
+														<a class="menu-link" href="#">Featured content</a>
+													</li>
+													<li class="menu-item">
+														<a href="#"  class="menu-link">User testimonials</a>
+													</li>
+													
+												</ul> 
+												<a href="#" class="btn btn-link text-right">View all offers</a>
+											</div>
+											<div class="rhs typ3">
+												<div class="img-wrap">
+													<img src="../components/cp-sub-menu/images/not-sure.png" alt=""/>
+													<h3 class="
+													">Not surewhere tostart?</h3>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									</div>
+                            </li>
+                            <li class="nav-item">
+								<span class="nav-icon icon-calculator typ3"></span>
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+								<span class="nav-icon icon-calculator typ4"></span>
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+								<span class="nav-icon icon-call typ5"></span>
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+								<span class="nav-icon icon-Question typ6"></span>
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+
+                </div>
+            
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+    <div class="main">
+        <section class="bs-sec typ-first-sec typ-get-started">
+            <div class="img-wrap">
+                <img src="../../components/cp-login/image/get-started-img.png" alt="get started" />
+                <div class="get-started-main">
+                    <p  class="title small-text"><span class="brand">Tata Steel</span> <br>
+                        Aashiyana</p>
+                    <h2 class="title">
+                        Setting up your <br>personalised dashboard
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer Start -->
+    <!-- <footer>
+        <div class="cp-footer">
+            <picture>
+                <source media="(max-width:768px)" srcset="/images/footer_mob.png">
+                <img src="/images/footer.png" alt="Footer" />
+            </picture>
+        </div>
+    </footer> -->
+    <!-- Footer end -->
+    <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+
+    <!-- endbuild -->
+</body>
+
+</html>

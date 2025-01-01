@@ -17,7 +17,7 @@
   
     .top-sec{
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;
         padding-bottom: 1.6rem;
         @media only screen and (max-width: $media-mobile) {
             position: relative;
@@ -27,11 +27,11 @@
         .lhs{
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            
             .logo-wrap{
                 width: 12rem;
                 height: 5.6rem;
-                margin-right: 3rem;
+                margin-right: 4rem;
                 position: relative;
                 &::after{
                     content: '';
@@ -48,7 +48,7 @@
                 }
             }
             .location-wrap{
-                margin-right: 3rem;
+                margin-right: 4rem;
                 @media only screen and (max-width: $media-mobile) {
                     width: 100%;
                     position: absolute;
@@ -203,11 +203,6 @@
                         }
                     }
                 }
-                .js-profile-state{
-                    &:hover{
-
-                    }
-                }
                 
             }
         }
@@ -270,7 +265,7 @@
                 }
                 &.typ2{
                     background: #F6CDD5;
-                    color:$clr-secondary;
+                    color:#D2042D;
                 }
                 &.typ3{
                     background:#CCEDD9;
@@ -282,7 +277,7 @@
                 }
                 &.typ5{
                     background:#D8E5F8;
-                    color:$clr-primary;
+                    color:#3D7EDB;
                 }
                 &.typ6{
                     background:#DED3DE;
@@ -573,7 +568,6 @@
 .open-inner-menu,
 .open-region-menu,
 .open-budget-menu,
-.open-stage-menu,
 .open-category-menu {
     display: none; /* Hide by default */
 }
@@ -582,7 +576,6 @@
 .open-inner-menu.active,
 .open-region-menu.active,
 .open-budget-menu.active,
-.open-stage-menu.active,
 .open-category-menu.active {
     display: block ; /* Show when active */
     &.menu-list{

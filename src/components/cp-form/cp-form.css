@@ -66,6 +66,40 @@
   margin-bottom: 2.4rem;
   display: block;
 }
+.cp-form .feedback-personal-data .form-group .form-label {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.cp-form .feedback-personal-data .form-group .form-control {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #DEDEDE;
+  font-family: "Poppins Regular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-radius: 1.2rem;
+}
+.cp-form .feedback-personal-data .form-group .form-textarea {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #DEDEDE;
+  font-family: "Poppins Regular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-radius: 1.2rem;
+  min-height: 15.6rem;
+}
+.cp-form .feedback-personal-data .form-group .err-mgs {
+  color: #D2042D;
+  font-family: "Poppins Medium";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.4rem;
+  display: block;
+}
 .cp-form .act-wrap .btn-submit {
   width: 100%;
 }

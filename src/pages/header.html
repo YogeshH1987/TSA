@@ -43,8 +43,8 @@
 					<div class="location-wrap">
 						<span class="icon-location map-icon"></span>
 						<input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
-						<button class="update-location model-open" data-toggle="modal" data-modal-id="#location">Update location</button>
-						<span class="icon-edit icon model-open" data-toggle="modal" data-modal-id="#location"></span>
+						<a href="#" class="update-location">Update location</a>
+						<span class="icon-edit icon"></span>
 					</div>
 					<div class="cp-search">
 						<div class="search-wrap">
@@ -88,8 +88,9 @@
 								</div>
 							</li>
 							<li class="quick-link-icon-item">
-								<button class="icon-language quick-link-item model-open" data-toggle="modal" data-modal-id="#language"></button>
-							</li>							
+								<a href="#" class="icon-language quick-link-item"></a>
+							</li>
+							
 						</ul>
 					</div>
 					<button class="btn btn-order">Place order on call</button>
@@ -119,7 +120,7 @@
 										<div class="lhs">
 											<div class="head-wrap">
 												<h2 class="title js-shop-cat">
-													<span class="header-icon icon-catogry"></span>
+													<span class="header-icon icon-cart"></span>
 													Shop by category
 												</h2>
 												<a href="#" class="btn btn-link text-right cm-desktop">View all</a>
@@ -327,7 +328,7 @@
 									<div class="bottom-menu-sec">		
 										<div class="head-wrap">
 											<h2 class="title js-offers-menu">
-												<span class="header-icon icon-offer"></span>
+												<span class="header-icon icon-cart"></span>
 												Available offers
 											</h2>
 											<a href="#" class="btn btn-link cm-desktop">View all offers</a>
@@ -404,20 +405,23 @@
 													<div class="img-wrap">
 														<img src="../components/cp-sub-menu/images/planning.png" alt="menu-img"/>
 													</div>
-													<a href="#" class="col-title"><span class="inside-icon cm-mobile icon-planning-stage"></span> Planning stage <span class="icon icon-right-arrow"></span></a>
+													<a href="#" class="col-title">Planning stage <span class="icon icon-right-arrow"></span></a>
 												</li>
 												<li class="col typ2">
 													<div class="img-wrap">
 														<img src="../components/cp-sub-menu/images/planning.png" alt="menu-img"/>
 													</div>
-													<a href="#" class="col-title"><span class="inside-icon cm-mobile icon-exterior-construction"></span> Exterior construction <span class="icon icon-right-arrow"></span></a>
+													<a href="#" class="col-title">Exterior construction <span class="icon icon-right-arrow"></span></a>
+
+													
 												</li>
 												<li class="col typ2">
 													<div class="img-wrap">
 														<img src="../components/cp-sub-menu/images/planning.png" alt="menu-img"/>
 													</div>
-													<a href="#" class="col-title"><span class="inside-icon cm-mobile icon-interiors"></span>Interior construction <span class="icon icon-right-arrow"></span></a>														
-												</li>											
+													<a href="#" class="col-title">Interior construction <span class="icon icon-right-arrow"></span></a>														
+												</li>
+											
 											</ul>
 										</div>
 										<div class="rhs">
@@ -433,16 +437,16 @@
 													</h2>
 												</div>
 												<li class="menu-item active">
-													<a class="menu-link" href="#"><span class="inside-icon cm-mobile icon-article"></span>Popular articles</a>
+													<a class="menu-link" href="#">Popular articles</a>
 												</li>
 												<li class="menu-item">
-													<a class="menu-link" href="#"><span class="inside-icon cm-mobile icon-play-2"></span>Trending videos</a>
+													<a class="menu-link" href="#">Trending videos</a>
 												</li>
 												<li class="menu-item">
-													<a class="menu-link" href="#"><span class="inside-icon cm-mobile icon-book-spark"></span> Featured content</a>
+													<a class="menu-link" href="#">Featured content</a>
 												</li>
 												<li class="menu-item">
-													<a href="#"  class="menu-link"><span class="inside-icon cm-mobile icon-testimonials"></span> User testimonials</a>
+													<a href="#"  class="menu-link">User testimonials</a>
 												</li>
 												
 											</ul> 
@@ -607,25 +611,25 @@
 												</div>
 												<li class="menu-item">
 													<a class="menu-link" href="#">
-														<span class="inside-icon icon-cart cm-mobile"></span>
+														<span class="inside-icon icon-cart"></span>
 														Gates
 													</a>
 												</li>
 												<li class="menu-item">
 													<a class="menu-link" href="#">
-														<span class="inside-icon icon-cart cm-mobile"></span>
+														<span class="inside-icon icon-cart"></span>
 														Car sheds
 													</a>
 												</li>
 												<li class="menu-item">
 													<a class="menu-link" href="#">
-														<span class="inside-icon icon-cart cm-mobile"></span>
+														<span class="inside-icon icon-cart"></span>
 														Hand railings
 													</a>
 												</li>
 												<li class="menu-item">
 													<a class="menu-link" href="#">
-														<span class="inside-icon icon-cart cm-mobile"></span>
+														<span class="inside-icon icon-cart"></span>
 														Hand railings
 													</a>
 												</li>
@@ -811,9 +815,12 @@
 							<a href="#" class="nav-link">FAQs</a>
 						</li>
 					</ul>
-				</nav>				
+				</nav>
+				
 			</div>
-			</div>		
+
+			</div>
+		
         </div>
       </div>
     </header>
@@ -823,12 +830,38 @@
 			<div class="modal-body">
 				<div class="modal-content">
 					<h2 class="sec-title">
-						Let's personalize your experience
+						Let’s personalize your experience
 					</h2>
 					<div class="sec-cont">						
-						<form action="#" class="cp-form typ-language">
+						<form action="#" class="cp-form type-language">
+							<div class="step-1">
+								<h3 class="sec-sub-title">
+									Add your location
+								</h3>
+								<div class="form-group">
+									<label class="form-label" for="pincode">Title text</label>
+									<input
+									  type="text"
+									  id="pincode"
+									  class="form-control"
+									  placeholder=""
+									  required
+									/>
+									<span class="err-mgs"></span>
+								</div>
+								<div class="act-wrap">
+									<button
+									  class="btn btn-submit disabled"
+									  type="submit"
+									  disabled="true"
+									>
+									  Submit
+									</button>
+									<a href="#" class="btn btn-link text-center">Skip for now</a>
+								</div>
+							</div>
 							<div class="step-2">
-								<h3 class="sub-title">
+								<h3 class="sec-sub-title">
 									Choose your preferred language
 								</h3>
 								<div class="radio-wrap">
@@ -845,104 +878,24 @@
 									</label>
 									</div>
 									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											অসমীয়া
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											भोजपुरी
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											ગુજરાતી
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											ಕನ್ನಡ
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											मराठी
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											മലയാളം
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											తెలుగు
-										</label>
-									</div>
-									<div class="bs-radio">
-										<input id="radio3" name="size" type="radio">
-										<label for="radio3" class="custom-radio">
-											தமிழ்
-										</label>
+									<input id="radio3" name="size" type="radio">
+									<label for="radio3" class="custom-radio">
+										অসমীয়া
+									</label>
 									</div>
 								</div> 
 								<div class="act-wrap">
-									<a href="#" class="btn btn-link text-center js-close">Skip for now</a>
+									<a href="#" class="btn btn-link text-center">Skip for now</a>
 								</div>
 							</div>
-						</form>						
+						</form>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="location" tabindex="-1" role="dialog" class="bs-modal type-sm fade typ-location">
-		<div class="modal-dialog">
-			<div class="modal-body">
-				<div class="modal-content">
-					<h2 class="sec-title">
-						Let's personalize your experience
-					</h2>
-					<div class="sec-cont">						
-						<form action="#" class="cp-form typ-location">
-							<div class="step-1">
-								<h3 class="sub-title">
-									Add your location
-								</h3>
-								<div class="form-group">
-									<label class="form-label" for="pincode">PinCode</label>
-									<input
-									  type="text"
-									  id="pincode"
-									  class="form-control"
-									  placeholder="400004"
-									  required
-									/>
-									<span class="err-mgs"></span>
-								</div>
-								<div class="act-wrap">
-									<button
-									  class="btn btn-submit"
-									  type="submit"
-									>
-									  Submit
-									</button>
-									<a href="#" class="btn btn-link text-center js-close">Skip for now</a>
-								</div>
-							</div>
-						</form>						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	<div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
