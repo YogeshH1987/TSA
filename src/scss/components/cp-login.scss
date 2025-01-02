@@ -74,6 +74,9 @@
                 display: flex;
                 justify-content: center;
             }
+            .typ-clr-black {
+                color: #333333;
+            }
         }
 
         .form-wrap {
@@ -336,10 +339,15 @@
                 color: #EE4400;
             }
 
+            .otp-txt-msg {
+                font-size: 1.4rem;
+            }
+
             .re-send-link {
                 color: #B3B3B3;
                 font-family: $font-medium;
                 font-size: 1.4rem;
+                border-bottom: 1px solid #B3B3B3
             }
         }
 

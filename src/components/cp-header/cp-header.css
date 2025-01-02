@@ -274,6 +274,7 @@
   justify-content: center;
   font-size: 1.4rem;
   align-items: center;
+  padding: 0.6rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list .nav-item .nav-icon {
