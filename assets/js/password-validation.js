@@ -50,3 +50,49 @@ document.getElementById('verify-password-btn').addEventListener('click', functio
         alert('Passwords do not match.');
     }
 });
+
+// usrname validation
+function validateUsername(username) {
+    const criteria = {
+        length: /^.{4,}$/, // Minimum 4 characters
+        alphanumeric: /^[a-zA-Z0-9]*$/ // Only alphanumerics
+    };
+
+    document.querySelectorAll('.verify-item').forEach((item) => {
+        const checkType = item.dataset.check;
+
+        if (criteria[checkType]) {
+            if (criteria[checkType].test(username)) {
+                item.classList.add('completed');
+                item.classList.remove('error');
+            } else {
+                item.classList.remove('completed');
+                item.classList.add('error');
+            }
+        } else {
+            console.error(`No validation rule found for: ${checkType}`);
+        }
+    });
+}
+
+// Attach event listeners to username input
+const usernameInput = document.getElementById('username');
+usernameInput.addEventListener('input', function () {
+    validateUsername(this.value);
+});
+usernameInput.addEventListener('focus', function () {
+    validateUsername(this.value);
+});
+
+// Handle "Validate Username" button click
+document.getElementById('verify-username-btn').addEventListener('click', function () {
+    const username = document.getElementById('username').value;
+    const confirmUsername = document.getElementById('confirm-username').value;
+
+    if (username === confirmUsername) {
+        alert('Username validated successfully!');
+    } else {
+        alert('Usernames do not match.');
+    }
+});
+

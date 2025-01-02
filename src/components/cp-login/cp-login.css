@@ -154,7 +154,7 @@
   top: 98px;
   left: 0;
 }
-.cp-login .rhs .form-wrap .icon {
+.cp-login .rhs .form-wrap .form-group .icon {
   width: 3.2rem;
   height: 3.2rem;
   position: absolute;
@@ -162,6 +162,7 @@
   bottom: 5px;
   font-size: 2.4rem;
   color: #999999;
+  cursor: pointer;
 }
 .cp-login .rhs .act-wrap .login-btn {
   width: 100%;

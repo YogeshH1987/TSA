@@ -468,17 +468,18 @@
                 <div class="form-wrap typ2">
                     <div class="form-group error">
                         <label class="form-label">Username</label>
-                        <input type="text" name="" class="form-input validate-name" placeholder="">
+                        <input type="text" name="" id="username" class="form-input validate-name" placeholder="">
                     </div>
-                    <ul class="pass-verification" id="password-criteria">
+                    <ul class="pass-verification" id="username-criteria">
                         <li></li>
-                        <li class="verify-item" data-check="number">Should be minimum 4 characters </li>
-                        <li class="verify-item" data-check="uppercase">Only use alphanumerics, no special characters allowed</li>
+                        <li class="verify-item" data-check="length">Should be minimum 4 characters </li>
+                        <li class="verify-item" data-check="alphanumeric">Only use alphanumerics, no special characters allowed</li>
                     </ul>
 
                     <div class="form-group">
                         <label class="form-label">Password</label>
                         <input type="password" id="password" class="form-input" >
+                        <icon class="icon icon-eye"></icon>
                     </div>
                     <ul class="pass-verification" id="password-criteria">
                         <li class="verify-item">Must contain at least:</li>
@@ -491,7 +492,8 @@
 
                     <div class="form-group">
                         <label class="form-label">Re-enter password</label>
-                        <input type="password" id="password" class="form-input" placeholder="Re-enter password" >
+                        <input type="password" id="re-password" class="form-input" placeholder="Re-enter password" >
+                        <icon class="icon icon-eye"></icon>
                     </div>
 
                     <div class="form-group error">
