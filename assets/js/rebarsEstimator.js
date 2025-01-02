@@ -135,13 +135,14 @@ TSA.RebarsCalculator = {
         });
     },
     
+
     setupStep1: function() {
         $('#step1-btn').on('click', function () {
             // alert('Step 1 button clicked!');
             $('.calc-step.step-1').addClass('hide');
             $('.cp-rebar-estimator').removeClass('hide');
             $('.cp-rebar-estimator').removeClass('full-width'); 
-            $('.sec-head.typ-rebar').addClass('typ-align-center');
+            $(this).parents('.bs-sec').finds('.sec-head.typ-rebar').addClass('typ-align-center');
         });
     },
 
