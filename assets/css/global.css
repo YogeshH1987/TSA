@@ -423,6 +423,24 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bulb:before {
+  content: "\e983";
+}
+
+.icon-play-arrow:before {
+  content: "\e984";
+  color: #3d7edb;
+}
+
+.icon-send:before {
+  content: "\e985";
+  color: #ccc;
+}
+
+.icon-page-info:before {
+  content: "\e97e";
+}
+
 .icon-eye:before {
   content: "\e982";
 }

@@ -38,6 +38,11 @@
   margin-bottom: 2rem;
   padding-right: 15%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-comments .cp-commnents-wrap .comments-text {
+    padding-right: 0;
+  }
+}
 .cp-comments .cp-commnents-wrap .comments-text .desc {
   line-height: 2.8rem;
   color: #333333;

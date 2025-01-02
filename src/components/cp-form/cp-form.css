@@ -114,6 +114,13 @@
   background-color: #F3F4F6;
   margin-top: 0;
 }
+@media only screen and (max-width: 768px) {
+  .cp-form.typ-comment {
+    border-radius: 0;
+    margin: 2rem -1.5rem 3.8rem;
+    order: 3;
+  }
+}
 .cp-form.typ-comment .form-group {
   position: relative;
 }
@@ -123,7 +130,7 @@
 .cp-form.typ-comment .form-group .icon {
   position: absolute;
   right: 1.2rem;
-  top: 0;
+  top: 6px;
   width: 3.2rem;
   height: 3.2rem;
   color: #CCCCCC;

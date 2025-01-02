@@ -138,6 +138,12 @@
     background-color: #F3F4F6;
     margin-top: 0;
 
+    @media only screen and (max-width: $media-mobile) {
+      border-radius: 0;
+      margin: 2rem -1.5rem 3.8rem;
+      order: 3;
+    }
+
     .form-group {
       position: relative;
 
@@ -147,8 +153,8 @@
 
       .icon {
         position: absolute;
-        right:1.2rem;
-        top: 0;
+        right: 1.2rem;
+        top: 6px;
         width: 3.2rem;
         height: 3.2rem;
         color: #CCCCCC;
