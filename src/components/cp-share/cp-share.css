@@ -6,16 +6,26 @@
 /*opacity- end*/
 .cp-share .share-wrap {
   display: flex;
-  grid-area: 1.6rem;
+  gap: 1.6rem;
+  flex-wrap: wrap;
 }
 .cp-share .share-wrap .share-list {
   display: flex;
-  gap: 1.6rem;
+  gap: 0.8rem;
   border: 1px solid #DEDEDE;
   padding: 1.2rem;
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  width: 47%;
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+}
+.cp-share .share-wrap .share-list .icon {
+  font-size: 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 /*# sourceMappingURL=cp-share.css.map */

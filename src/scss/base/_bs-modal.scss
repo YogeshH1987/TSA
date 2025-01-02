@@ -1,6 +1,7 @@
 .bs-modal {
     position: relative;
     height: 100%;
+
     &.fade {
         position: fixed;
         top: 0;
@@ -14,6 +15,7 @@
         // overflow-x: hidden;
         outline: 0;
     }
+
     &.modal-show {
         opacity: 1;
         visibility: visible;
@@ -23,31 +25,37 @@
         transition: opacity 0.1s ease-in-out;
         -webkit-transition: opacity 0.1s ease-in-out;
         -moz-transition: opacity 0.1s ease-in-out;
-        @media only screen and (max-width: $media-mobile)  {
+
+        @media only screen and (max-width: $media-mobile) {
             width: 100%;
             top: auto;
             bottom: 0;
             @include transform(translate(-50%, 0));
         }
+
         .modal-dialog {
             @include transform(translate(-50%, -50%));
-            @media only screen and (max-width: $media-mobile)  {
+
+            @media only screen and (max-width: $media-mobile) {
                 top: auto;
                 bottom: 0;
                 @include transform(translate(-50%, 0));
             }
         }
     }
+
     .modal-body {
         flex: none;
         padding: 0;
         height: 100%;
+
         .highlightText {
             display: inline-block;
             color: $clr-para;
             font-family: $font-bold;
         }
     }
+
     .modal-dialog {
         max-width: 100%;
         width: 100%;
@@ -61,11 +69,13 @@
         border-radius: 2.4rem;
         padding: 1.5rem;
     }
+
     .modal-content {
         height: auto;
         border: 0;
-       
+
     }
+
     .close-btn {
         position: absolute;
         top: 16px;
@@ -74,11 +84,13 @@
         color: $clr-black;
         padding: 0;
         z-index: 5;
+
         @media only screen and (max-width: $media-mobile) {
             top: 1.5rem;
             right: 1.5rem;
         }
-        &.video-close{
+
+        &.video-close {
             right: 0;
             left: 0;
             bottom: 18px;
@@ -86,19 +98,22 @@
             text-decoration: underline;
             font-family: $font-medium;
             color: $clr-primary;
-            top:auto;
+            top: auto;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.2rem;
                 bottom: 5px;
             }
-            .cmp-button__text{
+
+            .cmp-button__text {
                 font-size: 1.6rem;
-            text-decoration: underline;
-            font-family: $font-medium;
-            color: $clr-primary;
+                text-decoration: underline;
+                font-family: $font-medium;
+                color: $clr-primary;
             }
         }
     }
+
     &.type-sm {
         .sec-title {
             font-size: 2.4rem;
@@ -106,11 +121,13 @@
             margin-bottom: 3.2rem;
             font-family: $font-semiBold;
             color: $clr-base;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2rem;
                 line-height: 2.8rem;
             }
         }
+
         .sub-title {
             margin-bottom: 1.6rem;
             font-size: 2rem;
@@ -118,131 +135,181 @@
             font-family: $font-semiBold;
             color: $clr-base;
         }
+
         .modal-dialog {
             padding: 2.4rem 1.6rem;
             max-width: 40rem;
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 2rem 1.5rem;
-                @include border-radius( 2.4rem 2.4rem 0 0);
+                @include border-radius(2.4rem 2.4rem 0 0);
                 height: auto;
             }
         }
     }
+
     &.type-md {
         .small-title {
             font-size: 4rem;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2.4rem;
             }
         }
+
         .modal-dialog {
             padding: 3rem;
             max-width: 47rem;
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 2rem 1.5rem;
                 height: 100%;
             }
         }
     }
+
     &.type-lg {
         .small-title {
             font-size: 2rem;
             font-family: $font-semiBold;
             border-bottom: 1px solid $clr-border;
-            padding: 1.6rem ;
+            padding: 1.6rem;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2.4rem;
             }
         }
-        .modal-body{
+
+        .modal-body {
             padding: 3rem;
         }
+
         .modal-dialog {
             padding: 0;
             max-width: 82rem;
+
             @media only screen and (max-width: $media-mobile) {
                 height: 100%;
             }
         }
-        .modal-content{
+
+        .modal-content {
             @media only screen and (max-width: $media-mobile) {
                 height: 100%;
             }
         }
     }
-    &.type-prod-thumb{
-        .modal-body{
+
+    &.type-prod-thumb {
+        .modal-body {
             padding: 0;
         }
     }
-    &.type-testi-video{
-        .modal-dialog{
+
+    &.type-testi-video {
+        .modal-dialog {
             width: 896px;
             max-width: 98rem;
+
             @media only screen and (max-width: $media-mobile) {
-                height: auto; 
+                height: auto;
                 width: 375px;
                 max-width: 38rem;
 
             }
         }
-        .modal-body{
+
+        .modal-body {
             padding: 2rem 0 5rem;
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 1.5rem 0 3rem;
             }
         }
-        .video-wrap{
+
+        .video-wrap {
             padding: 0;
-            .video-container{
-                iframe{
+
+            .video-container {
+                iframe {
                     height: 477px;
                     width: 848px;
+
                     @media only screen and (max-width: $media-mobile) {
                         height: 198px;
                         width: 343px;
                     }
                 }
             }
-           
+
         }
-       
+
     }
-    &.typ-small{
+
+    &.typ-small {
         max-width: 400px;
         max-height: 328px;
+
         @media only screen and (max-width: $media-mobile) {
             max-width: 343px;
-        max-height: 240px;
+            max-height: 240px;
         }
-        .modal-body{
+
+        .modal-body {
             @media only screen and (max-width: $media-mobile) {
                 padding: 2.4rem;
             }
         }
+
         .modal-dialog {
             border-radius: 12px;
         }
     }
-      
+
+    &.typ-share {
+        max-width: 640px;
+        max-height: 328px;
+
+        .modal-content {
+            .desc {
+                margin-bottom: 2rem;
+                color: $clr-base;
+            }
+        }
+
+        .close-btn {
+            top: 28px;
+            right: 30px;
+            color: #999;
+        }
+        .modal-body{
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.6rem;
+            }
+        }
+    }
+
     .bs-applicant-form {
         @media only screen and (max-width: $media-mobile) {
             .title {
                 font-size: 2rem;
             }
+
             .sub-title {
                 font-size: 1.6rem;
             }
         }
     }
-    .video-wrap{
+
+    .video-wrap {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 4rem;
+
         @media only screen and (max-width: $media-mobile) {
             padding: 5rem 2.4rem;
         }
     }
-   
+
 }

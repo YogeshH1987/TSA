@@ -3321,6 +3321,24 @@ p {
 .bs-modal.typ-small .modal-dialog {
   border-radius: 12px;
 }
+.bs-modal.typ-share {
+  max-width: 640px;
+  max-height: 328px;
+}
+.bs-modal.typ-share .modal-content .desc {
+  margin-bottom: 2rem;
+  color: #333333;
+}
+.bs-modal.typ-share .close-btn {
+  top: 28px;
+  right: 30px;
+  color: #999;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-share .modal-body {
+    padding: 1.6rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .bs-modal .bs-applicant-form .title {
     font-size: 2rem;
