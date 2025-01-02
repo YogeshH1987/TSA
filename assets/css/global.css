@@ -1273,6 +1273,9 @@ p {
     margin-bottom: 1.6rem;
   }
 }
+.bs-sec .sec-head.typ-align-center {
+  text-align: center;
+}
 .bs-sec .sec-head.typ-plp-pravesh {
   margin-bottom: 0;
 }
@@ -2271,6 +2274,13 @@ p {
   .btn.typ-rebar-cal {
     min-width: 4.8rem;
   }
+}
+.btn.disabled {
+  border: 1px solid #DEDEDE;
+  pointer-events: none;
+  opacity: 0.4;
+  background: #DEDEDE;
+  color: #B3B3B3;
 }
 
 .bs-radio {

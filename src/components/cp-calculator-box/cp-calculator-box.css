@@ -74,6 +74,14 @@
     padding: 0.7rem 1rem;
   }
 }
+.cp-calculator-box .error {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  color: #D2042D;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
 .cp-calculator-box.typ-rebar {
   text-align: left;
 }
@@ -109,6 +117,7 @@
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 5rem;
+  position: relative;
 }
 @media only screen and (max-width: 991px) {
   .cp-calculator-box.typ-rebar .input-group {

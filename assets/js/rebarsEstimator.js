@@ -11,11 +11,14 @@ TSA.RebarsCalculator = {
         // Setup radio button change events for showing/hiding floor list
         this.setupRadioEvents();
 
+
+        this.setupAreaValidation();
         // Setup Step 1 functionality
-        this.setupStep1();
+        // this.setupStep1();
 
         // Initialize the step navigation
         this.setupStepNavigation();
+        
     },
 
     setupTabs: function () {
@@ -82,20 +85,63 @@ TSA.RebarsCalculator = {
 
     setupRadioEvents: function () {
         $('.js-select-house').on('change', function () {
-            // Always show the floor list when any radio button is selected
-            $('.flr-list').removeClass('hide');
+            const selectedValue = $(this).val(); // Get the selected radio button value
+    
+            // Check if the selected value is 'part-house'
+            if (selectedValue === 'part-house') {
+                $('.flr-list').removeClass('hide'); // Show the floor list
+            } else {
+                $('.flr-list').addClass('hide'); // Hide the floor list
+            }
         });
-
+    
         // Trigger change for the default selected radio button
         $('.js-select-house:checked').trigger('change');
-    },
+    },    
 
+    setupAreaValidation: function () {
+        const builtUpAreaValue = $('#builtUpAreaValue');
+        const errorMessage = $('.error');
+        const step1Btn = $('#step1-btn');
+    
+        // Listen for input or change events on the area field
+        builtUpAreaValue.on('input', function () {
+            const area = parseFloat(builtUpAreaValue.val());
+    
+            if (area < 578 || area > 1934 || isNaN(area)) {
+                // Show error and disable the button if the area is out of range or invalid
+                errorMessage.removeClass('hide');
+                step1Btn.addClass('disabled');
+            } else {
+                // Hide error and enable the button if the area is within range
+                errorMessage.addClass('hide');
+                step1Btn.removeClass('disabled');
+            }
+        });
+    
+        // Validate on button click as well
+        step1Btn.on('click', function () {
+            const area = parseFloat(builtUpAreaValue.val());
+    
+            if (area < 578 || area > 1934 || isNaN(area)) {
+                errorMessage.removeClass('hide');
+                step1Btn.addClass('disabled');
+                return false; // Prevent moving to the next step
+            } else {
+                errorMessage.addClass('hide');
+                step1Btn.removeClass('disabled');
+                TSA.RebarsCalculator.setupStep1(); // Proceed to the next step
+            }
+        });
+    },
+    
     setupStep1: function() {
         $('#step1-btn').on('click', function () {
             // alert('Step 1 button clicked!');
             $('.calc-step.step-1').addClass('hide');
             $('.cp-rebar-estimator').removeClass('hide');
-            $('.cp-rebar-estimator').removeClass('full-width');            
+            $('.cp-rebar-estimator').removeClass('full-width'); 
+            $('.sec-head.typ-rebar').addClass('typ-align-center');
         });
     },
 
