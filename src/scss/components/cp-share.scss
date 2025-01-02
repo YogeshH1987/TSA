@@ -1,0 +1,17 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-share {
+    .share-wrap {
+        display: flex;
+        grid-area: 1.6rem;
+
+        .share-list {
+            display: flex;
+            gap: 1.6rem;
+            border: 1px solid #DEDEDE;
+            padding: 1.2rem;
+            @include border-radius(1.6rem)
+        }
+    }
+}

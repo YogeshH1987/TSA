@@ -1,0 +1,40 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-back-to-top {
+  background-color: #00398C;
+  padding: 1.2rem;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: 6.6rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  text-align: center;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  z-index: 1;
+}
+@media only screen and (max-width: 991px) {
+  .cp-back-to-top {
+    display: flex;
+    align-items: center;
+    width: 144px;
+    gap: 10px;
+    position: static;
+    margin: auto;
+  }
+}
+.cp-back-to-top .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+/*# sourceMappingURL=cp-back-to-top.css.map */

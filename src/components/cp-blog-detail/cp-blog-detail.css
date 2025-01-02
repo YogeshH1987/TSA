@@ -525,6 +525,9 @@
 .cp-blog-detail .tag-list .tag-item .date-time:first-child::before {
   content: none;
 }
+.cp-blog-detail .tag-list.typ-2 {
+  justify-content: flex-end;
+}
 @media only screen and (max-width: 991px) {
   .cp-blog-detail .tag-list.typ-2 {
     position: absolute;
@@ -639,39 +642,6 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-.cp-back-to-top {
-  background-color: #00398C;
-  padding: 1.2rem;
-  position: fixed;
-  bottom: 10%;
-  right: 10%;
-  width: 6.6rem;
-  color: #fff;
-  font-size: 1.4rem;
-  font-family: "Poppins Medium";
-  text-align: center;
-  border-radius: 0.8rem;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  z-index: 99;
-}
-@media only screen and (max-width: 991px) {
-  .cp-back-to-top {
-    display: flex;
-    align-items: center;
-    width: 144px;
-    gap: 10px;
-    position: static;
-    margin: auto;
-  }
-}
-.cp-back-to-top .icon {
-  width: 2.4rem;
-  height: 2.4rem;
-  color: #fff;
-  font-size: 2.4rem;
 }
 
 /*# sourceMappingURL=cp-blog-detail.css.map */

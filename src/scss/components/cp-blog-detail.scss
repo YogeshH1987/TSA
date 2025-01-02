@@ -566,6 +566,7 @@
         }
 
         &.typ-2 {
+            justify-content: flex-end;
             @media only screen and (max-width: $media-sm) {
                 position: absolute;
                 top: 1.2rem;
@@ -696,35 +697,3 @@
     }
 }
 
-.cp-back-to-top {
-    background-color: #00398C;
-    padding: 1.2rem;
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    width: 6.6rem;
-    color: #fff;
-    font-size: 1.4rem;
-    font-family: $font-medium;
-    text-align: center;
-    @include border-radius(0.8rem);
-    z-index: 99;
-
-    @media only screen and (max-width: $media-sm) {
-        display: flex;
-        align-items: center;
-        width: 144px;
-        gap: 10px;
-        position: static;
-        margin: auto;
-    }
-
-    .icon {
-        width: 2.4rem;
-        height: 2.4rem;
-        color: #fff;
-        font-size: 2.4rem;
-    }
-
-
-}

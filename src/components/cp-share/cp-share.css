@@ -1,0 +1,21 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-share .share-wrap {
+  display: flex;
+  grid-area: 1.6rem;
+}
+.cp-share .share-wrap .share-list {
+  display: flex;
+  gap: 1.6rem;
+  border: 1px solid #DEDEDE;
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+
+/*# sourceMappingURL=cp-share.css.map */

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
     <link rel="stylesheet" href="/components/cp-comments/cp-comments.css" />
     <link rel="stylesheet" href="/components/cp-back-to-top/cp-back-to-top.css" />
+    <link rel="stylesheet" href="/components/cp-share/cp-share.css" />
 
 </head>
 
@@ -157,13 +158,16 @@
                                 </div>
                                 <div class="right-cont">
                                     <button class="btn typ-play-btn"><span class="icon icon-play-arrow"></span>Listen
-                                        article <span class="wave"><img src="../../components/cp-blog-detail/images/waves.svg" alt=""></span></button>
+                                        article <span class="wave"><img
+                                                src="../../components/cp-blog-detail/images/waves.svg"
+                                                alt=""></span></button>
                                     <ul class="tag-list typ-2">
                                         <li class="tag-item">
                                             <button class="tag-link icon-unfill-like js-add-favorite"></button>
                                         </li>
                                         <li class="tag-item">
-                                            <button class="tag-link icon-share"></button>
+                                            <button class="tag-link icon-share model-open" data-toggle="modal"
+                                                data-modal-id="#share"></button>
                                         </li>
                                     </ul>
                                 </div>
@@ -384,7 +388,7 @@
                                 </p>
                             </div>
                         </section>
-                   
+
                     </div>
                     <div class="grid-col">
                         <div class="sec-cont">
@@ -562,99 +566,99 @@
                 </div>
                 <div class="cp-blog-detail">
                     <div class="grid-col">
-                             <!-- section comments -->
-                             <section class="sec-cont typ-comments-wrap">
-                                <h3 class="title typ-2">Comments <span class="count">100</span></h3>
-                                <div class="cp-form typ-comment">
-                                    <div class="form-group">
-                                        <textarea class="form-control" type="text" id="email" placeholder="Write a comment"
-                                            rows="1"></textarea>
-                                        <span class="icon icon-send"></span>
+                        <!-- section comments -->
+                        <section class="sec-cont typ-comments-wrap">
+                            <h3 class="title typ-2">Comments <span class="count">100</span></h3>
+                            <div class="cp-form typ-comment">
+                                <div class="form-group">
+                                    <textarea class="form-control" type="text" id="email" placeholder="Write a comment"
+                                        rows="1"></textarea>
+                                    <span class="icon icon-send"></span>
+                                </div>
+                            </div>
+                            <div class="cp-comments">
+                                <div class="cp-commnents-wrap border-bottom">
+                                    <div class="comments-head">
+                                        <div class="user-details">
+                                            <div class="user">
+                                                <img src="../../components/cp-comments/images/default.png" alt="">
+                                            </div>
+                                            Hemant Biswas
+                                        </div>
+                                        <ul class="tag-list">
+                                            <li class="tag-item typ-tag-wrap">
+                                                <button class="tag-icon icon-like icon-grey"></button>23
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comments-text">
+                                        <p class="desc">
+                                            “Tata Steel Aashiyana” made my home’s renovation extremely easy for me.
+                                            Daily
+                                            rate updates of the products made it possible that I could buy building
+                                            material
+                                            for my home at the best rates.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="cp-comments">
-                                    <div class="cp-commnents-wrap border-bottom">
-                                        <div class="comments-head">
-                                            <div class="user-details">
-                                                <div class="user">
-                                                    <img src="../../components/cp-comments/images/default.png" alt="">
-                                                </div>
-                                                Hemant Biswas
+
+                                <div class="cp-commnents-wrap border-bottom">
+                                    <div class="comments-head">
+                                        <div class="user-details">
+                                            <div class="user">
+                                                <img src="../../components/cp-comments/images/user1.png" alt="">
                                             </div>
-                                            <ul class="tag-list">
-                                                <li class="tag-item typ-tag-wrap">
-                                                    <button class="tag-icon icon-like icon-grey"></button>23
-                                                </li>
-                                            </ul>
+                                            Hemant Biswas
                                         </div>
-                                        <div class="comments-text">
-                                            <p class="desc">
-                                                “Tata Steel Aashiyana” made my home’s renovation extremely easy for me.
-                                                Daily
-                                                rate updates of the products made it possible that I could buy building
-                                                material
-                                                for my home at the best rates.
-                                            </p>
-                                        </div>
+                                        <ul class="tag-list">
+                                            <li class="tag-item typ-tag-wrap">
+                                                <button class="tag-icon icon-like icon-grey"></button>23
+                                            </li>
+                                        </ul>
                                     </div>
-    
-                                    <div class="cp-commnents-wrap border-bottom">
-                                        <div class="comments-head">
-                                            <div class="user-details">
-                                                <div class="user">
-                                                    <img src="../../components/cp-comments/images/user1.png" alt="">
-                                                </div>
-                                                Hemant Biswas
-                                            </div>
-                                            <ul class="tag-list">
-                                                <li class="tag-item typ-tag-wrap">
-                                                    <button class="tag-icon icon-like icon-grey"></button>23
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="comments-text">
-                                            <p class="desc">
-                                                “Tata Steel Aashiyana” made my home’s renovation extremely easy for me.
-                                                Daily
-                                                rate updates of the products made it possible that I could buy building
-                                                material
-                                                for my home at the best rates.
-                                            </p>
-                                        </div>
-                                    </div>
-    
-                                    <div class="cp-commnents-wrap border-bottom">
-                                        <div class="comments-head">
-                                            <div class="user-details">
-                                                <div class="user">
-                                                    <img src="../../components/cp-comments/images/default.png" alt="">
-                                                </div>
-                                                Hemant Biswas
-                                            </div>
-                                            <ul class="tag-list">
-                                                <li class="tag-item typ-tag-wrap">
-                                                    <button class="tag-icon icon-like icon-grey"></button>23
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="comments-text">
-                                            <p class="desc">
-                                                “Tata Steel Aashiyana” made my home’s renovation extremely easy for me.
-                                                Daily
-                                                rate updates of the products made it possible that I could buy building
-                                                material
-                                                for my home at the best rates.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="text-center link">
-                                        <a href="#" class="btn btn-link view-btn"> Load more comments</a>
+                                    <div class="comments-text">
+                                        <p class="desc">
+                                            “Tata Steel Aashiyana” made my home’s renovation extremely easy for me.
+                                            Daily
+                                            rate updates of the products made it possible that I could buy building
+                                            material
+                                            for my home at the best rates.
+                                        </p>
                                     </div>
                                 </div>
-                            </section>
+
+                                <div class="cp-commnents-wrap border-bottom">
+                                    <div class="comments-head">
+                                        <div class="user-details">
+                                            <div class="user">
+                                                <img src="../../components/cp-comments/images/default.png" alt="">
+                                            </div>
+                                            Hemant Biswas
+                                        </div>
+                                        <ul class="tag-list">
+                                            <li class="tag-item typ-tag-wrap">
+                                                <button class="tag-icon icon-like icon-grey"></button>23
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comments-text">
+                                        <p class="desc">
+                                            “Tata Steel Aashiyana” made my home’s renovation extremely easy for me.
+                                            Daily
+                                            rate updates of the products made it possible that I could buy building
+                                            material
+                                            for my home at the best rates.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-center link">
+                                    <a href="#" class="btn btn-link view-btn"> Load more comments</a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                     <div class="grid-col">
-                        
+
                         <div class="sec-cont cm-mobile">
                             <div class="cp-notify typ-blog-detail typ-newsletter">
                                 <div class="cont-wrap">
@@ -685,6 +689,7 @@
         <span class="icon icon-up-arrow"></span>
         Back
         to top</button>
+
     <!-- Footer Start -->
     <footer>
         <div class="cp-footer">
@@ -696,14 +701,50 @@
     </footer>
     <!-- Footer end -->
 
+    <!--model pop up start-->
+
+    <div id="share" tabindex="-1" role="dialog" class="bs-modal type-lg fade typ-small">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content ">
+
+                    <button class="close-btn icon-close js-close " type="button "></button>
+                    <div class="cp-model-content">
+                        <span class="icon"></span>
+                        <p class="desc">Share</p>
+                        <div class="cp-share">
+                            <ul class="share-wrap">
+                                <li class="share-list">
+                                    <div class="icon icon-copy"></div>Copy link
+                                </li>
+                                <li class="share-list">
+                                    <div class="icon icon-copy"></div>Copy link
+                                </li>
+                                <li class="share-list">
+                                    <div class="icon icon-copy"></div>Copy link
+                                </li>
+                                <li class="share-list">
+                                    <div class="icon icon-copy"></div>Copy link
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
+    <div class="cm-overlay"></div>
+
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-    <script src="../../components/cp-blog-detail/cp-blog-detail.js"></script>
     <script src="../../components/cp-product-card/cp-product-card.js"></script>
+    <script src="../../components/cp-blog-detail/cp-blog-detail.js"></script>
+    <script src="../../components/cp-back-to-top/cp-back-to-top.js"></script>
 
     <!-- endbuild -->
 </body>

@@ -1,3 +1,8 @@
+// Call the function on document ready
+$(document).ready(function () {
+    relatedArticals();
+});
+
 function relatedArticals() {
     'use strict'; // breakpoint where swiper will be destroyed
     // and switches to a dual-column layout
@@ -37,23 +42,7 @@ function relatedArticals() {
     breakpointChecker();
 }
 
-// Call the function on document ready
-$(document).ready(function () {
-    relatedArticals();
-});
 
-
-//Scroll event
-$(window).scroll(function () {
-    var scrolled = $(window).scrollTop();
-    if (scrolled > 200) $('#BackToTop').fadeIn('slow');
-    if (scrolled < 200) $('#BackToTop').fadeOut('slow');
-});
-
-//Click event
-$('#BackToTop').click(function () {
-    $("html, body").animate({ scrollTop: "0" }, 500);
-});
 
 
 
