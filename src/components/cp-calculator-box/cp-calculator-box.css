@@ -7,18 +7,21 @@
 .cp-calculator-box {
   position: relative;
 }
-.cp-calculator-box .calc-title {
+.cp-calculator-box .title {
   font-family: "Poppins Semibold";
   color: #333333;
   font-size: 2.8rem;
   line-height: 4rem;
+  padding: 0;
   margin-bottom: 0.8rem;
+  text-align: left;
 }
-.cp-calculator-box .calc-desc {
+.cp-calculator-box .desc {
   margin-bottom: 4rem;
   color: #333333;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  text-align: left;
 }
 .cp-calculator-box .act-form {
   display: flex;
@@ -71,24 +74,31 @@
     padding: 0.7rem 1rem;
   }
 }
+.cp-calculator-box.typ-rebar {
+  text-align: left;
+}
 @media only screen and (max-width: 991px) {
   .cp-calculator-box.typ-rebar {
     text-align: center;
     padding-bottom: 5.5rem;
   }
 }
+.cp-calculator-box.typ-rebar .title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
 @media only screen and (max-width: 991px) {
-  .cp-calculator-box.typ-rebar .calc-title {
+  .cp-calculator-box.typ-rebar .title {
     font-size: 1.6rem;
     line-height: 2.4rem;
     margin-bottom: 0.6rem;
   }
 }
-.cp-calculator-box.typ-rebar .calc-desc {
+.cp-calculator-box.typ-rebar .desc {
   margin-bottom: 1.6rem;
 }
 @media only screen and (max-width: 991px) {
-  .cp-calculator-box.typ-rebar .calc-desc {
+  .cp-calculator-box.typ-rebar .desc {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }

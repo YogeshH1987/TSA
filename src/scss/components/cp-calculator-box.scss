@@ -3,19 +3,21 @@
 
 .cp-calculator-box{
     position: relative;
-    .calc-title{
+    .title{
         font-family: $font-semiBold;
         color: $clr-base;
         font-size: 2.8rem;
         line-height: 4rem;
+        padding: 0;
         margin-bottom: 0.8rem;
+        text-align: left;
     }
-    .calc-desc{
+    .desc{
         margin-bottom: 4rem;
         color: $clr-base;
         font-size: 1.6rem;
         line-height: 2.4rem;
-       
+        text-align: left;
     }
     .act-form{
         display: flex;
@@ -60,18 +62,21 @@
         }
     }
     &.typ-rebar{
+        text-align: left;
         @media only screen and (max-width: $media-sm) {
            text-align: center;
            padding-bottom: 5.5rem;  
         }
-        .calc-title{
+        .title{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
             @media only screen and (max-width: $media-sm) {
                font-size: 1.6rem;
                line-height: 2.4rem;
                margin-bottom: 0.6rem;
             }
         }
-        .calc-desc{
+        .desc{
             margin-bottom: 1.6rem;
             @media only screen and (max-width: $media-sm) {
                 font-size: 1.2rem;

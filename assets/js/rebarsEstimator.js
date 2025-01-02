@@ -95,6 +95,7 @@ TSA.RebarsCalculator = {
             // alert('Step 1 button clicked!');
             $('.calc-step.step-1').addClass('hide');
             $('.cp-rebar-estimator').removeClass('hide');
+            $('.cp-rebar-estimator').removeClass('full-width');            
         });
     },
 
@@ -137,6 +138,7 @@ TSA.RebarsCalculator = {
             showStep(currentStep);
             actWrap.classList.remove('hide');
             progressBar.classList.remove('hide');
+            $('.cp-rebar-estimator').removeClass('full-width');
         });
     
         nextBtns.forEach(btn => {
@@ -160,6 +162,7 @@ TSA.RebarsCalculator = {
                     if (currentStep === 1) {
                         progressBar.classList.add('hide');
                         actWrap.classList.add('hide');
+                        $('.cp-rebar-estimator').addClass('full-width');
                     }
                 }
             });
