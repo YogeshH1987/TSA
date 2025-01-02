@@ -1,61 +1,72 @@
 var TSA = TSA || {};
-TSA.buildingCostEst = {};
+TSA.buildingCostEst = { 
+    init: function () {
+        // Initialize the slider
+        this.initSlider();
+    },
 
-TSA.buildingCostEst.calculate = function () {
-    const rangeSlider = document.getElementById("builtUpAreaRange");
-    const textInput = document.getElementById("builtUpAreaValue");
+    initSlider: function () {
+        // Initialize noUiSlider
+        var builtUpAreaSlider = document.getElementById('builtUpAreaRange');
+        const numberFlrSlider = document.getElementById('numberFlr');
 
-    // Initialize noUiSlider
-    noUiSlider.create(rangeSlider, {
-        start: 700,
-        step: 10,
-        range: {
-            min: 100,
-            max: 4000,
-        },
-        tooltips: true, // Optional: Displays the value as a tooltip on the slider
-        format: {
-            to: function (value) {
-                return `${Math.round(value)} Sq.ft`;
+        noUiSlider.create(builtUpAreaSlider, {
+            start: 700, // Default starting value
+            connect: [true, false], // Only show fill on the left side
+            range: {
+                'min': 200,  // Minimum value
+                'max': 4000  // Maximum value
             },
-            from: function (value) {
-                return Number(value.replace(" Sq.ft", ""));
+            step: 100,
+            pips: {
+                mode: 'positions',
+                values: [0, 100], // Only show min and max
+                density: 100
+            }
+        });
+
+        // Update the text input when the slider value changes
+        builtUpAreaSlider.noUiSlider.on('update', function (values, handle) {
+            // Convert the value to an integer and update the input field
+            var roundedValue = Math.round(values[handle]);
+            document.getElementById('builtUpAreaValue').value = roundedValue + ' Sq.ft';
+        });
+
+        // Optional: Update the input field on focus if you want to enter a value manually
+        document.getElementById('builtUpAreaValue').addEventListener('change', function () {
+            var value = parseInt(this.value.replace(' Sq.ft', ''), 10);
+            if (value >= 200 && value <= 4000) {
+                builtUpAreaSlider.noUiSlider.set(value);
+            }
+        });
+
+        noUiSlider.create(numberFlrSlider, {
+            start: 0, // Default starting position (Ground)
+            connect: [true, false],
+            range: {
+                min: 0, 
+                max: 4 
             },
-        },
-    });
-
-    // Update the text input when the slider value changes
-    rangeSlider.noUiSlider.on("update", function (values, handle) {
-        textInput.value = values[handle];
-    });
-
-    // Update the slider when the text input changes
-    textInput.addEventListener("input", function () {
-        const value = parseInt(this.value.replace(/\D/g, ""), 10); // Remove non-numeric characters
-        if (!isNaN(value) && value >= 100 && value <= 4000) {
-            rangeSlider.noUiSlider.set(value);
-        }
-    });
-
-    // Get the minimum and maximum values
-    const sliderOptions = rangeSlider.noUiSlider.options.range;
-    const minValue = sliderOptions.min;
-    const maxValue = sliderOptions.max;
-
-    console.log("Minimum value:", minValue);
-    console.log("Maximum value:", maxValue);
-
-    // Optional: Display min and max values in the UI
-    const minMaxContainer = document.createElement("div");
-    minMaxContainer.classList.add("slider-min-max");
-    minMaxContainer.innerHTML = `
-        <span class="min-value">Min: ${minValue} Sq.ft</span>
-        <span class="max-value">Max: ${maxValue} Sq.ft</span>
-    `;
-    rangeSlider.parentElement.appendChild(minMaxContainer);
+            step: 1,
+            pips: {
+                mode: 'values',
+                values: [0, 1, 2, 3, 4], // Ground, G+1, G+2
+                density: 2,
+                format: {
+                    to: (value) => {
+                        if (value === 0) return '1';
+                        if (value === 1) return '2';
+                        if (value === 2) return '3';
+                        if (value === 3) return '4';
+                        if (value === 4) return 'More';
+                    }
+                }
+            }
+        });
+    }
 };
 
 // Call the calculate function on document ready
 $(document).ready(function () {
-    TSA.buildingCostEst.calculate();
+    TSA.buildingCostEst.init();
 });

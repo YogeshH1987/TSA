@@ -36,9 +36,19 @@
       }
     }
   }
-  &.typ-col-4 {
+  &.typ-col-3-no-wrap {
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: row;
+      gap: 0.3rem;
+    }
     .grid-col {
-      width: 25%;
+      width: 33%;
+    }
+  }
+  &.typ-col-4 {
+    flex-wrap: wrap;
+    .grid-col {
+      width: 22.5%;
 
       @media only screen and (max-width: $media-mobile) {
         width: 100%;

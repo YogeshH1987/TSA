@@ -2,5 +2,93 @@
 @import "../config/mixin";
 
 .cp-building-estimator{
+    overflow: hidden;
+    max-width: 82rem;
+    margin: 0 auto;
+    @include border-radius(2.4rem 2.4rem 0 0);
+    @media only screen and (max-width: $media-mobile){
+        margin: 0 -1.6rem;
+        @include border-radius(0);
+    }
+    .calc-step{
+        padding: 3.2rem 4rem 4rem;
+        @include border-radius(2.4rem 2.4rem 0 0);
+        background: #fff;
+        margin-top: -2rem;
+        border: 1px solid $clr-border;
+        text-align: center;
+        @media only screen and (max-width: $media-mobile){
+            padding: 3.2rem 1.6rem;
+        }
+    }
+    .act-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.4rem 3.2rem;
+        border: 1px solid $clr-border;
+        @include border-radius(0 0 2.4rem 2.4rem);
+        @media only screen and (max-width: $media-mobile){
+            padding: 1.2rem;
+            @include border-radius(0);
+        }
+    }
+    .calc-title{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: $font-medium;
+        color: $clr-para;
+    }
+    .calc-desc{
+        font-size: 2.8rem;
+        line-height: 4rem;
+        font-family: $font-semiBold;
+        margin-bottom: 3rem;
+        color: $clr-base;
+        @media only screen and (max-width: $media-mobile){
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+    .img-wrap{
+        margin: 0 auto;
+        img{
+            object-fit: cover;
+        }
+        &.typ-no-flr{
+            max-width: 35rem;
+            height: 26.3rem;
+            margin: 0 auto 4.4rem;
+        }
+    }
 
+    .option-wrap{
+        margin: 6rem auto 0;
+        max-width: 32rem;
+        // height: 44px);
+        padding: 0.8rem 1.6rem;
+        @include border-radius(1.2rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:1.2rem;
+        background-color: #F3F4F6;
+        .option-txt{
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-family: $font-medium;
+            color: $clr-base;
+        }
+    }
+    .radio-wrap{
+        max-width: 61rem;
+        margin: 0 auto;
+    }
+    .lyt-grid{
+        &.typ-col-3-no-wrap{
+            max-width: 71.2rem;
+            margin: 0 auto;
+        }
+    }
 }

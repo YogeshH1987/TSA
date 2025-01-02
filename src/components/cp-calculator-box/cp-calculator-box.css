@@ -20,6 +20,57 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+.cp-calculator-box .act-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box .act-form {
+    gap: 0.8rem;
+    margin-top: 4rem;
+  }
+}
+.cp-calculator-box .btn,
+.cp-calculator-box .step-btn {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  min-width: 25.5rem;
+  padding: 1.5rem 1.6rem;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box .btn,
+  .cp-calculator-box .step-btn {
+    min-width: 16rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 0.9rem 1.6rem;
+  }
+}
+.cp-calculator-box .input-field {
+  border: 1px solid #DEDEDE;
+  color: #333333;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-family: "Poppins Semibold";
+  text-align: center;
+  padding: 1.3rem;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  max-width: 28rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box .input-field {
+    max-width: 15.1rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding: 0.7rem 1rem;
+  }
+}
 @media only screen and (max-width: 991px) {
   .cp-calculator-box.typ-rebar {
     text-align: center;
@@ -55,42 +106,13 @@
     margin-bottom: 2.4rem;
   }
 }
-.cp-calculator-box.typ-rebar .btn,
-.cp-calculator-box.typ-rebar .step-btn {
-  font-size: 2rem;
-  line-height: 2.8rem;
-  min-width: 25.5rem;
-  padding: 1.5rem 1.6rem;
-  font-family: "Poppins Semibold";
-}
-@media only screen and (max-width: 991px) {
-  .cp-calculator-box.typ-rebar .btn,
-  .cp-calculator-box.typ-rebar .step-btn {
-    min-width: 16rem;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    padding: 0.9rem 1.6rem;
-  }
-}
 .cp-calculator-box.typ-rebar .input-field {
-  border: 1px solid #DEDEDE;
-  color: #333333;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  font-family: "Poppins Semibold";
-  text-align: center;
-  padding: 1.3rem;
   max-width: 31.9rem;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
+  font-size: 2.4rem;
 }
 @media only screen and (max-width: 991px) {
   .cp-calculator-box.typ-rebar .input-field {
     max-width: 15.1rem;
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-    padding: 0.7rem 1rem;
   }
 }
 @media only screen and (max-width: 991px) {

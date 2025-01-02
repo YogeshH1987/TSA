@@ -2458,6 +2458,105 @@ p {
     align-items: flex-start;
   }
 }
+.bs-radio.typ-plan .custom-radio {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: "Poppins Medium";
+  padding: 1.6rem;
+}
+.bs-radio.typ-plan:last-child {
+  margin-bottom: 2.4rem;
+}
+.bs-radio.typ-build-cost .custom-radio {
+  padding: 3.2rem 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-radio.typ-build-cost .custom-radio {
+    padding: 2.4rem 1rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-build-cost .custom-radio {
+    min-width: 11.2rem;
+  }
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap {
+  width: 100%;
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .img-wrap {
+  width: 7.2rem;
+  height: 7.2rem;
+  background: #FFC633;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .img-wrap .icon {
+  font-size: 3.9rem;
+  line-height: 7.2rem;
+  color: #FFFFFF;
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .home-typ {
+  font-family: "Poppins Semibold";
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #333333;
+  position: relative;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 768px) {
+  .bs-radio.typ-build-cost .custom-radio .material-wrap .home-typ {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .home-typ:after {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 4.8rem;
+  background: #FFC633;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  flex-direction: column;
+  text-align: left;
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .title {
+  color: #666666;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+.bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .desc {
+  color: #000000;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .desc {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
 
 .bs-modal {
   position: relative;

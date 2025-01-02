@@ -40,7 +40,7 @@
 .cp-noui-range-slide.typ-rebar.noUi-target .noUi-handle {
   width: 3.4rem;
   height: 3rem;
-  background: transparent url("../../components/cp-noui-range-slider/image/rebar-pointer.png") 0 0 no-repeat;
+  background: transparent url("../../components/cp-noui-range-slider/image/house-pointer.png") 0 0 no-repeat;
   background-size: contain;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -64,6 +64,43 @@
     font-size: 1.4rem;
     line-height: 2rem;
   }
+}
+.cp-noui-range-slide.typ-house.noUi-target {
+  height: 1.7rem;
+}
+.cp-noui-range-slide.typ-house.noUi-target .noUi-handle {
+  width: 3.4rem;
+  height: 3.5rem;
+  background: transparent url("../../components/cp-noui-range-slider/image/house-pointer.png") 0 0 no-repeat;
+  background-size: contain;
+  border-radius: 1.7rem;
+  -webkit-border-radius: 1.7rem;
+  -moz-border-radius: 1.7rem;
+  border: 0;
+  box-shadow: none;
+}
+.cp-noui-range-slide.typ-house.noUi-target .noUi-connect {
+  border-radius: 1.7rem;
+  -webkit-border-radius: 1.7rem;
+  -moz-border-radius: 1.7rem;
+}
+.cp-noui-range-slide.typ-house .noUi-value {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .cp-noui-range-slide.typ-house .noUi-value {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.noUi-connects {
+  border-radius: 1.7rem;
+  -webkit-border-radius: 1.7rem;
+  -moz-border-radius: 1.7rem;
 }
 
 .noUi-handle:after, .noUi-handle:before {

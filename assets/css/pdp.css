@@ -143,8 +143,20 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-3-no-wrap {
+    flex-direction: row;
+    gap: 0.3rem;
+  }
+}
+.lyt-grid.typ-col-3-no-wrap .grid-col {
+  width: 33%;
+}
+.lyt-grid.typ-col-4 {
+  flex-wrap: wrap;
+}
 .lyt-grid.typ-col-4 .grid-col {
-  width: 25%;
+  width: 22.5%;
 }
 @media only screen and (max-width: 768px) {
   .lyt-grid.typ-col-4 .grid-col {

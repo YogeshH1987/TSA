@@ -14,12 +14,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
 	<link rel="stylesheet" href="/css/home.css" />
 	<link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
+	<link rel="stylesheet" href="/components/cp-box/cp-box.css" />
     <link rel="stylesheet" href="../../components/cp-calculator-box/cp-calculator-box.css" />
     <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
 	<link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
-    <link rel="stylesheet" href="../../components/cp-range/cp-range.css" />
-
-	
+    <link rel="stylesheet" href="../../components/cp-switch/cp-switch.css" />
+    <link rel="stylesheet" href="../../components/cp-stop-progressbar/cp-stop-progressbar.css" />
+	<link rel="stylesheet" href="../../components/cp-checkbox/cp-checkbox.css" />
+	<link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
+    <link rel="stylesheet" href="../../components/cp-img-detail/cp-img-detail.css" />
+	<link rel="stylesheet" href="../../components/cp-building-estimator/cp-building-estimator.css" />
+	<link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />	
   </head>
 
   <body>
@@ -28,61 +33,481 @@
 		<section class="bs-sec">
 			<div class="container">
 				<div class="sec-head">
-					<h2 class="sec-title">Building cost estimator</h2>
-					<p class="sec-desc">Used by homeowners, contractors, architects and dealers to budget efficiently within minutes.</p>
+					<h2 class="sec-title">Building Cost Estimator</h2>
+					<p class="sec-desc">Accurate, hassle-free rebar calculations for slabs, beams, columns, and more..</p>
 				</div>
 				<div class="sec-cont">
-					<div class="cp-calculator-box">
-						<div class="img-wrap">
-							<picture>
-								<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/white box.png">
-								<img src="../../components/cp-calculator-box/images/white box.png" alt="Timeline_Cards"/>
-							</picture>
+					<div class="cp-building-estimator">
+						<div class="cp-stop-progressbar ">
+							<div class="calc-progress-bar">
+								<div class="step-text">Step - 1/5</div>
+								<button class="close-btn"><span class="text">Exit</span><span class="icon icon-exit"></span></button>
+							</div>
+							<ul class="progress-bar">
+								<li class="progress-item complete"></li>
+								<li class="progress-item ongoing"></li>
+								<li class="progress-item"></li>
+								<li class="progress-item"></li>
+								<li class="progress-item"></li>
+							</ul>
 						</div>
-						<div class="cont-wrap">
-							<div class="cp-calculator-box">
-								<h2 class="calc-title">Built up area</h2>
-								<p class="calc-desc">This is the total area of a property, including the carpet area, walls, balconies, and other areas</p>
-								<div class="cp-range" id="builtUpAreaRange"></div>
-								<div class="act-form">
-									<input type="text" id="builtUpAreaValue" value="700 Sq.ft">
-									<button class="btn btn-primary">Next</button>
+						<div class="calc-step step-1 hide">
+							<div class="cp-box typ-calculate">
+								<div class="img-wrap">
+									<picture>
+										<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/white box.png">
+										<img src="../../components/cp-calculator-box/images/white box.png" alt="Timeline_Cards"/>
+									</picture>
 								</div>
-							</div>						
+								<div class="cont-wrap">
+									<div class="cp-calculator-box">
+										<h2 class="calc-title">Built up area</h2>
+										<p class="calc-desc">This is the total area of a property, including the carpet area, walls, balconies, and other areas</p>
+										<div class="cp-noui-range-slide typ-house" id="builtUpAreaRange"></div>
+										<div class="act-form">
+											<input type="text" id="builtUpAreaValue" value="700" class="input-field">
+											<button class="btn step-btn">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="cp-add-info-list typ-calculate">
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-goal"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Accurate projections</h2>
+									  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
+									</div>
+								  </div>
+								</li>
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-measurement"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Easy usage</h2>
+									  <p class="info-desc">No expertise needed, just input basic details.</p>
+									</div>
+								  </div>
+								</li>
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-cash"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Negotiate confidently</h2>
+									  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
+									</div>
+								  </div>
+								</li>
+							</ul>
+						</div>
+						<div class="calc-step step-2 hide">
+							<h2 class="calc-title">Building Cost Estimator</h2>
+							<p class="calc-desc">Select your space requirements</p>
+							<ul class="lyt-grid typ-col-4">
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Living room"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Living room</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Kitchen"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Kitchen</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Bathroom"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Bedroom</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Bedroom"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Bathroom</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Balcony"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Balcony</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Puja room"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Puja room</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Dinning area"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Dinning area</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Storage room"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Storage room</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Garage"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Garage</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Servant room"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Servant room</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Hall"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Hall</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="cp-img-detail typ-build-cost">
+										<div class="img-wrap">
+										<img
+											src="../../components/cp-img-detail/images/living-room.png"
+											alt="Study"
+										/>
+										</div>
+										<div class="detail-wrap">
+											<h3 class="detail-tile">Study</h3>
+											<div class="cp-counter typ-build-cost">
+												<button class="btn-count no-active btn-minus" disabled>-</button>
+												<input type="text"  class="number-product" value="1">
+												<button class="btn-count btn-plus">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="calc-step step-3 hide">
+							<h2 class="calc-title">Building Cost Estimator</h2>
+							<p class="calc-desc">Select the number of floors</p>
+							<div class="img-wrap typ-no-flr">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-rebar-estimator/images/frame.png">
+									<img src="../../components/cp-rebar-estimator/images/frame.png" alt="frame" />
+								  </picture>
+							</div>
+							<div id="numberFlr" class="cp-noui-range-slide typ-rebar"></div>							
+							<div class="option-wrap">
+								<p class="option-txt">House with basement</p>
+								<div class="cp-switch">
+									<input id="switch-rounded" type="checkbox" />
+									<label for="switch-rounded"></label>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="calc-step step-4 ">
+							<h2 class="calc-title">Building cost estimator</h2>
+							<p class="calc-desc">Do you have material preferences?</p>
+							<ul class="lyt-grid typ-col-3-no-wrap">
+								<li class="grid-col">
+									<div class="bs-radio typ-build-cost typ-yellow">
+										<input id="material1" name="material" type="radio">
+										<label for="material1" class="custom-radio">
+											<div class="material-wrap">
+												<div class="img-wrap"><span class="icon icon-economy"></span></div>
+												<h2 class="home-typ">economy</h2>
+												<ul class="detail-list">
+													<li class="detail-item">
+														<h3 class="title">Steel</h3>
+														<p class="desc">Secondary TMT</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Cement</h3>
+														<p class="desc">Grade 33</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Flooring</h3>
+														<p class="desc">Ceramic tiles</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Paint</h3>
+														<p class="desc">Lime wash</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Doors / Windows</h3>
+														<p class="desc">Hardwood ply</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Bathroom fixtures</h3>
+														<p class="desc">Bathroom fixtures</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Lighting fixtures</h3>
+														<p class="desc">Basic LED</p>
+													</li>
+												</ul>
+											</div>
+											
+										</label>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="bs-radio typ-build-cost typ-yellow">
+										<input id="material2" name="material" type="radio">
+										<label for="material2" class="custom-radio">	
+											<div class="material-wrap">
+												<div class="img-wrap"><span class="icon icon-economy"></span></div>
+												<h2 class="home-typ">Standard</h2>
+												<ul class="detail-list">
+													<li class="detail-item">
+														<h3 class="title">Steel</h3>
+														<p class="desc">Primary TMT</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Cement</h3>
+														<p class="desc">Grade 33</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Flooring</h3>
+														<p class="desc">Ceramic tiles</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Paint</h3>
+														<p class="desc">Lime wash</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Doors / Windows</h3>
+														<p class="desc">Hardwood ply</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Bathroom fixtures</h3>
+														<p class="desc">Bathroom fixtures</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Lighting fixtures</h3>
+														<p class="desc">Basic LED</p>
+													</li>
+												</ul>
+											</div>
+											
+										</label>
+									</div>
+								</li>
+								<li class="grid-col">
+									<div class="bs-radio typ-build-cost typ-red">
+										<input id="material3" name="material" type="radio">
+										<label for="material3" class="custom-radio">	
+											<div class="material-wrap">
+												<div class="img-wrap"><span class="icon icon-economy"></span></div>
+												<h2 class="home-typ">Premium</h2>
+												<ul class="detail-list">
+													<li class="detail-item">
+														<h3 class="title">Steel</h3>
+														<p class="desc">Primary Super ductile</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Cement</h3>
+														<p class="desc">Grade 33</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Flooring</h3>
+														<p class="desc">Ceramic tiles</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Paint</h3>
+														<p class="desc">Lime wash</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Doors / Windows</h3>
+														<p class="desc">Hardwood ply</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Bathroom fixtures</h3>
+														<p class="desc">Bathroom fixtures</p>
+													</li>
+													<li class="detail-item">
+														<h3 class="title">Lighting fixtures</h3>
+														<p class="desc">Basic LED</p>
+													</li>
+												</ul>
+											</div>
+											
+										</label>
+									</div>
+								</li>
+							</ul>
+							<a class="btn btn-link" href="#">Skip for now</a>
+						</div>		 -->
+						<div class="calc-step step-5 hide">
+							<h2 class="calc-title">Building cost estimator</h2>
+							<p class="calc-desc">Do you have an architectural plan?</p>
+							<div class="radio-wrap">
+								<div class="bs-radio typ-plan">
+									<input id="plan1" name="plan" type="radio">
+									<label for="plan1" class="custom-radio">
+										My home design is ready
+									</label>
+								</div>
+								<div class="bs-radio typ-plan">
+									<input id="plan2" name="plan" type="radio">
+									<label for="plan2" class="custom-radio">
+										My home design is in progress
+									</label>
+								</div>
+								<div class="bs-radio typ-plan">
+									<input id="plan3" name="plan" type="radio">
+									<label for="plan3" class="custom-radio">
+										I need professional help with plans
+									</label>
+								</div>
+							</div> 
+							<a href="#" class="btn btn-link text-center">Skip for now</a>
+						</div>				
+						<div class="act-wrap">
+							<button class="btn btn-outline typ-rebar-cal btn-back"><span class="icon icon-Left-arrow cm-mobile"></span><span class="cm-desktop">Back</span></button>
+							<button class="btn typ-rebar-cal btn-next"><span class="icon icon-right-arrow cm-mobile"></span><span class="cm-desktop">Next</span></button>
 						</div>
 					</div>
-					<ul class="cp-add-info-list typ-calculate">
-						<li class="add-info-item">
-						  <div class="info-card">
-							<span class="icon icon-straighten"></span>
-							<div class="info-wrap">
-							  <h2 class="info-title">Accurate projections</h2>
-							  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
-							</div>
-						  </div>
-						</li>
-						<li class="add-info-item">
-						  <div class="info-card">
-							<span class="icon icon-touch_app"></span>
-							<div class="info-wrap">
-							  <h2 class="info-title">Easy usage</h2>
-							  <p class="info-desc">No expertise needed, just input basic details.</p>
-							</div>
-						  </div>
-						</li>
-						<li class="add-info-item">
-						  <div class="info-card">
-							<span class="icon icon-people_outline"></span>
-							<div class="info-wrap">
-							  <h2 class="info-title">Negotiate confidently</h2>
-							  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
-							</div>
-						  </div>
-						</li>
-					  </ul>
 				</div>
 			</div>
 		</section>
+		
 		<!-- Manage your home construction end-->
 		<!--Learn about the home building journey start -->
 		<section class="bs-sec">
@@ -269,6 +694,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
+	<script src="/components/cp-counter/cp-counter.js"></script>
     <script src="/js/buildingCostEst.js"></script>
     <!-- endbuild -->
   </body>
