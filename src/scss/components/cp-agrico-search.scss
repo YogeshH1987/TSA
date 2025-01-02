@@ -80,5 +80,31 @@
       top: -2rem;
     }
   }
+  &.typ-blog{
+    justify-content: flex-start;
+    gap: 1.6rem;
+    .left-wrapper{
+      width: 50%;
+    }
+    .btn-filter{
+      min-width: 10.4rem;
+      position: relative;
+    }
+    .count{
+      width: 15px;
+      height: 30px;
+      border-radius: 50%;
+      border: 4px solid #FFFFFF;
+      background: #D2042D;
+      position: absolute;
+      color: #FFFFFF;
+      font-size: 1rem;
+      font-family: "Poppins Medium";
+      right: -10px;
+      top: -12px;
+      text-align: center;
+
+    }
+  }
 }
 

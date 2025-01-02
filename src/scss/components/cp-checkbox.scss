@@ -169,6 +169,29 @@
 			}
 		}
 	}
+	&.typ-blog{
+		padding: 1rem 0 0;
+		input {
+			&:checked {
+				&+label {
+					&:after {
+						top: 4px;
+    					left: 8px;
+					}
+				}
+			}
+		}
+	label{
+		font-family: $font-regular;
+		font-size: 1.4rem;
+		color: $clr-base;
+		&:before{
+			width: 2rem;
+			height: 2rem;
+			border: 1px solid #dedede;
+		}
+	}
+	}
 }
 
 .typ-check-main {

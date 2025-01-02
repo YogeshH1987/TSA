@@ -1708,6 +1708,63 @@ p {
 .bs-sec.typ-windows-pro .sec-title {
   font-size: 2rem;
 }
+.bs-sec.typ-login {
+  margin-top: 19rem;
+}
+.bs-sec.typ-login .container {
+  max-width: 103rem;
+  width: 100%;
+}
+.bs-sec.typ-login .container .successful-msg {
+  background: #E5F6EC;
+  border-radius: 8px;
+  border: 1px solid #66C88D;
+  display: flex;
+  max-width: 34.3rem;
+  margin: 0 auto 1.2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #00A441;
+  gap: 1rem;
+}
+.bs-sec.typ-login .container .successful-msg .icon {
+  font-size: 2rem;
+}
+.bs-sec.typ-blog {
+  margin-top: 18rem;
+}
+.bs-sec.typ-blog .filter-sec {
+  display: flex;
+  gap: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-blog .filter-sec {
+    display: none;
+  }
+}
+.bs-sec.typ-blog .filter-sec .title {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #666666;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-blog .filter-sec .title {
+    display: none;
+  }
+}
+.bs-sec.typ-blog .filter-sec .filter-tag {
+  background: #ECF2FB;
+  text-align: center;
+  color: #666666;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 0.2rem 1rem;
+}
+.bs-sec.typ-blog .filter-sec .filter-tag .close {
+  color: #666666;
+  font-size: 1.2rem;
+}
 
 .btn {
   display: inline-block;
