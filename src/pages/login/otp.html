@@ -492,9 +492,13 @@
 				>Submit OTP</button> 
             </div>
             <div class="bottom-sec">
-                <span class="otp-timer">00:59</span>
+                <span class="otp-timer"></span>
                 <p class="otp-txt-msg">Didn’t get the OTP?</p>
-                <a href="#" class="re-send-link">Resend</a>
+                <button  
+				class="re-send-link"
+				id="btn_otp_resend"
+				onclick=startResendTimer()
+				>Resend</button>
             </div>
             <h3 class="valid-message">OTP is valid for 3 minutes</h3>
 

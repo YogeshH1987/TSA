@@ -1,6 +1,7 @@
+// code for otp inputs start
+
 const inputs = document.querySelectorAll(".otp-wrap input"),
 button = document.getElementById("btn_otp_verify");
-
 // iterate over all inputs
 inputs.forEach((input, index1) => {
 input.addEventListener("keyup", (e) => {
@@ -52,5 +53,44 @@ input.addEventListener("keyup", (e) => {
 });
 });
 
-//focus the first input which index is 0 on window load
-window.addEventListener("load", () => inputs[0].focus());
+window.addEventListener("load", () => {
+  //focus the first input which index is 0 on window load
+  inputs[0].focus();
+  startResendTimer();
+});
+
+// code for otp inputs ends
+
+// code for otp timer start
+let timer;
+let countdown = 60; // Set the countdown duration in seconds
+
+function startResendTimer() {
+    // Disable the button during the countdown
+    document.getElementById('btn_otp_resend').disabled = true;
+
+    // Start the countdown
+    timer = setInterval(updateTimer, 1000);
+}
+
+function updateTimer() {
+    const timerElement = document.querySelectorAll('.otp-timer');
+    console.log(timerElement.innerHtml, countdown, "update")
+    if (countdown > 0) {
+        timerElement[0].innerText = `00:${countdown}`;
+        countdown--;
+    } else {
+      timerElement[0].innerText = countdown;
+
+        // Enable the button when the countdown reaches zero
+        document.getElementById('btn_otp_resend').disabled = false;
+        timerElement[0].textContent = '';
+        
+        // Reset countdown for the next attempt
+        countdown = 60;
+        
+        // Stop the timer
+        clearInterval(timer);
+    }
+}
+// code for otp timer ends
