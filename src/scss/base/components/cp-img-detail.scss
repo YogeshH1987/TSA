@@ -1,0 +1,61 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-img-detail{
+    @include border-radius(1.6rem);
+    border: 1px solid $clr-border;
+    background: $clr-root;
+    overflow: hidden;
+    @media only screen and (max-width: $media-mobile) {
+        @include border-radius(1.2rem);
+    }
+
+    .img-wrap{
+        @include border-radius(1.6rem);
+        height: 16.8rem;
+        overflow: hidden;
+        display: block;    
+        img {
+            height: 100%;
+            @include border-radius(1.6rem);
+            object-fit: cover;
+        }
+        @media only screen and (max-width: $media-mobile) {
+            height: 14.4rem;
+            @include border-radius(1.2rem);
+            img{
+                @include border-radius(1.2rem);
+            }
+        }
+    }
+
+    .detail-wrap{
+        padding: 2.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem;
+        }
+
+        .detail-tile{
+            font-family: $font-semiBold;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-base;
+            margin-bottom: 0.8rem;
+        }
+        .detail-desc{
+            font-family: $font-regular;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-para;
+            margin-bottom: 0.8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .btn.btn-link{
+            line-height: 2.2rem;
+        }
+    }
+}

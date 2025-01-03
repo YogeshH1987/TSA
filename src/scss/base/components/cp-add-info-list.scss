@@ -1,0 +1,66 @@
+@import "../config/variables";
+@import "../config/mixin";
+.cp-add-info-list{
+    @include border-radius(1.2rem);
+    border: 1px solid $clr-border;
+    .add-info-item{
+        border-bottom: 1px solid $clr-border;
+        &:last-child{
+            border: none;
+       }  
+    }
+          
+    .info-card{
+        padding: 1.6rem 2rem;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        .icon{
+            font-size: 2.8rem;
+            line-height: 3rem;
+            color: $clr-primary;
+            &.active{
+                color: $clr-secondary;
+            }
+        }
+        .info-title{
+            font-family: $font-regular;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            margin-bottom: .3rem;
+        }
+        .info-desc{
+            font-family: $font-regular;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-para;
+        }
+        .info-link{
+            color: $clr-primary;
+            font-family: $font-medium;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            text-decoration: underline;
+        }           
+    }
+    &.typ-pdp{
+        margin:3.2rem 0;
+        @media only screen and (max-width: $media-mobile) {
+            order: 4;
+           
+        }
+        .info-wrap{
+            position: relative;
+            width: 100%;
+            .info-link{
+                position: absolute;
+                right: 0;
+                top: 0;
+                @media only screen and (max-width: $media-mobile) {
+                    position: relative;
+                }
+            }
+        }
+    }
+}

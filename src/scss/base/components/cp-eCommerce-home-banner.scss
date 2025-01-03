@@ -1,0 +1,287 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-eCommerce-home-banner{
+    position: relative;
+    background: #F3F4F6 ;
+    padding: 5.6rem 0;
+    @media only screen and (max-width: 768px) {
+        padding: 2.4rem 0 1.2rem;
+    }
+    .banner-title {
+        font-size: 4rem;
+        line-height: 5.2rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        margin-bottom: 2rem;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+    .container{
+        position: relative;
+    }
+    .feature {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        @media only screen and (max-width: 768px) {
+            gap: 0rem;
+        }        
+        
+        .feature-item {
+            width: 25%; /* Adjust width to account for 20px gutter */
+            height: 14rem;    
+            overflow: hidden;
+            display: flex;  
+            margin: 0 ; 
+            &:nth-child(2) { order: 1; } //STRUCTURE
+            &:nth-child(3) { order: 4; } //ROOFING
+            &:nth-child(4) { order: 2; } //Hand Tools
+            &:nth-child(5) { order: 5; } //FENCING
+            &:nth-child(6) { order: 3; } //DOORS
+            &:nth-child(7) { order: 6; } //GARDENING
+            @media only screen and (max-width: 768px) {
+                width:  48%;
+                height: 9.2rem;
+                // display: block;
+                order: initial; 
+                margin-bottom: 1.2rem;
+            }
+            &.typ-resize {                
+                @media only screen and (max-width: 768px) {
+                    height: 13rem;
+                }
+                .feature-card{
+                    .f-img{
+                        max-width: 14.3rem;
+                        max-height: 13.6rem;
+                        @media only screen and (max-width: $media-mobile) {
+                            max-width: 8rem;
+                            max-height: 8rem;
+                        }
+                    }            
+                }
+            }
+        }       
+        .grid-sizer{
+            width: 31%;
+            height: 11rem;    
+            display: none;
+            order: 0; 
+            @media only screen and (max-width: 768px) {
+                display: block; 
+                width:  48%;
+                height: 9.2rem;              
+            }
+        }
+    }    
+    .feature-card{
+        border: 1px solid $clr-border;
+        background: $clr-root;
+        padding: 1.2rem;
+        @include border-radius(1.6rem);
+        @include transition(all, 2s, linear);
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1rem;
+        }
+        &:hover,
+        &.active{
+            box-shadow: 0px 8px 24px 0px #00000014;
+            border: 2px solid $clr-border
+        }
+        .f-title{
+            font-family: $font-semiBold;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            max-width: 75%;
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+        .f-desc{
+            font-family: $font-regular;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-para;
+            margin-bottom: 0.6rem;
+            max-width: 65%;
+            z-index: 1;
+            position: relative;
+        }
+        .f-offer{
+            background: $clr-secondary;
+            padding: .2rem 0.8rem;
+            color: $clr-root;
+            font-family: $font-medium;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            @include border-radius(2.6rem);
+        }
+        .f-img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 10rem;
+            max-height: 10rem;
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 8rem;
+                max-height: 8rem;
+            }
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+    &.typ-color-change{
+        background: $clr-root;
+        padding: 0;
+        .feature-item {
+            overflow: hidden;
+            @media only screen and (max-width: $media-mobile){
+                height: 9.2rem;
+            }
+            
+            .feature-card{
+                border: 0;
+                .f-title{
+
+                    line-height: 2rem;
+                }
+            }
+            .f-img{
+                z-index: 2;
+                &:after{
+                    background: #99DAB3;
+                    width: 11.3rem;
+                    height: 11.3rem;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -10px;
+                    bottom: -31px;
+                    content: '';
+                    opacity: 0.3;
+                    z-index: -1;
+                }
+               }
+            &:nth-child(1){
+                .feature-card{
+                    background: #E5F6EC;
+                }
+            }
+            &:nth-child(2){
+                .feature-card{
+                    background: #FFF8E5;
+                .f-img{
+                    &::after{
+                        background: #FFE399;
+                    }
+                }
+                
+                }
+            }
+            &:nth-child(3){
+                
+                .feature-card{
+                    background: #FAE6EA;
+
+                .f-img{
+                    &::after{
+                        background: #ED9BAB;
+                    }
+                }
+                }
+            }
+            &:nth-child(4){
+                
+                .feature-card{
+                    background: $clr-bg;
+
+                .f-img{
+                    &::after{
+                        background: #B1CBF1;
+
+                    }
+                }
+                }
+            }
+            &:nth-child(5){
+               
+                .feature-card{
+                    background: #FDECE5;
+
+                .f-img{
+                    &::after{
+                        background: #F8B499;
+
+
+                    }
+                }
+                }
+            }
+            &:nth-child(6){
+                
+                .feature-card{
+                    background: #F3F4F6;
+
+                .f-img{
+                    &::after{
+                        background: #CCCCCC;
+                    }
+                }
+                }
+            }
+            &.typ-resize{
+                .feature-card{
+                    .f-img{
+                        max-width: 9rem;
+                        max-height: 9rem;
+                        &::after{
+                            bottom: -6px;
+                        }
+                    }
+                }
+               
+                
+            }
+            &:nth-child(1) { order: 1; } //TRADE HAND TOOL
+            &:nth-child(2) { order: 1; } //DIY TOOL KITS
+            &:nth-child(3) { order: 4; } //AGRI TOOL
+            &:nth-child(4) { order: 3; } //FILLING TOOL
+            &:nth-child(5) { order: 5; } //GARDEN TOOL
+            &:nth-child(6) { order: 6; } //INDUSTRIAL & HARDWARE
+            
+        }
+    }
+    &.typ-wiron{
+        .feature-item{
+            &:nth-child(6){
+                width: 100%;
+                .feature-card{
+                    background: #F3F4F6;
+
+                .f-img{
+                    &::after{
+                        background: #CCCCCC;
+                    }
+                }
+                }
+            }
+        }
+        .act-wrap{
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+}

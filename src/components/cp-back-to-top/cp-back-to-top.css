@@ -27,7 +27,7 @@
     width: 144px;
     gap: 10px;
     position: static;
-    margin: auto;
+    margin: 2rem auto 4.8rem;
   }
 }
 .cp-back-to-top .icon {

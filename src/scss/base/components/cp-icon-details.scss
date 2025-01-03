@@ -1,0 +1,84 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-icon-details {
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  
+  &::after {
+    content: "";
+    position: absolute;
+    right: -0.6rem;
+    top: 50%;
+    width: 1px;
+    height: 16rem;
+    background-color: $clr-border;
+    display: block;
+    @include transform(translateY(-50%));
+    @media only screen and (max-width: $media-mobile) {
+      height: 7rem;
+    }
+  }
+
+  .icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    background: $clr-secondary;
+    color: $clr-root;
+    @include border-radius(50%);
+    margin-bottom: 2.4rem;
+    position: relative;
+    &::before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+    }
+    @media only screen and (max-width: $media-mobile) {  
+      margin-bottom: 1.2rem;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    &.icon-correct,
+    &.icon-crown{
+      font-size: 1.5rem;
+      @media only screen and (max-width: $media-mobile) {  
+        font-size: 0.8rem;
+      }
+    }  
+  }
+  
+  .sub-title {
+    color: $clr-para;
+    font-size: 2rem;
+    font-family: $font-medium;
+    line-height: 2.2rem;
+    text-transform:uppercase ;
+
+    @media only screen and (max-width: $media-mobile) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+  .title {
+    font-family: $font-semiBold;
+    font-size: 3.6rem;
+    color: $clr-base;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+    @media only screen and (max-width: $media-mobile) {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+

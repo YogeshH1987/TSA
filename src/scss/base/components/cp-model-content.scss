@@ -1,0 +1,16 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-model-content{
+text-align: center;
+.desc{
+    font-size: 1.6rem;
+    font-family: $font-semiBold;
+    color: $clr-base;
+}
+.act-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+}

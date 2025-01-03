@@ -1,0 +1,54 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-question-answer {
+  position: relative;
+
+  .question-title {
+    font-family: $font-semiBold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
+    @media only screen and (max-width: $media-mobile) {
+      display: none;
+    }
+    .question-count {
+      padding-inline: 1.2rem;
+      background-color: $clr-secondary;
+      color: $clr-root;
+      border-radius: 2.6rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        display: block;
+        background: none;
+        color: $clr-para;
+        font-family: $font-regular;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+
+  .sort-title {
+    font-family: $font-medium;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-top: 2.4rem;
+    }
+  }
+  .btn-wrap {
+     display: none;
+      @media only screen and (max-width: $media-mobile) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+    .btn-load-more {
+     
+    }
+  }
+}

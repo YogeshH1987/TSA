@@ -1,0 +1,88 @@
+@import "../config/mixin.scss";
+@import "../config/variables.scss";
+
+.cp-gallery{
+    .gallery-card{
+        @include border-radius(1.2rem);
+        overflow: hidden;
+        .img-wrap{           
+            max-height: 26rem; 
+            @media only screen and (max-width: $media-mobile){
+                max-height: 16rem;
+            }
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content-wrap{            
+            padding: 1.6rem 1.6rem 1.6rem 1.2rem;
+            .title{
+                font-family: $font-medium;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $clr-base;
+                margin-bottom: 0.2rem;
+            }
+            .desc{
+                font-family: $font-regular;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $clr-para;
+                margin-bottom: 2rem;
+                @media only screen and (max-width: $media-mobile){
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    margin-bottom: 1.2rem;
+                }
+            }
+            .btn{
+                min-width: 17.7rem;
+                @media only screen and (max-width: $media-mobile){
+                    min-width: 18.1rem;
+                }
+            }
+        }
+        &.typ-details{
+            margin-top: 2rem;
+            background: #F3F4F6;
+            border: 1px solid $clr-border;
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: $media-mobile) {
+                margin-top: 1.2rem;
+            }
+            .img-wrap{
+                width: 30.7%;
+                max-height: 14.8rem;
+                @media only screen and (max-width: $media-mobile) {
+                    width: 39.3%;
+                    max-height: auto;
+                }
+            }
+            .content-wrap{  
+                width: 69%;
+                @media only screen and (max-width: $media-mobile) {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .btn-wrap{
+        text-align: center;
+        margin-top: 3.2rem;
+        text-align: center;
+        @media only screen and (max-width: $media-mobile) {
+            margin-top: 2.4rem;
+        }
+        .btn{
+            min-width:  34.3rem;            
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.1rem 1.2rem;
+            @media only screen and (max-width: $media-mobile) {
+                min-width: 16.6rem;
+            }
+        }
+    }
+}

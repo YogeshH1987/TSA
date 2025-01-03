@@ -1,0 +1,30 @@
+
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-specification {
+  .specification-title {
+    font-family: $font-semiBold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $clr-base;
+  }
+  .specification-list {
+    .specification-item {
+      margin-top: 1.6rem;
+      .title {
+        font-family: $font-regular;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: $clr-para;
+        margin-bottom: 4px;
+      }
+      .desc {
+        font-family: $font-medium;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $clr-base;
+      }
+    }
+  }
+}

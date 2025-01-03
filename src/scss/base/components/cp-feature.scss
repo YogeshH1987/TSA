@@ -1,0 +1,36 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-feature{
+    .feature-title{
+        color: $clr-base;
+        line-height: 2.8rem;
+        padding-bottom: 1.6rem;
+        font-size: 2.4rem;
+        font-family: $font-medium;
+     
+     @media only screen and (max-width: $media-mobile) {
+         font-size: 2rem;
+     
+     }
+     }
+     .feature-item{
+         font-size: 1.4rem;
+         font-family: $font-regular;
+         color: $clr-base;
+         padding-left: 2.4rem;
+         padding-bottom: 1.6rem;
+         position: relative;
+         &:before{
+             width: 16px;
+             height: 16px;
+             color: #00A441;
+             content: "\e91a";
+             position: absolute;
+             left: 0;
+             top: 4px;
+             border-radius: 50%;
+             font-family: 'icomoon';
+         }
+     }
+}

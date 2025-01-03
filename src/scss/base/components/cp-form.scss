@@ -1,0 +1,86 @@
+@import "../config/mixin.scss";
+@import "../config/variables.scss";
+
+.cp-form {
+  margin-top: 3.2rem;
+  .feedback-title {
+    font-family: $font-medium;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .feedback-personal-data {
+    .form-group {
+      .form-label {
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 0.8rem;
+        display: block;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 1.2rem 1.6rem;
+        border: 1px solid $clr-border;
+        font-family: $font-regular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        border-radius: 1.2rem;
+        
+       
+      }
+
+      .form-textarea {
+        width: 100%;
+        padding: 1.2rem 1.6rem;
+        border: 1px solid $clr-border;
+        font-family: $font-regular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        border-radius: 1.2rem;
+        min-height: 15.6rem;
+      
+      }
+      .err-mgs {
+        color: $clr-secondary;
+        font-family: $font-medium;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2.4rem;
+        display: block;
+      }
+    } 
+  }
+  .act-wrap {
+    .btn-submit {
+      width: 100%;
+    }
+  }
+  .disabled {
+    background-color: #ededed;
+    color: #b3b3b3;
+    border: none;
+  }
+
+  .star-label,
+  .review-label,
+  .title-label {
+    font-family: $font-regular;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .star-rating {
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid $clr-border;
+    margin-bottom: 2.4rem;
+    .icon {
+      font-size: 4.8rem;
+      color: #cccccc;
+    }
+    .star-selected {
+      color: #ffb800;
+    }
+  }
+}

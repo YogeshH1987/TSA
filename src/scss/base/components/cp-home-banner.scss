@@ -1,0 +1,154 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-home-banner{
+    position: relative;
+    padding: 5.6rem 0;
+    margin-bottom: 4rem;
+    @media only screen and (max-width: 768px) {
+        padding: 2.4rem 0 1.2rem;
+        margin-bottom: 2.4rem;
+        background: #F3F4F6;
+    }
+    .banner-title {
+        font-size: 4rem;
+        line-height: 5.2rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        margin-bottom: 3.2rem;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .feature {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            gap: 1.2rem;
+        }
+        
+        .feature-item {
+            width: 31%; /* Adjust width to account for 20px gutter */
+            height: 11rem;    
+            display: flex;  
+            margin: 0 ;  
+            &:nth-child(1) { order: 3; } //PLANS
+            &:nth-child(2) { order: 8; } //SHOP
+            &:nth-child(3) { order: 1; } //REBARS
+            &:nth-child(4) { order: 4 } //ARCHITECTS
+            &:nth-child(5) { order: 2; } //CALCULATOR
+            &:nth-child(6) { order: 6; } //BUDGET
+            &:nth-child(7) { order: 5; } //INSPIRATION
+            &:nth-child(8) { order: 7; } //CAUTION 
+            @media only screen and (max-width: 768px) {
+                width:  48%;
+                height: 9.2rem;
+                // display: block;
+                order: initial; 
+                margin-bottom: 1.2rem;
+            }
+            &.typ-resize {
+                height: 15.6rem;
+                width: 48%; /* Larger items for bigger screens */
+                
+                @media only screen and (max-width: 768px) {
+                    height: 13rem;
+                    width:  48%; /* Adjust width and gutter for mobile */
+                }
+                .feature-card{
+                    .f-img{
+                        max-width: 14.3rem;
+                        max-height: 13.6rem;
+                        @media only screen and (max-width: $media-mobile) {
+                            max-width: 8rem;
+                            max-height: 8rem;
+                        }
+                    }            
+                }
+            }
+        }       
+        .grid-sizer{
+            width: 31%;
+            height: 11rem;    
+            display: none;
+            order: 0; 
+            @media only screen and (max-width: 768px) {
+                display: block; 
+                width:  48%;
+                height: 9.2rem;              
+            }
+        }
+    }
+    .feature-card{
+        border: 1px solid $clr-border;
+        background: $clr-root;
+        padding: 1.2rem;
+        @include border-radius(1.6rem);
+        @include transition(all, 2s, linear);
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        &:hover,
+        &.active{
+            box-shadow: 0px 8px 24px 0px #00000014;
+            border: 2px solid $clr-border
+        }
+        .f-title{
+            font-family: $font-semiBold;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            text-transform: uppercase;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+        .f-desc{
+            font-family: $font-regular;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-para;
+            margin-bottom: 0.6rem;
+            max-width: 65%;
+        }
+        .f-offer{
+            background: $clr-secondary;
+            padding: .2rem 0.8rem;
+            color: $clr-root;
+            font-family: $font-medium;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            @include border-radius(2.6rem);
+            display: inline-block;
+        }
+        .f-img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 9.4rem;
+            max-height: 9.4rem;
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 8rem;
+                max-height: 8rem;
+            }
+        }
+    }
+    &.typ-2{
+        .feature{
+            width: 100%;
+        }
+    }
+}

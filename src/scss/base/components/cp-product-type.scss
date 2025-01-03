@@ -1,0 +1,54 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-product-type{
+    background: $clr-primary;
+    padding: 1.6rem 0 2.4rem;
+    .title{
+        font-family: $font-medium;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $clr-root;
+        margin-bottom: 1.6rem;
+    }
+    .typ-card{
+        padding: 1rem 0.2rem;
+        border: 1px solid $clr-border;
+        background: $clr-root;
+        @include border-radius(1.2rem);
+        .img-wrap{
+            max-width: 9.6rem;
+            max-height: 4.8rem;
+        }
+        .prod-name{
+            font-family: $font-medium;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            text-align: center;
+        }
+        &.active{
+            .prod-name{
+                font-family: $font-semiBold;
+                color: $clr-primary;
+            }            
+        }
+    }
+    .btn-wrap{
+        text-align: center;
+        .btn{
+            min-width: 16.6rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.1rem 1.2rem;
+        }
+    }
+
+    &.typ-category{
+        background: $clr-root;
+        padding: 0;
+        .typ-card{
+            height: 100%;
+        }
+    }
+}
