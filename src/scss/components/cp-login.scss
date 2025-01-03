@@ -74,6 +74,9 @@
                 display: flex;
                 justify-content: center;
             }
+            .typ-clr-black {
+                color: #333333;
+            }
         }
 
         .form-wrap {
@@ -161,17 +164,19 @@
                         left: 0;
                     }
                 }
+                .icon {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                    font-size: 2.4rem;
+                    color: #999999;
+                    cursor: pointer;
+                }
             }
 
-            .icon {
-                width: 3.2rem;
-                height: 3.2rem;
-                position: absolute;
-                right: 5px;
-                bottom: 5px;
-                font-size: 2.4rem;
-                color: #999999;
-            }
+    
         }
 
         .act-wrap {
@@ -336,10 +341,15 @@
                 color: #EE4400;
             }
 
+            .otp-txt-msg {
+                font-size: 1.4rem;
+            }
+
             .re-send-link {
                 color: #B3B3B3;
                 font-family: $font-medium;
                 font-size: 1.4rem;
+                border-bottom: 1px solid #B3B3B3
             }
         }
 

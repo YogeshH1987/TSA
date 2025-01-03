@@ -459,44 +459,58 @@
                     <img src="../../components/cp-login/image/Frame 1597882851.png" alt="login image"/>
                 </div>
             </div>
-            <div class="rhs">
-                <span class="desc">Welcome to</span>
-                <h2 class="title">Tata Steel Aashiyana</h2>
-                <p class="desc">An OTP has been sent to your mobile number</p>
-                <p class="desc"><span class="cm-medium typ-clr-black">+91-XXXXXX820</span> and email id <span class="cm-medium typ-clr-black">aXXXXXXXXt@abc.com</span></p>
+            <div class="rhs relative typ-2">
+                <div class="steps-content typ-content">
+                <h2 class="title">Hey!
+                    <span class="sub-title">Let’s create your profile</span>
+                </h2>
+              <form action="">
+                <div class="form-wrap typ2">
+                    <div class="form-group error">
+                        <label class="form-label">Username</label>
+                        <input type="text" name="" id="username" class="form-input validate-name" placeholder="">
+                    </div>
+                    <ul class="pass-verification" id="username-criteria">
+                        <li></li>
+                        <li class="verify-item" data-check="length">Should be minimum 4 characters </li>
+                        <li class="verify-item" data-check="alphanumeric">Only use alphanumerics, no special characters allowed</li>
+                    </ul>
 
-               <form action="">
-                <div class="form-wrap">
                     <div class="form-group">
-                        <label class="form-label">Enter OTP</label>
-                       <div class="otp-wrap">
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <span class="error-msg typ-2"></span>
+                        <label class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" >
+                        <icon class="icon icon-eye"></icon>
+                    </div>
+                    <ul class="pass-verification" id="password-criteria">
+                        <li class="verify-item">Must contain at least:</li>
+                        <li class="verify-item" data-check="number">1 number</li>
+                        <li class="verify-item" data-check="uppercase">1 upper case</li>
+                        <li class="verify-item" data-check="lowercase">1 lower case</li>
+                        <li class="verify-item" data-check="special">1 special character (@#$%)</li>
+                        <li class="verify-item" data-check="length">8 or more total characters</li>
+                    </ul>
 
+                    <div class="form-group">
+                        <label class="form-label">Re-enter password</label>
+                        <input type="password" id="re-password" class="form-input" placeholder="Re-enter password" >
+                        <icon class="icon icon-eye"></icon>
                     </div>
 
+                    <div class="form-group error">
+                        <label class="form-label">First Name</label>
+                        <input type="text" name="" class="form-input validate-name" placeholder="Enter first name">
                     </div>
-    
+                
+                   
+                </div>
                     
                 </div>
-               </form>
+              </form>
            
-            <div class="act-wrap">
-                <button class="btn login-btn btn-disable" 
-				type="button"
-				disabled="true"
-				>Submit OTP</button> 
-            </div>
-            <div class="bottom-sec">
-                <span class="otp-timer">00:59</span>
-                <p class="otp-txt-msg">Didn’t get the OTP?</p>
-                <a href="#" class="re-send-link">Resend</a>
-            </div>
-            <h3 class="valid-message">OTP is valid for 3 minutes</h3>
+           
+                <div class="act-wrap sticky typ-p-0">
+                    <button class="btn login-btn" type="button" id="verify-password-btn">Next</button> 
+                </div>
 
             </div>
            </div>
@@ -523,7 +537,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-    <script src="/js/form-validation.js"></script>
+    <script src="/js/password-validation.js"></script>
 
 
     <!-- endbuild -->

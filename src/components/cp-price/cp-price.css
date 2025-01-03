@@ -131,25 +131,5 @@
 .cp-price.typ-tiscon-pdp .act-wrap .btn, .cp-price.typ-struct-pdp .act-wrap .btn {
   min-width: 16.3rem;
 }
-.cp-price.typ-login {
-  padding-top: 24px;
-  padding-bottom: 1.6rem;
-}
-.cp-price.typ-login .price-list {
-  background: #FFF8E5;
-  border: 1px solid #FFD466;
-  border-radius: 8px;
-}
-.cp-price.typ-login .price-list .price-list-item {
-  padding: 0.5rem 1.8rem;
-}
-.cp-price.typ-login .icon {
-  font-size: 2.4rem;
-  color: #333333;
-}
-.cp-price.typ-login .desc {
-  color: #333333;
-  padding-left: 1.6rem;
-}
 
 /*# sourceMappingURL=cp-price.css.map */

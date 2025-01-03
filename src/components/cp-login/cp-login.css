@@ -76,6 +76,9 @@
   display: flex;
   justify-content: center;
 }
+.cp-login .rhs .desc .typ-clr-black {
+  color: #333333;
+}
 .cp-login .rhs .form-wrap {
   margin-top: 1.5rem;
 }
@@ -154,7 +157,7 @@
   top: 98px;
   left: 0;
 }
-.cp-login .rhs .form-wrap .icon {
+.cp-login .rhs .form-wrap .form-group .icon {
   width: 3.2rem;
   height: 3.2rem;
   position: absolute;
@@ -162,6 +165,7 @@
   bottom: 5px;
   font-size: 2.4rem;
   color: #999999;
+  cursor: pointer;
 }
 .cp-login .rhs .act-wrap .login-btn {
   width: 100%;
@@ -307,10 +311,14 @@
   font-family: "Poppins Regular";
   color: #EE4400;
 }
+.cp-login .rhs .bottom-sec .otp-txt-msg {
+  font-size: 1.4rem;
+}
 .cp-login .rhs .bottom-sec .re-send-link {
   color: #B3B3B3;
   font-family: "Poppins Medium";
   font-size: 1.4rem;
+  border-bottom: 1px solid #B3B3B3;
 }
 .cp-login .rhs .valid-message {
   font-size: 1.4rem;

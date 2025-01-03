@@ -122,26 +122,4 @@
             }
         }
     }
-    &.typ-login{
-        padding-top: 24px;
-        padding-bottom: 1.6rem;
-        .price-list{
-            background: #FFF8E5;
-            border:1px solid #FFD466;
-            border-radius: 8px;
-
-            .price-list-item{
-                padding: 0.5rem 1.8rem
-            }
-        }
-        .icon{
-            font-size: 2.4rem;
-            color: $clr-base;
-        }
-        .desc{
-            color: $clr-base;
-            padding-left: 1.6rem;
-        }
-        
-    }
 }

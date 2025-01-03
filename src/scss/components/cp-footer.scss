@@ -2,15 +2,185 @@
 @import "../config/mixin";
 
 .cp-footer{
-    margin-top: 6.4rem;
+    padding-top: 4.8rem;
+    background-color: $clr-bg;
     @media only screen and (max-width: $media-mobile) {
-        margin-bottom: 6.6rem;
-        margin-top: 4rem;    
+        margin-bottom: 6rem;
     }
-    h2{
-        font-size: 4rem;
+    .footer-catagery{
+        display: flex;
+        margin-bottom: 2.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            flex-wrap: wrap;
+        }
+
+        .footer-link{
+            margin-right: 4.8rem;
+            max-width: 22rem;
+            min-width: 22rem;
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 15.9rem;
+                min-width: 15.9rem;
+                margin-bottom: 2.2rem;
+                margin-right: 1.6rem;
+                &:nth-child(even){
+                    margin-right: 0;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            
+            &:last-child{
+                margin-right: 0;
+            }
+            .footer-link-title{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $clr-base;
+                font-family: $font-semiBold;
+                margin-bottom: 1.2rem;
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+            }
+            .f-link{
+                margin-bottom: 1.2rem;
+                .link{
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    color: $clr-base;
+                    font-family: $font-regular;
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+        }
     }
-    img{
-        object-fit: contain;
+    .brand-bar{
+        padding: 2.4rem 0;
+        border: 1px solid $clr-base;
+        border-left: 0;
+        border-right: 0;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: $media-mobile) {
+            flex-wrap: wrap;
+        }
+        .lhs{
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: $media-mobile) {
+                flex-wrap: wrap;
+            }
+            .brand-logo{
+                width: 12rem;
+                height: 4.6rem;
+                margin-right: 2.4rem;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+                @media only screen and (max-width: $media-mobile) {
+                    width: 9.6rem;
+                    height: 3.6rem;
+                    margin-bottom: 2.4rem;
+                    margin-right: 0;
+                }
+            }
+            .policy-wrap{
+                .policy-list{
+                display: flex;
+                align-items: center;
+                .policy-item{
+                    padding: 1.4rem 2rem; 
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    color: $clr-base;
+                    font-family: $font-semiBold;
+                    position: relative;
+                    @media only screen and (max-width: $media-mobile) {
+                        padding: 0 2rem; 
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                        font-family: $font-medium;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        width: 1px;
+                        background-color: $clr-base;
+                        @media only screen and (max-width: $media-mobile) {
+                            top: 50%;
+                            height: 2.4rem;
+                            @include transform(translateY(-50%));
+                        }
+                    }
+                    &:first-child{
+                        padding-left: 0;
+                        &::before{
+                            content: none;
+                        }
+                    }
+                    .policy-link{
+                        color: $clr-base;
+                    }
+
+                }
+            }
+            }
+        }
+        .rhs{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width: $media-mobile) {
+                margin-top: 2.6rem;
+            }
+            .media-wrap{
+                .media-title{
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    font-family: $font-semiBold;
+                    color: $clr-base;
+                    margin-right: 1.6rem;
+                }
+            }
+        }
+    }
+    .copywright{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        padding: 2.4rem 0;
+        display: block;
+    }
+    .media-wrap{
+        display: flex;
+        align-items: center;
+    }
+    .media-list{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        .media-link{
+            border: 1px solid $clr-primary;
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            background: #D8E5F8;
+            border-radius: 50%;
+            width: 3.2rem;
+            height: 3.2rem;
+            display: inline-block;
+            text-align: center;
+        }
     }
 }

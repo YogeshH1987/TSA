@@ -31,4 +31,3 @@ function drawerFunc() {
         $('.cm-overlay').removeClass('active');
     });
 }
-
