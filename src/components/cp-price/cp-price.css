@@ -85,6 +85,22 @@
   font-family: "Poppins Medium";
   color: #A77800;
 }
+.cp-price .price-list-item.typ-login {
+  padding: 0.8rem 1.6rem;
+  background: #FFF8E5;
+  border-color: #FFD466;
+  color: #333333;
+  gap: 0.4rem;
+}
+.cp-price .price-list-item.typ-login .icon {
+  font-size: 2.4rem;
+}
+.cp-price .price-list-item.typ-login .desc {
+  color: #333333;
+}
+.cp-price .price-list-item.typ-login .btn-link {
+  font-size: 1.4rem;
+}
 .cp-price .bold-text {
   color: #333333;
   font-family: "Poppins Medium";
@@ -130,6 +146,9 @@
 }
 .cp-price.typ-tiscon-pdp .act-wrap .btn, .cp-price.typ-struct-pdp .act-wrap .btn {
   min-width: 16.3rem;
+}
+.cp-price.typ-login {
+  margin-bottom: 1.6rem;
 }
 
 /*# sourceMappingURL=cp-price.css.map */

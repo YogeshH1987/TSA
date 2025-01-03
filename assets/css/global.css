@@ -3050,6 +3050,43 @@ p {
 .bs-radio.typ-shade .custom-radio input[type=radio]:checked + .custom-radio::after {
   border-radius: 50%;
 }
+.bs-radio.typ-blog-quiz .custom-radio {
+  align-items: start;
+  padding: 1.2rem 4.6rem 1.2rem 1.6rem;
+  color: #333333;
+  position: relative;
+}
+.bs-radio.typ-blog-quiz input[type=radio]:checked + .typ-correct, .bs-radio.typ-blog-quiz input[type=radio]:checked + .typ-incorrect {
+  border-color: #66C88D;
+  background-color: #E5F6EC;
+  color: #333333;
+  font-family: "Poppins Medium";
+}
+.bs-radio.typ-blog-quiz input[type=radio]:checked + .typ-correct::after, .bs-radio.typ-blog-quiz input[type=radio]:checked + .typ-incorrect::after {
+  content: "\e938";
+  width: 2.4rem;
+  font-size: 1.6rem;
+  /* height: 2.4rem; */
+  color: #00A441;
+  font-family: "icomoon" !important;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  /* bottom: 0; */
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bs-radio.typ-blog-quiz input[type=radio]:checked + .typ-incorrect {
+  background-color: #FDECE5;
+  border-color: #F58F66;
+}
+.bs-radio.typ-blog-quiz input[type=radio]:checked + .typ-incorrect::after {
+  content: "\e91f";
+  color: #EE4400;
+  font-size: 2.4rem;
+}
 
 .bs-modal {
   position: relative;

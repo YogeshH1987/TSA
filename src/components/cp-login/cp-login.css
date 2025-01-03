@@ -26,11 +26,12 @@
 }
 .cp-login .lhs .img-wrap {
   width: 100%;
-  height: 768px;
+  height: 790px;
   overflow: hidden;
 }
 .cp-login .lhs .img-wrap img {
   object-fit: cover;
+  height: 100%;
 }
 .cp-login .rhs {
   width: 50%;
@@ -109,6 +110,7 @@
   font-family: "Poppins Medium";
   color: #333333;
   padding: 1rem;
+  width: 100%;
 }
 .cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
   width: 75px;
@@ -130,15 +132,9 @@
   color: #B3B3B3;
   opacity: 1;
 }
-.cp-login .rhs .form-wrap .form-group .forgot-link {
-  position: absolute;
-  bottom: -33px;
-  right: 0;
-}
 @media only screen and (max-width: 768px) {
   .cp-login .rhs .form-wrap .form-group .forgot-link {
     font-size: 1.2rem;
-    bottom: -25px;
   }
 }
 .cp-login .rhs .form-wrap .form-group .otp-wrap {
@@ -166,6 +162,16 @@
   font-size: 2.4rem;
   color: #999999;
   cursor: pointer;
+}
+.cp-login .rhs .form-wrap .form-group .msg-wrap {
+  margin-top: 1rem;
+}
+.cp-login .rhs .form-wrap .form-group .forgot-link {
+  font-size: 1.4rem;
+  float: right;
+}
+.cp-login .rhs .form-wrap .form-input-wrap {
+  position: relative;
 }
 .cp-login .rhs .act-wrap .login-btn {
   width: 100%;
@@ -261,6 +267,9 @@
 .cp-login .rhs .sign-up-sec .option-list .option-list-item img {
   width: 24px;
   height: 24px;
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 {
+  margin-bottom: 0;
 }
 .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
   border: 0;
@@ -395,6 +404,9 @@
   .cp-login .rhs.typ-2 {
     padding-right: 0;
   }
+}
+.cp-login .rhs .btn-link {
+  font-size: 1.4rem;
 }
 .cp-login input[type=number]::-webkit-inner-spin-button,
 .cp-login input[type=number]::-webkit-outer-spin-button {
@@ -734,7 +746,7 @@
   display: none;
 }
 .cp-login .steps-content.typ-content {
-  max-height: 610px;
+  max-height: 637px;
 }
 @media only screen and (max-width: 768px) {
   .cp-login .steps-content.typ-content {

@@ -349,6 +349,13 @@
 .cp-blog-detail .blog-post .cont-wrap.typ-conclusion .title {
   color: #00398C;
 }
+.cp-blog-detail .blog-post .cont-wrap.typ-conclusion .title.typ-result {
+  line-height: normal;
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
 .cp-blog-detail .blog-post .cont-wrap.typ-conclusion .desc {
   margin-bottom: 0;
 }
@@ -381,6 +388,56 @@
 }
 .cp-blog-detail .blog-post .cont-wrap .list-text.typ-clr .list-item {
   color: #333333;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec {
+  background-color: #F3F4F6;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  margin-right: 15%;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec {
+  width: 50%;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec .head-sec {
+  border-bottom: 1px solid #B3B3B3;
+  margin-bottom: 1.6rem;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec .head-sec .desc {
+  font-size: 1.2rem;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec .title {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec .title.correct {
+  color: #00A441;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec .title.incorrect {
+  color: #EE4400;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec .desc {
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .desc-sec.typ-full-width {
+  width: 100%;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .img-wrap {
+  width: 50%;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  overflow: hidden;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-answer-sec .img-wrap img {
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+.cp-blog-detail .blog-post .cont-wrap.typ-quiz-result {
+  margin-right: 15%;
 }
 .cp-blog-detail .border-bottom {
   border-bottom: 1px solid #DEDEDE;
@@ -547,6 +604,7 @@
 }
 .cp-blog-detail .artical-list-wrap {
   margin: 0;
+  padding-bottom: 0;
 }
 @media only screen and (max-width: 991px) {
   .cp-blog-detail .artical-list-wrap {
@@ -642,6 +700,14 @@
     display: flex;
     flex-direction: column;
   }
+}
+.cp-blog-detail .count {
+  color: #808080;
+  font-size: 1.6rem;
+}
+.cp-blog-detail .count .big-number {
+  font-size: 2.8rem;
+  font-family: "Poppins Semibold";
 }
 
 /*# sourceMappingURL=cp-blog-detail.css.map */

@@ -20,10 +20,11 @@
 
         .img-wrap {
             width: 100%;
-            height: 768px;
+            height: 790px;
             overflow: hidden;
             img{
                 object-fit: cover;
+                height: 100%;
             }
         }
     }
@@ -111,6 +112,7 @@
                     font-family: $font-medium;
                     color: $clr-base;
                     padding: 1rem;
+                    width: 100%;
 
                     &.typ-otp {
                         width: 75px;
@@ -136,13 +138,13 @@
                 }
 
                 .forgot-link {
-                    position: absolute;
-                    bottom: -33px;
-                    right: 0;
+                    // position: absolute;
+                    // bottom: -33px;
+                    // right: 0;
 
                     @media only screen and (max-width: $media-mobile) {
                         font-size: 1.2rem;
-                        bottom: -25px;
+                        // bottom: -25px;
                     }
                 }
 
@@ -174,8 +176,10 @@
                     color: #999999;
                     cursor: pointer;
                 }
+                .msg-wrap{ margin-top: 1rem;}
+                .forgot-link{ font-size: 1.4rem; float: right;}
             }
-
+            .form-input-wrap{ position: relative;}
     
         }
 
@@ -287,6 +291,7 @@
                 }
 
                 &.typ2 {
+                    margin-bottom: 0;
                     .option-list-item {
                         border: 0;
                         margin-right: 2rem;
@@ -443,7 +448,7 @@
                 padding-right: 0;
             }
         }
-
+        .btn-link{ font-size: 1.4rem;}
     }
 
     input[type="number"]::-webkit-inner-spin-button,
@@ -840,7 +845,7 @@
         }
 
         &.typ-content {
-            max-height: 610px;
+            max-height: 637px;
 
             @media only screen and (max-width: $media-mobile) {
                 max-height: 100%;
