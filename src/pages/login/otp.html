@@ -470,13 +470,12 @@
                     <div class="form-group">
                         <label class="form-label">Enter OTP</label>
                        <div class="otp-wrap">
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
-                        <input type="text" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-"/>
+                        <input type="number" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-" autoComplete="off" pattern="[0-9]*" inputMode="numeric" />
+                        <input type="number" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-" autoComplete="off" pattern="[0-9]*" inputMode="numeric" disabled="true"/>
+                        <input type="number" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-" autoComplete="off" pattern="[0-9]*" inputMode="numeric" disabled="true"/>
+                        <input type="number" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-" autoComplete="off" pattern="[0-9]*" inputMode="numeric" disabled="true"/>
+                        <input type="number" name="" maxlength="1" class="form-input typ-otp validate-field" placeholder="-" autoComplete="off" pattern="[0-9]*" inputMode="numeric" disabled="true"/>
                         <span class="error-msg typ-2"></span>
-
                     </div>
 
                     </div>
@@ -489,6 +488,7 @@
                 <button class="btn login-btn btn-disable" 
 				type="button"
 				disabled="true"
+				id="btn_otp_verify"
 				>Submit OTP</button> 
             </div>
             <div class="bottom-sec">
@@ -524,7 +524,7 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/js/form-validation.js"></script>
-
+	<script src="/js/otp_verify.js"></script>
 
     <!-- endbuild -->
 </body>
