@@ -132,6 +132,9 @@
   color: #B3B3B3;
   opacity: 1;
 }
+.cp-login .rhs .form-wrap .form-group .forgot-link {
+  font-size: 1.4rem;
+}
 @media only screen and (max-width: 768px) {
   .cp-login .rhs .form-wrap .form-group .forgot-link {
     font-size: 1.2rem;
@@ -167,7 +170,6 @@
   margin-top: 1rem;
 }
 .cp-login .rhs .form-wrap .form-group .forgot-link {
-  font-size: 1.4rem;
   float: right;
 }
 .cp-login .rhs .form-wrap .form-input-wrap {
@@ -180,6 +182,7 @@
 @media only screen and (max-width: 768px) {
   .cp-login .rhs .act-wrap .desc {
     font-size: 1.2rem;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -407,6 +410,11 @@
 }
 .cp-login .rhs .btn-link {
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .btn-link {
+    font-size: 1.2rem;
+  }
 }
 .cp-login input[type=number]::-webkit-inner-spin-button,
 .cp-login input[type=number]::-webkit-outer-spin-button {

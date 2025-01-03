@@ -274,4 +274,47 @@
             &::after { content: "\e91f"; color: #EE4400; font-size: 2.4rem;}
         }
     }
+
+    &.typ-circle-radio{
+        .custom-radio{ position: relative; padding: 0; padding-left: 4rem; display: block; border: none; background: none; color: $clr-base;}
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 21px;
+            width: 21px;
+            background-color: rgba(0,0,0,0);
+            border-radius: 50%;
+            border: 2px solid #999999;
+            transition: all 0.3s;
+
+          }
+          input[type="radio"]:checked+.custom-radio .checkmark {
+            background-color: rgba(0,0,0,0);
+            border-color: #3D7EDB;
+          }
+          .checkmark::after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          .checkmark::after{
+            top: 2px;
+           left: 2px;
+           width: 13px;
+           height: 13px;
+           border-radius: 50%;
+           background: #3D7EDB;
+       }
+          input[type="radio"]:checked+.custom-radio .checkmark::after {
+            display: block;
+          }
+
+          input[type=radio]:checked + .custom-radio {
+            border: none;
+            background:none;
+            font-family: $font-medium;
+        }   
+    }
+
 }

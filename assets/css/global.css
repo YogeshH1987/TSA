@@ -3087,6 +3087,51 @@ p {
   color: #EE4400;
   font-size: 2.4rem;
 }
+.bs-radio.typ-circle-radio .custom-radio {
+  position: relative;
+  padding: 0;
+  padding-left: 4rem;
+  display: block;
+  border: none;
+  background: none;
+  color: #333333;
+}
+.bs-radio.typ-circle-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 2px solid #999999;
+  transition: all 0.3s;
+}
+.bs-radio.typ-circle-radio input[type=radio]:checked + .custom-radio .checkmark {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #3D7EDB;
+}
+.bs-radio.typ-circle-radio .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.bs-radio.typ-circle-radio .checkmark::after {
+  top: 2px;
+  left: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #3D7EDB;
+}
+.bs-radio.typ-circle-radio input[type=radio]:checked + .custom-radio .checkmark::after {
+  display: block;
+}
+.bs-radio.typ-circle-radio input[type=radio]:checked + .custom-radio {
+  border: none;
+  background: none;
+  font-family: "Poppins Medium";
+}
 
 .bs-modal {
   position: relative;

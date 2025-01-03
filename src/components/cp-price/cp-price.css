@@ -92,14 +92,16 @@
   color: #333333;
   gap: 0.4rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item.typ-login {
+    align-items: center;
+  }
+}
 .cp-price .price-list-item.typ-login .icon {
   font-size: 2.4rem;
 }
 .cp-price .price-list-item.typ-login .desc {
   color: #333333;
-}
-.cp-price .price-list-item.typ-login .btn-link {
-  font-size: 1.4rem;
 }
 .cp-price .bold-text {
   color: #333333;
