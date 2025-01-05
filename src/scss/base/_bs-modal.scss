@@ -104,6 +104,7 @@
             }
         }
     }
+
     &.type-md {
         .small-title {
             font-size: 4rem;
@@ -226,6 +227,12 @@
         max-width: 640px;
         max-height: 328px;
 
+        @media only screen and (max-width: $media-mobile) {
+            bottom: 0;
+            @include transform(translate(-50%, -0%));
+            top: auto;
+        }
+
         .modal-content {
             .desc {
                 margin-bottom: 2rem;
@@ -237,10 +244,28 @@
             top: 28px;
             right: 30px;
             color: #999;
+
+            @media only screen and (max-width: $media-mobile) {
+                top: 15px;
+                right: 20px;
+            }
         }
-        .modal-body{
+
+        .modal-body {
             @media only screen and (max-width: $media-mobile) {
                 padding: 1.6rem;
+            }
+        }
+
+        .modal-dialog {
+            @include border-radius(12px);
+
+            @media only screen and (max-width: $media-mobile) {
+                @include border-radius(12px 12px 0 0);
+                @include transform(translate(-50%, -0%));
+                bottom: 0;
+                top: auto;
+                height: auto;
             }
         }
     }

@@ -3345,6 +3345,17 @@ p {
   max-width: 640px;
   max-height: 328px;
 }
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-share {
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    top: auto;
+  }
+}
 .bs-modal.typ-share .modal-content .desc {
   margin-bottom: 2rem;
   color: #333333;
@@ -3355,8 +3366,34 @@ p {
   color: #999;
 }
 @media only screen and (max-width: 768px) {
+  .bs-modal.typ-share .close-btn {
+    top: 15px;
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
   .bs-modal.typ-share .modal-body {
     padding: 1.6rem;
+  }
+}
+.bs-modal.typ-share .modal-dialog {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-share .modal-dialog {
+    border-radius: 12px 12px 0 0;
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 0 0;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    bottom: 0;
+    top: auto;
+    height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
