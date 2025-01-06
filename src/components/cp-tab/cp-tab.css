@@ -452,6 +452,15 @@
   font-family: "Poppins Semibold";
   color: #333333;
 }
+.cp-tab.typ-help-policies .tab-list {
+  gap: 1.2rem;
+}
+.cp-tab.typ-help-policies .tab-list .tab-item .title {
+  text-transform: capitalize;
+}
+.cp-tab.typ-help-policies .tab-list .tab-item:hover .title, .cp-tab.typ-help-policies .tab-list .tab-item.active .title {
+  text-shadow: none;
+}
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

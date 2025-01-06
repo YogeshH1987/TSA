@@ -95,6 +95,29 @@
   border-bottom: 1px solid #DEDEDE;
   border-top: 1px solid #DEDEDE;
 }
+.cp-accordion.typ-help {
+  border-top: solid 1px #DEDEDE;
+  margin-bottom: 0;
+}
+.cp-accordion.typ-help .acc-item .acc-head {
+  font-family: "Poppins Regular";
+}
+.cp-accordion.typ-help .acc-item.active {
+  border-top: 0;
+}
+.cp-accordion.typ-help .acc-item.active .acc-head {
+  font-family: "Poppins Semibold";
+}
+.cp-accordion.typ-help .ans-desc {
+  color: #333333;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion.typ-help .acc-item {
+    margin-inline: 0;
+  }
+}
 .cp-accordion .acc-item-card .acc-head-card {
   position: relative;
   border-bottom: 1px solid #DEDEDE;
