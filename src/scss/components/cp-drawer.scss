@@ -1,7 +1,7 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-drawer{
+.cp-drawer {
     width: 50.5rem;
     height: 100%;
     position: fixed;
@@ -13,9 +13,11 @@
     @include transition(all, 0.8s, ease-in-out);
     overflow: hidden;
     overflow-y: auto;
-    &.active{
+
+    &.active {
         right: 0;
     }
+
     @media only screen and (max-width: $media-mobile) {
         width: 100%;
         height: 90vh;
@@ -24,54 +26,65 @@
         bottom: -999px;
         padding: 1.6rem 1.2rem 1.6rem 1.6rem;
         @include border-radius(2.4rem 2.4rem 0 0);
-        &.active{
+
+        &.active {
             bottom: 0;
             right: auto;
         }
     }
-    .head-sec{
+
+    .head-sec {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1.2rem 0;
-        .drawer-title{
+
+        .drawer-title {
             font-family: $font-medium;
             font-size: 2.4rem;
             line-height: 3.2rem;
-            color: $clr-base; 
+            color: $clr-base;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
             }
         }
-        .icon.icon-close{
+
+        .icon.icon-close {
             position: absolute;
             top: 2.4rem;
             right: 3.2rem;
             font-size: 2.2rem;
             color: #999999;
+
             @media only screen and (max-width: $media-mobile) {
                 right: 1.6rem;
             }
         }
     }
-    &.typ-prod-detail{
+
+    &.typ-prod-detail {
         padding-top: 4rem;
-        .cp-add-info-list{
+
+        .cp-add-info-list {
             margin-bottom: 3.2rem;
         }
-        .radio-wrap{
+
+        .radio-wrap {
             gap: 1.2rem;
             justify-content: flex-start;
-            .bs-radio{
+
+            .bs-radio {
                 margin-bottom: 0;
             }
         }
-        .cp-box.type-quntity{
+
+        .cp-box.type-quntity {
             margin-top: 3.2rem;
         }
     }
-    
+
     &.typ-drawer-login {
         .cont-wrap {
             .cont-phara {
@@ -100,33 +113,57 @@
             }
         }
     }
-    &.typ-blog{
+
+    &.typ-blog {
         padding-left: 0;
-        .head-sec{
+
+        .head-sec {
             border-bottom: 1px solid #dedede;
             padding-left: 2rem;
         }
-        .act-wrap{
+
+        .act-wrap {
             background: $clr-root;
-        padding: 1.2rem;
+            padding: 1.2rem;
             display: flex;
             gap: 1.2rem;
             align-items: center;
             position: fixed;
             bottom: 0;
+
             @media only screen and (max-width: $media-mobile) {
                 position: absolute;
             }
-            .btn{
+
+            .btn {
                 min-width: 22.6rem;
+
                 @media only screen and (max-width: $media-mobile) {
                     min-width: 16.3rem;
                 }
             }
         }
-        &.active{
-            .act-wrap{
+
+        &.active {
+            .act-wrap {
                 position: fixed;
+            }
+        }
+    }
+
+    &.typ-help-policy {
+        @media only screen and (max-width: $media-mobile) {
+        padding: 1.6rem 0;}
+
+        .head-sec {
+            @media only screen and (max-width: $media-mobile) {
+            margin: 0 1.6rem;}
+        }
+
+        .cp-tab {
+            .tab-list {
+                @media only screen and (max-width: $media-mobile) {
+                    margin: 0 1.6rem;}
             }
         }
     }

@@ -478,8 +478,10 @@
       .cp-eCommerce-home-banner.typ-help-support .feature-item:nth-child(4) .feature-card .f-img .icon {
         color: #3D7EDB; }
   .cp-eCommerce-home-banner.typ-help-support .feature-type-2 {
-    gap: 1.2rem;
-    flex-wrap: wrap; }
+    gap: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-help-support .feature-type-2 {
+        flex-wrap: wrap; } }
     @media only screen and (max-width: 768px) {
       .cp-eCommerce-home-banner.typ-help-support .feature-type-2.typ-policies {
         gap: initial;

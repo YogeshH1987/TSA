@@ -88,7 +88,8 @@
     .cp-accordion.typ-help .ans-desc {
       color: #333333;
       font-size: 1.4rem;
-      line-height: 2.4rem; }
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem; }
     @media only screen and (max-width: 768px) {
       .cp-accordion.typ-help .acc-item {
         margin-inline: 0; } }

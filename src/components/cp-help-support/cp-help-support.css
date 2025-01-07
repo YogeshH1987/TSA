@@ -154,10 +154,18 @@
       font-size: 1.6rem; }
     .cp-help-support .policy-list.typ-disc li {
       list-style: disc; }
+    .cp-help-support .policy-list.typ-lower-alpha li {
+      list-style: lower-alpha; }
+    .cp-help-support .policy-list.typ-upper-roman li {
+      list-style: upper-roman; }
+    .cp-help-support .policy-list.typ-lower-roman li {
+      list-style: lower-roman; }
     .cp-help-support .policy-list.typ-decimal li {
       list-style: decimal; }
       .cp-help-support .policy-list.typ-decimal li::marker {
         font-family: "Poppins Semibold"; }
+    .cp-help-support .policy-list.typ-liabilities ul li {
+      list-style: lower-alpha !important; }
   .cp-help-support.typ-policy .typ-acc-head,
   .cp-help-support.typ-policy .help-title {
     margin-bottom: 0.8rem; }

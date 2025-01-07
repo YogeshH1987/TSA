@@ -228,6 +228,22 @@
                 list-style: disc;
             }
         }
+        &.typ-lower-alpha {
+            li {
+                list-style:lower-alpha;
+            }
+        }
+
+        &.typ-upper-roman {
+            li {
+                list-style:upper-roman;
+            }
+        }
+        &.typ-lower-roman {
+            li {
+                list-style:lower-roman;
+            }
+        }
 
         &.typ-decimal {
             li {
@@ -235,6 +251,13 @@
 
                 &::marker {
                     font-family: $font-semiBold;
+                }
+            }
+        }
+        &.typ-liabilities{
+            ul{
+                li {
+                    list-style:lower-alpha !important;
                 }
             }
         }

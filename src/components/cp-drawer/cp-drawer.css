@@ -106,5 +106,14 @@
             min-width: 16.3rem; } }
     .cp-drawer.typ-blog.active .act-wrap {
       position: fixed; }
+  @media only screen and (max-width: 768px) {
+    .cp-drawer.typ-help-policy {
+      padding: 1.6rem 0; } }
+  @media only screen and (max-width: 768px) {
+    .cp-drawer.typ-help-policy .head-sec {
+      margin: 0 1.6rem; } }
+  @media only screen and (max-width: 768px) {
+    .cp-drawer.typ-help-policy .cp-tab .tab-list {
+      margin: 0 1.6rem; } }
 
 /*# sourceMappingURL=cp-drawer.css.map */
