@@ -921,8 +921,8 @@
         .feature-type-2 {
           
                 gap: 1.2rem;
-                flex-wrap: wrap;
-       
+           
+                @media only screen and (max-width: $media-mobile) { flex-wrap: wrap;}
 
             &.typ-policies {
                 @media only screen and (max-width: $media-mobile) {

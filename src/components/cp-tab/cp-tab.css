@@ -452,6 +452,9 @@
   font-family: "Poppins Semibold";
   color: #333333;
 }
+.cp-tab.typ-help-policies {
+  width: 100%;
+}
 .cp-tab.typ-help-policies .tab-list {
   gap: 1.2rem;
 }

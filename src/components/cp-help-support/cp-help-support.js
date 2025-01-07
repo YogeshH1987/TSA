@@ -1,13 +1,13 @@
-$(".js-policies-scroll .list-item a[href^='#'], .typ-help-policies .tab-item a[href^='#']").on('click', function (e) {
-    // prevent default anchor click behavior
-    e.preventDefault();
+// $(".js-policies-scroll .list-item a[href^='#'], .typ-help-policies .tab-item a[href^='#']").on('click', function (e) {
+//     // prevent default anchor click behavior
+//     e.preventDefault();
 
-    // animate
-    $('html, body').animate({
-        scrollTop: $(this.hash).offset().top - 150
-    }, 300, function () {
-    });
-});
+//     // animate
+//     $('html, body').animate({
+//         scrollTop: $(this.hash).offset().top - 150
+//     }, 300, function () {
+//     });
+// });
 
 // Call the function on document ready
 $(document).ready(function () {
