@@ -17,124 +17,94 @@
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
   overflow: hidden;
-  overflow-y: auto;
-}
-.cp-drawer.active {
-  right: 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer {
-    width: 100%;
-    height: 90vh;
-    top: auto;
-    right: 0;
-    bottom: -999px;
-    padding: 1.6rem 1.2rem 1.6rem 1.6rem;
-    border-radius: 2.4rem 2.4rem 0 0;
-    -webkit-border-radius: 2.4rem 2.4rem 0 0;
-    -moz-border-radius: 2.4rem 2.4rem 0 0;
-  }
+  overflow-y: auto; }
   .cp-drawer.active {
-    bottom: 0;
-    right: auto;
-  }
-}
-.cp-drawer .head-sec {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 0;
-}
-.cp-drawer .head-sec .drawer-title {
-  font-family: "Poppins Medium";
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  color: #333333;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer .head-sec .drawer-title {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-}
-.cp-drawer .head-sec .icon.icon-close {
-  position: absolute;
-  top: 2.4rem;
-  right: 3.2rem;
-  font-size: 2.2rem;
-  color: #999999;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer .head-sec .icon.icon-close {
-    right: 1.6rem;
-  }
-}
-.cp-drawer.typ-prod-detail {
-  padding-top: 4rem;
-}
-.cp-drawer.typ-prod-detail .cp-add-info-list {
-  margin-bottom: 3.2rem;
-}
-.cp-drawer.typ-prod-detail .radio-wrap {
-  gap: 1.2rem;
-  justify-content: flex-start;
-}
-.cp-drawer.typ-prod-detail .radio-wrap .bs-radio {
-  margin-bottom: 0;
-}
-.cp-drawer.typ-prod-detail .cp-box.type-quntity {
-  margin-top: 3.2rem;
-}
-.cp-drawer.typ-drawer-login .cont-wrap .cont-phara {
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333333;
-  margin-bottom: 3.2rem;
-}
-.cp-drawer.typ-drawer-login .cont-wrap .small-head {
-  font-family: "Poppins Semibold";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333333;
-}
-.cp-drawer.typ-drawer-login .cont-wrap .blue-text {
-  color: #3D7EDB;
-}
-.cp-drawer.typ-drawer-login .typ-privacy .btn {
-  min-width: 47%;
-  border-color: #fff;
-}
-.cp-drawer.typ-blog {
-  padding-left: 0;
-}
-.cp-drawer.typ-blog .head-sec {
-  border-bottom: 1px solid #dedede;
-  padding-left: 2rem;
-}
-.cp-drawer.typ-blog .act-wrap {
-  background: #FFFFFF;
-  padding: 1.2rem;
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer.typ-blog .act-wrap {
-    position: absolute;
-  }
-}
-.cp-drawer.typ-blog .act-wrap .btn {
-  min-width: 22.6rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer.typ-blog .act-wrap .btn {
-    min-width: 16.3rem;
-  }
-}
-.cp-drawer.typ-blog.active .act-wrap {
-  position: fixed;
-}
+    right: 0; }
+  @media only screen and (max-width: 768px) {
+    .cp-drawer {
+      width: 100%;
+      height: 90vh;
+      top: auto;
+      right: 0;
+      bottom: -999px;
+      padding: 1.6rem 1.2rem 1.6rem 1.6rem;
+      border-radius: 2.4rem 2.4rem 0 0;
+      -webkit-border-radius: 2.4rem 2.4rem 0 0;
+      -moz-border-radius: 2.4rem 2.4rem 0 0; }
+      .cp-drawer.active {
+        bottom: 0;
+        right: auto; } }
+  .cp-drawer .head-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0; }
+    .cp-drawer .head-sec .drawer-title {
+      font-family: "Poppins Medium";
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      color: #333333; }
+      @media only screen and (max-width: 768px) {
+        .cp-drawer .head-sec .drawer-title {
+          font-size: 1.6rem;
+          line-height: 2.4rem; } }
+    .cp-drawer .head-sec .icon.icon-close {
+      position: absolute;
+      top: 2.4rem;
+      right: 3.2rem;
+      font-size: 2.2rem;
+      color: #999999; }
+      @media only screen and (max-width: 768px) {
+        .cp-drawer .head-sec .icon.icon-close {
+          right: 1.6rem; } }
+  .cp-drawer.typ-prod-detail {
+    padding-top: 4rem; }
+    .cp-drawer.typ-prod-detail .cp-add-info-list {
+      margin-bottom: 3.2rem; }
+    .cp-drawer.typ-prod-detail .radio-wrap {
+      gap: 1.2rem;
+      justify-content: flex-start; }
+      .cp-drawer.typ-prod-detail .radio-wrap .bs-radio {
+        margin-bottom: 0; }
+    .cp-drawer.typ-prod-detail .cp-box.type-quntity {
+      margin-top: 3.2rem; }
+  .cp-drawer.typ-drawer-login .cont-wrap .cont-phara {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #333333;
+    margin-bottom: 3.2rem; }
+  .cp-drawer.typ-drawer-login .cont-wrap .small-head {
+    font-family: "Poppins Semibold";
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #333333; }
+  .cp-drawer.typ-drawer-login .cont-wrap .blue-text {
+    color: #3D7EDB; }
+  .cp-drawer.typ-drawer-login .typ-privacy .btn {
+    min-width: 47%;
+    border-color: #fff; }
+  .cp-drawer.typ-blog {
+    padding-left: 0; }
+    .cp-drawer.typ-blog .head-sec {
+      border-bottom: 1px solid #dedede;
+      padding-left: 2rem; }
+    .cp-drawer.typ-blog .act-wrap {
+      background: #FFFFFF;
+      padding: 1.2rem;
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+      position: fixed;
+      bottom: 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-drawer.typ-blog .act-wrap {
+          position: absolute; } }
+      .cp-drawer.typ-blog .act-wrap .btn {
+        min-width: 22.6rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-drawer.typ-blog .act-wrap .btn {
+            min-width: 16.3rem; } }
+    .cp-drawer.typ-blog.active .act-wrap {
+      position: fixed; }
 
 /*# sourceMappingURL=cp-drawer.css.map */

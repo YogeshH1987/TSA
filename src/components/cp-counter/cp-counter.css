@@ -12,20 +12,17 @@
   font-size: 1.6rem;
   color: #333333;
   display: flex;
-  overflow: hidden;
-}
-.cp-counter .btn-count {
-  width: 4.8rem;
-  height: 4.8rem;
-  background-color: #ECF2FB;
-  font-size: 2.4rem;
-}
-.cp-counter .number-product {
-  width: 4.8rem;
-  height: 4.8rem;
-  text-align: center;
-  border-left: 1px solid #DEDEDE;
-  border-right: 1px solid #DEDEDE;
-}
+  overflow: hidden; }
+  .cp-counter .btn-count {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #ECF2FB;
+    font-size: 2.4rem; }
+  .cp-counter .number-product {
+    width: 4.8rem;
+    height: 4.8rem;
+    text-align: center;
+    border-left: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE; }
 
 /*# sourceMappingURL=cp-counter.css.map */

@@ -5,34 +5,28 @@
 /*opacity*/
 /*opacity- end*/
 .cp-prod-thumb-slider {
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  .cp-prod-thumb-slider {
-    height: 100%;
-  }
-}
-.cp-prod-thumb-slider .seller-tag {
-  background: #D8E5F8;
-  border-radius: 26px;
-  color: #3D7EDB;
-  font-size: 1.2rem;
-  font-family: "Poppins Medium";
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  padding: 0.2rem 0.8rem;
-}
-.cp-prod-thumb-slider .plus-two-slide {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cp-prod-thumb-slider .plus-two {
-  font-size: 1.4rem;
-  font-family: "Poppins Medium";
-  color: #666666;
-}
+  position: relative; }
+  @media only screen and (max-width: 768px) {
+    .cp-prod-thumb-slider {
+      height: 100%; } }
+  .cp-prod-thumb-slider .seller-tag {
+    background: #D8E5F8;
+    border-radius: 26px;
+    color: #3D7EDB;
+    font-size: 1.2rem;
+    font-family: "Poppins Medium";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    padding: 0.2rem 0.8rem; }
+  .cp-prod-thumb-slider .plus-two-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .cp-prod-thumb-slider .plus-two {
+    font-size: 1.4rem;
+    font-family: "Poppins Medium";
+    color: #666666; }
 
 /*# sourceMappingURL=cp-prod-thumb-slider.css.map */

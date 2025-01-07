@@ -7,28 +7,19 @@
 .lyt-case {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-case {
-    gap: 1.2rem;
-  }
-}
-.lyt-case .grid-col {
-  flex: 1 1 23%;
-}
-@media only screen and (max-width: 768px) {
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 768px) {
+    .lyt-case {
+      gap: 1.2rem; } }
   .lyt-case .grid-col {
-    flex: 1 1 48%;
-  }
-}
-.lyt-case .grid-col:first-child {
-  flex: 2 1 47.612%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-case .grid-col:first-child {
-    flex: 1 1 100%;
-  }
-}
+    flex: 1 1 23%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-case .grid-col {
+        flex: 1 1 48%; } }
+    .lyt-case .grid-col:first-child {
+      flex: 2 1 47.612%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-case .grid-col:first-child {
+          flex: 1 1 100%; } }
 
 /*# sourceMappingURL=lyt-case.css.map */

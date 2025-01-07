@@ -8,141 +8,116 @@
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
-  position: relative;
-}
-.cp-video .img-wrap {
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
-  height: 33.2rem;
-  overflow: hidden;
-}
-.cp-video .img-wrap img {
-  height: 100%;
-}
-@media only screen and (max-width: 768px) {
+  position: relative; }
   .cp-video .img-wrap {
-    height: 19.2rem;
-  }
-}
-.cp-video .content-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 4rem 4rem 3.2rem;
-  width: 100%;
-  height: 100%;
-}
-@media only screen and (max-width: 768px) {
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    height: 33.2rem;
+    overflow: hidden; }
+    .cp-video .img-wrap img {
+      height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .cp-video .img-wrap {
+        height: 19.2rem; } }
   .cp-video .content-wrap {
-    padding: 1.6rem;
-  }
-}
-.cp-video .icon-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  font-size: 6.4rem;
-  color: #FFFFFF;
-  padding: 0;
-  display: inline-block;
-}
-@media only screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4rem 4rem 3.2rem;
+    width: 100%;
+    height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .cp-video .content-wrap {
+        padding: 1.6rem; } }
   .cp-video .icon-wrap {
-    font-size: 2.7rem;
-  }
-}
-.cp-video .tag-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.8rem;
-}
-.cp-video .tag-list .tag-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-.cp-video .tag-list .tag-item .tag {
-  background: #D8E5F8;
-  border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  font-family: "Poppins Medium";
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #333333;
-  padding: 0.4rem 0.8rem;
-}
-.cp-video .title {
-  font-family: "Poppins Medium";
-  font-size: 2rem;
-  line-height: 2.8rem;
-  color: #FFFFFF;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-@media only screen and (max-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 6.4rem;
+    color: #FFFFFF;
+    padding: 0;
+    display: inline-block; }
+    @media only screen and (max-width: 768px) {
+      .cp-video .icon-wrap {
+        font-size: 2.7rem; } }
+  .cp-video .tag-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem; }
+    .cp-video .tag-list .tag-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem; }
+      .cp-video .tag-list .tag-item .tag {
+        background: #D8E5F8;
+        border-radius: 0.4rem;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        font-family: "Poppins Medium";
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #333333;
+        padding: 0.4rem 0.8rem; }
   .cp-video .title {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-}
-.cp-video .post-date {
-  position: absolute;
-  bottom: 3.2rem;
-}
-@media only screen and (max-width: 768px) {
+    font-family: "Poppins Medium";
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+    @media only screen and (max-width: 768px) {
+      .cp-video .title {
+        font-size: 1.6rem;
+        line-height: 2.4rem; } }
   .cp-video .post-date {
-    bottom: 1.6rem;
-  }
-}
-.cp-video .post-date .post-detail {
-  color: #FFFFFF;
-  font-family: "Poppins Regular";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  padding: 0 1rem;
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  .cp-video .post-date .post-detail {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-}
-.cp-video .post-date .post-detail::before {
-  content: "";
-  background: #FFFFFF;
-  width: 1px;
-  height: 1.2rem;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 0rem;
-}
-.cp-video .post-date .post-detail:first-child::before {
-  display: none;
-  padding-left: 0;
-}
+    position: absolute;
+    bottom: 3.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-video .post-date {
+        bottom: 1.6rem; } }
+    .cp-video .post-date .post-detail {
+      color: #FFFFFF;
+      font-family: "Poppins Regular";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding: 0 1rem;
+      position: relative; }
+      @media only screen and (max-width: 768px) {
+        .cp-video .post-date .post-detail {
+          font-size: 1.2rem;
+          line-height: 1.6rem; } }
+      .cp-video .post-date .post-detail::before {
+        content: '';
+        background: #FFFFFF;
+        width: 1px;
+        height: 1.2rem;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0rem; }
+      .cp-video .post-date .post-detail:first-child::before {
+        display: none;
+        padding-left: 0; }
 
 /*# sourceMappingURL=cp-video.css.map */

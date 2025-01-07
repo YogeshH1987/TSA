@@ -6,59 +6,45 @@
 /*opacity- end*/
 .cp-rating {
   padding: 1.6rem 2rem;
-  padding-top: 2.4rem;
-}
-@media only screen and (max-width: 991px) {
-  .cp-rating {
-    padding: 1.6rem;
-  }
-}
-.cp-rating .rating-number-sec {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1.6rem;
-}
-.cp-rating .rating-number-sec .rating-num {
-  font-size: 4rem;
-  color: #333333;
-  font-family: "Poppins Semibold";
-}
-.cp-rating .review-star {
-  margin-top: 1rem;
-}
-.cp-rating .review-star .icon {
-  font-size: 1.6rem;
-}
-.cp-rating .review-star .icon.active {
-  color: #FFB800;
-}
-.cp-rating .review-text {
-  display: flex;
-}
-.cp-rating .review-text .review-count {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  color: #666666;
-  position: relative;
-  padding-right: 1.5rem;
-}
-.cp-rating .review-text .review-count:first-child::after {
-  position: absolute;
-  right: 7px;
-  top: 4px;
-  width: 2px;
-  height: 14px;
-  background-color: #666666;
-  content: "";
-}
-.cp-rating.typ-structura-pdp {
-  padding: 0;
-}
-.cp-rating.typ-structura-pdp .review-text .review-count {
-  color: #3D7EDB;
-}
-.cp-rating.typ-structura-pdp .review-text .review-count:first-child:after {
-  background: #3D7EDB;
-}
+  padding-top: 2.4rem; }
+  @media only screen and (max-width: 991px) {
+    .cp-rating {
+      padding: 1.6rem; } }
+  .cp-rating .rating-number-sec {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.6rem; }
+    .cp-rating .rating-number-sec .rating-num {
+      font-size: 4rem;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+  .cp-rating .review-star {
+    margin-top: 1rem; }
+    .cp-rating .review-star .icon {
+      font-size: 1.6rem; }
+      .cp-rating .review-star .icon.active {
+        color: #FFB800; }
+  .cp-rating .review-text {
+    display: flex; }
+    .cp-rating .review-text .review-count {
+      font-family: "Poppins Regular";
+      font-size: 1.4rem;
+      color: #666666;
+      position: relative;
+      padding-right: 1.5rem; }
+      .cp-rating .review-text .review-count:first-child::after {
+        position: absolute;
+        right: 7px;
+        top: 4px;
+        width: 2px;
+        height: 14px;
+        background-color: #666666;
+        content: ''; }
+  .cp-rating.typ-structura-pdp {
+    padding: 0; }
+    .cp-rating.typ-structura-pdp .review-text .review-count {
+      color: #3D7EDB; }
+      .cp-rating.typ-structura-pdp .review-text .review-count:first-child:after {
+        background: #3D7EDB; }
 
 /*# sourceMappingURL=cp-rating.css.map */

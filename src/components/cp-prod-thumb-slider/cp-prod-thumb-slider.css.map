@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/config/_variables.scss","../../scss/config/_mixin.scss","../../scss/components/cp-prod-thumb-slider.scss"],"names":[],"mappings":"AAAA;AAWA;AAQA;ACEA;AAUA;AAOA;AClCA;EACG;;AACA;EAFH;IAGI;;;AAEA;EACI;EACA;EACA,OFRM;EESN;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA,aFdM;EEeN,OFvBG","file":"cp-prod-thumb-slider.css"}
+{
+"version": 3,
+"mappings": "AAAA,YAAY;AAWZ,eAAe;AAQf,iBAAiB;ACEjB,aAAa;AAUb,WAAW;AAOX,gBAAgB;AClChB,qBAAqB;EAClB,QAAQ,EAAE,QAAQ;EAClB,yCAAmD;IAFtD,qBAAqB;MAGjB,MAAM,EAAE,IAAI;EAEZ,iCAAW;IACP,UAAU,EAAE,OAAO;IACnB,aAAa,EAAE,IAAI;IACnB,KAAK,EFRC,OAAO;IESb,SAAS,EAAE,MAAM;IACjB,WAAW,EFAL,gBAAgB;IECtB,QAAQ,EAAE,QAAQ;IAClB,IAAI,EAAE,IAAI;IACV,GAAG,EAAC,IAAI;IACR,OAAO,EAAE,aAAa;EAE1B,qCAAe;IACX,UAAU,EAAE,MAAM;IAClB,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,eAAe,EAAE,MAAM;EAE3B,+BAAS;IACL,SAAS,EAAE,MAAM;IACjB,WAAW,EFdL,gBAAgB;IEetB,KAAK,EFvBF,OAAO",
+"sources": ["../../scss/config/_variables.scss","../../scss/config/_mixin.scss","../../scss/components/cp-prod-thumb-slider.scss"],
+"names": [],
+"file": "cp-prod-thumb-slider.css"
+}

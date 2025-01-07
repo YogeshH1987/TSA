@@ -10,72 +10,58 @@
   -moz-border-radius: 1.6rem;
   border: 1px solid #DEDEDE;
   background: #FFFFFF;
-  overflow: hidden;
-}
-@media only screen and (max-width: 768px) {
-  .cp-useful-card {
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-  }
-}
-.cp-useful-card .img-wrap {
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
-  height: 16.8rem;
-  overflow: hidden;
-  display: block;
-}
-.cp-useful-card .img-wrap img {
-  height: 100%;
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
-  object-fit: cover;
-}
-@media only screen and (max-width: 768px) {
+  overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .cp-useful-card {
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem; } }
   .cp-useful-card .img-wrap {
-    height: 14.4rem;
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-  }
-  .cp-useful-card .img-wrap img {
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-  }
-}
-.cp-useful-card .content-wrap {
-  padding: 2.4rem;
-}
-@media only screen and (max-width: 768px) {
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    height: 16.8rem;
+    overflow: hidden;
+    display: block; }
+    .cp-useful-card .img-wrap img {
+      height: 100%;
+      border-radius: 1.6rem;
+      -webkit-border-radius: 1.6rem;
+      -moz-border-radius: 1.6rem;
+      object-fit: cover; }
+    @media only screen and (max-width: 768px) {
+      .cp-useful-card .img-wrap {
+        height: 14.4rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem; }
+        .cp-useful-card .img-wrap img {
+          border-radius: 1.2rem;
+          -webkit-border-radius: 1.2rem;
+          -moz-border-radius: 1.2rem; } }
   .cp-useful-card .content-wrap {
-    padding: 1.6rem;
-  }
-}
-.cp-useful-card .content-wrap .title {
-  font-family: "Poppins Semibold";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #333333;
-  margin-bottom: 0.8rem;
-}
-.cp-useful-card .content-wrap .desc {
-  font-family: "Poppins Regular";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #666666;
-  margin-bottom: 0.8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-.cp-useful-card .content-wrap .btn.btn-link {
-  line-height: 2.2rem;
-}
+    padding: 2.4rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-useful-card .content-wrap {
+        padding: 1.6rem; } }
+    .cp-useful-card .content-wrap .title {
+      font-family: "Poppins Semibold";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #333333;
+      margin-bottom: 0.8rem; }
+    .cp-useful-card .content-wrap .desc {
+      font-family: "Poppins Regular";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #666666;
+      margin-bottom: 0.8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    .cp-useful-card .content-wrap .btn.btn-link {
+      line-height: 2.2rem; }
 
 /*# sourceMappingURL=cp-useful-card.css.map */
