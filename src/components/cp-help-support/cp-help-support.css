@@ -173,11 +173,7 @@
 }
 .cp-help-support .request-call-wrap .cp-table .list-item {
   border: none;
-}
-@media only screen and (max-width: 768px) {
-  .cp-help-support .request-call-wrap .cp-table .list-item {
-    padding: 1rem 0.4rem;
-  }
+  padding: 1rem 0.4rem;
 }
 .cp-help-support .request-call-wrap .cp-table tr th {
   color: #333333;
