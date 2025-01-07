@@ -799,6 +799,14 @@
     }
 
     &.typ-help-support {
+        .typ-feature-banner {
+            padding-bottom: 0;
+
+            @media only screen and (max-width: $media-mobile) {
+                margin-right: 0;
+            }
+        }
+
         .feature-item {
             order: initial !important;
             height: 18rem;
@@ -911,9 +919,16 @@
         }
 
         .feature-type-2 {
-            @media only screen and (max-width: $media-mobile) {
+          
                 gap: 1.2rem;
                 flex-wrap: wrap;
+       
+
+            &.typ-policies {
+                @media only screen and (max-width: $media-mobile) {
+                    gap: initial;
+                    flex-wrap: initial;
+                }
             }
         }
     }

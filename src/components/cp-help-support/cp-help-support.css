@@ -50,6 +50,11 @@
 .cp-help-support .cont-wrap {
   margin-bottom: 4.8rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-help-support .cont-wrap {
+    margin-bottom: 3.2rem;
+  }
+}
 .cp-help-support .cont-wrap .link-wrap {
   margin: 2.8rem 0;
 }
@@ -115,6 +120,7 @@
 .cp-help-support .request-call-wrap .desc {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
+  line-height: normal;
 }
 @media only screen and (max-width: 768px) {
   .cp-help-support .request-call-wrap .desc.typ-bold {
@@ -159,6 +165,42 @@
 @media only screen and (max-width: 768px) {
   .cp-help-support .request-call-wrap .btn-request-call {
     min-width: 100%;
+  }
+}
+.cp-help-support .request-call-wrap .cp-table {
+  border: none;
+  width: 100%;
+}
+.cp-help-support .request-call-wrap .cp-table .list-item {
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-help-support .request-call-wrap .cp-table .list-item {
+    padding: 1rem 0.4rem;
+  }
+}
+.cp-help-support .request-call-wrap .cp-table tr th {
+  color: #333333;
+  font-family: "Poppins Medium";
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .cp-help-support .request-call-wrap .cp-table tr th {
+    white-space: nowrap;
+    width: auto;
+  }
+}
+.cp-help-support .request-call-wrap .cp-table tr td {
+  color: #333333;
+  font-family: "Poppins Regular";
+  text-align: right;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-help-support .request-call-wrap .cp-table tr td {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    max-width: 145px;
   }
 }
 .cp-help-support .policy-list {
