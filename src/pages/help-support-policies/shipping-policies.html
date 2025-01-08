@@ -18,8 +18,15 @@
     <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
     <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
     <link rel="stylesheet" href="../components/cp-product-card/cp-product-card.css" />
+    <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
     <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
+    <link rel="stylesheet" href="/components/cp-other-info/cp-other-info.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
+    <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
     <link rel="stylesheet" href="/components/cp-help-support/cp-help-support.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
 </head>
 
 <body>
@@ -231,7 +238,7 @@
                                             </a>
                                         </div>
                                         <div class="swiper-slide feature-item">
-                                            <a href="#" class="feature-card">
+                                            <a href="#" class="feature-card js-drawer" data-id="return-cancellation-policy">
                                                 <h2 class="f-title">SHIPPING <br> POLICY</h2>
                                                 <div class="f-img">
                                                     <div class="icon icon-truck">
@@ -245,7 +252,7 @@
                                             <a href="#" class="feature-card">
                                                 <h2 class="f-title">CANCELATION <br> POLICY</h2>
                                                 <div class="f-img">
-                                                    <div class="icon icon-close1">
+                                                    <div class="icon icon-cancel">
 
                                                     </div>
                                                 </div>
@@ -267,7 +274,7 @@
                                 <p class="desc typ-bold">Talk to an expert on</p>
                                 <p class="desc typ-number">1800-108-8282</p>
                                 <div class="divider"><span>or</span></div>
-                                <button class="btn btn-request-call">Request a callback</button>
+                                <button class="btn btn-request-call js-drawer" data-id="request-a-call-back">Request a callback</button>
                             </div>
                         </div>
 
@@ -288,6 +295,345 @@
         </div>
     </footer>
     <!-- Footer end -->
+
+        <!-- return cancellation policy drawer-->
+        <div class="cp-drawer typ-help-policy" id="return-cancellation-policy">
+            <div class="head-sec">
+                <h2 class="drawer-title">Return & cancellation policy</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+            <div class="cont-wrap">
+                <div class="cp-help-support typ-policy">
+                    <div class="cp-tab typ-help-policies">
+    
+                        <ul class="tab-list">
+                            <li class="tab-item active" data-target="#tab1">
+                                <h3 class="title">Tiscon</h3>
+                            </li>
+                            <li class="tab-item" data-target="#tab2">
+                                <h3 class="title">Wiron</h3>
+                            </li>
+                            <li class="tab-item" data-target="#tab3">
+                                <h3 class="title">Shaktee</h3>
+                            </li>
+                            <li class="tab-item" data-target="#tab4">
+                                <h3 class="title">Pravesh</h3>
+                            </li>
+    
+    
+                        </ul>
+                        <div class="tab-container">
+                            <div class="tab-content active" id="tab1">
+                                <div class="js-accordion">
+                                    <div class="sec-cont">
+                                        <div class="cp-accordion typ-policy typ-help">
+                                            <div class="acc-item">
+                                                <div class="acc-head">
+                                                    <h3 class="title">
+                                                        Return and refund policy
+                                                    </h3>
+                                                </div>
+                                                <div class="acc-cont">
+                                                    <p class="ans-desc">TATA Steel Aashiyana is an online home building
+                                                        platform
+                                                        that supports you through your home building journey. From
+                                                        understanding
+                                                        the various stages in the home building process, connecting you with
+                                                        service providers, estimate your material requirement to finally
+                                                        providing an interface to purchase superior quality building
+                                                        materials
+                                                        online, TATA Steel Aashiyana is a one-stop-shop for building your
+                                                        dream
+                                                        home.</p>
+                                                </div>
+                                            </div>
+                                            <div class="acc-item">
+                                                <div class="acc-head">
+                                                    <h3 class="title">
+                                                        Shipping policy
+                                                    </h3>
+                                                </div>
+                                                <div class="acc-cont">
+    
+                                                    <p class="ans-desc">TATA Steel Aashiyana is an online home building
+                                                        platform
+                                                        that supports you through your home building journey. From
+                                                        understanding
+                                                        the various stages in the home building process, connecting you with
+                                                        service providers, estimate your material requirement to finally
+                                                        providing an interface to purchase superior quality building
+                                                        materials
+                                                        online, TATA Steel Aashiyana is a one-stop-shop for building your
+                                                        dream
+                                                        home.</p>
+    
+                                                </div>
+                                            </div>
+                                            <div class="acc-item">
+                                                <div class="acc-head">
+                                                    <h3 class="title">
+                                                        Order cancellation policy
+                                                    </h3>
+                                                </div>
+                                                <div class="acc-cont">
+                                                    <p class="ans-desc typ-bold">Pay now options</p>
+                                                    <p class="ans-desc">The amount will be refunded to the customer’s bank
+                                                        account (used for the payment) after deducting standard payment
+                                                        gateway transaction charges.</p>
+                                                    <p class="ans-desc">
+                                                        Cancellation requests made after 24 hours or after dispatch will be
+                                                        rejected, and the customer must take the material.
+                                                    </p>
+                                                    <p class="ans-desc">If the cancellation request is accepted, the refund
+                                                        will be processed
+                                                        within 10 working days.</p>
+                                                    <p class="ans-desc">Orders can be canceled within 24 hours of placing
+                                                        the order or before
+                                                        dispatch, whichever comes first.</p>
+                                                    <p class="ans-desc typ-bold">Pay before dispatch</p>
+                                                    <p class="ans-desc">Orders can be canceled by the customer through the
+                                                        portal or
+                                                        toll-free number before the order is dispatched from the dealer’s
+                                                        outlet.</p>
+                                                    <p class="ans-desc">
+                                                        Cancellation requests made after dispatch will be rejected, and the
+                                                        customer must take the material.
+                                                    </p>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="tab2" style="display: none;">
+                                <div class="js-accordion">
+                                    <div class="sec-cont">
+                                        <div class="cp-accordion typ-policy typ-help">
+                                            <div class="acc-item">
+                                                <div class="acc-head">
+                                                    <h3 class="title">
+                                                        Return and refund policy
+                                                    </h3>
+                                                </div>
+                                                <div class="acc-cont">
+                                                    <p class="ans-desc">TATA Steel Aashiyana is an online home building
+                                                        platform
+                                                        that supports you through your home building journey. From
+                                                        understanding
+                                                        the various stages in the home building process, connecting you with
+                                                        service providers, estimate your material requirement to finally
+                                                        providing an interface to purchase superior quality building
+                                                        materials
+                                                        online, TATA Steel Aashiyana is a one-stop-shop for building your
+                                                        dream
+                                                        home.</p>
+                                                </div>
+                                            </div>
+                                            <div class="acc-item">
+                                                <div class="acc-head">
+                                                    <h3 class="title">
+                                                        Shipping policy
+                                                    </h3>
+                                                </div>
+                                                <div class="acc-cont">
+    
+                                                    <p class="ans-desc">TATA Steel Aashiyana is an online home building
+                                                        platform
+                                                        that supports you through your home building journey. From
+                                                        understanding
+                                                        the various stages in the home building process, connecting you with
+                                                        service providers, estimate your material requirement to finally
+                                                        providing an interface to purchase superior quality building
+                                                        materials
+                                                        online, TATA Steel Aashiyana is a one-stop-shop for building your
+                                                        dream
+                                                        home.</p>
+    
+                                                </div>
+                                            </div>
+                                            <div class="acc-item">
+                                                <div class="acc-head">
+                                                    <h3 class="title">
+                                                        Order cancellation policy
+                                                    </h3>
+                                                </div>
+                                                <div class="acc-cont">
+                                                    <p class="ans-desc typ-bold">Pay now options</p>
+                                                    <p class="ans-desc">The amount will be refunded to the customer’s bank
+                                                        account (used for the payment) after deducting standard payment
+                                                        gateway transaction charges.</p>
+                                                    <p class="ans-desc">
+                                                        Cancellation requests made after 24 hours or after dispatch will be
+                                                        rejected, and the customer must take the material.
+                                                    </p>
+                                                    <p class="ans-desc">If the cancellation request is accepted, the refund
+                                                        will be processed
+                                                        within 10 working days.</p>
+                                                    <p class="ans-desc">Orders can be canceled within 24 hours of placing
+                                                        the order or before
+                                                        dispatch, whichever comes first.</p>
+                                                    <p class="ans-desc typ-bold">Pay before dispatch</p>
+                                                    <p class="ans-desc">Orders can be canceled by the customer through the
+                                                        portal or
+                                                        toll-free number before the order is dispatched from the dealer’s
+                                                        outlet.</p>
+                                                    <p class="ans-desc">
+                                                        Cancellation requests made after dispatch will be rejected, and the
+                                                        customer must take the material.
+                                                    </p>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Request-->
+        <div class="cp-drawer" id="request-a-call-back">
+            <div class="request-form">
+                <div class="head-sec">
+                    <h2 class="drawer-title">Request a call back</h2>
+                    <a href="#" class="icon icon-close js-close-btn"></a>
+                </div>
+                <div class="cont-wrap">
+                    <div class="cp-form typ-help-policies">
+    
+                        <div class="form-group error">
+                            <label class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control validate-name" value="Ajay Malhotra" placeholder=""
+                                required="">
+                                <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group error">
+                            <label class="form-label">Phone number</label>
+                            <input type="text" id="phone-number" class="form-control validate-mobile" value="9820098200" placeholder=""
+                                required="">
+                                <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group error">
+                            <label class="form-label">Email ID</label>
+                            <input type="email" id="email" class="form-control validate-email" value="ajay@gmail.com" placeholder=""
+                                required="">
+                                <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="cp-select">
+                                <h3 class="title">Reason of contact</h3>
+                                <div class="select-dropdown">
+                                    <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                        <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
+                                    </button>
+                                    <ul class="select-dropdown-list">
+                                        <li class="dropdown-item">
+                                            <span data-value="1" class="select-dropdown-list-item">Defected product1</span>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span data-value="2" class="select-dropdown-list-item">Defected product2</span>
+    
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span data-value="3" class="select-dropdown-list-item">Defected product3</span>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="cp-select">
+                                <h3 class="title">Defect type</h3>
+                                <div class="select-dropdown">
+                                    <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                        <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
+                                    </button>
+                                    <ul class="select-dropdown-list">
+                                        <li class="dropdown-item">
+                                            <span data-value="1" class="select-dropdown-list-item">Broken handle1</span>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span data-value="2" class="select-dropdown-list-item">Broken handle2</span>
+    
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span data-value="3" class="select-dropdown-list-item">Broken handle3</span>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Write your review</label>
+                            </textarea>
+                            <textarea id="review" rows="4" class="form-control"
+                                cols="50">Agrico products are best when it comes to building your home or DYI projects.</textarea>
+                        </div>
+                        <div class="cp-attached-file">
+                            <div class="form-group typ-attachements hidden">
+                                <h3 class="title">Attachments</h3>
+                                <ul class="attachment-list">
+                                    <!-- <li class="list-item">Purchase_receipt.png <span class="icon-wrap"><i class="icon icon-delate"></i> <span>Remove</span></span></li> -->
+                                </ul>
+                            </div>
+                            <div class="act-wrap">
+                                <button class="btn btn-default typ-attached-file" type="button"
+                                    id="attach-supporting-btn"><span class="icon icon-attach-file"></span>Attach supporting
+                                    file</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="cp-checkbox typ-help-policy-terms">
+                                <input type="checkbox" id="terms">
+                                <label for="terms">I have read all <a href="#" class="terms">Terms & Conditions</a></label>
+                            </div>
+                        </div>
+    
+                        <div class="act-wrap">
+                            <button class="btn btn-default typ-request-submit" type="button">Submit request</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="cp-form upload-supporting-files" id="upload-supporting-files">
+                <div class="head-sec">
+                    <h2 class="drawer-title">Upload supporting files</h2>
+                    <!-- <a href="#" class="icon icon-close js-close-btn"></a> -->
+                </div>
+    
+                <div class="cp-attached-file typ-help-policies">
+                    <p class="desc">Attach any supporting document</p>
+    
+                    <div class="img-thumbs img-thumbs-hidden" id="img-preview"></div>
+    
+                    <div class="upload-file-area">
+                        <span class="icon icon-camera"></span>
+                        <h3 class="title">Upload file from device</h3>
+                        <p class="desc">File formats: PNG, JPEG, PDF, PPT, DOC and DOCX. File size should not exceed 2
+                            MB.</p>
+                        <label class="label"> <input type="file" name="images[]" multiple id="upload-img"
+                                class="default-file-input"> </label>
+                    </div>
+                    <div class="btn-wrap text-center typ-upload-file">
+                        <button type="submit" class="btn btn-outline btn-text" id="cancel-btn">Cancel</button>
+                        <button type="submit" class="btn" id="save-btn">Save</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="cm-overlay"></div>
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
@@ -295,7 +641,12 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="../components/cp-product-card/cp-product-card.js"></script>
+    <script src="/components/cp-select/cp-select.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-accordion/cp-accordion.js"></script>
     <script src="../components/cp-help-support/cp-help-support.js"></script>
+    <script src="../components/cp-attached-file/cp-attached-file.js"></script>
+    <script src="/js/form-validation.js"></script>
     <!-- endbuild -->
 
 </body>

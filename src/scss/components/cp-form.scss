@@ -210,79 +210,34 @@
       min-width: 100%;
     }
 
-    .typ-attached-file {
-      min-width: 100%;
-      background-color: #ECF2FB;
-      border: 1px dashed #3D7EDB;
-      color: #3D7EDB !important;
-      padding: 1.6rem;
-      text-align: left;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      margin-bottom: 2.4rem;
+  }
+  .typ-upload-file {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    justify-content: center;
 
-      .icon {
-        width: 2.4rem;
-        height: 2.4rem;
-        font-size: 2.4rem;
-        color: #3D7EDB;
-      }
-    }
-
-    .typ-upload-file {
-      display: flex;
-      align-items: center;
-      gap: 4.8rem;
-      justify-content: center;
-
-      .btn-text {
-        border: none;
-        padding: 0;
-        border-bottom: 1px solid #3D7EDB;
-        min-width: auto;
-        color: #3D7EDB;
-        border-radius: 0;
-      }
-    }
-
-    .typ-attachements {
-      .title {
-        font-size: 1.6rem;
-        color: $clr-base;
-        font-family: $font-medium;
-      }
-
-      .attachment-list {
-        .list-item {
-          font-size: 12px;
-          color: $clr-base;
-          display: flex;
-          align-items: center;
-          gap: 0.8rem;
-          justify-content: space-between;
-
-          .icon-wrap {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-            cursor: pointer;
-            .icon {
-              width: 2.4rem;
-              height: 2.4rem;
-              color: #3D7EDB;
-              font-size: 2.4rem;
-            }
-
-            span {
-              font-family: $font-medium;
-              font-size: 1.4rem;
-              color: #3D7EDB;
-              text-decoration: underline;
-            }
-          }
-        }
-      }
+    .btn-text {
+      border: none;
+      padding: 0;
+      border-bottom: 1px solid #3D7EDB;
+      min-width: auto;
+      color: #3D7EDB;
+      border-radius: 0;
     }
   }
+
+  &.upload-supporting-files {
+    display: none;
+    margin-top: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .error-msg {
+    color: #D2042D;
+    font-size: 1.2rem;
+    font-family: "Poppins Regular";
+}
 }
