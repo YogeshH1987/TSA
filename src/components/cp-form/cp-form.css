@@ -111,5 +111,82 @@
         color: #CCCCCC;
         font-size: 3.2rem;
         margin: auto; }
+  .cp-form.typ-help-policies .desc {
+    font-size: 1.4rem;
+    color: #333333; }
+  .cp-form.typ-help-policies .form-group {
+    margin-bottom: 2.4rem; }
+    .cp-form.typ-help-policies .form-group .form-control {
+      color: #333333;
+      font-family: "Poppins Medium"; }
+    .cp-form.typ-help-policies .form-group .select-dropdown {
+      width: 100%; }
+      .cp-form.typ-help-policies .form-group .select-dropdown .select-dropdown-button {
+        width: 100%; }
+        .cp-form.typ-help-policies .form-group .select-dropdown .select-dropdown-button .select-text {
+          color: #333333;
+          font-family: "Poppins Medium"; }
+        .cp-form.typ-help-policies .form-group .select-dropdown .select-dropdown-button .zmdi-chevron-down::after {
+          font-size: 1.4rem; }
+      .cp-form.typ-help-policies .form-group .select-dropdown .select-dropdown-list-item {
+        color: #333333;
+        font-family: "Poppins Medium";
+        font-size: 1.4rem; }
+  .cp-form.typ-help-policies .typ-request-submit {
+    min-width: 100%; }
+  .cp-form.typ-help-policies .typ-attached-file {
+    min-width: 100%;
+    background-color: #ECF2FB;
+    border: 1px dashed #3D7EDB;
+    color: #3D7EDB !important;
+    padding: 1.6rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2.4rem; }
+    .cp-form.typ-help-policies .typ-attached-file .icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      font-size: 2.4rem;
+      color: #3D7EDB; }
+  .cp-form.typ-help-policies .typ-upload-file {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    justify-content: center; }
+    .cp-form.typ-help-policies .typ-upload-file .btn-text {
+      border: none;
+      padding: 0;
+      border-bottom: 1px solid #3D7EDB;
+      min-width: auto;
+      color: #3D7EDB;
+      border-radius: 0; }
+  .cp-form.typ-help-policies .typ-attachements .title {
+    font-size: 1.6rem;
+    color: #333333;
+    font-family: "Poppins Medium"; }
+  .cp-form.typ-help-policies .typ-attachements .attachment-list .list-item {
+    font-size: 12px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: space-between; }
+    .cp-form.typ-help-policies .typ-attachements .attachment-list .list-item .icon-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer; }
+      .cp-form.typ-help-policies .typ-attachements .attachment-list .list-item .icon-wrap .icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        color: #3D7EDB;
+        font-size: 2.4rem; }
+      .cp-form.typ-help-policies .typ-attachements .attachment-list .list-item .icon-wrap span {
+        font-family: "Poppins Medium";
+        font-size: 1.4rem;
+        color: #3D7EDB;
+        text-decoration: underline; }
 
 /*# sourceMappingURL=cp-form.css.map */

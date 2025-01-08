@@ -369,6 +369,34 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-more-2:before {
+  content: "\e986";
+  color: #00a441; }
+
+.icon-email:before {
+  content: "\e987"; }
+
+.icon-bricks-2:before {
+  content: "\e988"; }
+
+.icon-attach-file:before {
+  content: "\e989"; }
+
+.icon-cancel:before {
+  content: "\e98a"; }
+
+.icon-facebook-1:before {
+  content: "\e98b"; }
+
+.icon-instagram:before {
+  content: "\e98c"; }
+
+.icon-twitter:before {
+  content: "\e98d"; }
+
+.icon-whatsapp:before {
+  content: "\e98e"; }
+
 .icon-bulb:before {
   content: "\e983"; }
 
