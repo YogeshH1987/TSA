@@ -15,13 +15,21 @@
     background: linear-gradient(94.59deg, #002060 30.13%, rgba(12, 46, 133, 0) 77.07%);
     left: 0;
     top: 0; }
+    @media only screen and (max-width: 768px) {
+      .cp-about-banner::before {
+        background: linear-gradient(168.55deg, #002060 46.86%, rgba(12, 46, 133, 0) 64.03%); } }
   .cp-about-banner::after {
-    content: url(../../components/cp-content-info/images/logo-icon.svg);
+    content: '';
     left: 0;
     position: absolute;
     top: 0;
-    z-index: -1; }
-  .cp-about-banner img {
+    z-index: 1;
+    height: 100%;
+    background-image: url(../../components/cp-content-info/images/logo-icon-banner.svg);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat; }
+  .cp-about-banner .banner-img {
     height: 100%;
     object-fit: cover;
     min-height: 60rem; }
@@ -34,13 +42,43 @@
     margin: 0px auto;
     padding: 0px;
     max-width: 124rem;
-    width: 100%; }
+    width: 100%;
+    z-index: 2; }
+    @media only screen and (max-width: 768px) {
+      .cp-about-banner .banner-cont-wrap {
+        transform: initial;
+        padding: 2.4rem;
+        top: 0; } }
     .cp-about-banner .banner-cont-wrap .title {
       font-size: 4rem;
       color: #fff;
-      line-height: 5.2rem; }
+      line-height: 5.2rem;
+      font-family: "Poppins Semibold";
+      margin-top: 0.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-about-banner .banner-cont-wrap .title {
+          font-size: 2rem;
+          line-height: 2.8rem; } }
+    .cp-about-banner .banner-cont-wrap .aashiyana-logo {
+      display: block;
+      margin: 8px 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-about-banner .banner-cont-wrap .aashiyana-logo {
+          max-width: 222px; } }
     .cp-about-banner .banner-cont-wrap .desc {
       font-size: 1.6rem;
       color: #DEDEDE; }
+      @media only screen and (max-width: 768px) {
+        .cp-about-banner .banner-cont-wrap .desc {
+          font-size: 1.2rem; } }
+      .cp-about-banner .banner-cont-wrap .desc.typ-about {
+        font-size: 2.4rem;
+        color: #6498E2;
+        font-family: "Poppins Medium"; }
+        @media only screen and (max-width: 768px) {
+          .cp-about-banner .banner-cont-wrap .desc.typ-about {
+            font-size: 1.4rem; } }
+    .cp-about-banner .banner-cont-wrap .cont-sec {
+      max-width: 43rem; }
 
 /*# sourceMappingURL=cp-about-banner.css.map */

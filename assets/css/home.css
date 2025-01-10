@@ -66,6 +66,16 @@
       @media only screen and (max-width: 768px) {
         .lyt-grid.typ-col-about .grid-col {
           width: 100%; } }
+  .lyt-grid.typ-about-news {
+    height: auto; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-about-news {
+        flex-wrap: initial;
+        gap: 0;
+        flex-direction: initial;
+        height: 100%; } }
+    .lyt-grid.typ-about-news .grid-col {
+      height: auto; }
   .lyt-grid.typ-explore {
     align-items: center;
     justify-content: space-around;
@@ -124,9 +134,43 @@
     @media only screen and (max-width: 768px) {
       .lyt-grid.typ-6 .grid-col:last-child {
         width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-brand .grid-col {
+      width: 100% !important; } }
   .lyt-grid.typ-about-brand .grid-col:first-child {
     width: 34%; }
   .lyt-grid.typ-about-brand .grid-col:last-child {
     width: 66.66%; }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon {
+      flex-direction: initial;
+      flex-wrap: wrap; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col {
+      width: 48% !important; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col .cp-icon-details::after {
+      top: 39%;
+      height: 9rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col .cp-icon-details .icon {
+      flex: 0 0 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(1) .cp-icon-details {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(2) .cp-icon-details {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(2) .cp-icon-details::after {
+      content: none; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(3) .cp-icon-details::after {
+      top: 60%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(4) .cp-icon-details::after {
+      content: none; } }
 
 /*# sourceMappingURL=home.css.map */

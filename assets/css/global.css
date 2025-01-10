@@ -1527,6 +1527,11 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-sec.mb-2 {
         margin-bottom: 0; } }
+  .bs-sec.mb-6 {
+    margin-bottom: 6.4rem; }
+    @media only screen and (max-width: 991px) {
+      .bs-sec.mb-6 {
+        margin-bottom: 0; } }
   .bs-sec.typ-pravesh-pdp {
     position: relative;
     padding-top: 0;
@@ -1601,58 +1606,143 @@ p {
   .bs-sec.typ-about-brand {
     position: relative;
     overflow-y: hidden; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-about-brand {
+        margin-top: 2.4rem; } }
     .bs-sec.typ-about-brand::after {
-      content: url("../../components/cp-content-info/images/logo-icon.svg");
+      content: '';
+      height: 100%;
+      background-image: url(../../components/cp-content-info/images/logo-icon.svg);
+      background-size: contain;
+      width: 100%;
+      background-repeat: no-repeat;
       left: 0;
       position: absolute;
       top: 0;
       z-index: -1; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-about-brand::after {
+          background-size: 75%; } }
+    .bs-sec.typ-about-brand .sec-title br {
+      display: none; }
   .bs-sec.typ-about-brand-list {
     background-color: #f3f4f6; }
     .bs-sec.typ-about-brand-list .sec-head {
       margin-bottom: 0;
       padding-right: 4rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-about-brand-list .sec-head {
+          padding-right: 0rem;
+          margin-bottom: 3.2rem; } }
       .bs-sec.typ-about-brand-list .sec-head .sec-title {
         margin-bottom: 2.4rem; }
+        .bs-sec.typ-about-brand-list .sec-head .sec-title br {
+          display: none; }
       .bs-sec.typ-about-brand-list .sec-head .desc {
         color: #333333;
         line-height: 2.4rem; }
+  .bs-sec.typ-about-achivement {
+    background-color: #ECF2FB;
+    overflow-y: hidden;
+    z-index: 1; }
+    .bs-sec.typ-about-achivement::after {
+      content: '';
+      height: 100%;
+      background-image: url(../../components/cp-content-info/images/logo-icon-2.svg);
+      background-size: contain;
+      width: 100%;
+      background-repeat: no-repeat;
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-about-achivement::after {
+          background-size: cover; } }
+    .bs-sec.typ-about-achivement .swiper-wrapper {
+      margin-bottom: 8rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-about-achivement .swiper-wrapper {
+          margin-bottom: 6rem; } }
+    .bs-sec.typ-about-achivement .swiper-pagination {
+      display: block; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-about-achivement .swiper-pagination .swiper-pagination {
+          display: none; } }
   .bs-sec.typ-about-headquarter {
     background-color: #3D7EDB;
     overflow-x: hidden;
     padding: 0;
-    margin: 6.4rem 0; }
+    margin: 6.4rem 0 2.4rem; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-about-headquarter {
+        margin: 2.4rem 0 0rem; } }
     .bs-sec.typ-about-headquarter .sec-title,
     .bs-sec.typ-about-headquarter .desc {
       color: #fff !important; }
     .bs-sec.typ-about-headquarter .sec-head {
       max-width: 350px;
       margin: 5.6rem 0; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-about-headquarter .sec-head {
+          margin: 4rem 0; } }
       .bs-sec.typ-about-headquarter .sec-head .desc {
         margin-bottom: 1.2rem !important;
         line-height: 2.4rem; }
       .bs-sec.typ-about-headquarter .sec-head .sec-title {
         margin-bottom: 8rem !important; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-about-headquarter .sec-head .sec-title {
+            margin-bottom: 6.8rem !important; } }
       .bs-sec.typ-about-headquarter .sec-head .typ-1 {
         font-size: 2.8rem;
         margin-bottom: 1.2rem !important;
         line-height: normal; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-about-headquarter .sec-head .typ-1 {
+            font-size: 2rem;
+            margin-bottom: 2 !important; } }
       .bs-sec.typ-about-headquarter .sec-head .typ-2 {
         font-size: 2.4rem;
         line-height: normal;
         margin-bottom: 0 !important; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-about-headquarter .sec-head .typ-2 {
+            font-size: 1.6rem; } }
     .bs-sec.typ-about-headquarter .lyt-grid {
       align-items: initial; }
       .bs-sec.typ-about-headquarter .lyt-grid .grid-col:first-child {
         margin-left: 6rem;
         margin-top: auto;
         margin-bottom: auto; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-about-headquarter .lyt-grid .grid-col:first-child {
+            margin-left: 0;
+            order: 2;
+            padding: 0rem 1.6rem; } }
       .bs-sec.typ-about-headquarter .lyt-grid .grid-col .img-wrap {
         height: 100%; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-about-headquarter .lyt-grid .grid-col .img-wrap {
+            height: 474px; } }
         .bs-sec.typ-about-headquarter .lyt-grid .grid-col .img-wrap img {
           height: 100%;
           object-fit: cover;
           width: 100%; }
+  .bs-sec.about-timeline {
+    background-color: #FFFBF2;
+    z-index: 1;
+    overflow-y: hidden; }
+    .bs-sec.about-timeline::after {
+      content: 'history';
+      right: 0;
+      position: absolute;
+      top: -96px;
+      z-index: -1;
+      color: #A77800;
+      opacity: 5%;
+      font-size: 24rem;
+      font-family: "Poppins Bold"; }
 
 .btn {
   display: inline-block;
@@ -2276,6 +2366,8 @@ p {
         height: 16.0rem; } }
   .bs-swiper.right-space {
     margin-right: -2rem; }
+  .bs-swiper.artical-list-wrap {
+    margin-bottom: 0; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }

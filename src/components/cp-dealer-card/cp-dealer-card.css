@@ -150,7 +150,8 @@
       flex-direction: column; }
       .cp-dealer-card.typ-about-sales .location-sec .location-text {
         margin-bottom: 1.2rem;
-        color: #666666; }
+        color: #666666;
+        font-size: 1.4rem; }
         .cp-dealer-card.typ-about-sales .location-sec .location-text:nth-child(1)::after {
           content: none; }
         .cp-dealer-card.typ-about-sales .location-sec .location-text .distributor-text {

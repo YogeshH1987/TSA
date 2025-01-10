@@ -14,17 +14,26 @@
         background: linear-gradient(94.59deg, #002060 30.13%, rgba(12, 46, 133, 0) 77.07%);
         left: 0;
         top: 0;
+
+        @media only screen and (max-width: $media-mobile) {
+            background: linear-gradient(168.55deg, #002060 46.86%, rgba(12, 46, 133, 0) 64.03%);
+        }
     }
 
     &::after {
-        content: url(../../components/cp-content-info/images/logo-icon.svg);
+        content: '';
         left: 0;
         position: absolute;
         top: 0;
-        z-index: -1;
+        z-index: 1;
+        height: 100%;
+        background-image: url(../../components/cp-content-info/images/logo-icon-banner.svg);
+        background-size: contain;
+        width: 100%;
+        background-repeat: no-repeat;
     }
 
-    img {
+    .banner-img {
         height: 100%;
         object-fit: cover;
         min-height: 60rem;
@@ -40,12 +49,38 @@
         padding: 0px;
         max-width: 124rem;
         width: 100%;
+        z-index: 2;
+        @media only screen and (max-width: $media-mobile) {  transform: initial; padding: 2.4rem; top: 0;}
 
         .title {
             font-size: 4rem;
             color: #fff;
             line-height: 5.2rem;
+            font-family: $font-semiBold;
+            margin-top: 0.4rem;
+            @media only screen and (max-width: $media-mobile) {    font-size: 2rem; line-height: 2.8rem;}
         }
-        .desc{ font-size: 1.6rem;  color: #DEDEDE;}
+
+        .aashiyana-logo {
+            display: block;
+            margin: 8px 0;
+            @media only screen and (max-width: $media-mobile) {    max-width: 222px;}
+        }
+
+        .desc {
+            font-size: 1.6rem;
+            color: #DEDEDE;
+            @media only screen and (max-width: $media-mobile) {    font-size: 1.2rem;}
+            &.typ-about {
+                font-size: 2.4rem;
+                color: #6498E2;
+                font-family: $font-medium;
+                @media only screen and (max-width: $media-mobile) {    font-size: 1.4rem;}
+            }
+        }
+
+        .cont-sec {
+            max-width: 43rem;
+        }
     }
 }
