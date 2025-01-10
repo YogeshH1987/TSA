@@ -357,4 +357,9 @@
             color: #B1CBF1;
         }
     }
+    &.typ-about{
+        .notify-icon {
+            font-size: 9rem;  top: 34%;
+            right: -1rem;  transform: translateY(-61%); color: rgba(255, 255, 255, 0.2);}
+    }
 }

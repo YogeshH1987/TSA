@@ -31,7 +31,18 @@
       }
     }
   }
+  &.typ-col-about{
+    flex-wrap: wrap;
+    justify-content: initial;
+    align-items: initial;
+    .grid-col {
+      width: 31.9%;
 
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+      }
+    }
+  }
   &.typ-explore {
     align-items: center;
     justify-content: space-around;
@@ -121,5 +132,14 @@
         @media only screen and (max-width: $media-mobile) { width: 100%;}
       }
     }
+  }
+  &.typ-about-brand{
+    .grid-col{
+      &:first-child {
+      width: 34%;
+  }
+  &:last-child {
+    width: 66.66%;
+}}
   }
 }

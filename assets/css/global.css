@@ -1124,13 +1124,10 @@ p {
     color: #666666; }
     .bs-sec .sec-desc.typ-white {
       color: #FFFFFF; }
-  .bs-sec .sec-cont.typ-about-what-stand {
-    display: flex;
-    gap: 2rem; }
-    .bs-sec .sec-cont.typ-about-what-stand .cp-blog {
-      flex: 0 0 33.33%; }
-      .bs-sec .sec-cont.typ-about-what-stand .cp-blog .content-wrap .c-title {
-        font-size: 2rem; }
+  .bs-sec .sec-cont.typ-about-what-stand .cp-useful-card .content-wrap .title {
+    font-size: 2rem; }
+  .bs-sec .sec-cont.typ-about-what-stand .cp-useful-card .content-wrap .desc {
+    line-height: 2.4rem; }
   .bs-sec.typ-gray-bg {
     background: #ecf2fb; }
   .bs-sec.typ-curve {
@@ -1601,6 +1598,61 @@ p {
         .bs-sec.typ-blog .filter-sec .filter-tag .close {
           color: #666666;
           font-size: 1.2rem; }
+  .bs-sec.typ-about-brand {
+    position: relative;
+    overflow-y: hidden; }
+    .bs-sec.typ-about-brand::after {
+      content: url("../../components/cp-content-info/images/logo-icon.svg");
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
+  .bs-sec.typ-about-brand-list {
+    background-color: #f3f4f6; }
+    .bs-sec.typ-about-brand-list .sec-head {
+      margin-bottom: 0;
+      padding-right: 4rem; }
+      .bs-sec.typ-about-brand-list .sec-head .sec-title {
+        margin-bottom: 2.4rem; }
+      .bs-sec.typ-about-brand-list .sec-head .desc {
+        color: #333333;
+        line-height: 2.4rem; }
+  .bs-sec.typ-about-headquarter {
+    background-color: #3D7EDB;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 6.4rem 0; }
+    .bs-sec.typ-about-headquarter .sec-title,
+    .bs-sec.typ-about-headquarter .desc {
+      color: #fff !important; }
+    .bs-sec.typ-about-headquarter .sec-head {
+      max-width: 350px;
+      margin: 5.6rem 0; }
+      .bs-sec.typ-about-headquarter .sec-head .desc {
+        margin-bottom: 1.2rem !important;
+        line-height: 2.4rem; }
+      .bs-sec.typ-about-headquarter .sec-head .sec-title {
+        margin-bottom: 8rem !important; }
+      .bs-sec.typ-about-headquarter .sec-head .typ-1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem !important;
+        line-height: normal; }
+      .bs-sec.typ-about-headquarter .sec-head .typ-2 {
+        font-size: 2.4rem;
+        line-height: normal;
+        margin-bottom: 0 !important; }
+    .bs-sec.typ-about-headquarter .lyt-grid {
+      align-items: initial; }
+      .bs-sec.typ-about-headquarter .lyt-grid .grid-col:first-child {
+        margin-left: 6rem;
+        margin-top: auto;
+        margin-bottom: auto; }
+      .bs-sec.typ-about-headquarter .lyt-grid .grid-col .img-wrap {
+        height: 100%; }
+        .bs-sec.typ-about-headquarter .lyt-grid .grid-col .img-wrap img {
+          height: 100%;
+          object-fit: cover;
+          width: 100%; }
 
 .btn {
   display: inline-block;

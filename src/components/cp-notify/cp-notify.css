@@ -269,5 +269,11 @@
       color: #333333; }
     .cp-notify.typ-newsletter .notify-icon {
       color: #B1CBF1; }
+  .cp-notify.typ-about .notify-icon {
+    font-size: 9rem;
+    top: 34%;
+    right: -1rem;
+    transform: translateY(-61%);
+    color: rgba(255, 255, 255, 0.2); }
 
 /*# sourceMappingURL=cp-notify.css.map */

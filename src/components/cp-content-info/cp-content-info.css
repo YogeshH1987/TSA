@@ -114,5 +114,20 @@
   @media only screen and (max-width: 991px) {
     .cp-content-info .typ3-mobile {
       width: 50%; } }
+  .cp-content-info.typ-about-brand {
+    align-items: center;
+    border: 0;
+    border-radius: 0; }
+    .cp-content-info.typ-about-brand .img-wrap img {
+      max-width: 524px; }
+    .cp-content-info.typ-about-brand .cont-wrap .title {
+      font-size: 4rem;
+      margin-top: 0;
+      margin-bottom: 2.4rem; }
+    .cp-content-info.typ-about-brand .cont-wrap .desc {
+      font-size: 1.6rem;
+      font-family: "Poppins Regular"; }
+      .cp-content-info.typ-about-brand .cont-wrap .desc:last-child {
+        margin-bottom: 0; }
 
 /*# sourceMappingURL=cp-content-info.css.map */

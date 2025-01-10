@@ -139,11 +139,15 @@
 
   .sec-cont {
     &.typ-about-what-stand {
-      display: flex;
-      gap: 2rem;
-      .cp-blog{flex: 0 0 33.33%;
+      .cp-useful-card {
         .content-wrap {
-          .c-title{ font-size: 2rem;}
+          .title {
+            font-size: 2rem;
+          }
+
+          .desc {
+            line-height: 2.4rem;
+          }
         }
       }
     }
@@ -861,6 +865,95 @@
         .close {
           color: $clr-para;
           font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &.typ-about-brand {
+    position: relative;
+    overflow-y: hidden;
+
+    &::after {
+      content: url("../../components/cp-content-info/images/logo-icon.svg");
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  &.typ-about-brand-list {
+    background-color: #f3f4f6;
+
+    .sec-head {
+      margin-bottom: 0;
+      padding-right: 4rem;
+
+      .sec-title {
+        margin-bottom: 2.4rem;
+      }
+
+      .desc {
+        color: $clr-base;
+        line-height: 2.4rem;
+      }
+    }
+  }
+
+  &.typ-about-headquarter {
+    background-color: #3D7EDB;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 6.4rem 0;
+    .sec-title,
+    .desc {
+      color: #fff !important;
+    }
+
+    .sec-head {
+      max-width: 350px;
+      margin: 5.6rem 0;
+
+      .desc {
+        margin-bottom: 1.2rem !important;
+        line-height: 2.4rem;
+      }
+
+      .sec-title {
+        margin-bottom: 8rem !important;
+      }
+
+      .typ-1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem !important;
+        line-height: normal;
+      }
+
+      .typ-2 {
+        font-size: 2.4rem;
+        line-height: normal;
+        margin-bottom: 0 !important;
+      }
+    }
+
+    .lyt-grid {
+      align-items: initial;
+
+      .grid-col {
+        &:first-child {
+          margin-left: 6rem;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+        .img-wrap {
+          height: 100%;
+          img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
         }
       }
     }

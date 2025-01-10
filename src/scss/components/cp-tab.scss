@@ -542,10 +542,13 @@
       }
     }
   }
+
   &.typ-help-policies {
     width: 100%;
+
     .tab-list {
       gap: 1.2rem;
+
       .tab-item {
         .title {
           text-transform: capitalize;
@@ -557,6 +560,17 @@
           .title {
             text-shadow: none;
           }
+        }
+      }
+    }
+  }
+
+  &.typ-about {
+    .tab-item {
+      &:hover,
+      &.active {
+        .title {
+          text-shadow: #fff 0.9px 0 0.9px !important;
         }
       }
     }

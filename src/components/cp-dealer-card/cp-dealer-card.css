@@ -113,6 +113,67 @@
       .cp-dealer-card.typ-2 .action-wrap .link:first-child::before {
         display: none;
         padding-left: 0; }
+  .cp-dealer-card.typ-about-sales {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; }
+    .cp-dealer-card.typ-about-sales:hover {
+      border-width: 1px; }
+    .cp-dealer-card.typ-about-sales .top-band {
+      margin-bottom: 1.2rem;
+      display: block; }
+      .cp-dealer-card.typ-about-sales .top-band .band-tag {
+        margin-bottom: 0;
+        padding: 0.4rem 0.8rem;
+        display: inline-block; }
+      .cp-dealer-card.typ-about-sales .top-band .date {
+        font-size: 1.2rem;
+        color: #333333;
+        display: block;
+        margin-top: 0.8rem; }
+      .cp-dealer-card.typ-about-sales .top-band.typ-border {
+        border-bottom: 1px solid #B1CBF1;
+        padding-bottom: 1.2rem; }
+    .cp-dealer-card.typ-about-sales .news-icon {
+      position: absolute;
+      right: -32px;
+      bottom: -30px;
+      font-size: 14.5rem;
+      color: #D8E5F8;
+      z-index: -1; }
+      .cp-dealer-card.typ-about-sales .news-icon.icon-brochure {
+        right: 6px; }
+    .cp-dealer-card.typ-about-sales .location-sec {
+      margin-top: 1.2rem;
+      max-width: 100%;
+      flex-direction: column; }
+      .cp-dealer-card.typ-about-sales .location-sec .location-text {
+        margin-bottom: 1.2rem;
+        color: #666666; }
+        .cp-dealer-card.typ-about-sales .location-sec .location-text:nth-child(1)::after {
+          content: none; }
+        .cp-dealer-card.typ-about-sales .location-sec .location-text .distributor-text {
+          display: block;
+          font-family: "Poppins Semibold";
+          color: #666666; }
+        .cp-dealer-card.typ-about-sales .location-sec .location-text .read-text {
+          color: #3D7EDB;
+          text-decoration: underline; }
+        .cp-dealer-card.typ-about-sales .location-sec .location-text a {
+          color: #666666; }
+  .cp-dealer-card.light-blue-card {
+    background-color: #ECF2FB; }
+  .cp-dealer-card.blue-card {
+    background-color: #3D7EDB; }
+    .cp-dealer-card.blue-card .location-text,
+    .cp-dealer-card.blue-card .title,
+    .cp-dealer-card.blue-card .date,
+    .cp-dealer-card.blue-card .read-text {
+      color: #fff !important;
+      text-decoration: none !important; }
+    .cp-dealer-card.blue-card .news-icon {
+      color: rgba(236, 242, 251, 0.2) !important; }
 
 .typ-store {
   min-width: 15rem;

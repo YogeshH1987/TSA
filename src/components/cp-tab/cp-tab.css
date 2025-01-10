@@ -357,6 +357,8 @@
       display: block; }
     .cp-tab.typ-help-policies .tab-list .tab-item:hover .title, .cp-tab.typ-help-policies .tab-list .tab-item.active .title {
       text-shadow: none; }
+.cp-tab.typ-about .tab-item:hover .title, .cp-tab.typ-about .tab-item.active .title {
+  text-shadow: #fff 0.9px 0 0.9px !important; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

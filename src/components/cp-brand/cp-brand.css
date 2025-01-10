@@ -35,5 +35,15 @@
         .cp-brand .brand-list-item img {
           width: 8.8rem;
           height: 6.3rem; } }
+  .cp-brand.typ-about-brand {
+    flex-wrap: wrap;
+    gap: 2rem; }
+    .cp-brand.typ-about-brand .brand-list-item {
+      width: 22.9%;
+      margin: 0;
+      padding: 2.4rem; }
+      .cp-brand.typ-about-brand .brand-list-item img {
+        height: auto;
+        width: 100%; }
 
 /*# sourceMappingURL=cp-brand.css.map */

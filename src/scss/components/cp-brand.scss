@@ -35,5 +35,11 @@
             }
         }
     }
+    &.typ-about-brand {
+        flex-wrap: wrap;
+        gap: 2rem;
+        .brand-list-item{ width: 22.9%; margin: 0; padding: 2.4rem; 
+            img{ height: auto; width: 100%;}}
+    }
     }
     

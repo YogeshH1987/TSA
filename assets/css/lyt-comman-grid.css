@@ -23,6 +23,15 @@
     @media only screen and (max-width: 768px) {
       .lyt-grid.typ-col-3 .grid-col {
         width: 100%; } }
+  .lyt-grid.typ-col-about {
+    flex-wrap: wrap;
+    justify-content: initial;
+    align-items: initial; }
+    .lyt-grid.typ-col-about .grid-col {
+      width: 31.9%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-col-about .grid-col {
+          width: 100%; } }
   .lyt-grid.typ-explore {
     align-items: center;
     justify-content: space-around;
@@ -81,5 +90,9 @@
     @media only screen and (max-width: 768px) {
       .lyt-grid.typ-6 .grid-col:last-child {
         width: 100%; } }
+  .lyt-grid.typ-about-brand .grid-col:first-child {
+    width: 34%; }
+  .lyt-grid.typ-about-brand .grid-col:last-child {
+    width: 66.66%; }
 
 /*# sourceMappingURL=lyt-comman-grid.css.map */
