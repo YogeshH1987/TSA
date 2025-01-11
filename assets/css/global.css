@@ -1743,6 +1743,10 @@ p {
       opacity: 5%;
       font-size: 24rem;
       font-family: "Poppins Bold"; }
+  .bs-sec.typ-about-news .sec-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
 
 .btn {
   display: inline-block;
@@ -2367,7 +2371,11 @@ p {
   .bs-swiper.right-space {
     margin-right: -2rem; }
   .bs-swiper.artical-list-wrap {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 2.4rem; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.artical-list-wrap {
+        padding-bottom: 0rem; } }
 
 .bs-radio {
   margin-bottom: 1.6rem; }

@@ -1072,4 +1072,7 @@
       font-family: $font-bold;
     }
   }
+  &.typ-about-news{
+    .sec-head{display: flex; align-items: center; justify-content: space-between;}
+  }
 }
