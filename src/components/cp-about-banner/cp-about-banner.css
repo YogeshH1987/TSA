@@ -65,9 +65,12 @@
       @media only screen and (max-width: 768px) {
         .cp-about-banner .banner-cont-wrap .aashiyana-logo {
           max-width: 222px; } }
+      .cp-about-banner .banner-cont-wrap .aashiyana-logo img {
+        width: auto; }
     .cp-about-banner .banner-cont-wrap .desc {
       font-size: 1.6rem;
-      color: #DEDEDE; }
+      color: #DEDEDE;
+      line-height: 2.8rem; }
       @media only screen and (max-width: 768px) {
         .cp-about-banner .banner-cont-wrap .desc {
           font-size: 1.2rem; } }
