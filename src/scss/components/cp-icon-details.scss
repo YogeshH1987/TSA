@@ -85,5 +85,10 @@
       display: none;
     }
   }
+  &.typ-about-nestudio{
+    &::after{
+     content: none;
+    }
+  }
 }
 

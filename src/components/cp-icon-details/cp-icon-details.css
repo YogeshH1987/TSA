@@ -84,5 +84,7 @@
         line-height: 2.8rem; } }
   .cp-icon-details .no-seprator::after {
     display: none; }
+  .cp-icon-details.typ-about-nestudio::after {
+    content: none; }
 
 /*# sourceMappingURL=cp-icon-details.css.map */

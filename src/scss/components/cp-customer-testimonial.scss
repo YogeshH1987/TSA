@@ -136,4 +136,12 @@
             min-height: 16.8rem;
         }
     }
+    &.typ-about-nestudio{
+        .video-wrap{
+            &:after{
+                content: '';
+                background:rgba(51, 51, 51, 0.2);
+            }
+        }
+    }
 }

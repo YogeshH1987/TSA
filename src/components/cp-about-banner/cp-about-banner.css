@@ -5,8 +5,11 @@
 /*opacity*/
 /*opacity- end*/
 .cp-about-banner {
-  min-height: 60rem;
+  max-height: 60rem;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .cp-about-banner {
+      max-height: 50rem; } }
   .cp-about-banner::before {
     content: '';
     position: absolute;
@@ -32,7 +35,7 @@
   .cp-about-banner .banner-img {
     height: 100%;
     object-fit: cover;
-    min-height: 60rem; }
+    max-height: 60rem; }
   .cp-about-banner .banner-cont-wrap {
     position: absolute;
     top: 50%;
@@ -67,13 +70,22 @@
           max-width: 222px; } }
       .cp-about-banner .banner-cont-wrap .aashiyana-logo img {
         width: auto; }
+    .cp-about-banner .banner-cont-wrap .nestudio-logo {
+      display: block;
+      margin: 8px 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-about-banner .banner-cont-wrap .nestudio-logo {
+          max-width: 120px; } }
+      .cp-about-banner .banner-cont-wrap .nestudio-logo img {
+        width: auto; }
     .cp-about-banner .banner-cont-wrap .desc {
       font-size: 1.6rem;
       color: #DEDEDE;
       line-height: 2.8rem; }
       @media only screen and (max-width: 768px) {
         .cp-about-banner .banner-cont-wrap .desc {
-          font-size: 1.2rem; } }
+          line-height: 2.4rem;
+          font-size: 1.4rem; } }
       .cp-about-banner .banner-cont-wrap .desc.typ-about {
         font-size: 2.4rem;
         color: #6498E2;
@@ -83,5 +95,11 @@
             font-size: 1.4rem; } }
     .cp-about-banner .banner-cont-wrap .cont-sec {
       max-width: 43rem; }
+    .cp-about-banner .banner-cont-wrap .typ-enquiry {
+      background-color: #fff;
+      border: none;
+      color: #3D7EDB;
+      min-width: auto;
+      margin-top: 2.4rem; }
 
 /*# sourceMappingURL=cp-about-banner.css.map */

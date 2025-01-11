@@ -138,5 +138,18 @@
   @media only screen and (max-width: 768px) {
     .lyt-grid.typ-about-icon .grid-col:nth-child(4) .cp-icon-details::after {
       content: none; } }
+  .lyt-grid.typ-about-nestudio {
+    gap: 4.8rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-about-nestudio {
+        gap: 2.4rem 1rem;
+        flex-direction: initial; } }
+    .lyt-grid.typ-about-nestudio .grid-col {
+      width: 32.2%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-about-nestudio .grid-col {
+          width: 48%; } }
 
 /*# sourceMappingURL=lyt-comman-grid.css.map */
