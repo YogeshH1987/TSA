@@ -6,7 +6,8 @@
 /*opacity- end*/
 .cp-about-banner {
   max-height: 60rem;
-  position: relative; }
+  position: relative;
+  overflow-y: hidden; }
   @media only screen and (max-width: 768px) {
     .cp-about-banner {
       max-height: 50rem; } }
@@ -22,20 +23,27 @@
       .cp-about-banner::before {
         background: linear-gradient(168.55deg, #002060 46.86%, rgba(12, 46, 133, 0) 64.03%); } }
   .cp-about-banner::after {
-    content: '';
-    left: 0;
+    content: "\e93a";
+    left: -25%;
     position: absolute;
-    top: 0;
+    top: -10%;
     z-index: 1;
-    height: 100%;
-    background-image: url(../../components/cp-content-info/images/logo-icon-banner.svg);
-    background-size: contain;
-    width: 100%;
-    background-repeat: no-repeat; }
+    color: #B3B3B3;
+    font-size: 90rem;
+    font-family: 'icomoon' !important;
+    opacity: 10%; }
+    @media only screen and (max-width: 768px) {
+      .cp-about-banner::after {
+        left: -44%;
+        top: 5%;
+        font-size: 43rem; } }
   .cp-about-banner .banner-img {
     height: 100%;
     object-fit: cover;
     max-height: 60rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-about-banner .banner-img {
+        max-height: 50rem; } }
   .cp-about-banner .banner-cont-wrap {
     position: absolute;
     top: 50%;
@@ -70,6 +78,9 @@
           max-width: 222px; } }
       .cp-about-banner .banner-cont-wrap .aashiyana-logo img {
         width: auto; }
+        @media only screen and (max-width: 768px) {
+          .cp-about-banner .banner-cont-wrap .aashiyana-logo img {
+            width: 100%; } }
     .cp-about-banner .banner-cont-wrap .nestudio-logo {
       display: block;
       margin: 8px 0; }
@@ -78,6 +89,9 @@
           max-width: 120px; } }
       .cp-about-banner .banner-cont-wrap .nestudio-logo img {
         width: auto; }
+        @media only screen and (max-width: 768px) {
+          .cp-about-banner .banner-cont-wrap .nestudio-logo img {
+            width: 100%; } }
     .cp-about-banner .banner-cont-wrap .desc {
       font-size: 1.6rem;
       color: #DEDEDE;
@@ -101,5 +115,7 @@
       color: #3D7EDB;
       min-width: auto;
       margin-top: 2.4rem; }
+  .cp-about-banner.cp-nestudio::after {
+    content: none; }
 
 /*# sourceMappingURL=cp-about-banner.css.map */

@@ -726,4 +726,17 @@
   &.artical-list-wrap{ margin-bottom: 0; padding-bottom: 2.4rem;
     @media only screen and (max-width: $media-mobile) {padding-bottom:0rem;}
   }
+  &.typ-nestudio{ padding-bottom: 0;}
+  &.typ-nestudio-big{
+    .swiper-slide {
+    background-color: #F3F4F6; padding: 2rem;}
+  }
+  &.typ-nestudio-thumb{
+    margin-top: 2.4rem;
+    .swiper-wrapper { justify-content: center;}
+    .swiper-slide {
+      border-radius: 8px;
+      border: 1px solid #DEDEDE;
+    }
+  }
 }

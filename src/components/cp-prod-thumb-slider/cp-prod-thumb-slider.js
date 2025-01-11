@@ -2,12 +2,14 @@
   $(document).ready(function() {
     proThumbSlider()
     proPopUpThumbSlider()
+    proPopupGalleryThumbSlider()
   });
 
 
   $(window).resize(function () {  
     proThumbSlider()
     proPopUpThumbSlider()
+    proPopupGalleryThumbSlider()
   });
 
   function proThumbSlider(){
@@ -38,6 +40,23 @@
    
  }
 
+
+ function proPopupGalleryThumbSlider(){
+  // Initialize the main slider with Swiper
+  var thumbSlider = new Swiper(".js-popup-thumb-gallery-slider", {
+   slidesPerView: 8,
+   spaceBetween: 16,
+ });
+ var mainSlider = new Swiper(".js-popup-gallery-slider", {
+   thumbs: {
+     swiper: thumbSlider,
+     slidesPerView: 1,
+     spaceBetween: 0,
+   },
+ });
+
+ 
+}
 
 
   

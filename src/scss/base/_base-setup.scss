@@ -161,6 +161,13 @@ p {
     display: none !important;
   }
 }
+.inline-desktop {
+  display: inline-block !important;
+
+  @media only screen and (max-width: $media-mobile) {
+    display: none !important;
+  }
+}
 .d-none{   display: none !important;}
 .cm-bold {
   font-family: $font-bold;

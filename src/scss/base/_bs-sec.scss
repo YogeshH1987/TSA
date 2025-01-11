@@ -884,17 +884,31 @@
     @media only screen and (max-width: $media-mobile) { margin-top: 2.4rem;}
     &::after {
 
-      content: '';
-      height: 100%;
-      background-image: url(../../components/cp-content-info/images/logo-icon.svg);
-      background-size: contain;
-      width: 100%;
-      background-repeat: no-repeat;
-      left: 0;
+      // content: '';
+      // height: 100%;
+      // background-image: url(../../components/cp-content-info/images/logo-icon.svg);
+      // background-size: contain;
+      // width: 100%;
+      // background-repeat: no-repeat;
+      // left: 0;
+      // position: absolute;
+      // top: 0;
+      // z-index: -1;
+      // @media only screen and (max-width: $media-mobile) {background-size: 75%;}
+
+      content: "\e93a";
+      left: -25%;
       position: absolute;
-      top: 0;
+      top: -11%;
       z-index: -1;
-      @media only screen and (max-width: $media-mobile) {background-size: 75%;}
+      color: #ECF2FB;
+      font-size: 90rem;
+      font-family: 'icomoon' !important;
+      @media only screen and (max-width: $media-mobile) {
+        left: -34%;
+        top: -3%; 
+        font-size: 39rem;
+      }
     }
 
     .sec-title {
@@ -933,23 +947,37 @@
 
   &.typ-about-achivement {
     background-color: #ECF2FB;
-    overflow-y: hidden;
+    overflow: hidden;
     z-index: 1;
 
     &::after {
-      content: '';
-      height: 100%;
-      background-image: url(../../components/cp-content-info/images/logo-icon-2.svg);
-      background-size: contain;
-      width: 100%;
-      background-repeat: no-repeat;
-      left: 0;
-      position: absolute;
-      top: 0;
-      z-index: -1;
+      // content: '';
+      // height: 100%;
+      // background-image: url(../../components/cp-content-info/images/logo-icon-2.svg);
+      // background-size: contain;
+      // width: 100%;
+      // background-repeat: no-repeat;
+      // left: 0;
+      // position: absolute;
+      // top: 0;
+      // z-index: -1;
 
+      // @media only screen and (max-width: $media-mobile) {
+      //   background-size: cover;
+      // }
+
+      content: "\e93a";
+      left: -25%;
+      position: absolute;
+      top: -11%;
+      z-index: -1;
+      color: #D8E5F8;
+      font-size: 90rem;
+      font-family: 'icomoon' !important;
       @media only screen and (max-width: $media-mobile) {
-        background-size: cover;
+        left: -73%;
+        top: -8%;
+        font-size: 63rem;
       }
     }
 

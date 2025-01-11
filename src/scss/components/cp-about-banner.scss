@@ -5,7 +5,11 @@
 .cp-about-banner {
     max-height: 60rem;
     position: relative;
-    @media only screen and (max-width: $media-mobile) {  max-height: 50rem;}
+    overflow-y: hidden;
+    @media only screen and (max-width: $media-mobile) {
+        max-height: 50rem;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -21,23 +25,35 @@
     }
 
     &::after {
-        content: '';
-        left: 0;
+        content: "\e93a";
+        left: -25%;
         position: absolute;
-        top: 0;
+        top: -10%;
         z-index: 1;
-        height: 100%;
-        background-image: url(../../components/cp-content-info/images/logo-icon-banner.svg);
-        background-size: contain;
-        width: 100%;
-        background-repeat: no-repeat;
+        color: #B3B3B3;
+        font-size: 90rem;
+        font-family: 'icomoon' !important;
+        opacity: 10%;
+        // height: 100%;
+        // background-image: url(../../components/cp-content-info/images/logo-icon-banner.svg);
+        // background-size: contain;
+        // width: 100%;
+        // background-repeat: no-repeat;
+        @media only screen and (max-width: $media-mobile) {
+            left: -44%;
+            top: 5%;
+            font-size: 43rem;
+        }
     }
 
     .banner-img {
         height: 100%;
         object-fit: cover;
         max-height: 60rem;
-        @media only screen and (max-width: $media-mobile) {  max-height: 50rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+            max-height: 50rem;
+        }
     }
 
     .banner-cont-wrap {
@@ -81,9 +97,11 @@
 
             img {
                 width: auto;
+                @media only screen and (max-width: $media-mobile) { width: 100%;}
             }
         }
-        .nestudio-logo{
+
+        .nestudio-logo {
             display: block;
             margin: 8px 0;
 
@@ -93,6 +111,7 @@
 
             img {
                 width: auto;
+                @media only screen and (max-width: $media-mobile) { width: 100%;}
             }
         }
 
@@ -127,6 +146,12 @@
             color: $clr-primary;
             min-width: auto;
             margin-top: 2.4rem;
+        }
+    }
+
+    &.cp-nestudio {
+        &::after {
+            content: none;
         }
     }
 }

@@ -936,6 +936,12 @@ p {
     .cm-desktop {
       display: none !important; } }
 
+.inline-desktop {
+  display: inline-block !important; }
+  @media only screen and (max-width: 768px) {
+    .inline-desktop {
+      display: none !important; } }
+
 .d-none {
   display: none !important; }
 
@@ -1610,19 +1616,19 @@ p {
       .bs-sec.typ-about-brand {
         margin-top: 2.4rem; } }
     .bs-sec.typ-about-brand::after {
-      content: '';
-      height: 100%;
-      background-image: url(../../components/cp-content-info/images/logo-icon.svg);
-      background-size: contain;
-      width: 100%;
-      background-repeat: no-repeat;
-      left: 0;
+      content: "\e93a";
+      left: -25%;
       position: absolute;
-      top: 0;
-      z-index: -1; }
+      top: -11%;
+      z-index: -1;
+      color: #ECF2FB;
+      font-size: 90rem;
+      font-family: 'icomoon' !important; }
       @media only screen and (max-width: 768px) {
         .bs-sec.typ-about-brand::after {
-          background-size: 75%; } }
+          left: -34%;
+          top: -3%;
+          font-size: 39rem; } }
     .bs-sec.typ-about-brand .sec-title br {
       display: none; }
   .bs-sec.typ-about-brand-list {
@@ -1643,22 +1649,22 @@ p {
         line-height: 2.4rem; }
   .bs-sec.typ-about-achivement {
     background-color: #ECF2FB;
-    overflow-y: hidden;
+    overflow: hidden;
     z-index: 1; }
     .bs-sec.typ-about-achivement::after {
-      content: '';
-      height: 100%;
-      background-image: url(../../components/cp-content-info/images/logo-icon-2.svg);
-      background-size: contain;
-      width: 100%;
-      background-repeat: no-repeat;
-      left: 0;
+      content: "\e93a";
+      left: -25%;
       position: absolute;
-      top: 0;
-      z-index: -1; }
+      top: -11%;
+      z-index: -1;
+      color: #D8E5F8;
+      font-size: 90rem;
+      font-family: 'icomoon' !important; }
       @media only screen and (max-width: 768px) {
         .bs-sec.typ-about-achivement::after {
-          background-size: cover; } }
+          left: -73%;
+          top: -8%;
+          font-size: 63rem; } }
     .bs-sec.typ-about-achivement .swiper-wrapper {
       margin-bottom: 8rem; }
       @media only screen and (max-width: 768px) {
@@ -2376,6 +2382,18 @@ p {
     @media only screen and (max-width: 768px) {
       .bs-swiper.artical-list-wrap {
         padding-bottom: 0rem; } }
+  .bs-swiper.typ-nestudio {
+    padding-bottom: 0; }
+  .bs-swiper.typ-nestudio-big .swiper-slide {
+    background-color: #F3F4F6;
+    padding: 2rem; }
+  .bs-swiper.typ-nestudio-thumb {
+    margin-top: 2.4rem; }
+    .bs-swiper.typ-nestudio-thumb .swiper-wrapper {
+      justify-content: center; }
+    .bs-swiper.typ-nestudio-thumb .swiper-slide {
+      border-radius: 8px;
+      border: 1px solid #DEDEDE; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }

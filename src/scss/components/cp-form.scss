@@ -28,7 +28,16 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       border-radius: 1.2rem;
-
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1; /* Firefox */
+        font-family: $font-regular;
+      }
+      
+      &::-ms-input-placeholder { /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
+      }
 
     }
 
@@ -41,7 +50,16 @@
       line-height: 2.4rem;
       border-radius: 1.2rem;
       min-height: 15.6rem;
-
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1; /* Firefox */
+        font-family: $font-regular;
+      }
+      
+      &::-ms-input-placeholder { /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
+      }
     }
 
     .err-mgs {
@@ -211,6 +229,7 @@
     }
 
   }
+
   .typ-upload-file {
     display: flex;
     align-items: center;
@@ -235,9 +254,12 @@
   .hidden {
     display: none;
   }
+
   .error-msg {
     color: #D2042D;
     font-size: 1.2rem;
     font-family: "Poppins Regular";
-}
+  }
+  .captcha{ margin-top: 1.6rem;}
+  &.mt-0{ margin-top: 0;}
 }

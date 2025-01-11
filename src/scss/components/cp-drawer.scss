@@ -49,6 +49,12 @@
                 font-size: 1.6rem;
                 line-height: 2.4rem;
             }
+
+            &.typ-about {
+                font-size: 1.6rem;
+                max-width: 300px;
+                line-height: 2.4rem;
+            }
         }
 
         .icon.icon-close {
@@ -153,17 +159,20 @@
 
     &.typ-help-policy {
         @media only screen and (max-width: $media-mobile) {
-        padding: 1.6rem 0;}
+            padding: 1.6rem 0;
+        }
 
         .head-sec {
             @media only screen and (max-width: $media-mobile) {
-            margin: 0 1.6rem;}
+                margin: 0 1.6rem;
+            }
         }
 
         .cp-tab {
             .tab-list {
                 @media only screen and (max-width: $media-mobile) {
-                    margin: 0 1.6rem;}
+                    margin: 0 1.6rem;
+                }
             }
         }
     }

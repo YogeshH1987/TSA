@@ -48,6 +48,10 @@
         .cp-drawer .head-sec .drawer-title {
           font-size: 1.6rem;
           line-height: 2.4rem; } }
+      .cp-drawer .head-sec .drawer-title.typ-about {
+        font-size: 1.6rem;
+        max-width: 300px;
+        line-height: 2.4rem; }
     .cp-drawer .head-sec .icon.icon-close {
       position: absolute;
       top: 2.4rem;
