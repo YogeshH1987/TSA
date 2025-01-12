@@ -227,6 +227,11 @@
         max-width: 640px;
         max-height: 328px;
 
+        &.modal-show {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         @media only screen and (max-width: $media-mobile) {
             bottom: 0;
             @include transform(translate(-50%, -0%));
@@ -266,6 +271,141 @@
                 bottom: 0;
                 top: auto;
                 height: auto;
+            }
+        }
+    }
+
+    &.typ-about-gallery {
+        min-width: 670px;
+        max-height: 600px;
+
+        @media only screen and (max-width: $media-mobile) {
+            bottom: 0;
+            @include transform(translate(-50%, -0%));
+            top: auto;
+            min-width: 100%;
+        }
+
+        &.modal-show {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .modal-content {
+            .desc {
+                margin-bottom: 0rem;
+                color: $clr-base;
+                font-family: $font-semiBold;
+
+                &.typ-small {
+                    font-size: 1.2rem;
+                    font-family: $font-regular;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .close-btn {
+            top: 28px;
+            right: 30px;
+            color: #999;
+
+            @media only screen and (max-width: $media-mobile) {
+                top: 15px;
+                right: 20px;
+            }
+        }
+
+        .modal-body {
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.6rem;
+            }
+        }
+
+        .modal-dialog {
+            @include border-radius(12px);
+
+            @media only screen and (max-width: $media-mobile) {
+                @include border-radius(12px 12px 0 0);
+                @include transform(translate(-50%, -0%));
+                bottom: 0;
+                top: auto;
+                height: auto;
+            }
+        }
+
+        .nestudio-container {
+            background-color: #F3F4F6;
+            padding: 2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0px;
+                background-color:transparent;
+            }
+        }
+
+        .thumb-nestudio-container {
+            position: relative;
+
+            .swiper-button-next-thumb,
+            .swiper-button-prev-thumb {
+                color: #333333;
+                cursor: pointer;
+                z-index: 1;
+                width: 2.8rem;
+                height: 2.8rem;
+                margin: 0;
+                border: 1px solid #333333;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+            }
+
+            .swiper-button-prev-thumb {
+                left: var(--swiper-navigation-sides-offset, 10px);
+                right: auto;
+            }
+
+            .swiper-button-next-thumb {
+                right: var(--swiper-navigation-sides-offset, 10px);
+                left: auto;
+            }
+
+            .swiper-button-next-thumb.swiper-button-disabled,
+            .swiper-button-prev-thumb.swiper-button-disabled {
+                color: #b3b3b3;
+                opacity: 0.5;
+            }
+
+            .swiper-button-next-thumb:after,
+            .swiper-button-prev-thumb:after {
+                font-size: 2.4rem;
+                font-weight: normal;
+                font-family: 'icomoon';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .swiper-button-prev-thumb:after {
+                content: "\e91e";
+            }
+
+            .swiper-button-next-thumb:after {
+                content: '\e91d';
+            }
+
+            @media only screen and (max-width: $media-mobile) {
+                display: none;
             }
         }
     }

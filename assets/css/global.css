@@ -2384,16 +2384,36 @@ p {
         padding-bottom: 0rem; } }
   .bs-swiper.typ-nestudio {
     padding-bottom: 0; }
+  @media only screen and (max-width: 768px) {
+    .bs-swiper.typ-nestudio-big {
+      padding-bottom: 40px; } }
   .bs-swiper.typ-nestudio-big .swiper-slide {
-    background-color: #F3F4F6;
-    padding: 2rem; }
+    max-height: 350px; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.typ-nestudio-big .swiper-slide {
+        min-height: 350px;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        border: 1px solid #ccc; } }
+    .bs-swiper.typ-nestudio-big .swiper-slide img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: 350px; }
+      @media only screen and (max-width: 768px) {
+        .bs-swiper.typ-nestudio-big .swiper-slide img {
+          min-height: 350px; } }
   .bs-swiper.typ-nestudio-thumb {
-    margin-top: 2.4rem; }
-    .bs-swiper.typ-nestudio-thumb .swiper-wrapper {
-      justify-content: center; }
+    margin: 2.4rem 6rem 0; }
     .bs-swiper.typ-nestudio-thumb .swiper-slide {
       border-radius: 8px;
-      border: 1px solid #DEDEDE; }
+      border: 1px solid #DEDEDE;
+      min-height: 56px; }
+      .bs-swiper.typ-nestudio-thumb .swiper-slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        min-height: 56px; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }
@@ -2787,6 +2807,9 @@ p {
   .bs-modal.typ-share {
     max-width: 640px;
     max-height: 328px; }
+    .bs-modal.typ-share.modal-show {
+      top: 50%;
+      transform: translate(-50%, -50%); }
     @media only screen and (max-width: 768px) {
       .bs-modal.typ-share {
         bottom: 0;
@@ -2827,6 +2850,113 @@ p {
           bottom: 0;
           top: auto;
           height: auto; } }
+  .bs-modal.typ-about-gallery {
+    min-width: 670px;
+    max-height: 600px; }
+    @media only screen and (max-width: 768px) {
+      .bs-modal.typ-about-gallery {
+        bottom: 0;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        top: auto;
+        min-width: 100%; } }
+    .bs-modal.typ-about-gallery.modal-show {
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .bs-modal.typ-about-gallery .modal-content .desc {
+      margin-bottom: 0rem;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+      .bs-modal.typ-about-gallery .modal-content .desc.typ-small {
+        font-size: 1.2rem;
+        font-family: "Poppins Regular";
+        margin-bottom: 2rem; }
+    .bs-modal.typ-about-gallery .close-btn {
+      top: 28px;
+      right: 30px;
+      color: #999; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-about-gallery .close-btn {
+          top: 15px;
+          right: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .bs-modal.typ-about-gallery .modal-body {
+        padding: 1.6rem; } }
+    .bs-modal.typ-about-gallery .modal-dialog {
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-about-gallery .modal-dialog {
+          border-radius: 12px 12px 0 0;
+          -webkit-border-radius: 12px 12px 0 0;
+          -moz-border-radius: 12px 12px 0 0;
+          -webkit-transform: translate(-50%, 0%);
+          -moz-transform: translate(-50%, 0%);
+          -ms-transform: translate(-50%, 0%);
+          -o-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+          bottom: 0;
+          top: auto;
+          height: auto; } }
+    .bs-modal.typ-about-gallery .nestudio-container {
+      background-color: #F3F4F6;
+      padding: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-about-gallery .nestudio-container {
+          padding: 0px;
+          background-color: transparent; } }
+    .bs-modal.typ-about-gallery .thumb-nestudio-container {
+      position: relative; }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-next-thumb,
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-prev-thumb {
+        color: #333333;
+        cursor: pointer;
+        z-index: 1;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0;
+        border: 1px solid #333333;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-prev-thumb {
+        left: var(--swiper-navigation-sides-offset, 10px);
+        right: auto; }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-next-thumb {
+        right: var(--swiper-navigation-sides-offset, 10px);
+        left: auto; }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-next-thumb.swiper-button-disabled,
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-prev-thumb.swiper-button-disabled {
+        color: #b3b3b3;
+        opacity: 0.5; }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-next-thumb:after,
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-prev-thumb:after {
+        font-size: 2.4rem;
+        font-weight: normal;
+        font-family: 'icomoon';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-prev-thumb:after {
+        content: "\e91e"; }
+      .bs-modal.typ-about-gallery .thumb-nestudio-container .swiper-button-next-thumb:after {
+        content: '\e91d'; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-about-gallery .thumb-nestudio-container {
+          display: none; } }
   @media only screen and (max-width: 768px) {
     .bs-modal .bs-applicant-form .title {
       font-size: 2rem; }
