@@ -1538,6 +1538,11 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-sec.mb-6 {
         margin-bottom: 0; } }
+  .bs-sec.mb-4 {
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 991px) {
+      .bs-sec.mb-4 {
+        margin-bottom: 2.4rem; } }
   .bs-sec.typ-pravesh-pdp {
     position: relative;
     padding-top: 0;

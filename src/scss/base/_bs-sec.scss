@@ -767,6 +767,13 @@
       margin-bottom: 0;
     }
   }
+  &.mb-4 {
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: $media-sm) {
+      margin-bottom: 2.4rem;
+    }
+  }
 
   &.typ-pravesh-pdp {
     position: relative;
