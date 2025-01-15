@@ -1,0 +1,24 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.lyt-cart {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  @media only screen and (max-width: $media-mobile) {
+    gap: 1.2rem;
+  }
+  .grid-col-lhs {
+    width: 66%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+    
+  }
+  .grid-col-rhs {
+    width: 32.3%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+  }
+}

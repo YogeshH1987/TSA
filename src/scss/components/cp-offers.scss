@@ -55,7 +55,6 @@
         line-height: 1.2rem;
         color: $clr-base;
     }
-
     &.typ-blue-border{
         border: 1px solid $clr-primary;
     }
@@ -67,9 +66,25 @@
     }
     &.typ-yellow-border{
         border: 1px solid #FFB800;
-    }
+    }    
   }
-
+    &.typ-disable{
+        cursor: none;
+        .lft{
+            background: #999999;
+        }
+        .rht{
+            border: 1px solid #DEDEDE;
+            background-color: #F3F4F6;
+            .title,
+            .desc {
+                color: #808080;
+            }
+            .offer-valid{
+                color: #333333;
+            }
+        }
+    }
 }
 
 .offers-list{
@@ -104,4 +119,6 @@
             }
         }
     }
+    margin-top: 1.6rem;
+    margin-bottom: 3.6rem;
 }

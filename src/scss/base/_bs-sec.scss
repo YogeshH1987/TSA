@@ -1103,4 +1103,15 @@
   &.typ-about-news{
     .sec-head{display: flex; align-items: center; justify-content: space-between;}
   }
+  &.typ-myCart {
+    margin-top: 6.4rem;
+    .sec-head{
+      margin-top: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+    .sec-title{
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+  }
 }

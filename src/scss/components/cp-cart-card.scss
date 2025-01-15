@@ -4,13 +4,18 @@
 .cp-cart-card {
     background: $clr-root;
     padding: 1.6rem 2.4rem;
-
-    @media only screen and (max-width: $media-mobile) {
-        margin-left: -3rem;
+    @media only screen and (max-width: $media-mobile){
+        // margin-left: -3rem;
         padding: 1.6rem 1.2rem;
     }
-
-    .bottom-link-list {
+    &.separator{
+        border-bottom: 2px solid $clr-border;
+    }
+    &:last-child{
+        border-radius: 0 16px 0 16px;
+    }
+  
+    .bottom-link-list{
         display: flex;
         justify-content: flex-end;
         gap: 2.4rem;

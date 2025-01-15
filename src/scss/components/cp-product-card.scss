@@ -729,4 +729,32 @@
             height: 28rem;
         }
     }
+    &.typ-cart{
+        width: 32%;
+        .lhs{
+            border-bottom:1px solid #dedede ;
+        }
+        .prod-title{
+            font-size: 1.6rem;
+            font-family: $font-regular;
+            color: $clr-para;
+        }
+        .size-code{
+            font-size: 1.6rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+        }
+        .select-text{
+            font-size: 1.4rem;
+            font-family: $font-medium;
+            color: $clr-primary;
+            text-decoration: underline;
+        }
+        .img-wrap{
+            height: 12.0rem;
+        }
+        .price-wrap{
+            margin: 0;
+        }
+    }
 }

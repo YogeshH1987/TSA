@@ -27,6 +27,43 @@
             font-size: 1.4rem;
             padding: 1.2rem 1.6rem 0;
         }
+            &.typ-minimum{
+                background: #FFF8E5;
+                border-bottom: 1px solid #FFD466;
+                border-bottom: 1px solid #FFD466;
+                gap: 0.8rem;
+                padding: 1.2rem;
+                align-items: center;
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                    padding: 0.5rem 1.6rem;
+                    border-bottom: 1px solid #FFD466;
+                    gap: 0.8rem;
+                    padding: 1.2rem;
+                    align-items: center;
+
+                }
+                .desc{
+
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
+                }
+               
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                }
+                .icon{
+                    font-size: 2.4rem;
+                    color: #A77800;
+                }
+                .desc{
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
+                }
+            }
+        }
 
         &.total-price {
             background: #F3F4F6;
@@ -97,6 +134,11 @@
             @media only screen and (max-width: $media-mobile) { align-items: center;}
             .icon {font-size: 2.4rem;}
             .desc{color: $clr-base;}
+    
+        .cancel-price{
+            text-decoration: line-through;
+            font-family: $font-regular;
+            color: #808080;
         }
     }
 

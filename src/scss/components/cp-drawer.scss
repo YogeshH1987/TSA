@@ -176,4 +176,28 @@
             }
         }
     }
+    &.typ-offer{
+        .head-sec{
+            .drawer-title{
+                font-family: $font-medium;
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                color: #333333;
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+        .drawer-sub-title{
+            font-family: $font-medium;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            color: #333333;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
 }

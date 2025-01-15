@@ -1,0 +1,34 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-cart {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-cart {
+    gap: 1.2rem;
+  }
+}
+.lyt-cart .grid-col-lhs {
+  width: 66%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-cart .grid-col-lhs {
+    width: 100%;
+  }
+}
+.lyt-cart .grid-col-rhs {
+  width: 32.3%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-cart .grid-col-rhs {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=lyt-cart.css.map */
