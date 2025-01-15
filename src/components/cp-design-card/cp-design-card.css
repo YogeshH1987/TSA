@@ -90,5 +90,72 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       color: #333333; }
+  .cp-design-card.typ-architectual-plan {
+    max-width: 100%; }
+    .cp-design-card.typ-architectual-plan .img-wrap {
+      position: relative;
+      border-radius: 1.6rem 1.6rem 0 0;
+      -webkit-border-radius: 1.6rem 1.6rem 0 0;
+      -moz-border-radius: 1.6rem 1.6rem 0 0; }
+      .cp-design-card.typ-architectual-plan .img-wrap img {
+        border-radius: 1.6rem 1.6rem 0 0;
+        -webkit-border-radius: 1.6rem 1.6rem 0 0;
+        -moz-border-radius: 1.6rem 1.6rem 0 0; }
+      .cp-design-card.typ-architectual-plan .img-wrap .tag-list {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4rem 1.6rem; }
+        .cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .tag {
+          background: #fff;
+          border-radius: 0.4rem;
+          -webkit-border-radius: 0.4rem;
+          -moz-border-radius: 0.4rem;
+          font-family: "Poppins Medium";
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          color: #3D7EDB;
+          padding: 0.4rem 0.8rem; }
+        .cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .icon {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: #999999;
+          cursor: pointer;
+          background: #fff;
+          width: 2.4rem;
+          height: 2.4rem;
+          padding: 4px;
+          border-radius: 0.6rem;
+          -webkit-border-radius: 0.6rem;
+          -moz-border-radius: 0.6rem; }
+          .cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .icon.active {
+            color: #D2042D; }
+    .cp-design-card.typ-architectual-plan .content-wrap .desg-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+      padding-bottom: 0.8rem; }
+      .cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist {
+        font-size: 14px;
+        font-family: "Poppins Regular";
+        gap: 4px;
+        display: flex;
+        align-items: center; }
+        .cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist .icon {
+          font-size: 14px;
+          width: 14px;
+          height: 14px;
+          color: #D2042D; }
+    .cp-design-card.typ-architectual-plan .content-wrap .detail-list {
+      justify-content: initial;
+      gap: 2.4rem 0; }
+      .cp-design-card.typ-architectual-plan .content-wrap .detail-list .detail-item {
+        width: 50%; }
 
 /*# sourceMappingURL=cp-design-card.css.map */

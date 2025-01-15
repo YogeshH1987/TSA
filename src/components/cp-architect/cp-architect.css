@@ -173,7 +173,8 @@
     .cp-architect-card.typ-about-nestudio .bottom-sec .location-list .location-item .details::after {
       content: none; }
   .cp-architect-card.typ-architect-plan {
-    border: #DEDEDE 1px solid; }
+    border: #DEDEDE 1px solid;
+    width: 100%; }
     .cp-architect-card.typ-architect-plan .img-wrap {
       max-height: 16rem; }
       .cp-architect-card.typ-architect-plan .img-wrap::after {
@@ -186,7 +187,8 @@
       position: static; }
       .cp-architect-card.typ-architect-plan .detail-wrap .location-item .details {
         color: #333333;
-        font-family: "Poppins Semibold"; }
+        font-family: "Poppins Semibold";
+        font-size: 1.6rem; }
       .cp-architect-card.typ-architect-plan .detail-wrap .detail-right {
         border: 1px solid #333333;
         border-radius: 0.6rem;
@@ -199,5 +201,36 @@
         .cp-architect-card.typ-architect-plan .detail-wrap .detail-right .icon {
           color: #333333;
           font-size: 1.6rem; }
+  .cp-architect-card.typ-architect-style {
+    width: 100%; }
+    .cp-architect-card.typ-architect-style .img-wrap::after {
+      height: 14rem; }
+    .cp-architect-card.typ-architect-style .img-wrap .img {
+      max-height: 46rem; }
+    .cp-architect-card.typ-architect-style .detail-wrap {
+      padding: 1.6rem; }
+      .cp-architect-card.typ-architect-style .detail-wrap .card-title {
+        margin-bottom: 1.6rem; }
+      .cp-architect-card.typ-architect-style .detail-wrap .location-list {
+        flex-direction: column; }
+        .cp-architect-card.typ-architect-style .detail-wrap .location-list .location-item .tag-list {
+          margin-bottom: 8px; }
+        .cp-architect-card.typ-architect-style .detail-wrap .location-list .location-item .tag-item {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px; }
+          .cp-architect-card.typ-architect-style .detail-wrap .location-list .location-item .tag-item .tag {
+            background-color: #D8E5F8;
+            font-size: 1.2rem;
+            color: #333333;
+            padding: 2px 8px;
+            border-radius: 2.6rem;
+            -webkit-border-radius: 2.6rem;
+            -moz-border-radius: 2.6rem; }
+        .cp-architect-card.typ-architect-style .detail-wrap .location-list .location-item .link {
+          color: #fff;
+          font-size: 1.4rem;
+          text-decoration: underline;
+          font-family: "Poppins Medium"; }
 
 /*# sourceMappingURL=cp-architect.css.map */

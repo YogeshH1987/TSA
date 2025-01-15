@@ -1136,6 +1136,14 @@ p {
     line-height: 2.4rem; }
   .bs-sec.typ-gray-bg {
     background: #ecf2fb; }
+  .bs-sec.typ-natural-gray-bg {
+    background: #F3F4F6; }
+  .bs-sec.typ-white-bg {
+    background: #fff;
+    padding: 4rem 0; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-white-bg {
+        padding: 2.4rem 0; } }
   .bs-sec.typ-curve {
     border-radius: 4.8rem 4.8rem 0 0;
     -webkit-border-radius: 4.8rem 4.8rem 0 0;
@@ -1758,6 +1766,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .bs-sec.typ-explore-styles .btn-wrap {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.2rem; }
+  .bs-sec.typ-architect-collection {
+    margin-top: -145px; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-architect-collection {
+        margin-top: -100px; } }
+    .bs-sec.typ-architect-collection .sec-head {
+      margin-bottom: 1.6rem; }
+      .bs-sec.typ-architect-collection .sec-head .sec-title {
+        font-size: 2rem;
+        font-family: "Poppins Medium";
+        color: #fff; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-architect-collection .sec-head .sec-title {
+            font-size: 1.4rem; } }
 
 .btn {
   display: inline-block;

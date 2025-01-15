@@ -63,5 +63,29 @@
       -webkit-box-orient: vertical; }
     .cp-useful-card .content-wrap .btn.btn-link {
       line-height: 2.2rem; }
+  .cp-useful-card.typ-architech-style-card .img-wrap {
+    border-radius: 1.6rem 1.6rem 0 0;
+    -webkit-border-radius: 1.6rem 1.6rem 0 0;
+    -moz-border-radius: 1.6rem 1.6rem 0 0; }
+    .cp-useful-card.typ-architech-style-card .img-wrap img {
+      border-radius: 1.6rem 1.6rem 0 0;
+      -webkit-border-radius: 1.6rem 1.6rem 0 0;
+      -moz-border-radius: 1.6rem 1.6rem 0 0; }
+  .cp-useful-card.typ-architech-style-card .content-wrap {
+    padding: 1.6rem; }
+    .cp-useful-card.typ-architech-style-card .content-wrap .list {
+      display: flex;
+      align-items: center; }
+      .cp-useful-card.typ-architech-style-card .content-wrap .list li a {
+        font-family: "Poppins Medium";
+        font-size: 1.6rem; }
+      .cp-useful-card.typ-architech-style-card .content-wrap .list li + li::before {
+        content: '|';
+        font-size: 1.6rem;
+        padding-inline: 0.8rem;
+        color: #3D7EDB; }
+        @media only screen and (max-width: 991px) {
+          .cp-useful-card.typ-architech-style-card .content-wrap .list li + li::before {
+            font-size: 1.2rem; } }
 
 /*# sourceMappingURL=cp-useful-card.css.map */

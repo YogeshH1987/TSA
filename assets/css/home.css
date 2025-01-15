@@ -185,5 +185,23 @@
       @media only screen and (max-width: 768px) {
         .lyt-grid.typ-about-nestudio .grid-col {
           width: 48%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-col-4 {
+      gap: 1.2rem;
+      flex-direction: initial;
+      flex-wrap: wrap; } }
+  .lyt-grid.typ-col-4 .grid-col {
+    width: 25%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-col-4 .grid-col {
+        width: 48%; } }
+  .lyt-grid.typ-col-5 {
+    justify-content: initial;
+    flex-wrap: wrap; }
+    .lyt-grid.typ-col-5 .grid-col {
+      width: 48.7%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-col-5 .grid-col {
+          width: 100%; } }
 
 /*# sourceMappingURL=home.css.map */

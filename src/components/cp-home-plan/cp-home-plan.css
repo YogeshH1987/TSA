@@ -38,10 +38,16 @@
     width: 100%;
     z-index: 1;
     padding: 0 10rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-home-plan .step-sec {
+        padding: 0 1.2rem; } }
     .cp-home-plan .step-sec .steps-num {
       font-family: "Poppins Medium";
       font-size: 2rem;
       color: #FFFFFF; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-plan .step-sec .steps-num {
+          font-size: 1.2rem; } }
     .cp-home-plan .step-sec .step-main {
       margin-top: 0.8rem;
       display: flex;
@@ -58,6 +64,9 @@
         border-radius: 1rem;
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-home-plan .step-sec .step-main .step {
+            height: 3px; } }
         .cp-home-plan .step-sec .step-main .step.active {
           background-color: #00A441; }
         .cp-home-plan .step-sec .step-main .step.finish {
@@ -67,6 +76,9 @@
     padding: 3.2rem 10rem;
     z-index: 1;
     overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      .cp-home-plan .home-plot-size {
+        padding: 1.6rem 1.2rem; } }
     .cp-home-plan .home-plot-size::after {
       content: "\e93a";
       left: -11%;
@@ -76,31 +88,66 @@
       color: #D8E5F8;
       font-size: 50.8rem;
       font-family: 'icomoon' !important; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-plan .home-plot-size::after {
+          left: -47%; } }
     .cp-home-plan .home-plot-size .title {
       font-size: 2rem;
       font-family: "Poppins Medium";
       color: #333333;
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-plan .home-plot-size .title {
+          font-size: 1.6rem; } }
     .cp-home-plan .home-plot-size .typ-plot-size-wrap {
       display: flex;
       gap: 2rem;
       flex-wrap: wrap; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-plan .home-plot-size .typ-plot-size-wrap {
+          gap: 1.2rem; } }
       .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size {
-        width: calc(25% - 2rem); }
+        width: 23.5%;
+        margin-bottom: 0; }
+        @media only screen and (max-width: 768px) {
+          .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size {
+            width: 48%; } }
         .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size .custom-radio {
           flex-direction: row;
           padding: 2rem;
           gap: 12px;
           font-family: "Poppins Semibold";
           color: #333333; }
+          @media only screen and (max-width: 768px) {
+            .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size .custom-radio {
+              min-width: 100%;
+              padding: 1.6rem 0.4rem;
+              gap: 4px;
+              font-family: "Poppins Medium"; } }
           .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size .custom-radio .icon {
             color: #DEDEDE;
             width: 13px;
             height: 13px;
             font-size: 13px; }
         .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size input[type="radio"]:checked + .custom-radio {
-          background: #fff; }
+          background: #fff;
+          border: 1px solid #DEDEDE; }
           .cp-home-plan .home-plot-size .typ-plot-size-wrap .typ-plot-size input[type="radio"]:checked + .custom-radio .icon {
-            color: #00A441; }
+            color: #D2042D; }
+    .cp-home-plan .home-plot-size .btn-wrap {
+      gap: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3.2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-plan .home-plot-size .btn-wrap {
+          margin-top: 1.6rem;
+          gap: 1.6rem; } }
+      .cp-home-plan .home-plot-size .btn-wrap .btn {
+        padding: 1.1rem 3rem;
+        min-width: auto; }
+  .cp-home-plan .tab {
+    display: none; }
 
 /*# sourceMappingURL=cp-home-plan.css.map */

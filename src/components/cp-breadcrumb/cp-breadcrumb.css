@@ -29,5 +29,16 @@
         line-height: 1.6rem; } }
     .cp-breadcrumb .breadcrumb-items .breadcrumb-link.active {
       color: #333333; }
+  @media only screen and (max-width: 768px) {
+    .cp-breadcrumb.typ-architectural-plans {
+      bottom: -40px;
+      position: absolute;
+      z-index: 1; } }
+  @media only screen and (max-width: 768px) {
+    .cp-breadcrumb.typ-architectural-plans .breadcrumb-link {
+      color: #DEDEDE; } }
+  @media only screen and (max-width: 768px) {
+    .cp-breadcrumb.typ-architectural-plans .breadcrumb-link.active {
+      color: #fff; } }
 
 /*# sourceMappingURL=cp-breadcrumb.css.map */

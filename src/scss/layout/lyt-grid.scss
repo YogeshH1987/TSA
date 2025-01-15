@@ -255,15 +255,46 @@
     gap: 4.8rem 2rem;
     flex-wrap: wrap;
     justify-content: center;
+
     @media only screen and (max-width: $media-mobile) {
       gap: 2.4rem 1rem;
       flex-direction: initial;
     }
+
     .grid-col {
       width: 32.2%;
+
       @media only screen and (max-width: $media-mobile) {
         width: 48%;
       }
+    }
+  }
+
+  &.typ-col-4 {
+    @media only screen and (max-width: $media-mobile) {
+      gap: 1.2rem;
+      flex-direction: initial;
+      flex-wrap: wrap;
+    }
+
+    .grid-col {
+      width: 25%;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 48%;
+      }
+    }
+
+
+  }
+
+  &.typ-col-5 {
+    justify-content: initial;
+    flex-wrap: wrap;
+
+    .grid-col {
+      width: 48.7%;
+      @media only screen and (max-width: $media-mobile) { width: 100%;}
     }
   }
 }

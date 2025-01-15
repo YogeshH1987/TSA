@@ -157,6 +157,19 @@
     background: #ecf2fb;
   }
 
+  &.typ-natural-gray-bg {
+    background: #F3F4F6;
+  }
+
+  &.typ-white-bg {
+    background: #fff;
+    padding: 4rem 0;
+
+    @media only screen and (max-width: $media-mobile) {
+      padding: 2.4rem 0;
+    }
+  }
+
   &.typ-curve {
     @include border-radius(4.8rem 4.8rem 0 0);
 
@@ -767,6 +780,7 @@
       margin-bottom: 0;
     }
   }
+
   &.mb-4 {
     margin-bottom: 4rem;
 
@@ -888,7 +902,11 @@
   &.typ-about-brand {
     position: relative;
     overflow-y: hidden;
-    @media only screen and (max-width: $media-mobile) { margin-top: 2.4rem;}
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-top: 2.4rem;
+    }
+
     &::after {
 
       // content: '';
@@ -911,9 +929,10 @@
       color: #ECF2FB;
       font-size: 90rem;
       font-family: 'icomoon' !important;
+
       @media only screen and (max-width: $media-mobile) {
         left: -34%;
-        top: -3%; 
+        top: -3%;
         font-size: 39rem;
       }
     }
@@ -981,6 +1000,7 @@
       color: #D8E5F8;
       font-size: 90rem;
       font-family: 'icomoon' !important;
+
       @media only screen and (max-width: $media-mobile) {
         left: -73%;
         top: -8%;
@@ -995,9 +1015,14 @@
         margin-bottom: 6rem;
       }
     }
-    .swiper-pagination{display: block;
+
+    .swiper-pagination {
+      display: block;
+
       @media only screen and (max-width: $media-mobile) {
-        .swiper-pagination{display: none;}
+        .swiper-pagination {
+          display: none;
+        }
       }
     }
 
@@ -1008,7 +1033,11 @@
     overflow-x: hidden;
     padding: 0;
     margin: 6.4rem 0 2.4rem;
-    @media only screen and (max-width: $media-mobile) {  margin: 2.4rem 0 0rem;}
+
+    @media only screen and (max-width: $media-mobile) {
+      margin: 2.4rem 0 0rem;
+    }
+
     .sec-title,
     .desc {
       color: #fff !important;
@@ -1107,7 +1136,41 @@
       font-family: $font-bold;
     }
   }
-  &.typ-about-news{
-    .sec-head{display: flex; align-items: center; justify-content: space-between;}
+
+  &.typ-about-news {
+    .sec-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &.typ-explore-styles {
+    .btn-wrap {
+      gap: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3.2rem;
+    }
+  }
+
+  &.typ-architect-collection {
+    margin-top: -145px;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-top: -100px;
+    }
+
+    .sec-head {
+      margin-bottom: 1.6rem;
+
+      .sec-title {
+        font-size: 2rem;
+        font-family: $font-medium;
+        color: #fff;
+        @media only screen and (max-width: $media-mobile) {  font-size: 1.4rem; }
+      }
+    }
   }
 }

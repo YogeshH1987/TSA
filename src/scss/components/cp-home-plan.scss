@@ -42,10 +42,18 @@
         z-index: 1;
         padding: 0 10rem;
 
+        @media only screen and (max-width: $media-mobile) {
+            padding: 0 1.2rem;
+        }
+
         .steps-num {
             font-family: $font-medium;
             font-size: 2rem;
             color: #FFFFFF;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.2rem;
+            }
         }
 
         .step-main {
@@ -65,6 +73,10 @@
                 background-color: #FFFFFF;
                 @include border-radius(1rem);
 
+                @media only screen and (max-width: $media-mobile) {
+                    height: 3px;
+                }
+
                 &.active {
                     background-color: #00A441;
                 }
@@ -82,6 +94,10 @@
         z-index: 1;
         overflow: hidden;
 
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem 1.2rem;
+        }
+
         &::after {
             content: "\e93a";
             left: -11%;
@@ -91,12 +107,21 @@
             color: #D8E5F8;
             font-size: 50.8rem;
             font-family: 'icomoon' !important;
+
+            @media only screen and (max-width: $media-mobile) {
+                left: -47%;
+            }
         }
+
         .title {
             font-size: 2rem;
             font-family: $font-medium;
             color: $clr-base;
             margin-bottom: 2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+            }
         }
 
         .typ-plot-size-wrap {
@@ -104,9 +129,17 @@
             gap: 2rem;
             flex-wrap: wrap;
 
+            @media only screen and (max-width: $media-mobile) {
+                gap: 1.2rem;
+            }
 
             .typ-plot-size {
-                width: calc(25% - 2rem);
+                width: 23.5%;
+                margin-bottom: 0;
+
+                @media only screen and (max-width: $media-mobile) {
+                    width: 48%;
+                }
 
                 .custom-radio {
                     flex-direction: row;
@@ -114,6 +147,13 @@
                     gap: 12px;
                     font-family: $font-semiBold;
                     color: $clr-base;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        min-width: 100%;
+                        padding: 1.6rem 0.4rem;
+                        gap: 4px;
+                        font-family: $font-medium;
+                    }
 
                     .icon {
                         color: #DEDEDE;
@@ -125,12 +165,35 @@
 
                 input[type="radio"]:checked+.custom-radio {
                     background: #fff;
+                    border: 1px solid #DEDEDE;
 
                     .icon {
-                        color: #00A441;
+                        color: #D2042D;
                     }
                 }
             }
         }
+
+        .btn-wrap {
+            gap: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3.2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                margin-top: 1.6rem;
+                gap: 1.6rem;
+            }
+
+            .btn {
+                padding: 1.1rem 3rem;
+                min-width: auto;
+            }
+        }
+    }
+
+    .tab {
+        display: none;
     }
 }

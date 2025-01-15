@@ -105,6 +105,10 @@
           display: block;
           width: 48%;
           height: 9.2rem; } }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner .feature.typ-architech-confidence .feature-item:nth-child(1),
+      .cp-eCommerce-home-banner .feature-type-2.typ-architech-confidence .feature-item:nth-child(1) {
+        width: 100%; } }
   .cp-eCommerce-home-banner .feature-card {
     border: 1px solid #DEDEDE;
     background: #FFFFFF;
@@ -486,60 +490,92 @@
       .cp-eCommerce-home-banner.typ-help-support .feature-type-2.typ-policies {
         gap: initial;
         flex-wrap: initial; } }
-  .cp-eCommerce-home-banner.typ-architectual-plan {
-    background-color: transparent;
-    padding: 4rem 0; }
-    .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item {
-      order: initial;
-      width: 33%;
-      height: 22.8rem; }
-      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card {
-        padding: 4rem 2.4rem; }
-        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-title,
-        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-desc {
-          color: #fff; }
-        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img {
-          top: 32px;
-          right: 22px; }
-          .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img.notify-icon {
-            opacity: 60%; }
-          .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img::after {
-            content: none; }
-        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card .btn-wrap {
-          position: absolute;
-          bottom: 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 48px; }
-      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-title {
-        text-transform: capitalize;
-        font-size: 2.8rem;
-        max-width: 18.7rem;
-        line-height: 4rem;
-        margin-bottom: 1.2rem; }
-      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-desc {
-        font-size: 2rem; }
-      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-img {
+  .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item {
+    order: initial;
+    width: 33%;
+    height: 22.8rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item {
+        width: 48%; } }
+    .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card {
+      padding: 4rem 2.4rem; }
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-title,
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-desc {
+        color: #fff; }
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img {
+        top: 32px;
+        right: 22px; }
+        @media only screen and (max-width: 768px) {
+          .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img {
+            top: -14px; } }
+        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img.notify-icon {
+          opacity: 60%; }
+        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img::after {
+          content: none; }
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card .btn-wrap {
         position: absolute;
-        top: 0;
-        bottom: auto;
-        right: 0;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px; }
+        @media only screen and (max-width: 768px) {
+          .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card .btn-wrap {
+            bottom: 10px; } }
+    .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-title {
+      text-transform: capitalize;
+      font-size: 2.8rem;
+      max-width: 18.7rem;
+      line-height: 4rem;
+      margin-bottom: 1.2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-title {
+          font-size: 2rem;
+          line-height: 2.8rem; } }
+    .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-desc {
+      font-size: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-desc {
+          font-size: 1.4rem; } }
+    .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-img {
+      position: absolute;
+      top: 0;
+      bottom: auto;
+      right: 0;
+      width: 14.7rem;
+      height: 14.7rem;
+      z-index: 1; }
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-img::after {
+        background: #E5F6EC;
         width: 14.7rem;
         height: 14.7rem;
-        z-index: 1; }
-        .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-img::after {
-          background: #E5F6EC;
-          width: 14.7rem;
-          height: 14.7rem;
-          border-radius: 50%;
-          position: absolute;
-          right: -23px;
-          top: -14px;
-          content: '';
-          opacity: 1;
-          z-index: -1; }
-      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item:nth-child(2) .feature-card .f-img::after {
-        background-color: #FDECE5; }
+        border-radius: 50%;
+        position: absolute;
+        right: -23px;
+        top: -14px;
+        content: '';
+        opacity: 1;
+        z-index: -1; }
+        @media only screen and (max-width: 768px) {
+          .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .f-img::after {
+            width: 11.7rem;
+            height: 11.7rem; } }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item:nth-child(1) .feature-card {
+        padding: 9.5rem 1.2rem 2.4rem; } }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item:nth-child(2) .feature-card {
+        padding: 9.5rem 1.2rem 2.4rem; } }
+    .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item:nth-child(2) .feature-card .f-img::after {
+      background-color: #FDECE5; }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item:nth-child(3) {
+        width: 100%;
+        height: 16.8rem; } }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item:nth-child(3) .feature-card {
+        padding: 2.4rem 1.2rem 2.4rem; } }
+  .cp-eCommerce-home-banner.typ-architectual-plan .feature.typ-archit-col-2 .feature-item {
+    width: 50%; }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */
