@@ -163,10 +163,10 @@
 
   &.typ-white-bg {
     background: #fff;
-    padding: 4rem 0;
+    padding: 4rem 0 !important;
 
     @media only screen and (max-width: $media-mobile) {
-      padding: 2.4rem 0;
+      padding: 2.4rem 0  !important;
     }
   }
 

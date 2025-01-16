@@ -41,6 +41,16 @@
       color: #666666;
       font-family: "Poppins Regular";
       line-height: 1.6rem; }
+      .cp-other-info .other-info-list .other-info-item .sub-item.typ-green {
+        border: 1px solid #66C88D;
+        background: #E5F6EC;
+        font-size: 1.4rem;
+        color: #00A441;
+        font-family: "Poppins Medium";
+        border-radius: 26px;
+        max-width: 16rem;
+        text-align: center;
+        padding: 0.3rem; }
     .cp-other-info .other-info-list .other-info-item .sub-item-list {
       display: flex; }
       .cp-other-info .other-info-list .other-info-item .sub-item-list .icon {

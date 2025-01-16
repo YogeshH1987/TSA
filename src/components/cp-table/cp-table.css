@@ -14,6 +14,7 @@
       width: 100%; } }
   .cp-table .list-item {
     font-size: 1.4rem;
+    line-height: 2rem;
     font-family: "Poppins Medium";
     color: #333333;
     padding: 1rem 1.6rem;
@@ -74,5 +75,32 @@
       display: block; }
   .cp-table.w-100 {
     width: 100%; }
+  .cp-table.typ-cart {
+    border: 0;
+    width: 100%; }
+    .cp-table.typ-cart .list-item {
+      border: 0;
+      padding: 0.8rem 1.6rem;
+      font-family: "Poppins Regular";
+      vertical-align: middle; }
+      .cp-table.typ-cart .list-item.list-head {
+        font-family: "Poppins Regular"; }
+        .cp-table.typ-cart .list-item.list-head:first-child {
+          border-radius: 0.4rem 0 0 0.4rem;
+          -webkit-border-radius: 0.4rem 0 0 0.4rem;
+          -moz-border-radius: 0.4rem 0 0 0.4rem; }
+        .cp-table.typ-cart .list-item.list-head:nth-child(3) {
+          border-radius: 0 0.4rem 0.4rem;
+          -webkit-border-radius: 0 0.4rem 0.4rem;
+          -moz-border-radius: 0 0.4rem 0.4rem; }
+      .cp-table.typ-cart .list-item:first-child {
+        width: 40%; }
+        @media only screen and (max-width: 768px) {
+          .cp-table.typ-cart .list-item:first-child {
+            width: 80%; } }
+      .cp-table.typ-cart .list-item:nth-child(2) {
+        width: 40%; }
+      .cp-table.typ-cart .list-item:nth-child(3) {
+        width: 20%; }
 
 /*# sourceMappingURL=cp-table.css.map */
