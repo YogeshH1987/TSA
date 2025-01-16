@@ -42,6 +42,18 @@
             color: $clr-para;
             font-family: $font-regular;
             line-height: 1.6rem;
+            &.typ-green{
+                border: 1px solid #66C88D;
+                background: #E5F6EC;
+                font-size: 1.4rem;
+                color:#00A441;
+                font-family: $font-medium;
+                border-radius: 26px;
+                max-width: 16rem;
+                text-align: center;
+                padding: 0.3rem;
+
+            }
         }
         .sub-item-list{
             display: flex;
