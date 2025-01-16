@@ -88,7 +88,8 @@
     min-width: 47%;
     border-color: #fff; }
   .cp-drawer.typ-blog {
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0; }
     .cp-drawer.typ-blog .head-sec {
       border-bottom: 1px solid #dedede;
       padding-left: 2rem; }

@@ -1622,6 +1622,25 @@ p {
         .bs-sec.typ-blog .filter-sec .filter-tag .close {
           color: #666666;
           font-size: 1.2rem; }
+    .bs-sec.typ-blog.typ-architect-filter {
+      margin-top: 0; }
+      .bs-sec.typ-blog.typ-architect-filter .filter-sec {
+        margin-bottom: 2.4rem; }
+        .bs-sec.typ-blog.typ-architect-filter .filter-sec .filter-tag {
+          font-size: 1.4rem;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          border: 1px solid #B1CBF1;
+          background-color: #D8E5F8;
+          border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px; }
+          .bs-sec.typ-blog.typ-architect-filter .filter-sec .filter-tag .bold-text {
+            font-family: "Poppins Medium";
+            color: #333333; }
+          .bs-sec.typ-blog.typ-architect-filter .filter-sec .filter-tag .close {
+            color: #000; }
   .bs-sec.typ-about-brand {
     position: relative;
     overflow-y: hidden; }

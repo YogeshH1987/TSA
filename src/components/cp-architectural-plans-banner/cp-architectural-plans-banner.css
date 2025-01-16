@@ -6,8 +6,7 @@
 /*opacity- end*/
 .cp-architectural-plans-banner {
   position: relative;
-  height: 220px;
-  overflow: hidden; }
+  height: 220px; }
   .cp-architectural-plans-banner::after {
     position: absolute;
     content: '';
@@ -24,7 +23,8 @@
   .cp-architectural-plans-banner img {
     height: 220px;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    overflow: hidden; }
   .cp-architectural-plans-banner .banner-title-wrap {
     position: absolute;
     bottom: 0;
@@ -34,7 +34,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
     height: 100%;
     justify-content: flex-end; }
     @media only screen and (max-width: 768px) {
@@ -58,16 +58,55 @@
       .cp-architectural-plans-banner .banner-title-wrap .head-sec .title {
         font-size: 2.8rem;
         color: #fff;
-        font-family: "Poppins Semibold"; }
+        font-family: "Poppins Semibold";
+        display: flex;
+        align-items: center;
+        gap: 1.6rem; }
         @media only screen and (max-width: 768px) {
           .cp-architectural-plans-banner .banner-title-wrap .head-sec .title {
             font-size: 2rem; } }
+        .cp-architectural-plans-banner .banner-title-wrap .head-sec .title .icon {
+          font-size: 2.4rem;
+          width: 2.4rem;
+          height: 2.4rem;
+          color: #fff; }
       .cp-architectural-plans-banner .banner-title-wrap .head-sec .btn-outline {
         color: #fff;
         border-color: #fff; }
       .cp-architectural-plans-banner .banner-title-wrap .head-sec .desc {
         color: #fff;
         font-size: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-architectural-plans-banner .banner-title-wrap .head-sec.typ-filter {
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: initial; } }
+    .cp-architectural-plans-banner .banner-title-wrap .btn-filter {
+      min-width: auto;
+      padding: 1rem 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      position: relative;
+      height: 4rem; }
+      .cp-architectural-plans-banner .banner-title-wrap .btn-filter .icon {
+        font-size: 1.4rem; }
+      .cp-architectural-plans-banner .banner-title-wrap .btn-filter .count {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #FFFFFF;
+        background: #D2042D;
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-family: "Poppins Regular";
+        right: -5px;
+        top: -5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
   .cp-architectural-plans-banner.typ-2 {
     height: 272px; }
     .cp-architectural-plans-banner.typ-2 .banner-title-wrap {

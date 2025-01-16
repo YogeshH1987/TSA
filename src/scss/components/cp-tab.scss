@@ -625,6 +625,39 @@
       }
     }
   }
+
+  &.typ-architect-plan {
+    .tab-list {
+      .tab-item {
+        .title {
+          text-transform: capitalize;
+          display: flex;gap: 1rem;
+          padding: 1.6rem 1.6rem;
+          align-items: center;
+        }
+
+        &:hover,
+        &.active {
+          .title {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .desc {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+      }
+      .cp-checkbox{ 
+        margin-bottom: 1rem;
+        display: flex ;
+            gap: 1rem;
+        label{   font-size: 1.4rem; color: $clr-base; }
+      }
+    }
+  }
 }
 
 .cp-inside-tab {

@@ -105,10 +105,16 @@
           display: block;
           width: 48%;
           height: 9.2rem; } }
-    @media only screen and (max-width: 768px) {
-      .cp-eCommerce-home-banner .feature.typ-architech-confidence .feature-item:nth-child(1),
-      .cp-eCommerce-home-banner .feature-type-2.typ-architech-confidence .feature-item:nth-child(1) {
-        width: 100%; } }
+    .cp-eCommerce-home-banner .feature.typ-architech-confidence .feature-item:nth-child(1),
+    .cp-eCommerce-home-banner .feature-type-2.typ-architech-confidence .feature-item:nth-child(1) {
+      order: 4; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner .feature.typ-architech-confidence .feature-item:nth-child(1),
+        .cp-eCommerce-home-banner .feature-type-2.typ-architech-confidence .feature-item:nth-child(1) {
+          width: 100%; } }
+    .cp-eCommerce-home-banner .feature.typ-architech-confidence .feature-item:nth-child(6),
+    .cp-eCommerce-home-banner .feature-type-2.typ-architech-confidence .feature-item:nth-child(6) {
+      order: 3; }
   .cp-eCommerce-home-banner .feature-card {
     border: 1px solid #DEDEDE;
     background: #FFFFFF;

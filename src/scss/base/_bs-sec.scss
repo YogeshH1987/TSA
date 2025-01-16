@@ -897,6 +897,31 @@
         }
       }
     }
+
+    &.typ-architect-filter {
+      margin-top: 0;
+
+      .filter-sec {
+        margin-bottom: 2.4rem;
+        .filter-tag {
+          font-size: 1.4rem;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          border: 1px solid #B1CBF1;
+          background-color: #D8E5F8;
+          @include border-radius(100px);
+
+          .bold-text {
+            font-family: $font-medium;
+            color: $clr-base;
+          }
+          .close {
+            color:#000;
+          }
+        }
+      }
+    }
   }
 
   &.typ-about-brand {
@@ -1169,7 +1194,10 @@
         font-size: 2rem;
         font-family: $font-medium;
         color: #fff;
-        @media only screen and (max-width: $media-mobile) {  font-size: 1.4rem; }
+
+        @media only screen and (max-width: $media-mobile) {
+          font-size: 1.4rem;
+        }
       }
     }
   }
