@@ -21,6 +21,10 @@
     @media only screen and (max-width: 768px) {
       .lyt-pdp .grid-col:nth-child(2) {
         display: grid; } }
+  .lyt-pdp .w-45 {
+    width: 45%; }
+  .lyt-pdp .w-55 {
+    width: 55%; }
 
 .feature-wrapper {
   width: 50%;

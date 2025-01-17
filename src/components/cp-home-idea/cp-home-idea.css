@@ -11,11 +11,16 @@
   -moz-border-radius: 1.6rem;
   padding: 1.6rem;
   height: 100%; }
-  .cp-home-idea .title {
-    font-size: 1.6rem;
-    color: #333333;
-    margin-bottom: 1.2rem;
-    font-family: "Poppins Semibold"; }
+  .cp-home-idea .head-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem; }
+    .cp-home-idea .head-sec .title {
+      font-size: 1.6rem;
+      color: #333333;
+      margin-bottom: 0;
+      font-family: "Poppins Semibold"; }
   .cp-home-idea .home-idea-wrap {
     display: flex;
     gap: 1.6rem; }
@@ -35,5 +40,19 @@
           min-height: 15rem; }
         .cp-home-idea .home-idea-wrap .list-item .home-idea-card.short-card {
           min-height: 6.9rem; }
+  .cp-home-idea .tag-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8rem; }
+    .cp-home-idea .tag-list .tag-link {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      -moz-border-radius: 0.8rem;
+      background: #FFFFFF;
+      font-size: 2rem;
+      color: #999999; }
 
 /*# sourceMappingURL=cp-home-idea.css.map */

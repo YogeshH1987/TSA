@@ -1,25 +1,15 @@
 var winWidth = $(window).width();
 
 $(document).ready(function() {
-    homeStyleSlider();
-    architechStyleSlider()
+    colonialHomeIdeaSlider()
 });
 
 $(window).resize(function() {
-    homeStyleSlider();
-    architechStyleSlider()
+    colonialHomeIdeaSlider()
 });
 
-function homeStyleSlider() {
-    var swiper = new Swiper(".js-home-style", {
-        slidesPerView: 'auto',
-        loop: false,
-        navigation: false
-    });
-}
-
-function architechStyleSlider() {
-    var swiper = new Swiper(".js-architech-style", {
+function colonialHomeIdeaSlider() {
+    var swiper = new Swiper(".js-colonial-home-idea", {
         loop: false,
         slidesPerView: 1.2,
         spaceBetween: 12,
@@ -31,7 +21,7 @@ function architechStyleSlider() {
               spaceBetween: 12
             },
             992: {
-              slidesPerView: 1.2,
+              slidesPerView: 2,
               spaceBetween: 12
             },
             // when window width is >= 480px
@@ -41,7 +31,7 @@ function architechStyleSlider() {
             },
             // when window width is >= 640px
             1280: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20
             }
           }

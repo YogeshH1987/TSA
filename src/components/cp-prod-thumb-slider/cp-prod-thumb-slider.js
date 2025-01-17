@@ -1,15 +1,17 @@
 
 $(document).ready(function () {
-  proThumbSlider()
-  proPopUpThumbSlider()
-  proPopupGalleryThumbSlider()
+  proThumbSlider();
+  proPopUpThumbSlider();
+  proPopupGalleryThumbSlider();
+  proArchitechThumbSlider()
 });
 
 
 $(window).resize(function () {
-  proThumbSlider()
-  proPopUpThumbSlider()
-  proPopupGalleryThumbSlider()
+  proThumbSlider();
+  proPopUpThumbSlider();
+  proPopupGalleryThumbSlider();
+  proArchitechThumbSlider()
 });
 
 function proThumbSlider() {
@@ -64,6 +66,24 @@ function proPopupGalleryThumbSlider() {
       clickable: true,
   },
   });
+
+}
+
+function proArchitechThumbSlider() {
+  // Initialize the main slider with Swiper
+  var architechthumbSlider = new Swiper(".js-thumb-architech-slider", {
+    slidesPerView: 7,
+    spaceBetween: 10,
+    freeMode: true,
+  });
+  var architechmainSlider = new Swiper(".js-pro-architech-slider", {
+    thumbs: {
+      swiper: architechthumbSlider,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  });
+
 
 }
 

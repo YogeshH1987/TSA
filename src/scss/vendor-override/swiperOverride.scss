@@ -388,6 +388,12 @@
       border: 1px solid $clr-border;
       overflow: hidden;
 
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
       @media only screen and (max-width: $media-mobile) {
         width: 4.7rem !important;
         height: 4.7rem;
@@ -741,17 +747,30 @@
   }
 
   &.typ-nestudio-big {
-  
-    @media only screen and (max-width: $media-mobile) {  padding-bottom: 40px;}
+
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 40px;
+    }
+
     .swiper-slide {
       max-height: 350px;
-      @media only screen and (max-width: $media-mobile) {min-height: 350px; border-radius: 1.2rem; overflow: hidden; border: 1px solid #ccc; }
+
+      @media only screen and (max-width: $media-mobile) {
+        min-height: 350px;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        border: 1px solid #ccc;
+      }
+
       img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         max-height: 350px;
-        @media only screen and (max-width: $media-mobile) {   min-height: 350px;}
+
+        @media only screen and (max-width: $media-mobile) {
+          min-height: 350px;
+        }
       }
     }
   }
@@ -772,5 +791,32 @@
       }
     }
 
+  }
+
+  &.typ-architect-pdp {
+    width: 100%;
+
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &.typ-thumb-architect-pdp {
+    margin-top: 2.1rem;
+    .swiper-slide {
+      height: 8.3rem;
+      border-radius: 8px;
+      border: 1px solid #DEDEDE;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
