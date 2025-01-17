@@ -196,5 +196,143 @@
         font-family: "Poppins Medium";
         color: #A77800;
         line-height: 1.6rem; }
+  .cp-design-card.typ-area-breakup {
+    max-width: 100%;
+    margin-bottom: 1.2rem; }
+    .cp-design-card.typ-area-breakup:hover {
+      box-shadow: none;
+      border: 1px solid #DEDEDE; }
+    .cp-design-card.typ-area-breakup .head-wrap {
+      display: flex;
+      align-items: center;
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      gap: 8px;
+      font-family: "Poppins Medium";
+      color: #333333;
+      border-bottom: 1px solid #DEDEDE; }
+      .cp-design-card.typ-area-breakup .head-wrap .icon {
+        font-size: 2.4rem;
+        height: 2.4rem;
+        font-size: 2.4rem;
+        color: #3D7EDB; }
+    .cp-design-card.typ-area-breakup .content-wrap {
+      padding: 1.6rem; }
+      .cp-design-card.typ-area-breakup .content-wrap .detail-list {
+        gap: 1.2em;
+        justify-content: initial; }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item {
+          width: 31%; }
+          .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item::after {
+            content: none; }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-title {
+          color: #666666;
+          font-size: 1.2rem; }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-desc {
+          font-family: "Poppins Medium";
+          font-size: 1.4rem; }
+  .cp-design-card.typ-floor-plan {
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 1.6rem; }
+    .cp-design-card.typ-floor-plan:hover {
+      box-shadow: none;
+      border: 1px solid #DEDEDE; }
+    .cp-design-card.typ-floor-plan .head-wrap {
+      display: flex;
+      align-items: center;
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      gap: 8px;
+      font-family: "Poppins Medium";
+      color: #333333;
+      border-bottom: 1px solid #DEDEDE;
+      background: #FFFBF2;
+      justify-content: space-between; }
+      .cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon {
+        display: flex;
+        gap: 8px; }
+        .cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon .typ-floor-plan-btn {
+          display: flex;
+          gap: 4px;
+          border: 1px solid #333333;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          min-width: auto;
+          padding: 8px 1rem;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          align-items: center; }
+          .cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon .typ-floor-plan-btn .icon {
+            font-size: 1.2rem;
+            width: 1.2rem;
+            height: 1.2rem; }
+    .cp-design-card.typ-floor-plan .content-wrap .content-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      font-family: "Poppins Medium";
+      margin-bottom: 2.4rem; }
+      .cp-design-card.typ-floor-plan .content-wrap .content-head .icon {
+        border: 1px solid #DEDEDE;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 1.6rem;
+        color: #666666;
+        padding: 1rem; }
+    .cp-design-card.typ-floor-plan .content-wrap .img-wrap {
+      height: auto; }
+    .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      /* Rounded sliders */ }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .link {
+        text-decoration: underline; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 12px; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #B3B3B3;
+        -webkit-transition: .4s;
+        transition: .4s; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider:before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        left: 4px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:checked + .slider {
+        background-color: #3D7EDB; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:focus + .slider {
+        box-shadow: 0 0 1px #3D7EDB; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:checked + .slider:before {
+        -webkit-transform: translateX(8px);
+        -ms-transform: translateX(8px);
+        transform: translateX(8px); }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round {
+        border-radius: 34px; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round:before {
+        border-radius: 50%; }
 
 /*# sourceMappingURL=cp-design-card.css.map */

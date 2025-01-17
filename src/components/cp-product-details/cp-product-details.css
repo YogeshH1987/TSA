@@ -252,5 +252,7 @@
     .prod-small-title {
       font-size: 2rem;
       line-height: 2.8rem; } }
+  .prod-small-title.typ-big {
+    font-size: 2.4rem; }
 
 /*# sourceMappingURL=cp-product-details.css.map */
