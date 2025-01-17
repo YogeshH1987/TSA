@@ -53,5 +53,9 @@
           padding-bottom: 1.2rem; }
           .cp-feature.typ-warranty .feature-list .feature-item:nth-child(3) {
             padding-bottom: 1.6rem; } }
+.cp-feature.typ-architectual-pdp .desc {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 8px; }
 
 /*# sourceMappingURL=cp-feature.css.map */

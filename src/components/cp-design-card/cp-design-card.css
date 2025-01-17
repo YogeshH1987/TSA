@@ -157,5 +157,44 @@
       gap: 2.4rem 0; }
       .cp-design-card.typ-architectual-plan .content-wrap .detail-list .detail-item {
         width: 50%; }
+  .cp-design-card.typ-architectual-pdp {
+    overflow: hidden; }
+    .cp-design-card.typ-architectual-pdp:hover {
+      box-shadow: none;
+      border: 1px solid #DEDEDE; }
+    .cp-design-card.typ-architectual-pdp .content-wrap {
+      padding: 2rem 0rem 0rem; }
+    .cp-design-card.typ-architectual-pdp .content-wrap .detail-list {
+      gap: 0;
+      padding: 0 2rem 0; }
+      .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item {
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.2rem;
+        border-bottom: 1px solid #ccc; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item::after {
+          content: none; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item.w-100 {
+          width: 100%; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item.border-0 {
+          border: none; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item .link {
+          font-size: 1.4rem;
+          text-decoration: underline;
+          font-family: "Poppins Medium"; }
+    .cp-design-card.typ-architectual-pdp .info-wrap {
+      background: #FFF8E5;
+      border-top: 1px solid #FFD466;
+      gap: 0.8rem;
+      padding: 1.2rem;
+      align-items: center;
+      display: flex; }
+      .cp-design-card.typ-architectual-pdp .info-wrap .icon {
+        font-size: 2.4rem;
+        color: #A77800; }
+      .cp-design-card.typ-architectual-pdp .info-wrap .desc {
+        font-size: 1.2rem;
+        font-family: "Poppins Medium";
+        color: #A77800;
+        line-height: 1.6rem; }
 
 /*# sourceMappingURL=cp-design-card.css.map */

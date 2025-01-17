@@ -109,6 +109,7 @@
 
     &.typ-architectual-plan {
         max-width: 100%;
+
         .img-wrap {
             position: relative;
             @include border-radius(1.6rem 1.6rem 0 0);
@@ -116,16 +117,18 @@
             img {
                 @include border-radius(1.6rem 1.6rem 0 0)
             }
+
             .tag-list {
                 position: absolute;
                 top: 0;
                 width: 100%;
                 left: 0;
                 right: 0;
-                display: flex ;
+                display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 1.4rem 1.6rem;
+
                 .tag-item {
                     .tag {
                         background: #fff;
@@ -149,7 +152,10 @@
                         height: 2.4rem;
                         padding: 4px;
                         @include border-radius(0.6rem);
-                        &.active { color: #D2042D;}
+
+                        &.active {
+                            color: #D2042D;
+                        }
                     }
                 }
             }
@@ -162,6 +168,7 @@
                 justify-content: space-between;
                 gap: 4px;
                 padding-bottom: 0.8rem;
+
                 .wishlist {
                     font-size: 14px;
                     font-family: $font-regular;
@@ -174,7 +181,7 @@
                         width: 14px;
                         height: 14px;
                         color: #D2042D;
-                      
+
                     }
                 }
             }
@@ -186,6 +193,66 @@
                 .detail-item {
                     width: 50%;
                 }
+            }
+        }
+    }
+
+    &.typ-architectual-pdp {
+        overflow: hidden;
+        &:hover{box-shadow: none;
+            border: 1px solid #DEDEDE;}
+        .content-wrap {
+            padding: 2rem 0rem 0rem;
+        }
+
+        .content-wrap {
+            .detail-list {
+                gap: 0;
+                padding: 0 2rem 0;
+                .detail-item {
+                    padding-bottom: 1.2rem;
+                    margin-bottom: 1.2rem;
+                    border-bottom: 1px solid #ccc;
+
+                    &::after {
+                        content: none;
+                    }
+
+                    &.w-100 {
+                        width: 100%;
+                    }
+
+                    &.border-0 {
+                        border: none
+                    }
+
+                    .link {
+                        font-size: 1.4rem;
+                        text-decoration: underline;
+                        font-family: $font-medium;
+                    }
+                }
+            }
+        }
+
+        .info-wrap {
+            background: #FFF8E5;
+            border-top: 1px solid #FFD466;
+            gap: 0.8rem;
+            padding: 1.2rem;
+            align-items: center;
+            display: flex;
+
+            .icon {
+                font-size: 2.4rem;
+                color: #A77800;
+            }
+
+            .desc {
+                font-size: 1.2rem;
+                font-family: "Poppins Medium";
+                color: #A77800;
+                line-height: 1.6rem;
             }
         }
     }
