@@ -1,0 +1,74 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-product-tile {
+  position: relative;
+  height: 19.9rem;
+  @media only screen and (max-width: $media-mobile) {
+    width: 100%;
+    height: 11.2rem;
+  }
+
+  .img-wrap {
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 19.9rem;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      z-index: 1;
+      border-radius: 1.2rem;
+    }
+
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+      height: 11.2rem;
+    }
+  }
+  .title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    position: absolute;
+    bottom: 2.4rem;
+    left: 2.4rem;
+    color: $clr-root;
+    text-transform: capitalize;
+    font-family: $font-medium;
+    z-index: 1;
+    @media only screen and (max-width: $media-mobile) {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      bottom: 1.2rem;
+      left: 1.2rem;
+    }
+  }
+  .icon {
+    position: absolute;
+    border-radius: .6rem;
+    right: 1.6rem;
+    top: 1.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    z-index: 1;
+    color: $clr-root;
+    border: 1px solid $clr-root;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    @media only screen and (max-width: $media-mobile) {
+      width: 2.4rem;
+      height: 2.4rem;
+      right: 1.2rem;
+      top: 1.2rem;
+    }
+  }
+}

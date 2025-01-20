@@ -120,15 +120,49 @@
     }
   }
 
+  &.typ-help {
+    border-top: solid 1px #DEDEDE;
+    margin-bottom: 0;
+
+    .acc-item {
+      .acc-head {
+        font-family: $font-regular;
+      }
+
+      &.active {
+        border-top: 0;
+
+        .acc-head {
+          font-family: $font-semiBold;
+        }
+      }
+    }
+
+    .ans-desc {
+      color: $clr-base;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .acc-item {
+      @media only screen and (max-width: $media-mobile) {
+        margin-inline: 0;
+      }
+    }
+  }
+
   .acc-item-card {
 
     .acc-head-card {
       position: relative;
       border-bottom: 1px solid $clr-border;
       padding-bottom: 1.6rem;
+
       @media only screen and (max-width: $media-mobile) {
         padding: 1.2rem 1.2rem;
       }
+
       &:before {
         content: none;
         font-family: 'icomoon';
@@ -155,7 +189,10 @@
       .acc-head-card {
         &:before {
           content: none;
-          @media only screen and (max-width: $media-sm) {  content: "\e92a";}
+
+          @media only screen and (max-width: $media-sm) {
+            content: "\e92a";
+          }
         }
       }
 

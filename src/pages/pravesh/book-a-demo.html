@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +139,7 @@
         </section>
         <!-- breadcrumbs ends -->  
         <!--product card start-->
-        <section  class="bs-sec">
+        <section  class="bs-sec typ-book-sec">
             <div class="container">
                 <div class="lyt-grid typ-7">
                     <div class="grid-col">
@@ -177,8 +178,8 @@
                                         />
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label">No of doors required <span class="clr-gray">(Optional)</span></label>
-                                        <div class="radio-wrap cm-flex">
+                                        <label class="form-label typ-bold">No of doors required <span class="clr-gray">(Optional)</span></label>
+                                        <div class="radio-wrap typ-book-wrap">
                                             <div class="bs-radio typ-book-demo">
                                                 <input id="radio1" name="size" type="radio">
                                                 <label for="radio1" class="custom-radio">
@@ -192,7 +193,7 @@
                                                 </label>
                                             </div>
                                             <div class="bs-radio typ-book-demo">
-                                                <input id="radio3" name="size" type="radio">
+                                                <input id="radio3" name="size" type="radio" checked>
                                                 <label for="radio3" class="custom-radio">
                                                     More than 10
                                                 </label>
@@ -200,21 +201,44 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label">What support do you require from Tata Pravesh <span class="clr-gray">(Optional)</span></label>
-                                        <div class="radio-wrap cm-flex">
+                                        <label class="form-label typ-bold">When do you need it? <span class="clr-gray">(Optional)</span></label>
+                                        <div class="radio-wrap typ-book-wrap">
                                             <div class="bs-radio typ-book-demo">
+                                                <input id="need1" name="need" type="radio">
+                                                <label for="need1" class="custom-radio">
+                                                    Less than 3 Months
+                                                </label>
+                                            </div>
+                                            <div class="bs-radio typ-book-demo">
+                                                <input id="need2" name="need" type="radio" checked>
+                                                <label for="need2" class="custom-radio">
+                                                    3-4 months
+                                                </label>
+                                            </div>
+                                            <div class="bs-radio typ-book-demo">
+                                                <input id="need3" name="need" type="radio" >
+                                                <label for="need3" class="custom-radio">
+                                                    More than 4 months
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label typ-bold">What support do you require from Tata Pravesh <span class="clr-gray">(Optional)</span></label>
+                                        <div class="radio-wrap cm-flex">
+                                            <div class="bs-radio typ-book-demo typ2-book-demo">
                                                 <input id="radio11" name="size" type="radio">
                                                 <label for="radio11" class="custom-radio">
                                                     Schedule product demo and need product catalogue 
                                                 </label>
                                             </div>
-                                            <div class="bs-radio typ-book-demo">
+                                            <div class="bs-radio typ-book-demo typ2-book-demo">
                                                 <input id="radio12" name="size" type="radio">
                                                 <label for="radio12" class="custom-radio">
                                                     Schedule sales team visit and need product catalogue
                                                 </label>
                                             </div>
-                                            <div class="bs-radio typ-book-demo">
+                                            <div class="bs-radio typ-book-demo typ2-book-demo">
                                                 <input id="radio13" name="size" type="radio">
                                                 <label for="radio13" class="custom-radio">
                                                     Need product catalogue only
@@ -223,22 +247,22 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label">What is the size of your house</label>
-                                        <div class="radio-wrap cm-flex">
-                                            <div class="bs-radio typ-book-demo">
-                                                <input id="radio21" name="size" type="radio">
+                                        <label class="form-label typ-bold">What is the size of your house</label>
+                                        <div class="radio-wrap typ-book-wrap">
+                                            <div class="bs-radio typ-book-demo typ-w-100">
+                                                <input id="radio21" name="house" type="radio">
                                                 <label for="radio21" class="custom-radio">
                                                     Less than 1000 sq.ft
                                                 </label>
                                             </div>
-                                            <div class="bs-radio typ-book-demo">
-                                                <input id="radio22" name="size" type="radio">
+                                            <div class="bs-radio typ-book-demo typ-w-100">
+                                                <input id="radio22" name="house" type="radio">
                                                 <label for="radio22" class="custom-radio">
                                                     1000-2000 sq.ft
                                                 </label>
                                             </div>
-                                            <div class="bs-radio typ-book-demo">
-                                                <input id="radio23" name="size" type="radio">
+                                            <div class="bs-radio typ-book-demo typ-w-100">
+                                                <input id="radio23" name="house" type="radio" checked>
                                                 <label for="radio23" class="custom-radio">
                                                     More than 2000 sq.ft.
                                                 </label>
@@ -280,12 +304,12 @@
                                     <tbody>
                                         <!-- Item 1 -->
                                         <tr class="sepretor">
-                                            <td class="text-left list-item">₹72,395 per door</td>
+                                            <td class="text-left list-item">₹72,395 <span class="clr-grey">per door</span></td>
                                             <td class="text-left list-item">10</td>
                                         </tr>
                                         <tr class="sepretor">
-                                            <td class="text-left list-item">Total</td>
-                                            <td class="text-left list-item">₹7,20,000</td>
+                                            <td class="text-left list-item no-border ">Total</td>
+                                            <td class="text-left list-item no-border ">₹7,20,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -357,7 +381,5 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     
-
-    <!-- endbuild -->
-  </body>
+</body>
 </html>

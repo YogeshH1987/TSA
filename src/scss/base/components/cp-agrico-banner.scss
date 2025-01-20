@@ -1,0 +1,58 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-agrico-banner {
+  position: relative;
+  .img-wrap {
+    width: 100%;
+    height: 28rem;
+    img{
+      height: 100%;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      height: 19.2rem;
+    }
+  }
+  .banner-logo {
+    position: absolute;
+    height: 6.1rem;
+    right:15.1rem;
+    top: 3.1rem;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    @media only screen and (max-width: $media-mobile) {
+      height: 2.4rem;
+      right:1.6rem;
+      top: 1.6rem;
+    }
+  }
+  .title {
+    position: absolute;
+    left:10rem;
+    top: 6.8rem;
+    max-width: 55.8rem;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    color: $clr-root;
+    font-family: $font-semiBold;
+    @media only screen and (max-width: $media-mobile) {
+      line-height: 2.8rem;
+      font-size: 2rem;
+      top: 3.6rem;
+      left: 1.6rem;
+      max-width: 20rem;
+    }
+  }
+  &.typ-wiron{
+    .title{
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 2.8rem;
+        top: 5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-design-card{
+    max-width: 29.5rem;
+    @include border-radius(1.6rem);
+    border: 1px solid $clr-border;
+    @include transition(all, 2s, linear);
+    @media only screen and (max-width: $media-mobile) {
+        @include border-radius(1.2rem);
+    }
+    &:hover{
+        box-shadow: 0px 8px 24px 0px #00000014;
+        border: 2px solid $clr-border
+    }
+    .img-wrap{
+        @include border-radius(1.6rem);
+        height: 19.8rem;
+        display: block;    
+        img {
+            height: 100%;
+            @include border-radius(1.6rem);
+            object-fit: cover;
+        }
+        @media only screen and (max-width: $media-mobile) {
+            height: 15.3rem;
+            @include border-radius(1.2rem);
+            img{
+                @include border-radius(1.2rem);
+            }
+        }
+    }
+    .content-wrap{
+        padding: 2rem 2rem 1.6rem;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem;
+        }
+        .desg-name{
+            font-family: $font-semiBold;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            color: $clr-base;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $clr-border;
+            @media only screen and (max-width: $media-mobile) {
+                line-height: 3rem;
+            }
+        }
+        .detail-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2.4rem;
+            @media only screen and (max-width: $media-mobile) {
+                gap: 1.6rem;
+            }
+            .detail-item{
+                width: 45%;
+                // border-bottom: 1px solid $clr-border;    
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -1.2rem;
+                    left: 0;
+                    background: $clr-border;
+                    width: 100%;
+                    height: 1px;
+                }
+                &:nth-child(3),
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }                        
+            }
+        }
+        .detail-title{
+            font-family: $font-regular;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-secondary;
+            margin-bottom: 0.4rem;
+        }
+        .detail-desc{
+            font-family: $font-semiBold;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-base;
+        }
+    }
+}

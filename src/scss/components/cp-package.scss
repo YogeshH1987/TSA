@@ -1,11 +1,19 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.package-wrap{
+.package-wrap {
     background: #F3F4F6;
     border-radius: 16px;
     padding: 2rem;
-    .title{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $media-sm) {
+        margin: 0 -1.6rem 2rem;
+        border-radius: 0;
+    }
+
+    .title {
         font-size: 1.6rem;
         line-height: 24px;
         font-family: $font-semiBold;
@@ -14,26 +22,36 @@
     }
 }
 
-.package-list{
+.package-list {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
-.cp-package{
-    width: 12.5rem;
+.cp-package {
+    width: 23%;
     text-align: center;
-    .img-wrap{
+    padding: 0 2.4rem;
+
+    @media only screen and (max-width: $media-sm) {
+        width: 30.9%;
+        padding: 0;
+    }
+
+    .img-wrap {
         width: 6.4rem;
-        height: 6.4rem;   
+        height: 6.4rem;
         border-radius: 12px;
         border: 1px solid #dedede;
         margin: 0.8rem auto;
-     }
-     .title{
+    }
+
+    .title {
         font-size: 1.2rem;
         font-family: $font-regular;
         color: $clr-base;
         line-height: 16px;
-     }
+        margin-bottom: 0;
+    }
 }

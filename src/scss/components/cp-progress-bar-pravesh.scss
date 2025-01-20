@@ -8,7 +8,7 @@ justify-content: flex-start;
 gap: 0.8rem;
 margin-bottom: 2rem;
 .progress-bar{
-    width: 93px;
+    width:16%;
     height: 4px;
     background: #ccc;
     border-radius: 8px;
@@ -17,6 +17,9 @@ margin-bottom: 2rem;
     }
     &.blue{
         background: $clr-primary;
+    }
+    @media only screen and (max-width: $media-mobile) {
+        width: 16%;
     }
 }
 }

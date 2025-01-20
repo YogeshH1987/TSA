@@ -1,0 +1,27 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-about-award {
+    text-align: center;
+    padding: 1.6rem;
+
+    .img-wrap {
+        max-width: 12.5rem;
+        margin: auto;
+    }
+
+    .title {
+        color: #000;
+        font-size: 2rem;
+        font-family: $font-semiBold;
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .desc {
+        color: #000;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+}

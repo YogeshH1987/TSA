@@ -1,0 +1,170 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-architectural-plans-banner {
+    position: relative;
+    height: 220px;
+    // overflow: hidden;
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0.1deg, rgba(0, 0, 0, 0) -7.49%, rgba(0, 0, 0, 0.72) 59.57%);
+
+        @media only screen and (max-width: $media-mobile) {
+            background: linear-gradient(358.29deg, rgba(0, 0, 0, 0) -61.95%, rgba(0, 0, 0, 0.81) 81.22%);
+
+        }
+    }
+
+    img {
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .banner-title-wrap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // margin: 0px auto;
+        padding: 0px 0 4rem;
+        // max-width: 124rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        height: 100%;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+            padding: 0rem 0 2rem;
+            max-width: auto;
+        }
+
+        .head-sec {
+            display: flex;
+            align-items: center;
+            gap: 3.2rem;
+            max-width: 124rem;
+            margin: 0px auto;
+            width: 100%;
+
+            @media only screen and (max-width: $media-mobile) {
+                gap: 1.2rem;
+                flex-direction: column;
+                align-items: self-start;
+                padding: 0rem 1.6rem;
+            }
+
+            .title {
+                font-size: 2.8rem;
+                color: #fff;
+                font-family: $font-semiBold;
+                display: flex;
+                align-items: center;
+                gap: 1.6rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 2rem;
+                }
+
+                .icon {
+                    font-size: 2.4rem;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    color: #fff;
+                }
+            }
+
+            .btn-outline {
+                color: #fff;
+                border-color: #fff;
+            }
+
+            .desc {
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            &.typ-filter {
+                @media only screen and (max-width: $media-mobile) {
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: initial;}
+            }
+        }
+
+        .btn-filter {
+            min-width: auto;
+            padding: 1rem 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            position: relative;
+            height: 4rem;
+
+            .icon {
+                font-size: 1.4rem;
+            }
+
+            .count {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: 1px solid #FFFFFF;
+                background: #D2042D;
+                position: absolute;
+                color: #FFFFFF;
+                font-size: 1rem;
+                font-family: $font-regular;
+                right: -5px;
+                top: -5px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    &.typ-2 {
+        height: 272px;
+
+        .banner-title-wrap {
+            padding: 0px 0 9rem;
+
+            .head-sec {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2.4rem;
+
+                .title {
+                    font-size: 4rem;
+
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 2.4rem;
+                    }
+
+
+                }
+            }
+        }
+
+        img {
+            height: 272px;
+        }
+
+    }
+}

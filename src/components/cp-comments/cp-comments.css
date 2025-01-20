@@ -1,0 +1,45 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-comments .cp-commnents-wrap {
+  margin-top: 1.6rem; }
+  .cp-comments .cp-commnents-wrap .comments-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    .cp-comments .cp-commnents-wrap .comments-head .user-details {
+      font-size: 1.4rem;
+      font-family: "Poppins Semibold";
+      color: #333333;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem; }
+      .cp-comments .cp-commnents-wrap .comments-head .user-details .user {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        overflow: hidden; }
+        .cp-comments .cp-commnents-wrap .comments-head .user-details .user img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .cp-comments .cp-commnents-wrap .comments-text {
+    margin-bottom: 2rem;
+    padding-right: 15%; }
+    @media only screen and (max-width: 768px) {
+      .cp-comments .cp-commnents-wrap .comments-text {
+        padding-right: 0; } }
+    .cp-comments .cp-commnents-wrap .comments-text .desc {
+      line-height: 2.8rem;
+      color: #333333;
+      font-size: 1.6rem; }
+.cp-comments .link {
+  margin-top: 1.6rem; }
+
+/*# sourceMappingURL=cp-comments.css.map */

@@ -8,19 +8,18 @@
   display: flex;
   justify-content: flex-start;
   gap: 0.8rem;
-  margin-bottom: 2rem;
-}
-.cp-progress-bar-pravesh .progress-bar {
-  width: 93px;
-  height: 4px;
-  background: #ccc;
-  border-radius: 8px;
-}
-.cp-progress-bar-pravesh .progress-bar.green {
-  background: #00A441;
-}
-.cp-progress-bar-pravesh .progress-bar.blue {
-  background: #3D7EDB;
-}
+  margin-bottom: 2rem; }
+  .cp-progress-bar-pravesh .progress-bar {
+    width: 16%;
+    height: 4px;
+    background: #ccc;
+    border-radius: 8px; }
+    .cp-progress-bar-pravesh .progress-bar.green {
+      background: #00A441; }
+    .cp-progress-bar-pravesh .progress-bar.blue {
+      background: #3D7EDB; }
+    @media only screen and (max-width: 768px) {
+      .cp-progress-bar-pravesh .progress-bar {
+        width: 16%; } }
 
 /*# sourceMappingURL=cp-progress-bar-pravesh.css.map */

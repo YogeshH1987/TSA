@@ -1,6 +1,7 @@
 .bs-modal {
     position: relative;
     height: 100%;
+
     &.fade {
         position: fixed;
         top: 0;
@@ -14,6 +15,7 @@
         // overflow-x: hidden;
         outline: 0;
     }
+
     &.modal-show {
         opacity: 1;
         visibility: visible;
@@ -23,23 +25,28 @@
         transition: opacity 0.1s ease-in-out;
         -webkit-transition: opacity 0.1s ease-in-out;
         -moz-transition: opacity 0.1s ease-in-out;
-        @media only screen and (max-width: $media-mobile)  {
+
+        @media only screen and (max-width: $media-mobile) {
             width: 100%;
         }
+
         .modal-dialog {
             @include transform(translate(-50%, -50%));
         }
     }
+
     .modal-body {
         flex: none;
         padding: 0;
         height: 100%;
+
         .highlightText {
             display: inline-block;
             color: $clr-para;
             font-family: $font-bold;
         }
     }
+
     .modal-dialog {
         max-width: 100%;
         width: 100%;
@@ -53,11 +60,13 @@
         border-radius: 0px;
         padding: 1.5rem;
     }
+
     .modal-content {
         height: auto;
         border: 0;
-       
+
     }
+
     .close-btn {
         position: absolute;
         top: 16px;
@@ -66,11 +75,13 @@
         color: #000000;
         padding: 0;
         z-index: 5;
+
         @media only screen and (max-width: $media-mobile) {
             top: 1.5rem;
             right: 1.5rem;
         }
-        &.video-close{
+
+        &.video-close {
             right: 0;
             left: 0;
             bottom: 18px;
@@ -78,134 +89,348 @@
             text-decoration: underline;
             font-family: $font-medium;
             color: $clr-primary;
-            top:auto;
+            top: auto;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.2rem;
                 bottom: 5px;
             }
-            .cmp-button__text{
+
+            .cmp-button__text {
                 font-size: 1.6rem;
-            text-decoration: underline;
-            font-family: $font-medium;
-            color: $clr-primary;
+                text-decoration: underline;
+                font-family: $font-medium;
+                color: $clr-primary;
             }
         }
     }
+
     &.type-md {
         .small-title {
             font-size: 4rem;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2.4rem;
             }
         }
+
         .modal-dialog {
             padding: 3rem;
             max-width: 47rem;
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 2rem 1.5rem;
                 height: 100%;
             }
         }
     }
+
     &.type-lg {
         .small-title {
             font-size: 2rem;
             font-family: $font-semiBold;
             border-bottom: 1px solid $clr-border;
-            padding: 1.6rem ;
+            padding: 1.6rem;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2.4rem;
             }
         }
-        .modal-body{
+
+        .modal-body {
             padding: 3rem;
         }
+
         .modal-dialog {
             padding: 0;
             max-width: 82rem;
+
             @media only screen and (max-width: $media-mobile) {
                 height: 100%;
             }
         }
-        .modal-content{
+
+        .modal-content {
             @media only screen and (max-width: $media-mobile) {
                 height: 100%;
             }
         }
     }
-    &.type-prod-thumb{
-        .modal-body{
+
+    &.type-prod-thumb {
+        .modal-body {
             padding: 0;
         }
     }
-    &.type-testi-video{
-        .modal-dialog{
+
+    &.type-testi-video {
+        .modal-dialog {
             width: 896px;
             max-width: 98rem;
+
             @media only screen and (max-width: $media-mobile) {
-                height: auto; 
+                height: auto;
                 width: 375px;
                 max-width: 38rem;
 
             }
         }
-        .modal-body{
+
+        .modal-body {
             padding: 2rem 0 5rem;
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 1.5rem 0 3rem;
             }
         }
-        .video-wrap{
+
+        .video-wrap {
             padding: 0;
-            .video-container{
-                iframe{
+
+            .video-container {
+                iframe {
                     height: 477px;
                     width: 848px;
+
                     @media only screen and (max-width: $media-mobile) {
                         height: 198px;
                         width: 343px;
                     }
                 }
             }
-           
+
         }
-       
+
     }
-    &.typ-small{
+
+    &.typ-small {
         max-width: 400px;
         max-height: 328px;
+
         @media only screen and (max-width: $media-mobile) {
             max-width: 343px;
-        max-height: 240px;
+            max-height: 240px;
         }
-        .modal-body{
+
+        .modal-body {
             @media only screen and (max-width: $media-mobile) {
                 padding: 2.4rem;
             }
         }
+
         .modal-dialog {
             border-radius: 12px;
         }
     }
-      
+
+    &.typ-share {
+        max-width: 640px;
+        max-height: 328px;
+
+        &.modal-show {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media only screen and (max-width: $media-mobile) {
+            bottom: 0;
+            @include transform(translate(-50%, -0%));
+            top: auto;
+        }
+
+        .modal-content {
+            .desc {
+                margin-bottom: 2rem;
+                color: $clr-base;
+            }
+        }
+
+        .close-btn {
+            top: 28px;
+            right: 30px;
+            color: #999;
+
+            @media only screen and (max-width: $media-mobile) {
+                top: 15px;
+                right: 20px;
+            }
+        }
+
+        .modal-body {
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.6rem;
+            }
+        }
+
+        .modal-dialog {
+            @include border-radius(12px);
+
+            @media only screen and (max-width: $media-mobile) {
+                @include border-radius(12px 12px 0 0);
+                @include transform(translate(-50%, -0%));
+                bottom: 0;
+                top: auto;
+                height: auto;
+            }
+        }
+    }
+
+    &.typ-about-gallery {
+        min-width: 670px;
+        max-height: 600px;
+
+        @media only screen and (max-width: $media-mobile) {
+            bottom: 0;
+            @include transform(translate(-50%, -0%));
+            top: auto;
+            min-width: 100%;
+        }
+
+        &.modal-show {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .modal-content {
+            .desc {
+                margin-bottom: 0rem;
+                color: $clr-base;
+                font-family: $font-semiBold;
+
+                &.typ-small {
+                    font-size: 1.2rem;
+                    font-family: $font-regular;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .close-btn {
+            top: 28px;
+            right: 30px;
+            color: #999;
+
+            @media only screen and (max-width: $media-mobile) {
+                top: 15px;
+                right: 20px;
+            }
+        }
+
+        .modal-body {
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.6rem;
+            }
+        }
+
+        .modal-dialog {
+            @include border-radius(12px);
+
+            @media only screen and (max-width: $media-mobile) {
+                @include border-radius(12px 12px 0 0);
+                @include transform(translate(-50%, -0%));
+                bottom: 0;
+                top: auto;
+                height: auto;
+            }
+        }
+
+        .nestudio-container {
+            background-color: #F3F4F6;
+            padding: 2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0px;
+                background-color:transparent;
+            }
+        }
+
+        .thumb-nestudio-container {
+            position: relative;
+
+            .swiper-button-next-thumb,
+            .swiper-button-prev-thumb {
+                color: #333333;
+                cursor: pointer;
+                z-index: 1;
+                width: 2.8rem;
+                height: 2.8rem;
+                margin: 0;
+                border: 1px solid #333333;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+            }
+
+            .swiper-button-prev-thumb {
+                left: var(--swiper-navigation-sides-offset, 10px);
+                right: auto;
+            }
+
+            .swiper-button-next-thumb {
+                right: var(--swiper-navigation-sides-offset, 10px);
+                left: auto;
+            }
+
+            .swiper-button-next-thumb.swiper-button-disabled,
+            .swiper-button-prev-thumb.swiper-button-disabled {
+                color: #b3b3b3;
+                opacity: 0.5;
+            }
+
+            .swiper-button-next-thumb:after,
+            .swiper-button-prev-thumb:after {
+                font-size: 2.4rem;
+                font-weight: normal;
+                font-family: 'icomoon';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .swiper-button-prev-thumb:after {
+                content: "\e91e";
+            }
+
+            .swiper-button-next-thumb:after {
+                content: '\e91d';
+            }
+
+            @media only screen and (max-width: $media-mobile) {
+                display: none;
+            }
+        }
+    }
+
     .bs-applicant-form {
         @media only screen and (max-width: $media-mobile) {
             .title {
                 font-size: 2rem;
             }
+
             .sub-title {
                 font-size: 1.6rem;
             }
         }
     }
-    .video-wrap{
+
+    .video-wrap {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 4rem;
+
         @media only screen and (max-width: $media-mobile) {
             padding: 5rem 2.4rem;
         }
     }
-   
+
 }

@@ -417,11 +417,13 @@
     .tab-container {
       background: #F3F4F6;
       margin-top: 5.6rem;
+
       @media only screen and (max-width: $media-mobile) {
         padding-top: 0;
         padding-bottom: 0;
         margin-top: 2.4rem;
       }
+
       .container {
         display: flex;
         transform: initial;
@@ -433,7 +435,7 @@
           align-items: normal;
           flex-direction: column;
           padding: 2.4rem 1.6rem;
-          
+
         }
 
         .cp-eCommerce-home-banner {
@@ -456,7 +458,11 @@
   }
 
   &.typ-offer {
+    margin-top: 1.2rem;
+
     .tab-container {
+      padding-top: 1.2rem;
+
       @media only screen and (max-width: $media-mobile) {
         padding-top: 0rem;
       }
@@ -475,74 +481,243 @@
     }
   }
   &.typ-blog-filter{
+  &.typ-blog-filter {
     display: flex;
     flex-wrap: wrap;
-    .tab-list{
-     display: block;
-     width: 45%;
-     border-right: 1px solid #dedede;
-     height: 100vh;
-     background-color:#FFFBF2 ;
-     .tab-item{
-      .title{
-        font-size: 1.4rem;
-        color: $clr-base;
-        font-family: $font-semiBold;
-        border-bottom: 1px solid #FFE399;
-        padding: 1.6rem 3.2rem;
-        position: relative;
-        background: transparent;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-        text-shadow: none;
-      }
-     
-      &.active{
+
+    .tab-list {
+      display: block;
+      width: 45%;
+      border-right: 1px solid #dedede;
+      height: 100vh;
+      background-color: #FFFBF2;
+
+      .tab-item {
+        .title {
+          font-size: 1.4rem;
+          color: $clr-base;
+          font-family: $font-semiBold;
+          border-bottom: 1px solid #FFE399;
+          padding: 1.6rem 3.2rem;
+          position: relative;
+          background: transparent;
+          border-radius: 0;
+          border-left: 0;
+          border-right: 0;
+          text-shadow: none;
+        }
+
+        &.active {
           background: #FFE399;
           border-bottom: 1px solid #A77800;
+        }
+
+        .count {
+          background-color: $clr-secondary;
+          color: $clr-root;
+          font-size: 1.2rem;
+          font-family: $font-medium;
+          border-radius: 26px;
+          right: 59px;
+          width: 20px;
+          height: 20px;
+          top: 13px;
+          text-align: center;
+          padding: 0.2rem;
+        }
       }
-      .count{
-        background-color: $clr-secondary;
-        color: $clr-root;
-        font-size: 1.2rem;
-        font-family: $font-medium;
-        border-radius: 26px;
-        right: 59px;
-      width: 20px;
-      height: 20px;
-      top: 13px;
-      text-align: center;
-      padding: 0.2rem;
-      }
-     }
     }
-    .tab-container{
+
+    .tab-container {
       padding-top: 0;
-      .filter-menu-list{
+
+      .filter-menu-list {
         right: 42px;
         top: 81px;
         background: $clr-root;
         padding: 1rem;
         z-index: 2;
         height: 74%;
+
         @media only screen and (max-width: $media-mobile) {
-            right: -20px;
-            top: 65px;
-            z-index: 2;
+          right: -20px;
+          top: 65px;
+          z-index: 2;
         }
-        &.active{
-            display: block;
+
+        &.active {
+          display: block;
         }
+      }
+
+      .title {
+        font-size: 1.6rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+      }
     }
-    .title{
-      font-size: 1.6rem;
-      font-family: $font-semiBold;
-      color:$clr-base;
   }
+
+  &.typ-help-policies {
+    width: 100%;
+
+    .tab-list {
+      gap: 1.2rem;
+
+      .tab-item {
+        .title {
+          text-transform: capitalize;
+          display: block;
+        }
+
+        &:hover,
+        &.active {
+          .title {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.typ-about {
+    .tab-item {
+
+      &:hover,
+      &.active {
+        .title {
+          text-shadow: #fff 0.9px 0 0.9px !important;
+        }
+      }
+    }
+  }
+
+  &.typ-about-timeline {
+    .tab-list {
+      .tab-item {
+        .title {
+          font-size: 6rem;
+          background-color: transparent;
+          border: 0;
+          color: #DEDEDE;
+          line-height: normal;
+          font-family: $font-semiBold;
+          transition: ease-in-out 1s;
+          padding: 0.6rem 1rem;
+
+          @media only screen and (max-width: $media-mobile) {
+            font-size: 4rem;
+            padding: 0.6rem 0rem;
+          }
+        }
+
+        &:hover {
+          .title {
+            font-size: 6rem;
+            color: #DEDEDE;
+            text-shadow: none;
+
+            @media only screen and (max-width: $media-mobile) {
+              font-size: 4rem;
+            }
+
+          }
+        }
+
+        &.active {
+          .title {
+            border: none;
+            font-size: 8rem;
+            color: #A77800;
+            text-shadow: none;
+
+            @media only screen and (max-width: $media-mobile) {
+              font-size: 4.8rem;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  &.typ-architect-plan {
+    .tab-list {
+      .tab-item {
+        .title {
+          text-transform: capitalize;
+          display: flex;
+          gap: 1rem;
+          padding: 1.6rem 1.6rem;
+          align-items: center;
+        }
+
+        &:hover,
+        &.active {
+          .title {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .desc {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+      }
+
+      .cp-checkbox {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 1rem;
+
+        label {
+          font-size: 1.4rem;
+          color: $clr-base;
+        }
+      }
+    }
+  }
+
+  &.typ-floor-plan {
+    .tab-list {
+      justify-content: center;
+      margin-top: 2.4rem;
+    }
+
+    .tab-container {
+      padding-top: 0rem;
+    }
+
+    .tab-content {
+
+      .img-wrap {
+        height: 100%;
+        height: calc(100vh - 16rem);
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &.typ-architect-pdp {
+    margin-top: 1.6rem;
+    .tab-list {
+      .tab-item {
+        .title {
+          padding: 1.6rem 1.2rem;
+          display: block;
+          text-transform: capitalize;
+        }
+      }
     }
   }
 }
+
 
 .cp-inside-tab {
   .tab-list {
@@ -569,5 +744,6 @@
       padding: 1rem 4.5rem;
     }
   }
- 
+
+
 }

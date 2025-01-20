@@ -3,6 +3,7 @@
 
 .cp-form {
   margin-top: 3.2rem;
+
   .feedback-title {
     font-family: $font-medium;
     font-size: 1.6rem;
@@ -75,44 +76,73 @@
         display: block;
       }
 
-      .form-control {
-        width: 100%;
-        padding: 1.2rem 1.6rem;
-        border: 1px solid $clr-border;
+  .form-group {
+    .form-label {
+      font-family: $font-regular;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1.2rem 1.6rem;
+      border: 1px solid $clr-border;
+      font-family: $font-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-radius: 1.2rem;
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1; /* Firefox */
         font-family: $font-regular;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        border-radius: 1.2rem;
-        
-       
+      }
+      
+      &::-ms-input-placeholder { /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
       }
 
-      .form-textarea {
-        width: 100%;
-        padding: 1.2rem 1.6rem;
-        border: 1px solid $clr-border;
+    }
+
+    .form-textarea {
+      width: 100%;
+      padding: 1.2rem 1.6rem;
+      border: 1px solid $clr-border;
+      font-family: $font-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-radius: 1.2rem;
+      min-height: 15.6rem;
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1; /* Firefox */
         font-family: $font-regular;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        border-radius: 1.2rem;
-        min-height: 15.6rem;
+      }
       
+      &::-ms-input-placeholder { /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
       }
-      .err-mgs {
-        color: $clr-secondary;
-        font-family: $font-medium;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-bottom: 2.4rem;
-        display: block;
-      }
-    } 
+    }
+
+    .err-mgs {
+      color: $clr-secondary;
+      font-family: $font-medium;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.4rem;
+      display: block;
+    }
   }
+
   .act-wrap {
     .btn-submit {
       width: 100%;
     }
   }
+
   .disabled {
     background-color: #ededed;
     color: #b3b3b3;
@@ -127,14 +157,17 @@
     line-height: 2rem;
     margin-bottom: 0.8rem;
   }
+
   .star-rating {
     padding-bottom: 2.4rem;
     border-bottom: 1px solid $clr-border;
     margin-bottom: 2.4rem;
+
     .icon {
       font-size: 4.8rem;
       color: #cccccc;
     }
+
     .star-selected {
       color: #ffb800;
     }
@@ -180,4 +213,133 @@
       }
     }
   }
+    }
+  }
+
+  &.typ-newsletter {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0;
+
+    .form-group {
+      width: 100%;
+    }
+
+    .btn {
+      min-width: auto
+    }
+  }
+
+  &.typ-comment {
+    padding: 1.2rem 1.8rem;
+    @include border-radius(1.6rem);
+    background-color: #F3F4F6;
+    margin-top: 0;
+
+    @media only screen and (max-width: $media-mobile) {
+      border-radius: 0;
+      margin: 2rem -1.5rem 3.8rem;
+      order: 3;
+    }
+
+    .form-group {
+      position: relative;
+
+      textarea {
+        resize: none;
+      }
+
+      .icon {
+        position: absolute;
+        right: 1.2rem;
+        top: 6px;
+        width: 3.2rem;
+        height: 3.2rem;
+        color: #CCCCCC;
+        font-size: 3.2rem;
+        margin: auto;
+      }
+    }
+  }
+
+  &.typ-help-policies {
+    .desc {
+      font-size: 1.4rem;
+      color: $clr-base;
+    }
+
+    .form-group {
+      margin-bottom: 2.4rem;
+
+      .form-control {
+        color: $clr-base;
+        font-family: $font-medium;
+
+      }
+
+      .select-dropdown {
+        width: 100%;
+
+        .select-dropdown-button {
+
+          width: 100%;
+
+          .select-text {
+            color: $clr-base;
+            font-family: $font-medium;
+          }
+
+          .zmdi-chevron-down {
+            &::after {
+              font-size: 1.4rem;
+            }
+          }
+        }
+
+        .select-dropdown-list-item {
+          color: $clr-base;
+          font-family: $font-medium;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .typ-request-submit {
+      min-width: 100%;
+    }
+
+  }
+
+  .typ-upload-file {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    justify-content: center;
+
+    .btn-text {
+      border: none;
+      padding: 0;
+      border-bottom: 1px solid #3D7EDB;
+      min-width: auto;
+      color: #3D7EDB;
+      border-radius: 0;
+    }
+  }
+
+  &.upload-supporting-files {
+    display: none;
+    margin-top: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .error-msg {
+    color: #D2042D;
+    font-size: 1.2rem;
+    font-family: "Poppins Regular";
+  }
+  .captcha{ margin-top: 1.6rem;}
+  &.mt-0{ margin-top: 0;}
 }

@@ -1,0 +1,69 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-about-timeline {
+    .cont-wrap {
+        padding-right: 2rem;
+
+        .title {
+            color: $clr-base;
+            font-size: 1.6rem;
+            font-family: $font-semiBold;
+            margin-top: 1.6rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .month {
+            color: #D2042D;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-family: $font-medium;
+        }
+
+        .desc {
+            color: #666666;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    .timeline-line {
+        display: block;
+        width: 100%;
+        height: 0.4rem;
+        background-color: #CCCCCC;
+        display: block;
+        position: relative;
+        margin-top: 8px;
+        margin-bottom: 40px;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 19px;
+            height: 19px;
+            background: #D2042D;
+            border-radius: 50%;
+            content: "";
+            z-index: 1;
+        }
+    }
+}
+
+.typ-about-timeline {
+    .swiper-slide {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+
+        @media only screen and (max-width: $media-mobile) {
+            flex-basis: initial;
+            flex-grow: 0;
+        }
+    }
+}

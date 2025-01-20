@@ -5,44 +5,52 @@
 /*opacity*/
 /*opacity- end*/
 .cp-brand {
-  display: flex;
-}
-@media only screen and (max-width: 768px) {
-  .cp-brand {
-    flex-wrap: wrap;
-  }
-}
-.cp-brand .brand-list-item {
-  background: #FFFFFF;
-  width: 190px;
-  height: 190px;
-  border-radius: 16px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #DEDEDE;
-  margin-right: 2rem;
-  padding: 3rem;
-}
-@media only screen and (max-width: 768px) {
+  display: flex; }
+  @media only screen and (max-width: 768px) {
+    .cp-brand {
+      flex-wrap: wrap; } }
   .cp-brand .brand-list-item {
-    width: 10.6rem;
-    height: 10.6rem;
-    margin-right: 1rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-.cp-brand .brand-list-item img {
-  width: 14rem;
-  height: 10rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-brand .brand-list-item img {
-    width: 8.8rem;
-    height: 6.3rem;
-  }
-}
+    background: #FFFFFF;
+    width: 190px;
+    height: 190px;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DEDEDE;
+    margin-right: 2rem;
+    padding: 3rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-brand .brand-list-item {
+        width: 10.6rem;
+        height: 10.6rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        margin-bottom: 2rem; } }
+    .cp-brand .brand-list-item img {
+      width: 14.0rem;
+      height: 10rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-brand .brand-list-item img {
+          width: 8.8rem;
+          height: 6.3rem; } }
+  .cp-brand.typ-about-brand {
+    flex-wrap: wrap;
+    gap: 2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-brand.typ-about-brand {
+        gap: 1.2rem; } }
+    .cp-brand.typ-about-brand .brand-list-item {
+      width: 22.9%;
+      margin: 0;
+      padding: 2.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-brand.typ-about-brand .brand-list-item {
+          width: 48%;
+          border-radius: 1.2rem; } }
+      .cp-brand.typ-about-brand .brand-list-item img {
+        height: auto;
+        width: 100%; }
 
 /*# sourceMappingURL=cp-brand.css.map */

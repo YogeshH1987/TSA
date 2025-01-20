@@ -56,6 +56,35 @@
     }
   }
 
+  &.typ-col-about {
+    flex-wrap: wrap;
+    justify-content: initial;
+    align-items: initial;
+
+    .grid-col {
+      width: 31.9%;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+      }
+    }
+  }
+
+  &.typ-about-news {
+    height: auto;
+
+    @media only screen and (max-width: $media-mobile) {
+      flex-wrap: initial;
+      gap: 0;
+      flex-direction: initial;
+      height: 100%;
+    }
+
+    .grid-col {
+      height: auto;
+    }
+  }
+
   &.typ-explore {
     align-items: center;
     justify-content: space-around;
@@ -76,6 +105,10 @@
           display: none;
         }
       }
+    }
+
+    &.typ-about {
+      border: none;
     }
   }
 
@@ -136,12 +169,20 @@
     .grid-col {
       &:first-child {
         width: 40%;
-        @media only screen and (max-width: $media-mobile) { width: 100%; padding: 0 1.6rem 1.6rem;    background-color: #FFFBF2; } 
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+          padding: 0 1.6rem 1.6rem;
+          background-color: #FFFBF2;
+        }
       }
 
       &:last-child {
         width: 60%;
-        @media only screen and (max-width: $media-mobile) { width: 100%;}
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
       }
     }
   }
@@ -167,4 +208,172 @@
       }
     }
   }
+  &.typ-about-brand {
+    .grid-col {
+      @media only screen and (max-width: $media-mobile) {
+        width: 100% !important;
+      }
+
+      &:first-child {
+        width: 34%;
+      }
+
+      &:last-child {
+        width: 66.66%;
+      }
+    }
+  }
+
+  &.typ-about-icon {
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: initial;
+      flex-wrap: wrap;
+    }
+
+    .grid-col {
+      @media only screen and (max-width: $media-mobile) {
+        width: 48% !important;
+      }
+
+      .cp-icon-details {
+        &::after {
+          @media only screen and (max-width: $media-mobile) {
+            top: 39%;
+            height: 9rem;
+          }
+        }
+
+        .icon {
+          @media only screen and (max-width: $media-mobile) {
+            flex: 0 0 2rem;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        .cp-icon-details {
+          @media only screen and (max-width: $media-mobile) {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2rem;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .cp-icon-details {
+          @media only screen and (max-width: $media-mobile) {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2rem;
+          }
+
+          &::after {
+            @media only screen and (max-width: $media-mobile) {
+              content: none;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .cp-icon-details {
+          &::after {
+            @media only screen and (max-width: $media-mobile) {
+              top: 60%;
+            }
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .cp-icon-details {
+          &::after {
+            @media only screen and (max-width: $media-mobile) {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.typ-about-nestudio {
+    gap: 4.8rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media only screen and (max-width: $media-mobile) {
+      gap: 2.4rem 1rem;
+      flex-direction: initial;
+    }
+
+    .grid-col {
+      width: 32.2%;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 48%;
+      }
+    }
+  }
+
+  &.typ-col-4 {
+    @media only screen and (max-width: $media-mobile) {
+      gap: 1.2rem;
+      flex-direction: initial;
+      flex-wrap: wrap;
+    }
+
+    .grid-col {
+      width: 25%;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 48%;
+      }
+    }
+
+
+  }
+
+  &.typ-column-wrap-4 {
+    gap: 0;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: initial;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: 0;
+      margin-left: 0;
+      gap: 2rem;
+    }
+
+    .grid-col {
+      width: auto;
+      flex: 0 0 25%;
+      max-width: 25%;
+      padding: 0 1rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  &.typ-col-5 {
+    justify-content: initial;
+    flex-wrap: wrap;
+
+    .grid-col {
+      width: 48.7%;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+      }
+    }
+  }
+
 }

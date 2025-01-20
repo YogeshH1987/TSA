@@ -1,21 +1,25 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-video{
+.cp-video {
     @include border-radius(1.6rem);
     position: relative;
+
     .img-wrap {
         @include border-radius(1.6rem);
         height: 33.2rem;
         overflow: hidden;
-        img{
+
+        img {
             height: 100%;
         }
+
         @media only screen and (max-width: $media-mobile) {
             height: 19.2rem;
         }
     }
-    .content-wrap{
+
+    .content-wrap {
         position: absolute;
         top: 0;
         left: 0;
@@ -24,11 +28,13 @@
         padding: 4rem 4rem 3.2rem;
         width: 100%;
         height: 100%;
+
         @media only screen and (max-width: $media-mobile) {
             padding: 1.6rem;
         }
     }
-    .icon-wrap{
+
+    .icon-wrap {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -38,33 +44,38 @@
         color: $clr-root;
         padding: 0;
         display: inline-block;
+
         @media only screen and (max-width: $media-mobile) {
             font-size: 2.7rem;
         }
     }
-    .tag-list{
+
+    .tag-list {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 0.8rem;
-        .tag-item{
+
+        .tag-item {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
             gap: 0.8rem;
-            .tag{
+
+            .tag {
                 background: #D8E5F8;
                 @include border-radius(0.4rem);
                 font-family: $font-medium;
                 font-size: 1.2rem;
                 line-height: 1.6rem;
-                color: $clr-base; 
+                color: $clr-base;
                 padding: 0.4rem 0.8rem;
             }
         }
     }
-    .title{
+
+    .title {
         font-family: $font-medium;
         font-size: 2rem;
         line-height: 2.8rem;
@@ -74,29 +85,35 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+
         @media only screen and (max-width: $media-mobile) {
             font-size: 1.6rem;
             line-height: 2.4rem;
         }
     }
-    .post-date{
+
+    .post-date {
         position: absolute;
         bottom: 3.2rem;
+
         @media only screen and (max-width: $media-mobile) {
             bottom: 1.6rem;
         }
-        .post-detail{
+
+        .post-detail {
             color: $clr-root;
             font-family: $font-regular;
             font-size: 1.6rem;
             line-height: 2.4rem;
             padding: 0 1rem;
             position: relative;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.2rem;
                 line-height: 1.6rem;
             }
-            &::before{
+
+            &::before {
                 content: '';
                 background: $clr-root;
                 width: 1px;
@@ -106,12 +123,34 @@
                 @include transform(translateY(-50%));
                 left: 0rem;
             }
+
             &:first-child {
-                &::before{
-                    display: none; padding-left: 0;
+                &::before {
+                    display: none;
+                    padding-left: 0;
                 }
             }
         }
     }
-   
+
+    &.typ-architect {
+        overflow: hidden;
+        .content-wrap {
+            display: flex;
+            align-items: end;
+            background: rgba(0, 0, 0, 0.302);
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 13.8rem;
+                bottom: 0;
+            }
+            .title{ z-index: 1;}
+        }
+    }
 }

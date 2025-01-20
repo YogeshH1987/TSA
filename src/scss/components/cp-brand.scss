@@ -35,5 +35,13 @@
             }
         }
     }
+    &.typ-about-brand {
+        flex-wrap: wrap;
+        gap: 2rem;
+        @media only screen and (max-width: $media-mobile) {  gap: 1.2rem;}
+        .brand-list-item{ width: 22.9%; margin: 0; padding: 2.4rem; 
+            @media only screen and (max-width: $media-mobile) {    width: 48%; border-radius: 1.2rem;}
+            img{ height: auto; width: 100%;}}
+    }
     }
     

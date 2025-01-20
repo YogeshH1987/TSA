@@ -10,97 +10,81 @@
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.cp-icon-details::after {
-  content: "";
-  position: absolute;
-  right: -0.6rem;
-  top: 50%;
-  width: 1px;
-  height: 16rem;
-  background-color: #DEDEDE;
-  display: block;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-@media only screen and (max-width: 768px) {
+  align-items: center; }
   .cp-icon-details::after {
-    height: 7rem;
-  }
-}
-.cp-icon-details .icon {
-  width: 4.8rem;
-  height: 4.8rem;
-  padding: 0.5rem;
-  font-size: 2rem;
-  line-height: 4rem;
-  background: #D2042D;
-  color: #FFFFFF;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  margin-bottom: 2.4rem;
-  position: relative;
-}
-.cp-icon-details .icon::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 768px) {
+    content: "";
+    position: absolute;
+    right: -0.6rem;
+    top: 50%;
+    width: 1px;
+    height: 16rem;
+    background-color: #DEDEDE;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media only screen and (max-width: 768px) {
+      .cp-icon-details::after {
+        height: 7rem; } }
   .cp-icon-details .icon {
-    margin-bottom: 1.2rem;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-}
-.cp-icon-details .icon.icon-correct, .cp-icon-details .icon.icon-crown {
-  font-size: 1.5rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-icon-details .icon.icon-correct, .cp-icon-details .icon.icon-crown {
-    font-size: 0.8rem;
-  }
-}
-.cp-icon-details .sub-title {
-  color: #666666;
-  font-size: 2rem;
-  font-family: "Poppins Medium";
-  line-height: 2.2rem;
-  text-transform: uppercase;
-}
-@media only screen and (max-width: 768px) {
-  .cp-icon-details .sub-title {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-}
-.cp-icon-details .title {
-  font-family: "Poppins Semibold";
-  font-size: 3.6rem;
-  color: #333333;
-  line-height: 4.8rem;
-  text-transform: capitalize;
-}
-@media only screen and (max-width: 768px) {
-  .cp-icon-details .title {
+    width: 4.8rem;
+    height: 4.8rem;
+    padding: 0.5rem;
     font-size: 2rem;
-    line-height: 2.8rem;
-  }
-}
-.cp-icon-details .no-seprator::after {
-  display: none;
-}
+    line-height: 4rem;
+    background: #D2042D;
+    color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-bottom: 2.4rem;
+    position: relative; }
+    .cp-icon-details .icon::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 768px) {
+      .cp-icon-details .icon {
+        margin-bottom: 1.2rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem; } }
+    .cp-icon-details .icon.icon-correct, .cp-icon-details .icon.icon-crown {
+      font-size: 1.5rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-icon-details .icon.icon-correct, .cp-icon-details .icon.icon-crown {
+          font-size: 0.8rem; } }
+  .cp-icon-details .sub-title {
+    color: #666666;
+    font-size: 2rem;
+    font-family: "Poppins Medium";
+    line-height: 2.2rem;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 768px) {
+      .cp-icon-details .sub-title {
+        font-size: 1.2rem;
+        line-height: 1.6rem; } }
+  .cp-icon-details .title {
+    font-family: "Poppins Semibold";
+    font-size: 3.6rem;
+    color: #333333;
+    line-height: 4.8rem;
+    text-transform: capitalize; }
+    @media only screen and (max-width: 768px) {
+      .cp-icon-details .title {
+        font-size: 2rem;
+        line-height: 2.8rem; } }
+  .cp-icon-details .no-seprator::after {
+    display: none; }
+  .cp-icon-details.typ-about-nestudio::after {
+    content: none; }
 
 /*# sourceMappingURL=cp-icon-details.css.map */

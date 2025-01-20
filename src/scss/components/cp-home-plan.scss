@@ -1,0 +1,199 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-home-plan {
+    @include border-radius(1.2rem);
+    background-color: #ECF2FB;
+    overflow: hidden;
+
+    .progressbar-sec {
+        position: relative;
+        max-height: 12.1rem;
+        overflow: hidden;
+
+        &::after {
+            background: #00000080;
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            max-height: 12.1rem;
+            width: 100%;
+
+        }
+    }
+
+    .step-sec {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        z-index: 1;
+        padding: 0 10rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 0 1.2rem;
+        }
+
+        .steps-num {
+            font-family: $font-medium;
+            font-size: 2rem;
+            color: #FFFFFF;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .step-main {
+            margin-top: 0.8rem;
+            display: flex;
+            gap: 0.4rem;
+
+
+            .step {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+                height: 5px;
+                background-color: #FFFFFF;
+                @include border-radius(1rem);
+
+                @media only screen and (max-width: $media-mobile) {
+                    height: 3px;
+                }
+
+                &.active {
+                    background-color: #00A441;
+                }
+
+                &.finish {
+                    background-color: #00A441;
+                }
+            }
+        }
+    }
+
+    .home-plot-size {
+        position: relative;
+        padding: 3.2rem 10rem;
+        z-index: 1;
+        overflow: hidden;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem 1.2rem;
+        }
+
+        &::after {
+            content: "\e93a";
+            left: -11%;
+            position: absolute;
+            top: -16%;
+            z-index: -1;
+            color: #D8E5F8;
+            font-size: 50.8rem;
+            font-family: 'icomoon' !important;
+
+            @media only screen and (max-width: $media-mobile) {
+                left: -47%;
+            }
+        }
+
+        .title {
+            font-size: 2rem;
+            font-family: $font-medium;
+            color: $clr-base;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .typ-plot-size-wrap {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width: $media-mobile) {
+                gap: 1.2rem;
+            }
+
+            .typ-plot-size {
+                width: 23.5%;
+                margin-bottom: 0;
+
+                @media only screen and (max-width: $media-mobile) {
+                    width: 48%;
+                }
+
+                .custom-radio {
+                    flex-direction: row;
+                    padding: 2rem;
+                    gap: 12px;
+                    font-family: $font-semiBold;
+                    color: $clr-base;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        min-width: 100%;
+                        padding: 1.6rem 0.4rem;
+                        gap: 4px;
+                        font-family: $font-medium;
+                    }
+
+                    .icon {
+                        color: #DEDEDE;
+                        width: 13px;
+                        height: 13px;
+                        font-size: 13px;
+                    }
+                }
+
+                input[type="radio"]:checked+.custom-radio {
+                    background: #fff;
+                    border: 1px solid #DEDEDE;
+
+                    .icon {
+                        color: #D2042D;
+                    }
+                }
+            }
+        }
+
+        .btn-wrap {
+            gap: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3.2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                margin-top: 1.6rem;
+                gap: 1.6rem;
+            }
+
+            .btn {
+                padding: 1.1rem 3rem;
+                min-width: auto;
+            }
+        }
+    }
+
+    .tab {
+        display: none;
+    }
+}

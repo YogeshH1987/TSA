@@ -1,0 +1,106 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-product-view{
+    max-width: 29.5rem;
+    @include border-radius(1.6rem);
+    border: 1px solid $clr-border;
+    background: $clr-root;
+    @media only screen and (max-width: $media-mobile) {
+        @include border-radius(1.2rem);
+    }
+    .img-wrap{ 
+        padding: 1.2rem 0;
+        max-width: 24rem;
+        height: 14.4rem;
+        margin: 0 auto;
+        display: block; 
+        
+        img {
+            height: 100%;           
+            object-fit: cover;
+        }
+        @media only screen and (max-width: $media-mobile) {
+            max-width: 18.4rem;
+            padding: 1.4rem 0;     
+            height: 12rem; 
+        }
+    }
+    .content-wrap{
+        border-top: 1px solid $clr-border;  
+        padding: 1.6rem 2.4rem 1.8rem; 
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.2rem;
+        }
+        .brand-name{
+            font-family: $font-regular;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-para;
+            text-transform: capitalize;
+            margin-bottom: 0.2rem;
+            @media only screen and (max-width: $media-mobile) {
+                margin-bottom: 0rem;
+            }
+        }
+        .product-title{
+            font-family: $font-semiBold;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-base;
+            margin-bottom: 0.2rem;
+            @media only screen and (max-width: $media-mobile) {
+                margin-bottom: 0rem;
+            }
+        }
+        .rating-list{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2px;
+            margin-bottom: 0.8rem;
+            @media only screen and (max-width: $media-mobile) {
+                margin-bottom: 0.5rem;
+            }
+            .icon{
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color:#CCCCCC;
+                &.active{
+                    color: #FFB800;
+                }
+            }
+        }
+        .cancel-amt{
+            font-family: $font-regular;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-para;
+            margin-bottom: 0.2rem;
+            text-decoration: line-through;
+        }
+        .current-amt{
+            font-family: $font-regular;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-para;
+            display: flex;
+            align-items: center;   
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }         
+            .amt{
+                font-family: $font-semiBold;
+                color: $clr-base;
+                font-size: 2.4rem;
+                line-height: 3.1rem;
+                margin-right: 0.5rem;
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+    }
+}

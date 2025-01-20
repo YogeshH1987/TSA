@@ -11,7 +11,7 @@ html,
 body {
   font-family: $font-regular;
   color: $clr-para;
-  font-size: 62.5%;
+  font-size: 10px; 
   height: 100%;
   position: relative;
   scroll-behavior: smooth;
@@ -156,6 +156,13 @@ p {
 
 .cm-desktop {
   display: block !important;
+
+  @media only screen and (max-width: $media-mobile) {
+    display: none !important;
+  }
+}
+.inline-desktop {
+  display: inline-block !important;
 
   @media only screen and (max-width: $media-mobile) {
     display: none !important;

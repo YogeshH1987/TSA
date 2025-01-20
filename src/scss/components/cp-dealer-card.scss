@@ -154,6 +154,92 @@
             }
         }
     }
+
+
+    &.typ-about-sales {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            border-width: 1px;
+        }
+
+        .top-band {
+            margin-bottom: 1.2rem;
+            display: block;
+
+            .band-tag {
+                margin-bottom: 0;
+                padding: 0.4rem 0.8rem;
+                display: inline-block;
+            }
+
+            .date {
+                font-size: 1.2rem;
+                color: $clr-base;
+                display: block;
+                margin-top: 0.8rem;
+            }
+            &.typ-border{ border-bottom: 1px solid #B1CBF1; padding-bottom: 1.2rem;}
+        }
+
+        .news-icon {
+            position: absolute;
+            right: -32px;
+            bottom: -30px;
+            font-size: 14.5rem;
+            color: #D8E5F8;
+            z-index: -1;
+            &.icon-brochure{ right: 6px;}
+        }
+
+        .location-sec {
+            margin-top: 1.2rem;
+            max-width: 100%;
+            flex-direction: column;
+
+            .location-text {
+                margin-bottom: 1.2rem;
+                color: #666666;
+                font-size: 1.4rem;
+
+                &:nth-child(1) {
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                .distributor-text {
+                    display: block;
+                    font-family: $font-semiBold;
+                    color: #666666;
+                }
+
+                .read-text {
+                    color: #3D7EDB;
+                    text-decoration: underline;
+                }
+
+                a {
+                    color: #666666;
+                }
+            }
+        }
+    }
+    &.light-blue-card{ background-color: #ECF2FB;}
+    &.blue-card {
+        background-color: #3D7EDB;
+        .location-text,
+        .title,
+        .date,
+        .read-text {
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+        .news-icon{ color: rgba(236, 242, 251, 0.2) !important;}
+    }
 }
 
 .typ-store {
@@ -162,7 +248,13 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    @media only screen and (max-width: $media-mobile) {position: relative; width: 100%; text-align: center; margin-top: 1.6rem;}
+
+    @media only screen and (max-width: $media-mobile) {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 1.6rem;
+    }
 }
 
 .btn-wrap {

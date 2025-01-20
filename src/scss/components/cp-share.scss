@@ -1,0 +1,28 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-share {
+    .share-wrap {
+        display: flex;
+        gap: 1.6rem;
+        flex-wrap: wrap;
+
+        .share-list {
+            display: flex;
+            gap: 0.8rem;
+            border: 1px solid #DEDEDE;
+            padding: 1.2rem;
+            @include border-radius(1.2rem);
+            width: 47%;
+            color: $clr-base;
+            font-size: 1.6rem;
+            font-family: $font-medium;
+
+            .icon {
+                font-size: 2.4rem;
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+}

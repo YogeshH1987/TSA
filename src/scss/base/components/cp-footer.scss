@@ -1,0 +1,14 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-footer{
+    @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 6.6rem;    
+    }
+    h2{
+        font-size: 4rem;
+    }
+    img{
+        object-fit: contain;
+    }
+}

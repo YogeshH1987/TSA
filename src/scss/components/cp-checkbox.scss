@@ -192,7 +192,11 @@
 
 	&.typ-border-0 {
 		border: none;
-		label{ color: $clr-para;}
+
+		label {
+			color: $clr-para;
+		}
+
 		input {
 			&:checked {
 				&+label {
@@ -201,28 +205,65 @@
 			}
 		}
 	}
-	&.typ-blog{
+
+	&.typ-blog {
 		padding: 1rem 0 0;
+
 		input {
 			&:checked {
 				&+label {
 					&:after {
 						top: 4px;
-    					left: 8px;
+						left: 8px;
 					}
 				}
 			}
 		}
-	label{
-		font-family: $font-regular;
-		font-size: 1.4rem;
-		color: $clr-base;
-		&:before{
-			width: 2rem;
-			height: 2rem;
-			border: 1px solid #dedede;
+
+		label {
+			font-family: $font-regular;
+			font-size: 1.4rem;
+			color: $clr-base;
+
+			&:before {
+				width: 2rem;
+				height: 2rem;
+				border: 1px solid #dedede;
+			}
+
 		}
 	}
+
+	&.typ-help-policy-terms {
+
+		label {
+			padding-left: 2.4rem;
+			font-size: 1.2rem;
+
+			&::before {
+				top: 1px;
+			}
+
+			.terms {
+				text-decoration: underline;
+				font-family: $font-medium;
+			}
+		}
+
+		input:checked+label {
+			&::before {
+				background: #3D7EDB;
+				top: 1px;
+			}
+
+			&::after {
+				top: 3px;
+				left: 5px;
+				height: 9px;
+				border-color: #fff;
+			}
+		}
+
 	}
 }
 
