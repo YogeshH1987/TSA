@@ -459,8 +459,10 @@
 
   &.typ-offer {
     margin-top: 1.2rem;
+
     .tab-container {
       padding-top: 1.2rem;
+
       @media only screen and (max-width: $media-mobile) {
         padding-top: 0rem;
       }
@@ -625,7 +627,7 @@
         }
 
       }
-    } 
+    }
   }
 
   &.typ-architect-plan {
@@ -633,7 +635,8 @@
       .tab-item {
         .title {
           text-transform: capitalize;
-          display: flex;gap: 1rem;
+          display: flex;
+          gap: 1rem;
           padding: 1.6rem 1.6rem;
           align-items: center;
         }
@@ -652,11 +655,52 @@
         font-size: 1.4rem;
         margin-bottom: 1.6rem;
       }
-      .cp-checkbox{ 
+
+      .cp-checkbox {
         margin-bottom: 1rem;
-        display: flex ;
-            gap: 1rem;
-        label{   font-size: 1.4rem; color: $clr-base; }
+        display: flex;
+        gap: 1rem;
+
+        label {
+          font-size: 1.4rem;
+          color: $clr-base;
+        }
+      }
+    }
+  }
+
+  &.typ-floor-plan {
+    .tab-list {
+      justify-content: center;
+      margin-top: 2.4rem;
+    }
+
+    .tab-container {
+      padding-top: 0rem;
+    }
+
+    .tab-content {
+
+      .img-wrap {
+        height: 100%;
+        height: calc(100vh - 16rem);
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &.typ-architect-pdp {
+    margin-top: 1.6rem;
+    .tab-list {
+      .tab-item {
+        .title {
+          padding: 1.6rem 1.2rem;
+          display: block;
+        }
       }
     }
   }

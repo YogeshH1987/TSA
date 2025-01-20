@@ -28,5 +28,8 @@
     font-size: 1.4rem;
     font-family: "Poppins Medium";
     color: #666666; }
+  .cp-prod-thumb-slider.typ-architech-pdp .seller-tag {
+    background-color: #fff;
+    z-index: 2; }
 
 /*# sourceMappingURL=cp-prod-thumb-slider.css.map */

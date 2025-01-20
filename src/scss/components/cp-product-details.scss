@@ -282,7 +282,7 @@
     &.typ-architect {
         .wishlist {
             font-size: 14px;
-            font-family:$font-regular;
+            font-family: $font-regular;
             gap: 8px;
             display: flex;
             align-items: center;
@@ -298,23 +298,37 @@
 
         .tag-list-wrap {
             margin-top: 3.2rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
 
-            .tag-item {
+            @media only screen and (max-width: $media-mobile) {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                flex-wrap: wrap;
                 gap: 0.8rem;
+                flex-wrap: initial;
+                overflow-x: auto;
+                
+            }
+            &::-webkit-scrollbar {
+                display: none;
+              }
+            .tag {
+                background: #D8E5F8;
+                @include border-radius(26px);
+                font-family: $font-medium;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-base;
+                padding: 0.2rem 0.8rem;
 
-                .tag {
-                    background: #D8E5F8;
-                    @include border-radius(26px);
-                    font-family: $font-medium;
-                    font-size: 1.2rem;
-                    line-height: 1.6rem;
-                    color: $clr-base;
-                    padding: 0.2rem 0.8rem;
+                @media only screen and (max-width: $media-mobile) {
+                    flex-shrink: 0;
                 }
+
             }
         }
     }
@@ -331,6 +345,16 @@
     @media only screen and (max-width: $media-mobile) {
         font-size: 2rem;
         line-height: 2.8rem;
+        font-family: $font-medium;
     }
-    &.typ-big{ font-size: 2.4rem;}
+
+    &.typ-big {
+        font-size: 2.4rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            font-family: $font-medium;
+        }
+    }
 }

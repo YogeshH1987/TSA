@@ -199,6 +199,9 @@
   .cp-design-card.typ-area-breakup {
     max-width: 100%;
     margin-bottom: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-card.typ-area-breakup {
+        background-color: #fff; } }
     .cp-design-card.typ-area-breakup:hover {
       box-shadow: none;
       border: 1px solid #DEDEDE; }
@@ -219,10 +222,29 @@
     .cp-design-card.typ-area-breakup .content-wrap {
       padding: 1.6rem; }
       .cp-design-card.typ-area-breakup .content-wrap .detail-list {
-        gap: 1.2em;
-        justify-content: initial; }
+        justify-content: initial;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+        grid-gap: 12px; }
+        @media only screen and (max-width: 768px) {
+          .cp-design-card.typ-area-breakup .content-wrap .detail-list {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-flow: column; } }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list.typ-1row {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          grid-auto-flow: column; }
+        @media only screen and (max-width: 768px) {
+          .cp-design-card.typ-area-breakup .content-wrap .detail-list.typ-2row {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-auto-flow: column; } }
         .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item {
-          width: 31%; }
+          width: 100%; }
           .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item::after {
             content: none; }
         .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-title {
@@ -283,7 +305,8 @@
         height: 3.6rem;
         font-size: 1.6rem;
         color: #666666;
-        padding: 1rem; }
+        padding: 1rem;
+        cursor: pointer; }
     .cp-design-card.typ-floor-plan .content-wrap .img-wrap {
       height: auto; }
     .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap {

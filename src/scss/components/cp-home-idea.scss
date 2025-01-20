@@ -6,14 +6,21 @@
     @include border-radius(1.6rem);
     padding: 1.6rem;
     height: 100%;
-    .head-sec{display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;
-    .title {
-        font-size: 1.6rem;
-        color: $clr-base;
-        margin-bottom: 0;
-        font-family: $font-semiBold;
+
+    .head-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+
+        .title {
+            font-size: 1.6rem;
+            color: $clr-base;
+            margin-bottom: 0;
+            font-family: $font-semiBold;
+        }
     }
-}
+
     .home-idea-wrap {
         display: flex;
         gap: 1.6rem;
@@ -50,6 +57,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 0.8rem;
+
         .tag-link {
             width: 4rem;
             height: 4rem;
@@ -59,6 +67,49 @@
             background: #FFFFFF;
             font-size: 2rem;
             color: #999999;
+        }
+    }
+
+    &.typ-2 {
+        @media only screen and (max-width: $media-mobile) {   padding-bottom: 7rem;}
+
+        .tag-list {
+            @media only screen and (max-width: $media-mobile) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.8rem;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                right: 0;
+                padding: 1.6rem;
+                z-index: 1;
+            }
+
+            .tag-item {
+                @media only screen and (max-width: $media-mobile) {
+                    width: 50%;
+                }
+
+                .tag-link {
+                    width: 100%;
+                }
+            }
+        }
+
+        .edit-mobile {
+            font-size: 12px;
+            color: #3D7EDB;
+            font-family: $font-medium;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            .icon {
+                font-size: 16px;
+            }
         }
     }
 }

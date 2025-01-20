@@ -39,6 +39,9 @@
   <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
   <link rel="stylesheet" href="/components/cp-design-card/cp-design-card.css" />
   <link rel="stylesheet" href="../components/cp-home-idea/cp-home-idea.css" />
+  <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
+  <link rel="stylesheet" href="../../components/cp-price/cp-price.css" />
+  <link rel="stylesheet" href="../../components/cp-blog/cp-blog.css" />
 </head>
 
 <body>
@@ -162,37 +165,37 @@
     <section class="bs-sec typ-pdp pd-top-8">
       <div class="container">
 
-        <div class="lyt-pdp">
+        <div class="lyt-pdp typ-architect-lyt">
           <div class="grid-col w-55">
             <!--Product thumb slider start-->
-            <div class="cp-prod-thumb-slider">
+            <div class="cp-prod-thumb-slider typ-architech-pdp">
               <span class="seller-tag">Popular choice</span>
               <div class="bs-swiper swiper js-pro-architech-slider type-big-img-slider typ-architect-pdp">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide model-open" data-toggle="modal" data-modal-id="#pro-thumb">
                     <picture>
                       <source media="(max-width:768px)"
-                        srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
                       <source media="(max-width:991px)"
-                        srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
                       <img src="../../components/cp-prod-thumb-slider/images/architech-big-img.png" alt="pro-big-img" />
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
                       <source media="(max-width:768px)"
-                        srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
                       <source media="(max-width:991px)"
-                        srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
                       <img src="../../components/cp-prod-thumb-slider/images/architech-big-img.png" alt="pro-big-img" />
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
                       <source media="(max-width:768px)"
-                        srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
                       <source media="(max-width:991px)"
-                        srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
                       <img src="../../components/cp-prod-thumb-slider/images/architech-big-img.png" alt="pro-big-img" />
                     </picture>
                   </div>
@@ -241,7 +244,7 @@
                 <span class="wishlist"><i class="icon icon-heart-fill"></i>Saved by 90</span>
                 <ul class="tag-list">
                   <li class="tag-item">
-                    <button class="tag-link icon-email"></button> <!-- printer icon -->
+                    <button class="tag-link icon-print"></button> <!-- printer icon -->
                   </li>
                   <li class="tag-item">
                     <button class="tag-link icon-share"></button>
@@ -252,19 +255,39 @@
                 </ul>
 
                 <ul class="tag-list-wrap">
-                  <li class="tag-item">
-                    <span class="tag">2 attached bathrooms</span>
-                    <span class="tag">1 common bathroom</span>
-                    <span class="tag">Car park</span>
-                    <span class="tag">Kitchen </span>
-                    <span class="tag">Vaastu compliant</span>
-                    <span class="tag">Puja room</span>
-                  </li>
+                  <li class="tag">2 attached bathrooms</li>
+                  <li class="tag">1 common bathroom</li>
+                  <li class="tag">Car park</li>
+                  <li class="tag">Kitchen </li>
+                  <li class="tag">Vaastu compliant</li>
+                  <li class="tag">Puja room</li>
+
                 </ul>
               </div>
             </div>
+            <div class="cp-tab typ-tisco-cat typ-architect-pdp cm-mobile">
 
-            <h3 class="prod-small-title">Key features </h3>
+              <ul class="tab-list">
+                <li class="tab-item active" data-target="#tab1">
+                  <a href="#tab1" class="title">Key features</a>
+                </li>
+                <li class="tab-item" data-target="#tab2">
+                  <a href="#tab2" class="title">Description</a>
+                </li>
+                <li class="tab-item" data-target="#tab3">
+                  <a href="#tab3" class="title">Floor plans</a>
+                </li>
+
+                <li class="tab-item" data-target="#tab4">
+                  <a href="#tab4" class="title">Area breakup</a>
+                </li>
+
+              </ul>
+
+
+            </div>
+
+            <h3 class="prod-small-title" id="tab1">Key features </h3>
             <div class="cp-design-card typ-architectual-plan typ-architectual-pdp">
               <div class="content-wrap">
                 <ul class="detail-list">
@@ -299,7 +322,7 @@
                 </div>
               </div>
             </div>
-            <h3 class="prod-small-title">Key features </h3>
+            <h3 class="prod-small-title" id="tab2">Description</h3>
             <div class="cp-feature typ-architectual-pdp">
               <p class="desc">Contemporary home designs are often a combination of more than just one design. </p>
               <p class="desc">Functional and spacious, contemporary homes are built around open floor plans in order to
@@ -310,14 +333,14 @@
         </div>
         <div class="lyt-pdp">
           <div class="grid-col w-55">
-            <h3 class="prod-small-title typ-big">Floor Plans </h3>
+            <h3 class="prod-small-title typ-big" id="tab3">Floor Plans </h3>
             <div class="cp-design-card typ-floor-plan">
               <div class="head-wrap">
                 Ground floor
                 <div class="floor-plan-icon">
-                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-furniture"></span>
+                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-aspect-ratio"></span>
                     Mirror</button>
-                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-furniture"></span>
+                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-rotate-left"></span>
                     Rotate</button>
                 </div>
               </div>
@@ -325,16 +348,16 @@
                 <div class="content-head">
                   <div class="left">
                     <div class="toggle-wrap">
-                    Limit to Setbacks 
-                    <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                    </label>
-                  </div>
-                    <a href="#" class="link">What is this?</a>
+                      Limit to Setbacks
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <a href="#" class="link js-drawer" data-id="setbacks">What is this?</a>
                   </div>
                   <div class="right">
-                    <span class="icon icon-full-screen"></span>
+                    <span class="icon icon-full-screen js-drawer" data-id="floor-plans"></span>
                   </div>
                 </div>
                 <div class="img-wrap">
@@ -350,9 +373,9 @@
               <div class="head-wrap">
                 Ground floor
                 <div class="floor-plan-icon">
-                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-furniture"></span>
+                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-aspect-ratio"></span>
                     Mirror</button>
-                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-furniture"></span>
+                  <button class="btn btn-outline typ-floor-plan-btn"><span class="icon icon-rotate-left"></span>
                     Rotate</button>
                 </div>
               </div>
@@ -360,16 +383,16 @@
                 <div class="content-head">
                   <div class="left">
                     <div class="toggle-wrap">
-                    Limit to Setbacks 
-                    <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                    </label>
-                  </div>
-                    <a href="#" class="link">What is this?</a>
+                      Limit to Setbacks
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <a href="#" class="link js-drawer" data-id="setbacks">What is this?</a>
                   </div>
                   <div class="right">
-                    <span class="icon icon-full-screen"></span>
+                    <span class="icon icon-full-screen js-drawer" data-id="floor-plans"></span>
                   </div>
                 </div>
                 <div class="img-wrap">
@@ -382,8 +405,8 @@
               </div>
             </div>
           </div>
-          <div class="grid-col w-45">
-            <h3 class="prod-small-title">Area breakup</h3>
+          <div class="grid-col w-45 typ-bg-natural-grey">
+            <h3 class="prod-small-title" id="tab4">Area breakup</h3>
             <div class="cp-design-card typ-area-breakup">
               <div class="head-wrap">
                 <span class="icon icon-straighten"></span> Square footage breakdown
@@ -395,20 +418,21 @@
                     <p class="detail-desc">1,250 sq. ft.</p>
                   </li>
                   <li class="detail-item">
+                    <h4 class="detail-title">Minimum plot size</h4>
+                    <p class="detail-desc">1,000 sq. ft.</p>
+                  </li>
+                  <li class="detail-item">
                     <h4 class="detail-title">1st floor</h4>
                     <p class="detail-desc">426 sq. ft.</p>
+                  </li>
+
+                  <li class="detail-item w-100 border-0">
+                    <h4 class="detail-title">2nd floor </h4>
+                    <p class="detail-desc">650 sq. ft.</p>
                   </li>
                   <li class="detail-item">
                     <h4 class="detail-title">Balcony / Terrace</h4>
                     <p class="detail-desc">190 sq. ft.</p>
-                  </li>
-                  <li class="detail-item">
-                    <h4 class="detail-title">Minimum plot size</h4>
-                    <p class="detail-desc">1,000 sq. ft.</p>
-                  </li>
-                  <li class="detail-item w-100 border-0">
-                    <h4 class="detail-title">2nd floor </h4>
-                    <p class="detail-desc">650 sq. ft.</p>
                   </li>
 
                 </ul>
@@ -428,13 +452,12 @@
                     <p class="detail-desc">2</p>
                   </li>
                   <li class="detail-item">
-                    <h4 class="detail-title">Bedroom 1</h4>
-                    <p class="detail-desc">300 sq. ft.</p>
-                  </li>
-                  <li class="detail-item"></li>
-                  <li class="detail-item">
                     <h4 class="detail-title">Dining room</h4>
                     <p class="detail-desc">350 sq. ft.</p>
+                  </li>
+                  <li class="detail-item">
+                    <h4 class="detail-title">Bedroom 1</h4>
+                    <p class="detail-desc">300 sq. ft.</p>
                   </li>
                   <li class="detail-item">
                     <h4 class="detail-title">Bedroom 2</h4>
@@ -448,21 +471,20 @@
 
             <div class="cp-design-card typ-area-breakup">
               <div class="head-wrap">
-                <span class="icon icon-interiors"></span> Bathrooms
+                <span class="icon icon-bathtub"></span> Bathrooms
               </div>
               <div class="content-wrap">
-                <ul class="detail-list">
+                <ul class="detail-list typ-2row">
                   <li class="detail-item">
                     <h4 class="detail-title">Number of bathrooms</h4>
                     <p class="detail-desc">2</p>
                   </li>
                   <li class="detail-item">
-                    <h4 class="detail-title">Area of bathroom 2</h4>
+                    <h4 class="detail-title">Area of bathroom 1</h4>
                     <p class="detail-desc">190 sq. ft.</p>
                   </li>
-                  <li class="detail-item"></li><!--blank -->
                   <li class="detail-item">
-                    <h4 class="detail-title">Area of bathroom 1</h4>
+                    <h4 class="detail-title">Area of bathroom 2</h4>
                     <p class="detail-desc">190 sq. ft.</p>
                   </li>
 
@@ -473,10 +495,10 @@
 
             <div class="cp-design-card typ-area-breakup">
               <div class="head-wrap">
-                <span class="icon icon-interiors"></span> Other spaces
+                <span class="icon icon-bathtub"></span> Other spaces
               </div>
               <div class="content-wrap">
-                <ul class="detail-list">
+                <ul class="detail-list typ-1row">
                   <li class="detail-item">
                     <h4 class="detail-title">Puja room</h4>
                     <p class="detail-desc">1</p>
@@ -493,10 +515,10 @@
 
             <div class="cp-design-card typ-area-breakup">
               <div class="head-wrap">
-                <span class="icon icon-interiors"></span>Ceiling heights
+                <span class="icon icon-format-line-spacing"></span>Ceiling heights
               </div>
               <div class="content-wrap">
-                <ul class="detail-list">
+                <ul class="detail-list typ-1row">
                   <li class="detail-item">
                     <h4 class="detail-title">Ground floor</h4>
                     <p class="detail-desc">10 sq. ft.</p>
@@ -514,9 +536,7 @@
         </div>
       </div>
 
-      <div class="act-wrap cm-sticky cm-mobile">
-        <button class="btn typ-add-cart">Add to cart</button>
-      </div>
+
     </section>
     <!--  agrico product detail page end  -->
 
@@ -529,11 +549,15 @@
           <div class="bs-swiper swiper js-colonial-home-idea">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="cp-home-idea">
+                <div class="cp-home-idea typ-2">
                   <div class="head-sec">
                     <h3 class="title">Moodboard 01</h3>
+                    <span class="edit-mobile cm-mobile"><span class="icon icon-edit-1"></span>change</span>
                     <ul class="tag-list">
-                      <li class="tag-item">
+                      <li class="tag-item cm-mobile">
+                        <button class="tag-link icon-share"></button>
+                      </li>
+                      <li class="tag-item cm-desktop">
                         <button class="tag-link icon-edit-1"></button>
                       </li>
                       <li class="tag-item">
@@ -607,11 +631,15 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="cp-home-idea">
+                <div class="cp-home-idea typ-2">
                   <div class="head-sec">
                     <h3 class="title">Moodboard 01</h3>
+                    <span class="edit-mobile cm-mobile"><span class="icon icon-edit-1"></span>change</span>
                     <ul class="tag-list">
-                      <li class="tag-item">
+                      <li class="tag-item cm-mobile">
+                        <button class="tag-link icon-share"></button>
+                      </li>
+                      <li class="tag-item cm-desktop">
                         <button class="tag-link icon-edit-1"></button>
                       </li>
                       <li class="tag-item">
@@ -685,11 +713,15 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="cp-home-idea">
+                <div class="cp-home-idea typ-2">
                   <div class="head-sec">
                     <h3 class="title">Moodboard 01</h3>
+                    <span class="edit-mobile cm-mobile"><span class="icon icon-edit-1"></span>change</span>
                     <ul class="tag-list">
-                      <li class="tag-item">
+                      <li class="tag-item cm-mobile">
+                        <button class="tag-link icon-share"></button>
+                      </li>
+                      <li class="tag-item cm-desktop">
                         <button class="tag-link icon-edit-1"></button>
                       </li>
                       <li class="tag-item">
@@ -772,7 +804,7 @@
     </section>
 
     <!--Similar products start -->
-    <section class="bs-sec typ-vegetable-patch typ-white-bg">
+    <section class="bs-sec typ-vegetable-patch typ-white-bg mt-0 typ-architech-plans">
       <div class="container">
         <div class="sec-head">
           <h2 class="sec-title">Similar plans</h2>
@@ -1112,443 +1144,101 @@
   </footer>
   <!-- Footer end -->
 
-  <!---bottom Sticky start-->
-  <div class="cp-bottom-sticky">
-    <div class="container">
-      <ul class="bottom-nav-list">
-        <li class="nav-list-item">
-          <a href="#" class="nav-link">
-            <span class="icon icon-aashiyan"></span>
-            Tata Steel Aashiyana
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="nav-link">
-            <span class="icon icon-shop-product"></span>
-            Shop Products
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="nav-link">
-            <span class="icon icon-home-guide"></span>
-            Home Guides
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="nav-link">
-            <span class="icon icon-calculator"></span>
-            Design & Calculator
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="nav-link">
-            <span class="icon icon-service"></span>
-            Service Providers
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!---bottom Sticky End-->
-  <!--model pop up start-->
-  <div id="pro-thumb" tabindex="-1 " role="dialog " class="bs-modal type-lg fade type-prod-thumb">
-    <div class="modal-dialog ">
-      <h3 class="small-title ">High Tensile Fastners</h3>
-      <div class="modal-body ">
-        <div class="modal-content ">
-
-          <button class="close-btn icon-close js-close " type="button "></button>
-          <div class="cp-prod-thumb-slider">
-            <div class="bs-swiper swiper js-popup-pro-slider type-big-img-slider typ-popup">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide model-open" data-toggle="modal" data-modal-id="#findBike">
-                  <picture>
-                    <source media="(max-width:768px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
-                    <source media="(max-width:991px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
-                    <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png"
-                      alt="pro-big-img" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source media="(max-width:768px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
-                    <source media="(max-width:991px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
-                    <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png"
-                      alt="pro-big-img" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source media="(max-width:768px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
-                    <source media="(max-width:991px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
-                    <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png"
-                      alt="pro-big-img" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source media="(max-width:768px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
-                    <source media="(max-width:991px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
-                    <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png"
-                      alt="pro-big-img" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source media="(max-width:768px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
-                    <source media="(max-width:991px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
-                    <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png"
-                      alt="pro-big-img" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source media="(max-width:768px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
-                    <source media="(max-width:991px)"
-                      srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
-                    <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png"
-                      alt="pro-big-img" />
-                  </picture>
-                </div>
-              </div>
-            </div>
-
-            <div thumbsSlider="" class=" bs-swiper type-thumb swiper  typ-popup js-popup-thumb-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--model pop up end-->
-
-
-
-  <div class="cp-drawer" id="availableOffers">
+  <!-- floor-plans drawer-->
+  <div class="cp-drawer typ-border typ-no-padding typ-floor-plans" id="floor-plans">
     <div class="head-sec">
-      <h2 class="drawer-title">Available offers</h2>
+      <h2 class="drawer-title">Floor plans</h2>
       <a href="#" class="icon icon-close js-close-btn"></a>
     </div>
     <div class="cont-wrap">
-      <ul class="offers-list">
-        <li class="offers-item">
-          <div class="cp-offers">
-            <div class="lft typ-blue">
-              <span>Discount</span>
-            </div>
-            <div class="rht typ-blue-border">
-              <h3 class="title">Navratri special</h3>
-              <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-              <span class="offer-valid">Valid till 31 Oct 2024</span>
-            </div>
-          </div>
-        </li>
-        <li class="offers-item">
-          <div class="cp-offers">
-            <div class="lft typ-red">
-              <span>FLAT OFF</span>
-            </div>
-            <div class="rht typ-red-border">
-              <h3 class="title">B1G1 surprise</h3>
-              <p class="desc">Buy any 1 product and get a surprise product for free. Minimum value of product should be
-                Rs. 5,000</p>
-              <span class="offer-valid">Valid till 31 Oct 2024</span>
-            </div>
-          </div>
-        </li>
-        <li class="offers-item">
-          <div class="cp-offers">
-            <div class="lft typ-green">
-              <span>CASHBACK</span>
-            </div>
-            <div class="rht typ-green-border">
-              <h3 class="title">Instant cashback</h3>
-              <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-              <span class="offer-valid">Valid till 31 Oct 2024</span>
-            </div>
-          </div>
-        </li>
-        <li class="offers-item">
-          <div class="cp-offers">
-            <div class="lft typ-green">
-              <span>CASHBACK</span>
-            </div>
-            <div class="rht typ-green-border">
-              <h3 class="title">Instant cashback</h3>
-              <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-              <span class="offer-valid">Valid till 31 Oct 2024</span>
-            </div>
-          </div>
-        </li>
+      <div class="cp-tab typ-help-policies typ-floor-plan">
 
-        <li class="offers-item">
-          <div class="cp-offers">
-            <div class="lft typ-yellow">
-              <span>Discount</span>
+        <div class="tab-container">
+          <div class="tab-content active" id="tab1">
+
+            <div class="sec-cont">
+              <div class="img-wrap">
+                <picture>
+                  <source media="(max-width:768px)" srcset="../../components/cp-design-card/images/floor-plan.png">
+                  <source media="(max-width:991px)" srcset="../../components/cp-design-card/images/floor-plan.png">
+                  <img src="../../components/cp-design-card/images/floor-plan.png" alt="floor-plan" />
+                </picture>
+              </div>
             </div>
-            <div class="rht typ-yellow-border">
-              <h3 class="title">Navratri special</h3>
-              <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-              <span class="offer-valid">Valid till 31 Oct 2024</span>
-            </div>
+
           </div>
-        </li>
-      </ul>
+          <div class="tab-content" id="tab2">
+            tab2
+
+          </div>
+          <div class="tab-content" id="tab3">
+
+            tab3
+          </div>
+
+        </div>
+
+        <ul class="tab-list">
+          <li class="tab-item active" data-target="#tab1">
+            <h3 class="title">Ground floor</h3>
+          </li>
+          <li class="tab-item" data-target="#tab2">
+            <h3 class="title">1st floor</h3>
+          </li>
+          <li class="tab-item" data-target="#tab3">
+            <h3 class="title">2nd floor</h3>
+          </li>
+
+
+        </ul>
+
+      </div>
     </div>
   </div>
+  <!-- floor-plans drawer-->
 
-  <!---product detail drawer start-->
-  <div class="cp-drawer" id="productdetail">
+  <!-- Limit to Setbacks? drawer-->
+  <div class="cp-drawer typ-border typ-no-padding typ-setback" id="setbacks">
     <div class="head-sec">
-      <h2 class="drawer-title">Product details</h2>
+      <h2 class="drawer-title">Limit to Setbacks? </h2>
       <a href="#" class="icon icon-close js-close-btn"></a>
     </div>
-    <div class="sec-cont">
-      <!-- product-name-head -->
-      <div class="cp-product-name-head typ-product-details">
-        <div class="product-brand">
-          <div class="img-wrap">
-            <picture>
-              <source media="(max-width:768px)" srcset="
-                /components/cp-product-name-head/images/superlink_1.png
-              " />
-              <source media="(max-width:991px)" srcset="
-                /components/cp-product-name-head/images/superlink_1.png
-              " />
-              <img src="/components/cp-product-name-head/images/superlink_1.png" alt="product_img" />
-            </picture>
-          </div>
-          <div class="product-detail">
-            <h3 class="brand-name">Agrico</h3>
-            <span class="product-name">High Tensile Fastners</span>
-          </div>
-        </div>
+    <div class="cont-sec">
+      <h3 class="cont-title">What are Setbacks?</h3>
+      <p class="cont-desc">A building setback is the minimum amount of open space surrounding a building that must be
+        maintained. The
+        government mandates a minimum setback distance for the construction of every building. It is necessary to keep a
+        certain distance between the new construction site and any existing structures. </p>
+      <div class="img-wrap">
+        <picture>
+          <source media="(max-width:768px)" srcset="../../components/cp-architect/images/setback.png">
+          <source media="(max-width:991px)" srcset="../../components/cp-architect/images/setback.png">
+          <img src="../../components/cp-architect/images/setback.png" alt="pro-big-img" />
+        </picture>
       </div>
 
-      <!-- feature -->
-      <div class="cp-feature">
-        <h3 class="feature-title">Details</h3>
-        <ul class="feature-list">
-          <li class="feature-item">
-            Quality: High quality self drilling screws
-          </li>
-          <li class="feature-item">
-            EPDM washer: Self drilling screw with EPDM washer
-          </li>
-          <li class="feature-item">
-            Benefits: Grey russpart (teflon) coated with better corrosion
-            protection
-          </li>
-          <li class="feature-item">Usage: For roofing application</li>
-          <li class="feature-item">1,000 hours of salt spray tested</li>
-          <li class="feature-item">Anti-corrosive, durable and strong</li>
-          <li class="feature-item">Rusper coating</li>
-        </ul>
+      <h3 class="cont-title">What are Setbacks?</h3>
+      <p class="cont-desc">A building setback is the minimum amount of open space surrounding a building that must be
+        maintained. The
+        government mandates a minimum setback distance for the construction of every building. It is necessary to keep a
+        certain distance between the new construction site and any existing structures. </p>
+
+      <div class="price-list-item">
+        <span class="icon icon-info"></span>
+        <p class="desc">State guidelines around setbacks must be checked. This is only a depiction of space saved.
+        </p>
+
+
       </div>
-      <!-- end feature -->
-      <!-- specification -->
-      <div class="cp-specification">
-        <h3 class="specification-title">Specification</h3>
-        <ul class="specification-list">
-          <li class="specification-item">
-            <h4 class="title">Dimensions</h4>
-            <p class="desc">18.6 X 12 X 9.2 cm, 453.8 gms</p>
-          </li>
-          <li class="specification-item">
-            <h4 class="title">Item weight</h4>
-            <p class="desc">454 gms</p>
-          </li>
-          <li class="specification-item">
-            <h4 class="title">Model no.</h4>
-            <p class="desc">DSS002</p>
-          </li>
-          <li class="specification-item">
-            <h4 class="title">Head style</h4>
-            <p class="desc">Flanged</p>
-          </li>
-          <li class="specification-item">
-            <h4 class="title">Exterior finish</h4>
-            <p class="desc">Grey</p>
-          </li>
-        </ul>
-      </div>
-      <!-- end specification -->
+
+    </div>
+    <div class="btn-wrap">
+      <button class="btn btn-outline">Cancel</button>
+      <button class="btn">Apply setback</button>
     </div>
   </div>
-  <!--product detail drawer end-->
-
-  <!---policy detail drawer start-->
-  <div class="cp-drawer" id="policydetail">
-    <div class="head-sec">
-      <h2 class="drawer-title">Policy Detail</h2>
-      <a href="#" class="icon icon-close js-close-btn"></a>
-    </div>
-    <div class="sec-cont">
-      <div class="cp-accordion typ-policy">
-        <div class="acc-item">
-          <div class="acc-head">
-            <h3 class="title">Return and refund policy</h3>
-          </div>
-          <div class="acc-cont">
-            <ul class="acc-cont-wrap">
-              <li class="acc-cont-list">
-                <h4 class="acc-subTitle">Pay now options</h4>
-                <ul class="cont-desc-wrap">
-                  <li class="cont-desc-list">
-                    <p class="acc-desc">
-                      The amount will be refunded to the customer’s bank
-                      account (used for the payment) after deducting
-                      standard payment gateway transaction charges.
-                    </p>
-                  </li>
-                  <li class="cont-desc-list">
-                    <p class="acc-desc">
-                      Cancellation requests made after 24 hours or after
-                      dispatch will be rejected, and the customer must
-                      take the material.
-                    </p>
-                  </li>
-                  <li class="cont-desc-list">
-                    <p class="acc-desc">
-                    <div class="cm-overlay"></div> If the cancellation request is accepted, the refund
-                    will be processed within 10 working days.
-                    </p>
-                  </li>
-                  <li class="cont-desc-list">
-                    <p class="acc-desc">
-                      Orders can be canceled within 24 hours of placing
-                      the order or before dispatch, whichever comes first.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-              <li class="acc-cont-list">
-                <h4 class="acc-subTitle">Pay before dispatch</h4>
-                <ul class="cont-desc-wrap">
-                  <li class="cont-desc-list">
-                    <p class="acc-desc">
-                      Pay Before Dispatch > option -The order can be
-                      cancelled by the customer (through the portal or
-                      toll-free number) before the order has been
-                      dispatched from the dealer's outlet or before the
-                      payment has been made by customer. Any cancellation
-                      request placed after that will be rejected."
-                    </p>
-                  </li>
-                  <li class="cont-desc-list">
-                    <p class="acc-desc">
-                      Pay Before Dispatch > option -The order can be
-                      cancelled by the customer (through the portal or
-                      toll-free number) before the order has been
-                      dispatched from the dealer's outlet or before the
-                      payment has been made by customer. Any cancellation
-                      request placed after that will be rejected."
-                    </p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-head">
-            <h3 class="title">Shipping policy</h3>
-          </div>
-          <div class="acc-cont">
-            <p class="ans-desc">
-              In case the order has been placed through
-            </p>
-            <p class="ans-desc">
-              Pay Before Dispatch > option -The order can be cancelled
-              by the customer (through the portal or toll-free number)
-              before the order has been dispatched from the dealer's
-              outlet or before the payment has been made by customer. Any
-              cancellation request placed after that will be rejected."
-            </p>
-
-          </div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-head">
-            <h3 class="title">
-              What Tata Steel brands can I buy on Tata Steel Aashiyana?
-            </h3>
-          </div>
-          <div class="acc-cont">
-            <p class="ans-desc">
-              In case the order has been placed through
-            </p>
-            <p class="ans-desc">
-              Pay Before Dispatch > option -The order can be cancelled
-              by the customer (through the portal or toll-free number)
-              before the order has been dispatched from the dealer's
-              outlet or before the payment has been made by customer. Any
-              cancellation request placed after that will be rejected."
-            </p>
-
-          </div>
-        </div>
-        <div class="acc-item">
-          <div class="acc-head">
-            <h3 class="title">
-              Is it safe to buy building materials online?
-            </h3>
-          </div>
-          <div class="acc-cont">
-            <p class="ans-desc">
-              In case the order has been placed through
-            </p>
-            <p class="ans-desc">
-              Pay Before Dispatch > option -The order can be cancelled
-              by the customer (through the portal or toll-free number)
-              before the order has been dispatched from the dealer's
-              outlet or before the payment has been made by customer. Any
-              cancellation request placed after that will be rejected."
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!---policy detail drawer end-->
-
-
-
+  <!-- floor-plans drawer-->
+  <div class="cm-overlay"></div>
 
   <!-- build:js assets/js/vendor.js -->
   <script src="/js/vendor/jquery-3.7.1.min.js"></script>
@@ -1558,6 +1248,7 @@
   <script src="/js/global.js"></script>
   <script src="/components/cp-product-card/cp-product-card.js"></script>
   <script src="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
+  <script src="../../components/cp-blog/cp-blog.js"></script>
   <script src="/components/cp-counter/cp-counter.js"></script>
   <script src="/components/cp-select/cp-select.js"></script>
   <script src="../components/cp-drawer/cp-drawer.js"></script>

@@ -30,4 +30,7 @@
         color: $clr-para;
 
     }
+    &.typ-architech-pdp{
+        .seller-tag{background-color: #fff; z-index: 2;}
+    }
 }

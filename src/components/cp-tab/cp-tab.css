@@ -409,6 +409,22 @@
   .cp-tab.typ-architect-plan .tab-content .cp-checkbox label {
     font-size: 1.4rem;
     color: #333333; }
+.cp-tab.typ-floor-plan .tab-list {
+  justify-content: center;
+  margin-top: 2.4rem; }
+.cp-tab.typ-floor-plan .tab-container {
+  padding-top: 0rem; }
+.cp-tab.typ-floor-plan .tab-content .img-wrap {
+  height: 100%;
+  height: calc(100vh - 16rem); }
+  .cp-tab.typ-floor-plan .tab-content .img-wrap img {
+    height: 100%;
+    object-fit: cover; }
+.cp-tab.typ-architect-pdp {
+  margin-top: 1.6rem; }
+  .cp-tab.typ-architect-pdp .tab-list .tab-item .title {
+    padding: 1.6rem 1.2rem;
+    display: block; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

@@ -509,11 +509,11 @@
       .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-desc {
         color: #fff; }
       .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img {
-        top: 32px;
-        right: 22px; }
+        top: 56px;
+        right: 38px; }
         @media only screen and (max-width: 768px) {
           .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img {
-            top: -14px; } }
+            top: 2px; } }
         .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img.notify-icon {
           opacity: 60%; }
         .cp-eCommerce-home-banner.typ-architectual-plan .feature .feature-item .feature-card.cp-notify .f-img::after {
@@ -557,8 +557,8 @@
         height: 14.7rem;
         border-radius: 50%;
         position: absolute;
-        right: -23px;
-        top: -14px;
+        right: -28px;
+        top: -23px;
         content: '';
         opacity: 1;
         z-index: -1; }

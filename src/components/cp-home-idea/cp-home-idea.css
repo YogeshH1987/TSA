@@ -54,5 +54,35 @@
       background: #FFFFFF;
       font-size: 2rem;
       color: #999999; }
+  @media only screen and (max-width: 768px) {
+    .cp-home-idea.typ-2 {
+      padding-bottom: 7rem; } }
+  @media only screen and (max-width: 768px) {
+    .cp-home-idea.typ-2 .tag-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.8rem;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 1.6rem;
+      z-index: 1; } }
+  @media only screen and (max-width: 768px) {
+    .cp-home-idea.typ-2 .tag-list .tag-item {
+      width: 50%; } }
+  .cp-home-idea.typ-2 .tag-list .tag-item .tag-link {
+    width: 100%; }
+  .cp-home-idea.typ-2 .edit-mobile {
+    font-size: 12px;
+    color: #3D7EDB;
+    font-family: "Poppins Medium";
+    display: flex;
+    align-items: center;
+    gap: 4px; }
+    .cp-home-idea.typ-2 .edit-mobile .icon {
+      font-size: 16px; }
 
 /*# sourceMappingURL=cp-home-idea.css.map */

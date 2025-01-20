@@ -265,7 +265,7 @@
     &.typ-area-breakup {
         max-width: 100%;
         margin-bottom: 1.2rem;
-
+        @media only screen and (max-width: $media-mobile) { background-color: #fff;}
         &:hover {
             box-shadow: none;
             border: 1px solid #DEDEDE;
@@ -293,11 +293,45 @@
             padding: 1.6rem;
 
             .detail-list {
-                gap: 1.2em;
                 justify-content: initial;
+                padding: 0;
+                display: grid;
+                $num-items: 6;
+                $num-cols: 3;
+                $num-rows: ceil($num-items / $num-cols);
+                grid-template-columns: repeat($num-cols, 1fr);
+                grid-template-rows: repeat($num-rows, 1fr);
+                grid-auto-flow: column;
+                grid-gap: 12px;
+                @media only screen and (max-width: $media-mobile) {
+                    $num-items: 6;
+                    $num-cols: 2;
+                    $num-rows: ceil($num-items / $num-cols);
+                    grid-template-columns: repeat($num-cols, 1fr);
+                    grid-template-rows: repeat($num-rows, 1fr);
+                    grid-auto-flow: column;
+                }
+                &.typ-1row {
+                    $num-items: 3;
+                    $num-cols: 3;
+                    $num-rows: ceil($num-items / $num-cols);
+                    grid-template-columns: repeat($num-cols, 1fr);
+                    grid-template-rows: repeat($num-rows, 1fr);
+                    grid-auto-flow: column;
+                }
+                &.typ-2row {
+                    @media only screen and (max-width: $media-mobile) {
+                        $num-items: 3;
+                        $num-cols: 2;
+                        $num-rows: ceil($num-items / $num-cols);
+                        grid-template-columns: repeat($num-cols, 1fr);
+                        grid-template-rows: repeat($num-rows, 1fr);
+                        grid-auto-flow: column;
+                    }
+                }
 
                 .detail-item {
-                    width: 31%;
+                    width: 100%;
 
                     &::after {
                         content: none;
@@ -322,6 +356,7 @@
         overflow: hidden;
         max-width: 100%;
         margin-bottom: 1.6rem;
+
         &:hover {
             box-shadow: none;
             border: 1px solid #DEDEDE;
@@ -379,6 +414,7 @@
                     font-size: 1.6rem;
                     color: #666666;
                     padding: 1rem;
+                    cursor: pointer;
                 }
             }
 

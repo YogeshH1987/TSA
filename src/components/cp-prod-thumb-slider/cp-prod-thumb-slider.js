@@ -72,9 +72,30 @@ function proPopupGalleryThumbSlider() {
 function proArchitechThumbSlider() {
   // Initialize the main slider with Swiper
   var architechthumbSlider = new Swiper(".js-thumb-architech-slider", {
-    slidesPerView: 7,
+    slidesPerView: 6,
     spaceBetween: 10,
     freeMode: true,
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView: 6,
+        spaceBetween: 10
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 7,
+        spaceBetween:10
+      },
+      // when window width is >= 640px
+      1280: {
+        slidesPerView: 7,
+        spaceBetween: 10
+      }
+    }
   });
   var architechmainSlider = new Swiper(".js-pro-architech-slider", {
     thumbs: {
