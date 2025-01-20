@@ -91,7 +91,8 @@
       line-height: 2.4rem;
       color: #333333; }
   .cp-design-card.typ-architectual-plan {
-    max-width: 100%; }
+    max-width: 100%;
+    background-color: #fff; }
     .cp-design-card.typ-architectual-plan .img-wrap {
       position: relative;
       border-radius: 1.6rem 1.6rem 0 0;
