@@ -155,7 +155,8 @@ TSA.RebarsCalculator = {
         const nextBtns = document.querySelectorAll('.btn-next');
         const actWrap = document.querySelector('.act-wrap');
         const progressBar = document.querySelector('.cp-stop-progressbar');
-        const progressItems = document.querySelectorAll('.progress-bar .progress-item'); // Progress items
+        const progressItems = document.querySelectorAll('.progress-bar .progress-item');
+        const stepText = document.querySelector('.calc-progress-bar .step-text'); // Step text element
     
         function showStep(stepNumber) {
             steps.forEach((step, index) => {
@@ -178,6 +179,11 @@ TSA.RebarsCalculator = {
                     item.classList.remove('complete', 'ongoing');
                 }
             });
+    
+            // Update step-text
+            if (stepText) {
+                stepText.textContent = `Step - ${stepNumber}/${steps.length}`;
+            }
         }
     
         step1Btn.addEventListener('click', function () {
@@ -216,7 +222,7 @@ TSA.RebarsCalculator = {
         });
     
         showStep(currentStep);
-    }
+    }    
     
 };
 

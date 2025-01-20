@@ -50,4 +50,11 @@
             }
         }
     }
+    &.typ-4-col{
+        .progress-bar{
+            .progress-item{
+                width: 25%;
+            }
+        }
+    }
 }

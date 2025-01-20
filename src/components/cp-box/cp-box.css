@@ -6,24 +6,96 @@
 /*opacity- end*/
 .cp-box {
   display: flex;
-  justify-content: flex-start; }
-  .cp-box .title {
-    font-size: 1.6rem;
+  justify-content: flex-start;
+}
+.cp-box .title {
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding-block: 1.6rem;
+}
+.cp-box.type-quntity {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cp-box.type-quntity .title {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-box .act-wrap {
+    position: sticky;
+    top: 10px; /* Adjust as needed */
+    z-index: 1;
+  }
+}
+.cp-box.typ-durshine-pdp {
+  justify-content: flex-end;
+}
+.cp-box.typ-calculate {
+  border: 1px solid #3D7EDB;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  background: #ECF2FB;
+  padding: 3.2rem 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-calculate {
+    width: 100%;
+    gap: 1.6rem;
+  }
+}
+.cp-box.typ-calculate .img-wrap,
+.cp-box.typ-calculate .cont-wrap {
+  width: 47%;
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-calculate .img-wrap,
+  .cp-box.typ-calculate .cont-wrap {
+    width: 100%;
+  }
+}
+.cp-box.typ-calculate .img-wrap {
+  width: 55.5rem;
+  height: 34.2rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+.cp-box.typ-calculate .img-wrap img {
+  height: 100%;
+  object-fit: contain;
+}
+.cp-box.typ-rebar .img-wrap {
+  width: 55.5rem;
+  height: 25rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-rebar .img-wrap {
+    height: 14rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cp-box.typ-rebar {
+    padding: 1.6rem;
+  }
+  .cp-box.typ-rebar .sec-head {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .cp-box.typ-rebar .sec-head .sec-title {
+    color: #666666;
     font-family: "Poppins Medium";
-    color: #333333;
-    padding-block: 1.6rem; }
-  .cp-box.type-quntity {
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .cp-box.type-quntity .title {
-      width: 100%; }
-  @media only screen and (max-width: 768px) {
-    .cp-box .act-wrap {
-      position: sticky;
-      top: 10px;
-      /* Adjust as needed */
-      z-index: 1; } }
-  .cp-box.typ-durshine-pdp {
-    justify-content: flex-end; }
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=cp-box.css.map */

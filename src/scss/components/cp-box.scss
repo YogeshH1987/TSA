@@ -34,13 +34,14 @@
         border: 1px solid $clr-primary;
         @include border-radius(1.6rem);
         background: #ECF2FB;
-        padding: 4rem 3.2rem;
+        padding: 3.2rem 4rem;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 4rem;
+        height: 100%;
         @media only screen and (max-width: $media-sm) {
             width: 100%;
-            gap: 2rem;
+            gap: 1.6rem;
         }
         .img-wrap,
         .cont-wrap{
@@ -68,7 +69,20 @@
             }
         }
         @media only screen and (max-width: $media-sm) {
-            padding: 2.4rem 1.6rem;
+            padding: 1.6rem;
+            .sec-head{
+                margin-bottom: 0;
+                text-align: center;
+                .sec-title{
+                    color: #666666;
+                    font-family: $font-medium;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    text-align: center;
+                    margin: 0;
+                    width: 100%;
+                }
+            }
         }
     }
 }

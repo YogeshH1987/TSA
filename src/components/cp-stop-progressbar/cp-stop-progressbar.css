@@ -58,5 +58,8 @@
 .cp-stop-progressbar .progress-bar .progress-item.ongoing {
   background: #FFB800;
 }
+.cp-stop-progressbar.typ-4-col .progress-bar .progress-item {
+  width: 25%;
+}
 
 /*# sourceMappingURL=cp-stop-progressbar.css.map */

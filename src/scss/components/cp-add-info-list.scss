@@ -99,7 +99,12 @@
         }
         .info-card{
             align-items: flex-start;
-            width: 90%;
+            width: 100%;
+            gap: 1.2rem;
+            text-align: left;
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.2rem 1.6rem;
+            }
             .icon{
                 font-size: 2rem;
                 line-height: 3.2rem;
