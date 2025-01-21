@@ -10,86 +10,66 @@
   width: 100%;
   height: 8rem;
   display: flex;
-  align-items: center;
-}
-@media only screen and (max-width: 991px) {
-  .cp-single-banner {
-    height: 5rem;
-  }
-}
-.cp-single-banner .bg-img {
-  display: none;
-}
-.cp-single-banner .sec-title {
-  font-family: "Poppins Semibold";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #FFFFFF;
-}
-@media only screen and (max-width: 991px) {
+  align-items: center; }
+  @media only screen and (max-width: 991px) {
+    .cp-single-banner {
+      height: 5rem; } }
+  .cp-single-banner .bg-img {
+    display: none; }
   .cp-single-banner .sec-title {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .cp-single-banner .sec-desc {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-}
-.cp-single-banner .wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-.cp-single-banner .cont-wrap {
-  width: 70%;
-}
-.cp-single-banner .btn-wrap {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.cp-single-banner .btn-wrap .coupon {
-  font-family: "Poppins Semibold";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #FFFFFF;
-  text-transform: capitalize;
-  padding: 0.8rem 1.2rem;
-  border: 1px dashed #FFFFFF;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media only screen and (max-width: 991px) {
-  .cp-single-banner .btn-wrap .coupon {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    width: 8.3rem;
-    height: 3.2rem;
-  }
-}
-.cp-single-banner .btn {
-  min-width: 10.2rem;
-  padding: 0.7rem 1rem;
-}
-@media only screen and (max-width: 991px) {
+    font-family: "Poppins Semibold";
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #FFFFFF; }
+    @media only screen and (max-width: 991px) {
+      .cp-single-banner .sec-title {
+        font-size: 1.4rem;
+        line-height: 2rem; } }
+  @media only screen and (max-width: 991px) {
+    .cp-single-banner .sec-desc {
+      font-size: 1.2rem;
+      line-height: 1.6rem; } }
+  .cp-single-banner .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; }
+  .cp-single-banner .cont-wrap {
+    width: 70%; }
+  .cp-single-banner .btn-wrap {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .cp-single-banner .btn-wrap .coupon {
+      font-family: "Poppins Semibold";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #FFFFFF;
+      text-transform: capitalize;
+      padding: 0.8rem 1.2rem;
+      border: 1px dashed #FFFFFF;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media only screen and (max-width: 991px) {
+        .cp-single-banner .btn-wrap .coupon {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          width: 8.3rem;
+          height: 3.2rem; } }
   .cp-single-banner .btn {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    min-width: 8rem;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .cp-single-banner.typ-plp {
-    height: 6rem;
-  }
-}
+    min-width: 10.2rem;
+    padding: 0.7rem 1rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-single-banner .btn {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        min-width: 8rem; } }
+  @media only screen and (max-width: 991px) {
+    .cp-single-banner.typ-plp {
+      height: 6rem; } }
 
 /*# sourceMappingURL=cp-single-banner.css.map */

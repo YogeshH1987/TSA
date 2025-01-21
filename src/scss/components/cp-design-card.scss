@@ -560,11 +560,12 @@
 
             .cp-counter {
                 max-width: 10.3rem;
-
+                border-radius: 8px;
 
                 .btn-count {
                     width: 3.2rem;
                     height: 3.2rem;
+                    font-size: 2rem;
                 }
 
                 .number-product {

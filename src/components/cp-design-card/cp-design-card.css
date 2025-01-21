@@ -399,10 +399,12 @@
       margin-bottom: 8px;
       color: #333333; }
     .cp-design-card.typ-floor-plan .content-wrap .cp-counter {
-      max-width: 10.3rem; }
+      max-width: 10.3rem;
+      border-radius: 8px; }
       .cp-design-card.typ-floor-plan .content-wrap .cp-counter .btn-count {
         width: 3.2rem;
-        height: 3.2rem; }
+        height: 3.2rem;
+        font-size: 2rem; }
       .cp-design-card.typ-floor-plan .content-wrap .cp-counter .number-product {
         width: 100%;
         height: 3.2rem; }
