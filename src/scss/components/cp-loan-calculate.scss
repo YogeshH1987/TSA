@@ -1,0 +1,184 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-loan-calculate{
+    border: 1px solid $clr-border;
+    @include border-radius(1.6rem);
+    background: $clr-root;
+    padding: 5.5rem 4.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media only screen and (max-width: $media-tab) {
+        border: 0;
+        padding: 0;
+    }
+    .form-wrap{
+        width: 58%;
+        @media only screen and (max-width: $media-tab) {
+            width: 100%;
+        }
+    }
+    .graph-wrap{
+        width: 35%;
+        @media only screen and (max-width: $media-tab) {
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid $clr-border;
+            @include border-radius(1.2rem);
+        }
+        .donut-chart-section{
+            text-align: center;
+            width: 24rem;
+            height: 24rem;
+            margin: 0 auto;
+            @media only screen and (max-width: $media-tab) {
+                margin: 2.4rem auto;
+            }
+        }
+    } 
+    .legend{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 2rem;
+        .legend-item{
+            width: 46%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.5rem;
+        }
+        .dots{
+            width: 1rem;
+            height: 1rem;
+            @include border-radius(50%);
+            margin-top: 0.5rem;
+        }
+        .legend-cont{
+            color: $clr-base;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-family: $font-medium;          
+            .title{
+                color: $clr-para;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                font-family: $font-regular;
+            }
+        }
+     
+    } 
+    .result-wrap{
+        border: 1px solid #B1CBF1;
+        background: #ECF2FB;
+        padding: 0.8rem 1.8rem;
+        text-align: center;
+        @include border-radius(1.6rem);
+        @media only screen and (max-width: $media-tab) {
+            padding: 1.6rem;
+            @include border-radius(0);
+            border: 0;
+        }
+        .title{
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-para;
+        }
+        .amt{
+            font-size: 2.4rem;
+            line-height: 4rem;
+            color: $clr-base;
+            font-family: $font-semiBold;
+            @media only screen and (max-width: $media-tab) {
+                line-height: 3.2rem;
+            }
+        }
+    }  
+    .slider-container{
+        margin-bottom: 8.8rem;
+        @media only screen and (max-width: $media-tab) {
+            margin-bottom: 6.4rem;
+        }
+        &:last-child{
+            margin-bottom: 0;
+            @media only screen and (max-width: $media-tab) {
+                margin-bottom: 6.4rem;
+            }
+        }
+        .slider-input{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            gap: 1rem;
+            .slider-label{
+                font-family: $font-medium;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $clr-base;                
+            }
+            .slider-input{
+                border: 1px solid $clr-border;
+                padding: 0.6rem 1rem;
+                @include border-radius(0.4rem);
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $clr-base;
+                text-align: center;
+                max-width: 12.4rem;
+                width: 100%;
+                @media only screen and (max-width: $media-tab) {
+                    padding: 0.4rem;
+                }
+                &.typ-year,
+                &.typ-rate{
+                    max-width: 6.9rem;
+                    @media only screen and (max-width: $media-tab) {
+                        max-width: 5rem;
+                    }
+                }
+            } 
+        }
+    }
+    .input-wrap{
+        display: flex;
+        gap: 1.2rem;
+    }
+    
+    @media only screen and (max-width: $media-tab) {
+      
+    }
+}
+.loan-calc-table-wrap{
+    border: 1px solid $clr-border;
+    @include border-radius(2.4rem);
+    @media only screen and (max-width: $media-tab) {
+        @include border-radius(1.6rem);
+    }
+    .table-wrapper{
+        @media only screen and (max-width: $media-tab) {
+            overflow: hidden;
+            overflow-x: scroll;
+        }
+    }
+    .table-head{
+        text-align: center;
+        padding: 1.6rem;
+        .title{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-family: $font-medium;
+            color: $clr-base;
+            @media only screen and (max-width: $media-tab) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    .error{
+        color: #D2042D;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}

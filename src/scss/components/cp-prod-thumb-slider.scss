@@ -31,6 +31,32 @@
         color: $clr-para;
 
     }
+    &.pravesh-product {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-top: 2.4rem;
+
+        .bs-swiper {
+            &.type-thumb {
+                margin-top: 0;
+                order: -1;
+                width: 12rem;
+                height: 500px;
+
+                .swiper-wrapper {
+                    gap: 0.6rem;
+                }
+            }
+
+            &.type-big-img-slider {
+                height: 100%;
+                border: none;
+                border-radius: 0;
+            }
+        }
+
+    }
     &.typ-architech-pdp{
         .seller-tag{background-color: #fff; z-index: 2;}
     }

@@ -204,4 +204,29 @@
             }
         }
     }
+
+    &.typ-build-cost{
+        @include border-radius(0);
+        border: 0;
+        .img-wrap {
+            @include border-radius(1.2rem);
+            height: 13rem;
+    
+            img {
+                height: 100%;
+                @include border-radius(1.6rem);
+                object-fit: cover;
+            }    
+        }
+        .detail-wrap {
+            padding: 0.8rem;
+            .detail-tile {
+                font-family: $font-semiBold;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: $clr-base;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
 }

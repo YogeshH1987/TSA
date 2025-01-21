@@ -109,6 +109,21 @@ function proArchitechThumbSlider() {
 }
 
 
+ function proVerticalThumbSlider(){
+  // Initialize the main slider with Swiper
+  var thumbSlider = new Swiper(".js-vertical-thumb-slider", {
+   slidesPerView: 5,
+     direction: 'vertical',
+    
+ });
+ var mainSlider = new Swiper(".js-vertical-pro-slider", {
+   thumbs: {
+     swiper: thumbSlider,
+   },
+ });
+
+ 
+}
 
 
 

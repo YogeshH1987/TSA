@@ -10,6 +10,71 @@
     line-height: 2.4rem;
     margin-bottom: 1.2rem;
   }
+ 
+  .form-group {
+    margin-bottom: 3.2rem;
+    @media only screen and (max-width: $media-sm) {
+      margin-bottom: 2.4rem;
+    }
+    &.typ-border{
+      padding-top: 1.6rem;
+      border-top: 1px solid $clr-border;  
+    }
+    .form-label {
+      font-family: $font-regular;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: $clr-para;
+      margin-bottom: 0.8rem;
+      display: block;
+      sup{
+        color: $clr-secondary;
+      }
+      .clr-gray{
+        color: #999999;
+      }
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1.1rem 1.6rem;
+      border: 1px solid $clr-border;
+      font-family: $font-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-radius: 1.2rem;
+    }
+
+    .form-textarea {
+      width: 100%;
+      padding: 1.2rem 1.6rem;
+      border: 1px solid $clr-border;
+      font-family: $font-regular;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-radius: 1.2rem;
+      min-height: 15.6rem;
+    
+    }
+    .err-mgs {
+      color: $clr-secondary;
+      font-family: $font-medium;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.4rem;
+      display: block;
+    }
+  } 
+  
+  .feedback-personal-data {
+    .form-group {
+      .form-label {
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 0.8rem;
+        display: block;
+      }
 
   .form-group {
     .form-label {
@@ -107,32 +172,47 @@
       color: #ffb800;
     }
   }
-
   &.typ-location,
-  &.typ-language {
-    .act-wrap {
+  &.typ-language{
+    .act-wrap{
       margin-top: 2.4rem;
       text-align: center;
-
       .btn-submit {
         margin-bottom: 2.4rem;
       }
     }
-
     .radio-wrap {
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
       gap: 0.8rem;
     }
-
     .bs-radio {
       margin-bottom: 0;
-
-      .custom-radio {
+      .custom-radio{
         min-width: 8.4rem;
         padding: 1.25rem 0;
       }
+    }
+  }
+  
+  &.typ-book-demo{
+    margin: 0;
+    .form-group {
+      .form-label{
+        margin-bottom: 1.6rem;
+      }
+      .form-control {
+        max-width: 34.4rem;
+      }
+    }
+    .btn-default{
+      min-width: 22rem;
+      @media only screen and (max-width: $media-mobile) {
+        min-width: 100%;
+      }
+    }
+  }
     }
   }
 

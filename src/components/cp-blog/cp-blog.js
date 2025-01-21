@@ -3,6 +3,7 @@ var winWidth = $(window).width();
 $(document).ready(function() {
     // addedFavorite();
     blogSlider();
+    whyPraveshSlider();
 });
 
 $(window).resize(function() {
@@ -28,4 +29,12 @@ function blogSlider() {
         loop: false,
         navigation: false
     });
+}
+
+function whyPraveshSlider(){
+    var swiper = new Swiper(".js-why-pravesh", {
+        slidesPerView: 'auto',
+        loop: false,
+        navigation: false
+    }); 
 }

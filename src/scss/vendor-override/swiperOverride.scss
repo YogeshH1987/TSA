@@ -732,7 +732,16 @@
   &.right-space {
     margin-right: -2rem;
   }
-
+  &.typ-why-pravesh{
+    padding-bottom: 2.2rem;
+    .swiper-slide{
+      width: 23.0rem;
+    border: 1px solid #dedede;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-right: 2rem;
+    }
+  }
   &.artical-list-wrap {
     margin-bottom: 0;
     padding-bottom: 2.4rem;

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Rebar estimator</title>
+    <meta name="description" content="description goes here" />
+	<link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
+	<link rel="stylesheet" href="/css/home.css" />
+	<link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
+	<link rel="stylesheet" href="/components/cp-box/cp-box.css" />
+    <link rel="stylesheet" href="../../components/cp-calculator-box/cp-calculator-box.css" />
+    <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
+	<link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
+    <link rel="stylesheet" href="../../components/cp-switch/cp-switch.css" />
+    <link rel="stylesheet" href="../../components/cp-rebar-estimator/cp-rebar-estimator.css" />
+    <link rel="stylesheet" href="../../components/cp-stop-progressbar/cp-stop-progressbar.css" />	
+	<link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />
+	<link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />	
+	<link rel="stylesheet" href="../../components/cp-checkbox/cp-checkbox.css" />	
+  </head>
+
+  <body>
+    <main class="main">
+		<!-- Manage your home construction start-->
+		<div class="container">
+			<section class="bs-sec">			
+				<div class="sec-head typ-rebar">
+					<h2 class="sec-title">Rebar estimator</h2>
+					<p class="sec-desc">Accurate, hassle-free rebar calculations for slabs, beams, columns, and more..</p>
+				</div>
+				<div class="sec-cont">
+					<div class="cp-rebar-estimator full-width">
+						<div class="cp-stop-progressbar typ-4-col hide">
+							<div class="calc-progress-bar">
+								<div class="step-text">Step - 1/5</div>
+								<button class="close-btn"><span class="text">Exit</span><span class="icon icon-exit"></span></button>
+							</div>
+							<ul class="progress-bar">
+								<li class="progress-item complete"></li>
+								<li class="progress-item ongoing"></li>
+								<li class="progress-item"></li>
+								<li class="progress-item"></li>
+							</ul>
+						</div>
+						<div class="calc-step step-1">
+							<div class="cp-box typ-calculate typ-rebar">
+								<!-- <div class="sec-head cm-mobile">
+									<h2 class="sec-title typ-center">Step - 1</h2>
+								</div> -->
+								<div class="img-wrap">
+									<picture>
+										<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/rebar-img.png">
+										<img src="../../components/cp-calculator-box/images/rebar-img.png" alt="Timeline_Cards"/>
+									</picture>
+								</div>
+								<div class="cont-wrap">
+									<div class="cp-calculator-box typ-rebar">
+										<h2 class="title">Ground floor area</h2>
+										<p class="desc">Enter area between 578 sq ft - 1934 sq ft</p>
+										<div class="input-group">
+											<input type="text" class="input-field" id="builtUpAreaValue" value="700" maxlength="4">
+											<div class="cp-switch-toggle typ-area">
+												<input class="switch-toggle-checkbox" type="checkbox" id="area-mesurement" />
+												<label class="switch-toggle-label" for="area-mesurement">
+													<span>Sq. Ft</span>
+													<span>Sq. Mts</span>
+												</label>
+											</div>
+											<p class="error hide">Sorry, we only accept area between 578-1934 sq ft for now.</p>
+										</div>
+										<div class="btn-wrap">
+											<button class="btn btn-primary step-btn " id="step1-btn">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="cp-add-info-list typ-calculate">
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-goal"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Accurate projections</h2>
+									  <p class="info-desc">Calculate total property area, including carpet, walls, balconies, and more.</p>
+									</div>
+								  </div>
+								</li>
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-measurement"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Easy usage</h2>
+									  <p class="info-desc">No expertise needed, just input basic details.</p>
+									</div>
+								  </div>
+								</li>
+								<li class="add-info-item">
+								  <div class="info-card">
+									<span class="icon icon-cash"></span>
+									<div class="info-wrap">
+									  <h2 class="info-title">Negotiate confidently</h2>
+									  <p class="info-desc">Know market rates to negotiate better with contractors and suppliers.</p>
+									</div>
+								  </div>
+								</li>
+							</ul>
+						</div>
+						<div class="calc-step step-2 hide">
+							<h2 class="calc-title">Rebar estimator</h2>
+							<p class="calc-desc">Select the number of floors</p>
+							<div class="img-wrap typ-no-flr">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-rebar-estimator/images/frame.png">
+									<img src="../../components/cp-rebar-estimator/images/frame.png" alt="frame" />
+								  </picture>
+							</div>
+							<div id="numberFlr" class="cp-noui-range-slide typ-house"></div>
+						</div>
+						<div class="calc-step step-3 hide">
+							<h2 class="calc-title">Rebar estimator</h2>
+							<p class="calc-desc">Select a floor plan similar to your home design</p>
+							<div class="scroll-container">
+								<div class="cp-tab typ-rebar js-plan-flr">
+									<ul class="tab-list">
+									  <li class="tab-item active" data-target="#2bhk">
+										<h3 class="title">2BHK</h3>
+									  </li>
+									  <li class="tab-item" data-target="#3bhk">
+										<h3 class="title">3BHK</h3>
+									  </li>
+									  <li class="tab-item" data-target="#4bhk">
+										<h3 class="title">4BHK</h3>
+									  </li>					   
+									</ul>
+									<div class="tab-container">
+										<div class="radio-wrap">
+											<div class="bs-radio typ-flr-plan" data-val="2bhk">
+												<input id="radio1" name="size" type="radio">
+												<label for="radio1" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="2bhk">
+												<input id="radio2" name="size" type="radio">
+												<label for="radio2" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="2bhk">
+												<input id="radio3" name="size" type="radio">
+												<label for="radio3" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>											
+											<div class="bs-radio typ-flr-plan" data-val="3bhk">
+												<input id="radio4" name="size" type="radio">
+												<label for="radio4" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="4bhk">
+												<input id="radio5" name="size" type="radio">
+												<label for="radio5" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="bs-radio typ-flr-plan" data-val="3bhk">
+												<input id="radio6" name="size" type="radio">
+												<label for="radio6" class="custom-radio">
+													<div class="plan-card">
+														<div class="img-wrap">
+															<img src="../../components/cp-rebar-estimator/images/flr-plan.png" alt="flr-plan">
+														</div>
+														<div class="cont-wrap">
+															<div class="details">
+																<h2 class="title">Area</h2>
+																<p class="desc">1200 sqft</p>
+															</div>
+															<div class="details">
+																<h2 class="title">Type</h2>
+																<p class="desc">2BHK</p>
+															</div>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>							
+						</div>
+						<div class="calc-step step-4 hide">
+							<h2 class="calc-title">Rebar estimator</h2>
+							<p class="calc-desc">What do you want to calculate rebar estimate for</p>
+							<div class="scroll-container ">
+								<ul class="lyt-grid typ-col-2-no-wrap js-">
+									<li class="grid-col">
+										<div class="bs-radio typ-house">
+											<input id="typ1" name="material" type="radio" value="full-house" class="js-select-house">
+											<label for="typ1" class="custom-radio">	
+												<div class="home-typ-card">
+													<div class="img-wrap">
+														<img src="../../components/cp-rebar-estimator/images/Hills.png" alt="">
+													</div>
+													<h2 class="title">Full house</h2>
+												</div>
+											</label>
+										</div>
+									</li>
+									<li class="grid-col">
+										<div class="bs-radio typ-house">
+											<input id="typ2" name="material" type="radio" value="part-house" class="js-select-house">
+											<label for="typ2" class="custom-radio">	
+												<div class="home-typ-card">
+													<div class="img-wrap">
+														<img src="../../components/cp-rebar-estimator/images/flat.png" alt="">
+													</div>
+													<h2 class="title">A part of the house</h2>
+												</div>
+											</label>
+										</div>
+									</li>							
+								</ul>
+								<ul class="flr-list hide">
+									<li class="flr-item">
+										<div class="cp-checkbox typ-flr">
+                                            <input type="checkbox" id="Foundation">
+                                            <label for="Foundation">Foundation</label>
+                                        </div>
+									</li>
+									<li class="flr-item">
+										<div class="cp-checkbox typ-flr">
+                                            <input type="checkbox" id="Ground floor">
+                                            <label for="Ground floor">Ground floor</label>
+                                        </div>
+									</li>
+									<li class="flr-item">
+										<div class="cp-checkbox typ-flr">
+                                            <input type="checkbox" id="First floor">
+                                            <label for="First floor">First floor</label>
+                                        </div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="act-wrap hide">
+							<button class="btn btn-outline typ-rebar-cal btn-back"><span class="icon icon-Left-arrow cm-mobile"></span><span class="cm-desktop">Back</span></button>
+							<button class="btn typ-rebar-cal btn-next"><span class="icon icon-right-arrow cm-mobile"></span><span class="cm-desktop">Next</span></button>
+						</div>
+					</div>
+				</div>			
+			</section>
+		</div>
+		
+		<!-- Manage your home construction end-->
+		<!--Learn about the home building journey start -->
+		<section class="bs-sec">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">Learn about the home building journey</h2>
+			</div>
+			<div class="sec-cont">
+				<div class="lyt-grid typ-col-4">
+					<div class="grid-col">
+						<div class="cp-blog">
+							<a href="#" class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-blog/images/blog-img.png">
+									<source media="(max-width:991px)" srcset="../components/cp-blog/images/blog-img.png">
+									<img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+								</picture>
+							</a>
+							<div class="content-wrap">
+								<ul class="tag-list">
+									<li class="tag-item">
+										<span class="tag">Construction</span>
+									</li>
+									<li class="tag-item">
+										<span class="icon js-add-favorite icon-unfill-like"></span>
+									</li>
+								</ul>
+								<h3 class="c-title">Finding your loan match: Expert advice for selecting the perfect home loan</h3>
+								<div class="post-date">
+									<span class="post-detail">Mon, 26 Aug 2024</span>
+									<span class="post-detail">5 mins read</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-col">
+						<div class="cp-blog">
+							<a href="#" class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-blog/images/blog-img.png">
+									<source media="(max-width:991px)" srcset="../components/cp-blog/images/blog-img.png">
+									<img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+								</picture>
+							</a>
+							<div class="content-wrap">
+								<ul class="tag-list">
+									<li class="tag-item">
+										<span class="tag">Construction</span>
+									</li>
+									<li class="tag-item">
+										<span class="icon js-add-favorite icon-unfill-like"></span>
+									</li>
+								</ul>
+								<h3 class="c-title">The unique struggles for home construction loan approval in smaller india...</h3>
+								<div class="post-date">
+									<span class="post-detail">Mon, 26 Aug 2024</span>
+									<span class="post-detail">5 mins read</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-col">
+						<div class="cp-blog">
+							<a href="#" class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-blog/images/blog-img.png">
+									<source media="(max-width:991px)" srcset="../components/cp-blog/images/blog-img.png">
+									<img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+								</picture>
+							</a>
+							<div class="content-wrap">
+								<ul class="tag-list">
+									<li class="tag-item">
+										<span class="tag">Construction</span>
+									</li>
+									<li class="tag-item">
+										<span class="icon js-add-favorite icon-unfill-like"></span>
+									</li>
+								</ul>
+								<h3 class="c-title">Home loan v/s construction loan: Which one should you choose?</h3>
+								<div class="post-date">
+									<span class="post-detail">Mon, 26 Aug 2024</span>
+									<span class="post-detail">5 mins read</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-col">
+						<div class="cp-blog">
+							<a href="#" class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-blog/images/blog-img.png">
+									<source media="(max-width:991px)" srcset="../components/cp-blog/images/blog-img.png">
+									<img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+								</picture>
+							</a>
+							<div class="content-wrap">
+								<ul class="tag-list">
+									<li class="tag-item">
+										<span class="tag">Construction</span>
+									</li>
+									<li class="tag-item">
+										<span class="icon js-add-favorite icon-unfill-like"></span>
+									</li>
+								</ul>
+								<h3 class="c-title">10 reasons for your home construction loan rejection</h3>
+								<div class="post-date">
+									<span class="post-detail">Mon, 26 Aug 2024</span>
+									<span class="post-detail">5 mins read</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Learn about the home building journey ends -->
+		<!-- Other calculators you may like start -->
+		<section class="bs-sec typ-gray-bg">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">Other calculators you may like</h2>
+			</div>
+			<div class="sec-cont">
+				<div class="cp-eCommerce-home-banner typ-calculate">
+					<div class="feature">
+					<div class="feature-item">
+						<a href="#" class="feature-card">
+						<h2 class="f-title">EMI <br/>CALCULATOR</h2>
+						<div class="f-img">
+							<picture>
+							<source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/calculate.png">
+							<img src="../../components/cp-eCommerce-home-banner/images/calculate.png" alt="calculate" />
+							</picture>
+						</div>
+						</a>
+					</div>
+					<div class="feature-item">
+						<a href="#" class="feature-card">
+						<h2 class="f-title">REBAR <br/>ESTIMATOR</h2>
+						<div class="f-img">
+							<picture>
+							<source media="(max-width:768px)" srcset="../../components/cp-eCommerce-home-banner/images/homedesign.png">
+							<img src="../../components/cp-eCommerce-home-banner/images/homedesign.png" alt="diya-tool-kit" />
+							</picture>
+						</div>
+						</a>
+					</div>
+					<div class="feature-item">
+						<a href="#" class="feature-card">
+						<h2 class="f-title">SHED <br/>ESTIMATOR</h2>
+						<div class="f-img">
+							<picture>
+							<source media="(max-width:768px)" srcset="../../components/cp-eCommerce-home-banner/images/roofing.png">
+							<img src="../../components/cp-eCommerce-home-banner/images/roofing.png" alt="roofing" />
+							</picture>
+						</div>
+						</a>
+					</div>
+					<div class="feature-item">
+						<a href="#" class="feature-card">
+						<h2 class="f-title">FENCING <br/>ESTIMATOR</h2>
+						<div class="f-img">
+							<picture>
+							<source media="(max-width:768px)" srcset="../../components/cp-eCommerce-home-banner/images/fence.png">
+							<img src="../../components/cp-eCommerce-home-banner/images/fence.png" alt="fence" />
+							</picture>
+						</div>
+						</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Other calculators you may like ends -->
+    </main>
+
+	<div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="/js/rebarsEstimator.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
