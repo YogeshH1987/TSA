@@ -424,7 +424,8 @@
   margin-top: 1.6rem; }
   .cp-tab.typ-architect-pdp .tab-list .tab-item .title {
     padding: 1.6rem 1.2rem;
-    display: block; }
+    display: block;
+    text-transform: capitalize; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

@@ -18,7 +18,8 @@
     position: absolute;
     left: 12px;
     top: 12px;
-    padding: 0.2rem 0.8rem; }
+    padding: 0.2rem 0.8rem;
+    z-index: 2; }
   .cp-prod-thumb-slider .plus-two-slide {
     text-align: center;
     display: flex;

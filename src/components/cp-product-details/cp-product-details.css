@@ -216,7 +216,8 @@
   gap: 8px;
   display: flex;
   align-items: center;
-  margin-top: 0.8rem; }
+  margin-top: 0.8rem;
+  color: #333333; }
   .cp-product-details.typ-architect .wishlist .icon {
     font-size: 14px;
     width: 14px;

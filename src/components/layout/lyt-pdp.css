@@ -54,6 +54,21 @@
     .lyt-pdp.typ-architect-lyt .grid-col:nth-child(2) {
       display: initial; } }
 
+.lyt-grid-2 {
+  display: grid;
+  grid-template-areas: 'prod-img-slider prod-img-slider prod-img-slider main-desc' 'other-desc other-desc other-desc main-desc';
+  grid-template-columns: 55% 1fr;
+  gap: 2rem; }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid-2 {
+      display: block; } }
+  .lyt-grid-2 .prod-img-slider {
+    grid-area: prod-img-slider; }
+  .lyt-grid-2 .main-desc {
+    grid-area: main-desc; }
+  .lyt-grid-2 .other-desc {
+    grid-area: other-desc; }
+
 .feature-wrapper {
   width: 50%;
   margin-top: -8rem; }

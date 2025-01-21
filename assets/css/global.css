@@ -1402,6 +1402,17 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-sec.typ-stories .sec-desc {
         padding-top: 1rem; } }
+    .bs-sec.typ-stories .btn-wrap {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 3.2rem;
+      align-items: center;
+      justify-content: center; }
+      .bs-sec.typ-stories .btn-wrap .typ-stories-btn {
+        min-width: 22rem; }
+        @media only screen and (max-width: 991px) {
+          .bs-sec.typ-stories .btn-wrap .typ-stories-btn {
+            min-width: 16rem; } }
   .bs-sec.typ-best-selling {
     overflow: hidden;
     background: #FFFBF2; }
@@ -1868,6 +1879,12 @@ p {
     min-width: 34.3rem; }
   .bs-sec.typ-architech-plans {
     margin-bottom: 0rem; }
+  .bs-sec.car-shed-plp {
+    overflow: hidden;
+    background: #FFF4D7;
+    padding: 2.4rem 0; }
+  .bs-sec.typ-architect-shed {
+    margin: 0; }
 
 .btn {
   display: inline-block;
@@ -2554,6 +2571,10 @@ p {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+  .bs-swiper.car-shed-plp .swiper-slide {
+    height: auto; }
+  .bs-swiper.p-0 {
+    padding: 0; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }
