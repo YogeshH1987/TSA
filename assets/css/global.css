@@ -2392,12 +2392,14 @@ p {
     padding: 1.2rem 4.6rem 1.2rem 1.6rem;
     color: #333333;
     position: relative; }
-  .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-correct, .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-incorrect {
+  .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-correct,
+  .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-incorrect {
     border-color: #66C88D;
     background-color: #E5F6EC;
     color: #333333;
     font-family: "Poppins Medium"; }
-    .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-correct::after, .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-incorrect::after {
+    .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-correct::after,
+    .bs-radio.typ-blog-quiz input[type="radio"]:checked + .typ-incorrect::after {
       content: "\e938";
       width: 2.4rem;
       font-size: 1.6rem;
@@ -2457,6 +2459,101 @@ p {
     border: none;
     background: none;
     font-family: "Poppins Medium"; }
+  .bs-radio.typ-shipping-radio {
+    width: 50%;
+    padding: 0 1rem; }
+    .bs-radio.typ-shipping-radio .custom-radio {
+      position: relative;
+      padding: 1.6rem 1.6rem 1.6rem 4.6rem; }
+    .bs-radio.typ-shipping-radio .checkmark {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      height: 21px;
+      width: 21px;
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 50%;
+      border: 2px solid #999999;
+      transition: all 0.3s; }
+    .bs-radio.typ-shipping-radio input[type="radio"]:checked + .custom-radio .checkmark {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: #3D7EDB; }
+    .bs-radio.typ-shipping-radio .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .bs-radio.typ-shipping-radio .checkmark::after {
+      top: 3px;
+      left: 3px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #3D7EDB; }
+    .bs-radio.typ-shipping-radio input[type="radio"]:checked + .custom-radio .checkmark::after {
+      display: block; }
+    .bs-radio.typ-shipping-radio input[type=radio]:checked + .custom-radio {
+      font-family: "Poppins Regular";
+      color: #333333; }
+    .bs-radio.typ-shipping-radio input[type=radio]:checked + .custom-radio .tag {
+      background-color: #fff !important; }
+  .bs-radio.typ-delivery-cart {
+    width: 19%; }
+    .bs-radio.typ-delivery-cart .custom-radio {
+      min-width: 100%; }
+  .bs-radio.typ-dealer-cart {
+    width: 18%;
+    text-align: center; }
+    .bs-radio.typ-dealer-cart .custom-radio {
+      position: relative;
+      padding: 0;
+      border: none;
+      background: none; }
+      .bs-radio.typ-dealer-cart .custom-radio .dealer-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .bs-radio.typ-dealer-cart .custom-radio .dealer-wrap .icon {
+          width: 72px;
+          height: 72px;
+          border: 1px solid #DEDEDE;
+          border-radius: 1.2rem;
+          font-size: 2.4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #999999;
+          margin-bottom: 1.2rem; }
+        .bs-radio.typ-dealer-cart .custom-radio .dealer-wrap .title {
+          font-size: 12px; }
+        .bs-radio.typ-dealer-cart .custom-radio .dealer-wrap .desc {
+          font-size: 10px !important;
+          line-height: normal;
+          margin-bottom: 0 !important; }
+    .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio {
+      border: none;
+      background: none;
+      font-family: "Poppins Medium"; }
+    .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio .dealer-wrap .icon {
+      border: 1px solid #FFB800;
+      background-color: #FFF8E5;
+      color: #FFB800;
+      position: relative; }
+      .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio .dealer-wrap .icon::after {
+        content: "\e91a";
+        color: #FFB800;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-size: 1.6rem; }
+      .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio .dealer-wrap .icon.typ-green {
+        border-color: #00A441;
+        color: #00A441;
+        background-color: #E5F6EC; }
+        .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio .dealer-wrap .icon.typ-green::after {
+          color: #00A441; }
+    .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio .dealer-wrap .title {
+      color: #333333; }
 
 .bs-modal {
   position: relative;

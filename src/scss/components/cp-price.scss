@@ -68,100 +68,111 @@
                 color: #A77800;
             }
         }
-  
 
-    &.total-price {
-        background: #F3F4F6;
-        font-family: $font-semiBold;
-        font-size: 2.4rem;
-        color: $clr-base;
-        padding: 2.4rem;
-        margin-top: 2.4rem;
 
-        @media only screen and (max-width: $media-mobile) {
-            font-size: 2rem;
-            margin-top: 3.2rem;
-            padding: 1.6rem 2rem;
-        }
-
-        .sub-text {
-            font-size: 1.2rem;
-            color: $clr-para;
-            font-family: $font-medium;
-            display: block;
-        }
-
-    }
-
-    &.typ-minimum {
-        background: #FFF8E5;
-        border-bottom: 1px solid #FFD466;
-        border-bottom: 1px solid #FFD466;
-        gap: 0.8rem;
-        padding: 1.2rem;
-        align-items: center;
-
-        @media only screen and (max-width: $media-mobile) {
-            border-top: 1px solid #FFD466;
-            padding: 0.5rem 1.6rem;
-
-        }
-
-        .desc {
-
-            font-size: 1.4rem;
-            font-family: $font-medium;
-            color: #A77800;
-        }
-
-        @media only screen and (max-width: $media-mobile) {
-            border-top: 1px solid #FFD466;
-        }
-
-        .icon {
+        &.total-price {
+            background: #F3F4F6;
+            font-family: $font-semiBold;
             font-size: 2.4rem;
-            color: #A77800;
-        }
-
-        .desc {
-            font-size: 1.4rem;
-            font-family: $font-medium;
-            color: #A77800;
-        }
-    }
-
-    &.typ-login {
-        padding: 0.8rem 1.6rem;
-        background: #FFF8E5;
-        border-color: #FFD466;
-        color: $clr-base;
-        gap: 0.4rem;
-
-        @media only screen and (max-width: $media-mobile) {
-            align-items: center;
-        }
-
-        .icon {
-            font-size: 2.4rem;
-        }
-
-        .desc {
             color: $clr-base;
+            padding: 1.6rem !important;
+            margin-top: 2.4rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 2rem;
+                margin-top: 3.2rem;
+                padding: 1.6rem 2rem !important;
+            }
+
+            .bold-text {
+                font-family: $font-semiBold;
+            }
+
+            .sub-text {
+                font-size: 1.2rem;
+                color: $clr-para;
+                font-family: $font-medium;
+                display: block;
+            }
+
         }
 
-        .cancel-price {
-            text-decoration: line-through;
-            font-family: $font-regular;
-            color: #808080;
+        &.typ-minimum {
+            background: #FFF8E5;
+            border-bottom: 1px solid #FFD466;
+            border-bottom: 1px solid #FFD466;
+            gap: 0.8rem;
+            padding: 1.2rem;
+            align-items: center;
+
+            @media only screen and (max-width: $media-mobile) {
+                border-top: 1px solid #FFD466;
+                padding: 0.5rem 1.6rem;
+
+            }
+
+            .desc {
+
+                font-size: 1.4rem;
+                font-family: $font-medium;
+                color: #A77800;
+            }
+
+            @media only screen and (max-width: $media-mobile) {
+                border-top: 1px solid #FFD466;
+            }
+
+            .icon {
+                font-size: 2.4rem;
+                color: #A77800;
+            }
+
+            .desc {
+                font-size: 1.4rem;
+                font-family: $font-medium;
+                color: #A77800;
+            }
+        }
+
+        &.typ-login {
+            padding: 0.8rem 1.6rem;
+            background: #FFF8E5;
+            border-color: #FFD466;
+            color: $clr-base;
+            gap: 0.4rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                align-items: center;
+            }
+
+            .icon {
+                font-size: 2.4rem;
+            }
+
+            .desc {
+                color: $clr-base;
+            }
+
+            .cancel-price {
+                text-decoration: line-through;
+                font-family: $font-regular;
+                color: #808080;
+            }
         }
     }
-  }
+
     .bold-text {
         color: $clr-base;
         font-family: $font-medium;
 
         &.typ-green {
             color: #00A441;
+        }
+    }
+
+    .cart-price {
+        .bold-text {
+            font-size: 1.4rem;
         }
     }
 
@@ -213,5 +224,54 @@
 
     &.typ-login {
         margin-bottom: 1.6rem;
+    }
+
+    &.typ-cart {
+        .price-list {
+            padding-top: 1.2rem;
+        }
+
+        .price-list-item {
+            padding: 1.2rem 2.4rem 0rem;
+
+            .cart-head {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 1px solid #DEDEDE;
+                padding-bottom: 1.2rem;
+                margin-bottom: 1.2rem;
+
+                .sec-title {
+                    font-size: 2.8rem;
+                    color: $clr-base;
+                    font-family: $font-semiBold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.8rem;
+
+                    .count {
+                        background: #D2042D;
+                        border-radius: 26px;
+                        color: #FFFFFF;
+                        font-size: 2rem;
+                        font-family: $font-medium;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 28px;
+                    }
+                }
+
+                a {
+                    text-decoration: underline;
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                }
+            }
+        }
     }
 }
