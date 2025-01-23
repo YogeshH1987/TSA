@@ -76,6 +76,15 @@
         line-height: 2.4rem;
       }
     }
+
+    &.typ-flex{
+      position: relative;
+      .btn{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
   }
 
   .sec-title {

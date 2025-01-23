@@ -85,4 +85,135 @@
             }
         }
     }
+
+    &.typ-result{
+        margin-bottom: 1.6rem;
+        position: relative;
+        border: 1px solid $clr-border;
+        @include border-radius(1.2rem);
+        padding: 1.6rem;
+        gap: 1.2rem;
+        align-items: center;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 0.8rem 1.2rem;
+        }
+        .img-wrap{
+            border-radius: 50%;
+            width: 4.8rem;
+            height: 4.8rem;
+            background-color: #5A245A;
+            @media only screen and (max-width: $media-mobile) {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+            .icon{
+                color: $clr-root;
+                font-size: 2.4rem;
+                line-height: 4.8rem;
+                display: flex;
+                justify-content: center;
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.6rem;
+                    line-height: 3.2rem;
+                }
+            }
+        }
+        .cont-wrap{
+            padding-right: 3rem;
+            width: 85%;
+        }
+        .title{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-bottom: 0.4rem;
+            color: #5A245A;
+            padding: 0;
+            font-family: $font-semiBold;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                font-family: $font-regular;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 0;
+            }
+        }
+        .desc{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #5A245A;
+            font-family: $font-regular;
+            @media only screen and (max-width: $media-mobile) {
+                display: none;
+            }
+        }
+        .icon.icon-edit{
+            position: absolute;
+            top: 1.6rem;
+            right: 1.6rem;
+            font-size: 2.4rem;
+            color: $clr-base;
+        }
+    }
+
+    &.typ-price{
+        padding: 1.6rem;
+        position: relative;
+        border: 1px solid $clr-border;
+        @include border-radius(1.2rem);
+        background-color: $clr-root;
+        text-align: center;
+        .cont-wrap{
+            width: 100%;
+        }
+        .title{
+            font-family: $font-semiBold;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: $clr-base;
+            padding: 0;
+            margin-bottom: 0.4rem;
+        }
+        .desc{
+            font-family: $font-semiBold;
+            font-size: 2.8rem;
+            line-height: 4rem;
+            color: $clr-base;
+        }
+    }
+
+    &.bottom-notify{
+        z-index: -1;
+        position: relative;
+        padding: 1.6rem;
+        padding-top: 4rem;
+        margin-top: -2rem;
+        border: 1px solid #FFC633;
+        background: #FFF8E5;
+        @include border-radius(1.2rem);
+        .img-wrap{
+            border-radius: 50%;
+            width: 3.6rem;
+            height: 3.6rem;
+            background-color: #FFC633;
+            margin-right: 1.2rem;
+            .icon{
+                color: $clr-root;
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .cont-wrap{
+            width: 85%;
+        }
+        .title{
+            padding: 0;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-black;
+        }
+    }
 }

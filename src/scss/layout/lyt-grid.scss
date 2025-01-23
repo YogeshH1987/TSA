@@ -22,6 +22,7 @@
     }
   }
   &.typ-col-2-no-wrap{
+    flex-direction: row;
     .grid-col {
       width: 50%;
     }

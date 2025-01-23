@@ -700,7 +700,7 @@
       width: 19rem;
     }
   }
-
+  &.typ-why-tiscon-nav,
   &.typ-why-tiscon {
 
     .swiper-slide {
@@ -711,6 +711,13 @@
         width: 16.0rem;
         margin-right: 1.2rem;
       }
+    }
+  }
+  &.typ-why-tiscon-nav{
+    padding-bottom: 8rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+      padding-bottom: 0;
     }
   }
 
