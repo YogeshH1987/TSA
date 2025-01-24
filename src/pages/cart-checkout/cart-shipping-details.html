@@ -123,7 +123,7 @@
 
     <main class="main">
         <!-- Agrico brouchre starts -->
-        <section class="bs-sec typ-first-sec typ-myCart">
+        <section class="bs-sec typ-first-sec typ-myCart typ-delivery-payment">
             <div class="container">
                 <div class="lyt-cart">
                     <div class="grid-col-lhs">
@@ -157,7 +157,7 @@
                                                             Mansarovar, Jaipur - 302020 </li>
                                                         <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
                                                         <li class="detail-list"><a href="#" class="link">Edit
-                                                                address</a> <a href="#" class="link">Edit address</a>
+                                                                address</a> <a href="#" class="link">Add my GST number</a>
                                                         </li>
                                                     </ul>
                                                 </label>
@@ -229,34 +229,35 @@
                                                 <h3 class="link-text">Add a new address</h3>
                                             </li>
                                         </ul>
-                                        <div class="cart-btn-wrap">
+                                        <div class="cart-btn-wrap cm-desktop">
                                             <button class="btn">Continue</button>
                                         </div>
-                                        <div class="details-show">
-                                        <ul class="shipping-detail">
-                                            <li class="detail-list tag">Construction site</li>
-                                            <li class="detail-list title">
-                                                Kashika Sharma
-                                            </li>
-                                            <li class="detail-list">+91 9660810783</li>
-                                            <li class="detail-list">507 Ashish Satyam Apartments,
-                                                Mansarovar, Jaipur - 302020 </li>
-                                            <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
-                                        </ul>
-                                    </div>
+                                        
+                                        <div class="details-show hide">
+                                            <ul class="shipping-detail">
+                                                <li class="detail-list tag">Construction site</li>
+                                                <li class="detail-list title">
+                                                    Kashika Sharma
+                                                </li>
+                                                <li class="detail-list">+91 9660810783</li>
+                                                <li class="detail-list">507 Ashish Satyam Apartments,
+                                                    Mansarovar, Jaipur - 302020 </li>
+                                                <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <!-- Delivery details -->
                                 <div class="shipping-sec">
                                     <div class="shipping-head">
-                                        <div class="icon icon-location"></div>
+                                        <div class="icon icon-truck"></div>
                                         <div class="head-text">
                                             <h3 class="heading">Delivery details</h3>
                                             <p class="desc">Select your delivery date</p>
                                         </div>
                                     </div>
-                                    <div class="shipping-content-wrap">
+                                    <div class="shipping-content-wrap hide">
                                         <div class="delivery-detail-card">
                                             <div class="head-wrap">
                                                 <div class="logo-wrap">
@@ -288,7 +289,7 @@
                                                 <div class="cont-sub-head">
                                                     <h3 class="sec-sub-title">Select a delivery date (optional)</h3>
                                                 </div>
-                                                <div class="radio-wrap cm-flex typ-2">
+                                                <div class="radio-wrap cm-flex typ-2 mb-24">
                                                     <div class="bs-radio typ-structura-pdp typ-delivery-cart">
                                                         <input id="gateh1" name="gateh" type="radio" checked="">
                                                         <label for="gateh1" class="custom-radio">
@@ -324,7 +325,7 @@
                                                     <h3 class="sec-sub-title">Select a dealer </h3>
                                                     <p class="desc-italic">Free delivery upto 5 km.</p>
                                                 </div>
-                                                <div class="radio-wrap cm-flex typ-2">
+                                                <div class="radio-wrap cm-flex typ-2 mb-24">
                                                     <div class="bs-radio typ-structura-pdp typ-dealer-cart">
                                                         <input id="dealercart1" name="dealerc" type="radio" checked>
                                                         <label for="dealercart1" class="custom-radio">
@@ -346,7 +347,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="radio-wrap cm-flex typ-2">
+                                                <div class="radio-wrap cm-flex typ-2 mb-24">
                                                     <div class="bs-radio typ-structura-pdp typ-dealer-cart">
                                                         <input id="dealercart3" name="dealercart" type="radio" checked>
                                                         <label for="dealercart3" class="custom-radio">
@@ -398,7 +399,7 @@
                                                         <div class="product-img"><img
                                                                 src="/components/cp-cart/images/rebars-shipping.png"
                                                                 alt="rebars">
-                                                            </div>
+                                                        </div>
 
                                                     </div>
                                                     <div class="product-desc">
@@ -409,45 +410,229 @@
 
                                             </div>
                                             <div class="cont-wrap">
-                                                <p class="desc"><span class="icon icon-truck"></span> Agrico products will be delivered by <span class="bold-text">17 Oct 2024</span>.</p>
-                                                <p class="desc"><span class="icon icon-store"></span> Orders will be serviced by TATA Steel Retail Store, Steeljunction</p>
+                                                <ul class="delivery-info-sec">
+                                                    <li class="info-list">
+                                                        <span class="icon icon-truck"></span> 
+                                                        <p>Agrico products
+                                                        will be delivered by <span class="bold-text">17 Oct 2024</span>.</p>
+                                                    </li>
+                                                    <li class="info-list"><span class="icon icon-store"></span> <p>Orders will be
+                                                        serviced by TATA Steel Retail Store, Steeljunction</p></li>
+                                                </ul>
+                                             
                                             </div>
                                         </div>
-                                        <div class="cart-btn-wrap">
+                                        <div class="cart-btn-wrap cm-desktop">
                                             <button class="btn">Confirm delivery details</button>
                                         </div>
 
-                                        <div class="details-show">
+                                        <div class="details-show hide">
                                             <ul class="shipping-detail">
                                                 <li class="detail-list title typ-delivery-info">
                                                     <span class="icon icon-calender"></span>
                                                     <div class="detail-text">
-                                                    <span class="small-text">Scheduled date</span>
-                                                    Multiple delivery dates</div>
+                                                        <span class="small-text">Scheduled date</span>
+                                                        Multiple delivery dates
+                                                    </div>
                                                 </li>
                                                 <li class="detail-list title typ-delivery-info">
                                                     <span class="icon icon-store"></span>
                                                     <div class="detail-text">
-                                                    <span class="small-text">Scheduled dealer</span>
-                                                    Multiple dealers</div></li>
+                                                        <span class="small-text">Scheduled dealer</span>
+                                                        Multiple dealers
+                                                    </div>
+                                                </li>
                                             </ul>
+
+
                                         </div>
                                     </div>
 
-                                 
-                                 
+
+
                                 </div>
 
                                 <!-- Payment method -->
                                 <div class="shipping-sec">
                                     <div class="shipping-head">
-                                        <div class="icon icon-location"></div>
+                                        <div class="icon icon-massage-box"></div>
                                         <div class="head-text">
                                             <h3 class="heading">Payment method</h3>
                                             <p class="desc">Choose your suitable payment method</p>
                                         </div>
                                     </div>
-                                    <div class="shipping-content-wrap"></div>
+                                    <div class="shipping-content-wrap hide">
+                                    
+                                            <div class="cont-wrap typ-payment-method">
+                                                <!-- <div class="cont-sub-head typ-2">
+                                                    <h3 class="sec-sub-title">Payment offers available on:</h3>
+                                                    <a href="#" class="link">All offers</a>
+                                                </div> -->
+                                                <!-- <ul class="bank-logo">
+                                                    <li class="logo-list">
+                                                        <img src="../../components/cp-cart/images/1.png" alt="">
+                                                    </li>
+                                                    <li class="logo-list">
+                                                        <img src="../../components/cp-cart/images/2.png" alt="">
+                                                    </li>
+                                                    <li class="logo-list">
+                                                        <img src="../../components/cp-cart/images/3.png" alt="">
+                                                    </li>
+                                                    <li class="logo-list">
+                                                        <img src="../../components/cp-cart/images/4.png" alt="">
+                                                    </li>
+                                                    <li class="logo-list">
+                                                        <img src="../../components/cp-cart/images/5.png" alt="">
+                                                    </li>
+                                                    <li class="logo-list">
+                                                        <img src="../../components/cp-cart/images/6.png" alt="">
+                                                    </li>
+                                                </ul> -->
+
+                                                <!--  starts offer  -->
+                                                <!-- <div class="bs-swiper swiper js-bank-offer typ-bank-offer-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="bank-offer-main">
+                                                                <div class="head-title">
+                                                                    <span class="icon"><img
+                                                                            src="../../components/cp-cart/images/5.png"
+                                                                            alt=""></span>
+                                                                    Kotak instant discount
+                                                                    <span class="discount"> 10% off</span>
+                                                                </div>
+                                                                <p class="desc">On Kotak Bank credit & debit cards on
+                                                                    min spend</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="bank-offer-main">
+                                                                <div class="head-title">
+                                                                    <span class="icon"><img
+                                                                            src="../../components/cp-cart/images/5.png"
+                                                                            alt=""></span>
+                                                                    Kotak instant discount
+                                                                    <span class="discount"> 10% off</span>
+                                                                </div>
+                                                                <p class="desc">On Kotak Bank credit & debit cards on
+                                                                    min spend</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="bank-offer-main">
+                                                                <div class="head-title">
+                                                                    <span class="icon"><img
+                                                                            src="../../components/cp-cart/images/5.png"
+                                                                            alt=""></span>
+                                                                    Kotak instant discount
+                                                                    <span class="discount"> 10% off</span>
+                                                                </div>
+                                                                <p class="desc">On Kotak Bank credit & debit cards on
+                                                                    min spend</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div> -->
+                                                <!--  ends offer  -->
+
+                                                <div class="radio-wrap typ-shipping typ-payment">
+                                                    <div class="bs-radio typ-shipping-radio typ-payment">
+                                                        <input id="payment1" name="payment" type="radio" checked>
+                                                        <label for="payment1" class="custom-radio">
+                                                            <span class="checkmark"></span>
+                                                            <ul class="shipping-detail">
+
+                                                                <li class="detail-list title">
+                                                                    Make an online payment
+                                                                </li>
+                                                                <li class="detail-list">Netbanking, UPI, Debit card,
+                                                                    Credit card</li>
+
+                                                            </ul>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="bs-radio typ-shipping-radio typ-payment">
+                                                        <input id="payment2" name="payment" type="radio">
+                                                        <label for="payment2" class="custom-radio">
+                                                            <span class="checkmark"></span>
+                                                            <ul class="shipping-detail">
+                                                                <li class="detail-list title">
+                                                                    Pay before dispatch
+                                                                </li>
+                                                                <li class="detail-list">Order now and pay before
+                                                                    dispatch</li>
+                                                            </ul>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="dispatch-main">
+                                                    <div class="info-wrap typ-blue">
+                                                        <span class="icon icon-info"></span>
+                                                        <p class="desc">Organising funds? <br>
+                                                            Money arrangements will take longer? Order now and pay
+                                                            before dispatch </p>
+                                                    </div>
+
+                                                    <div class="cont-sub-head">
+                                                        <h3 class="sec-sub-title">How it works?</h3>
+                                                    </div>
+                                                    <div class="how-it-works-wrap">
+                                                        <ul class="how-it-works">
+                                                            <li class="how-it-works-list">
+                                                                <span class="number">1</span>
+                                                                Complete order placement
+                                                            </li>
+
+                                                            <li class="how-it-works-list">
+                                                                <span class="number">2</span>
+                                                                Click on link on your SMS/Email
+                                                                <div class="divider"><span class="text">or</span></div>
+                                                                Go to ‘My Orders’ in ‘Profile’ on this website
+                                                            </li>
+
+                                                            <li class="how-it-works-list">
+                                                                <span class="number">3</span>
+                                                                Pay by NEFT, card, wallet etc
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="info-wrap">
+                                                        <span class="icon icon-info"></span>
+                                                        <p class="desc">Incase of failed payment, order will be
+                                                            cancelled
+                                                            after 7 days </p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cp-other-info typ-payment cm-mobile">
+                                                    <ul class="other-info-list">
+                                                      <li class="other-info-item">
+                                                        Offer coupons
+                                                        <p>
+                                                        <span class="tag">5 coupons available</span></p>
+                                                      </li>
+                                                    
+                                                    </ul>
+                                                   
+                                                 </div>
+                                                <p class="desc typ-2 mt-12">By placing the order you have read and agreed to
+                                                    <a href="#" class="link">Terms of use</a> <a href="#"
+                                                        class="link">Disclaimer</a> <a href="#" class="link">Shipping
+                                                        policy</a> <a href="#" class="link">Privacy policy</a></a>
+                                                </p>
+                                                <p class="desc">You will be redirected to the payment partner.</p>
+                                            </div>
+                                        <div class="cart-btn-wrap cm-desktop">
+                                            <button class="btn">Proceed to payment</button>
+                                        </div>
+
+                                    </div>
                                 </div>
 
 
@@ -457,10 +642,10 @@
                     </div>
                     <div class="grid-col-rhs">
 
-                        <div class="cp-price typ-cart">
+                        <div class="cp-price typ-cart typ-shipping">
 
                             <ul class="price-list">
-                                <li class="price-list-item">
+                                <li class="price-list-item cm-desktop-flex">
                                     <div class="cart-head">
                                         <h2 class="sec-title">My cart
                                             <span class="count">58</span>
@@ -468,15 +653,15 @@
                                         <a href="#">Order summary</a>
                                     </div>
                                 </li>
-                                <li class="price-list-item cart-price ">
+                                <li class="price-list-item cart-price cm-desktop-flex">
                                     <span>Total purchase price</span>
                                     <span class="bold-text">₹50,140</span>
                                 </li>
-                                <li class="price-list-item cart-price ">
+                                <li class="price-list-item cart-price cm-desktop-flex">
                                     <span>Discount availed</span>
                                     <span class="bold-text typ-green">₹-3,00</span>
                                 </li>
-                                <li class="price-list-item cart-price ">
+                                <li class="price-list-item cart-price cm-desktop-flex">
                                     <span>Shipping charges</span>
 
                                     <span class="bold-text">
@@ -484,7 +669,7 @@
                                         <span class="bold-text typ-green"> Free</span>
                                     </span>
                                 </li>
-                                <li class="price-list-item cart-price ">
+                                <li class="price-list-item cart-price cm-desktop-flex">
                                     <span>Additional charges</span>
                                     <span class="bold-text">
                                         <span class="cancel-price">₹300</span>
@@ -492,12 +677,17 @@
                                     </span>
                                 </li>
                                 <li class="price-list-item total-price">
-                                    <span>Total price<span class="sub-text">(Inclusive of all Taxes)</span></span>
+                                    <span class="cm-desktop">Total price<span class="sub-text">(Inclusive of all Taxes)</span></span>
+                                    <span class="cm-mobile"><a href="#" class="link">Order summary</a></span>
                                     <span class="bold-text">
                                         ₹54,552
                                     </span>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="cart-btn-wrap cm-mobile typ-cart-btn">
+                            <button class="btn">Proceed to payment</button>
                         </div>
                     </div>
 
@@ -675,6 +865,7 @@
     <script src="/components/cp-header/cp-header.js"></script>
     <script src="/components/cp-counter/cp-counter.js"></script>
     <script src="/components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-cart/cp-cart.js"></script>
     <!-- endbuild -->
 </body>
 

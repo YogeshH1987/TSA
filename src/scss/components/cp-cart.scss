@@ -200,12 +200,20 @@
         @include border-radius(1.6rem);
         width: 100%;
 
+        @media only screen and (max-width: $media-mobile) {
+            border: 0;
+        }
+
         .shipping-sec {
             border-bottom: 1px solid #DEDEDE;
-            padding-bottom: 3.2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0 
+            }
 
             &:last-child {
                 border: none;
+                @media only screen and (max-width: $media-mobile) { border-bottom: 1px solid #DEDEDE;}
             }
 
             .shipping-head {
@@ -213,6 +221,10 @@
                 display: flex;
                 align-items: center;
                 gap: 1.4rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 1.6rem;
+                }
 
                 .head-text {
                     .heading {
@@ -232,6 +244,7 @@
                     border-radius: 8px;
                     width: 4rem;
                     height: 4rem;
+                    flex: 0 0 4rem;
                     font-size: 2.4rem;
                     color: #3D7EDB;
                     align-items: center;
@@ -250,11 +263,21 @@
 
             .shipping-content-wrap {
                 padding: 0 6rem;
+                padding-bottom: 3.2rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 0 1.6rem;
+                    border-bottom: 10px solid #F3F4F6;
+                }
 
                 .typ-shipping {
                     display: flex;
                     flex-wrap: wrap;
                     margin: 0 -1rem;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        margin: 0;
+                    }
                 }
 
                 .bottom-link-list {
@@ -267,6 +290,10 @@
                         position: relative;
                         gap: 0.4rem;
                         align-items: center;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            justify-content: center;
+                        }
 
                         .icon {
                             font-size: 2.4rem;
@@ -284,7 +311,11 @@
 
                 .cart-btn-wrap {
                     .btn {
-                        min-width: 34.3rem
+                        min-width: 34.3rem;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            min-width: 100%;
+                        }
                     }
                 }
 
@@ -320,6 +351,10 @@
                 .cont-wrap {
                     padding: 1.2rem 2.4rem;
 
+                    @media only screen and (max-width: $media-mobile) {
+                        padding: 1.2rem
+                    }
+
                     .cont-sub-head {
                         margin-bottom: 1.2rem;
 
@@ -332,15 +367,41 @@
                             font-size: 1.4rem;
                             font-style: italic;
                         }
+
+                        &.typ-2 {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .sec-sub-title {
+                                font-size: 1.4rem;
+                            }
+
+                            .link {
+                                font-size: 1.6rem;
+                                text-decoration: underline;
+                                font-family: $font-medium;
+                            }
+                        }
                     }
 
                     .desc {
                         font-size: 1.4rem;
                         margin-bottom: 1.2rem;
 
-                        .icon {
-                            font-size: 2rem;
-                            color: #999999;
+
+                        &.typ-2 {
+                            font-size: 1.2rem;
+                            margin-bottom: 0;
+
+                            .link {
+                                font-family: $font-medium;
+                                text-decoration: underline;
+                            }
+
+                        }
+
+                        &.mt-12 {
+                            margin-top: 1.2rem;
                         }
                     }
 
@@ -352,6 +413,211 @@
                     &.border-bottom {
                         border-bottom: 1px solid #DEDEDE;
                     }
+
+                    .bank-logo {
+                        display: flex;
+                        align-items: center;
+                        gap: 2.4rem;
+                        margin-bottom: 1.6rem;
+
+                        .logo-list {
+                            border: 1px solid #DEDEDE;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            width: 4.4rem;
+                            height: 4.4rem;
+                            padding: 6px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    // .typ-payment{ margin-bottom: 2.4rem;}
+                    .typ-bank-offer-slider {
+                        margin-bottom: 1.2rem;
+
+                        .swiper-pagination-bullet {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+
+                    .bank-offer-main {
+                        border: 1px solid #DEDEDE;
+                        padding: 1.2rem;
+                        border-radius: 12px;
+                        margin-bottom: 3rem;
+
+                        .head-title {
+                            display: flex;
+                            gap: 8px;
+                            font-size: 14px;
+                            font-family: $font-medium;
+                            color: $clr-base;
+                            align-items: center;
+
+                            .icon {
+                                border: 1px solid #DEDEDE;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                width: 2.8rem;
+                                height: 2.8rem;
+                                padding: 4px;
+
+                            }
+
+                            .discount {
+                                color: #00A441;
+                                margin-left: auto;
+                            }
+                        }
+
+                        .desc {
+                            font-size: 1rem;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .info-wrap {
+                        display: flex;
+                        border: 1px solid #FFD466;
+                        background: #FFF8E5;
+                        justify-content: flex-start;
+                        align-items: start;
+                        padding: 0.8rem 1.6rem;
+                        border-radius: 12px;
+                        gap: 8px;
+                        margin-bottom: 2.4rem;
+
+                        .icon {
+                            font-size: 2.4rem;
+                            color: #A77800;
+                        }
+
+                        .desc {
+                            font-size: 1.2rem;
+                            font-family: $font-medium;
+                            color: #A77800;
+                            margin-bottom: 0;
+                        }
+
+                        &.typ-blue {
+                            border-color: #8BB2E9;
+                            background-color: #ECF2FB;
+
+                            .icon {
+                                color: #3D7EDB;
+                            }
+
+                            .desc {
+                                color: #3D7EDB;
+                            }
+                        }
+                    }
+
+                    .how-it-works-list {
+                        border: 1px solid #DEDEDE;
+                        padding: 1.6rem;
+                        position: relative;
+                        @include border-radius(1.2rem);
+                        color: $clr-base;
+                        font-size: 1.4rem;
+                        margin-bottom: 1.6rem;
+
+                        .number {
+                            @include border-radius(50%);
+                            border: 1px solid #3D7EDB;
+                            width: 2rem;
+                            height: 2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #3D7EDB;
+                            position: absolute;
+                            left: -9px;
+                            top: 16px;
+                            background-color: #fff;
+                        }
+
+                        .divider {
+                            height: 1px;
+                            background-color: #DEDEDE;
+                            margin: 2.4rem 0;
+                            position: relative;
+
+                            .text {
+                                background: #D2042D;
+                                @include border-radius(50%);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                margin: auto;
+                                position: absolute;
+                                right: 0;
+                                left: 0;
+                                top: 0;
+                                bottom: 0;
+                                text-transform: uppercase;
+                                color: #fff;
+                                text-align: center;
+                                font-size: 1rem;
+                                z-index: 2;
+                            }
+
+                            &::after {
+                                content: '';
+                                background-color: #fff;
+                                width: 4.4rem;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                height: 2.4rem;
+                                margin: auto;
+                                z-index: 1;
+                            }
+                        }
+                    }
+
+                    .mb-24 {
+                        margin-bottom: 2.4rem;
+                    }
+
+                    .delivery-info-sec {
+                        .info-list {
+
+                            color: #666666;
+                            margin-bottom: 1.2rem;
+                            display: flex;
+                            align-items: start;
+                            gap: 8px;
+
+                            p {
+                                font-size: 1.4rem;
+                            }
+
+                            .icon {
+                                font-size: 2rem;
+                                color: #999999;
+                            }
+                        }
+
+                    }
+
+                    &.typ-payment-method {
+                        padding: 1.2rem 0;
+                        border-top: 1px solid #DEDEDE;
+                    }
+
+                  
                 }
 
                 .prodcut-item {
@@ -395,7 +661,7 @@
                                 object-fit: cover;
                             }
 
-                         
+
                         }
                     }
 
@@ -407,11 +673,21 @@
                             color: $clr-base;
                             font-family: $font-semiBold;
                         }
+
+                        .desc {
+                            margin-bottom: 0;
+                        }
                     }
+
                     &.typ-single {
-                        .product-img { left: 0;}
-                        .product-desc{  padding-left:85px;}
-                      
+                        .product-img {
+                            left: 0;
+                        }
+
+                        .product-desc {
+                            padding-left: 85px;
+                        }
+
                     }
                 }
 
@@ -461,6 +737,10 @@
                             font-size: 1.4rem;
                             text-decoration: underline;
                             position: relative;
+
+                            @media only screen and (max-width: $media-mobile) {
+                                font-size: 1.2rem;
+                            }
                         }
 
                         & .link+.link::before {

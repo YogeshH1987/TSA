@@ -981,6 +981,12 @@ p {
     .cm-desktop {
       display: none !important; } }
 
+.cm-desktop-flex {
+  display: flex !important; }
+  @media only screen and (max-width: 768px) {
+    .cm-desktop-flex {
+      display: none !important; } }
+
 .inline-desktop {
   display: inline-block !important; }
   @media only screen and (max-width: 768px) {
@@ -1200,7 +1206,7 @@ p {
     padding: 4rem 0 !important; }
     @media only screen and (max-width: 768px) {
       .bs-sec.typ-white-bg {
-        padding: 2.4rem 0  !important; } }
+        padding: 2.4rem 0 !important; } }
   .bs-sec.typ-curve {
     border-radius: 4.8rem 4.8rem 0 0;
     -webkit-border-radius: 4.8rem 4.8rem 0 0;
@@ -1957,6 +1963,16 @@ p {
     padding: 2.4rem 0; }
   .bs-sec.typ-architect-shed {
     margin: 0; }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-delivery-payment .container {
+      padding: 0; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-delivery-payment .container .typ-cart-btn {
+      padding: 0 1.6rem;
+      margin-top: 1.2rem; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-delivery-payment .container .typ-cart-btn .btn {
+      min-width: 100%; } }
 
 .btn {
   display: inline-block;
@@ -2462,6 +2478,10 @@ p {
   .bs-radio.typ-shipping-radio {
     width: 50%;
     padding: 0 1rem; }
+    @media only screen and (max-width: 768px) {
+      .bs-radio.typ-shipping-radio {
+        width: 100%;
+        padding: 0; } }
     .bs-radio.typ-shipping-radio .custom-radio {
       position: relative;
       padding: 1.6rem 1.6rem 1.6rem 4.6rem; }
@@ -2497,12 +2517,20 @@ p {
     .bs-radio.typ-shipping-radio input[type=radio]:checked + .custom-radio .tag {
       background-color: #fff !important; }
   .bs-radio.typ-delivery-cart {
-    width: 19%; }
+    width: 19%;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .bs-radio.typ-delivery-cart {
+        width: 31.5%; } }
     .bs-radio.typ-delivery-cart .custom-radio {
       min-width: 100%; }
   .bs-radio.typ-dealer-cart {
     width: 18%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .bs-radio.typ-dealer-cart {
+        width: 31.5%; } }
     .bs-radio.typ-dealer-cart .custom-radio {
       position: relative;
       padding: 0;
@@ -2554,6 +2582,20 @@ p {
           color: #00A441; }
     .bs-radio.typ-dealer-cart input[type=radio]:checked + .custom-radio .dealer-wrap .title {
       color: #333333; }
+  .bs-radio.typ-payment {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0; }
+    .bs-radio.typ-payment:last-child {
+      border: none; }
+    .bs-radio.typ-payment .custom-radio {
+      border: 0;
+      align-items: flex-start;
+      padding: 1.2rem 1.6rem 1.2rem 4.6rem; }
+    .bs-radio.typ-payment input[type=radio]:checked + .custom-radio {
+      border: 0;
+      background-color: #fff; }
 
 .bs-modal {
   position: relative;

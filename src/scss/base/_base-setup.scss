@@ -161,6 +161,13 @@ p {
     display: none !important;
   }
 }
+.cm-desktop-flex {
+  display: flex !important;
+
+  @media only screen and (max-width: $media-mobile) {
+    display: none !important;
+  }
+}
 .inline-desktop {
   display: inline-block !important;
 

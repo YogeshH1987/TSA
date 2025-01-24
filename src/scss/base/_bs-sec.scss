@@ -23,7 +23,7 @@
       margin-bottom: 1.6rem;
     }
 
-    &.typ-align-center{
+    &.typ-align-center {
       text-align: center;
     }
 
@@ -109,7 +109,8 @@
         font-size: 2.4rem;
       }
     }
-    &.typ2{
+
+    &.typ2 {
       font-size: 2.4rem;
       line-height: 3.2rem;
     }
@@ -174,7 +175,7 @@
     padding: 4rem 0 !important;
 
     @media only screen and (max-width: $media-mobile) {
-      padding: 2.4rem 0  !important;
+      padding: 2.4rem 0 !important;
     }
   }
 
@@ -486,9 +487,20 @@
         padding-top: 1rem;
       }
     }
-    .btn-wrap{ display: flex; gap: 1.2rem; margin-top: 3.2rem; align-items: center; justify-content: center;
-      .typ-stories-btn{ min-width: 22rem;
-        @media only screen and (max-width: $media-sm) {min-width:16rem}
+
+    .btn-wrap {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 3.2rem;
+      align-items: center;
+      justify-content: center;
+
+      .typ-stories-btn {
+        min-width: 22rem;
+
+        @media only screen and (max-width: $media-sm) {
+          min-width: 16rem
+        }
       }
     }
   }
@@ -847,9 +859,10 @@
     }
   }
 
-  &.typ-home-loan{
-    .container{
+  &.typ-home-loan {
+    .container {
       max-width: 103rem;
+
       @media only screen and (max-width: $media-tab) {
         width: 100%;
         padding: 0rem 1.6rem;
@@ -857,6 +870,7 @@
       }
     }
   }
+
   &.typ-pravesh-pdp-sec {
     .container {
       max-width: 100%;
@@ -880,23 +894,27 @@
           }
         }
       }
-      .sec-head{
+
+      .sec-head {
         margin-bottom: 2rem;
         position: relative;
-        .view-btn{
+
+        .view-btn {
           position: absolute;
           right: 0;
-          top:0;
+          top: 0;
         }
       }
     }
+
     .btn-wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-top: 1px solid #dedede;
       position: relative;
-      &::before{
+
+      &::before {
         position: absolute;
         top: -1px;
         left: -52px;
@@ -904,8 +922,9 @@
         background: #dedede;
         width: 16%;
         height: 1px;
-    }
-      &::after{
+      }
+
+      &::after {
         position: absolute;
         top: -1px;
         right: -79px;
@@ -913,26 +932,31 @@
         background: #dedede;
         width: 16%;
         height: 1px;
-    }
-      .btn{
+      }
+
+      .btn {
         min-width: 10.4rem;
       }
-      .price{
+
+      .price {
         font-size: 2.4rem;
         color: $clr-para;
         font-family: $font-semiBold;
-        .total-cost{
+
+        .total-cost {
           font-size: 1.6rem;
           font-family: $font-regular;
         }
-        .price-icon{
+
+        .price-icon {
           font-size: 1.4rem;
-          font-family:$font-regular;
+          font-family: $font-regular;
         }
       }
     }
   }
-  &.typ-login{
+
+  &.typ-login {
     margin-top: 19rem;
 
     .container {
@@ -1001,6 +1025,7 @@
 
       .filter-sec {
         margin-bottom: 2.4rem;
+
         .filter-tag {
           font-size: 1.4rem;
           display: flex;
@@ -1014,8 +1039,9 @@
             font-family: $font-medium;
             color: $clr-base;
           }
+
           .close {
-            color:#000;
+            color: #000;
           }
         }
       }
@@ -1299,34 +1325,76 @@
       }
     }
   }
+
   &.typ-myCart {
     margin-top: 6.4rem;
-    .sec-head{
+
+    .sec-head {
       margin-top: 2.4rem;
       margin-bottom: 1.6rem;
     }
-    .sec-title{
+
+    .sec-title {
       font-size: 2rem;
       line-height: 2.8rem;
     }
   }
-  &.typ-white-bg{ background-color: #fff;}
-  .mt-32{margin-top: 3.2rem;}
-  &.mt-0{ margin-top: 0;}
-  &.typ-colonial{
-    .btn-moodboard{
+
+  &.typ-white-bg {
+    background-color: #fff;
+  }
+
+  .mt-32 {
+    margin-top: 3.2rem;
+  }
+
+  &.mt-0 {
+    margin-top: 0;
+  }
+
+  &.typ-colonial {
+    .btn-moodboard {
       min-width: 34.3rem;
+
       @media only screen and (max-width: $media-mobile) {}
     }
   }
-  &.typ-architech-plans{
-      margin-bottom: 0rem;
-   
+
+  &.typ-architech-plans {
+    margin-bottom: 0rem;
+
   }
-  &.car-shed-plp{
+
+  &.car-shed-plp {
     overflow: hidden;
     background: #FFF4D7;
     padding: 2.4rem 0;
   }
-  &.typ-architect-shed{margin: 0;}
+
+  &.typ-architect-shed {
+    margin: 0;
+  }
+
+  &.typ-delivery-payment {
+    .container {
+      @media only screen and (max-width: $media-mobile) {
+        padding: 0;
+      }
+
+      .typ-cart-btn {
+        @media only screen and (max-width: $media-mobile) {
+          padding: 0 1.6rem;
+          margin-top: 1.2rem;
+        }
+
+        .btn {
+          @media only screen and (max-width: $media-mobile) {
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
 }

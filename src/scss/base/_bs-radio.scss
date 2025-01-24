@@ -503,7 +503,7 @@
     &.typ-shipping-radio {
         width: 50%;
         padding: 0 1rem;
-
+        @media only screen and (max-width: $media-mobile) { width:100%; padding: 0;}
         .custom-radio {
             position: relative;
             padding: 1.6rem 1.6rem 1.6rem 4.6rem;
@@ -562,7 +562,8 @@
 
     &.typ-delivery-cart {
         width: 19%;
-
+        margin-bottom: 0;
+        @media only screen and (max-width: $media-mobile) {    width: 31.5%;}
         .custom-radio {
             min-width: 100%;
         }
@@ -571,7 +572,8 @@
     &.typ-dealer-cart {
         width: 18%;
         text-align: center;
-
+        margin-bottom: 0;
+        @media only screen and (max-width: $media-mobile) {  width: 31.5%;}
         .custom-radio {
             position: relative;
             padding: 0;
@@ -651,4 +653,14 @@
             }
         }
     }
+    &.typ-payment{
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+        &:last-child{border: none;}
+        .custom-radio{border: 0;  align-items: flex-start;  padding: 1.2rem 1.6rem 1.2rem 4.6rem;}
+        input[type=radio]:checked+.custom-radio {border: 0; background-color: #fff;}
+    }
+
 }

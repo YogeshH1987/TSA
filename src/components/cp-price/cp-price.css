@@ -188,5 +188,13 @@
       text-decoration: underline;
       font-size: 1.4rem;
       font-family: "Poppins Medium"; }
+@media only screen and (max-width: 768px) {
+  .cp-price.typ-shipping .total-price {
+    margin-top: 0; } }
+@media only screen and (max-width: 768px) {
+  .cp-price.typ-shipping .total-price .link {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    font-family: "Poppins Medium"; } }
 
 /*# sourceMappingURL=cp-price.css.map */
