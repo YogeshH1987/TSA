@@ -11,14 +11,15 @@ TSA.RebarsCalculator = {
         // Setup radio button change events for showing/hiding floor list
         this.setupRadioEvents();
 
+        // Setup unit conversion for area input
+        this.setupUnitConversion();
 
         this.setupAreaValidation();
         // Setup Step 1 functionality
         // this.setupStep1();
 
         // Initialize the step navigation
-        this.setupStepNavigation();
-        
+        this.setupStepNavigation();        
     },
 
     setupTabs: function () {
@@ -133,6 +134,54 @@ TSA.RebarsCalculator = {
                 TSA.RebarsCalculator.setupStep1(); // Proceed to the next step
             }
         });
+    },    
+    
+    setupUnitConversion: function () {
+        const toggleSwitch = $('.area-mesurement'); // Correct selector for the checkbox
+        const desc = $('.calculator-desc');
+        const builtUpAreaValue = $('.builtUpAreaValue'); // Input field for area
+        const conversionFactors = {
+            sqFtToSqMts: 0.092903,
+            sqMtsToSqFt: 1 / 0.092903,
+        };
+        const limits = {
+            sqFt: { min: 578, max: 1934 },
+            sqMts: { min: 578 * 0.092903, max: 1934 * 0.092903 },
+        };
+    
+        toggleSwitch.on('change', function () {
+            const isSqFt = !toggleSwitch.is(':checked'); // Check the toggle state
+            const currentValue = parseFloat(builtUpAreaValue.val());
+    
+            if (isNaN(currentValue)) {
+                // If the input value is invalid, just update the description
+                const unitLimits = isSqFt ? limits.sqFt : limits.sqMts;
+                desc.text(
+                    `Enter area between ${unitLimits.min.toFixed(2)} ${
+                        isSqFt ? 'sq ft' : 'sq mts'
+                    } - ${unitLimits.max.toFixed(2)} ${isSqFt ? 'sq ft' : 'sq mts'}`
+                );
+                return;
+            }
+    
+            // Convert the current value to the new unit
+            const newValue = isSqFt
+                ? (currentValue * conversionFactors.sqMtsToSqFt).toFixed(2)
+                : (currentValue * conversionFactors.sqFtToSqMts).toFixed(2);
+    
+            const unitLimits = isSqFt ? limits.sqFt : limits.sqMts;
+    
+            // Update the input field and description
+            builtUpAreaValue.val(newValue);
+            desc.text(
+                `Enter area between ${unitLimits.min.toFixed(2)} ${
+                    isSqFt ? 'sq ft' : 'sq mts'
+                } - ${unitLimits.max.toFixed(2)} ${isSqFt ? 'sq ft' : 'sq mts'}`
+            );
+        });
+    
+        // Trigger change event to initialize the description
+        toggleSwitch.trigger('change');
     },
     
 
