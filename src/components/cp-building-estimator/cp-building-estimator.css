@@ -20,6 +20,14 @@
     -moz-border-radius: 0;
   }
 }
+.cp-building-estimator.full-width {
+  max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-building-estimator.full-width {
+    margin: 0;
+  }
+}
 .cp-building-estimator .calc-step {
   padding: 3.2rem 4rem 4rem;
   border-radius: 2.4rem 2.4rem 0 0;
@@ -34,6 +42,12 @@
   .cp-building-estimator .calc-step {
     padding: 3.2rem 1.6rem;
   }
+}
+.cp-building-estimator .calc-step.step-1 {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 .cp-building-estimator .act-wrap {
   display: flex;

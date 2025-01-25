@@ -65,8 +65,18 @@
     line-height: 2rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .cp-noui-range-slide.typ-noflr {
+    max-width: 31.1rem;
+  }
+}
 .cp-noui-range-slide.typ-house.noUi-target {
   height: 1.7rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-noui-range-slide.typ-house.noUi-target {
+    height: 1.2rem;
+  }
 }
 .cp-noui-range-slide.typ-house.noUi-target .noUi-handle {
   width: 3.4rem;
@@ -92,8 +102,8 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-noui-range-slide.typ-house .noUi-value {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
 

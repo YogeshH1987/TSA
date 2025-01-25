@@ -97,6 +97,18 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .cp-box.typ-building {
+    padding: 2.4rem 1.6rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+  }
+  .cp-box.typ-building .img-wrap {
+    width: 31.1rem;
+    height: 20.4rem;
+  }
+}
 .cp-box.typ-result {
   margin-bottom: 1.6rem;
   position: relative;

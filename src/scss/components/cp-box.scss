@@ -85,7 +85,17 @@
             }
         }
     }
+    &.typ-building{
+        @media only screen and (max-width: $media-mobile) {
+            padding: 2.4rem 1.6rem;
+            @include border-radius(1.2rem);
+            .img-wrap{
+                width: 31.1rem;
+                height: 20.4rem;
 
+            }
+        }
+    }   
     &.typ-result{
         margin-bottom: 1.6rem;
         position: relative;

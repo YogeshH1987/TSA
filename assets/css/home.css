@@ -105,6 +105,18 @@
     width: 100%;
   }
 }
+.lyt-grid.typ-col-4-mobile-2 {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.lyt-grid.typ-col-4-mobile-2 .grid-col {
+  width: 22.5%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-4-mobile-2 .grid-col {
+    width: 48.2%;
+  }
+}
 .lyt-grid.typ-col-about {
   flex-wrap: wrap;
   justify-content: initial;

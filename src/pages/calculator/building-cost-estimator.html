@@ -37,7 +37,7 @@
 					<p class="sec-desc">Accurate, hassle-free rebar calculations for slabs, beams, columns, and more..</p>
 				</div>
 				<div class="sec-cont">
-					<div class="cp-building-estimator">
+					<div class="cp-building-estimator full-width">
 						<div class="cp-stop-progressbar hide">
 							<div class="calc-progress-bar">
 								<div class="step-text">Step - 1/5</div>
@@ -52,7 +52,7 @@
 							</ul>
 						</div>
 						<div class="calc-step step-1">
-							<div class="cp-box typ-calculate">
+							<div class="cp-box typ-calculate typ-building">
 								<div class="img-wrap">
 									<picture>
 										<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/white box.png">
@@ -60,13 +60,13 @@
 									</picture>
 								</div>
 								<div class="cont-wrap">
-									<div class="cp-calculator-box">
+									<div class="cp-calculator-box typ-build-cost">
 										<h2 class="title">Built up area</h2>
 										<p class="desc">This is the total area of a property, including the carpet area, walls, balconies, and other areas</p>
 										<div class="cp-noui-range-slide typ-house" id="builtUpAreaRange"></div>
 										<div class="act-form">
 											<input type="text" id="builtUpAreaValue" value="700" class="input-field">
-											<button class="btn step-btn">Next</button>
+											<button class="btn step-btn step1Btn">Next</button>
 										</div>
 									</div>
 								</div>
@@ -104,7 +104,7 @@
 						<div class="calc-step step-2 hide">
 							<h2 class="calc-title">Building Cost Estimator</h2>
 							<p class="calc-desc">Select your space requirements</p>
-							<ul class="lyt-grid typ-col-4">
+							<ul class="lyt-grid typ-col-4-mobile-2">
 								<li class="grid-col">
 									<div class="cp-img-detail typ-build-cost">
 										<div class="img-wrap">
@@ -332,7 +332,7 @@
 									<img src="../../components/cp-rebar-estimator/images/frame.png" alt="frame" />
 								  </picture>
 							</div>
-							<div id="numberFlr" class="cp-noui-range-slide typ-rebar"></div>							
+							<div id="numberFlr" class="cp-noui-range-slide typ-rebar typ-noflr"></div>							
 							<div class="option-wrap">
 								<p class="option-txt">House with basement</p>
 								<div class="cp-switch">
@@ -341,13 +341,13 @@
 								</div>
 							</div>
 						</div>
-						<!-- <div class="calc-step step-4 ">
+						<div class="calc-step step-4 hide">
 							<h2 class="calc-title">Building cost estimator</h2>
 							<p class="calc-desc">Do you have material preferences?</p>
 							<ul class="lyt-grid typ-col-3-no-wrap">
 								<li class="grid-col">
 									<div class="bs-radio typ-build-cost typ-yellow">
-										<input id="material1" name="material" type="radio">
+										<input id="material1" checked name="material" type="radio">
 										<label for="material1" class="custom-radio">
 											<div class="material-wrap">
 												<div class="img-wrap"><span class="icon icon-economy"></span></div>
@@ -388,7 +388,7 @@
 									</div>
 								</li>
 								<li class="grid-col">
-									<div class="bs-radio typ-build-cost typ-yellow">
+									<div class="bs-radio typ-build-cost typ-orange">
 										<input id="material2" name="material" type="radio">
 										<label for="material2" class="custom-radio">	
 											<div class="material-wrap">
@@ -473,13 +473,13 @@
 								</li>
 							</ul>
 							<a class="btn btn-link" href="#">Skip for now</a>
-						</div>		 -->
+						</div>
 						<div class="calc-step step-5 hide">
 							<h2 class="calc-title">Building cost estimator</h2>
 							<p class="calc-desc">Do you have an architectural plan?</p>
 							<div class="radio-wrap">
 								<div class="bs-radio typ-plan">
-									<input id="plan1" name="plan" type="radio">
+									<input id="plan1" checked name="plan" type="radio">
 									<label for="plan1" class="custom-radio">
 										My home design is ready
 									</label>

@@ -16,12 +16,28 @@
   margin-bottom: 0.8rem;
   text-align: left;
 }
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box .title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+}
 .cp-calculator-box .desc {
   margin-bottom: 4rem;
   color: #333333;
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: left;
+}
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box .desc {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
 }
 .cp-calculator-box .act-form {
   display: flex;
@@ -51,6 +67,7 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding: 0.9rem 1.6rem;
+    z-index: 3;
   }
 }
 .cp-calculator-box .input-field {
@@ -81,6 +98,14 @@
   color: #D2042D;
   font-size: 1rem;
   line-height: 1.2rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-calculator-box.typ-build-cost .step-btn {
+    min-width: 11.9rem;
+  }
+  .cp-calculator-box.typ-build-cost .input-field {
+    max-width: 18rem;
+  }
 }
 .cp-calculator-box.typ-rebar {
   text-align: left;

@@ -508,14 +508,6 @@ th {
   content: "\e98b";
 }
 
-.icon-instagram:before {
-  content: "\e98c";
-}
-
-.icon-twitter:before {
-  content: "\e98d";
-}
-
 .icon-whatsapp:before {
   content: "\e98e";
 }
@@ -526,7 +518,6 @@ th {
 
 .icon-play-arrow:before {
   content: "\e984";
-  color: #3d7edb;
 }
 
 .icon-send:before {
@@ -778,7 +769,7 @@ th {
   content: "\e946";
 }
 
-.icon-check_circle:before {
+.icon-check-circle:before {
   content: "\e944";
 }
 
@@ -2984,15 +2975,37 @@ p {
   font-family: "Poppins Medium";
   padding: 1.6rem;
 }
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-plan .custom-radio {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.4rem;
+  }
+}
 .bs-radio.typ-plan:last-child {
   margin-bottom: 2.4rem;
 }
 .bs-radio.typ-build-cost .custom-radio {
+  position: relative;
   padding: 3.2rem 1.6rem;
+}
+.bs-radio.typ-build-cost .custom-radio:before {
+  font-size: 3.3rem;
+  content: "\e944";
+  font-family: "icomoon" !important;
+  color: #DEDEDE;
+  position: absolute;
+  top: -1.5rem;
+  background: #FFFFFF;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
 @media only screen and (max-width: 768px) {
   .bs-radio.typ-build-cost .custom-radio {
-    padding: 2.4rem 1rem;
+    padding: 2.4rem 1rem 2rem;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -3059,11 +3072,21 @@ p {
   flex-direction: column;
   text-align: left;
 }
+@media only screen and (max-width: 768px) {
+  .bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list {
+    align-items: center;
+  }
+}
 .bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .title {
   color: #666666;
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin-bottom: 0.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .title {
+    text-align: center;
+  }
 }
 .bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .desc {
   color: #000000;
@@ -3075,7 +3098,37 @@ p {
   .bs-radio.typ-build-cost .custom-radio .material-wrap .detail-list .desc {
     font-size: 1.2rem;
     line-height: 1.6rem;
+    text-align: center;
+    min-height: 3.2rem;
   }
+}
+.bs-radio.typ-build-cost input[type=radio]:checked + .custom-radio:before {
+  content: "\e91a";
+  color: #00A441;
+}
+.bs-radio.typ-build-cost.typ-yellow input[type=radio]:checked + .custom-radio {
+  background: #FFF8E5;
+  border: 4px solid #FFB800;
+}
+.bs-radio.typ-build-cost.typ-red .material-wrap .img-wrap {
+  background: #E46881;
+}
+.bs-radio.typ-build-cost.typ-red .material-wrap .home-typ:after {
+  background: #E46881;
+}
+.bs-radio.typ-build-cost.typ-red input[type=radio]:checked + .custom-radio {
+  background: #FFF8E5;
+  border: 4px solid #E46881;
+}
+.bs-radio.typ-build-cost.typ-orange .material-wrap .img-wrap {
+  background: #F16933;
+}
+.bs-radio.typ-build-cost.typ-orange .material-wrap .home-typ:after {
+  background: #F16933;
+}
+.bs-radio.typ-build-cost.typ-orange input[type=radio]:checked + .custom-radio {
+  background: #FFF8E5;
+  border: 4px solid #F16933;
 }
 .bs-radio.typ-blog-quiz .custom-radio {
   align-items: start;

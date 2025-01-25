@@ -100,90 +100,6 @@ TSA.RebarsCalculator = {
         $('.js-select-house:checked').trigger('change');
     },    
 
-    // setupAreaValidation: function () {
-    //     const builtUpAreaValue = $('#builtUpAreaValue');
-    //     const errorMessage = $('.error');
-    //     const step1Btn = $('#step1-btn');
-    
-    //     // Listen for input or change events on the area field
-    //     builtUpAreaValue.on('input', function () {
-    //         const area = parseFloat(builtUpAreaValue.val());
-    
-    //         if (area < 578 || area > 1934 || isNaN(area)) {
-    //             // Show error and disable the button if the area is out of range or invalid
-    //             errorMessage.removeClass('hide');
-    //             step1Btn.addClass('disabled');
-    //         } else {
-    //             // Hide error and enable the button if the area is within range
-    //             errorMessage.addClass('hide');
-    //             step1Btn.removeClass('disabled');
-    //         }
-    //     });
-    
-    //     // Validate on button click as well
-    //     step1Btn.on('click', function () {
-    //         const area = parseFloat(builtUpAreaValue.val());
-    
-    //         if (area < 578 || area > 1934 || isNaN(area)) {
-    //             errorMessage.removeClass('hide');
-    //             step1Btn.addClass('disabled');
-    //             return false; // Prevent moving to the next step
-    //         } else {
-    //             errorMessage.addClass('hide');
-    //             step1Btn.removeClass('disabled');
-    //             TSA.RebarsCalculator.setupStep1(); // Proceed to the next step
-    //         }
-    //     });
-    // },    
-    
-    // setupUnitConversion: function () {
-    //     const toggleSwitch = $('.area-mesurement'); // Correct selector for the checkbox
-    //     const desc = $('.calculator-desc');
-    //     const builtUpAreaValue = $('.builtUpAreaValue'); // Input field for area
-    //     const conversionFactors = {
-    //         sqFtToSqMts: 0.092903,
-    //         sqMtsToSqFt: 1 / 0.092903,
-    //     };
-    //     const limits = {
-    //         sqFt: { min: 578, max: 1934 },
-    //         sqMts: { min: 578 * 0.092903, max: 1934 * 0.092903 },
-    //     };
-    
-    //     toggleSwitch.on('change', function () {
-    //         const isSqFt = toggleSwitch.is(':checked'); // Check the toggle state
-    //         const currentValue = parseFloat(builtUpAreaValue.val());
-    
-    //         if (isNaN(currentValue)) {
-    //             // If the input value is invalid, just update the description
-    //             const unitLimits = isSqFt ? limits.sqFt : limits.sqMts;
-    //             desc.text(
-    //                 `Enter area between ${unitLimits.min.toFixed(2)} ${
-    //                     isSqFt ? 'sq ft' : 'sq mts'
-    //                 } - ${unitLimits.max.toFixed(2)} ${isSqFt ? 'sq ft' : 'sq mts'}`
-    //             );
-    //             return;
-    //         }
-    
-    //         // Convert the current value to the new unit
-    //         const newValue = isSqFt
-    //             ? (currentValue * conversionFactors.sqMtsToSqFt).toFixed(2)
-    //             : (currentValue * conversionFactors.sqFtToSqMts).toFixed(2);
-    
-    //         const unitLimits = isSqFt ? limits.sqFt : limits.sqMts;
-    
-    //         // Update the input field and description
-    //         builtUpAreaValue.val(newValue);
-    //         desc.text(
-    //             `Enter area between ${unitLimits.min.toFixed(2)} ${
-    //                 isSqFt ? 'sq ft' : 'sq mts'
-    //             } - ${unitLimits.max.toFixed(2)} ${isSqFt ? 'sq ft' : 'sq mts'}`
-    //         );
-    //     });
-    
-    //     // Trigger change event to initialize the description
-    //     toggleSwitch.trigger('change');
-    // },
-    
     setupUnitConversion: function () {
         const toggleSwitch = $('.area-mesurement'); // Checkbox for unit toggle
         const desc = $('.calculator-desc'); // Description element
@@ -204,7 +120,9 @@ TSA.RebarsCalculator = {
             const isSqFt = toggleSwitch.is(':checked'); // SqFt if toggle is unchecked
             const currentLimits = isSqFt ? limits.sqFt : limits.sqMts;
             const area = parseFloat(builtUpAreaValue.val());
-                
+        
+            console.log('Validating Area:', area, 'against limits:', currentLimits);
+        
             if (isNaN(area) || area < parseFloat(currentLimits.min.toFixed(2)) || area > parseFloat(currentLimits.max.toFixed(2))) {
                 errorMessage.text(
                     `Please enter an area between ${currentLimits.min.toFixed(2)} and ${currentLimits.max.toFixed(2)} ${
