@@ -1212,6 +1212,9 @@
         .feature-type-2 {
             gap: 2rem;
             flex-wrap: wrap;
+
+            @media only screen and (max-width: $media-mobile) {
+            gap: 1.2rem;}
         }
 
         .feature-item {
@@ -1219,7 +1222,7 @@
             height: 13rem;
             width: 23.1%;
             @media only screen and (max-width: $media-mobile) {
-                width: 47%;
+                width: 48.2%;
             }
 
             .feature-card {

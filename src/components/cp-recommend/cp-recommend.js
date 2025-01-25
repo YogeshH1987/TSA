@@ -15,11 +15,15 @@ function architectsRecommended() {
         loop: false,
         navigation: false,
         pagination:false,
-  
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         breakpoints: {
             // when window width is <= 499px
             768: {
                 slidesPerView: 1,
+
             },
             // when window width is <= 999px
             999: {

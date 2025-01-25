@@ -738,6 +738,7 @@
           line-height: 2.4rem;
           text-align: center;
           text-transform: capitalize;
+
           &::after {
             position: absolute;
             content: '';
@@ -764,11 +765,30 @@
         }
       }
     }
+
+    &.typ-calculator-border-tabs {
+      .tab-list {
+        overflow: hidden;
+        .tab-item {
+          @media only screen and (max-width: $media-mobile) {
+            width: 50%;
+          }
+
+          .title {
+            @media only screen and (max-width: $media-mobile) {
+              min-width: 100%;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   &.typ-calculator-result {
     width: 100%;
     margin: 2rem 0;
+
     .tab-list {
       gap: 0.6rem;
       justify-content: center;
@@ -779,7 +799,12 @@
           text-transform: capitalize;
           display: block;
           font-size: 1.2rem;
+
+          @media only screen and (max-width: $media-mobile) {
+            padding: 0.4rem 0.7rem;
+          }
         }
+
         &:hover,
         &.active {
           .title {
@@ -787,33 +812,34 @@
           }
         }
       }
-    }}
-  }
-
-
-  .cp-inside-tab {
-    .tab-list {
-      background: $clr-bg;
-      border-radius: 12px;
-      padding: 0.8rem;
-      max-width: 40rem;
-
-      .tab-item {
-        &.active {
-          .title {
-            background: $clr-root;
-            color: $clr-primary;
-            border: 0;
-            font-family: $font-medium;
-          }
-        }
-      }
-
-      .title {
-        border-radius: 8px;
-        background: transparent;
-        border: 0;
-        padding: 1rem 4.5rem;
-      }
     }
   }
+}
+
+
+.cp-inside-tab {
+  .tab-list {
+    background: $clr-bg;
+    border-radius: 12px;
+    padding: 0.8rem;
+    max-width: 40rem;
+
+    .tab-item {
+      &.active {
+        .title {
+          background: $clr-root;
+          color: $clr-primary;
+          border: 0;
+          font-family: $font-medium;
+        }
+      }
+    }
+
+    .title {
+      border-radius: 8px;
+      background: transparent;
+      border: 0;
+      padding: 1rem 4.5rem;
+    }
+  }
+}

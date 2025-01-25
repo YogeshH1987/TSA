@@ -446,6 +446,15 @@
       text-transform: capitalize; }
       .cp-tab.typ-result .tab-list .tab-item:hover .title::after, .cp-tab.typ-result .tab-list .tab-item.active .title::after {
         width: 100%; }
+  .cp-tab.typ-result.typ-calculator-border-tabs .tab-list {
+    overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      .cp-tab.typ-result.typ-calculator-border-tabs .tab-list .tab-item {
+        width: 50%; } }
+    @media only screen and (max-width: 768px) {
+      .cp-tab.typ-result.typ-calculator-border-tabs .tab-list .tab-item .title {
+        min-width: 100%;
+        font-size: 1.4rem; } }
 .cp-tab.typ-calculator-result {
   width: 100%;
   margin: 2rem 0; }
@@ -457,6 +466,9 @@
       text-transform: capitalize;
       display: block;
       font-size: 1.2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-tab.typ-calculator-result .tab-list .tab-item .title {
+          padding: 0.4rem 0.7rem; } }
     .cp-tab.typ-calculator-result .tab-list .tab-item:hover .title, .cp-tab.typ-calculator-result .tab-list .tab-item.active .title {
       text-shadow: none; }
 

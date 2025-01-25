@@ -176,6 +176,15 @@
     }
 
     &.typ-calculator-result {
+
+        .grid-col-lhs,
+        .sec-cont,
+        .sec-head {
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0 1.6rem;
+            }
+        }
+
         .wrapper {
             .wrapper-img {
                 width: 100%;
@@ -183,7 +192,13 @@
                 overflow: hidden;
                 min-height: 50.5rem;
                 margin-bottom: 6.4rem;
-                @media only screen and (max-width: $media-mobile) {   min-height:auto;}
+
+                @media only screen and (max-width: $media-mobile) {
+                    min-height: auto;
+                    @include border-radius(0);
+                    margin-bottom: 4.8rem;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -196,9 +211,14 @@
                 padding: 2.4rem 2rem;
                 @include border-radius(1.2rem);
                 margin-bottom: 3.2rem;
-             
+
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 1.6rem 1.2rem;
+                }
+
                 .list-text {
                     margin-left: 2.4rem;
+
                     .list-item {
                         margin-bottom: 1.2rem;
                         list-style: disc;
@@ -207,6 +227,134 @@
                     }
                 }
             }
+
+            .typ-architects-recommended {
+                margin-bottom: 6.4rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    padding-bottom: 3.2rem;
+                    margin-bottom: 3.4rem;
+                }
+            }
+
+        }
+
+        .result-wrap {
+            background-color: #fff;
+            .cont-wrap {
+                overflow-y: visible;
+                padding: 1.6rem 0;
+
+                .table-head {
+                    font-size: 1.6rem;
+                    font-family: $font-medium;
+                    color: $clr-base;
+                    margin-bottom: 2px;
+                    @media only screen and (max-width: $media-mobile) { font-size: 1.4rem;}
+                    &.typ-head-blue {
+                        color: #00398C;
+                        font-family: $font-semiBold;
+                    }
+                }
+
+                .table-open-head {
+                    font-family: $font-regular;
+                }
+
+                .table-desc {
+                    font-size: 1.2rem;
+                    margin-bottom: 0;
+                    color: #666666;
+                    @media only screen and (max-width: $media-mobile) { font-size: 1rem;}
+                }
+
+                .price {
+                    font-size: 1.6rem;
+                    font-family: $font-semiBold;
+                    color: $clr-base;
+                    @media only screen and (max-width: $media-mobile) { font-size: 1.4rem;}
+                }
+
+                .cp-table.typ-rebar {
+                    .list-item {
+                        padding: 1.2rem 1.6rem;
+                        vertical-align: middle;
+                        @media only screen and (max-width: $media-mobile) {  width: auto;}
+                    }
+                    .fold-wrap{  padding: 0rem 1.6rem;}
+                    .view {
+                        cursor: pointer;
+                        td:last-child {
+                            padding-right: 3.6rem;
+                            position: relative;
+
+                            &::before {
+                                // position: absolute;
+                                // top: 20px;
+                                // right: -5px;
+                                // /* width: 4px; */
+                                // height: 10px;
+                                // margin-top: -8px;
+                                // font-family: 'icomoon' !important;
+                                // content: "\e90e";
+                                // transition: all 0.3s ease;
+                                // color: #000000;
+                                // font-size: 1.2rem;
+
+                                position: absolute;
+                                top: 50%;
+                                right: 18px;
+                                width: 9px;
+                                height: 16px;
+                                margin-top: -8px;
+                                font-family: 'icomoon' !important;
+                                content: "\e90e";
+                                transition: all 0.3s ease;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        &.open {
+                            td:last-child {
+                                &::before {
+                                    transform: rotate(-180deg);
+                                    right: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .fold {
+                        display: none;
+
+                        &.open {
+                            display: table-row;
+                        }
+                    }
+                }
+
+                .grey-bg {
+                    background-color: #F3F4F6;
+                    padding: 0 1.2rem;
+                    border-radius: 0 0 12px 12px;
+                }
+
+                .typ-cost-breakup {
+                    border-collapse: collapse;
+
+                    .seperator-border {
+                        border-top: 1px dashed #DEDEDE;
+                    }
+                }
+
+                .link {
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    margin-top: 2px;
+                    display: block;
+                }
+            }
         }
     }
+
 }

@@ -637,13 +637,16 @@
   .cp-eCommerce-home-banner.typ-calculator-result .feature-type-2 {
     gap: 2rem;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-type-2 {
+        gap: 1.2rem; } }
   .cp-eCommerce-home-banner.typ-calculator-result .feature-item {
     order: initial !important;
     height: 13rem;
     width: 23.1%; }
     @media only screen and (max-width: 768px) {
       .cp-eCommerce-home-banner.typ-calculator-result .feature-item {
-        width: 47%; } }
+        width: 48.2%; } }
     .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-title {
       font-size: 2rem;
       text-transform: capitalize; }

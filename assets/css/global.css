@@ -1159,6 +1159,9 @@ p {
       margin-bottom: 1.2rem; }
       .bs-sec .sec-head.typ-calculator-result .typ2 {
         font-size: 2.4rem; }
+        @media only screen and (max-width: 991px) {
+          .bs-sec .sec-head.typ-calculator-result .typ2 {
+            font-size: 2rem; } }
   .bs-sec .sec-title {
     font-size: 4rem;
     line-height: 5.2rem;
@@ -1983,6 +1986,9 @@ p {
   @media only screen and (max-width: 768px) {
     .bs-sec.typ-delivery-payment .container .typ-cart-btn .btn {
       min-width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-calculator-result .container {
+      padding: 0; } }
 
 .btn {
   display: inline-block;

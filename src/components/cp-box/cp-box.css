@@ -88,7 +88,8 @@
     align-items: start; }
     @media only screen and (max-width: 768px) {
       .cp-box.typ-result {
-        padding: 0.8rem 1.2rem; } }
+        padding: 0.8rem 1.2rem;
+        align-items: center; } }
     .cp-box.typ-result .img-wrap {
       border-radius: 50%;
       width: 4.8rem;
@@ -176,6 +177,9 @@
       font-size: 1.4rem;
       text-decoration: underline;
       font-family: "Poppins Medium"; }
+      @media only screen and (max-width: 768px) {
+        .cp-box.typ-price .link {
+          font-size: 1.2rem; } }
   .cp-box.bottom-notify {
     z-index: -1;
     position: relative;
@@ -207,6 +211,47 @@
       line-height: 1.6rem;
       color: #000000;
       font-family: "Poppins Regular"; }
+  .cp-box.bottom-notify-breakout {
+    z-index: -1;
+    position: relative;
+    padding: 1.6rem 3.6rem 1.6rem 1.6rem;
+    padding-top: 4rem;
+    margin-top: -4rem;
+    border: 1px solid #FFC633;
+    background: #5A245A;
+    position: relative;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    align-items: center; }
+    .cp-box.bottom-notify-breakout .img-wrap {
+      border-radius: 50%;
+      width: 3.6rem;
+      height: 3.6rem;
+      background-color: #BDA7BD;
+      margin-right: 1.2rem; }
+      .cp-box.bottom-notify-breakout .img-wrap .icon {
+        color: #5A245A;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        display: flex;
+        justify-content: center; }
+    .cp-box.bottom-notify-breakout .cont-wrap {
+      width: 85%; }
+    .cp-box.bottom-notify-breakout .title {
+      padding: 0;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #fff;
+      font-family: "Poppins Regular"; }
+    .cp-box.bottom-notify-breakout::after {
+      content: "\e908";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      font-size: 1.6rem;
+      color: #fff;
+      font-family: 'icomoon' !important; }
   .cp-box .cost-list-wrap {
     display: flex;
     margin: 3.6rem 0 2.4rem; }
@@ -242,11 +287,17 @@
         font-size: 1.6rem;
         color: #333333;
         font-family: "Poppins Semibold"; }
+        @media only screen and (max-width: 768px) {
+          .cp-box .cost-list-wrap .cost-list .price {
+            font-size: 1.4rem; } }
       .cp-box .cost-list-wrap .cost-list .title {
         font-size: 1.4rem;
         color: #666666;
         font-family: "Poppins Regular";
         margin: 0; }
+        @media only screen and (max-width: 768px) {
+          .cp-box .cost-list-wrap .cost-list .title {
+            font-size: 1.2rem; } }
   .cp-box .estimate-time-wrap {
     background-color: #F3F4F6;
     border-radius: 8px;
