@@ -98,6 +98,12 @@
   height: 26.3rem;
   margin: 0 auto 4.4rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-building-estimator .img-wrap.typ-no-flr {
+    width: 31.1rem;
+    height: 24rem;
+  }
+}
 .cp-building-estimator .option-wrap {
   margin: 6rem auto 0;
   max-width: 32rem;

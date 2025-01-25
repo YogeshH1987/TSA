@@ -72,6 +72,10 @@
             max-width: 35rem;
             height: 26.3rem;
             margin: 0 auto 4.4rem;
+            @media only screen and (max-width: $media-mobile){
+                width: 31.1rem;
+                height: 24rem;
+            }
         }
     }
     .option-wrap{

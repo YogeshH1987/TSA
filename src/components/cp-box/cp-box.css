@@ -124,6 +124,7 @@
 @media only screen and (max-width: 768px) {
   .cp-box.typ-result {
     padding: 0.8rem 1.2rem;
+    align-items: center;
   }
 }
 .cp-box.typ-result .img-wrap {

@@ -4003,6 +4003,14 @@ p {
     margin-right: 1.2rem;
   }
 }
+.bs-swiper.typ-architects {
+  padding-bottom: 9.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-architects {
+    padding-bottom: 0;
+  }
+}
 .bs-swiper.typ-fabricators, .bs-swiper.typ-architect {
   padding-bottom: 9.6rem;
 }
