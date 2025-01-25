@@ -257,7 +257,9 @@
             padding: 0;
             border: 0;
             @media only screen and (max-width: $media-sm) {
-                min-width: 15rem;
+                // min-width: 15rem;
+                min-width: 50%;
+                width: 100%;
             }
         }
         input[type=radio]:checked{             

@@ -1439,6 +1439,14 @@ p {
   color: #333333;
   line-height: 2.4rem;
 }
+.bs-sec .sec-head.typ-flex {
+  position: relative;
+}
+.bs-sec .sec-head.typ-flex .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .bs-sec .sec-title {
   font-size: 4rem;
   line-height: 5.2rem;
@@ -2948,7 +2956,8 @@ p {
 }
 @media only screen and (max-width: 991px) {
   .bs-radio.typ-house .custom-radio {
-    min-width: 15rem;
+    min-width: 50%;
+    width: 100%;
   }
 }
 .bs-radio.typ-house input[type=radio]:checked + .custom-radio {
@@ -3695,6 +3704,24 @@ p {
     margin-right: 1.2rem;
   }
 }
+.bs-swiper.typ-blog-nav {
+  padding-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-blog-nav {
+    margin-right: -1.6rem;
+    padding-bottom: 0;
+  }
+}
+.bs-swiper.typ-blog-nav .swiper-slide {
+  width: 29.6rem !important;
+  margin-right: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-blog-nav .swiper-slide {
+    margin-right: 1.2rem;
+  }
+}
 .bs-swiper.typ-home-testimonial {
   padding-bottom: 0;
 }
@@ -3994,6 +4021,22 @@ p {
   overflow: hidden;
   margin-right: 1.2rem;
 }
+.bs-swiper.typ-rebar-stories {
+  padding-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-rebar-stories {
+    margin-right: -1.6rem;
+    padding-bottom: 0;
+  }
+}
+.bs-swiper.typ-rebar-stories .swiper-slide {
+  width: 29.7rem;
+  height: 52.8rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-pravesh-stories {
     margin: 0;
@@ -4211,14 +4254,23 @@ p {
 .bs-swiper.typ-feature-banner .swiper-slide {
   width: 19rem;
 }
-.bs-swiper.typ-why-tiscon .swiper-slide {
+.bs-swiper.typ-why-tiscon-nav .swiper-slide, .bs-swiper.typ-why-tiscon .swiper-slide {
   width: 29.5rem;
   margin-right: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-why-tiscon .swiper-slide {
+  .bs-swiper.typ-why-tiscon-nav .swiper-slide, .bs-swiper.typ-why-tiscon .swiper-slide {
     width: 16rem;
     margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-why-tiscon-nav {
+  padding-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-tiscon-nav {
+    margin-right: -1.6rem;
+    padding-bottom: 0;
   }
 }
 .bs-swiper.typ-application .swiper-slide {

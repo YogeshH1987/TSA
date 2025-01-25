@@ -403,18 +403,18 @@
 .cp-tab.typ-rebar .tab-list {
   justify-content: center;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter {
+.cp-tab.typ-blog-filter {
   display: flex;
   flex-wrap: wrap;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-list {
+.cp-tab.typ-blog-filter .tab-list {
   display: block;
   width: 45%;
   border-right: 1px solid #dedede;
   height: 100vh;
   background-color: #FFFBF2;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-list .tab-item .title {
+.cp-tab.typ-blog-filter .tab-list .tab-item .title {
   font-size: 1.4rem;
   color: #333333;
   font-family: "Poppins Semibold";
@@ -427,11 +427,11 @@
   border-right: 0;
   text-shadow: none;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-list .tab-item.active {
+.cp-tab.typ-blog-filter .tab-list .tab-item.active {
   background: #FFE399;
   border-bottom: 1px solid #A77800;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-list .tab-item .count {
+.cp-tab.typ-blog-filter .tab-list .tab-item .count {
   background-color: #D2042D;
   color: #FFFFFF;
   font-size: 1.2rem;
@@ -444,49 +444,26 @@
   text-align: center;
   padding: 0.2rem;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-container {
+.cp-tab.typ-blog-filter .tab-container {
   padding-top: 0;
 }
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-container .filter-menu-list {
-  right: 42px;
-  top: 81px;
-  background: #FFFFFF;
-  padding: 1rem;
-  z-index: 2;
-  height: 74%;
-}
-@media only screen and (max-width: 768px) {
-  .cp-tab.typ-blog-filter.typ-blog-filter .tab-container .filter-menu-list {
-    right: -20px;
-    top: 65px;
-    z-index: 2;
-  }
-}
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-container .filter-menu-list.active {
-  display: block;
-}
-.cp-tab.typ-blog-filter.typ-blog-filter .tab-container .title {
-  font-size: 1.6rem;
-  font-family: "Poppins Semibold";
-  color: #333333;
-}
-.cp-tab.typ-blog-filter.typ-help-policies {
+.cp-tab.typ-help-policies {
   width: 100%;
 }
-.cp-tab.typ-blog-filter.typ-help-policies .tab-list {
+.cp-tab.typ-help-policies .tab-list {
   gap: 1.2rem;
 }
-.cp-tab.typ-blog-filter.typ-help-policies .tab-list .tab-item .title {
+.cp-tab.typ-help-policies .tab-list .tab-item .title {
   text-transform: capitalize;
   display: block;
 }
-.cp-tab.typ-blog-filter.typ-help-policies .tab-list .tab-item:hover .title, .cp-tab.typ-blog-filter.typ-help-policies .tab-list .tab-item.active .title {
+.cp-tab.typ-help-policies .tab-list .tab-item:hover .title, .cp-tab.typ-help-policies .tab-list .tab-item.active .title {
   text-shadow: none;
 }
-.cp-tab.typ-blog-filter.typ-about .tab-item:hover .title, .cp-tab.typ-blog-filter.typ-about .tab-item.active .title {
+.cp-tab.typ-about .tab-item:hover .title, .cp-tab.typ-about .tab-item.active .title {
   text-shadow: #fff 0.9px 0 0.9px !important;
 }
-.cp-tab.typ-blog-filter.typ-about-timeline .tab-list .tab-item .title {
+.cp-tab.typ-about-timeline .tab-list .tab-item .title {
   font-size: 6rem;
   background-color: transparent;
   border: 0;
@@ -497,91 +474,126 @@
   padding: 0.6rem 1rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-tab.typ-blog-filter.typ-about-timeline .tab-list .tab-item .title {
+  .cp-tab.typ-about-timeline .tab-list .tab-item .title {
     font-size: 4rem;
     padding: 0.6rem 0rem;
   }
 }
-.cp-tab.typ-blog-filter.typ-about-timeline .tab-list .tab-item:hover .title {
+.cp-tab.typ-about-timeline .tab-list .tab-item:hover .title {
   font-size: 6rem;
   color: #DEDEDE;
   text-shadow: none;
 }
 @media only screen and (max-width: 768px) {
-  .cp-tab.typ-blog-filter.typ-about-timeline .tab-list .tab-item:hover .title {
+  .cp-tab.typ-about-timeline .tab-list .tab-item:hover .title {
     font-size: 4rem;
   }
 }
-.cp-tab.typ-blog-filter.typ-about-timeline .tab-list .tab-item.active .title {
+.cp-tab.typ-about-timeline .tab-list .tab-item.active .title {
   border: none;
   font-size: 8rem;
   color: #A77800;
   text-shadow: none;
 }
 @media only screen and (max-width: 768px) {
-  .cp-tab.typ-blog-filter.typ-about-timeline .tab-list .tab-item.active .title {
+  .cp-tab.typ-about-timeline .tab-list .tab-item.active .title {
     font-size: 4.8rem;
   }
 }
-.cp-tab.typ-blog-filter.typ-architect-plan .tab-list .tab-item .title {
+.cp-tab.typ-architect-plan .tab-list .tab-item .title {
   text-transform: capitalize;
   display: flex;
   gap: 1rem;
   padding: 1.6rem 1.6rem;
   align-items: center;
 }
-.cp-tab.typ-blog-filter.typ-architect-plan .tab-list .tab-item:hover .title, .cp-tab.typ-blog-filter.typ-architect-plan .tab-list .tab-item.active .title {
+.cp-tab.typ-architect-plan .tab-list .tab-item:hover .title, .cp-tab.typ-architect-plan .tab-list .tab-item.active .title {
   text-shadow: none;
 }
-.cp-tab.typ-blog-filter.typ-architect-plan .tab-content .desc {
+.cp-tab.typ-architect-plan .tab-content .desc {
   font-size: 1.4rem;
   margin-bottom: 1.6rem;
 }
-.cp-tab.typ-blog-filter.typ-architect-plan .tab-content .cp-checkbox {
+.cp-tab.typ-architect-plan .tab-content .cp-checkbox {
   margin-bottom: 1rem;
   display: flex;
   gap: 1rem;
 }
-.cp-tab.typ-blog-filter.typ-architect-plan .tab-content .cp-checkbox label {
+.cp-tab.typ-architect-plan .tab-content .cp-checkbox label {
   font-size: 1.4rem;
   color: #333333;
 }
-.cp-tab.typ-blog-filter.typ-floor-plan .tab-list {
+.cp-tab.typ-floor-plan .tab-list {
   justify-content: center;
   margin-top: 2.4rem;
 }
-.cp-tab.typ-blog-filter.typ-floor-plan .tab-container {
+.cp-tab.typ-floor-plan .tab-container {
   padding-top: 0rem;
 }
-.cp-tab.typ-blog-filter.typ-floor-plan .tab-content .img-wrap {
+.cp-tab.typ-floor-plan .tab-content .img-wrap {
   height: 100%;
   height: calc(100vh - 16rem);
 }
-.cp-tab.typ-blog-filter.typ-floor-plan .tab-content .img-wrap img {
+.cp-tab.typ-floor-plan .tab-content .img-wrap img {
   height: 100%;
   object-fit: cover;
 }
-.cp-tab.typ-blog-filter.typ-architect-pdp {
+.cp-tab.typ-architect-pdp {
   margin-top: 1.6rem;
 }
-.cp-tab.typ-blog-filter.typ-architect-pdp .tab-list .tab-item .title {
+.cp-tab.typ-architect-pdp .tab-list .tab-item .title {
   padding: 1.6rem 1.2rem;
   display: block;
   text-transform: capitalize;
 }
-.cp-tab .cp-inside-tab .tab-list {
+.cp-tab.typ-result {
+  position: relative;
+}
+.cp-tab.typ-result .tab-list {
+  border-bottom: 1px solid #DEDEDE;
+  border-top: 1px solid #DEDEDE;
+}
+.cp-tab.typ-result .tab-list .tab-item .title {
+  border: 0;
+  position: relative;
+  padding: 1.6rem 2rem;
+  min-width: 18.8rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+.cp-tab.typ-result .tab-list .tab-item .title::after {
+  position: absolute;
+  content: "";
+  background: #D2042D;
+  width: 0%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  transition: all ease-in 0.3s;
+}
+.cp-tab.typ-result .tab-list .tab-item:hover .title, .cp-tab.typ-result .tab-list .tab-item.active .title {
+  background: none;
+  color: #333333;
+  text-transform: capitalize;
+}
+.cp-tab.typ-result .tab-list .tab-item:hover .title::after, .cp-tab.typ-result .tab-list .tab-item.active .title::after {
+  width: 100%;
+}
+
+.cp-inside-tab .tab-list {
   background: #ECF2FB;
   border-radius: 12px;
   padding: 0.8rem;
   max-width: 40rem;
 }
-.cp-tab .cp-inside-tab .tab-list .tab-item.active .title {
+.cp-inside-tab .tab-list .tab-item.active .title {
   background: #FFFFFF;
   color: #3D7EDB;
   border: 0;
   font-family: "Poppins Medium";
 }
-.cp-tab .cp-inside-tab .tab-list .title {
+.cp-inside-tab .tab-list .title {
   border-radius: 8px;
   background: transparent;
   border: 0;

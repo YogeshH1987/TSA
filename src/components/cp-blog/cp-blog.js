@@ -36,7 +36,10 @@ function blogNavSlider() {
     var swiper = new Swiper(".js-blog-nav", {
         slidesPerView: 'auto',
         loop: false,
-        navigation: true
+        navigation: {
+            nextEl: ".swiper-button-next.blog-next",
+            prevEl: ".swiper-button-prev.blog-prev",
+        },
     });
 }
 

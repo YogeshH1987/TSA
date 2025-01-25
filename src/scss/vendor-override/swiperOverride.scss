@@ -128,6 +128,22 @@
     }
   }
 
+  &.typ-blog-nav{
+    padding-bottom: 8rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+      padding-bottom: 0;
+    }
+
+    .swiper-slide {
+      width: 29.6rem !important;
+      margin-right: 1.8rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
   &.typ-home-testimonial {
     padding-bottom: 0;
 
@@ -446,6 +462,23 @@
   &.typ-real-stories {
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
+    }
+
+    .swiper-slide {
+      width: 29.7rem;
+      height: 52.8rem;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-right: 1.2rem;
+
+    }
+  }
+
+  &.typ-rebar-stories {
+    padding-bottom: 8rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+      padding-bottom: 0;
     }
 
     .swiper-slide {

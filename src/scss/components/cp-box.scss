@@ -46,7 +46,7 @@
         .img-wrap,
         .cont-wrap{
             width: 47%;
-            @media only screen and (max-width: $media-sm) {
+            @media only screen and (max-width: $media-tab) {
                 width: 100%;
             }
         }

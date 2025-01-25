@@ -200,5 +200,13 @@
 .cp-table.typ-cart .list-item:nth-child(3) {
   width: 20%;
 }
+.cp-table.typ-rebar {
+  width: 100%;
+  border: 0;
+}
+.cp-table.typ-rebar .list-item {
+  border: 0;
+  padding: 1.2rem 1.6rem;
+}
 
 /*# sourceMappingURL=cp-table.css.map */

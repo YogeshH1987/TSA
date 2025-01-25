@@ -88,7 +88,10 @@
 @media only screen and (max-width: 991px) {
   .cp-calculator-box.typ-rebar {
     text-align: center;
-    padding-bottom: 5.5rem;
+    padding-bottom: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .cp-calculator-box.typ-rebar .title {
@@ -140,11 +143,17 @@
     background: #FFFFFF;
     position: absolute;
     left: -1.6rem;
-    width: 110%;
-    bottom: -2.3rem;
+    width: 104.3%;
+    bottom: -1.5rem;
     border-radius: 0 0 1.2rem 1.2rem;
     -webkit-border-radius: 0 0 1.2rem 1.2rem;
     -moz-border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cp-calculator-box.typ-rebar .btn-wrap {
+    left: -1.6rem;
+    width: 110%;
   }
 }
 
