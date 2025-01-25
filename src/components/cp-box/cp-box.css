@@ -77,7 +77,7 @@
           margin: 0;
           width: 100%; } }
   .cp-box.typ-result {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.4rem;
     position: relative;
     border: 1px solid #DEDEDE;
     border-radius: 1.2rem;
@@ -85,7 +85,7 @@
     -moz-border-radius: 1.2rem;
     padding: 1.6rem;
     gap: 1.2rem;
-    align-items: center; }
+    align-items: start; }
     @media only screen and (max-width: 768px) {
       .cp-box.typ-result {
         padding: 0.8rem 1.2rem; } }
@@ -128,7 +128,7 @@
           white-space: nowrap;
           margin: 0; } }
     .cp-box.typ-result .desc {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2.4rem;
       color: #5A245A;
       font-family: "Poppins Regular"; }
@@ -164,6 +164,18 @@
       font-size: 2.8rem;
       line-height: 4rem;
       color: #333333; }
+      .cp-box.typ-price .desc.typ-flex {
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        display: flex; }
+      .cp-box.typ-price .desc .typ-small,
+      .cp-box.typ-price .desc .icon {
+        font-size: 2rem; }
+    .cp-box.typ-price .link {
+      font-size: 1.4rem;
+      text-decoration: underline;
+      font-family: "Poppins Medium"; }
   .cp-box.bottom-notify {
     z-index: -1;
     position: relative;
@@ -193,6 +205,68 @@
       padding: 0;
       font-size: 1.2rem;
       line-height: 1.6rem;
-      color: #000000; }
+      color: #000000;
+      font-family: "Poppins Regular"; }
+  .cp-box .cost-list-wrap {
+    display: flex;
+    margin: 3.6rem 0 2.4rem; }
+    .cp-box .cost-list-wrap .cost-list {
+      width: 33.33%;
+      padding: 0 1.2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .cp-box .cost-list-wrap .cost-list .icon {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.4rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px; }
+        .cp-box .cost-list-wrap .cost-list .icon.orange {
+          background-color: #FDECE5;
+          color: #F16933; }
+        .cp-box .cost-list-wrap .cost-list .icon.blue {
+          background-color: #ECF2FB;
+          color: #3D7EDB; }
+        .cp-box .cost-list-wrap .cost-list .icon.green {
+          background-color: #E5F6EC;
+          color: #00A441; }
+      .cp-box .cost-list-wrap .cost-list .price {
+        font-size: 1.6rem;
+        color: #333333;
+        font-family: "Poppins Semibold"; }
+      .cp-box .cost-list-wrap .cost-list .title {
+        font-size: 1.4rem;
+        color: #666666;
+        font-family: "Poppins Regular";
+        margin: 0; }
+  .cp-box .estimate-time-wrap {
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.2rem;
+    text-align: left; }
+    .cp-box .estimate-time-wrap .title {
+      font-size: 1.4rem;
+      font-family: "Poppins Medium";
+      color: #333333;
+      line-height: 2rem;
+      margin-bottom: 0; }
+      .cp-box .estimate-time-wrap .title .typ-small {
+        font-size: 1.2rem;
+        font-family: "Poppins Regular";
+        color: #666666;
+        display: block; }
 
 /*# sourceMappingURL=cp-box.css.map */

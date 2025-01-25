@@ -634,5 +634,83 @@
         padding: 2.4rem 1.2rem 2.4rem; } }
   .cp-eCommerce-home-banner.typ-architectual-plan .feature.typ-archit-col-2 .feature-item {
     width: 50%; }
+  .cp-eCommerce-home-banner.typ-calculator-result .feature-type-2 {
+    gap: 2rem;
+    flex-wrap: wrap; }
+  .cp-eCommerce-home-banner.typ-calculator-result .feature-item {
+    order: initial !important;
+    height: 13rem;
+    width: 23.1%; }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item {
+        width: 47%; } }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-title {
+      font-size: 2rem;
+      text-transform: capitalize; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-title {
+          font-size: 1.4rem; } }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-desc {
+      font-size: 1.4rem;
+      font-family: "Poppins Medium";
+      max-width: 100%;
+      color: #666666; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-img {
+      min-width: 9rem;
+      min-height: 9.5rem;
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-img:after {
+        width: 10rem;
+        height: 10rem;
+        right: -15px;
+        bottom: -15px; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item .feature-card .f-img .icon {
+        font-size: 5.6rem;
+        width: 4.6rem;
+        height: 3.6rem; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(1) .feature-card {
+      background-color: #FDECE5; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(1) .feature-card .f-img::after {
+        background-color: #F8B499; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(1) .feature-card .f-img .icon {
+        color: #F58F66; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(2) .feature-card {
+      background-color: #ECF2FB; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(2) .feature-card .f-img::after {
+        background-color: #B1CBF1; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(2) .feature-card .f-img .icon {
+        color: #6498E2; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(3) .feature-card {
+      background-color: #E5F6EC; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(3) .feature-card .f-img::after {
+        background-color: #99DAB3; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(3) .feature-card .f-img .icon {
+        color: #33B667; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(4) .feature-card {
+      background-color: #FFF8E5; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(4) .feature-card .f-img::after {
+        background-color: #FFD466; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(4) .feature-card .f-img .icon {
+        color: #FFC633; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(5) .feature-card {
+      background-color: #FAE6EA; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(5) .feature-card .f-img::after {
+        background-color: #ED9BAB; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(5) .feature-card .f-img .icon {
+        color: #E46881; }
+    .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card {
+      background-color: #fff;
+      border: 1px solid #DEDEDE; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-desc {
+        font-size: 1.2rem;
+        font-family: "Poppins Regular"; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-title {
+        font-size: 1.4rem; }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-img::after {
+        background-color: rgba(222, 222, 222, 0.2); }
+      .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-img .icon {
+        color: #dedede; }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */
