@@ -562,6 +562,7 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: center;
+  text-transform: capitalize;
 }
 .cp-tab.typ-result .tab-list .tab-item .title::after {
   position: absolute;
@@ -580,6 +581,23 @@
 }
 .cp-tab.typ-result .tab-list .tab-item:hover .title::after, .cp-tab.typ-result .tab-list .tab-item.active .title::after {
   width: 100%;
+}
+.cp-tab.typ-calculator-result {
+  width: 100%;
+  margin: 2rem 0;
+}
+.cp-tab.typ-calculator-result .tab-list {
+  gap: 0.6rem;
+  justify-content: center;
+}
+.cp-tab.typ-calculator-result .tab-list .tab-item .title {
+  padding: 0.4rem 1rem;
+  text-transform: capitalize;
+  display: block;
+  font-size: 1.2rem;
+}
+.cp-tab.typ-calculator-result .tab-list .tab-item:hover .title, .cp-tab.typ-calculator-result .tab-list .tab-item.active .title {
+  text-shadow: none;
 }
 
 .cp-inside-tab .tab-list {

@@ -143,11 +143,12 @@
             .feature-item {
                 &:nth-child(1) {
                     order: 4;
+
                     @media only screen and (max-width: 768px) {
                         width: 100%;
                     }
                 }
-            
+
                 &:nth-child(6) {
                     order: 3;
                 }
@@ -555,12 +556,20 @@
             }
         }
     }
-    &.typ-pravesh{
-        .typ-feature-banner{ padding-bottom: 0;}
+
+    &.typ-pravesh {
+        .typ-feature-banner {
+            padding-bottom: 0;
+        }
+
         .feature-item {
             width: 15%;
             order: initial !important;
-            @media only screen and (max-width: $media-mobile) {  width: 48%;}
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 48%;
+            }
+
             &:nth-child(3) {
                 .feature-card {
                     background-color: $clr-bg;
@@ -575,6 +584,7 @@
             }
         }
     }
+
     &.typ-offer {
         .feature {
             flex-wrap: wrap;
@@ -804,19 +814,23 @@
             }
         }
     }
-    
-    &.typ-calculate{
+
+    &.typ-calculate {
         padding: 0;
         background: transparent;
+
         .feature {
-            @media only screen and (max-width: $media-mobile) { 
+            @media only screen and (max-width: $media-mobile) {
                 flex-wrap: wrap;
                 gap: 1.3rem;
             }
+
             .feature-card {
                 background: $clr-root;
-                .f-img{
+
+                .f-img {
                     z-index: 2;
+
                     &:after {
                         width: 11.3rem;
                         height: 11.3rem;
@@ -827,7 +841,8 @@
                         content: '';
                         opacity: 0.3;
                         z-index: -1;
-                        @media only screen and (max-width: $media-mobile) { 
+
+                        @media only screen and (max-width: $media-mobile) {
                             width: 9rem;
                             height: 9rem;
                             border-radius: 50%;
@@ -839,20 +854,24 @@
                             z-index: -1;
                         }
                     }
-                    @media only screen and (max-width: $media-mobile) { 
+
+                    @media only screen and (max-width: $media-mobile) {
                         max-width: 6rem;
                         max-height: 6rem;
                     }
                 }
             }
-            .feature-item{
+
+            .feature-item {
                 width: 19.1rem;
+
                 @media only screen and (max-width: 768px) {
                     width: 48%;
                     height: 13rem;
                     order: initial;
                 }
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     .feature-card {
                         .f-img {
                             &::after {
@@ -861,7 +880,8 @@
                         }
                     }
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     .feature-card {
                         .f-img {
                             &::after {
@@ -870,7 +890,8 @@
                         }
                     }
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     .feature-card {
                         .f-img {
                             &::after {
@@ -878,8 +899,9 @@
                             }
                         }
                     }
-                } 
-                &:nth-child(4){
+                }
+
+                &:nth-child(4) {
                     .feature-card {
                         .f-img {
                             &::after {
@@ -887,7 +909,7 @@
                             }
                         }
                     }
-                } 
+                }
             }
         }
     }
@@ -1177,11 +1199,178 @@
                     }
                 }
             }
-            &.typ-archit-col-2{
-                .feature-item{ width: 50%;}
+
+            &.typ-archit-col-2 {
+                .feature-item {
+                    width: 50%;
+                }
             }
         }
     }
 
+    &.typ-calculator-result {
+        .feature-type-2 {
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            order: initial !important;
+            height: 13rem;
+            width: 23.1%;
+            @media only screen and (max-width: $media-mobile) {
+                width: 47%;
+            }
+
+            .feature-card {
+                .f-title {
+                    font-size: 2rem;
+                    text-transform: capitalize;
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .f-desc {
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    max-width: 100%;
+                    color: #666666;
+                }
+
+                .f-img {
+                    min-width: 9rem;
+                    min-height: 9.5rem;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+
+                    &:after {
+                        width: 10rem;
+                        height: 10rem;
+                        right: -15px;
+                        bottom: -15px;
+                    }
+
+                    .icon {
+                        font-size: 5.6rem;
+                        width: 4.6rem;
+                        height: 3.6rem;
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                .feature-card {
+                    background-color: #FDECE5;
+
+                    .f-img {
+                        &::after {
+                            background-color: #F8B499;
+                        }
+
+                        .icon {
+                            color: #F58F66;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:nth-child(2) {
+                .feature-card {
+                    background-color: #ECF2FB;
+
+                    .f-img {
+                        &::after {
+                            background-color: #B1CBF1;
+                        }
+
+                        .icon {
+                            color: #6498E2;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:nth-child(3) {
+                .feature-card {
+                    background-color: #E5F6EC;
+
+                    .f-img {
+                        &::after {
+                            background-color: #99DAB3;
+                        }
+
+                        .icon {
+                            color: #33B667;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:nth-child(4) {
+                .feature-card {
+                    background-color: #FFF8E5;
+
+                    .f-img {
+                        &::after {
+                            background-color: #FFD466;
+                        }
+
+                        .icon {
+                            color:#FFC633;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:nth-child(5) {
+                .feature-card {
+                    background-color: #FAE6EA;
+
+                    .f-img {
+                        &::after {
+                            background-color: #ED9BAB;
+                        }
+
+                        .icon {
+                            color:#E46881;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:nth-child(6) {
+                .feature-card {
+                    background-color: #fff;
+                    border: 1px solid #DEDEDE;
+                    .f-desc{ font-size: 1.2rem; font-family: $font-regular;}
+                    .f-title{ font-size: 1.4rem;}
+                    .f-img {
+                        &::after {
+                            background-color:rgba(222, 222, 222, 20%);
+                        }
+
+                        .icon {
+                            color:rgba(222, 222, 222, 1);
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
 
 }

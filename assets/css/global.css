@@ -1447,6 +1447,12 @@ p {
   bottom: 0;
   right: 0;
 }
+.bs-sec .sec-head.typ-calculator-result {
+  margin-bottom: 1.2rem;
+}
+.bs-sec .sec-head.typ-calculator-result .typ2 {
+  font-size: 2.4rem;
+}
 .bs-sec .sec-title {
   font-size: 4rem;
   line-height: 5.2rem;

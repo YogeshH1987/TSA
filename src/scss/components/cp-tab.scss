@@ -29,6 +29,7 @@
         @include transition(all, 2s, ease);
         padding: 0.6rem 1.6rem;
         display: block;
+
         &.typ-capital {
           text-transform: capitalize;
         }
@@ -470,13 +471,15 @@
     }
   }
 
-  &.typ-rebar{
+  &.typ-rebar {
     max-width: 62rem;
     margin: 0 auto;
+
     @media only screen and (max-width: $media-mobile) {
       max-width: 100%;
     }
-    .tab-list{
+
+    .tab-list {
       justify-content: center;
     }
   }
@@ -706,6 +709,7 @@
 
   &.typ-architect-pdp {
     margin-top: 1.6rem;
+
     .tab-list {
       .tab-item {
         .title {
@@ -719,18 +723,21 @@
 
   &.typ-result {
     position: relative;
+
     .tab-list {
       border-bottom: 1px solid $clr-border;
       border-top: 1px solid $clr-border;
+
       .tab-item {
         .title {
-          border: 0; 
+          border: 0;
           position: relative;
           padding: 1.6rem 2rem;
           min-width: 18.8rem;
           font-size: 1.6rem;
           line-height: 2.4rem;
           text-align: center;
+          text-transform: capitalize;
           &::after {
             position: absolute;
             content: '';
@@ -749,6 +756,7 @@
             background: none;
             color: $clr-base;
             text-transform: capitalize;
+
             &::after {
               width: 100%;
             }
@@ -757,32 +765,55 @@
       }
     }
   }
-}
 
+  &.typ-calculator-result {
+    width: 100%;
+    margin: 2rem 0;
+    .tab-list {
+      gap: 0.6rem;
+      justify-content: center;
 
-.cp-inside-tab {
-  .tab-list {
-    background: $clr-bg;
-    border-radius: 12px;
-    padding: 0.8rem;
-    max-width: 40rem;
-
-    .tab-item {
-      &.active {
+      .tab-item {
         .title {
-          background: $clr-root;
-          color: $clr-primary;
-          border: 0;
-          font-family: $font-medium;
+          padding: 0.4rem 1rem;
+          text-transform: capitalize;
+          display: block;
+          font-size: 1.2rem;
+        }
+        &:hover,
+        &.active {
+          .title {
+            text-shadow: none;
+          }
         }
       }
-    }
+    }}
+  }
 
-    .title {
-      border-radius: 8px;
-      background: transparent;
-      border: 0;
-      padding: 1rem 4.5rem;
+
+  .cp-inside-tab {
+    .tab-list {
+      background: $clr-bg;
+      border-radius: 12px;
+      padding: 0.8rem;
+      max-width: 40rem;
+
+      .tab-item {
+        &.active {
+          .title {
+            background: $clr-root;
+            color: $clr-primary;
+            border: 0;
+            font-family: $font-medium;
+          }
+        }
+      }
+
+      .title {
+        border-radius: 8px;
+        background: transparent;
+        border: 0;
+        padding: 1rem 4.5rem;
+      }
     }
   }
-}
