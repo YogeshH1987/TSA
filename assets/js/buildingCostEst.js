@@ -9,8 +9,8 @@ TSA.buildingCostEst = {
 
     initSlider: function () {
         // Initialize noUiSlider for Built-Up Area
-        var builtUpAreaSlider = document.getElementById('builtUpAreaRange');
-        const numberFlrSlider = document.getElementById('numberFlr');
+        const builtUpAreaSlider =  document.querySelector('[data-id="builtUpAreaRange"]');        
+        const numberFlrSlider =  document.querySelector('[data-id="numberFlr"]');
 
         noUiSlider.create(builtUpAreaSlider, {
             start: 700,
