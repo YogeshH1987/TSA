@@ -8,325 +8,220 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid {
-    gap: 1.2rem;
-    flex-direction: column;
-  }
-}
-.lyt-grid.typ-col-2 .grid-col {
-  width: 50%;
-}
-@media only screen and (max-width: 768px) {
+  gap: 2rem; }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid {
+      gap: 1.2rem;
+      flex-direction: column; } }
   .lyt-grid.typ-col-2 .grid-col {
-    width: 100%;
-  }
-}
-.lyt-grid.typ-col-2-no-wrap {
-  flex-direction: row;
-}
-.lyt-grid.typ-col-2-no-wrap .grid-col {
-  width: 50%;
-}
-.lyt-grid.typ-col-3 .grid-col {
-  width: 33%;
-}
-@media only screen and (max-width: 768px) {
+    width: 50%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-col-2 .grid-col {
+        width: 100%; } }
+  .lyt-grid.typ-col-2-no-wrap {
+    flex-direction: row; }
+    .lyt-grid.typ-col-2-no-wrap .grid-col {
+      width: 50%; }
   .lyt-grid.typ-col-3 .grid-col {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-col-3-no-wrap {
-    flex-direction: row;
-    gap: 0.3rem;
-  }
-}
-.lyt-grid.typ-col-3-no-wrap .grid-col {
-  width: 33%;
-}
-.lyt-grid.typ-col-4 {
-  flex-wrap: wrap;
-}
-.lyt-grid.typ-col-4 .grid-col {
-  width: 22.5%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-col-4 .grid-col {
-    width: 100%;
-  }
-}
-.lyt-grid.typ-col-about {
-  flex-wrap: wrap;
-  justify-content: initial;
-  align-items: initial;
-}
-.lyt-grid.typ-col-about .grid-col {
-  width: 31.9%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-col-about .grid-col {
-    width: 100%;
-  }
-}
-.lyt-grid.typ-about-news {
-  height: auto;
-}
-@media only screen and (max-width: 768px) {
+    width: 33%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-col-3 .grid-col {
+        width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-col-3-no-wrap {
+      flex-direction: row;
+      gap: 0.3rem; } }
+  .lyt-grid.typ-col-3-no-wrap .grid-col {
+    width: 33%; }
+  .lyt-grid.typ-col-4 {
+    flex-wrap: wrap; }
+    .lyt-grid.typ-col-4 .grid-col {
+      width: 22.5%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-col-4 .grid-col {
+          width: 100%; } }
+  .lyt-grid.typ-col-about {
+    flex-wrap: wrap;
+    justify-content: initial;
+    align-items: initial; }
+    .lyt-grid.typ-col-about .grid-col {
+      width: 31.9%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-col-about .grid-col {
+          width: 100%; } }
   .lyt-grid.typ-about-news {
-    flex-wrap: initial;
+    height: auto; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-about-news {
+        flex-wrap: initial;
+        gap: 0;
+        flex-direction: initial;
+        height: 100%; } }
+    .lyt-grid.typ-about-news .grid-col {
+      height: auto; }
+  .lyt-grid.typ-explore {
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 4.8rem;
+    border-bottom: 1px solid #DEDEDE;
+    gap: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-explore {
+        flex-direction: row;
+        padding-bottom: 2.4rem; } }
+    .lyt-grid.typ-explore .grid-col {
+      width: 33%; }
+      .lyt-grid.typ-explore .grid-col:last-child .cp-icon-details::after {
+        display: none; }
+    .lyt-grid.typ-explore.typ-about {
+      border: none; }
+  .lyt-grid.typ-category {
+    gap: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-category {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch; } }
+    .lyt-grid.typ-category .grid-col {
+      width: 30.8%; }
+  .lyt-grid.typ-4 .grid-col:first-child {
+    width: 70%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-4 .grid-col:first-child {
+        width: 100%; } }
+  .lyt-grid.typ-4 .grid-col:last-child {
+    width: 30%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-4 .grid-col:last-child {
+        width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ5 {
+      flex-wrap: wrap;
+      flex-direction: row; } }
+  .lyt-grid.typ5 .grid-col {
+    width: 25%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ5 .grid-col {
+        width: 48%; } }
+  .lyt-grid.typ-structure {
+    justify-content: flex-start; }
+  .lyt-grid.typ-6 .grid-col:first-child {
+    width: 40%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-6 .grid-col:first-child {
+        width: 100%;
+        padding: 0 1.6rem 1.6rem;
+        background-color: #FFFBF2; } }
+  .lyt-grid.typ-6 .grid-col:last-child {
+    width: 60%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-6 .grid-col:last-child {
+        width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-7 {
+      flex-direction: column-reverse; } }
+  .lyt-grid.typ-7 .grid-col:first-child {
+    width: 66.2%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-7 .grid-col:first-child {
+        width: 100%; } }
+  .lyt-grid.typ-7 .grid-col:last-child {
+    width: 32.3%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-7 .grid-col:last-child {
+        width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-brand .grid-col {
+      width: 100% !important; } }
+  .lyt-grid.typ-about-brand .grid-col:first-child {
+    width: 34%; }
+  .lyt-grid.typ-about-brand .grid-col:last-child {
+    width: 66.66%; }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon {
+      flex-direction: initial;
+      flex-wrap: wrap; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col {
+      width: 48% !important; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col .cp-icon-details::after {
+      top: 39%;
+      height: 9rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col .cp-icon-details .icon {
+      flex: 0 0 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(1) .cp-icon-details {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(2) .cp-icon-details {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(2) .cp-icon-details::after {
+      content: none; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(3) .cp-icon-details::after {
+      top: 60%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-about-icon .grid-col:nth-child(4) .cp-icon-details::after {
+      content: none; } }
+  .lyt-grid.typ-about-nestudio {
+    gap: 4.8rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-about-nestudio {
+        gap: 2.4rem 1rem;
+        flex-direction: initial; } }
+    .lyt-grid.typ-about-nestudio .grid-col {
+      width: 32.2%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-about-nestudio .grid-col {
+          width: 48%; } }
+  @media only screen and (max-width: 768px) {
+    .lyt-grid.typ-col-4-wrap {
+      gap: 1.2rem;
+      flex-direction: initial;
+      flex-wrap: wrap; } }
+  .lyt-grid.typ-col-4-wrap .grid-col {
+    width: 25%; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-col-4-wrap .grid-col {
+        width: 48%; } }
+  .lyt-grid.typ-column-wrap-4 {
     gap: 0;
     flex-direction: initial;
-    height: 100%;
-  }
-}
-.lyt-grid.typ-about-news .grid-col {
-  height: auto;
-}
-.lyt-grid.typ-explore {
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 4.8rem;
-  border-bottom: 1px solid #DEDEDE;
-  gap: 1.2rem;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-explore {
-    flex-direction: row;
-    padding-bottom: 2.4rem;
-  }
-}
-.lyt-grid.typ-explore .grid-col {
-  width: 33%;
-}
-.lyt-grid.typ-explore .grid-col:last-child .cp-icon-details::after {
-  display: none;
-}
-.lyt-grid.typ-explore.typ-about {
-  border: none;
-}
-.lyt-grid.typ-category {
-  gap: 1.2rem;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-category {
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
-  }
-}
-.lyt-grid.typ-category .grid-col {
-  width: 30.8%;
-}
-.lyt-grid.typ-4 .grid-col:first-child {
-  width: 70%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-4 .grid-col:first-child {
-    width: 100%;
-  }
-}
-.lyt-grid.typ-4 .grid-col:last-child {
-  width: 30%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-4 .grid-col:last-child {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ5 {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-}
-.lyt-grid.typ5 .grid-col {
-  width: 25%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ5 .grid-col {
-    width: 48%;
-  }
-}
-.lyt-grid.typ-structure {
-  justify-content: flex-start;
-}
-.lyt-grid.typ-6 .grid-col:first-child {
-  width: 40%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-6 .grid-col:first-child {
-    width: 100%;
-    padding: 0 1.6rem 1.6rem;
-    background-color: #FFFBF2;
-  }
-}
-.lyt-grid.typ-6 .grid-col:last-child {
-  width: 60%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-6 .grid-col:last-child {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-7 {
-    flex-direction: column-reverse;
-  }
-}
-.lyt-grid.typ-7 .grid-col:first-child {
-  width: 66.2%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-7 .grid-col:first-child {
-    width: 100%;
-  }
-}
-.lyt-grid.typ-7 .grid-col:last-child {
-  width: 32.3%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-7 .grid-col:last-child {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-brand .grid-col {
-    width: 100% !important;
-  }
-}
-.lyt-grid.typ-about-brand .grid-col:first-child {
-  width: 34%;
-}
-.lyt-grid.typ-about-brand .grid-col:last-child {
-  width: 66.66%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon {
-    flex-direction: initial;
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col {
-    width: 48% !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col .cp-icon-details::after {
-    top: 39%;
-    height: 9rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col .cp-icon-details .icon {
-    flex: 0 0 2rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col:nth-child(1) .cp-icon-details {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col:nth-child(2) .cp-icon-details {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col:nth-child(2) .cp-icon-details::after {
-    content: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col:nth-child(3) .cp-icon-details::after {
-    top: 60%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-icon .grid-col:nth-child(4) .cp-icon-details::after {
-    content: none;
-  }
-}
-.lyt-grid.typ-about-nestudio {
-  gap: 4.8rem 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-nestudio {
-    gap: 2.4rem 1rem;
-    flex-direction: initial;
-  }
-}
-.lyt-grid.typ-about-nestudio .grid-col {
-  width: 32.2%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-about-nestudio .grid-col {
-    width: 48%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-col-4-wrap {
-    gap: 1.2rem;
-    flex-direction: initial;
-    flex-wrap: wrap;
-  }
-}
-.lyt-grid.typ-col-4-wrap .grid-col {
-  width: 25%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-col-4-wrap .grid-col {
-    width: 48%;
-  }
-}
-.lyt-grid.typ-column-wrap-4 {
-  gap: 0;
-  flex-direction: initial;
-  flex-wrap: wrap;
-  justify-content: inherit;
-  align-items: initial;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-column-wrap-4 {
-    margin-right: 0;
-    margin-left: 0;
-    gap: 2rem;
-  }
-}
-.lyt-grid.typ-column-wrap-4 .grid-col {
-  width: auto;
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding: 0 1rem;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-column-wrap-4 .grid-col {
-    width: 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-}
-.lyt-grid.typ-col-5 {
-  justify-content: initial;
-  flex-wrap: wrap;
-}
-.lyt-grid.typ-col-5 .grid-col {
-  width: 48.7%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-grid.typ-col-5 .grid-col {
-    width: 100%;
-  }
-}
+    justify-content: inherit;
+    align-items: initial;
+    margin-right: -15px;
+    margin-left: -15px; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-column-wrap-4 {
+        margin-right: 0;
+        margin-left: 0;
+        gap: 2rem; } }
+    .lyt-grid.typ-column-wrap-4 .grid-col {
+      width: auto;
+      flex: 0 0 25%;
+      max-width: 25%;
+      padding: 0 1rem; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-column-wrap-4 .grid-col {
+          width: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0; } }
+  .lyt-grid.typ-col-5 {
+    justify-content: initial;
+    flex-wrap: wrap; }
+    .lyt-grid.typ-col-5 .grid-col {
+      width: 48.7%; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-col-5 .grid-col {
+          width: 100%; } }
 
 /*# sourceMappingURL=lyt-grid.css.map */

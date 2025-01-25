@@ -12,435 +12,440 @@
   border: 1px solid #DEDEDE;
   transition: all 2s linear;
   -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-card {
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-  }
-}
-.cp-design-card:hover {
-  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
-  border: 2px solid #DEDEDE;
-}
-.cp-design-card .img-wrap {
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
-  height: 19.8rem;
-  display: block;
-}
-.cp-design-card .img-wrap img {
-  height: 100%;
-  border-radius: 1.6rem;
-  -webkit-border-radius: 1.6rem;
-  -moz-border-radius: 1.6rem;
-  object-fit: cover;
-}
-@media only screen and (max-width: 768px) {
+  -moz-transition: all 2s linear; }
+  @media only screen and (max-width: 768px) {
+    .cp-design-card {
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem; } }
+  .cp-design-card:hover {
+    box-shadow: 0px 8px 24px 0px #00000014;
+    border: 2px solid #DEDEDE; }
   .cp-design-card .img-wrap {
-    height: 15.3rem;
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-  }
-  .cp-design-card .img-wrap img {
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-  }
-}
-.cp-design-card .content-wrap {
-  padding: 2rem 2rem 1.6rem;
-}
-@media only screen and (max-width: 768px) {
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    height: 19.8rem;
+    display: block; }
+    .cp-design-card .img-wrap img {
+      height: 100%;
+      border-radius: 1.6rem;
+      -webkit-border-radius: 1.6rem;
+      -moz-border-radius: 1.6rem;
+      object-fit: cover; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-card .img-wrap {
+        height: 15.3rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem; }
+        .cp-design-card .img-wrap img {
+          border-radius: 1.2rem;
+          -webkit-border-radius: 1.2rem;
+          -moz-border-radius: 1.2rem; } }
   .cp-design-card .content-wrap {
-    padding: 1.6rem;
-  }
-}
-.cp-design-card .content-wrap .desg-name {
-  font-family: "Poppins Semibold";
-  font-size: 2rem;
-  line-height: 2.9rem;
-  color: #333333;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #DEDEDE;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-card .content-wrap .desg-name {
-    line-height: 3rem;
-  }
-}
-.cp-design-card .content-wrap .detail-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2.4rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-card .content-wrap .detail-list {
-    gap: 1.6rem;
-  }
-}
-.cp-design-card .content-wrap .detail-list .detail-item {
-  width: 45%;
-  position: relative;
-}
-.cp-design-card .content-wrap .detail-list .detail-item::after {
-  content: "";
-  position: absolute;
-  bottom: -1.2rem;
-  left: 0;
-  background: #DEDEDE;
-  width: 100%;
-  height: 1px;
-}
-.cp-design-card .content-wrap .detail-list .detail-item:nth-child(3)::after, .cp-design-card .content-wrap .detail-list .detail-item:last-child::after {
-  display: none;
-}
-.cp-design-card .content-wrap .detail-title {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #D2042D;
-  margin-bottom: 0.4rem;
-}
-.cp-design-card .content-wrap .detail-desc {
-  font-family: "Poppins Semibold";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #333333;
-}
-.cp-design-card.typ-architectual-plan {
-  max-width: 100%;
-  background-color: #fff;
-}
-.cp-design-card.typ-architectual-plan .img-wrap {
-  position: relative;
-  border-radius: 1.6rem 1.6rem 0 0;
-  -webkit-border-radius: 1.6rem 1.6rem 0 0;
-  -moz-border-radius: 1.6rem 1.6rem 0 0;
-}
-.cp-design-card.typ-architectual-plan .img-wrap img {
-  border-radius: 1.6rem 1.6rem 0 0;
-  -webkit-border-radius: 1.6rem 1.6rem 0 0;
-  -moz-border-radius: 1.6rem 1.6rem 0 0;
-}
-.cp-design-card.typ-architectual-plan .img-wrap .tag-list {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.4rem 1.6rem;
-}
-.cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .tag {
-  background: #fff;
-  border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  font-family: "Poppins Medium";
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #3D7EDB;
-  padding: 0.4rem 0.8rem;
-}
-.cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .icon {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #999999;
-  cursor: pointer;
-  background: #fff;
-  width: 2.4rem;
-  height: 2.4rem;
-  padding: 4px;
-  border-radius: 0.6rem;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-}
-.cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .icon.active {
-  color: #D2042D;
-}
-.cp-design-card.typ-architectual-plan .content-wrap .desg-name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
-  padding-bottom: 0.8rem;
-}
-.cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist {
-  font-size: 14px;
-  font-family: "Poppins Regular";
-  gap: 4px;
-  display: flex;
-  align-items: center;
-}
-.cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist .icon {
-  font-size: 14px;
-  width: 14px;
-  height: 14px;
-  color: #D2042D;
-}
-.cp-design-card.typ-architectual-plan .content-wrap .detail-list {
-  justify-content: initial;
-  gap: 2.4rem 0;
-}
-.cp-design-card.typ-architectual-plan .content-wrap .detail-list .detail-item {
-  width: 50%;
-}
-.cp-design-card.typ-architectual-pdp {
-  overflow: hidden;
-}
-.cp-design-card.typ-architectual-pdp:hover {
-  box-shadow: none;
-  border: 1px solid #DEDEDE;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap {
-  padding: 2rem 0rem 0rem;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap .detail-list {
-  gap: 0;
-  padding: 0 2rem 0;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item {
-  padding-bottom: 1.2rem;
-  margin-bottom: 1.2rem;
-  border-bottom: 1px solid #ccc;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item::after {
-  content: none;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item.w-100 {
-  width: 100%;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item.border-0 {
-  border: none;
-}
-.cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item .link {
-  font-size: 1.4rem;
-  text-decoration: underline;
-  font-family: "Poppins Medium";
-}
-.cp-design-card.typ-architectual-pdp .info-wrap {
-  background: #FFF8E5;
-  border-top: 1px solid #FFD466;
-  gap: 0.8rem;
-  padding: 1.2rem;
-  align-items: center;
-  display: flex;
-}
-.cp-design-card.typ-architectual-pdp .info-wrap .icon {
-  font-size: 2.4rem;
-  color: #A77800;
-}
-.cp-design-card.typ-architectual-pdp .info-wrap .desc {
-  font-size: 1.2rem;
-  font-family: "Poppins Medium";
-  color: #A77800;
-  line-height: 1.6rem;
-}
-.cp-design-card.typ-area-breakup {
-  max-width: 100%;
-  margin-bottom: 1.2rem;
-}
-@media only screen and (max-width: 768px) {
+    padding: 2rem 2rem 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-card .content-wrap {
+        padding: 1.6rem; } }
+    .cp-design-card .content-wrap .desg-name {
+      font-family: "Poppins Semibold";
+      font-size: 2rem;
+      line-height: 2.9rem;
+      color: #333333;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #DEDEDE; }
+      @media only screen and (max-width: 768px) {
+        .cp-design-card .content-wrap .desg-name {
+          line-height: 3rem; } }
+    .cp-design-card .content-wrap .detail-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-design-card .content-wrap .detail-list {
+          gap: 1.6rem; } }
+      .cp-design-card .content-wrap .detail-list .detail-item {
+        width: 45%;
+        position: relative; }
+        .cp-design-card .content-wrap .detail-list .detail-item::after {
+          content: '';
+          position: absolute;
+          bottom: -1.2rem;
+          left: 0;
+          background: #DEDEDE;
+          width: 100%;
+          height: 1px; }
+        .cp-design-card .content-wrap .detail-list .detail-item:nth-child(3)::after, .cp-design-card .content-wrap .detail-list .detail-item:last-child::after {
+          display: none; }
+    .cp-design-card .content-wrap .detail-title {
+      font-family: "Poppins Regular";
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #D2042D;
+      margin-bottom: 0.4rem; }
+    .cp-design-card .content-wrap .detail-desc {
+      font-family: "Poppins Semibold";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #333333; }
+  .cp-design-card.typ-architectual-plan {
+    max-width: 100%;
+    background-color: #fff; }
+    .cp-design-card.typ-architectual-plan .img-wrap {
+      position: relative;
+      border-radius: 1.6rem 1.6rem 0 0;
+      -webkit-border-radius: 1.6rem 1.6rem 0 0;
+      -moz-border-radius: 1.6rem 1.6rem 0 0; }
+      .cp-design-card.typ-architectual-plan .img-wrap img {
+        border-radius: 1.6rem 1.6rem 0 0;
+        -webkit-border-radius: 1.6rem 1.6rem 0 0;
+        -moz-border-radius: 1.6rem 1.6rem 0 0; }
+      .cp-design-card.typ-architectual-plan .img-wrap .tag-list {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4rem 1.6rem; }
+        .cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .tag {
+          background: #fff;
+          border-radius: 0.4rem;
+          -webkit-border-radius: 0.4rem;
+          -moz-border-radius: 0.4rem;
+          font-family: "Poppins Medium";
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          color: #3D7EDB;
+          padding: 0.4rem 0.8rem; }
+        .cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .icon {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: #999999;
+          cursor: pointer;
+          background: #fff;
+          width: 2.4rem;
+          height: 2.4rem;
+          padding: 4px;
+          border-radius: 0.6rem;
+          -webkit-border-radius: 0.6rem;
+          -moz-border-radius: 0.6rem; }
+          .cp-design-card.typ-architectual-plan .img-wrap .tag-list .tag-item .icon.active {
+            color: #D2042D; }
+    .cp-design-card.typ-architectual-plan .content-wrap .desg-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 2.8rem;
+      padding-bottom: 0.8rem; }
+      .cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist {
+        font-size: 14px;
+        font-family: "Poppins Regular";
+        gap: 4px;
+        display: flex;
+        align-items: center; }
+        .cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist .icon {
+          font-size: 14px;
+          width: 14px;
+          height: 14px;
+          color: #D2042D; }
+    .cp-design-card.typ-architectual-plan .content-wrap .detail-list {
+      justify-content: initial;
+      gap: 2.4rem 0; }
+      .cp-design-card.typ-architectual-plan .content-wrap .detail-list .detail-item {
+        width: 50%; }
+    .cp-design-card.typ-architectual-plan.typ-list-view {
+      display: flex; }
+      .cp-design-card.typ-architectual-plan.typ-list-view .img-wrap {
+        height: auto;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0; }
+        .cp-design-card.typ-architectual-plan.typ-list-view .img-wrap img {
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0; }
+  .cp-design-card.typ-architectual-pdp {
+    overflow: hidden; }
+    .cp-design-card.typ-architectual-pdp:hover {
+      box-shadow: none;
+      border: 1px solid #DEDEDE; }
+    .cp-design-card.typ-architectual-pdp .content-wrap {
+      padding: 2rem 0rem 0rem; }
+    .cp-design-card.typ-architectual-pdp .content-wrap .detail-list {
+      gap: 0;
+      padding: 0 2rem 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list {
+          padding: 0 1.6rem 0; } }
+      .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item {
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.2rem;
+        border-bottom: 1px solid #ccc; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item::after {
+          content: none; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item.w-100 {
+          width: 100%; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item.border-0 {
+          border: none; }
+        .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item .link {
+          font-size: 1.4rem;
+          text-decoration: underline;
+          font-family: "Poppins Medium"; }
+    .cp-design-card.typ-architectual-pdp.typ-vertical-border {
+      max-width: 100%; }
+      .cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap {
+        padding: 2rem 0; }
+        @media only screen and (max-width: 768px) {
+          .cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap {
+            padding: 1.6rem 0; } }
+        .cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap .detail-list .detail-item {
+          padding-bottom: 1.6rem;
+          margin-bottom: 0;
+          border-bottom: 0;
+          width: 48%;
+          border-right: 1px solid #ccc; }
+          .cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap .detail-list .detail-item:last-child {
+            border: 0; }
   .cp-design-card.typ-area-breakup {
-    background-color: #fff;
-  }
-}
-.cp-design-card.typ-area-breakup:hover {
-  box-shadow: none;
-  border: 1px solid #DEDEDE;
-}
-.cp-design-card.typ-area-breakup .head-wrap {
-  display: flex;
-  align-items: center;
-  padding: 1.6rem;
-  font-size: 1.6rem;
-  gap: 8px;
-  font-family: "Poppins Medium";
-  color: #333333;
-  border-bottom: 1px solid #DEDEDE;
-}
-.cp-design-card.typ-area-breakup .head-wrap .icon {
-  font-size: 2.4rem;
-  height: 2.4rem;
-  font-size: 2.4rem;
-  color: #3D7EDB;
-}
-.cp-design-card.typ-area-breakup .content-wrap {
-  padding: 1.6rem;
-}
-.cp-design-card.typ-area-breakup .content-wrap .detail-list {
-  justify-content: initial;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-flow: column;
-  grid-gap: 12px;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-card.typ-area-breakup .content-wrap .detail-list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
-  }
-}
-.cp-design-card.typ-area-breakup .content-wrap .detail-list.typ-1row {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-auto-flow: column;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-card.typ-area-breakup .content-wrap .detail-list.typ-2row {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-auto-flow: column;
-  }
-}
-.cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item {
-  width: 100%;
-}
-.cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item::after {
-  content: none;
-}
-.cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-title {
-  color: #666666;
-  font-size: 1.2rem;
-}
-.cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-desc {
-  font-family: "Poppins Medium";
-  font-size: 1.4rem;
-}
-.cp-design-card.typ-floor-plan {
-  overflow: hidden;
-  max-width: 100%;
-  margin-bottom: 1.6rem;
-}
-.cp-design-card.typ-floor-plan:hover {
-  box-shadow: none;
-  border: 1px solid #DEDEDE;
-}
-.cp-design-card.typ-floor-plan .head-wrap {
-  display: flex;
-  align-items: center;
-  padding: 1.6rem;
-  font-size: 1.6rem;
-  gap: 8px;
-  font-family: "Poppins Medium";
-  color: #333333;
-  border-bottom: 1px solid #DEDEDE;
-  background: #FFFBF2;
-  justify-content: space-between;
-}
-.cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon {
-  display: flex;
-  gap: 8px;
-}
-.cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon .typ-floor-plan-btn {
-  display: flex;
-  gap: 4px;
-  border: 1px solid #333333;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  min-width: auto;
-  padding: 8px 1rem;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  align-items: center;
-}
-.cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon .typ-floor-plan-btn .icon {
-  font-size: 1.2rem;
-  width: 1.2rem;
-  height: 1.2rem;
-}
-.cp-design-card.typ-floor-plan .content-wrap .content-head {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-  font-family: "Poppins Medium";
-  margin-bottom: 2.4rem;
-}
-.cp-design-card.typ-floor-plan .content-wrap .content-head .icon {
-  border: 1px solid #DEDEDE;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  width: 3.6rem;
-  height: 3.6rem;
-  font-size: 1.6rem;
-  color: #666666;
-  padding: 1rem;
-  cursor: pointer;
-}
-.cp-design-card.typ-floor-plan .content-wrap .img-wrap {
-  height: auto;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* Rounded sliders */
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .link {
-  text-decoration: underline;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch {
-  position: relative;
-  display: inline-block;
-  width: 24px;
-  height: 12px;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #B3B3B3;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider:before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  left: 4px;
-  bottom: 2px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:checked + .slider {
-  background-color: #3D7EDB;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:focus + .slider {
-  box-shadow: 0 0 1px #3D7EDB;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:checked + .slider:before {
-  -webkit-transform: translateX(8px);
-  -ms-transform: translateX(8px);
-  transform: translateX(8px);
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round {
-  border-radius: 34px;
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round:before {
-  border-radius: 50%;
-}
+    max-width: 100%;
+    margin-bottom: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-card.typ-area-breakup {
+        background-color: #fff; } }
+    .cp-design-card.typ-area-breakup:hover {
+      box-shadow: none;
+      border: 1px solid #DEDEDE; }
+    .cp-design-card.typ-area-breakup .head-wrap {
+      display: flex;
+      align-items: center;
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      gap: 8px;
+      font-family: "Poppins Medium";
+      color: #333333;
+      border-bottom: 1px solid #DEDEDE; }
+      .cp-design-card.typ-area-breakup .head-wrap .icon {
+        font-size: 2.4rem;
+        height: 2.4rem;
+        font-size: 2.4rem;
+        color: #3D7EDB; }
+    .cp-design-card.typ-area-breakup .content-wrap {
+      padding: 1.6rem; }
+      .cp-design-card.typ-area-breakup .content-wrap .detail-list {
+        justify-content: initial;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+        grid-gap: 12px; }
+        @media only screen and (max-width: 768px) {
+          .cp-design-card.typ-area-breakup .content-wrap .detail-list {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-flow: column; } }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list.typ-1row {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          grid-auto-flow: column; }
+        @media only screen and (max-width: 768px) {
+          .cp-design-card.typ-area-breakup .content-wrap .detail-list.typ-2row {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-auto-flow: column; } }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item {
+          width: 100%; }
+          .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-item::after {
+            content: none; }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-title {
+          color: #666666;
+          font-size: 1.2rem; }
+        .cp-design-card.typ-area-breakup .content-wrap .detail-list .detail-desc {
+          font-family: "Poppins Medium";
+          font-size: 1.4rem; }
+  .cp-design-card.typ-floor-plan {
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 1.6rem; }
+    .cp-design-card.typ-floor-plan:hover {
+      box-shadow: none;
+      border: 1px solid #DEDEDE; }
+    .cp-design-card.typ-floor-plan .mb-0 {
+      margin-bottom: 0; }
+    .cp-design-card.typ-floor-plan .head-wrap {
+      display: flex;
+      align-items: center;
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      gap: 8px;
+      font-family: "Poppins Medium";
+      color: #333333;
+      border-bottom: 1px solid #DEDEDE;
+      background: #FFFBF2;
+      justify-content: space-between; }
+      .cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon {
+        display: flex;
+        gap: 8px; }
+        .cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon .typ-floor-plan-btn {
+          display: flex;
+          gap: 4px;
+          border: 1px solid #333333;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          min-width: auto;
+          padding: 8px 1rem;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          align-items: center; }
+          .cp-design-card.typ-floor-plan .head-wrap .floor-plan-icon .typ-floor-plan-btn .icon {
+            font-size: 1.2rem;
+            width: 1.2rem;
+            height: 1.2rem; }
+    .cp-design-card.typ-floor-plan .content-wrap .content-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      font-family: "Poppins Medium";
+      margin-bottom: 2.4rem; }
+      .cp-design-card.typ-floor-plan .content-wrap .content-head .icon {
+        border: 1px solid #DEDEDE;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 1.6rem;
+        color: #666666;
+        padding: 1rem;
+        cursor: pointer; }
+      .cp-design-card.typ-floor-plan .content-wrap .content-head .prod-small-title {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-family: "Poppins Semibold"; }
+      .cp-design-card.typ-floor-plan .content-wrap .content-head .desc {
+        font-size: 1.4rem; }
+      .cp-design-card.typ-floor-plan .content-wrap .content-head .tag-list-wrap .tag {
+        background: #CCEDD9;
+        border-radius: 26px;
+        -webkit-border-radius: 26px;
+        -moz-border-radius: 26px;
+        font-family: "Poppins Medium";
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #333333;
+        padding: 0.2rem 0.8rem;
+        display: inline-flex;
+        margin-top: 1rem; }
+    .cp-design-card.typ-floor-plan .content-wrap .img-wrap {
+      height: auto; }
+    .cp-design-card.typ-floor-plan .content-wrap .link {
+      text-decoration: underline;
+      white-space: nowrap; }
+    .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      /* Rounded sliders */ }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 12px; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #B3B3B3;
+        -webkit-transition: .4s;
+        transition: .4s; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider:before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        left: 4px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:checked + .slider {
+        background-color: #3D7EDB; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:focus + .slider {
+        box-shadow: 0 0 1px #3D7EDB; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap input:checked + .slider:before {
+        -webkit-transform: translateX(8px);
+        -ms-transform: translateX(8px);
+        transform: translateX(8px); }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round {
+        border-radius: 34px; }
+      .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round:before {
+        border-radius: 50%; }
+    .cp-design-card.typ-floor-plan .content-wrap .count-title {
+      font-size: 1.2rem;
+      font-family: "Poppins Medium";
+      margin-bottom: 8px;
+      color: #333333; }
+    .cp-design-card.typ-floor-plan .content-wrap .cp-counter {
+      max-width: 10.3rem;
+      border-radius: 8px; }
+      .cp-design-card.typ-floor-plan .content-wrap .cp-counter .btn-count {
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 2rem; }
+      .cp-design-card.typ-floor-plan .content-wrap .cp-counter .number-product {
+        width: 100%;
+        height: 3.2rem; }
+    .cp-design-card.typ-floor-plan .material-text {
+      font-family: "Poppins Semibold";
+      color: #333333;
+      border-bottom: 1px solid #DEDEDE;
+      padding: 1.6rem 2rem 1.6rem; }
+    .cp-design-card.typ-floor-plan .sec-sub-title {
+      font-size: 1.6rem; }
+    .cp-design-card.typ-floor-plan .custom-radio {
+      min-width: 6.5rem;
+      padding: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-card.typ-floor-plan .cp-price {
+        position: static; } }
+    .cp-design-card.typ-floor-plan .cp-price .price-list {
+      border: none;
+      border-radius: 0; }
+      .cp-design-card.typ-floor-plan .cp-price .price-list .total-price {
+        padding: 1.2rem 2rem;
+        align-items: center; }
+      .cp-design-card.typ-floor-plan .cp-price .price-list .typ-minimum {
+        border: 1px solid #FFD466;
+        justify-content: flex-start;
+        align-items: start;
+        padding: 0.8rem 2rem; }
+  .cp-design-card .info-wrap {
+    background: #FFF8E5;
+    border-top: 1px solid #FFD466;
+    gap: 0.8rem;
+    padding: 1.2rem;
+    align-items: center;
+    display: flex; }
+    .cp-design-card .info-wrap .icon {
+      font-size: 2.4rem;
+      color: #A77800; }
+    .cp-design-card .info-wrap .desc {
+      font-size: 1.2rem;
+      font-family: "Poppins Medium";
+      color: #A77800;
+      line-height: 1.6rem; }
 
 /*# sourceMappingURL=cp-design-card.css.map */

@@ -6,73 +6,57 @@
 /*opacity- end*/
 .cp-budget-list {
   display: flex;
-  justify-content: space-between;
-}
-.cp-budget-list .budget-list-item {
-  width: 29.5rem;
-  height: 20rem;
-  border-radius: 12px;
-  border: 2px solid;
-  text-align: center;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-}
-@media only screen and (max-width: 768px) {
+  justify-content: space-between; }
   .cp-budget-list .budget-list-item {
-    width: 7.6rem;
-    height: 11rem;
-  }
-}
-.cp-budget-list .budget-list-item:nth-child(1) {
-  border-color: #F8B499;
-}
-.cp-budget-list .budget-list-item:nth-child(2) {
-  border-color: #FFE399;
-}
-.cp-budget-list .budget-list-item:nth-child(3) {
-  border-color: #B1CBF1;
-}
-.cp-budget-list .budget-list-item:nth-child(4) {
-  border-color: #99DAB3;
-}
-.cp-budget-list .budget-list-item .img-wrap img {
-  width: 18.4rem;
-  height: 9.2rem;
-  margin: 0 auto 3rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-budget-list .budget-list-item .img-wrap img {
-    width: 4.8rem;
-    height: 4.8rem;
-    margin: 0 auto 0.4rem;
-  }
-}
-.cp-budget-list .budget-list-item .shop-text {
-  font-size: 2rem;
-  font-family: "Poppins Medium";
-  color: #333333;
-  display: block;
-  padding-bottom: 0.2rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-budget-list .budget-list-item .shop-text {
-    font-size: 1rem;
-  }
-}
-.cp-budget-list .budget-list-item .rupee {
-  font-size: 1.6rem;
-  position: relative;
-  top: -0.2rem;
-}
-.cp-budget-list .budget-list-item .price {
-  font-family: "Poppins Semibold";
-  font-size: 2.4rem;
-  color: #333333;
-  line-height: 2rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
+    width: 29.5rem;
+    height: 20.0rem;
+    border-radius: 12px;
+    border: 2px solid;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .cp-budget-list .budget-list-item {
+        width: 7.6rem;
+        height: 11.0rem; } }
+    .cp-budget-list .budget-list-item:nth-child(1) {
+      border-color: #F8B499; }
+    .cp-budget-list .budget-list-item:nth-child(2) {
+      border-color: #FFE399; }
+    .cp-budget-list .budget-list-item:nth-child(3) {
+      border-color: #B1CBF1; }
+    .cp-budget-list .budget-list-item:nth-child(4) {
+      border-color: #99DAB3; }
+    .cp-budget-list .budget-list-item .img-wrap img {
+      width: 18.4rem;
+      height: 9.2rem;
+      margin: 0 auto 3rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-budget-list .budget-list-item .img-wrap img {
+          width: 4.8rem;
+          height: 4.8rem;
+          margin: 0 auto 0.4rem; } }
+    .cp-budget-list .budget-list-item .shop-text {
+      font-size: 2rem;
+      font-family: "Poppins Medium";
+      color: #333333;
+      display: block;
+      padding-bottom: 0.2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-budget-list .budget-list-item .shop-text {
+          font-size: 1rem; } }
+    .cp-budget-list .budget-list-item .rupee {
+      font-size: 1.6rem;
+      position: relative;
+      top: -0.2rem; }
+    .cp-budget-list .budget-list-item .price {
+      font-family: "Poppins Semibold";
+      font-size: 2.4rem;
+      color: #333333;
+      line-height: 2rem;
+      position: relative;
+      display: flex;
+      justify-content: center; }
 
 /*# sourceMappingURL=cp-budget-list.css.map */

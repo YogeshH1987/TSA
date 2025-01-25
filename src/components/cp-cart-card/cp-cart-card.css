@@ -6,177 +6,130 @@
 /*opacity- end*/
 .cp-cart-card {
   background: #FFFFFF;
-  padding: 1.6rem 2.4rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card {
-    padding: 1.6rem 1.2rem;
-  }
-}
-.cp-cart-card.separator {
-  border-bottom: 2px solid #DEDEDE;
-}
-.cp-cart-card:last-child {
-  border-radius: 0 16px 0 16px;
-}
-.cp-cart-card .bottom-link-list {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2.4rem;
-  padding: 2rem 0;
-}
-@media only screen and (max-width: 768px) {
+  padding: 1.6rem 2.4rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card {
+      padding: 1.6rem 1.2rem; } }
+  .cp-cart-card.separator {
+    border-bottom: 2px solid #DEDEDE; }
+  .cp-cart-card:last-child {
+    border-radius: 0 16px 0 16px; }
   .cp-cart-card .bottom-link-list {
-    justify-content: flex-start;
-  }
-}
-.cp-cart-card .bottom-link-list .link-item {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  position: relative;
-  gap: 0.4rem;
-  align-items: center;
-}
-.cp-cart-card .bottom-link-list .link-item:after {
-  position: absolute;
-  right: -10px;
-  top: 0;
-  height: 20px;
-  width: 1px;
-  background: #DEDEDE;
-  content: "";
-}
-.cp-cart-card .bottom-link-list .link-item .link-text {
-  font-size: 1.4rem;
-  color: #3D7EDB;
-  font-family: "Poppins Medium";
-  text-decoration: underline;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card .bottom-link-list .link-item .link-text {
-    font-size: 1.2rem;
-  }
-}
-.cp-cart-card .bottom-link-list .link-item .icon {
-  font-size: 2.4rem;
-  color: #3D7EDB;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card .bottom-link-list .link-item .icon {
-    font-size: 1.4rem;
-  }
-}
-.cp-cart-card .bottom-link-list .link-item:last-child::after {
-  display: none;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list {
-  display: block;
-  border-bottom: 0;
-  margin: 1.6rem 0 2.4rem;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list .list-item {
-  width: 20%;
-  padding: 1.6rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-tiscon-pdp .cart-list .list-item {
-    padding: 1.2rem;
-  }
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list .list-item .list-head {
-  padding: 0.6rem;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-center {
-  text-align: center;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-left {
-  text-align: left;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-right {
-  text-align: right;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list .sepretor {
-  border-bottom: 1px solid #DEDEDE;
-}
-.cp-cart-card.typ-tiscon-pdp .cart-list::after {
-  background-color: #DEDEDE;
-  width: 106%;
-  position: absolute;
-  left: -23px;
-  bottom: 0;
-  content: "";
-  height: 1px;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-tiscon-pdp .cart-list::after {
-    width: 109%;
-    left: -15px;
-  }
-}
-.cp-cart-card.typ-tiscon-pdp .tag-label {
-  border-radius: 26px;
-  background: #D2042D;
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  font-family: "Poppins Medium";
-  text-align: center;
-  padding: 0.2rem 0.8rem;
-  position: absolute;
-  left: 150px;
-  top: 10px;
-}
-.cp-cart-card.typ-tiscon-pdp .btn.delete-btn::after {
-  width: 90%;
-  left: auto;
-  right: 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-pravesh-card {
-    margin-left: 0;
-    border-bottom: 0.8rem #F3F4F6 solid;
-    border-radius: 0;
-  }
-}
-.cp-cart-card.typ-pravesh-card.mr-t {
-  margin-top: 2rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-pravesh-card.mr-t {
-    margin-top: 0;
-  }
-}
-.cp-cart-card.typ-pravesh-card .sec-sub-title {
-  font-family: "Poppins Semibold";
-}
-.cp-cart-card.typ-pravesh-card .border-b {
-  border-bottom: 1px solid #DEDEDE;
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-pravesh {
-    padding: 1.6rem 1.2rem;
     display: flex;
-    gap: 1.6rem;
-    margin-left: 0;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-pravesh .sec-head {
-    order: 2;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-pravesh .sec-desc {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-cart-card.typ-pravesh .sec-cont {
-    flex: 0 0 60px;
-  }
-}
-.cp-cart-card.typ-pravesh .action-wrap .icon.active {
-  color: #D2042D;
-}
+    justify-content: flex-end;
+    gap: 2.4rem;
+    padding: 2rem 0; }
+    @media only screen and (max-width: 768px) {
+      .cp-cart-card .bottom-link-list {
+        justify-content: flex-start; } }
+    .cp-cart-card .bottom-link-list .link-item {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      position: relative;
+      gap: 0.4rem;
+      align-items: center; }
+      .cp-cart-card .bottom-link-list .link-item:after {
+        position: absolute;
+        right: -10px;
+        top: 0;
+        height: 20px;
+        width: 1px;
+        background: #DEDEDE;
+        content: ''; }
+      .cp-cart-card .bottom-link-list .link-item .link-text {
+        font-size: 1.4rem;
+        color: #3D7EDB;
+        font-family: "Poppins Medium";
+        text-decoration: underline; }
+        @media only screen and (max-width: 768px) {
+          .cp-cart-card .bottom-link-list .link-item .link-text {
+            font-size: 1.2rem; } }
+      .cp-cart-card .bottom-link-list .link-item .icon {
+        font-size: 2.4rem;
+        color: #3D7EDB; }
+        @media only screen and (max-width: 768px) {
+          .cp-cart-card .bottom-link-list .link-item .icon {
+            font-size: 1.4rem; } }
+      .cp-cart-card .bottom-link-list .link-item:last-child::after {
+        display: none; }
+  .cp-cart-card.typ-tiscon-pdp .cart-list {
+    display: block;
+    border-bottom: 0;
+    margin: 1.6rem 0 2.4rem; }
+    .cp-cart-card.typ-tiscon-pdp .cart-list .list-item {
+      width: 20%;
+      padding: 1.6rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-cart-card.typ-tiscon-pdp .cart-list .list-item {
+          padding: 1.2rem; } }
+      .cp-cart-card.typ-tiscon-pdp .cart-list .list-item .list-head {
+        padding: 0.6rem; }
+      .cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-center {
+        text-align: center; }
+      .cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-left {
+        text-align: left; }
+      .cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-right {
+        text-align: right; }
+    .cp-cart-card.typ-tiscon-pdp .cart-list .sepretor {
+      border-bottom: 1px solid #DEDEDE; }
+    .cp-cart-card.typ-tiscon-pdp .cart-list::after {
+      background-color: #DEDEDE;
+      width: 106%;
+      position: absolute;
+      left: -23px;
+      bottom: 0;
+      content: '';
+      height: 1px; }
+      @media only screen and (max-width: 768px) {
+        .cp-cart-card.typ-tiscon-pdp .cart-list::after {
+          width: 109%;
+          left: -15px; } }
+  .cp-cart-card.typ-tiscon-pdp .tag-label {
+    border-radius: 26px;
+    background: #D2042D;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: "Poppins Medium";
+    text-align: center;
+    padding: 0.2rem 0.8rem;
+    position: absolute;
+    left: 150px;
+    top: 10px; }
+  .cp-cart-card.typ-tiscon-pdp .btn.delete-btn::after {
+    width: 90%;
+    left: auto;
+    right: 0; }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card.typ-pravesh-card {
+      margin-left: 0;
+      border-bottom: 0.8rem #F3F4F6 solid;
+      border-radius: 0; } }
+  .cp-cart-card.typ-pravesh-card.mr-t {
+    margin-top: 2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-cart-card.typ-pravesh-card.mr-t {
+        margin-top: 0; } }
+  .cp-cart-card.typ-pravesh-card .sec-sub-title {
+    font-family: "Poppins Semibold"; }
+  .cp-cart-card.typ-pravesh-card .border-b {
+    border-bottom: 1px solid #DEDEDE; }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card.typ-pravesh {
+      padding: 1.6rem 1.2rem;
+      display: flex;
+      gap: 1.6rem;
+      margin-left: 0; } }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card.typ-pravesh .sec-head {
+      order: 2; } }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card.typ-pravesh .sec-desc {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card.typ-pravesh .sec-cont {
+      flex: 0 0 60px; } }
+  .cp-cart-card.typ-pravesh .action-wrap .icon.active {
+    color: #D2042D; }
 
 /*# sourceMappingURL=cp-cart-card.css.map */

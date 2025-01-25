@@ -871,4 +871,8 @@
       }
     }
   }
+  &.car-shed-plp{
+    .swiper-slide{    height: auto;}
+  }
+  &.p-0{padding: 0;}
 }
