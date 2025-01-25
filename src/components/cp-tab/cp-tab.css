@@ -33,6 +33,7 @@
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   padding: 0.6rem 1.6rem;
+  display: block;
 }
 .cp-tab .tab-list .tab-item .title.typ-capital {
   text-transform: capitalize;

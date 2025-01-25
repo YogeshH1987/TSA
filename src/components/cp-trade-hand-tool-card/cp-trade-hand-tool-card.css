@@ -149,5 +149,42 @@
     border-color: #B1CBF1;
   }
 }
+.cp-trade-hand-tool-card.typ-shed-plp {
+  justify-content: initial;
+  align-items: initial;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-shed-plp {
+    height: 100%;
+  }
+}
+.cp-trade-hand-tool-card.typ-shed-plp .img-wrap {
+  width: 100%;
+  height: 9.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-shed-plp .img-wrap {
+    height: 6.5rem;
+  }
+}
+.cp-trade-hand-tool-card.typ-shed-plp .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cp-trade-hand-tool-card.typ-shed-plp .title {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  padding: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-shed-plp .title {
+    line-height: 1.6rem;
+  }
+}
+.cp-trade-hand-tool-card.typ-shed-single-card {
+  height: 100%;
+}
 
 /*# sourceMappingURL=cp-trade-hand-tool-card.css.map */

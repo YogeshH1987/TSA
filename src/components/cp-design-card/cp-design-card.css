@@ -167,10 +167,10 @@
   color: #D2042D;
 }
 .cp-design-card.typ-architectual-plan .content-wrap .desg-name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2.8rem;
   padding-bottom: 0.8rem;
 }
 .cp-design-card.typ-architectual-plan .content-wrap .desg-name .wishlist {
@@ -193,6 +193,20 @@
 .cp-design-card.typ-architectual-plan .content-wrap .detail-list .detail-item {
   width: 50%;
 }
+.cp-design-card.typ-architectual-plan.typ-list-view {
+  display: flex;
+}
+.cp-design-card.typ-architectual-plan.typ-list-view .img-wrap {
+  height: auto;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+.cp-design-card.typ-architectual-plan.typ-list-view .img-wrap img {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
 .cp-design-card.typ-architectual-pdp {
   overflow: hidden;
 }
@@ -206,6 +220,11 @@
 .cp-design-card.typ-architectual-pdp .content-wrap .detail-list {
   gap: 0;
   padding: 0 2rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-design-card.typ-architectual-pdp .content-wrap .detail-list {
+    padding: 0 1.6rem 0;
+  }
 }
 .cp-design-card.typ-architectual-pdp .content-wrap .detail-list .detail-item {
   padding-bottom: 1.2rem;
@@ -226,23 +245,26 @@
   text-decoration: underline;
   font-family: "Poppins Medium";
 }
-.cp-design-card.typ-architectual-pdp .info-wrap {
-  background: #FFF8E5;
-  border-top: 1px solid #FFD466;
-  gap: 0.8rem;
-  padding: 1.2rem;
-  align-items: center;
-  display: flex;
+.cp-design-card.typ-architectual-pdp.typ-vertical-border {
+  max-width: 100%;
 }
-.cp-design-card.typ-architectual-pdp .info-wrap .icon {
-  font-size: 2.4rem;
-  color: #A77800;
+.cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap {
+  padding: 2rem 0;
 }
-.cp-design-card.typ-architectual-pdp .info-wrap .desc {
-  font-size: 1.2rem;
-  font-family: "Poppins Medium";
-  color: #A77800;
-  line-height: 1.6rem;
+@media only screen and (max-width: 768px) {
+  .cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap {
+    padding: 1.6rem 0;
+  }
+}
+.cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap .detail-list .detail-item {
+  padding-bottom: 1.6rem;
+  margin-bottom: 0;
+  border-bottom: 0;
+  width: 48%;
+  border-right: 1px solid #ccc;
+}
+.cp-design-card.typ-architectual-pdp.typ-vertical-border .content-wrap .detail-list .detail-item:last-child {
+  border: 0;
 }
 .cp-design-card.typ-area-breakup {
   max-width: 100%;
@@ -327,6 +349,9 @@
   box-shadow: none;
   border: 1px solid #DEDEDE;
 }
+.cp-design-card.typ-floor-plan .mb-0 {
+  margin-bottom: 0;
+}
 .cp-design-card.typ-floor-plan .head-wrap {
   display: flex;
   align-items: center;
@@ -380,17 +405,39 @@
   padding: 1rem;
   cursor: pointer;
 }
+.cp-design-card.typ-floor-plan .content-wrap .content-head .prod-small-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "Poppins Semibold";
+}
+.cp-design-card.typ-floor-plan .content-wrap .content-head .desc {
+  font-size: 1.4rem;
+}
+.cp-design-card.typ-floor-plan .content-wrap .content-head .tag-list-wrap .tag {
+  background: #CCEDD9;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #333333;
+  padding: 0.2rem 0.8rem;
+  display: inline-flex;
+  margin-top: 1rem;
+}
 .cp-design-card.typ-floor-plan .content-wrap .img-wrap {
   height: auto;
+}
+.cp-design-card.typ-floor-plan .content-wrap .link {
+  text-decoration: underline;
+  white-space: nowrap;
 }
 .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap {
   display: flex;
   align-items: center;
   gap: 8px;
   /* Rounded sliders */
-}
-.cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .link {
-  text-decoration: underline;
 }
 .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .switch {
   position: relative;
@@ -441,6 +488,75 @@
 }
 .cp-design-card.typ-floor-plan .content-wrap .toggle-wrap .slider.round:before {
   border-radius: 50%;
+}
+.cp-design-card.typ-floor-plan .content-wrap .count-title {
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  margin-bottom: 8px;
+  color: #333333;
+}
+.cp-design-card.typ-floor-plan .content-wrap .cp-counter {
+  max-width: 10.3rem;
+  border-radius: 8px;
+}
+.cp-design-card.typ-floor-plan .content-wrap .cp-counter .btn-count {
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 2rem;
+}
+.cp-design-card.typ-floor-plan .content-wrap .cp-counter .number-product {
+  width: 100%;
+  height: 3.2rem;
+}
+.cp-design-card.typ-floor-plan .material-text {
+  font-family: "Poppins Semibold";
+  color: #333333;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 1.6rem 2rem 1.6rem;
+}
+.cp-design-card.typ-floor-plan .sec-sub-title {
+  font-size: 1.6rem;
+}
+.cp-design-card.typ-floor-plan .custom-radio {
+  min-width: 6.5rem;
+  padding: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-design-card.typ-floor-plan .cp-price {
+    position: static;
+  }
+}
+.cp-design-card.typ-floor-plan .cp-price .price-list {
+  border: none;
+  border-radius: 0;
+}
+.cp-design-card.typ-floor-plan .cp-price .price-list .total-price {
+  padding: 1.2rem 2rem;
+  align-items: center;
+}
+.cp-design-card.typ-floor-plan .cp-price .price-list .typ-minimum {
+  border: 1px solid #FFD466;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 0.8rem 2rem;
+}
+.cp-design-card .info-wrap {
+  background: #FFF8E5;
+  border-top: 1px solid #FFD466;
+  gap: 0.8rem;
+  padding: 1.2rem;
+  align-items: center;
+  display: flex;
+}
+.cp-design-card .info-wrap .icon {
+  font-size: 2.4rem;
+  color: #A77800;
+}
+.cp-design-card .info-wrap .desc {
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  color: #A77800;
+  line-height: 1.6rem;
 }
 
 /*# sourceMappingURL=cp-design-card.css.map */

@@ -88,7 +88,8 @@ $(document).ready(function () {
     
 });
 
-let swiper; // Scoped to this function
+var winWidth = $(window).width();
+var swiper;
 
 $(document).ready(function () { 
     realStoriesSlider();  

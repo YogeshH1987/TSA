@@ -73,15 +73,18 @@
   font-family: "Poppins Semibold";
   font-size: 2.4rem;
   color: #333333;
-  padding: 2.4rem;
+  padding: 1.6rem !important;
   margin-top: 2.4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-price .price-list-item.total-price {
     font-size: 2rem;
     margin-top: 3.2rem;
-    padding: 1.6rem 2rem;
+    padding: 1.6rem 2rem !important;
   }
+}
+.cp-price .price-list-item.total-price .bold-text {
+  font-family: "Poppins Semibold";
 }
 .cp-price .price-list-item.total-price .sub-text {
   font-size: 1.2rem;
@@ -152,6 +155,9 @@
 .cp-price .bold-text.typ-green {
   color: #00A441;
 }
+.cp-price .cart-price .bold-text {
+  font-size: 1.4rem;
+}
 .cp-price .cancel-price {
   text-decoration: line-through;
   font-family: "Poppins Regular";
@@ -193,6 +199,59 @@
 }
 .cp-price.typ-login {
   margin-bottom: 1.6rem;
+}
+.cp-price.typ-cart .price-list {
+  padding-top: 1.2rem;
+}
+.cp-price.typ-cart .price-list-item {
+  padding: 1.2rem 2.4rem 0rem;
+}
+.cp-price.typ-cart .price-list-item .cart-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #DEDEDE;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.cp-price.typ-cart .price-list-item .cart-head .sec-title {
+  font-size: 2.8rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.cp-price.typ-cart .price-list-item .cart-head .sec-title .count {
+  background: #D2042D;
+  border-radius: 26px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 28px;
+}
+.cp-price.typ-cart .price-list-item .cart-head a {
+  text-decoration: underline;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .cp-price.typ-shipping .total-price {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-price.typ-shipping .total-price .link {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    font-family: "Poppins Medium";
+  }
 }
 
 /*# sourceMappingURL=cp-price.css.map */
