@@ -56,6 +56,16 @@
       }
     }
   }
+  &.typ-col-4-mobile-2 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    .grid-col {
+      width: 22.5%;
+      @media only screen and (max-width: $media-mobile) {
+        width: 48.2%;
+      }
+    }
+  }
 
   &.typ-col-about {
     flex-wrap: wrap;

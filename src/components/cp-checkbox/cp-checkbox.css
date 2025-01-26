@@ -5,175 +5,214 @@
 /*opacity*/
 /*opacity- end*/
 .cp-checkbox {
-  display: block; }
-  .cp-checkbox input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer; }
-    .cp-checkbox input:checked + label:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 2px;
-      left: 9px;
-      width: 5px;
-      height: 10px;
-      border: solid #999999;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg); }
-  .cp-checkbox label {
-    position: relative;
-    cursor: pointer;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    padding-left: 4rem; }
-    .cp-checkbox label:before {
-      content: '';
-      -webkit-appearance: none;
-      background-color: transparent;
-      border: 1px solid #999999;
-      width: 1.6rem;
-      height: 1.6rem;
-      border-radius: 0.4rem;
-      -webkit-border-radius: 0.4rem;
-      -moz-border-radius: 0.4rem;
-      display: inline-block;
-      position: relative;
-      vertical-align: middle;
-      cursor: pointer;
-      position: absolute;
-      top: 5px;
-      left: 0; }
-  .cp-checkbox.typ-flr label {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    display: block;
-    text-align: left; }
-    .cp-checkbox.typ-flr label::before {
-      border: 2px solid #999999;
-      width: 2.4rem;
-      height: 2.4rem;
-      top: 1px;
-      left: 0;
-      color: #FFFFFF; }
-  .cp-checkbox.typ-flr input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer; }
-    .cp-checkbox.typ-flr input:checked + label::before {
-      background-color: #3D7EDB; }
-    .cp-checkbox.typ-flr input:checked + label:after {
-      top: 7px;
-      left: 9px;
-      border: solid #fff;
-      border-width: 0 2px 2px 0; }
-  .cp-checkbox.typ-2 {
-    display: flex;
-    align-items: center;
-    padding: 2.4rem 0;
-    border-bottom: 1px solid #DEDEDE; }
-    .cp-checkbox.typ-2 input:checked + label:after {
-      top: 6px;
-      left: 9px;
-      border: solid #fff;
-      border-width: 0 2px 2px 0; }
-    .cp-checkbox.typ-2 input:checked + label {
-      font-family: "Poppins Medium"; }
-      .cp-checkbox.typ-2 input:checked + label:before {
-        background-color: #3D7EDB;
-        border: 2px solid #3D7EDB; }
-    .cp-checkbox.typ-2 label {
-      padding-left: 3.6rem;
-      color: #333333;
-      line-height: normal; }
-      .cp-checkbox.typ-2 label:before {
-        width: 2.4rem;
-        height: 2.4rem;
-        top: 0;
-        border: 2px solid #808080; }
+  display: block;
+}
+.cp-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.cp-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 5px;
+  height: 10px;
+  border: solid #999999;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.cp-checkbox label {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-left: 4rem;
+}
+.cp-checkbox label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #999999;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.cp-checkbox.typ-flr label {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: block;
+  text-align: left;
+}
+.cp-checkbox.typ-flr label::before {
+  border: 2px solid #999999;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 1px;
+  left: 0;
+  color: #FFFFFF;
+}
+.cp-checkbox.typ-flr input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.cp-checkbox.typ-flr input:checked + label::before {
+  background-color: #3D7EDB;
+}
+.cp-checkbox.typ-flr input:checked + label:after {
+  top: 7px;
+  left: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+.cp-checkbox.typ-2 {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-checkbox.typ-2 input:checked + label:after {
+  top: 6px;
+  left: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+.cp-checkbox.typ-2 input:checked + label {
+  font-family: "Poppins Medium";
+}
+.cp-checkbox.typ-2 input:checked + label:before {
+  background-color: #3D7EDB;
+  border: 2px solid #3D7EDB;
+}
+.cp-checkbox.typ-2 label {
+  padding-left: 3.6rem;
+  color: #333333;
+  line-height: normal;
+}
+.cp-checkbox.typ-2 label:before {
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0;
+  border: 2px solid #808080;
+}
+.cp-checkbox.typ-3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+}
+@media only screen and (max-width: 768px) {
   .cp-checkbox.typ-3 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 48%; }
-    @media only screen and (max-width: 768px) {
-      .cp-checkbox.typ-3 {
-        width: 47%; } }
-    .cp-checkbox.typ-3 label {
-      width: 100%;
-      border: 1px solid #DEDEDE;
-      border-radius: 1.6rem;
-      padding: 1.6rem; }
-      .cp-checkbox.typ-3 label .icon {
-        border: 1px solid #DEDEDE;
-        width: 5.6rem;
-        height: 5.6rem;
-        padding: 1.2rem;
-        color: #333333;
-        font-size: 3.2rem;
-        border-radius: 1.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1.6rem;
-        background-color: #FFFFFF; }
-      .cp-checkbox.typ-3 label:before {
-        content: none; }
-      .cp-checkbox.typ-3 label::after {
-        content: none; }
-    .cp-checkbox.typ-3 input:checked + label {
-      background-color: #ECF2FB;
-      border: 2px solid #3D7EDB;
-      font-family: "Poppins Medium"; }
-      .cp-checkbox.typ-3 input:checked + label::after {
-        content: none; }
-      .cp-checkbox.typ-3 input:checked + label .icon {
-        border-color: #fff;
-        color: #3D7EDB; }
-  .cp-checkbox.typ-border-0 {
-    border: none; }
-    .cp-checkbox.typ-border-0 label {
-      color: #666666; }
-    .cp-checkbox.typ-border-0 input:checked + label {
-      font-family: "Poppins Regular"; }
-  .cp-checkbox.typ-blog {
-    padding: 1rem 0 0; }
-    .cp-checkbox.typ-blog input:checked + label:after {
-      top: 4px;
-      left: 8px; }
-    .cp-checkbox.typ-blog label {
-      font-family: "Poppins Regular";
-      font-size: 1.4rem;
-      color: #333333; }
-      .cp-checkbox.typ-blog label:before {
-        width: 2rem;
-        height: 2rem;
-        border: 1px solid #dedede; }
-  .cp-checkbox.typ-help-policy-terms label {
-    padding-left: 2.4rem;
-    font-size: 1.2rem; }
-    .cp-checkbox.typ-help-policy-terms label::before {
-      top: 1px; }
-    .cp-checkbox.typ-help-policy-terms label .terms {
-      text-decoration: underline;
-      font-family: "Poppins Medium"; }
-  .cp-checkbox.typ-help-policy-terms input:checked + label::before {
-    background: #3D7EDB;
-    top: 1px; }
-  .cp-checkbox.typ-help-policy-terms input:checked + label::after {
-    top: 3px;
-    left: 5px;
-    height: 9px;
-    border-color: #fff; }
+    width: 47%;
+  }
+}
+.cp-checkbox.typ-3 label {
+  width: 100%;
+  border: 1px solid #DEDEDE;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+}
+.cp-checkbox.typ-3 label .icon {
+  border: 1px solid #DEDEDE;
+  width: 5.6rem;
+  height: 5.6rem;
+  padding: 1.2rem;
+  color: #333333;
+  font-size: 3.2rem;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  background-color: #FFFFFF;
+}
+.cp-checkbox.typ-3 label:before {
+  content: none;
+}
+.cp-checkbox.typ-3 label::after {
+  content: none;
+}
+.cp-checkbox.typ-3 input:checked + label {
+  background-color: #ECF2FB;
+  border: 2px solid #3D7EDB;
+  font-family: "Poppins Medium";
+}
+.cp-checkbox.typ-3 input:checked + label::after {
+  content: none;
+}
+.cp-checkbox.typ-3 input:checked + label .icon {
+  border-color: #fff;
+  color: #3D7EDB;
+}
+.cp-checkbox.typ-border-0 {
+  border: none;
+}
+.cp-checkbox.typ-border-0 label {
+  color: #666666;
+}
+.cp-checkbox.typ-border-0 input:checked + label {
+  font-family: "Poppins Regular";
+}
+.cp-checkbox.typ-blog {
+  padding: 1rem 0 0;
+}
+.cp-checkbox.typ-blog input:checked + label:after {
+  top: 4px;
+  left: 8px;
+}
+.cp-checkbox.typ-blog label {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  color: #333333;
+}
+.cp-checkbox.typ-blog label:before {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #dedede;
+}
+.cp-checkbox.typ-help-policy-terms label {
+  padding-left: 2.4rem;
+  font-size: 1.2rem;
+}
+.cp-checkbox.typ-help-policy-terms label::before {
+  top: 1px;
+}
+.cp-checkbox.typ-help-policy-terms label .terms {
+  text-decoration: underline;
+  font-family: "Poppins Medium";
+}
+.cp-checkbox.typ-help-policy-terms input:checked + label::before {
+  background: #3D7EDB;
+  top: 1px;
+}
+.cp-checkbox.typ-help-policy-terms input:checked + label::after {
+  top: 3px;
+  left: 5px;
+  height: 9px;
+  border-color: #fff;
+}
 
 .typ-check-main {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.6rem; }
+  gap: 1.6rem;
+}
 
 /*# sourceMappingURL=cp-checkbox.css.map */

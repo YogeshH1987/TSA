@@ -9,38 +9,51 @@
   color: #333333;
   font-family: "Poppins Medium";
   line-height: 24px;
-  padding-bottom: 1.6rem; }
+  padding-bottom: 1.6rem;
+}
 .cp-prod-size .radio-wrap {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
+.cp-prod-size .radio-wrap.typ2 {
+  justify-content: start;
+  gap: 1.3rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 991px) {
   .cp-prod-size .radio-wrap.typ2 {
-    justify-content: start;
-    gap: 1.3rem;
-    margin-bottom: 1.6rem; }
-    @media only screen and (max-width: 991px) {
-      .cp-prod-size .radio-wrap.typ2 {
-        gap: 1.2rem; } }
+    gap: 1.2rem;
+  }
+}
 .cp-prod-size.typ-pravesh {
-  margin-bottom: 1.2rem; }
-  .cp-prod-size.typ-pravesh .radio-wrap {
-    width: 100%; }
-  .cp-prod-size.typ-pravesh .title {
-    font-size: 1.4rem;
-    padding-bottom: 0.4rem; }
-  .cp-prod-size.typ-pravesh .add-feature {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1.2rem; }
-    .cp-prod-size.typ-pravesh .add-feature li + li::before {
-      content: '|';
-      font-size: 1.2rem;
-      padding-inline: 0.8rem; }
-      @media only screen and (max-width: 991px) {
-        .cp-prod-size.typ-pravesh .add-feature li + li::before {
-          font-size: 1.2rem; } }
-    .cp-prod-size.typ-pravesh .add-feature .feature {
-      color: #666666;
-      font-size: 1.2rem; }
+  margin-bottom: 1.2rem;
+}
+.cp-prod-size.typ-pravesh .radio-wrap {
+  width: 100%;
+}
+.cp-prod-size.typ-pravesh .title {
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+}
+.cp-prod-size.typ-pravesh .add-feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+.cp-prod-size.typ-pravesh .add-feature li + li::before {
+  content: "|";
+  font-size: 1.2rem;
+  padding-inline: 0.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-prod-size.typ-pravesh .add-feature li + li::before {
+    font-size: 1.2rem;
+  }
+}
+.cp-prod-size.typ-pravesh .add-feature .feature {
+  color: #666666;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=cp-prod-size.css.map */

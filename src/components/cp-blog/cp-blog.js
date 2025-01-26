@@ -4,6 +4,7 @@ $(document).ready(function() {
     // addedFavorite();
     blogSlider();
     blogNavSlider();
+    engineersSlider();
     whyPraveshSlider();
 });
 
@@ -39,6 +40,16 @@ function blogNavSlider() {
         navigation: {
             nextEl: ".swiper-button-next.blog-next",
             prevEl: ".swiper-button-prev.blog-prev",
+        },
+    });
+}
+function engineersSlider() {
+    var swiper = new Swiper(".js-engineers", {
+        slidesPerView: 'auto',
+        loop: false,
+        navigation: {
+            nextEl: ".swiper-button-next.engineers-next",
+            prevEl: ".swiper-button-prev.engineers-prev",
         },
     });
 }

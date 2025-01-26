@@ -162,6 +162,14 @@
     }
   }
 
+  &.typ-architects{
+    padding-bottom: 9.6rem;
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 0;
+    }
+
+  }
+
   &.typ-fabricators,
   &.typ-architect {
     padding-bottom: 9.6rem;

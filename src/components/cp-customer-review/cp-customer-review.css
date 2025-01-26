@@ -5,66 +5,81 @@
 /*opacity*/
 /*opacity- end*/
 .cp-customer-review {
-  border-bottom: 1px solid #DEDEDE; }
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-customer-review:first-child {
+  border-top: 1px solid #DEDEDE;
+}
+@media only screen and (max-width: 1023px) {
   .cp-customer-review:first-child {
-    border-top: 1px solid #DEDEDE; }
-    @media only screen and (max-width: 1023px) {
-      .cp-customer-review:first-child {
-        border-top: none; } }
-  .cp-customer-review .review-star {
-    margin-top: 1.6rem; }
-    .cp-customer-review .review-star .icon {
-      font-size: 1.6rem;
-      width: 1.6rem;
-      height: 1.6rem;
-      color: #CCCCCC; }
-      .cp-customer-review .review-star .icon.typ-active {
-        color: #FFB800; }
-  .cp-customer-review .post-date {
-    font-family: "Poppins Regular";
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    color: #666666;
-    margin-bottom: 1.2rem;
-    display: block; }
-  .cp-customer-review .title {
-    font-family: "Poppins Medium";
-    font-size: 1.4rem;
-    line-height: 2rem;
-    color: #333333;
-    margin-bottom: 0.4rem; }
-  .cp-customer-review .desc {
-    font-family: "Poppins Regular";
-    font-size: 1.2rem;
-    line-height: 2rem;
-    color: #666666;
-    margin-bottom: 1.6rem; }
-  .cp-customer-review .customer-detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2.4rem; }
-    .cp-customer-review .customer-detail .customer-name {
-      font-family: "Poppins Medium";
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: #333333;
-      margin-bottom: 2px; }
-    .cp-customer-review .customer-detail .verified {
-      font-family: "Poppins Regular";
-      font-size: 1rem;
-      line-height: 1.2rem;
-      color: #00A441; }
-    .cp-customer-review .customer-detail .helpful {
-      font-family: "Poppins Medium";
-      font-size: 1.2rem;
-      line-height: 1.6rem;
-      color: #333333;
-      text-transform: capitalize; }
-      .cp-customer-review .customer-detail .helpful .count-text {
-        background-color: #D8E5F8;
-        padding: 0.4rem 0.6rem;
-        border-radius: 0.4rem;
-        margin-left: 0.4rem; }
+    border-top: none;
+  }
+}
+.cp-customer-review .review-star {
+  margin-top: 1.6rem;
+}
+.cp-customer-review .review-star .icon {
+  font-size: 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #CCCCCC;
+}
+.cp-customer-review .review-star .icon.typ-active {
+  color: #FFB800;
+}
+.cp-customer-review .post-date {
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #666666;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.cp-customer-review .title {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 0.4rem;
+}
+.cp-customer-review .desc {
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #666666;
+  margin-bottom: 1.6rem;
+}
+.cp-customer-review .customer-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+.cp-customer-review .customer-detail .customer-name {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 2px;
+}
+.cp-customer-review .customer-detail .verified {
+  font-family: "Poppins Regular";
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #00A441;
+}
+.cp-customer-review .customer-detail .helpful {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #333333;
+  text-transform: capitalize;
+}
+.cp-customer-review .customer-detail .helpful .count-text {
+  background-color: #D8E5F8;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+}
 
 /*# sourceMappingURL=cp-customer-review.css.map */
