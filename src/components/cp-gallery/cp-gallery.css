@@ -8,116 +8,84 @@
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
   -moz-border-radius: 1.2rem;
-  overflow: hidden;
-}
-.cp-gallery .gallery-card .img-wrap {
-  max-height: 26rem;
-}
-@media only screen and (max-width: 768px) {
+  overflow: hidden; }
   .cp-gallery .gallery-card .img-wrap {
-    max-height: 16rem;
-  }
-}
-.cp-gallery .gallery-card .img-wrap img {
-  height: 100%;
-  object-fit: cover;
-}
-.cp-gallery .gallery-card .content-wrap {
-  padding: 1.6rem 1.6rem 1.6rem 1.2rem;
-}
-.cp-gallery .gallery-card .content-wrap .title {
-  font-family: "Poppins Medium";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #333333;
-  margin-bottom: 0.2rem;
-}
-.cp-gallery .gallery-card .content-wrap .desc {
-  font-family: "Poppins Regular";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #666666;
-  margin-bottom: 2rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-gallery .gallery-card .content-wrap .desc {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin-bottom: 1.2rem;
-  }
-}
-.cp-gallery .gallery-card .content-wrap .btn {
-  min-width: 17.7rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-gallery .gallery-card .content-wrap .btn {
-    min-width: 18.1rem;
-  }
-}
-.cp-gallery .gallery-card.typ-details {
-  margin-top: 2rem;
-  background: #F3F4F6;
-  border: 1px solid #DEDEDE;
-  display: flex;
-  justify-content: space-between;
-}
-@media only screen and (max-width: 768px) {
+    max-height: 26rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-gallery .gallery-card .img-wrap {
+        max-height: 16rem; } }
+    .cp-gallery .gallery-card .img-wrap img {
+      height: 100%;
+      object-fit: cover; }
+  .cp-gallery .gallery-card .content-wrap {
+    padding: 1.6rem 1.6rem 1.6rem 1.2rem; }
+    .cp-gallery .gallery-card .content-wrap .title {
+      font-family: "Poppins Medium";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #333333;
+      margin-bottom: 0.2rem; }
+    .cp-gallery .gallery-card .content-wrap .desc {
+      font-family: "Poppins Regular";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #666666;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-gallery .gallery-card .content-wrap .desc {
+          font-size: 1.4rem;
+          line-height: 2rem;
+          margin-bottom: 1.2rem; } }
+    .cp-gallery .gallery-card .content-wrap .btn {
+      min-width: 17.7rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-gallery .gallery-card .content-wrap .btn {
+          min-width: 18.1rem; } }
   .cp-gallery .gallery-card.typ-details {
-    margin-top: 1.2rem;
-  }
-}
-.cp-gallery .gallery-card.typ-details .img-wrap {
-  width: 30.7%;
-  max-height: 14.8rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-gallery .gallery-card.typ-details .img-wrap {
-    width: 39.3%;
-    max-height: auto;
-  }
-}
-.cp-gallery .gallery-card.typ-details .content-wrap {
-  width: 69%;
-}
-@media only screen and (max-width: 768px) {
-  .cp-gallery .gallery-card.typ-details .content-wrap {
-    width: 60%;
-  }
-}
-.cp-gallery .gallery-card.typ-architech-style {
-  background-color: #fff;
-  border-color: #DEDEDE;
-}
-.cp-gallery .gallery-card.typ-architech-style .img-wrap {
-  max-height: 100%;
-}
-.cp-gallery .gallery-card.typ-architech-style .content-wrap .title {
-  font-family: "Poppins Semibold";
-  margin-bottom: 1.2rem;
-}
-.cp-gallery .gallery-card.typ-architech-style .content-wrap .feature-item {
-  padding-bottom: 0.8rem;
-}
+    margin-top: 2rem;
+    background: #F3F4F6;
+    border: 1px solid #DEDEDE;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      .cp-gallery .gallery-card.typ-details {
+        margin-top: 1.2rem; } }
+    .cp-gallery .gallery-card.typ-details .img-wrap {
+      width: 30.7%;
+      max-height: 14.8rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-gallery .gallery-card.typ-details .img-wrap {
+          width: 39.3%;
+          max-height: auto; } }
+    .cp-gallery .gallery-card.typ-details .content-wrap {
+      width: 69%; }
+      @media only screen and (max-width: 768px) {
+        .cp-gallery .gallery-card.typ-details .content-wrap {
+          width: 60%; } }
+  .cp-gallery .gallery-card.typ-architech-style {
+    background-color: #fff;
+    border-color: #DEDEDE; }
+    .cp-gallery .gallery-card.typ-architech-style .img-wrap {
+      max-height: 100%; }
+    .cp-gallery .gallery-card.typ-architech-style .content-wrap .title {
+      font-family: "Poppins Semibold";
+      margin-bottom: 1.2rem; }
+    .cp-gallery .gallery-card.typ-architech-style .content-wrap .feature-item {
+      padding-bottom: 0.8rem; }
 .cp-gallery .btn-wrap {
   text-align: center;
   margin-top: 3.2rem;
-  text-align: center;
-}
-@media only screen and (max-width: 768px) {
-  .cp-gallery .btn-wrap {
-    margin-top: 2.4rem;
-  }
-}
-.cp-gallery .btn-wrap .btn {
-  min-width: 34.3rem;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  padding: 1.1rem 1.2rem;
-}
-@media only screen and (max-width: 768px) {
+  text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .cp-gallery .btn-wrap {
+      margin-top: 2.4rem; } }
   .cp-gallery .btn-wrap .btn {
-    min-width: 16.6rem;
-  }
-}
+    min-width: 34.3rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-gallery .btn-wrap .btn {
+        min-width: 16.6rem; } }
 
 /*# sourceMappingURL=cp-gallery.css.map */

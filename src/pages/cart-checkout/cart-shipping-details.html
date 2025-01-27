@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="/components/cp-offers/cp-offers.css" />
     <link rel="stylesheet" href="/components/cp-table/cp-table.css" />
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
-
+    <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
+    <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
 </head>
 
 <body> <!-- Header Start -->
@@ -157,7 +158,8 @@
                                                             Mansarovar, Jaipur - 302020 </li>
                                                         <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
                                                         <li class="detail-list"><a href="#" class="link">Edit
-                                                                address</a> <a href="#" class="link">Add my GST number</a>
+                                                                address</a> <a href="#" class="link">Add my GST
+                                                                number</a>
                                                         </li>
                                                     </ul>
                                                 </label>
@@ -232,7 +234,7 @@
                                         <div class="cart-btn-wrap cm-desktop">
                                             <button class="btn">Continue</button>
                                         </div>
-                                        
+
                                         <div class="details-show hide">
                                             <ul class="shipping-detail">
                                                 <li class="detail-list tag">Construction site</li>
@@ -412,14 +414,17 @@
                                             <div class="cont-wrap">
                                                 <ul class="delivery-info-sec">
                                                     <li class="info-list">
-                                                        <span class="icon icon-truck"></span> 
+                                                        <span class="icon icon-truck"></span>
                                                         <p>Agrico products
-                                                        will be delivered by <span class="bold-text">17 Oct 2024</span>.</p>
+                                                            will be delivered by <span class="bold-text">17 Oct
+                                                                2024</span>.</p>
                                                     </li>
-                                                    <li class="info-list"><span class="icon icon-store"></span> <p>Orders will be
-                                                        serviced by TATA Steel Retail Store, Steeljunction</p></li>
+                                                    <li class="info-list"><span class="icon icon-store"></span>
+                                                        <p>Orders will be
+                                                            serviced by TATA Steel Retail Store, Steeljunction</p>
+                                                    </li>
                                                 </ul>
-                                             
+
                                             </div>
                                         </div>
                                         <div class="cart-btn-wrap cm-desktop">
@@ -462,13 +467,13 @@
                                         </div>
                                     </div>
                                     <div class="shipping-content-wrap hide">
-                                    
-                                            <div class="cont-wrap typ-payment-method">
-                                                <!-- <div class="cont-sub-head typ-2">
+
+                                        <div class="cont-wrap typ-payment-method">
+                                            <!-- <div class="cont-sub-head typ-2">
                                                     <h3 class="sec-sub-title">Payment offers available on:</h3>
                                                     <a href="#" class="link">All offers</a>
                                                 </div> -->
-                                                <!-- <ul class="bank-logo">
+                                            <!-- <ul class="bank-logo">
                                                     <li class="logo-list">
                                                         <img src="../../components/cp-cart/images/1.png" alt="">
                                                     </li>
@@ -489,8 +494,8 @@
                                                     </li>
                                                 </ul> -->
 
-                                                <!--  starts offer  -->
-                                                <!-- <div class="bs-swiper swiper js-bank-offer typ-bank-offer-slider">
+                                            <!--  starts offer  -->
+                                            <!-- <div class="bs-swiper swiper js-bank-offer typ-bank-offer-slider">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
                                                             <div class="bank-offer-main">
@@ -534,100 +539,101 @@
                                                     </div>
                                                     <div class="swiper-pagination"></div>
                                                 </div> -->
-                                                <!--  ends offer  -->
+                                            <!--  ends offer  -->
 
-                                                <div class="radio-wrap typ-shipping typ-payment">
-                                                    <div class="bs-radio typ-shipping-radio typ-payment">
-                                                        <input id="payment1" name="payment" type="radio" checked>
-                                                        <label for="payment1" class="custom-radio">
-                                                            <span class="checkmark"></span>
-                                                            <ul class="shipping-detail">
+                                            <div class="radio-wrap typ-shipping typ-payment">
+                                                <div class="bs-radio typ-shipping-radio typ-payment">
+                                                    <input id="payment1" name="payment" type="radio" checked>
+                                                    <label for="payment1" class="custom-radio">
+                                                        <span class="checkmark"></span>
+                                                        <ul class="shipping-detail">
 
-                                                                <li class="detail-list title">
-                                                                    Make an online payment
-                                                                </li>
-                                                                <li class="detail-list">Netbanking, UPI, Debit card,
-                                                                    Credit card</li>
-
-                                                            </ul>
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="bs-radio typ-shipping-radio typ-payment">
-                                                        <input id="payment2" name="payment" type="radio">
-                                                        <label for="payment2" class="custom-radio">
-                                                            <span class="checkmark"></span>
-                                                            <ul class="shipping-detail">
-                                                                <li class="detail-list title">
-                                                                    Pay before dispatch
-                                                                </li>
-                                                                <li class="detail-list">Order now and pay before
-                                                                    dispatch</li>
-                                                            </ul>
-                                                        </label>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="dispatch-main">
-                                                    <div class="info-wrap typ-blue">
-                                                        <span class="icon icon-info"></span>
-                                                        <p class="desc">Organising funds? <br>
-                                                            Money arrangements will take longer? Order now and pay
-                                                            before dispatch </p>
-                                                    </div>
-
-                                                    <div class="cont-sub-head">
-                                                        <h3 class="sec-sub-title">How it works?</h3>
-                                                    </div>
-                                                    <div class="how-it-works-wrap">
-                                                        <ul class="how-it-works">
-                                                            <li class="how-it-works-list">
-                                                                <span class="number">1</span>
-                                                                Complete order placement
+                                                            <li class="detail-list title">
+                                                                Make an online payment
                                                             </li>
+                                                            <li class="detail-list">Netbanking, UPI, Debit card,
+                                                                Credit card</li>
 
-                                                            <li class="how-it-works-list">
-                                                                <span class="number">2</span>
-                                                                Click on link on your SMS/Email
-                                                                <div class="divider"><span class="text">or</span></div>
-                                                                Go to ‘My Orders’ in ‘Profile’ on this website
-                                                            </li>
-
-                                                            <li class="how-it-works-list">
-                                                                <span class="number">3</span>
-                                                                Pay by NEFT, card, wallet etc
-                                                            </li>
                                                         </ul>
-                                                    </div>
-
-                                                    <div class="info-wrap">
-                                                        <span class="icon icon-info"></span>
-                                                        <p class="desc">Incase of failed payment, order will be
-                                                            cancelled
-                                                            after 7 days </p>
-                                                    </div>
-
+                                                    </label>
                                                 </div>
 
-                                                <div class="cp-other-info typ-payment cm-mobile">
-                                                    <ul class="other-info-list">
-                                                      <li class="other-info-item">
+                                                <div class="bs-radio typ-shipping-radio typ-payment">
+                                                    <input id="payment2" name="payment" type="radio">
+                                                    <label for="payment2" class="custom-radio">
+                                                        <span class="checkmark"></span>
+                                                        <ul class="shipping-detail">
+                                                            <li class="detail-list title">
+                                                                Pay before dispatch
+                                                            </li>
+                                                            <li class="detail-list">Order now and pay before
+                                                                dispatch</li>
+                                                        </ul>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="dispatch-main">
+                                                <div class="info-wrap typ-blue">
+                                                    <span class="icon icon-info"></span>
+                                                    <p class="desc">Organising funds? <br>
+                                                        Money arrangements will take longer? Order now and pay
+                                                        before dispatch </p>
+                                                </div>
+
+                                                <div class="cont-sub-head">
+                                                    <h3 class="sec-sub-title">How it works?</h3>
+                                                </div>
+                                                <div class="how-it-works-wrap">
+                                                    <ul class="how-it-works">
+                                                        <li class="how-it-works-list">
+                                                            <span class="number">1</span>
+                                                            Complete order placement
+                                                        </li>
+
+                                                        <li class="how-it-works-list">
+                                                            <span class="number">2</span>
+                                                            Click on link on your SMS/Email
+                                                            <div class="divider"><span class="text">or</span></div>
+                                                            Go to ‘My Orders’ in ‘Profile’ on this website
+                                                        </li>
+
+                                                        <li class="how-it-works-list">
+                                                            <span class="number">3</span>
+                                                            Pay by NEFT, card, wallet etc
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="info-wrap">
+                                                    <span class="icon icon-info"></span>
+                                                    <p class="desc">Incase of failed payment, order will be
+                                                        cancelled
+                                                        after 7 days </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cp-other-info typ-payment cm-mobile">
+                                                <ul class="other-info-list">
+                                                    <li class="other-info-item">
                                                         Offer coupons
                                                         <p>
-                                                        <span class="tag">5 coupons available</span></p>
-                                                      </li>
-                                                    
-                                                    </ul>
-                                                   
-                                                 </div>
-                                                <p class="desc typ-2 mt-12">By placing the order you have read and agreed to
-                                                    <a href="#" class="link">Terms of use</a> <a href="#"
-                                                        class="link">Disclaimer</a> <a href="#" class="link">Shipping
-                                                        policy</a> <a href="#" class="link">Privacy policy</a></a>
-                                                </p>
-                                                <p class="desc">You will be redirected to the payment partner.</p>
+                                                            <span class="tag">5 coupons available</span>
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
                                             </div>
+                                            <p class="desc typ-2 mt-12">By placing the order you have read and agreed to
+                                                <a href="#" class="link">Terms of use</a> <a href="#"
+                                                    class="link">Disclaimer</a> <a href="#" class="link">Shipping
+                                                    policy</a> <a href="#" class="link">Privacy policy</a></a>
+                                            </p>
+                                            <p class="desc">You will be redirected to the payment partner.</p>
+                                        </div>
                                         <div class="cart-btn-wrap cm-desktop">
                                             <button class="btn">Proceed to payment</button>
                                         </div>
@@ -650,7 +656,7 @@
                                         <h2 class="sec-title">My cart
                                             <span class="count">58</span>
                                         </h2>
-                                        <a href="#">Order summary</a>
+                                        <a class="js-drawer" data-id="orderSummery" href="#">Order summary</a>
                                     </div>
                                 </li>
                                 <li class="price-list-item cart-price cm-desktop-flex">
@@ -677,8 +683,10 @@
                                     </span>
                                 </li>
                                 <li class="price-list-item total-price">
-                                    <span class="cm-desktop">Total price<span class="sub-text">(Inclusive of all Taxes)</span></span>
-                                    <span class="cm-mobile"><a href="#" class="link">Order summary</a></span>
+                                    <span class="cm-desktop">Total price<span class="sub-text">(Inclusive of all
+                                            Taxes)</span></span>
+                                    <span class="cm-mobile"><a href="#" class="link js-drawer"
+                                            data-id="orderSummery">Order summary</a></span>
                                     <span class="bold-text">
                                         ₹54,552
                                     </span>
@@ -710,146 +718,213 @@
     <!-- Footer end -->
 
 
-    <!---offer drawer start-->
-    <div class="cp-drawer typ-offer" id="availableOffers">
-        <div class="head-sec">
-            <h2 class="drawer-title">Offers & discounts</h2>
+    <!---order summery start-->
+    <div class="cp-drawer typ-offer" id="orderSummery">
+        <div class="head-sec p-0">
+            <!-- <h2 class="drawer-title">Offers & discounts  <span class="count">58</span></h2> -->
             <a href="#" class="icon icon-close js-close-btn"></a>
         </div>
         <div class="cont-wrap">
-            <div class="cp-search typ-offer">
-                <div class="search-wrap">
-                    <input type="text" class="search-input" placeholder="Enter coupon code">
-                    <span class="apply-link">Apply</span>
-                </div>
-            </div>
-            <h2 class="drawer-sub-title">Site wide offers</h2>
-            <ul class="offers-list">
-                <li class="offers-item">
-                    <div class="cp-offers">
-                        <div class="lft typ-blue">
-                            <span>Discount</span>
+            <div class="cp-price typ-cart typ-shipping typ-summery-drawer">
+
+                <ul class="price-list">
+                    <li class="price-list-item">
+                        <div class="cart-head">
+                            <h2 class="sec-title">Order summary
+                                <span class="count">58</span>
+                            </h2>
                         </div>
-                        <div class="rht typ-blue-border">
-                            <h3 class="title">Navratri special</h3>
-                            <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
-                            <span class="offer-valid">Valid till 31 Oct 2024</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="offers-item">
-                    <div class="cp-offers">
-                        <div class="lft typ-red">
-                            <span>FLAT OFF</span>
-                        </div>
-                        <div class="rht typ-red-border">
-                            <h3 class="title">B1G1 surprise</h3>
-                            <p class="desc">Buy any 1 product and get a surprise product for free. Minimum value of
-                                product should be Rs. 5,000</p>
-                            <span class="offer-valid">Valid till 31 Oct 2024</span>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <h2 class="drawer-sub-title">Brand offers</h2>
-            <div class="cp-tab typ-offer">
-                <ul class="tab-list">
-                    <li class="tab-item active" data-target="#tab1">
-                        <h3 class="title">Tiscon</h3>
                     </li>
-                    <li class="tab-item" data-target="#tab2">
-                        <h3 class="title">Wiron</h3>
+                    <li>
+                        <div class="cp-accordion typ-cart-summery">
+                            <div class="acc-item">
+                                <div class="acc-head">
+                                    <div class="head-cont">
+                                        <h3 class="title">
+                                            Tiscon
+                                        </h3>
+                                        <p class="desc">45 items</p>
+                                        <p class="desc font-medium">Rebars, Superlinks</p>
+                                    </div>
+                                    <div class="price">
+                                        ₹23,25,848
+                                    </div>
+
+                                </div>
+                                <div class="acc-cont">
+                                    <div class="cp-cart-card typ-order-summery">
+                                        <div class="prodcut-item">
+                                            <div class="product-img">
+                                                <img src="/components/cp-cart/images/rebars-shipping.png" alt="rebars">
+                                            </div>
+
+                                            <div class="product-desc">
+                                                <h3 class="title">Rebars</h3>
+                                                <p class="desc">Silver iron rods CDS 145</p>
+                                            </div>
+                                            <div class="product-price">₹23,01,400</div>
+                                        </div>
+                                        <table class="cp-table typ-cart-summery">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left list-head list-item">Size</th>
+                                                    <th class="text-center list-head list-item">Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Item 1 -->
+                                                <tr class="sepretor">
+                                                    <td class="text-left list-item">8mm</td>
+                                                    <td class="text-center list-item">10</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="cp-cart-card typ-order-summery">
+                                        <div class="prodcut-item">
+                                            <div class="product-img">
+                                                <img src="/components/cp-cart/images/rebars-shipping.png" alt="rebars">
+                                            </div>
+
+                                            <div class="product-desc">
+                                                <h3 class="title">Rebars</h3>
+                                                <p class="desc">Silver iron rods CDS 145</p>
+                                            </div>
+                                            <div class="product-price">₹23,01,400</div>
+                                        </div>
+                                        <table class="cp-table typ-cart-summery">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left list-head list-item">Size</th>
+                                                    <th class="text-center list-head list-item">Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Item 1 -->
+                                                <tr class="sepretor">
+                                                    <td class="text-left list-item">8mm</td>
+                                                    <td class="text-center list-item">10</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="acc-item">
+                                <div class="acc-head">
+                                    <div class="head-cont">
+                                        <h3 class="title">
+                                            Tiscon
+                                        </h3>
+                                        <p class="desc">45 items</p>
+                                        <p class="desc font-medium">Rebars, Superlinks</p>
+                                    </div>
+                                    <div class="price">
+                                        ₹23,25,848
+                                    </div>
+
+                                </div>
+                                <div class="acc-cont">
+                                    <div class="cp-cart-card typ-order-summery">
+                                        <div class="prodcut-item">
+                                            <div class="product-img">
+                                                <img src="/components/cp-cart/images/rebars-shipping.png" alt="rebars">
+                                            </div>
+
+                                            <div class="product-desc">
+                                                <h3 class="title">Rebars</h3>
+                                                <p class="desc">Silver iron rods CDS 145</p>
+                                            </div>
+                                            <div class="product-price">₹23,01,400</div>
+                                        </div>
+                                        <table class="cp-table typ-cart-summery">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left list-head list-item">Size</th>
+                                                    <th class="text-center list-head list-item">Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Item 1 -->
+                                                <tr class="sepretor">
+                                                    <td class="text-left list-item">8mm</td>
+                                                    <td class="text-center list-item">10</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="cp-cart-card typ-order-summery">
+                                        <div class="prodcut-item">
+                                            <div class="product-img">
+                                                <img src="/components/cp-cart/images/rebars-shipping.png" alt="rebars">
+                                            </div>
+
+                                            <div class="product-desc">
+                                                <h3 class="title">Rebars</h3>
+                                                <p class="desc">Silver iron rods CDS 145</p>
+                                            </div>
+                                            <div class="product-price">₹23,01,400</div>
+                                        </div>
+                                        <table class="cp-table typ-cart-summery">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left list-head list-item">Size</th>
+                                                    <th class="text-center list-head list-item">Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Item 1 -->
+                                                <tr class="sepretor">
+                                                    <td class="text-left list-item">8mm</td>
+                                                    <td class="text-center list-item">10</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </li>
-                    <li class="tab-item" data-target="#tab3">
-                        <h3 class="title">Shaktee</h3>
+                    <li class="price-list-item cart-price">
+                        <span>Total purchase price</span>
+                        <span class="bold-text">₹50,140</span>
                     </li>
-                    <li class="tab-item" data-target="#tab4">
-                        <h3 class="title">Pravesh</h3>
+                    <li class="price-list-item cart-price">
+                        <span>Discount availed</span>
+                        <span class="bold-text typ-green">₹-3,00</span>
+                    </li>
+                    <li class="price-list-item cart-price">
+                        <span>Shipping charges</span>
+
+                        <span class="bold-text">
+                            <span class="cancel-price">₹300</span>
+                            <span class="bold-text typ-green"> Free</span>
+                        </span>
+                    </li>
+                    <li class="price-list-item cart-price">
+                        <span>Additional charges</span>
+                        <span class="bold-text">
+                            <span class="cancel-price">₹300</span>
+                            <span class="bold-text"> ₹0</span>
+                        </span>
+                    </li>
+                    <li class="price-list-item total-price">
+                        <span>Total price<span class="sub-text">(Inclusive of all
+                                Taxes)</span></span>
+                        <span class="bold-text">
+                            ₹54,552
+                        </span>
                     </li>
                 </ul>
-                <div class="tab-container">
-                    <div class="tab-content active" id="tab1">
-                        <ul class="offers-list">
-                            <li class="offers-item">
-                                <div class="cp-offers typ-disable">
-                                    <div class="lft">
-                                        <span>Discount</span>
-                                    </div>
-                                    <div class="rht">
-                                        <h3 class="title">Navratri special</h3>
-                                        <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs.
-                                            10,000</p>
-                                        <span class="offer-valid">Valid till 31 Oct 2024</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="offers-item">
-                                <div class="cp-offers">
-                                    <div class="lft typ-red">
-                                        <span>FLAT OFF</span>
-                                    </div>
-                                    <div class="rht typ-red-border">
-                                        <h3 class="title">B1G1 surprise</h3>
-                                        <p class="desc">Buy any 1 product and get a surprise product for free. Minimum
-                                            value of product should be Rs. 5,000</p>
-                                        <span class="offer-valid">Valid till 31 Oct 2024</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="offers-item">
-                                <div class="cp-offers">
-                                    <div class="lft typ-green">
-                                        <span>CASHBACK</span>
-                                    </div>
-                                    <div class="rht typ-green-border">
-                                        <h3 class="title">Instant cashback</h3>
-                                        <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs.
-                                            10,000</p>
-                                        <span class="offer-valid">Valid till 31 Oct 2024</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="offers-item">
-                                <div class="cp-offers">
-                                    <div class="lft typ-green">
-                                        <span>CASHBACK</span>
-                                    </div>
-                                    <div class="rht typ-green-border">
-                                        <h3 class="title">Instant cashback</h3>
-                                        <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs.
-                                            10,000</p>
-                                        <span class="offer-valid">Valid till 31 Oct 2024</span>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="offers-item">
-                                <div class="cp-offers">
-                                    <div class="lft typ-yellow">
-                                        <span>Discount</span>
-                                    </div>
-                                    <div class="rht typ-yellow-border">
-                                        <h3 class="title">Navratri special</h3>
-                                        <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs.
-                                            10,000</p>
-                                        <span class="offer-valid">Valid till 31 Oct 2024</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="tab2">
-                        <h3 class="content">tab-content 2</h3>
-                    </div>
-                    <div class="tab-content" id="tab3">
-                        <h3 class="content">tab-content 3</h3>
-                    </div>
-                    <div class="tab-content" id="tab4">
-                        <h3 class="content">tab-content 4</h3>
-                    </div>
-                </div>
             </div>
-
         </div>
     </div>
     <!---offer drawer end-->
@@ -866,6 +941,7 @@
     <script src="/components/cp-counter/cp-counter.js"></script>
     <script src="/components/cp-drawer/cp-drawer.js"></script>
     <script src="/components/cp-cart/cp-cart.js"></script>
+    <script src="/components/cp-accordion/cp-accordion.js"></script>
     <!-- endbuild -->
 </body>
 
