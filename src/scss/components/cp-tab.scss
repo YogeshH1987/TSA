@@ -43,14 +43,31 @@
 
       }
 
+      .count {
+        background-color: $clr-root;
+        color: $clr-root;
+        font-size: 1.2rem;
+        font-family: $font-medium;
+        border-radius: 26px;
+        right: 59px;
+        width: 20px;
+        height: 20px;
+        top: 13px;
+        text-align: center;
+        padding: 0.2rem;
+      }
       &:hover,
       &.active {
         .title {
           border: 1px solid $clr-border;
           // font-family: $font-semiBold;
-          color: $clr-root;
+          color: $clr-base;
           background: $clr-primary;
           text-shadow: $clr-base 0.9px 0 0.9px;
+        }
+        .count{
+          background-color: $clr-secondary;
+          color: $clr-root;
         }
       }
     }
@@ -483,7 +500,6 @@
       justify-content: center;
     }
   }
-
   &.typ-blog-filter {
     display: flex;
     flex-wrap: wrap;
@@ -513,21 +529,7 @@
         &.active {
           background: #FFE399;
           border-bottom: 1px solid #A77800;
-        }
-
-        .count {
-          background-color: $clr-secondary;
-          color: $clr-root;
-          font-size: 1.2rem;
-          font-family: $font-medium;
-          border-radius: 26px;
-          right: 59px;
-          width: 20px;
-          height: 20px;
-          top: 13px;
-          text-align: center;
-          padding: 0.2rem;
-        }
+        }        
       }
     }
 

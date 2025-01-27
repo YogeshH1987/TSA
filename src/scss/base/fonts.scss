@@ -102,7 +102,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-dashboard:before {
+  content: "\e98d";
+}
 .icon-format-line-spacing:before {
   content: "\e98c";
 }
