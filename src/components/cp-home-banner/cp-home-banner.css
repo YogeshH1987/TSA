@@ -182,5 +182,12 @@
     width: 100%;
     height: 100%;
     object-fit: contain; }
+  .cp-home-banner.typ-cart-order-confirm {
+    margin-bottom: 0;
+    padding: 0; }
+    .cp-home-banner.typ-cart-order-confirm .feature {
+      width: 100%; }
+      .cp-home-banner.typ-cart-order-confirm .feature .feature-item {
+        height: 14rem; }
 
 /*# sourceMappingURL=cp-home-banner.css.map */

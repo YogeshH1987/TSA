@@ -200,7 +200,8 @@
           color: #3D7EDB;
           width: 4rem;
           height: 4rem;
-          margin-left: auto; }
+          margin-left: auto;
+          cursor: pointer; }
       .cp-cart .shipping-wrapper .shipping-sec .shipping-content-wrap {
         padding: 0 6rem;
         padding-bottom: 3.2rem; }

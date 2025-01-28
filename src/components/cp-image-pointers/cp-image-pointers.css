@@ -1,0 +1,103 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-image-pointers {
+  position: relative; }
+  .cp-image-pointers .img-wrap {
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    overflow: hidden; }
+  .cp-image-pointers .dot {
+    width: 4.2rem;
+    height: 4.5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .cp-image-pointers .dot:hover .dropdown-content {
+      display: block;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s; }
+    .cp-image-pointers .dot.open {
+      background: rgba(255, 0, 0, 0.3);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .cp-image-pointers .dot .white-dot {
+      width: 1.6rem;
+      height: 2rem;
+      background-color: #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      outline: #FF000080 solid 6px;
+      position: relative;
+      display: block;
+      margin: auto; }
+      .cp-image-pointers .dot .white-dot::after {
+        content: '';
+        width: 3rem;
+        height: 3.4rem;
+        border: 1px solid #ffffff99;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        position: absolute;
+        left: -7px;
+        /* right: 0; */
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+    .cp-image-pointers .dot .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      left: 0px;
+      top: 100%;
+      z-index: 1;
+      box-shadow: 0px 10.68px 7.78px 0px #00000059;
+      text-align: left;
+      margin: auto;
+      border-radius: 5px;
+      padding: 12px; }
+      .cp-image-pointers .dot .dropdown-content .title {
+        font-family: "Poppins Medium";
+        font-size: 1.4rem;
+        color: #333333; }
+      .cp-image-pointers .dot .dropdown-content .desc {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem; }
+      .cp-image-pointers .dot .dropdown-content .price {
+        font-size: 2.4rem;
+        font-family: "Poppins Semibold";
+        color: #333333; }
+  .cp-image-pointers .pointer-1 {
+    left: 50%;
+    top: 3%; }
+  .cp-image-pointers .pointer-2 {
+    left: 72%;
+    top: 29%; }
+  .cp-image-pointers .pointer-3 {
+    left: 85%;
+    top: 75%; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=cp-image-pointers.css.map */

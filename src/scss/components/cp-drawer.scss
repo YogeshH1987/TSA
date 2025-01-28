@@ -39,6 +39,10 @@
         align-items: center;
         padding: 1.2rem 0;
 
+        &.p-0 {
+            padding: 0;
+        }
+
         .drawer-title {
             font-family: $font-medium;
             font-size: 2.4rem;
@@ -220,6 +224,7 @@
 
     &.typ-setback {
         padding-bottom: 0;
+
         .cont-sec {
             padding: 2rem;
             position: relative;
@@ -282,7 +287,11 @@
             }
         }
     }
-    &.typ-floor-plans{
-        @media only screen and (max-width: $media-mobile) { height: 100%; @include border-radius(0)}  
+
+    &.typ-floor-plans {
+        @media only screen and (max-width: $media-mobile) {
+            height: 100%;
+            @include border-radius(0)
+        }
     }
 }
