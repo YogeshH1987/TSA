@@ -473,7 +473,8 @@
         .cp-tab.typ-calculator-result .tab-list .tab-item .title {
           padding: 0.4rem 0.7rem; } }
     .cp-tab.typ-calculator-result .tab-list .tab-item:hover .title, .cp-tab.typ-calculator-result .tab-list .tab-item.active .title {
-      text-shadow: none; }
+      text-shadow: none;
+      color: #fff; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

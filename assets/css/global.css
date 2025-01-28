@@ -2982,6 +2982,12 @@ p {
     @media only screen and (max-width: 768px) {
       .bs-modal .video-wrap {
         padding: 5rem 2.4rem; } }
+  .bs-modal.typ-customise-estimate {
+    max-width: 400px;
+    max-height: 100%; }
+    @media only screen and (max-width: 991px) {
+      .bs-modal.typ-customise-estimate .modal-body {
+        padding: 1.6rem 0; } }
 
 /* colors */
 /*font family*/

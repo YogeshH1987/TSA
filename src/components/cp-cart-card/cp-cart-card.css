@@ -163,5 +163,10 @@
         font-size: 1.6rem;
         margin-left: auto;
         color: #333333; }
+      .cp-cart-card.typ-order-summery .prodcut-item .link {
+        font-size: 1.4rem;
+        text-decoration: underline;
+        margin-left: auto;
+        font-family: "Poppins Medium"; }
 
 /*# sourceMappingURL=cp-cart-card.css.map */

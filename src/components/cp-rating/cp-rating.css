@@ -46,5 +46,22 @@
       color: #3D7EDB; }
       .cp-rating.typ-structura-pdp .review-text .review-count:first-child:after {
         background: #3D7EDB; }
+  .cp-rating.typ-calculator-result {
+    padding: 0; }
+    .cp-rating.typ-calculator-result .rating-number-sec .item {
+      display: flex;
+      gap: 4px;
+      align-items: center; }
+    .cp-rating.typ-calculator-result .review-star {
+      margin-top: 0; }
+      .cp-rating.typ-calculator-result .review-star .icon {
+        font-size: 1.4rem;
+        color: #CCCCCC; }
+        .cp-rating.typ-calculator-result .review-star .icon.active {
+          color: #FFB800; }
+    .cp-rating.typ-calculator-result .review-text .review-count {
+      font-size: 1rem; }
+      .cp-rating.typ-calculator-result .review-text .review-count::after {
+        content: none; }
 
 /*# sourceMappingURL=cp-rating.css.map */

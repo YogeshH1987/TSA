@@ -87,6 +87,22 @@
     .cp-dropdown .dropdown-head-sec .dropdown-icon {
       font-size: 2rem;
       color: #000; }
+  .cp-dropdown.typ-2 {
+    right: 0;
+    min-width: 200px;
+    border: 1px solid #DEDEDE;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem; }
+    .cp-dropdown.typ-2 .list-item a {
+      color: #666;
+      font-family: "Poppins Regular";
+      font-size: 1.4rem; }
+      .cp-dropdown.typ-2 .list-item a::after {
+        content: none; }
+      .cp-dropdown.typ-2 .list-item a:hover {
+        color: #333333;
+        font-family: "Poppins Medium"; }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {

@@ -220,13 +220,25 @@
       line-height: 1.6rem;
       color: #000000;
       font-family: "Poppins Regular"; }
+    .cp-box.bottom-notify.typ-product-notify {
+      padding-top: 33px;
+      margin-top: -4rem;
+      flex-direction: column;
+      z-index: 1; }
+      .cp-box.bottom-notify.typ-product-notify .cp-cart-card {
+        background-color: transparent;
+        border: 0;
+        padding: 0; }
+        .cp-box.bottom-notify.typ-product-notify .cp-cart-card .prodcut-item {
+          align-items: center;
+          margin-bottom: 0; }
   .cp-box.bottom-notify-breakout {
     z-index: -1;
     position: relative;
     padding: 1.6rem 3.6rem 1.6rem 1.6rem;
     padding-top: 4rem;
     margin-top: -4rem;
-    border: 1px solid #FFC633;
+    border: 1px solid #5A245A;
     background: #5A245A;
     position: relative;
     border-radius: 1.2rem;

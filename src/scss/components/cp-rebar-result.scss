@@ -186,6 +186,10 @@
         }
 
         .wrapper {
+            .mb-24 {
+                margin-bottom: 2.4rem;
+            }
+
             .wrapper-img {
                 width: 100%;
                 @include border-radius (1.6rem);
@@ -241,6 +245,30 @@
 
         .result-wrap {
             background-color: #fff;
+            z-index: 2;
+            overflow: hidden;
+            position: relative;
+
+            .prod-head {
+                @include border-radius(0);
+
+                &.typ-stage-head {
+                    border-bottom: 1px solid #B1CBF1;
+
+                    .prod-item {
+                        .title {
+                            font-size: 1.4rem;
+                            color: $clr-base;
+                            text-transform: uppercase;
+                        }
+
+                        .dropdown {
+                            position: relative;
+                        }
+                    }
+                }
+            }
+
             .cont-wrap {
                 overflow-y: visible;
                 padding: 1.6rem 0;
@@ -250,7 +278,11 @@
                     font-family: $font-medium;
                     color: $clr-base;
                     margin-bottom: 2px;
-                    @media only screen and (max-width: $media-mobile) { font-size: 1.4rem;}
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.4rem;
+                    }
+
                     &.typ-head-blue {
                         color: #00398C;
                         font-family: $font-semiBold;
@@ -265,25 +297,39 @@
                     font-size: 1.2rem;
                     margin-bottom: 0;
                     color: #666666;
-                    @media only screen and (max-width: $media-mobile) { font-size: 1rem;}
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1rem;
+                    }
                 }
 
                 .price {
                     font-size: 1.6rem;
                     font-family: $font-semiBold;
                     color: $clr-base;
-                    @media only screen and (max-width: $media-mobile) { font-size: 1.4rem;}
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 .cp-table.typ-rebar {
                     .list-item {
                         padding: 1.2rem 1.6rem;
                         vertical-align: middle;
-                        @media only screen and (max-width: $media-mobile) {  width: auto;}
+
+                        @media only screen and (max-width: $media-mobile) {
+                            width: auto;
+                        }
                     }
-                    .fold-wrap{  padding: 0rem 1.6rem;}
+
+                    .fold-wrap {
+                        padding: 0rem 1.6rem;
+                    }
+
                     .view {
                         cursor: pointer;
+
                         td:last-child {
                             padding-right: 3.6rem;
                             position: relative;
