@@ -11,12 +11,13 @@
 
     .dot {
         width: 4.2rem;
-        height: 4.5rem;
+        height: 4.2rem;
         position: absolute;
         display: flex;
         align-items: center;
         cursor: pointer;
-
+        @media only screen and (max-width: $media-mobile) {     width: 2.4rem;
+            height: 2.4rem;}
         &:hover {
             .dropdown-content {
                 display: block;
@@ -35,17 +36,19 @@
 
         .white-dot {
             width: 1.6rem;
-            height: 2rem;
+            height: 1.6rem;
             background-color: #fff;
             @include border-radius (50%);
             outline:#FF000080 solid 6px;
             position: relative;
             display: block;
             margin: auto;
+            @media only screen and (max-width: $media-mobile) {     width: 0.8rem;
+                height: 0.8rem;}
             &::after {
                 content: '';
                 width: 3rem;
-                height: 3.4rem;
+                height: 3rem;
                 border: 1px solid #ffffff99;
                 @include border-radius (50%);
                 position: absolute;
@@ -54,6 +57,11 @@
                 top: 0;
                 bottom: 0;
                 margin: auto;
+                @media only screen and (max-width: $media-mobile) {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    left: -4px;
+                 }
             }
 
         }
@@ -63,6 +71,7 @@
             position: absolute;
             background-color: rgb(255, 255, 255);
             min-width: 200px;
+            max-width: 200px;
             left: 0px;
             top: 100%;
             z-index: 1;
@@ -71,22 +80,25 @@
             margin: auto;
             border-radius: 5px;
             padding: 12px;
-
+            @media only screen and (max-width: $media-mobile) { min-width: 155px; max-width: 155px; right: 0;  transform: translate(-44%, 0%);}
             .title {
                 font-family: $font-medium;
                 font-size: 1.4rem;
                 color: $clr-base;
+                @media only screen and (max-width: $media-mobile) { font-size: 1rem;}
             }
 
             .desc {
                 font-size: 1.6rem;
                 margin-bottom: 1.2rem;
+                @media only screen and (max-width: $media-mobile) { font-size: 1.2rem;}
             }
 
             .price {
                 font-size: 2.4rem;
                 font-family: $font-semiBold;
                 color: $clr-base;
+                @media only screen and (max-width: $media-mobile) { font-size: 1.6rem;}
             }
         }
     }
@@ -101,8 +113,8 @@
         top: 29%;
     }
     .pointer-3 {
-        left: 85%;
-        top: 75%;
+        left: 69%;
+        top: 68%;
     }
 }
 

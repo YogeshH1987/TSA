@@ -415,5 +415,8 @@
 
         }
     }
-
+&.typ-rate-exper{
+    @media only screen and (max-width: $media-mobile) {
+    margin: 2.4rem 0;}
+}
 }

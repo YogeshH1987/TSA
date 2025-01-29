@@ -6,6 +6,10 @@
 /*opacity- end*/
 .cp-project-planner .cont-wrap {
   padding-right: 10rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-project-planner .cont-wrap {
+      padding-right: 0;
+      margin-bottom: 1.6rem; } }
   .cp-project-planner .cont-wrap .sec-head {
     margin-bottom: 1rem; }
   .cp-project-planner .cont-wrap .desc {
@@ -23,6 +27,9 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
   margin-bottom: 1.2rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-project-planner .project-planner-wrap {
+      padding: 1.6rem; } }
   .cp-project-planner .project-planner-wrap.typ-bg-color {
     border-color: #FFD466;
     background-color: #FFF8E5; }
@@ -48,6 +55,12 @@
     -webkit-border-radius: 0.8rem;
     -moz-border-radius: 0.8rem;
     margin-top: 1.6rem; }
+    .cp-project-planner .project-planner-wrap .progress-bar-wrap .ellipsis {
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
     .cp-project-planner .project-planner-wrap .progress-bar-wrap .dates-wrap {
       display: flex;
       align-items: center;
@@ -107,6 +120,9 @@
   text-align: center;
   max-width: 217px;
   margin: auto; }
+  @media only screen and (max-width: 768px) {
+    .cp-project-planner .planner-cont-wrap {
+      font-size: 1.6rem; } }
   .cp-project-planner .planner-cont-wrap .title {
     font-size: 2.4rem;
     color: #333333;
@@ -115,5 +131,40 @@
   .cp-project-planner .planner-cont-wrap .desc {
     color: #333333;
     line-height: 2.8rem; }
+@media only screen and (max-width: 768px) {
+  .cp-project-planner .project-planner-main {
+    border: 1px solid #DEDEDE;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    padding: 1.6rem; }
+    .cp-project-planner .project-planner-main .planner-head-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      font-family: "Poppins Semibold";
+      color: #333333;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid #DEDEDE;
+      gap: 0.8rem; }
+      .cp-project-planner .project-planner-main .planner-head-title .icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: #FFF8E5;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFB800;
+        font-size: 1.6rem; }
+    .cp-project-planner .project-planner-main .desc {
+      color: #333333;
+      line-height: 2.4rem;
+      margin-bottom: 1.6rem; }
+    .cp-project-planner .project-planner-main .btn {
+      min-width: 100%; } }
 
 /*# sourceMappingURL=cp-project-planner.css.map */

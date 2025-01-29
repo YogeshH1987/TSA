@@ -959,6 +959,12 @@ p {
     .cm-mobile {
       display: block !important; } }
 
+.cm-mobile-flex {
+  display: none !important; }
+  @media only screen and (max-width: 768px) {
+    .cm-mobile-flex {
+      display: flex !important; } }
+
 .table-cell-mobile {
   display: none !important; }
   @media only screen and (max-width: 768px) {
@@ -1996,6 +2002,9 @@ p {
   @media only screen and (max-width: 768px) {
     .bs-sec.typ-order-confirmation-sec .order-4 {
       order: 4; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-mobile-white-bg {
+      background-color: #fff; } }
 
 .btn {
   display: inline-block;

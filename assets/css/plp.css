@@ -258,7 +258,7 @@
     justify-content: initial;
     align-items: inherit; }
     .lyt-grid.typ-col-wrap .grid-col {
-      padding: 1rem; }
+      padding: 0 1rem; }
   .lyt-grid.align-center {
     align-items: center; }
 

@@ -44,7 +44,7 @@
   .cp-request-recieve.typ-order-confirmation .desc {
     color: #333333;
     font-size: 1.4rem;
-    margin-bottom: 5px; }
+    margin-bottom: 8px; }
     .cp-request-recieve.typ-order-confirmation .desc .text-bold {
       font-family: "Poppins Semibold"; }
     .cp-request-recieve.typ-order-confirmation .desc.green {
@@ -53,6 +53,65 @@
     font-size: 2.4rem;
     font-family: "Poppins Semibold";
     color: #333333;
-    margin-bottom: 5px; }
+    margin-bottom: 8px; }
+    @media only screen and (max-width: 768px) {
+      .cp-request-recieve.typ-order-confirmation .price {
+        font-size: 2rem; } }
+  .cp-request-recieve.typ-empty-cart {
+    position: relative; }
+    .cp-request-recieve.typ-empty-cart .sec-head {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-bottom: 0; }
+      .cp-request-recieve.typ-empty-cart .sec-head .sec-title {
+        display: flex;
+        font-size: 2.8rem;
+        align-items: center;
+        gap: 1.2rem; }
+        .cp-request-recieve.typ-empty-cart .sec-head .sec-title .count {
+          background: #D2042D;
+          border-radius: 26px;
+          color: #FFFFFF;
+          font-size: 2rem;
+          font-family: "Poppins Medium";
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 28px; }
+    .cp-request-recieve.typ-empty-cart .icon {
+      width: 10rem;
+      height: 10rem;
+      background-color: #ECF2FB;
+      color: #8BB2E9;
+      font-size: 5.6rem;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%; }
+      @media only screen and (max-width: 768px) {
+        .cp-request-recieve.typ-empty-cart .icon {
+          width: 7rem;
+          height: 7rem;
+          font-size: 4.8rem; } }
+      @media only screen and (max-width: 768px) {
+        .cp-request-recieve.typ-empty-cart .icon.mt-65 {
+          margin-top: 6.5rem; } }
+      .cp-request-recieve.typ-empty-cart .icon.yellow-icon {
+        background-color: transparent;
+        color: #FFB800;
+        padding: 0;
+        font-size: 10rem; }
+    .cp-request-recieve.typ-empty-cart .btn-wrap {
+      margin-top: 1.6rem; }
+    .cp-request-recieve.typ-empty-cart .desc.red-text {
+      max-width: 30rem;
+      margin: auto;
+      color: #EE4400; }
 
 /*# sourceMappingURL=cp-request-recieve.css.map */

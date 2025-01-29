@@ -4,6 +4,9 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+@media only screen and (max-width: 768px) {
+  .cp-how-it-works.mtb24 {
+    margin: 2.4rem 0; } }
 .cp-how-it-works .sec-sub-title {
   color: #333333;
   font-size: 1.6rem;

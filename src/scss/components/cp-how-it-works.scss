@@ -2,6 +2,13 @@
 @import "../config/mixin";
 
 .cp-how-it-works {
+
+    &.mtb24 {
+        @media only screen and (max-width: $media-mobile) {
+            margin: 2.4rem 0;
+        }
+    }
+
     .sec-sub-title {
 
         color: $clr-base;

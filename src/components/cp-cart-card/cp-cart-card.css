@@ -289,5 +289,8 @@
       .cp-cart-card.typ-order-confirmation .delivery-info-sec .info-list .icon {
         font-size: 1.6rem;
         color: #3D7EDB; }
+  @media only screen and (max-width: 768px) {
+    .cp-cart-card.typ-rate-exper {
+      margin: 2.4rem 0; } }
 
 /*# sourceMappingURL=cp-cart-card.css.map */

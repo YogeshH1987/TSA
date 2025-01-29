@@ -137,7 +137,13 @@ p {
     display: block !important;
   }
 }
+.cm-mobile-flex {
+  display: none !important;
 
+  @media only screen and (max-width: $media-mobile) {
+    display: flex !important;
+  }
+}
 .table-cell-mobile {
   display: none !important;
 
@@ -168,6 +174,7 @@ p {
     display: none !important;
   }
 }
+
 .inline-desktop {
   display: inline-block !important;
 

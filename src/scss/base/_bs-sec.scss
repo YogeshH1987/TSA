@@ -1435,4 +1435,7 @@
       @media only screen and (max-width: $media-mobile) {order: 4;}
     }
   }
+  &.typ-mobile-white-bg{
+    @media only screen and (max-width: $media-mobile) { background-color: #fff;}
+  }
 }
