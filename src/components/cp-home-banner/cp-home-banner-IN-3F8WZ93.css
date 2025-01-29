@@ -1,0 +1,193 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-home-banner {
+  position: relative;
+  padding: 5.6rem 0;
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-home-banner {
+      padding: 2.4rem 0 1.2rem;
+      margin-bottom: 2.4rem;
+      background: #F3F4F6; } }
+  .cp-home-banner .cmp-title,
+  .cp-home-banner .banner-title {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    margin-bottom: 3.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-home-banner .cmp-title,
+      .cp-home-banner .banner-title {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 1.6rem; } }
+  .cp-home-banner .container {
+    position: relative; }
+  .cp-home-banner .feature {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-home-banner .feature {
+        width: 100%;
+        gap: 1.2rem; } }
+    .cp-home-banner .feature .feature-item {
+      width: 31%;
+      /* Adjust width to account for 20px gutter */
+      height: 11rem;
+      display: flex;
+      margin: 0;
+      overflow: hidden; }
+      .cp-home-banner .feature .feature-item:nth-child(1) {
+        order: 3; }
+      .cp-home-banner .feature .feature-item:nth-child(2) {
+        order: 8; }
+      .cp-home-banner .feature .feature-item:nth-child(3) {
+        order: 1; }
+      .cp-home-banner .feature .feature-item:nth-child(4) {
+        order: 4; }
+      .cp-home-banner .feature .feature-item:nth-child(5) {
+        order: 2; }
+      .cp-home-banner .feature .feature-item:nth-child(6) {
+        order: 6; }
+      .cp-home-banner .feature .feature-item:nth-child(7) {
+        order: 5; }
+      .cp-home-banner .feature .feature-item:nth-child(8) {
+        order: 7; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-banner .feature .feature-item {
+          width: 48%;
+          height: 9.2rem;
+          order: initial;
+          margin-bottom: 1.2rem; } }
+      .cp-home-banner .feature .feature-item.typ-resize {
+        height: 15.6rem;
+        width: 48%;
+        /* Larger items for bigger screens */ }
+        @media only screen and (max-width: 768px) {
+          .cp-home-banner .feature .feature-item.typ-resize {
+            height: 13rem;
+            width: 48%;
+            /* Adjust width and gutter for mobile */ } }
+        .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .cmp-image,
+        .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .f-img,
+        .cp-home-banner .feature .feature-item.typ-resize .feature-card .cmp-image,
+        .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+          max-width: 14.3rem;
+          max-height: 13.6rem; }
+          @media only screen and (max-width: 768px) {
+            .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .cmp-image,
+            .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .f-img,
+            .cp-home-banner .feature .feature-item.typ-resize .feature-card .cmp-image,
+            .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+              width: 8rem;
+              height: 8rem; } }
+    .cp-home-banner .feature .grid-sizer {
+      width: 31%;
+      height: 11rem;
+      display: none;
+      order: 0; }
+      @media only screen and (max-width: 1024px) {
+        .cp-home-banner .feature .grid-sizer {
+          width: 31%; } }
+      @media only screen and (max-width: 768px) {
+        .cp-home-banner .feature .grid-sizer {
+          display: block;
+          width: 48%;
+          height: 9.2rem; } }
+  .cp-home-banner .cmp-teaser,
+  .cp-home-banner .feature-card {
+    border: 1px solid #DEDEDE;
+    background: #FFFFFF;
+    padding: 1.2rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .cp-home-banner .cmp-teaser:hover, .cp-home-banner .cmp-teaser.active,
+    .cp-home-banner .feature-card:hover,
+    .cp-home-banner .feature-card.active {
+      box-shadow: 0px 8px 24px 0px #00000014;
+      border: 2px solid #DEDEDE; }
+    .cp-home-banner .cmp-teaser .cmp-teaser__pretitle,
+    .cp-home-banner .cmp-teaser .f-title,
+    .cp-home-banner .feature-card .cmp-teaser__pretitle,
+    .cp-home-banner .feature-card .f-title {
+      font-family: "Poppins Semibold";
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #333333;
+      text-transform: uppercase; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-banner .cmp-teaser .cmp-teaser__pretitle,
+        .cp-home-banner .cmp-teaser .f-title,
+        .cp-home-banner .feature-card .cmp-teaser__pretitle,
+        .cp-home-banner .feature-card .f-title {
+          font-size: 1.6rem;
+          line-height: 2.4rem; } }
+    .cp-home-banner .cmp-teaser .cmp-teaser__title,
+    .cp-home-banner .cmp-teaser .f-desc,
+    .cp-home-banner .feature-card .cmp-teaser__title,
+    .cp-home-banner .feature-card .f-desc {
+      font-family: "Poppins Regular";
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #666666;
+      margin-bottom: 0.6rem;
+      max-width: 65%; }
+    .cp-home-banner .cmp-teaser .cmp-teaser__description p,
+    .cp-home-banner .cmp-teaser .f-offer,
+    .cp-home-banner .feature-card .cmp-teaser__description p,
+    .cp-home-banner .feature-card .f-offer {
+      background: #D2042D;
+      padding: .2rem 0.8rem;
+      color: #FFFFFF;
+      font-family: "Poppins Medium";
+      font-size: 1rem;
+      line-height: 1.2rem;
+      border-radius: 2.6rem;
+      -webkit-border-radius: 2.6rem;
+      -moz-border-radius: 2.6rem;
+      display: inline-block; }
+    .cp-home-banner .cmp-teaser .cmp-image,
+    .cp-home-banner .cmp-teaser .f-img,
+    .cp-home-banner .feature-card .cmp-image,
+    .cp-home-banner .feature-card .f-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 9.4rem;
+      max-height: 9.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-banner .cmp-teaser .cmp-image,
+        .cp-home-banner .cmp-teaser .f-img,
+        .cp-home-banner .feature-card .cmp-image,
+        .cp-home-banner .feature-card .f-img {
+          width: 8rem;
+          height: 8rem; } }
+  .cp-home-banner .cmp-image__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .cp-home-banner.typ-cart-order-confirm {
+    margin-bottom: 0;
+    padding: 0; }
+    .cp-home-banner.typ-cart-order-confirm .feature {
+      width: 100%; }
+      .cp-home-banner.typ-cart-order-confirm .feature .feature-item {
+        height: 14rem; }
+
+/*# sourceMappingURL=cp-home-banner.css.map */

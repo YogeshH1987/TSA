@@ -1985,6 +1985,17 @@ p {
   @media only screen and (max-width: 768px) {
     .bs-sec.typ-calculator-result .container {
       padding: 0; } }
+  .bs-sec.border-bottom {
+    border-bottom: 1px solid #DEDEDE; }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-order-confirmation-sec .order-3 {
+      order: 3; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-order-confirmation-sec .order-2 {
+      order: 2; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-order-confirmation-sec .order-4 {
+      order: 4; } }
 
 .btn {
   display: inline-block;
@@ -2656,6 +2667,31 @@ p {
     .bs-radio.typ-payment input[type=radio]:checked + .custom-radio {
       border: 0;
       background-color: #fff; }
+  .bs-radio.typ-face-rating .custom-radio {
+    min-width: 40px;
+    max-width: 40px;
+    border: 0;
+    background: transparent;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .bs-radio.typ-face-rating .custom-radio {
+        min-width: 30px;
+        max-width: 30px; } }
+    .bs-radio.typ-face-rating .custom-radio .result {
+      display: none;
+      position: absolute;
+      bottom: -22px;
+      width: 100%;
+      white-space: nowrap;
+      font-size: 1.2rem;
+      color: #333333; }
+  .bs-radio.typ-face-rating input[type=radio]:checked + .custom-radio {
+    border: 0;
+    background-color: transparent;
+    color: #333333; }
+    .bs-radio.typ-face-rating input[type=radio]:checked + .custom-radio .result {
+      display: block;
+      color: #333333; }
 
 .bs-modal {
   position: relative;
@@ -3576,6 +3612,9 @@ p {
     height: auto; }
   .bs-swiper.p-0 {
     padding: 0; }
+  .bs-swiper.typ-common-p-m {
+    padding-bottom: 3.2rem;
+    margin-bottom: 3.4rem; }
 
 /* colors */
 /*font family*/

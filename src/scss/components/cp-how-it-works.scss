@@ -1,0 +1,102 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-how-it-works {
+    .sec-sub-title {
+
+        color: $clr-base;
+        font-size: 1.6rem;
+        font-family: $font-semiBold;
+    }
+
+    .how-it-works-list {
+        border: 1px solid #DEDEDE;
+        padding: 1.6rem;
+        position: relative;
+        @include border-radius(1.2rem);
+        color: $clr-base;
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+
+        .number {
+            @include border-radius(50%);
+            border: 1px solid #3D7EDB;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3D7EDB;
+            position: absolute;
+            left: -9px;
+            top: 16px;
+            background-color: #fff;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #DEDEDE;
+            margin: 2.4rem 0;
+            position: relative;
+
+            .text {
+                background: #D2042D;
+                @include border-radius(50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                font-size: 1rem;
+                z-index: 2;
+            }
+
+            &::after {
+                content: '';
+                background-color: #fff;
+                width: 4.4rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                height: 2.4rem;
+                margin: auto;
+                z-index: 1;
+            }
+        }
+    }
+
+    .info-wrap {
+        display: flex;
+        border: 1px solid #FFD466;
+        background: #FFF8E5;
+        justify-content: flex-start;
+        align-items: start;
+        padding: 0.8rem 1.6rem;
+        border-radius: 12px;
+        gap: 8px;
+        margin-bottom: 2.4rem;
+
+        .icon {
+            font-size: 2.4rem;
+            color: #A77800;
+        }
+
+        .desc {
+            font-size: 1.2rem;
+            font-family: $font-medium;
+            color: #A77800;
+            margin-bottom: 0;
+        }
+    }
+}

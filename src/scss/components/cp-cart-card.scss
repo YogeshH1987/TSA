@@ -212,11 +212,16 @@
         padding: 1.6rem 1.2rem;
         @include border-radius(0);
         border-bottom: 1px solid #DEDEDE;
-        &:last-child{border: 0;}
+
+        &:last-child {
+            border: 0;
+        }
+
         .prodcut-item {
             display: flex;
             gap: 1rem;
             margin-bottom: 1.2rem;
+
             .product-img {
                 width: 5.6rem;
                 height: 5.6rem;
@@ -242,7 +247,173 @@
                 margin-left: auto;
                 color: $clr-base;
             }
-            .link{ font-size: 1.4rem; text-decoration: underline;   margin-left: auto; font-family: $font-medium;}
+
+            .link {
+                font-size: 1.4rem;
+                text-decoration: underline;
+                margin-left: auto;
+                font-family: $font-medium;
+            }
         }
     }
+
+    &.typ-order-confirmation {
+        border: 1px solid #DEDEDE;
+        padding: 1.6rem 2.4rem;
+        @include border-radius(1.6rem);
+        z-index: 2;
+        position: relative;
+        @media only screen and (max-width: $media-mobile) { padding: 1.2rem }
+        .head-title {
+            font-size: 2.4rem;
+            font-family: $font-semiBold;
+            border-bottom: 1px solid $clr-border;
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.2rem;
+            color: $clr-base;
+            @media only screen and (max-width: $media-mobile) {  font-size: 1.6rem; }
+            &.typ-2 {
+                font-size: 1.4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media only screen and (max-width: $media-mobile) {   font-family: $font-medium;}
+            }
+
+            .link {
+                text-decoration: underline;
+            }
+        }
+
+        .desc {
+            font-size: 1.6rem;
+            color: $clr-base;
+            margin-bottom: 1.6rem;
+            line-height: 2.8rem;
+            @media only screen and (max-width: $media-mobile) {    font-size: 1.4rem;  line-height: 2rem;}
+        }
+
+        .radio-wrap {
+            gap: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: $media-mobile) {gap: 0rem; }
+        }
+
+        .btn-wrap {
+            margin-top: 2.4rem;
+        }
+
+        .prodcut-item {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+            border-bottom: 1px solid #DEDEDE;
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            .product-img-wrap {
+                position: relative;
+                height: 80px;
+
+                .product-img {
+                    position: absolute;
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid #DEDEDE;
+                    background-color: #fff;
+                    @include border-radius(1.2rem);
+                    overflow: hidden;
+                    top: 0;
+                    left: 16px;
+                    z-index: 3;
+
+                    &:nth-child(2) {
+                        left: -1px;
+                        top: 0px;
+                        scale: 0.9;
+                        z-index: 2;
+                    }
+
+                    &:nth-child(3) {
+                        left: -16px;
+                        top: 0px;
+                        scale: 0.8;
+                        z-index: 1;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+
+                }
+            }
+
+            .product-desc {
+                padding-left: 100px;
+
+                .title,
+                .price {
+                    font-size: 1.4rem;
+                    color: $clr-base;
+                    font-family: $font-semiBold;
+                }
+
+                .desc {
+                    margin-bottom: 0;
+                    font-size: 1.4rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                .price {
+                    margin-top: 5px;
+                }
+            }
+
+            &.typ-single {
+                .product-img {
+                    left: 0;
+                }
+
+                .product-desc {
+                    padding-left: 85px;
+                }
+
+            }
+        }
+
+        .delivery-info-sec {
+            .bold-text {
+                font-family: $font-medium;
+                color: $clr-base;
+            }
+
+            .info-list {
+
+                color: #666666;
+                margin-bottom: 2px;
+                display: flex;
+                align-items: start;
+                gap: 8px;
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                .icon {
+                    font-size: 1.6rem;
+                    color: #3D7EDB;
+                }
+            }
+
+        }
+    }
+
 }

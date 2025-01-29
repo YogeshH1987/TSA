@@ -1,0 +1,40 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-bottom-sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  padding: 1rem 0;
+  z-index: 8;
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    .cp-bottom-sticky {
+      display: block; } }
+  .cp-bottom-sticky .bottom-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; }
+  .cp-bottom-sticky .nav-list-item {
+    font-size: 1rem;
+    color: #666;
+    font-family: "Poppins Semibold";
+    line-height: 1.2rem;
+    text-align: center; }
+    .cp-bottom-sticky .nav-list-item .nav-link {
+      color: #666; }
+    .cp-bottom-sticky .nav-list-item:hover .nav-link {
+      color: #3D7EDB; }
+  .cp-bottom-sticky .icon {
+    display: block;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem; }
+
+/*# sourceMappingURL=cp-bottom-sticky.css.map */

@@ -1,0 +1,100 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-offers {
+  display: flex; }
+  .cp-offers .lft {
+    font-family: "Poppins Medium";
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    border-radius: 1.2rem;
+    padding: 0.5rem 1.2rem; }
+    .cp-offers .lft.typ-blue {
+      background-color: #3D7EDB; }
+    .cp-offers .lft.typ-red {
+      background-color: #DB3657; }
+    .cp-offers .lft.typ-green {
+      background-color: #00A441; }
+    .cp-offers .lft.typ-yellow {
+      background-color: #FFB800; }
+  .cp-offers .rht {
+    border-radius: 1.2rem;
+    padding: 1.6rem 1.2rem;
+    width: 100%; }
+    .cp-offers .rht .title {
+      font-family: "Poppins Semibold";
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #333333;
+      margin-bottom: 4px; }
+    .cp-offers .rht .desc {
+      font-family: "Poppins Regular";
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #666666;
+      margin-bottom: 1rem;
+      max-width: 85%; }
+    .cp-offers .rht .offer-valid {
+      font-family: "Poppins Medium";
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #333333; }
+    .cp-offers .rht.typ-blue-border {
+      border: 1px solid #3D7EDB; }
+    .cp-offers .rht.typ-red-border {
+      border: 1px solid #DB3657; }
+    .cp-offers .rht.typ-green-border {
+      border: 1px solid #00A441; }
+    .cp-offers .rht.typ-yellow-border {
+      border: 1px solid #FFB800; }
+  .cp-offers.typ-disable {
+    cursor: none; }
+    .cp-offers.typ-disable .lft {
+      background: #999999; }
+    .cp-offers.typ-disable .rht {
+      border: 1px solid #DEDEDE;
+      background-color: #F3F4F6; }
+      .cp-offers.typ-disable .rht .title,
+      .cp-offers.typ-disable .rht .desc {
+        color: #808080; }
+      .cp-offers.typ-disable .rht .offer-valid {
+        color: #333333; }
+
+.offers-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 3.6rem; }
+  .offers-list.typ-sub-menu {
+    flex-direction: row; }
+    @media only screen and (max-width: 768px) {
+      .offers-list.typ-sub-menu {
+        display: none;
+        position: fixed;
+        top: 100px;
+        background: #fff;
+        left: 10px;
+        z-index: 5;
+        overflow: scroll;
+        height: calc(100vh - 8rem); } }
+    .offers-list.typ-sub-menu .offers-item {
+      width: 34.3rem; }
+    @media only screen and (max-width: 768px) {
+      .offers-list.typ-sub-menu .cp-offers {
+        margin-bottom: 1.6rem; } }
+    .offers-list.typ-sub-menu .cp-offers .rht .title {
+      padding: 0; }
+      .offers-list.typ-sub-menu .cp-offers .rht .title:after {
+        display: none; }
+
+/*# sourceMappingURL=cp-offers.css.map */

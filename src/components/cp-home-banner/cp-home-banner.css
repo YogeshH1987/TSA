@@ -178,16 +178,16 @@
         .cp-home-banner .feature-card .f-img {
           width: 8rem;
           height: 8rem; } }
+  .cp-home-banner.typ-cart-order-confirm {
+    padding: 0;
+    margin-bottom: 0; }
+    .cp-home-banner.typ-cart-order-confirm .feature {
+      width: 100%; }
+      .cp-home-banner.typ-cart-order-confirm .feature .feature-item {
+        height: 14.5rem; }
   .cp-home-banner .cmp-image__image {
     width: 100%;
     height: 100%;
     object-fit: contain; }
-  .cp-home-banner.typ-cart-order-confirm {
-    margin-bottom: 0;
-    padding: 0; }
-    .cp-home-banner.typ-cart-order-confirm .feature {
-      width: 100%; }
-      .cp-home-banner.typ-cart-order-confirm .feature .feature-item {
-        height: 14rem; }
 
 /*# sourceMappingURL=cp-home-banner.css.map */

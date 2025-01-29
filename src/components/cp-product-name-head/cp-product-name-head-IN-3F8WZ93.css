@@ -1,0 +1,80 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head {
+    display: none; } }
+.cp-product-name-head .product-brand {
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background-color: #fffbf3;
+  border: 1px solid #ffe399;
+  border-radius: 1.6rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-product-name-head .product-brand {
+      border-top: 1px solid #ffe399;
+      border-bottom: 1px solid #ffe399;
+      border-radius: 0; } }
+  .cp-product-name-head .product-brand .img-wrap {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    border: 1px solid #DEDEDE; }
+    .cp-product-name-head .product-brand .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .cp-product-name-head .product-brand .product-detail .brand-name {
+    font-family: "Poppins Regular";
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+  .cp-product-name-head .product-brand .product-detail .product-name {
+    font-family: "Poppins Semibold";
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #333333; }
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head.typ-customer-review, .cp-product-name-head.typ-product-details, .cp-product-name-head.typ-review-stars {
+    display: block; } }
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head .typ-review-stars {
+    margin-inline: -1.6rem; } }
+.cp-product-name-head.typ-product-details {
+  border-radius: 1.6rem; }
+  .cp-product-name-head.typ-product-details .product-brand {
+    align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .cp-product-name-head.typ-product-details .product-brand {
+        border-radius: 1.6rem; } }
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head.typ-customer-review {
+    margin-inline: -1.6rem;
+    border-top: 1px solid #ffe399; } }
+.cp-product-name-head.typ-customer-review .review-wrap {
+  border: 1px solid #DEDEDE;
+  border-radius: 1.6rem;
+  margin-bottom: 3.2rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .cp-product-name-head.typ-customer-review .review-wrap {
+      border-width: 0;
+      margin-bottom: 0; } }
+  .cp-product-name-head.typ-customer-review .review-wrap .product-brand {
+    border: 0;
+    border-bottom: 1px solid #ffe399;
+    border-radius: 0; }
+.cp-product-name-head.typ-structura-pdp {
+  margin-bottom: 1.6rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-product-name-head.typ-structura-pdp {
+      margin: 0 -1.6rem; } }
+  .cp-product-name-head.typ-structura-pdp .img-wrap {
+    background: #FFFFFF; }
+
+/*# sourceMappingURL=cp-product-name-head.css.map */

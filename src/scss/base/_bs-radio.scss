@@ -302,6 +302,7 @@
             line-height: 2.8rem;
             font-family: $font-medium;
             padding: 1.6rem;
+
             @media only screen and (max-width: $media-sm) {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
@@ -317,7 +318,8 @@
     &.typ-build-cost {
         .custom-radio {
             position: relative;
-            &:before{
+
+            &:before {
                 font-size: 3.3rem;
                 content: "\e944";
                 font-family: "icomoon" !important;
@@ -329,8 +331,10 @@
                 transform: translateX(-50%);
                 @include border-radius(50%);
             }
+
             padding: 3.2rem 1.6rem;
-            @media only screen and (max-width: $media-mobile){
+
+            @media only screen and (max-width: $media-mobile) {
                 padding: 2.4rem 1rem 2rem;
             }
 
@@ -395,15 +399,18 @@
                     gap: 1.6rem;
                     flex-direction: column;
                     text-align: left;
-                    @media only screen and (max-width: $media-mobile){
+
+                    @media only screen and (max-width: $media-mobile) {
                         align-items: center;
                     }
-                    .title{
+
+                    .title {
                         color: $clr-para;
                         font-size: 1.2rem;
                         line-height: 1.6rem;
                         margin-bottom: 0.2rem;
-                        @media only screen and (max-width: $media-mobile){
+
+                        @media only screen and (max-width: $media-mobile) {
                             text-align: center;
                         }
                     }
@@ -422,55 +429,63 @@
                         }
                     }
                 }
-            }            
+            }
         }
-        input[type=radio]:checked{
-            & + .custom-radio{
-                &:before{
+
+        input[type=radio]:checked {
+            &+.custom-radio {
+                &:before {
                     content: "\e91a";
                     color: #00A441;
                 }
             }
         }
-        &.typ-yellow{
-            input[type=radio]:checked{
-                & + .custom-radio{
+
+        &.typ-yellow {
+            input[type=radio]:checked {
+                &+.custom-radio {
                     background: #FFF8E5;
                     border: 4px solid #FFB800;
                 }
             }
         }
-        &.typ-red{
-            .material-wrap{
-                .img-wrap{
-                    background: #E46881;         
+
+        &.typ-red {
+            .material-wrap {
+                .img-wrap {
+                    background: #E46881;
                 }
-                .home-typ{
-                    &:after{
+
+                .home-typ {
+                    &:after {
                         background: #E46881;
                     }
                 }
             }
-            input[type=radio]:checked{
-                & + .custom-radio{
+
+            input[type=radio]:checked {
+                &+.custom-radio {
                     background: #FFF8E5;
                     border: 4px solid #E46881;
                 }
-            } 
+            }
         }
-        &.typ-orange{
-            .material-wrap{
-                .img-wrap{
-                    background: #F16933;         
+
+        &.typ-orange {
+            .material-wrap {
+                .img-wrap {
+                    background: #F16933;
                 }
-                .home-typ{
-                    &:after{
+
+                .home-typ {
+                    &:after {
                         background: #F16933;
                     }
                 }
             }
-            input[type=radio]:checked{
-                & + .custom-radio{
+
+            input[type=radio]:checked {
+                &+.custom-radio {
                     background: #FFF8E5;
                     border: 4px solid #F16933;
                 }
@@ -581,12 +596,17 @@
     &.typ-shipping-radio {
         width: 50%;
         padding: 0 1rem;
-        @media only screen and (max-width: $media-mobile) { width:100%; padding: 0;}
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+            padding: 0;
+        }
+
         .custom-radio {
             position: relative;
             padding: 1.6rem 1.6rem 1.6rem 4.6rem;
 
-       
+
         }
 
         .checkmark {
@@ -641,7 +661,11 @@
     &.typ-delivery-cart {
         width: 19%;
         margin-bottom: 0;
-        @media only screen and (max-width: $media-mobile) {    width: 31.5%;}
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 31.5%;
+        }
+
         .custom-radio {
             min-width: 100%;
         }
@@ -651,7 +675,11 @@
         width: 18%;
         text-align: center;
         margin-bottom: 0;
-        @media only screen and (max-width: $media-mobile) {  width: 31.5%;}
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 31.5%;
+        }
+
         .custom-radio {
             position: relative;
             padding: 0;
@@ -731,14 +759,57 @@
             }
         }
     }
-    &.typ-payment{
+
+    &.typ-payment {
         width: 100%;
         padding: 0;
         border-bottom: 1px solid #ccc;
         margin-bottom: 0;
-        &:last-child{border: none;}
-        .custom-radio{border: 0;  align-items: flex-start;  padding: 1.2rem 1.6rem 1.2rem 4.6rem;}
-        input[type=radio]:checked+.custom-radio {border: 0; background-color: #fff;}
+
+        &:last-child {
+            border: none;
+        }
+
+        .custom-radio {
+            border: 0;
+            align-items: flex-start;
+            padding: 1.2rem 1.6rem 1.2rem 4.6rem;
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            border: 0;
+            background-color: #fff;
+        }
+    }
+
+    &.typ-face-rating {
+        .custom-radio {
+            min-width: 40px;
+            max-width: 40px;
+            border: 0;
+            background: transparent;
+            position: relative;
+            @media only screen and (max-width: $media-mobile) {      min-width: 30px;    max-width: 30px;}
+            .result {
+                display: none;
+                position: absolute;
+                bottom: -22px;
+                width: 100%;
+                white-space: nowrap;
+                font-size: 1.2rem;
+                color: $clr-base;
+            }
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            border: 0;
+            background-color: transparent;
+            color: $clr-base;
+            .result {
+                display: block;
+                color: $clr-base;
+            }
+        }
     }
 
 }

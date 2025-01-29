@@ -1,0 +1,48 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-question-answer {
+  position: relative; }
+  .cp-question-answer .question-title {
+    font-family: "Poppins Semibold";
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-question-answer .question-title {
+        display: none; } }
+    .cp-question-answer .question-title .question-count {
+      padding-inline: 1.2rem;
+      background-color: #D2042D;
+      color: #FFFFFF;
+      border-radius: 2.6rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-question-answer .question-title .question-count {
+          display: block;
+          background: none;
+          color: #666666;
+          font-family: "Poppins Regular";
+          font-size: 1.2rem;
+          line-height: 1.6rem; } }
+  .cp-question-answer .sort-title {
+    font-family: "Poppins Medium";
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-question-answer .sort-title {
+        margin-top: 2.4rem; } }
+  .cp-question-answer .btn-wrap {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .cp-question-answer .btn-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem; } }
+
+/*# sourceMappingURL=cp-question-answer.css.map */

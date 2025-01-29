@@ -21,8 +21,10 @@
       }
     }
   }
-  &.typ-col-2-no-wrap{
+
+  &.typ-col-2-no-wrap {
     flex-direction: row;
+
     .grid-col {
       width: 50%;
     }
@@ -37,17 +39,21 @@
       }
     }
   }
+
   &.typ-col-3-no-wrap {
     @media only screen and (max-width: $media-mobile) {
       flex-direction: row;
       gap: 0.3rem;
     }
+
     .grid-col {
       width: 33%;
     }
   }
+
   &.typ-col-4 {
     flex-wrap: wrap;
+
     .grid-col {
       width: 22.5%;
 
@@ -56,11 +62,14 @@
       }
     }
   }
+
   &.typ-col-4-mobile-2 {
     flex-wrap: wrap;
     flex-direction: row;
+
     .grid-col {
       width: 22.5%;
+
       @media only screen and (max-width: $media-mobile) {
         width: 48.2%;
       }
@@ -197,11 +206,13 @@
       }
     }
   }
+
   &.typ-7 {
     @media only screen and (max-width: $media-mobile) {
       flex-direction: column-reverse;
     }
-    .grid-col {      
+
+    .grid-col {
       &:first-child {
         width: 66.2%;
 
@@ -219,6 +230,7 @@
       }
     }
   }
+
   &.typ-about-brand {
     .grid-col {
       @media only screen and (max-width: $media-mobile) {
@@ -387,4 +399,33 @@
     }
   }
 
+
+  .grid-col-w-65 {
+    width: 65% !important;
+    @media only screen and (max-width: $media-mobile) { width: 100% !important;}
+  }
+  .grid-col-w-60 {
+    width: 60% !important;
+    @media only screen and (max-width: $media-mobile) { width: 100% !important;}
+  }
+  .grid-col-w-40 {
+    width: 40% !important;
+    @media only screen and (max-width: $media-mobile) { width: 100% !important;}
+  }
+  .grid-col-w-35 {
+    width: 35% !important;
+    @media only screen and (max-width: $media-mobile) { width: 100% !important;}
+  }
+
+  &.typ-col-wrap {
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 -1rem;
+    justify-content: initial;
+    align-items: inherit;
+    .grid-col {
+      padding: 1rem;
+    }
+  }
+&.align-center{align-items: center;}
 }

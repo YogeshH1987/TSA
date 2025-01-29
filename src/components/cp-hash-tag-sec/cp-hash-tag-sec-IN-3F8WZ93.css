@@ -1,0 +1,36 @@
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+/* colors */
+/*font family*/
+/* breakpoints */
+.cp-hash-tag-sec .brand-title {
+  font-size: 3.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333; }
+  @media only screen and (max-width: 768px) {
+    .cp-hash-tag-sec .brand-title {
+      font-size: 2.8rem; } }
+.cp-hash-tag-sec .cont-wrap {
+  margin-bottom: 2.4rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-hash-tag-sec .cont-wrap {
+      margin-bottom: 2.4rem; } }
+  .cp-hash-tag-sec .cont-wrap .hash-tag-text {
+    color: #3D7EDB;
+    font-size: 1.6rem;
+    font-family: "Poppins Medium";
+    padding-bottom: 0.8rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-hash-tag-sec .cont-wrap .hash-tag-text {
+        padding-bottom: 0.8rem; } }
+  .cp-hash-tag-sec .cont-wrap .desc {
+    font-size: 1.4rem;
+    color: #666666;
+    font-family: "Poppins Regular";
+    line-height: 20px; }
+    @media only screen and (max-width: 768px) {
+      .cp-hash-tag-sec .cont-wrap .desc {
+        font-size: 1.4rem; } }
+
+/*# sourceMappingURL=cp-hash-tag-sec.css.map */

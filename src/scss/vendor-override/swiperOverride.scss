@@ -128,8 +128,9 @@
     }
   }
 
-  &.typ-blog-nav{
+  &.typ-blog-nav {
     padding-bottom: 8rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
       padding-bottom: 0;
@@ -144,6 +145,7 @@
       }
     }
   }
+
   &.typ-home-testimonial {
     padding-bottom: 0;
 
@@ -162,8 +164,9 @@
     }
   }
 
-  &.typ-architects{
+  &.typ-architects {
     padding-bottom: 9.6rem;
+
     @media only screen and (max-width: $media-mobile) {
       padding-bottom: 0;
     }
@@ -484,6 +487,7 @@
 
   &.typ-rebar-stories {
     padding-bottom: 8rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
       padding-bottom: 0;
@@ -741,6 +745,7 @@
       width: 19rem;
     }
   }
+
   &.typ-why-tiscon-nav,
   &.typ-why-tiscon {
 
@@ -754,8 +759,10 @@
       }
     }
   }
-  &.typ-why-tiscon-nav{
+
+  &.typ-why-tiscon-nav {
     padding-bottom: 8rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
       padding-bottom: 0;
@@ -780,16 +787,19 @@
   &.right-space {
     margin-right: -2rem;
   }
-  &.typ-why-pravesh{
+
+  &.typ-why-pravesh {
     padding-bottom: 2.2rem;
-    .swiper-slide{
+
+    .swiper-slide {
       width: 23.0rem;
-    border: 1px solid #dedede;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-right: 2rem;
+      border: 1px solid #dedede;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-right: 2rem;
     }
   }
+
   &.artical-list-wrap {
     margin-bottom: 0;
     padding-bottom: 2.4rem;
@@ -864,6 +874,7 @@
 
   &.typ-thumb-architect-pdp {
     margin-top: 2.1rem;
+
     .swiper-slide {
       height: 8.3rem;
       border-radius: 8px;
@@ -871,16 +882,33 @@
       overflow: hidden;
 
       align-items: initial;
-      @media only screen and (max-width: $media-mobile) {  height:4.7rem;}
-      img{
+
+      @media only screen and (max-width: $media-mobile) {
+        height: 4.7rem;
+      }
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
   }
-  &.car-shed-plp{
-    .swiper-slide{    height: auto;}
+
+  &.car-shed-plp {
+    .swiper-slide {
+      height: auto;
+    }
   }
-  &.p-0{padding: 0;}
+
+  &.p-0 {
+    padding: 0;
+  }
+
+  &.typ-common-p-m {
+
+    padding-bottom: 3.2rem;
+    margin-bottom: 3.4rem;
+
+  }
 }

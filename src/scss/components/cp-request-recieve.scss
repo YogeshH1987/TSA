@@ -13,6 +13,7 @@
         font-size: 10rem;
         color: #00A441;
         margin-bottom: 0.4rem;
+
         @media only screen and (max-width: $media-mobile) {
             width: 6rem;
             height: 6rem;
@@ -25,7 +26,10 @@
         font-size: 3.6rem;
         font-family: $font-semiBold;
         margin-bottom: 0.4rem;
-        @media only screen and (max-width: $media-mobile) { font-size: 2.4rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2.4rem;
+        }
     }
 
     .ref-no {
@@ -33,7 +37,10 @@
         font-family: $font-medium;
         font-size: 2rem;
         margin-bottom: 0.4rem;
-        @media only screen and (max-width: $media-mobile) { font-size: 1.6rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.6rem;
+        }
     }
 
     .desc {
@@ -41,5 +48,28 @@
         font-size: 1.6rem;
         font-size: 1.6rem;
         text-align: center;
+    }
+
+    &.typ-order-confirmation {
+        .desc {
+            color: $clr-base;
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+
+            .text-bold {
+                font-family: $font-semiBold;
+            }
+
+            &.green {
+                color: #00A441;
+            }
+        }
+
+        .price {
+            font-size: 2.4rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+            margin-bottom: 5px;
+        }
     }
 }

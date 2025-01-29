@@ -1,0 +1,44 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-breadcrumb {
+  display: flex;
+  padding: 1.6rem 0; }
+  @media only screen and (max-width: 991px) {
+    .cp-breadcrumb {
+      padding-top: 1.2rem;
+      padding-bottom: 0.8rem; } }
+  .cp-breadcrumb li + li::before {
+    content: '/';
+    font-size: 1.6rem;
+    padding-inline: 0.4rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-breadcrumb li + li::before {
+        font-size: 1.2rem; } }
+  .cp-breadcrumb .breadcrumb-items .breadcrumb-link {
+    font-family: "Poppins Regular";
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #666666; }
+    @media only screen and (max-width: 991px) {
+      .cp-breadcrumb .breadcrumb-items .breadcrumb-link {
+        font-size: 1.2rem;
+        line-height: 1.6rem; } }
+    .cp-breadcrumb .breadcrumb-items .breadcrumb-link.active {
+      color: #333333; }
+  @media only screen and (max-width: 768px) {
+    .cp-breadcrumb.typ-architectural-plans {
+      bottom: -40px;
+      position: absolute;
+      z-index: 1; } }
+  @media only screen and (max-width: 768px) {
+    .cp-breadcrumb.typ-architectural-plans .breadcrumb-link {
+      color: #DEDEDE; } }
+  @media only screen and (max-width: 768px) {
+    .cp-breadcrumb.typ-architectural-plans .breadcrumb-link.active {
+      color: #fff; } }
+
+/*# sourceMappingURL=cp-breadcrumb.css.map */

@@ -231,6 +231,36 @@
       @media only screen and (max-width: 768px) {
         .lyt-grid.typ-col-5 .grid-col {
           width: 100%; } }
+  .lyt-grid .grid-col-w-65 {
+    width: 65% !important; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid .grid-col-w-65 {
+        width: 100% !important; } }
+  .lyt-grid .grid-col-w-60 {
+    width: 60% !important; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid .grid-col-w-60 {
+        width: 100% !important; } }
+  .lyt-grid .grid-col-w-40 {
+    width: 40% !important; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid .grid-col-w-40 {
+        width: 100% !important; } }
+  .lyt-grid .grid-col-w-35 {
+    width: 35% !important; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid .grid-col-w-35 {
+        width: 100% !important; } }
+  .lyt-grid.typ-col-wrap {
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 -1rem;
+    justify-content: initial;
+    align-items: inherit; }
+    .lyt-grid.typ-col-wrap .grid-col {
+      padding: 1rem; }
+  .lyt-grid.align-center {
+    align-items: center; }
 
 /* colors */
 /*font family*/
