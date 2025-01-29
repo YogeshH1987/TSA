@@ -154,8 +154,8 @@ TSA.RebarsCalculator = {
             const currentLimits = isSqFt ? limits.sqFt : limits.sqMts;
             desc.text(
                 `Enter area between ${currentLimits.min.toFixed(2)} ${
-                    isSqFt ? 'sq ft' : 'sq mts'
-                } - ${currentLimits.max.toFixed(2)} ${isSqFt ? 'sq ft' : 'sq mts'}`
+                    isSqFt ? 'sq mts' : 'sq ft'
+                } - ${currentLimits.max.toFixed(2)} ${isSqFt ? 'sq mts' : 'sq ft'}`
             );
     
             validateArea(); // Validate after the toggle switch is changed
