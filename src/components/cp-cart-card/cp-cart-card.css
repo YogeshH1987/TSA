@@ -193,12 +193,14 @@
         font-size: 1.4rem;
         display: flex;
         align-items: center;
-        justify-content: space-between; }
+        justify-content: space-between;
+        font-family: "Poppins Medium"; }
         @media only screen and (max-width: 768px) {
           .cp-cart-card.typ-order-confirmation .head-title.typ-2 {
             font-family: "Poppins Medium"; } }
       .cp-cart-card.typ-order-confirmation .head-title .link {
-        text-decoration: underline; }
+        text-decoration: underline;
+        white-space: nowrap; }
     .cp-cart-card.typ-order-confirmation .desc {
       font-size: 1.6rem;
       color: #333333;

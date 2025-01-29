@@ -277,11 +277,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                font-family: $font-medium;
                 @media only screen and (max-width: $media-mobile) {   font-family: $font-medium;}
             }
 
             .link {
-                text-decoration: underline;
+                text-decoration: underline;white-space: nowrap;
             }
         }
 
