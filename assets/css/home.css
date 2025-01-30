@@ -285,14 +285,21 @@
     @media only screen and (max-width: 768px) {
       .lyt-grid .grid-col-w-35 {
         width: 100% !important; } }
+  .lyt-grid .grid-col-w-100 {
+    width: 100% !important; }
+  .lyt-grid .grid-col-w-50 {
+    width: 49% !important; }
   .lyt-grid.typ-col-wrap {
     flex-wrap: wrap;
     gap: 0;
     margin: 0 -1rem;
     justify-content: initial;
-    align-items: inherit; }
+    align-items: inherit;
+    flex-direction: initial; }
     .lyt-grid.typ-col-wrap .grid-col {
       padding: 0 1rem; }
+  .lyt-grid.flex-dir-initial {
+    flex-direction: initial; }
   .lyt-grid.align-center {
     align-items: center; }
 

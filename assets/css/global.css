@@ -1201,6 +1201,8 @@ p {
       .bs-sec .sec-sub-title.typ-tiscon-qunty {
         font-size: 2.4rem;
         padding-left: 1rem; } }
+    .bs-sec .sec-sub-title.typ-2 {
+      font-size: 1.6rem; }
   .bs-sec .sec-desc {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -2701,6 +2703,11 @@ p {
     .bs-radio.typ-face-rating input[type=radio]:checked + .custom-radio .result {
       display: block;
       color: #333333; }
+  .bs-radio.typ-shipping-edit {
+    margin-bottom: 2.4rem; }
+    .bs-radio.typ-shipping-edit .custom-radio {
+      min-width: 14.9rem;
+      padding: 1.2rem 0; }
 
 .bs-modal {
   position: relative;

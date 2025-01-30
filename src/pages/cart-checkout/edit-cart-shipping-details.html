@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
     <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
 </head>
 
 <body> <!-- Header Start -->
@@ -142,111 +144,160 @@
                                         <span class="icon-edit-detail icon-edit"></span>
                                     </div>
                                     <div class="shipping-content-wrap">
-
-                                        <div class="radio-wrap typ-shipping">
-                                            <div class="bs-radio typ-shipping-radio">
-                                                <input id="role1" name="role" type="radio" checked>
-                                                <label for="role1" class="custom-radio">
-                                                    <span class="checkmark"></span>
-                                                    <ul class="shipping-detail">
-                                                        <li class="detail-list tag">Construction site</li>
-                                                        <li class="detail-list title">
-                                                            Kashika Sharma
-                                                        </li>
-                                                        <li class="detail-list">+91 9660810783</li>
-                                                        <li class="detail-list">507 Ashish Satyam Apartments,
-                                                            Mansarovar, Jaipur - 302020 </li>
-                                                        <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
-                                                        <li class="detail-list"><a href="#" class="link">Edit
-                                                                address</a> <a href="#" class="link">Add my GST
-                                                                number</a>
-                                                        </li>
-                                                    </ul>
-                                                </label>
+                                        <div class="cp-form typ-cart-shipping">
+                                            <div class="lyt-grid typ-col-2">
+                                                <div class="grid-col">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">First Name</label>
+                                                        <input type="text" id="firstName"
+                                                            class="form-control validate-name" value="Ajay"
+                                                            placeholder="" required="">
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-col">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">Last Name</label>
+                                                        <input type="text" id="lastName"
+                                                            class="form-control validate-name" value="Malhotra"
+                                                            placeholder="" required="">
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="bs-radio typ-shipping-radio">
-                                                <input id="role2" name="role" type="radio">
-                                                <label for="role2" class="custom-radio">
-                                                    <span class="checkmark"></span>
-                                                    <ul class="shipping-detail">
-                                                        <li class="detail-list tag">Construction site</li>
-                                                        <li class="detail-list title">
-                                                            Kashika Sharma
-                                                        </li>
-                                                        <li class="detail-list">+91 9660810783</li>
-                                                        <li class="detail-list">507 Ashish Satyam Apartments,
-                                                            Mansarovar, Jaipur - 302020 </li>
-                                                        <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
-                                                        <li class="detail-list"><a href="#" class="link">Edit
-                                                                address</a> <a href="#" class="link">Edit address</a>
-                                                        </li>
-                                                    </ul>
-                                                </label>
+                                            <div class="lyt-grid typ-col-2">
+                                                <div class="grid-col">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">Phone number</label>
+                                                        <div class="form-input-wrap">
+                                                            <input type="text" id="phone-number"
+                                                                class="form-control validate-mobile icon-padding"
+                                                                value="+91 9820098200" placeholder="" disabled
+                                                                required="">
+                                                            <span class="icon-check"></span>
+                                                        </div>
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-col">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">Email ID</label>
+                                                        <input type="email" id="emailId"
+                                                            class="form-control validate-name" value="ajay@gmail.com"
+                                                            placeholder="" required="">
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="bs-radio typ-shipping-radio">
-                                                <input id="role3" name="role" type="radio">
-                                                <label for="role3" class="custom-radio">
-                                                    <span class="checkmark"></span>
-                                                    <ul class="shipping-detail">
-                                                        <li class="detail-list tag">Construction site</li>
-                                                        <li class="detail-list title">
-                                                            Kashika Sharma
-                                                        </li>
-                                                        <li class="detail-list">+91 9660810783</li>
-                                                        <li class="detail-list">507 Ashish Satyam Apartments,
-                                                            Mansarovar, Jaipur - 302020 </li>
-                                                        <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
-                                                        <li class="detail-list"><a href="#" class="link">Edit
-                                                                address</a> <a href="#" class="link">Edit address</a>
-                                                        </li>
-                                                    </ul>
-                                                </label>
+                                            <div class="lyt-grid typ-col-2 flex-dir-initial">
+                                                <div class="grid-col grid-col-w-50">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">Pincode</label>
+                                                        <input type="text" id="Pincode"
+                                                            class="form-control validate-mobile" value="302020"
+                                                            placeholder="" required="">
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-col grid-col-w-50">
+                                                    <div class="form-group">
+                                                        <div class="cp-select">
+                                                            <h3 class="title">City</h3>
+                                                            <div class="select-dropdown">
+                                                                <button  role="button" data-value=""
+                                                                    class="select-dropdown-button">
+                                                                    <span class="select-text">Select </span> <i
+                                                                        class="zmdi zmdi-chevron-down"></i>
+                                                                </button>
+                                                                <ul class="select-dropdown-list">
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="Mumbai"
+                                                                            class="select-dropdown-list-item">Mumbai</span>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="Jaipur"
+                                                                            class="select-dropdown-list-item">Jaipur</span>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="bs-radio typ-shipping-radio">
-                                                <input id="role4" name="role" type="radio">
-                                                <label for="role4" class="custom-radio">
-                                                    <span class="checkmark"></span>
-                                                    <ul class="shipping-detail">
-                                                        <li class="detail-list tag">Construction site</li>
-                                                        <li class="detail-list title">
-                                                            Kashika Sharma
-                                                        </li>
-                                                        <li class="detail-list">+91 9660810783</li>
-                                                        <li class="detail-list">507 Ashish Satyam Apartments,
-                                                            Mansarovar, Jaipur - 302020 </li>
-                                                        <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
-                                                        <li class="detail-list"><a href="#" class="link">Edit
-                                                                address</a> <a href="#" class="link">Edit address</a>
-                                                        </li>
-                                                    </ul>
-                                                </label>
+                                            <div class="lyt-grid typ-col-2">
+                                                <div class="grid-col grid-col-w-100 ">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">House number, street, area</label>
+                                                        <textarea id="address" rows="1" class="form-control"
+                                                            cols="50">A-1002, Solitaire Park. MG Road</textarea>
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="lyt-grid typ-col-2">
+                                                <div class="grid-col grid-col-w-100 ">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">Location, sector, landmark</label>
+                                                        <textarea id="loaction" rows="1" class="form-control"
+                                                            cols="50">Sector-24, Gurgaon</textarea>
+                                                        <span class="error-msg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="cont-sub-head">
+                                                <h3 class="sec-sub-title typ-2">Mark as</h3>
+                                            </div>
+
+                                            <div class="radio-wrap cm-flex typ-2 mb-24">
+                                                <div class="bs-radio typ-shipping-edit">
+                                                    <input id="mark1" name="mark" type="radio" checked>
+                                                    <label for="mark1" class="custom-radio">
+                                                        Construction site
+                                                    </label>
+                                                </div>
+                                                <div class="bs-radio  typ-shipping-edit">
+                                                    <input id="mark2" name="mark" type="radio">
+                                                    <label for="mark2" class="custom-radio">
+                                                        Home
+                                                    </label>
+                                                </div>
+                                                <div class="bs-radio  typ-shipping-edit">
+                                                    <input id="mark3" name="mark" type="radio">
+                                                    <label for="mark3" class="custom-radio">
+                                                        Other
+                                                    </label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="cont-sub-head">
+                                                <h3 class="sec-sub-title typ-2">Buying for business?</h3>
+                                            </div>
+                                            <div class="lyt-grid typ-col-2 typ-col-wrap">
+                                                <div class="grid-col">
+                                                    <div class="form-group error">
+                                                        <label class="form-label">GSTIN (optional)</label>
+                                                        <input type="text" id="gstin"
+                                                            class="form-control validate-mobile" value=""
+                                                            placeholder="Enter your GST number">
+                                                        <span class="error-msg"></span>
+                                                        <p class="desc mt-8">Note: Please provide a valid GST number as
+                                                            it cannot be changed after placing the order</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-btn-wrap cm-desktop">
+                                                <button class="btn">Deliver to this address</button>
                                             </div>
                                         </div>
-                                        <ul class="bottom-link-list">
-                                            <li class="link-item">
-                                                <span class="icon icon-plus"></span>
-                                                <h3 class="link-text">Add a new address</h3>
-                                            </li>
-                                        </ul>
-                                        <div class="cart-btn-wrap cm-desktop">
-                                            <button class="btn">Continue</button>
-                                        </div>
 
-                                        <div class="details-show hide">
-                                            <ul class="shipping-detail">
-                                                <li class="detail-list tag">Construction site</li>
-                                                <li class="detail-list title">
-                                                    Kashika Sharma
-                                                </li>
-                                                <li class="detail-list">+91 9660810783</li>
-                                                <li class="detail-list">507 Ashish Satyam Apartments,
-                                                    Mansarovar, Jaipur - 302020 </li>
-                                                <li class="detail-list">GSTIN: 27AABCF6929M1Z5</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -938,6 +989,7 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="/components/cp-select/cp-select.js"></script>
     <script src="/components/cp-counter/cp-counter.js"></script>
     <script src="/components/cp-drawer/cp-drawer.js"></script>
     <script src="/components/cp-cart/cp-cart.js"></script>

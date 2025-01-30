@@ -237,5 +237,46 @@
     margin-top: 1.6rem; }
   .cp-form.mt-0 {
     margin-top: 0; }
+  .cp-form.typ-cart-shipping {
+    margin-top: 0; }
+    .cp-form.typ-cart-shipping .desc {
+      font-size: 1.2rem;
+      color: #666666; }
+    .cp-form.typ-cart-shipping .mt-8 {
+      margin-top: 8px; }
+    .cp-form.typ-cart-shipping .form-group {
+      margin-bottom: 2.4rem; }
+      .cp-form.typ-cart-shipping .form-group .form-control {
+        color: #333333;
+        font-family: "Poppins Medium" !important; }
+      .cp-form.typ-cart-shipping .form-group .select-dropdown {
+        width: 100%; }
+        .cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-button {
+          width: 100%; }
+          .cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-button .select-text {
+            color: #333333;
+            font-family: "Poppins Medium"; }
+          .cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-button .zmdi-chevron-down::after {
+            font-size: 1.4rem; }
+        .cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-list-item {
+          color: #333333;
+          font-family: "Poppins Medium";
+          font-size: 1.4rem; }
+    .cp-form.typ-cart-shipping .typ-request-submit {
+      min-width: 100%; }
+    .cp-form.typ-cart-shipping .form-input-wrap {
+      position: relative; }
+      .cp-form.typ-cart-shipping .form-input-wrap .icon-padding {
+        padding-left: 32px; }
+      .cp-form.typ-cart-shipping .form-input-wrap .icon-check {
+        width: 1.6rem;
+        height: 1.6rem;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.6rem;
+        color: #00A441;
+        cursor: pointer; }
 
 /*# sourceMappingURL=cp-form.css.map */
