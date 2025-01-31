@@ -2708,6 +2708,33 @@ p {
     .bs-radio.typ-shipping-edit .custom-radio {
       min-width: 14.9rem;
       padding: 1.2rem 0; }
+  .bs-radio.typ-service-provider {
+    width: 48%;
+    margin-bottom: 0; }
+    .bs-radio.typ-service-provider .custom-radio {
+      width: 100%;
+      padding: 1.6rem;
+      align-items: start;
+      font-family: "Poppins Medium";
+      color: #333333;
+      min-height: 148px; }
+      .bs-radio.typ-service-provider .custom-radio .icon {
+        border: 1px solid #DEDEDE;
+        width: 5.6rem;
+        height: 5.6rem;
+        padding: 1.2rem;
+        color: #333333;
+        font-size: 3.2rem;
+        border-radius: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.6rem;
+        background-color: #FFFFFF; }
+    .bs-radio.typ-service-provider input[type=radio]:checked + .custom-radio {
+      color: #333333; }
+      .bs-radio.typ-service-provider input[type=radio]:checked + .custom-radio .icon {
+        color: #3D7EDB; }
 
 .bs-modal {
   position: relative;

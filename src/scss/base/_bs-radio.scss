@@ -789,7 +789,12 @@
             border: 0;
             background: transparent;
             position: relative;
-            @media only screen and (max-width: $media-mobile) {      min-width: 30px;    max-width: 30px;}
+
+            @media only screen and (max-width: $media-mobile) {
+                min-width: 30px;
+                max-width: 30px;
+            }
+
             .result {
                 display: none;
                 position: absolute;
@@ -805,6 +810,7 @@
             border: 0;
             background-color: transparent;
             color: $clr-base;
+
             .result {
                 display: block;
                 color: $clr-base;
@@ -812,12 +818,46 @@
         }
     }
 
-    &.typ-shipping-edit{
+    &.typ-shipping-edit {
         margin-bottom: 2.4rem;
+
         .custom-radio {
             min-width: 14.9rem;
             padding: 1.2rem 0;
         }
     }
+
+    &.typ-service-provider {
+        width: 48%;
+        margin-bottom: 0;
+
+        .custom-radio {
+            width: 100%;
+            padding: 1.6rem;
+            align-items: start;
+            font-family: $font-medium;
+            color: $clr-base;
+            min-height: 148px;
+            .icon {
+                border: 1px solid #DEDEDE;
+                width: 5.6rem;
+                height: 5.6rem;
+                padding: 1.2rem;
+                color: #333333;
+                font-size: 3.2rem;
+                border-radius: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.6rem;
+                background-color: #FFFFFF;
+            }
+        }
+        input[type=radio]:checked+.custom-radio {
+            color: $clr-base;
+            .icon { color: #3D7EDB;}
+        }
+    }
+    
 
 }
