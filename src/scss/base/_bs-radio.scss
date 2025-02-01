@@ -830,7 +830,7 @@
     &.typ-service-provider {
         width: 48%;
         margin-bottom: 0;
-
+        @media only screen and (max-width: $media-mobile) {  width: 47%;}
         .custom-radio {
             width: 100%;
             padding: 1.6rem;

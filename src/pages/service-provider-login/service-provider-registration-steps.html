@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
-    <link rel="stylesheet" href="/components/cp-service-provider/cp-service-provider.css" />
+    <link rel="stylesheet" href="/components/cp-service-provider-login/cp-service-provider-login.css" />
 
 
 </head>
@@ -467,12 +467,13 @@
     </header>
     <!-- Header end -->
     <div class="main">
-        <section class="bs-sec typ-first-sec typ-login">
+        <section class="bs-sec typ-first-sec typ-service-provider">
             <div class="container">
-                <div class="sec-head text-center">
-                    <h2 class="sec-title">Register as a service provider</h2>
+                <div class="sec-head sp-sec-head cm-desktop">
+                    <h2 class="sec-title cm-desktop">Register as a service provider</h2>
+                  
                 </div>
-                <div class="cp-service-provider cp-login" id="service-provider-login">
+                <div class="cp-service-provider-login cp-login mt-100-mobile" id="service-provider-login">
                     <div class="step-sec typ-2">
                         <span class="steps-num-main">
                             <span class="steps-num">Step - 1/7</span>
@@ -495,8 +496,10 @@
                         <!-- Let’s create your profile 1 -->
                         <div class="tab">
                             <div class="provider-head  text-center">
-                                <h3 class="head-title">Hey!</h3>
-                                <p class="sub-title">Let’s create your profile</p>
+                                <h3 class="head-title cm-desktop">Hey!</h3>
+                                <h3 class="head-title cm-mobile">Create your username &
+                                    password</h3>
+                                <p class="sub-title cm-desktop">Let’s create your profile</p>
                             </div>
                             <div class="cont-wrap typ-width rhs">
                                 <div class="steps-content">
@@ -862,7 +865,7 @@
 
                                 </div>
 
-                                <div class="text-center">
+                                <div class="text-center link">
                                     <a href="#" class="btn-link">Skip for now</a>
                                 </div>
                             </div>
@@ -945,7 +948,7 @@
                                     </div>
 
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center link">
                                     <a href="#" class="btn-link">Skip for now</a>
                                 </div>
                             </div>
@@ -985,13 +988,16 @@
 
 
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center link">
                                     <a href="#" class="btn-link">Skip for now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="btn-wrap  flex">
+                        <!-- <div class="text-center link">
+                            <a href="#" class="btn-link">Skip for now</a>
+                        </div> -->
                         <button type="button" class="btn btn-outline" id="prevBtn"
                             onclick="nextPrev(-1)">Previous</button>
                         <button type="button" class="btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
@@ -1021,7 +1027,8 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/js/password-validation.js"></script>
-    <script src="/components/cp-service-provider/cp-service-provider.js"></script>
+    <script src="/components/cp-service-provider-login/cp-service-provider-steps.js"></script>
+    <script src="/components/cp-service-provider-login/cp-service-provider-login.js"></script>
     <!-- endbuild -->
 </body>
 

@@ -1164,6 +1164,11 @@ p {
         @media only screen and (max-width: 991px) {
           .bs-sec .sec-head.typ-calculator-result .typ2 {
             font-size: 2rem; } }
+    .bs-sec .sec-head.sp-sec-head {
+      text-align: center; }
+      @media only screen and (max-width: 991px) {
+        .bs-sec .sec-head.sp-sec-head {
+          text-align: left; } }
   .bs-sec .sec-title {
     font-size: 4rem;
     line-height: 5.2rem;
@@ -1288,6 +1293,8 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-sec.typ-first-sec {
         margin-top: 13rem; } }
+  .bs-sec.typ-service-provider {
+    margin-top: 15rem; }
   .bs-sec.typ-commerce-blog, .bs-sec.typ-vegetable-patch, .bs-sec.typ-similar-prod {
     position: relative;
     overflow: hidden;
@@ -2711,6 +2718,9 @@ p {
   .bs-radio.typ-service-provider {
     width: 48%;
     margin-bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .bs-radio.typ-service-provider {
+        width: 47%; } }
     .bs-radio.typ-service-provider .custom-radio {
       width: 100%;
       padding: 1.6rem;

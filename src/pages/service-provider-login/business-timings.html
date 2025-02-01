@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
-    <link rel="stylesheet" href="/components/cp-service-provider/cp-service-provider.css" />
+    <link rel="stylesheet" href="/components/cp-service-provider-login/cp-service-provider-login.css" />
+    <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
 
 </head>
 
@@ -469,10 +470,10 @@
     <div class="main">
         <section class="bs-sec typ-first-sec typ-login">
             <div class="container">
-                <div class="sec-head text-center">
+                <div class="sec-head sp-sec-head">
                     <h2 class="sec-title">Business Timings</h2>
                 </div>
-                <div class="cp-service-provider cp-login">
+                <div class="cp-service-provider-login cp-login">
                     <div class="cp-service-provider-wrap">
                         <div class="cont-wrap typ-width rhs">
                             <div class="steps-content">
@@ -482,18 +483,67 @@
                                         <label class="form-label">Working days</label>
                                         <div class="cp-select">
                                             <div class="select-dropdown">
-                                                <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                                <button role="button" data-value="" class="select-dropdown-button" id="workingDaysDropdown">
                                                     <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
                                                 </button>
                                                 <ul class="select-dropdown-list">
                                                     <li class="dropdown-item">
-                                                        <span data-value="1" class="select-dropdown-list-item">Monday</span>
+                                                        <span data-value="all-days" class="select-dropdown-list-item">All days</span>
                                                     </li>
                                                     <li class="dropdown-item">
-                                                        <span data-value="2" class="select-dropdown-list-item">Tuesday</span>
-                
+                                                        <span data-value="custom-days" class="select-dropdown-list-item">Custom days</span>
                                                     </li>
                                                 </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="week-days hide">
+                                        <h2 class="cont-sub-title">Select days you are open for business</h2>
+                                        <div class="form-group">
+                                            <div class="typ-check-main">
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea1">
+                                                    <label for="idea1">
+                                                        <span>Mon</span>
+                                                    </label>
+                                                </div>
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea2">
+                                                    <label for="idea2">
+                                                        <span>Tue</span>
+                                                    </label>
+                                                </div>
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea3">
+                                                    <label for="idea3">
+                                                        <span>Wed</span>
+                                                    </label>
+                                                </div>
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea4">
+                                                    <label for="idea4">
+                                                        <span>Thu</span>
+                                                    </label>
+                                                </div>
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea5">
+                                                    <label for="idea5">
+                                                        <span>Fri</span>
+                                                    </label>
+                                                </div>
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea6">
+                                                    <label for="idea6">
+                                                        <span>Sat</span>
+                                                    </label>
+                                                </div>
+                                                <div class="cp-checkbox typ-3 typ-days">
+                                                    <input type="checkbox" id="idea7">
+                                                    <label for="idea7">
+                                                        <span>Sun</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -502,14 +552,16 @@
                                         <div class="grid-col grid-col-w-50">
                                             <div class="form-group">
                                                 <label class="form-label">Open at</label>
-                                                <input type="text" id="openat" class="form-input validate-mobile" value="" placeholder="" required="">
+                                                <input type="text" id="openat" class="form-input validate-mobile"
+                                                    value="" placeholder="" required="">
                                                 <span class="error-msg"></span>
                                             </div>
                                         </div>
                                         <div class="grid-col grid-col-w-50">
                                             <div class="form-group">
                                                 <label class="form-label">Close at</label>
-                                                <input type="text" id="closeat" class="form-input validate-mobile" value="" placeholder="" required="">
+                                                <input type="text" id="closeat" class="form-input validate-mobile"
+                                                    value="" placeholder="" required="">
                                                 <span class="error-msg"></span>
                                             </div>
                                         </div>
@@ -520,14 +572,13 @@
                                 </div>
 
                             </div>
-                            <div class="text-center">
+                            <div class="text-center link">
                                 <a href="#" class="btn-link">Skip for now</a>
                             </div>
                         </div>
                     </div>
                     <div class="btn-wrap  flex">
-                        <button type="button" class="btn btn-outline" id="prevBtn"
-                           >Previous</button>
+                        <button type="button" class="btn btn-outline" id="prevBtn">Previous</button>
                         <button type="button" class="btn" id="nextBtn">Next</button>
                     </div>
                 </div>
@@ -556,6 +607,7 @@
     <script src="/js/global.js"></script>
 
     <script src="/components/cp-select/cp-select.js"></script>
+    <script src="/components/cp-service-provider-login/cp-service-provider-login.js"></script>
     <!-- endbuild -->
 </body>
 

@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
-    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
     <link rel="stylesheet" href="/components/cp-service-provider-login/cp-service-provider-login.css" />
     <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
+
 </head>
 
 <body>
@@ -467,41 +467,202 @@
     </header>
     <!-- Header end -->
     <div class="main">
-        <section class="bs-sec typ-first-sec typ-login">
+        <section class="bs-sec typ-first-sec typ-service-provider">
             <div class="container">
                 <div class="sec-head sp-sec-head">
-                    <h2 class="sec-title">Profile Image</h2>
+                    <h2 class="sec-title">Project Details</h2>
                 </div>
-                <div class="cp-service-provider-login cp-login">
-                    <div class="cp-service-provider-wrap">
-                        <div class="cont-wrap typ-width rhs">
-                            <div class="steps-content">
+                <div class="cp-service-provider-login cp-login" id="service-provider-login">
+                    <div class="step-sec typ-2">
+                        <span class="steps-num-main">
+                            <span class="steps-num">Step - 1/7</span>
+                            <button class="exit-btn">
+                                <span class="text">Exit </span>
+                                <span class="icon icon-exit"></span>
+                            </button>
+                        </span>
+                        <div class="step-main typ-sp">
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                        </div>
+                    </div>
+                    <div class="cp-service-provider-wrap typ-provider-steps">
+                        <!-- step 1 -->
+                        <div class="tab">
+                            <div class="provider-head  text-center">
+                                <h3 class="head-title">Add your project</h3>
+                            </div>
+                            <div class="cont-wrap typ-width rhs">
+                                <div class="steps-content">
+                                    <div class="form-wrap typ2">
+                                        <div class="form-group">
+                                            <label class="form-label">Project name</label>
+                                            <input type="text" id="project-name" class="form-input validate-mobile"
+                                                value="" placeholder="Enter name" required="">
+                                            <span class="error-msg"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Area</label>
+                                            <input type="text" id="area" class="form-input validate-mobile" value=""
+                                                placeholder="Enter area" required="">
+                                            <span class="error-msg"></span>
+                                        </div>
+                                        <h2 class="cont-sub-title">Project highlights</h2>
+                                        <div class="form-group">
+                                            <label class="form-label">Tell us what stood out about the project,<br>
+                                                Eg: Big garden </label>
+                                            <textarea id="project-highlights" cols="50" rows="4"
+                                                placeholder="Enter text" class="form-input validate-mobile">Big Kitchen 
+Pooja Room
+Focus on Garden
+                                                </textarea>
 
-                                <h2 class="cont-sub-title typ-2">Select days you are open for business</h2>
-                                <ul class="bullet-list ">
-                                    <li class="list-item">Use your company logo or a professional photo.</li>
-                                    <li class="list-item">Ensure the image is clear and well-lit.</li>
-                                </ul>
-                                <div class="cp-attached-file typ-help-policies">
-                                   
-                                    <div class="upload-file-area typ-profilep-pic">
-                                        <span class="icon icon-camera"></span>
-                                        <h3 class="title">Upload your profile picture</h3>
-                                        <!-- <p class="desc">File formats: PNG, JPEG, PDF, PPT, DOC and DOCX. File size should not exceed 2
-                                            MB.</p> -->
-                                        <label class="label"> <input type="file" name="images[]" multiple id="upload-img"
-                                                class="default-file-input"> </label>
+                                        </div>
+
                                     </div>
-                              
+
                                 </div>
                             </div>
-                         
                         </div>
+                        <!-- step 2 -->
+                        <div class="tab">
+                            <div class="provider-head  text-center">
+                                <h3 class="head-title">Add your project</h3>
+                            </div>
+                            <div class="cont-wrap typ-width rhs">
+                                <div class="steps-content">
+                                    <div class="form-wrap typ2">
+                                        <div class="form-group">
+                                            <label class="form-label">Project Cost</label>
+                                            <input type="text" id="project-cost" class="form-input validate-mobile"
+                                                value="" placeholder="Enter cost" required="">
+                                            <span class="error-msg"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Area</label>
+                                            <input type="text" id="area" class="form-input validate-mobile" value=""
+                                                placeholder="Enter area" required="">
+                                            <span class="error-msg"></span>
+                                        </div>
+                                        <h2 class="cont-sub-title">Size</h2>
+                                        <div class="form-group">
+                                            <label class="form-label">Number of rooms</label>
+                                            <div class="radio-wrap typ-size">
+                                                <div class="bs-radio col-3">
+                                                    <input id="size1" name="Size" type="radio">
+                                                    <label for="size1" class="custom-radio">
+                                                        <span>1 BHK</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="bs-radio col-3">
+                                                    <input id="size2" name="Size" type="radio">
+                                                    <label for="size2" class="custom-radio">
+                                                        <span>2 BHK</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="bs-radio col-3">
+                                                    <input id="size3" name="Size" type="radio">
+                                                    <label for="size3" class="custom-radio">
+                                                        <span>3 BHK</span>
+                                                    </label>
+                                                </div>
+                                                <div class="bs-radio col-3">
+                                                    <input id="size4" name="Size" type="radio">
+                                                    <label for="size4" class="custom-radio">
+                                                        <span>4 BHK</span>
+                                                    </label>
+                                                </div>
+                                                <div class="bs-radio col-3">
+                                                    <input id="size5" name="Size" type="radio">
+                                                    <label for="size5" class="custom-radio">
+                                                        <span>4+ rooms</span>
+                                                    </label>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Number of floors</label>
+                                            <div class="radio-wrap typ-size">
+                                                <div class="bs-radio col-3">
+                                                    <input id="floors1" name="floors" type="radio">
+                                                    <label for="floors1" class="custom-radio">
+                                                        <span>Ground</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="bs-radio col-3">
+                                                    <input id="floors2" name="floors" type="radio">
+                                                    <label for="floors2" class="custom-radio">
+                                                        <span>G+1</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="bs-radio col-3">
+                                                    <input id="floors3" name="floors" type="radio">
+                                                    <label for="floors3" class="custom-radio">
+                                                        <span>G+2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="bs-radio col-3">
+                                                    <input id="floors4" name="floors" type="radio">
+                                                    <label for="floors4" class="custom-radio">
+                                                        <span>G+3</span>
+                                                    </label>
+                                                </div>
+                                                <div class="bs-radio col-3">
+                                                    <input id="floors5" name="floors" type="radio">
+                                                    <label for="floors5" class="custom-radio">
+                                                        <span>4+ rooms</span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- step 3 -->
+                        <div class="tab">
+                            <div class="provider-head  text-center">
+                                <h3 class="head-title">Add your project</h3>
+                            </div>
+                            <div class="cont-wrap typ-width rhs">
+                                <div class="steps-content">
+                                    <h2 class="cont-sub-title typ-2">Select days you are open for business</h2>
+                                    <ul class="bullet-list ">
+                                        <li class="list-item">High quality images [no blurry, out of the focus will be
+                                            rejected]</li>
+                                        <li class="list-item">
+                                            Content must be an accurate representation of work</li>
+                                        <li class="list-item">Unrelated or offensive images will be rejected</li>
+                                    </ul>
+                                    <div class="cp-attached-file typ-service-provider">
+                                        <div class="upload-file-area typ-profilep-pic">
+                                            <span class="icon icon-camera"></span>
+                                            <h3 class="title">Upload your project</h3>
+                                            <p class="desc">Supporting items: PNG, JPEG, PDF or PPT</p>
+                                            <label class="label"> <input type="file" name="images[]" multiple
+                                                    id="upload-img" class="default-file-input"> </label>
+                                        </div>
+                                        <div class="img-thumbs img-thumbs-hidden" id="img-preview"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="btn-wrap  flex">
                         <button type="button" class="btn btn-outline" id="prevBtn"
-                           >Previous</button>
-                        <button type="button" class="btn" id="nextBtn">Next</button>
+                            onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" class="btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
                     </div>
                 </div>
             </div>
@@ -527,8 +688,9 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-
-    <script src="/components/cp-select/cp-select.js"></script>
+    <script src="/js/password-validation.js"></script>
+    <script src="/components/cp-service-provider-login/cp-service-provider-steps.js"></script>
+    <script src="/components/cp-service-provider-login/upload-project.js"></script>
     <!-- endbuild -->
 </body>
 

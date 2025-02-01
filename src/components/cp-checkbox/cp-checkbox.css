@@ -135,6 +135,10 @@
       .cp-checkbox.typ-3 input:checked + label .icon {
         border-color: #fff;
         color: #3D7EDB; }
+    .cp-checkbox.typ-3.typ-days {
+      flex-wrap: wrap;
+      width: 7rem;
+      text-align: center; }
   .cp-checkbox.typ-border-0 {
     border: none; }
     .cp-checkbox.typ-border-0 label {

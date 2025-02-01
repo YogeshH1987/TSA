@@ -1,0 +1,208 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-service-provider-login {
+  max-width: 820px;
+  margin: auto;
+  border-radius: 2.4rem;
+  -webkit-border-radius: 2.4rem;
+  -moz-border-radius: 2.4rem;
+  overflow: hidden;
+  border: 1px solid #DEDEDE;
+  flex-direction: column; }
+  @media only screen and (max-width: 768px) {
+    .cp-service-provider-login {
+      border: 0;
+      overflow: visible; } }
+  .cp-service-provider-login .cp-service-provider-wrap {
+    padding: 2.4rem;
+    background-color: #fff; }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .cp-service-provider-wrap {
+        padding: 0; } }
+  .cp-service-provider-login .provider-head {
+    margin-bottom: 3.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .provider-head {
+        margin-bottom: 2.4rem; } }
+    .cp-service-provider-login .provider-head .head-title {
+      font-size: 2.8rem;
+      font-family: "Poppins Semibold";
+      color: #333333; }
+      @media only screen and (max-width: 768px) {
+        .cp-service-provider-login .provider-head .head-title {
+          font-size: 2.4rem;
+          text-align: left; } }
+    .cp-service-provider-login .provider-head .sub-title {
+      font-size: 2rem;
+      font-family: "Poppins Semibold";
+      color: #333333; }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .provider-head .desc {
+        text-align: left; } }
+  .cp-service-provider-login .cont-wrap .cont-sub-title {
+    font-size: 1.6rem;
+    font-family: "Poppins Medium";
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    color: #333333; }
+    .cp-service-provider-login .cont-wrap .cont-sub-title.typ-2 {
+      font-size: 2rem;
+      font-family: "Poppins Semibold"; }
+      @media only screen and (max-width: 768px) {
+        .cp-service-provider-login .cont-wrap .cont-sub-title.typ-2 {
+          font-size: 1.6rem; } }
+  .cp-service-provider-login .cont-wrap.typ-width {
+    max-width: 425px;
+    margin: auto;
+    width: 100%;
+    padding: 0; }
+  .cp-service-provider-login .cont-wrap .feature-title {
+    font-family: "Poppins Medium";
+    font-size: 2rem; }
+  .cp-service-provider-login .cont-wrap .trusted-services-wrap {
+    display: flex;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 2.4rem;
+    margin: 0 -6px 2.4rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-service-provider-login .cont-wrap .trusted-services-wrap {
+        margin: 0 -4px 2.4rem; } }
+    .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 6px; }
+      @media only screen and (max-width: 991px) {
+        .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list {
+          padding: 0 4px; } }
+      .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services {
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        height: 100%; }
+        .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services .desc {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: #333333;
+          font-family: "Poppins Medium"; }
+        .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services .icon {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 1.2rem;
+          -webkit-border-radius: 1.2rem;
+          -moz-border-radius: 1.2rem;
+          font-size: 2.4rem;
+          padding: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1.2rem;
+          background-color: #fff; }
+        .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services.green-bg {
+          background-color: #E5F6EC; }
+          .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services.green-bg .icon {
+            color: #00A441; }
+        .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services.blue-bg {
+          background-color: #ECF2FB; }
+          .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services.blue-bg .icon {
+            color: #3D7EDB; }
+        .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services.pink-bg {
+          background-color: #FAE6EA; }
+          .cp-service-provider-login .cont-wrap .trusted-services-wrap .trusted-services-list .trusted-services.pink-bg .icon {
+            color: #D2042D; }
+  .cp-service-provider-login .cont-wrap .steps-content {
+    overflow-y: initial;
+    padding-right: 0;
+    max-height: 100%; }
+    @media only screen and (max-width: 991px) {
+      .cp-service-provider-login .cont-wrap .steps-content {
+        margin-top: 0; } }
+  .cp-service-provider-login .btn-wrap {
+    border-top: 1px solid #DEDEDE;
+    padding: 2.4rem 3.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .btn-wrap {
+        padding: 1.6rem 0;
+        border: 0;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff; }
+        .cp-service-provider-login .btn-wrap .btn {
+          min-width: 100%; } }
+    .cp-service-provider-login .btn-wrap.flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      @media only screen and (max-width: 768px) {
+        .cp-service-provider-login .btn-wrap.flex {
+          gap: 8px; }
+          .cp-service-provider-login .btn-wrap.flex .btn {
+            min-width: 48%; } }
+    .cp-service-provider-login .btn-wrap .ml-auto {
+      margin-left: auto; }
+  .cp-service-provider-login .typ-provider-steps {
+    border-radius: 1.6rem 1.6rem 0 0;
+    -webkit-border-radius: 1.6rem 1.6rem 0 0;
+    -moz-border-radius: 1.6rem 1.6rem 0 0;
+    margin-top: -16px;
+    flex-direction: column; }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .typ-provider-steps {
+        margin-top: 85px; } }
+  .cp-service-provider-login .mt-0 {
+    margin-top: 0; }
+  .cp-service-provider-login .mb-0 {
+    margin-bottom: 0 !important; }
+  .cp-service-provider-login .mb-32 {
+    margin-bottom: 3.2rem; }
+  .cp-service-provider-login .mt-32 {
+    margin-top: 3.2rem; }
+  .cp-service-provider-login .link {
+    width: 100%;
+    flex: 0 0 100%; }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .link {
+        position: sticky;
+        bottom: 70px;
+        background: #fff;
+        width: 100%;
+        padding: 5px; } }
+    .cp-service-provider-login .link .btn-link {
+      font-size: 1.6rem;
+      text-decoration: underline;
+      font-family: "Poppins Medium"; }
+      @media only screen and (max-width: 768px) {
+        .cp-service-provider-login .link .btn-link {
+          font-size: 1.4rem; } }
+  .cp-service-provider-login .w-100 {
+    min-width: 100%; }
+  .cp-service-provider-login .services-form .form-input {
+    margin-bottom: 1.6rem; }
+  .cp-service-provider-login .typ-expertise {
+    gap: 1.6rem; }
+  .cp-service-provider-login .cp-select .select-dropdown {
+    width: 100%; }
+    .cp-service-provider-login .cp-select .select-dropdown .select-dropdown-button {
+      width: 100%; }
+  .cp-service-provider-login .bullet-list {
+    margin-left: 2.4rem; }
+    .cp-service-provider-login .bullet-list .list-item {
+      line-height: 2.4rem;
+      list-style: disc;
+      font-size: 1.6rem;
+      color: #333333; }
+      @media only screen and (max-width: 768px) {
+        .cp-service-provider-login .bullet-list .list-item {
+          font-size: 1.4rem; } }
+      .cp-service-provider-login .bullet-list .list-item::marker {
+        font-size: 1rem; }
+
+/*# sourceMappingURL=cp-service-provider-login.css.map */

@@ -385,6 +385,9 @@
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       margin-bottom: 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-login .step-sec.typ-2 {
+          padding: 1.6rem; } }
       .cp-login .step-sec.typ-2 .steps-num-main {
         display: flex;
         align-items: center;
@@ -405,7 +408,13 @@
             font-size: 1.6rem;
             color: #FFF; }
       .cp-login .step-sec.typ-2 .step-main .step {
-        width: 14.28%; }
+        width: auto;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%; }
         .cp-login .step-sec.typ-2 .step-main .step.finish {
           background-color: #00A441; }
   .cp-login.mt-2 {
@@ -555,6 +564,9 @@
           padding: 1.2rem 1.6rem; }
         .cp-login .steps-content .typ-size .bs-radio.col-3 {
           width: 31.4%; }
+          @media only screen and (max-width: 768px) {
+            .cp-login .steps-content .typ-size .bs-radio.col-3 {
+              width: 30.5%; } }
       .cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
         min-width: 76px; }
         @media only screen and (max-width: 768px) {

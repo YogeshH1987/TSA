@@ -555,7 +555,7 @@
             padding: 1.2rem 4rem 4rem;
             @include border-radius(0);
             margin-bottom: 0;
-
+            @media only screen and (max-width: $media-mobile) { padding: 1.6rem;}
             .steps-num-main {
                 display: flex;
                 align-items: center;
@@ -591,8 +591,13 @@
 
             .step-main {
                 .step {
-                    width: 14.28%;
-
+                    width:auto;
+                    -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                    -webkit-box-flex: 1;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 100%;
                     &.finish {
                         background-color: #00A441;
                     }
@@ -819,6 +824,7 @@
 
                 &.col-3 {
                     width: 31.4%;
+                    @media only screen and (max-width: $media-mobile) { width: 30.5%;}
                 }
             }
 

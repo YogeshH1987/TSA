@@ -8,7 +8,7 @@
   margin: 1.5rem 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 14px; }
+  gap: 12px; }
 .cp-attached-file .img-thumbs-hidden {
   display: none; }
 .cp-attached-file .wrapper-thumb {
@@ -135,5 +135,8 @@
       font-size: 1.4rem;
       color: #3D7EDB;
       text-decoration: underline; }
+.cp-attached-file.typ-service-provider .wrapper-thumb {
+  width: 48%;
+  flex: 0 0 48%; }
 
 /*# sourceMappingURL=cp-attached-file.css.map */
