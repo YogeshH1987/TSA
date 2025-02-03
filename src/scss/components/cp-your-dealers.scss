@@ -1,0 +1,131 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-your-dealers{
+    border: 1px solid $clr-border;
+    padding: 16px;
+    border-radius: 12px;
+    .cp-title{
+        padding: 0 0 15px 0;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid $clr-border;
+        margin-bottom: 12px;
+        align-items: center;
+        position: relative;
+        .title{
+            display: flex;
+            color: $clr-base;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: $font-semiBold;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0px 0 10px 0px;
+            }
+        }
+        .icon-wrap{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #E5F6EC;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            @media only screen and (max-width: $media-sm) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .icon{
+            color: #00A441;
+            font-size: 20px;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 14px;
+            }
+        }
+    }
+    .dealer-card{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border: 1px solid $clr-border;
+        padding: 16px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    .dealer-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tag{
+        list-style: none;
+        display: flex;
+        margin-bottom: 10px;
+        li{
+            background: #D8E5F8;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            color: $clr-base;
+            font-family: $font-medium;
+            padding: 4px 8px;
+            margin-right: 12px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+    .dealer-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dealer-name{
+        font-family: $font-semiBold;
+        font-size: 16px;
+        line-height: 22px;
+        color: $clr-base;
+        margin-bottom: 8px;
+    }
+    .dealer-location {
+        font-size: 1.2rem;
+        font-family: $font-regular;
+        color: #808080;
+        position: relative;
+        padding-right: 1rem;
+    }
+
+    .action-wrap{
+        align-items: end;
+        display: flex;
+        @media only screen and (max-width: $media-sm) {
+            // flex-grow: 1;
+            // margin-top: 24px;
+        }
+        .btn{
+            min-width: 32px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            @media only screen and (max-width: $media-sm) {
+                // width: 100%;
+            }
+            .icon{
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
+}
