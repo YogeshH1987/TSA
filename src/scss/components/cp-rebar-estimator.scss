@@ -5,10 +5,8 @@
     overflow: hidden;
     max-width: 82rem;
     margin: 0 auto;
-    @include border-radius(2.4rem 2.4rem 0 0);
     @media only screen and (max-width: $media-mobile){
-        margin: 0 -1.6rem;
-        @include border-radius(0);
+        margin: 0 -1.6rem;        
     }
     &.full-width{
         max-width: 100%;

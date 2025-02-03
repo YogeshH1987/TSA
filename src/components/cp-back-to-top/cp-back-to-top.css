@@ -18,19 +18,23 @@
   border-radius: 0.8rem;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
-  z-index: 1; }
-  @media only screen and (max-width: 991px) {
-    .cp-back-to-top {
-      display: flex;
-      align-items: center;
-      width: 144px;
-      gap: 10px;
-      position: static;
-      margin: 2rem auto 4.8rem; } }
-  .cp-back-to-top .icon {
-    width: 2.4rem;
-    height: 2.4rem;
-    color: #fff;
-    font-size: 2.4rem; }
+  z-index: 1;
+}
+@media only screen and (max-width: 991px) {
+  .cp-back-to-top {
+    display: flex;
+    align-items: center;
+    width: 144px;
+    gap: 10px;
+    position: static;
+    margin: 2rem auto 4.8rem;
+  }
+}
+.cp-back-to-top .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+  font-size: 2.4rem;
+}
 
 /*# sourceMappingURL=cp-back-to-top.css.map */

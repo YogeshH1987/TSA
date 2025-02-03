@@ -2,280 +2,159 @@ var TSA = TSA || {};
 
 TSA.RebarsCalculator = {
     init: function () {
-        // Initialize tabs and filtering
         this.setupTabs();
-
-        // Initialize the slider
         this.initSlider();
-
-        // Setup radio button change events for showing/hiding floor list
         this.setupRadioEvents();
-
-        // Setup unit conversion for area input
         this.setupUnitConversion();
-
         this.setupAreaValidation();
-        // Setup Step 1 functionality
-        // this.setupStep1();
-
-        // Initialize the step navigation
-        this.setupStepNavigation();        
+        this.setupStepNavigation();
     },
 
     setupTabs: function () {
-        $('.js-plan-flr .tab-item').on('click', function () {
-            // Remove active class from all tabs
-            $('.js-plan-flr .tab-item').removeClass('active');
-            // Add active class to the clicked tab
+        const $tabs = $('.js-plan-flr .tab-item');
+
+        $tabs.on('click', function () {
+            $tabs.removeClass('active');
             $(this).addClass('active');
-
-            // Get the data-target of the clicked tab
-            const target = $(this).data('target').substring(1); // Remove the "#" from the value
-
-            // Filter radio buttons based on data-val
-            TSA.RebarsCalculator.filterByDataVal(target);
+            TSA.RebarsCalculator.filterByDataVal($(this).data('target').substring(1));
         });
 
-        // Trigger the first tab by default
-        $('.js-plan-flr .tab-item.active').trigger('click');
+        $tabs.filter('.active').trigger('click');
     },
 
     filterByDataVal: function (target) {
         $('.js-plan-flr .bs-radio').each(function () {
-            // Show only elements with matching data-val
-            if ($(this).data('val') === target) {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
+            $(this).toggle($(this).data('val') === target);
         });
     },
 
     initSlider: function () {
         const numberFlrSlider = document.getElementById('numberFlr');
+        if (!numberFlrSlider) return console.error('Slider element not found!');
 
-        // Check if the slider element exists
-        if (!numberFlrSlider) {
-            console.error('Slider element not found!');
-            return;
-        }
-
-        // Initialize the slider
         noUiSlider.create(numberFlrSlider, {
-            start: 0, // Default starting position (Ground)
+            start: 0,
             connect: [true, false],
-            range: {
-                min: 0, // Ground
-                max: 2  // G+2
-            },
+            range: { min: 0, max: 2 },
             step: 1,
             pips: {
                 mode: 'values',
-                values: [0, 1, 2], // Ground, G+1, G+2
+                values: [0, 1, 2],
                 density: 2,
-                format: {
-                    to: (value) => {
-                        if (value === 0) return 'Ground';
-                        if (value === 1) return 'G+1';
-                        if (value === 2) return 'G+2';
-                    }
-                }
+                format: { to: (value) => ['Ground', 'G+1', 'G+2'][value] }
             }
         });
     },
 
     setupRadioEvents: function () {
-        $('.js-select-house').on('change', function () {
-            const selectedValue = $(this).val(); // Get the selected radio button value
-    
-            // Check if the selected value is 'part-house'
-            if (selectedValue === 'part-house') {
-                $('.flr-list').removeClass('hide'); // Show the floor list
-            } else {
-                $('.flr-list').addClass('hide'); // Hide the floor list
-            }
+        $(document).on('change', '.js-select-house', function () {
+            $('.flr-list').toggleClass('hide', $(this).val() !== 'part-house');
         });
-    
-        // Trigger change for the default selected radio button
+
         $('.js-select-house:checked').trigger('change');
-    },    
+    },
 
     setupUnitConversion: function () {
-        const toggleSwitch = $('.area-mesurement'); // Checkbox for unit toggle
-        const desc = $('.calculator-desc'); // Description element
-        const builtUpAreaValue = $('.builtUpAreaValue'); // Input field for area
-        const errorMessage = $('.error'); // Error message element
-        const step1Btn = $('#step1-btn'); // Button element
-        const conversionFactors = {
-            sqFtToSqMts: 0.092903,
-            sqMtsToSqFt: 1 / 0.092903,
-        };
-        const limits = {
-            sqFt: { min: 578, max: 1934 },
-            sqMts: { min: 578 * 0.092903, max: 1934 * 0.092903 },
-        };
-    
-        // Function to validate the area
+        const $toggleSwitch = $('.area-mesurement');
+        const $desc = $('.calculator-desc');
+        const $builtUpArea = $('.builtUpAreaValue');
+        const $error = $('.error');
+        const $step1Btn = $('#step1-btn');
+
+        const conversion = { sqFtToSqMts: 0.092903, sqMtsToSqFt: 10.764 };
+        const limits = { sqFt: { min: 578, max: 1934 }, sqMts: { min: 578 * conversion.sqFtToSqMts, max: 1934 * conversion.sqFtToSqMts } };
+
         function validateArea() {
-            const isSqFt = toggleSwitch.is(':checked'); // SqFt if toggle is unchecked
-            const currentLimits = isSqFt ? limits.sqFt : limits.sqMts;
-            const area = parseFloat(builtUpAreaValue.val());
-        
-            console.log('Validating Area:', area, 'against limits:', currentLimits);
-        
-            if (isNaN(area) || area < parseFloat(currentLimits.min.toFixed(2)) || area > parseFloat(currentLimits.max.toFixed(2))) {
-                errorMessage.text(
-                    `Please enter an area between ${currentLimits.min.toFixed(2)} and ${currentLimits.max.toFixed(2)} ${
-                        isSqFt ? 'sq ft' : 'sq mts'
-                    }.`
-                );
-                errorMessage.removeClass('hide');
-                step1Btn.addClass('disabled');
+            const isSqFt = $toggleSwitch.is(':checked');
+            const range = isSqFt ? limits.sqFt : limits.sqMts;
+            const value = parseFloat($builtUpArea.val());
+
+            if (isNaN(value) || value < range.min || value > range.max) {
+                $error.text(`Enter area between ${range.min.toFixed(2)} - ${range.max.toFixed(2)} ${isSqFt ? 'sq ft' : 'sq mts'}`).removeClass('hide');
+                $step1Btn.addClass('disabled');
             } else {
-                errorMessage.addClass('hide');
-                step1Btn.removeClass('disabled');
+                $error.addClass('hide');
+                $step1Btn.removeClass('disabled');
             }
-        }       
-    
-        // Handle toggle switch change
-        toggleSwitch.on('change', function () {
-            const isSqFt = toggleSwitch.is(':checked'); // SqFt if toggle is unchecked
-            const currentValue = parseFloat(builtUpAreaValue.val());
-    
-            // Convert the current value to the selected unit
+        }
+
+        $toggleSwitch.on('change', function () {
+            const isSqFt = $(this).is(':checked');
+            const currentValue = parseFloat($builtUpArea.val());
+
             if (!isNaN(currentValue)) {
-                const newValue = isSqFt
-                    ? (currentValue * conversionFactors.sqMtsToSqFt).toFixed(2)
-                    : (currentValue * conversionFactors.sqFtToSqMts).toFixed(2);
-                builtUpAreaValue.val(newValue);
+                $builtUpArea.val((currentValue * (isSqFt ? conversion.sqMtsToSqFt : conversion.sqFtToSqMts)).toFixed(2));
             }
-    
-            // Update the description text
-            const currentLimits = isSqFt ? limits.sqFt : limits.sqMts;
-            desc.text(
-                `Enter area between ${currentLimits.min.toFixed(2)} ${
-                    isSqFt ? 'sq mts' : 'sq ft'
-                } - ${currentLimits.max.toFixed(2)} ${isSqFt ? 'sq mts' : 'sq ft'}`
-            );
-    
-            validateArea(); // Validate after the toggle switch is changed
+
+            const range = isSqFt ? limits.sqFt : limits.sqMts;
+            $desc.text(`Enter area between ${range.min.toFixed(2)} - ${range.max.toFixed(2)} ${isSqFt ? 'sq mts' : 'sq ft'}`);
+
+            validateArea();
         });
-    
-        // Validate on input changes
-        builtUpAreaValue.on('input', validateArea);
-    
-        // Initialize validation and description
-        toggleSwitch.trigger('change');
+
+        $builtUpArea.on('input', validateArea);
+        $toggleSwitch.trigger('change');
     },
-    
+
     setupAreaValidation: function () {
-        const builtUpAreaValue = $('#builtUpAreaValue');
-        const step1Btn = $('#step1-btn');
-    
-        // Delegate validation to `setupUnitConversion`
-        step1Btn.on('click', function () {
-            const area = parseFloat(builtUpAreaValue.val());
-    
-            if (step1Btn.hasClass('disabled')) {
-                return false; // Prevent navigation if invalid
-            }
-    
-            // Debugging: Log success and proceed
-            console.log('Validation passed with area:', area);
-            TSA.RebarsCalculator.setupStep1(); // Proceed to the next step
+        $('#step1-btn').on('click', function () {
+            if ($(this).hasClass('disabled')) return false;
+            console.log('Validation passed!');
+            TSA.RebarsCalculator.setupStep1();
         });
     },
-    
-    setupStep1: function() {
+
+    setupStep1: function () {
         $('#step1-btn').on('click', function () {
-            // alert('Step 1 button clicked!');
             $('.calc-step.step-1').addClass('hide');
-            $('.cp-rebar-estimator').removeClass('hide');
-            $('.cp-rebar-estimator').removeClass('full-width'); 
-            $(this).parents('.bs-sec').finds('.sec-head.typ-rebar').addClass('typ-align-center');
+            $('.cp-rebar-estimator').removeClass('hide full-width');
+            $('.bs-sec .sec-head.typ-rebar').addClass('typ-align-center');
         });
     },
 
     setupStepNavigation: function () {
         let currentStep = 1;
-    
-        const steps = document.querySelectorAll('.calc-step');
-        const step1Btn = document.getElementById('step1-btn');
-        const backBtns = document.querySelectorAll('.btn-back');
-        const nextBtns = document.querySelectorAll('.btn-next');
-        const actWrap = document.querySelector('.act-wrap');
-        const progressBar = document.querySelector('.cp-stop-progressbar');
-        const progressItems = document.querySelectorAll('.progress-bar .progress-item');
-        const stepText = document.querySelector('.calc-progress-bar .step-text'); // Step text element
-    
-        function showStep(stepNumber) {
-            steps.forEach((step, index) => {
-                if (index === stepNumber - 1) {
-                    step.classList.remove('hide');
-                } else {
-                    step.classList.add('hide');
-                }
-            });
-    
-            // Update the progress bar
-            progressItems.forEach((item, index) => {
-                if (index < stepNumber - 1) {
-                    item.classList.add('complete');
-                    item.classList.remove('ongoing');
-                } else if (index === stepNumber - 1) {
-                    item.classList.add('ongoing');
-                    item.classList.remove('complete');
-                } else {
-                    item.classList.remove('complete', 'ongoing');
-                }
-            });
-    
-            // Update step-text
-            if (stepText) {
-                stepText.textContent = `Step - ${stepNumber}/${steps.length}`;
-            }
+        const $steps = $('.calc-step');
+        const $step1Btn = $('#step1-btn');
+        const $actWrap = $('.act-wrap');
+        const $progressBar = $('.cp-stop-progressbar');
+        const $progressItems = $('.progress-bar .progress-item');
+        const $stepText = $('.calc-progress-bar .step-text');
+
+        function showStep(step) {
+            $steps.addClass('hide').eq(step - 1).removeClass('hide');
+            $progressItems.removeClass('complete ongoing')
+                .slice(0, step - 1).addClass('complete')
+                .end().eq(step - 1).addClass('ongoing');
+
+            $stepText.text(`Step - ${step}/${$steps.length}`);
         }
-    
-        step1Btn.addEventListener('click', function () {
+
+        $step1Btn.on('click', function () {
             currentStep = 2;
             showStep(currentStep);
-            actWrap.classList.remove('hide');
-            progressBar.classList.remove('hide');
+            $actWrap.removeClass('hide');
+            $progressBar.removeClass('hide');
             $('.cp-rebar-estimator').removeClass('full-width');
         });
-    
-        nextBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                if (currentStep < steps.length) {
-                    currentStep++;
-                    showStep(currentStep);
-                    actWrap.classList.remove('hide');
-                    if (currentStep === 2) {
-                        progressBar.classList.remove('hide');
-                    }
-                }
-            });
+
+        $(document).on('click', '.btn-next', function () {
+            if (currentStep < $steps.length) showStep(++currentStep);
         });
-    
-        backBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                if (currentStep > 1) {
-                    currentStep--;
-                    showStep(currentStep);
-                    if (currentStep === 1) {
-                        progressBar.classList.add('hide');
-                        actWrap.classList.add('hide');
-                        $('.cp-rebar-estimator').addClass('full-width');
-                    }
+
+        $(document).on('click', '.btn-back', function () {
+            if (currentStep > 1) {
+                showStep(--currentStep);
+                if (currentStep === 1) {
+                    $progressBar.addClass('hide');
+                    $actWrap.addClass('hide');
+                    $('.cp-rebar-estimator').addClass('full-width');
                 }
-            });
+            }
         });
-    
+
         showStep(currentStep);
-    }    
-    
+    }
 };
 
-$(document).ready(function () {
-    TSA.RebarsCalculator.init();
-});
+$(document).ready(() => TSA.RebarsCalculator.init());

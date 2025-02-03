@@ -4,8 +4,10 @@
 .cp-stop-progressbar{
     background: #612D61;
     padding: 1.2rem 4rem 4rem;
+    @include border-radius(2.4rem 2.4rem 0 0);
     @media only screen and (max-width: $media-mobile){
         padding: 1.2rem 1.6rem 4rem;
+        @include border-radius(0);
     }
     .calc-progress-bar{
         display: flex;
