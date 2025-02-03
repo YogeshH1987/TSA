@@ -41,7 +41,7 @@
     .desc{
         font-family: $font-regular;
         font-size: 1.2rem;
-        line-height: 2rem;
+        line-height: 2rem !important;
         color: $clr-para;
         margin-bottom:1.6rem;
     }
@@ -54,7 +54,7 @@
            .customer-name{
             font-family: $font-medium;
             font-size: 1.4rem;
-            line-height: 2rem;
+            line-height: 2rem ;
             color: $clr-base;
             margin-bottom: 2px;
            }
@@ -81,5 +81,17 @@
 
                 }
             }  
+    }
+    &.typ-sp-review{
+      &:first-child{
+        border-top: none;
+  
+      }
+      .customer-detail {
+        .helpful {
+          .count-text {
+            background-color: #F3F4F6;}
+        }
+      }
     }
 }

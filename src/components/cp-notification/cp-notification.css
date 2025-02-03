@@ -1,0 +1,94 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-notification {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #DEDEDE;
+  padding-bottom: 1.6rem;
+  margin-bottom: 4rem;
+  background: #fff;
+  z-index: 1;
+  position: relative; }
+  @media only screen and (max-width: 991px) {
+    .cp-notification {
+      margin-bottom: 2.4rem; } }
+  .cp-notification .icon {
+    width: 74px;
+    flex: 0 0 74px; }
+    @media only screen and (max-width: 991px) {
+      .cp-notification .icon {
+        width: 54px;
+        flex: 0 0 54px; } }
+  .cp-notification .cont-wrap .title {
+    font-size: 2rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    margin-bottom: 4px; }
+    @media only screen and (max-width: 991px) {
+      .cp-notification .cont-wrap .title {
+        font-size: 1.6rem; } }
+  .cp-notification .cont-wrap .desc {
+    line-height: 2.4rem;
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-notification .cont-wrap .desc {
+        font-size: 1.4rem;
+        line-height: 2rem; } }
+  .cp-notification .right-sec {
+    margin-left: auto; }
+    .cp-notification .right-sec .close {
+      font-size: 2.4rem; }
+      @media only screen and (max-width: 991px) {
+        .cp-notification .right-sec .close {
+          font-size: 1.6rem; } }
+
+.disable-content {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: 0; }
+  .disable-content::after {
+    content: '';
+    background-color: #ffffff87;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+  .disable-content .cp-notification {
+    flex-direction: column;
+    margin-bottom: 0; }
+    .disable-content .cp-notification .container {
+      display: flex;
+      gap: 8px;
+      align-items: center; }
+      @media only screen and (max-width: 991px) {
+        .disable-content .cp-notification .container {
+          flex-direction: column;
+          text-align: center; } }
+      @media only screen and (max-width: 991px) {
+        .disable-content .cp-notification .container .icon {
+          width: 114px;
+          flex: 0 0 114px; } }
+      @media only screen and (max-width: 991px) {
+        .disable-content .cp-notification .container .cont-wrap .title {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 991px) {
+        .disable-content .cp-notification .container .right-sec {
+          margin-left: 0;
+          width: 100%; } }
+  @media only screen and (max-width: 991px) and (max-width: 991px) {
+    .disable-content .cp-notification .container .right-sec .btn {
+      min-width: 100%; } }
+
+/*# sourceMappingURL=cp-notification.css.map */

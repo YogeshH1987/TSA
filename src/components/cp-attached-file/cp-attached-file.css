@@ -135,8 +135,43 @@
       font-size: 1.4rem;
       color: #3D7EDB;
       text-decoration: underline; }
+.cp-attached-file.typ-service-provider .upload-file-area {
+  padding: 3.7rem 2.4rem;
+  margin: 0; }
+  .cp-attached-file.typ-service-provider .upload-file-area .desc {
+    max-width: 346px;
+    margin: auto; }
 .cp-attached-file.typ-service-provider .wrapper-thumb {
   width: 48%;
   flex: 0 0 48%; }
+.cp-attached-file.typ-clr-yellow {
+  margin-bottom: 3.2rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-attached-file.typ-clr-yellow {
+      margin-bottom: 0rem;
+      height: 100%; } }
+  .cp-attached-file.typ-clr-yellow .upload-file-area {
+    border: 2px dashed #FFB800;
+    background-color: #FFFBF2; }
+    @media only screen and (max-width: 768px) {
+      .cp-attached-file.typ-clr-yellow .upload-file-area {
+        padding: 3.7rem 0rem;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column; } }
+    .cp-attached-file.typ-clr-yellow .upload-file-area .icon {
+      color: #FFB800; }
+      @media only screen and (max-width: 768px) {
+        .cp-attached-file.typ-clr-yellow .upload-file-area .icon {
+          font-size: 2.4rem;
+          width: 2.4rem;
+          height: 2.4rem; } }
+    .cp-attached-file.typ-clr-yellow .upload-file-area .title {
+      color: #FFB800; }
+      @media only screen and (max-width: 768px) {
+        .cp-attached-file.typ-clr-yellow .upload-file-area .title {
+          font-size: 1.2rem; } }
 
 /*# sourceMappingURL=cp-attached-file.css.map */

@@ -193,7 +193,8 @@
     .cp-service-provider-login .cp-select .select-dropdown .select-dropdown-button {
       width: 100%; }
   .cp-service-provider-login .bullet-list {
-    margin-left: 2.4rem; }
+    margin-left: 2.4rem;
+    margin-bottom: 1.6rem; }
     .cp-service-provider-login .bullet-list .list-item {
       line-height: 2.4rem;
       list-style: disc;

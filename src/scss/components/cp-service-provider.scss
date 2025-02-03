@@ -1,0 +1,302 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-service-provider {
+    .cont-wrap {
+        margin-bottom: 5.6rem;
+
+        @media only screen and (max-width: $media-sm) {
+            margin-bottom: 4rem;
+        }
+
+        .edit-btn {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .tag {
+                color: #00398C;
+                padding: 4px 8px;
+                @include border-radius(26px);
+                background-color: #D8E5F8;
+                font-size: 1.2rem;
+                color: $clr-base;
+                font-family: $font-medium;
+            }
+
+            .icon-edit {
+                cursor: pointer;
+
+                &.disable {
+                    pointer-events: none;
+                    opacity: 30%;
+                }
+            }
+        }
+
+        .cont-head {
+            margin-bottom: 1.2rem;
+
+            .cont-title {
+                font-size: 2.4rem;
+                font-family: $font-semiBold;
+                color: $clr-base;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                @media only screen and (max-width: $media-sm) {
+                    font-size: 2rem;
+                }
+
+                .count {
+                    background: #D2042D;
+                    border-radius: 26px;
+                    color: #FFFFFF;
+                    font-size: 1.6rem;
+                    font-family: $font-medium;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2px 1.2rem
+                }
+
+
+            }
+
+        }
+
+        .desc {
+            color: $clr-base;
+            line-height: 2.8rem;
+
+            @media only screen and (max-width: $media-sm) {
+                line-height: 2.4rem;
+            }
+        }
+
+        .about-details-wrap {
+            padding: 2.4rem;
+            border: 1px solid #DEDEDE;
+            @include border-radius(1.2rem);
+            max-width: 40rem;
+            margin-top: 2.4rem;
+
+            @media only screen and (max-width: $media-sm) {
+                padding: 1.6rem;
+            }
+
+            .about-details {
+                .about-details-list {
+                    display: flex;
+                    font-size: 1.6rem;
+                    color: $clr-base;
+                    gap: 1.2rem;
+                    padding-bottom: 1.2rem;
+                    border-bottom: 1px solid #DEDEDE;
+                    margin-bottom: 1.2rem;
+
+                    @media only screen and (max-width: $media-sm) {
+                        font-size: 1.4rem;
+                    }
+
+                    &:last-child {
+                        border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+
+                    .icon {
+                        font-size: 2.4rem;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        color: #999999;
+                    }
+
+                    .icon-edit {
+                        margin-left: auto;
+                        color: #000;
+                        cursor: pointer;
+                    }
+
+              
+
+                    &.ml-34 {
+                        margin-left: 3.4rem;
+                    }
+
+                    .text-bold {
+                        font-family: $font-semiBold;
+                        color: $clr-base;
+                    }
+                }
+            }
+
+
+        }
+
+        .typ-services {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+
+            .bs-radio {
+                margin-bottom: 0;
+
+                .custom-radio {
+                    min-width: auto;
+                    padding: 1.2rem 1.6rem;
+                }
+            }
+        }
+
+        &.typ-bg-pink {
+            background-color: #FFFBF2;
+            padding: 1.6rem;
+
+            @media only screen and (max-width: $media-sm) {
+                margin-left: -1.6rem;
+                margin-right: -1.6rem;
+            }
+        }
+
+        .tel-wrap {
+            display: flex;
+            flex-wrap: wrap;
+
+            & li+li::before {
+                content: '|';
+                font-size: 1.6rem;
+                padding-inline: 0.8rem;
+
+                @media only screen and (max-width: $media-sm) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .services-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            .tag {
+                padding: 4px 8px;
+                @include border-radius(4px);
+                background-color: #D8E5F8;
+                font-size: 1.2rem;
+                color: $clr-base;
+                font-family: $font-medium;
+            }
+        }
+        .link {
+            font-family: $font-medium;
+            text-decoration: underline;
+            display: block;
+        }
+        &.typ-review {
+            .cont-head {
+                @media only screen and (max-width: $media-sm) { border-bottom: 0;padding-bottom: 0;} 
+                .review-desc {
+                    margin-top: 1.6rem;
+                }
+
+                .star-rating {
+                    display: flex;
+                    margin-top: 1.2rem;
+                    .icon {
+                        font-size: 3.2rem;
+                        color: #CCCCCC;
+                    }
+                }
+            }
+
+            .text-bold {
+                font-family: $font-semiBold;
+                font-size: 1.6rem;
+                color: $clr-base;
+            }
+            .link {
+                text-align: center;
+                margin-top: 2.4rem;
+                font-size: 1.6rem;
+                @media only screen and (max-width: $media-sm) { font-size: 1.4rem; }
+            }
+        }
+     
+    }
+
+    .mt-12 {
+        margin-top: 1.2rem;
+    }
+
+    .mb-12 {
+        margin-bottom: 1.2rem;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #DEDEDE;
+        padding-bottom: 1.6rem;
+    }
+
+    .sub-title {
+        font-size: 2rem;
+        color: $clr-base;
+        font-family: $font-medium;
+
+        @media only screen and (max-width: $media-sm) {
+            font-size: 1.6rem;
+        }
+    }
+
+    .clr-dark {
+        color: $clr-base;
+    }
+
+    .project-detail-img {
+        max-height: 300px;
+        @include border-radius(12px);
+        overflow: hidden;
+        margin-bottom: 3.2rem;
+
+        @media only screen and (max-width: $media-sm) {
+            height: 100%;
+            max-height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .social-media-wrap {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        margin-top: 1.2rem;
+
+        .social-media-list {
+            width: 3.2rem;
+        }
+    }
+
+    .btn-blue {
+    
+        white-space: normal;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        @media only screen and (max-width: $media-sm) { width: 100%;}
+        .icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            font-size: 2.4rem;
+            color: #3D7EDB;
+        }
+    }
+}

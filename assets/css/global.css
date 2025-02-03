@@ -1294,7 +1294,10 @@ p {
       .bs-sec.typ-first-sec {
         margin-top: 13rem; } }
   .bs-sec.typ-service-provider {
-    margin-top: 15rem; }
+    margin-top: 19rem; }
+    @media only screen and (max-width: 991px) {
+      .bs-sec.typ-service-provider {
+        margin-top: 15rem; } }
   .bs-sec.typ-commerce-blog, .bs-sec.typ-vegetable-patch, .bs-sec.typ-similar-prod {
     position: relative;
     overflow: hidden;
@@ -2173,6 +2176,10 @@ p {
     opacity: 0.4;
     background: #DEDEDE;
     color: #B3B3B3; }
+  .btn.btn-blue {
+    border-color: #3D7EDB;
+    color: #3D7EDB;
+    padding: 1.2rem 1.6rem; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }

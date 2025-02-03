@@ -98,5 +98,65 @@
         font-size: 2rem; }
         .cp-recommend .content-wrap .tag-list .tag-link .active {
           color: #D2042D; }
+  .cp-recommend.typ-sp-detail {
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    flex-direction: column; }
+    .cp-recommend.typ-sp-detail .content-wrap {
+      padding: 0;
+      padding-bottom: 4px; }
+      @media only screen and (max-width: 768px) {
+        .cp-recommend.typ-sp-detail .content-wrap {
+          padding-bottom: 0px; } }
+      .cp-recommend.typ-sp-detail .content-wrap .location-sec .location-text {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px; }
+        @media only screen and (max-width: 768px) {
+          .cp-recommend.typ-sp-detail .content-wrap .location-sec .location-text {
+            font-size: 1.2rem; } }
+        .cp-recommend.typ-sp-detail .content-wrap .location-sec .location-text .icon {
+          font-size: 2.4rem; }
+          @media only screen and (max-width: 768px) {
+            .cp-recommend.typ-sp-detail .content-wrap .location-sec .location-text .icon {
+              font-size: 1.6rem; } }
+          .cp-recommend.typ-sp-detail .content-wrap .location-sec .location-text .icon.active {
+            color: #FFB800; }
+      .cp-recommend.typ-sp-detail .content-wrap .rating-sec .rating-cont {
+        font-size: 1.4rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-recommend.typ-sp-detail .content-wrap .rating-sec .rating-cont {
+            font-size: 1.2rem; } }
+      .cp-recommend.typ-sp-detail .content-wrap .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2rem;
+        margin-bottom: 1.6rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-recommend.typ-sp-detail .content-wrap .title {
+            font-size: 1.6rem;
+            margin-bottom: 8px; } }
+        .cp-recommend.typ-sp-detail .content-wrap .title .icon {
+          color: #000;
+          cursor: pointer;
+          font-size: 2.4rem;
+          width: 2.4rem;
+          height: 2.4rem; }
+    .cp-recommend.typ-sp-detail .link {
+      font-family: "Poppins Medium";
+      font-size: 1.6rem;
+      text-decoration: underline;
+      display: block;
+      padding-top: 1.6rem;
+      display: block; }
+      @media only screen and (max-width: 768px) {
+        .cp-recommend.typ-sp-detail .link {
+          font-size: 1.2rem;
+          padding-top: 1.2rem; } }
 
 /*# sourceMappingURL=cp-recommend.css.map */

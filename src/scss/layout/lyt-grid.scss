@@ -431,7 +431,14 @@
       width: 100% !important;
     }
   }
-
+  .grid-col-w-65-sp{
+    width: 65% !important;
+    @media only screen and (max-width: $media-mobile) {width: 30% !important}
+  }
+  .grid-col-w-35-sp{
+    width: 35% !important;
+    @media only screen and (max-width: $media-mobile) {width: 70%!important}
+  }
   .grid-col-w-100 {
     width: 100% !important;
   }

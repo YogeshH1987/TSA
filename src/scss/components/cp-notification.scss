@@ -1,0 +1,130 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-notification {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 1.6rem;
+    margin-bottom: 4rem;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+
+    @media only screen and (max-width: $media-sm) {
+        margin-bottom: 2.4rem;
+    }
+
+    .icon {
+        width: 74px;
+        flex: 0 0 74px;
+
+        @media only screen and (max-width: $media-sm) {
+            width: 54px;
+            flex: 0 0 54px;
+        }
+    }
+
+    .cont-wrap {
+        .title {
+            font-size: 2rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+            margin-bottom: 4px;
+
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .desc {
+            line-height: 2.4rem;
+            font-size: 1.6rem;
+
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    .right-sec {
+        margin-left: auto;
+
+        .close {
+            font-size: 2.4rem;
+
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.disable-content {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+
+    &::after {
+        content: '';
+        background-color: #ffffff87;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .cp-notification {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        .container {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            @media only screen and (max-width: $media-sm) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .icon {
+                @media only screen and (max-width: $media-sm) {
+                    width: 114px;
+                    flex: 0 0 114px;
+                }
+            }
+
+            .cont-wrap {
+                .title {
+                    @media only screen and (max-width: $media-sm) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .right-sec {
+                @media only screen and (max-width: $media-sm) {
+                    margin-left: 0;
+                    width: 100%;
+
+                    .btn {
+                        @media only screen and (max-width: $media-sm) {
+                        min-width: 100%;}
+                    }
+                }
+
+            }
+        }
+    }
+}

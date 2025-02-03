@@ -305,7 +305,8 @@
     }
   }
 &.typ-service-provider{
-  margin-top: 15rem;
+  margin-top: 19rem;
+  @media only screen and (max-width: $media-sm) {  margin-top: 15rem;}
 }
   &.typ-commerce-blog,
   &.typ-vegetable-patch,

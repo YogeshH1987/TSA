@@ -36,7 +36,7 @@
   .cp-customer-review .desc {
     font-family: "Poppins Regular";
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2rem !important;
     color: #666666;
     margin-bottom: 1.6rem; }
   .cp-customer-review .customer-detail {
@@ -66,5 +66,9 @@
         padding: 0.4rem 0.6rem;
         border-radius: 0.4rem;
         margin-left: 0.4rem; }
+  .cp-customer-review.typ-sp-review:first-child {
+    border-top: none; }
+  .cp-customer-review.typ-sp-review .customer-detail .helpful .count-text {
+    background-color: #F3F4F6; }
 
 /*# sourceMappingURL=cp-customer-review.css.map */

@@ -25,7 +25,11 @@
 
     .provider-head {
         margin-bottom: 3.2rem;
-        @media only screen and (max-width: $media-mobile) {   margin-bottom: 2.4rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+            margin-bottom: 2.4rem;
+        }
+
         .head-title {
             font-size: 2.8rem;
             font-family: $font-semiBold;
@@ -42,10 +46,11 @@
             font-family: $font-semiBold;
             color: $clr-base;
         }
-        .desc{
+
+        .desc {
             @media only screen and (max-width: $media-mobile) {
                 text-align: left;
-            }  
+            }
         }
     }
 
@@ -60,7 +65,10 @@
             &.typ-2 {
                 font-size: 2rem;
                 font-family: $font-semiBold;
-                @media only screen and (max-width: $media-mobile) { font-size: 1.6rem;}
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.6rem;
+                }
             }
         }
 
@@ -279,17 +287,23 @@
 
     .bullet-list {
         margin-left: 2.4rem;
+        margin-bottom: 1.6rem;
 
         .list-item {
             line-height: 2.4rem;
             list-style: disc;
             font-size: 1.6rem;
             color: #333333;
-            @media only screen and (max-width: $media-mobile) {   font-size: 1.4rem;}
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.4rem;
+            }
+
             &::marker {
                 font-size: 1rem;
             }
         }
     }
+
 
 }
