@@ -31,7 +31,20 @@ TSA.RebarsCalculator = {
     initSlider: function () {
         const numberFlrSlider = document.getElementById('numberFlr');
         if (!numberFlrSlider) return console.error('Slider element not found!');
-
+        
+        const animationContainer = document.getElementById('lottie-animation');
+        if (!animationContainer) return console.error('Lottie container not found!');
+        
+        // Load Lottie animation
+        const animation = lottie.loadAnimation({
+            container: animationContainer,
+            renderer: 'svg',
+            loop: false,  // Change to `true` if you want it to loop
+            autoplay: false,
+            path: 'http://localhost:8000/components/cp-rebar-estimator/json/verticalBuilding.json'  // Update with the correct JSON path
+        });
+    
+        // Initialize noUiSlider
         noUiSlider.create(numberFlrSlider, {
             start: 0,
             connect: [true, false],
@@ -44,7 +57,22 @@ TSA.RebarsCalculator = {
                 format: { to: (value) => ['Ground', 'G+1', 'G+2'][value] }
             }
         });
-    },
+    
+        // Play animation based on slider value
+        numberFlrSlider.noUiSlider.on('update', function (values, handle) {
+            const floor = Math.round(values[handle]);
+            console.log('Slider changed to:', floor);
+            
+            // Map slider value to animation frames or actions
+            if (floor === 0) {
+                animation.goToAndStop(0, true); // Ground level frame
+            } else if (floor === 1) {
+                animation.goToAndStop(50, true); // G+1 level frame
+            } else if (floor === 2) {
+                animation.goToAndStop(100, true); // G+2 level frame
+            }
+        });
+    },        
 
     setupRadioEvents: function () {
         $(document).on('change', '.js-select-house', function () {
