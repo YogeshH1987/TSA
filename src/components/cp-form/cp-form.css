@@ -13,30 +13,40 @@
   line-height: 2.4rem;
   margin-bottom: 1.2rem;
 }
+.cp-form .form-group {
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-form .form-group {
+    margin-bottom: 2.4rem;
+  }
+}
+.cp-form .form-group.typ-border {
+  padding-top: 1.6rem;
+  border-top: 1px solid #DEDEDE;
+}
 .cp-form .form-group .form-label {
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 2rem;
+  color: #666666;
   margin-bottom: 0.8rem;
   display: block;
 }
+.cp-form .form-group .form-label sup {
+  color: #D2042D;
+}
+.cp-form .form-group .form-label .clr-gray {
+  color: #999999;
+}
 .cp-form .form-group .form-control {
   width: 100%;
-  padding: 1.2rem 1.6rem;
+  padding: 1.1rem 1.6rem;
   border: 1px solid #DEDEDE;
   font-family: "Poppins Regular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   border-radius: 1.2rem;
-}
-.cp-form .form-group .form-control::placeholder {
-  color: #B3B3B3;
-  opacity: 1; /* Firefox */
-  font-family: "Poppins Regular";
-}
-.cp-form .form-group .form-control::-ms-input-placeholder { /* Edge 12-18 */
-  color: #B3B3B3;
-  font-family: "Poppins Regular";
 }
 .cp-form .form-group .form-textarea {
   width: 100%;
@@ -48,15 +58,6 @@
   border-radius: 1.2rem;
   min-height: 15.6rem;
 }
-.cp-form .form-group .form-textarea::placeholder {
-  color: #B3B3B3;
-  opacity: 1; /* Firefox */
-  font-family: "Poppins Regular";
-}
-.cp-form .form-group .form-textarea::-ms-input-placeholder { /* Edge 12-18 */
-  color: #B3B3B3;
-  font-family: "Poppins Regular";
-}
 .cp-form .form-group .err-mgs {
   color: #D2042D;
   font-family: "Poppins Medium";
@@ -65,53 +66,133 @@
   margin-bottom: 2.4rem;
   display: block;
 }
-.cp-form .act-wrap .btn-submit {
+.cp-form .feedback-personal-data .form-group .form-label {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-label {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-control {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #DEDEDE;
+  font-family: "Poppins Regular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-radius: 1.2rem;
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-control::placeholder {
+  color: #B3B3B3;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Poppins Regular";
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-control::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #B3B3B3;
+  font-family: "Poppins Regular";
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-textarea {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #DEDEDE;
+  font-family: "Poppins Regular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-radius: 1.2rem;
+  min-height: 15.6rem;
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-textarea::placeholder {
+  color: #B3B3B3;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Poppins Regular";
+}
+.cp-form .feedback-personal-data .form-group .form-group .form-textarea::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #B3B3B3;
+  font-family: "Poppins Regular";
+}
+.cp-form .feedback-personal-data .form-group .form-group .err-mgs {
+  color: #D2042D;
+  font-family: "Poppins Medium";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.4rem;
+  display: block;
+}
+.cp-form .feedback-personal-data .form-group .act-wrap .btn-submit {
   width: 100%;
 }
-.cp-form .disabled {
+.cp-form .feedback-personal-data .form-group .disabled {
   background-color: #ededed;
   color: #b3b3b3;
   border: none;
 }
-.cp-form .star-label,
-.cp-form .review-label,
-.cp-form .title-label {
+.cp-form .feedback-personal-data .form-group .star-label,
+.cp-form .feedback-personal-data .form-group .review-label,
+.cp-form .feedback-personal-data .form-group .title-label {
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 2rem;
   margin-bottom: 0.8rem;
 }
-.cp-form .star-rating {
+.cp-form .feedback-personal-data .form-group .star-rating {
   padding-bottom: 2.4rem;
   border-bottom: 1px solid #DEDEDE;
   margin-bottom: 2.4rem;
 }
-.cp-form .star-rating .icon {
+.cp-form .feedback-personal-data .form-group .star-rating .icon {
   font-size: 4.8rem;
   color: #cccccc;
 }
-.cp-form .star-rating .star-selected {
+.cp-form .feedback-personal-data .form-group .star-rating .star-selected {
   color: #ffb800;
 }
-.cp-form.typ-location .act-wrap, .cp-form.typ-language .act-wrap {
+.cp-form .feedback-personal-data .form-group.typ-location .act-wrap, .cp-form .feedback-personal-data .form-group.typ-language .act-wrap {
   margin-top: 2.4rem;
   text-align: center;
 }
-.cp-form.typ-location .act-wrap .btn-submit, .cp-form.typ-language .act-wrap .btn-submit {
+.cp-form .feedback-personal-data .form-group.typ-location .act-wrap .btn-submit, .cp-form .feedback-personal-data .form-group.typ-language .act-wrap .btn-submit {
   margin-bottom: 2.4rem;
 }
-.cp-form.typ-location .radio-wrap, .cp-form.typ-language .radio-wrap {
+.cp-form .feedback-personal-data .form-group.typ-location .radio-wrap, .cp-form .feedback-personal-data .form-group.typ-language .radio-wrap {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
-.cp-form.typ-location .bs-radio, .cp-form.typ-language .bs-radio {
+.cp-form .feedback-personal-data .form-group.typ-location .bs-radio, .cp-form .feedback-personal-data .form-group.typ-language .bs-radio {
   margin-bottom: 0;
 }
-.cp-form.typ-location .bs-radio .custom-radio, .cp-form.typ-language .bs-radio .custom-radio {
+.cp-form .feedback-personal-data .form-group.typ-location .bs-radio .custom-radio, .cp-form .feedback-personal-data .form-group.typ-language .bs-radio .custom-radio {
   min-width: 8.4rem;
   padding: 1.25rem 0;
+}
+.cp-form .feedback-personal-data .form-group.typ-book-demo {
+  margin: 0;
+}
+.cp-form .feedback-personal-data .form-group.typ-book-demo .form-group .form-label {
+  margin-bottom: 1.6rem;
+}
+.cp-form .feedback-personal-data .form-group.typ-book-demo .form-group .form-control {
+  max-width: 34.4rem;
+}
+.cp-form .feedback-personal-data .form-group.typ-book-demo .btn-default {
+  min-width: 22rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-form .feedback-personal-data .form-group.typ-book-demo .btn-default {
+    min-width: 100%;
+  }
 }
 .cp-form.typ-newsletter {
   display: flex;
@@ -218,6 +299,61 @@
 }
 .cp-form.mt-0 {
   margin-top: 0;
+}
+.cp-form.typ-cart-shipping {
+  margin-top: 0;
+}
+.cp-form.typ-cart-shipping .desc {
+  font-size: 1.2rem;
+  color: #666666;
+}
+.cp-form.typ-cart-shipping .mt-8 {
+  margin-top: 8px;
+}
+.cp-form.typ-cart-shipping .form-group {
+  margin-bottom: 2.4rem;
+}
+.cp-form.typ-cart-shipping .form-group .form-control {
+  color: #333333;
+  font-family: "Poppins Medium" !important;
+}
+.cp-form.typ-cart-shipping .form-group .select-dropdown {
+  width: 100%;
+}
+.cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-button {
+  width: 100%;
+}
+.cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-button .select-text {
+  color: #333333;
+  font-family: "Poppins Medium";
+}
+.cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-button .zmdi-chevron-down::after {
+  font-size: 1.4rem;
+}
+.cp-form.typ-cart-shipping .form-group .select-dropdown .select-dropdown-list-item {
+  color: #333333;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+}
+.cp-form.typ-cart-shipping .typ-request-submit {
+  min-width: 100%;
+}
+.cp-form.typ-cart-shipping .form-input-wrap {
+  position: relative;
+}
+.cp-form.typ-cart-shipping .form-input-wrap .icon-padding {
+  padding-left: 32px;
+}
+.cp-form.typ-cart-shipping .form-input-wrap .icon-check {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #00A441;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=cp-form.css.map */

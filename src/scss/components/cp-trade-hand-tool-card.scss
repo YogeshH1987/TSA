@@ -1,97 +1,209 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.select-size-quntity-wrap{
+.select-size-quntity-wrap {
     display: flex;
     gap: 1.2rem;
     margin-bottom: 3.2rem;
     margin-top: 1.6rem;
-}
 
-.cp-trade-hand-tool-card{
-display: flex;
-align-items: center;
-text-align: center;
-border-radius: 12px;
-border: 2px solid $clr-border;
-height: 14.0rem;
-overflow: hidden;
-background: $clr-root;
-flex-direction: column;
-justify-content: center;
-@media only screen and (max-width: $media-mobile){
-    height: 9.6rem;
+    &.typ-architect {
+        gap: 2rem;
 
-}
-.img-wrap{
-    width: 10rem;
-    height: 6.4rem;
-    @media only screen and (max-width: $media-mobile){
-        width: 9.6rem;
-        height: 4.8rem;
-    
-    }
-
-}
-.title{
-    font-size: 1.6rem;
-   color: $clr-base;
-    font-family: $font-semiBold;
-    padding-top: 0.8rem;
-    @media only screen and (max-width: $media-mobile){
-        font-size: 1.4rem;
-    }
-}
-&.active,
-&:hover{
-    border-color: #3D7EDB;
-    .title{
-        color: #3D7EDB;
-    }
-   
-}
-&.typ-why-wiron{
-    border: 0;
-    height: 14.8rem;
-    border-radius:12px 12px 12px 0;
-    text-align: left;
-    justify-content: flex-start;
-    .img-wrap{
-        width: 16.0rem;
-        height: 10.4rem;
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    &:hover{
-        .title{
-            color:$clr-base;
+        @media only screen and (max-width: $media-mobile) {
+            gap: 1.2rem;
         }
-       
     }
 }
-&.typ-struct-pdp{
-    width: 19.0rem;
+
+.cp-trade-hand-tool-card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid $clr-border;
     height: 14.0rem;
-    @media only screen and (max-width: $media-mobile){
-        width: 10.6rem;
+    overflow: hidden;
+    background: $clr-root;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width: $media-mobile) {
         height: 9.6rem;
+
     }
-}
-&.typ-why-structure{
-    border: 0;
-    height: 295px;
-    text-align: left;
-    @media only screen and (max-width: $media-mobile){
-        height: 188px;
-        width: 166px;
+
+    .img-wrap {
+        width: 10rem;
+        height: 6.4rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 9.6rem;
+            height: 4.8rem;
+
+        }
+
     }
-    .img-wrap{
-        width: 295px;
-        height: 260px;
-        @media only screen and (max-width: $media-mobile){
-            height: 160px;
+
+    .title {
+        font-size: 1.6rem;
+        color: $clr-base;
+        font-family: $font-semiBold;
+        padding-top: 0.8rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &.active,
+    &:hover {
+        border-color: #3D7EDB;
+
+        .title {
+            color: #3D7EDB;
+        }
+
+    }
+
+    &.typ-why-wiron {
+        border: 0;
+        height: 14.8rem;
+        border-radius: 12px 12px 12px 0;
+        text-align: left;
+        justify-content: flex-start;
+
+        .img-wrap {
+            width: 16.0rem;
+            height: 10.4rem;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        &:hover {
+            .title {
+                color: $clr-base;
+            }
+
+        }
+    }
+
+    &.typ-struct-pdp {
+        width: 19.0rem;
+        height: 14.0rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 10.6rem;
+            height: 9.6rem;
+        }
+    }
+
+    &.typ-why-structure {
+        border: 0;
+        height: 295px;
+        text-align: left;
+
+        @media only screen and (max-width: $media-mobile) {
+            height: 188px;
             width: 166px;
         }
+
+        .img-wrap {
+            width: 295px;
+            height: 260px;
+
+            @media only screen and (max-width: $media-mobile) {
+                height: 160px;
+                width: 166px;
+            }
+        }
     }
-}
+
+    &.typ-architect {
+        min-width: 19rem;
+        padding: 1.6rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 0.2rem;
+            min-width: 7.7rem;
+            height: 11.2rem;
+        }
+
+        .img-wrap {
+            width: auto;
+            height: 4rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .desc {
+            font-size: 1rem;
+        }
+
+        &:hover {
+            .title {
+                color: $clr-base;
+            }
+        }
+
+        &:nth-child(1) {
+            .title {
+                color: #3D7EDB;
+            }
+
+            border-color: #3D7EDB;
+
+            @media only screen and (max-width: $media-mobile) {
+                order: 4;
+                background: #ECF2FB;
+                border-color: #B1CBF1;
+
+            }
+        }
+    }
+
+    &.typ-shed-plp {
+        justify-content: initial;
+        align-items: initial;
+        height: 100%;
+
+        @media only screen and (max-width: $media-mobile) {
+            height: 100%;
+        }
+
+        .img-wrap {
+            width: 100%;
+            height: 9.2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                height: 6.5rem;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .title {
+            font-size: 1.4rem;
+            font-family: $font-medium;
+            padding: .8rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                line-height: 1.6rem;
+            }
+        }
+
+      
+    }
+    &.typ-shed-single-card {
+        height: 100%;
+    
+    }
 }

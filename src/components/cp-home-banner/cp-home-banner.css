@@ -49,7 +49,8 @@
   }
 }
 .cp-home-banner .feature .feature-item {
-  width: 31%; /* Adjust width to account for 20px gutter */
+  width: 31%;
+  /* Adjust width to account for 20px gutter */
   height: 11rem;
   display: flex;
   margin: 0;
@@ -89,12 +90,14 @@
 }
 .cp-home-banner .feature .feature-item.typ-resize {
   height: 15.6rem;
-  width: 48%; /* Larger items for bigger screens */
+  width: 48%;
+  /* Larger items for bigger screens */
 }
 @media only screen and (max-width: 768px) {
   .cp-home-banner .feature .feature-item.typ-resize {
     height: 13rem;
-    width: 48%; /* Adjust width and gutter for mobile */
+    width: 48%;
+    /* Adjust width and gutter for mobile */
   }
 }
 .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .cmp-image,
@@ -216,6 +219,16 @@
     width: 8rem;
     height: 8rem;
   }
+}
+.cp-home-banner.typ-cart-order-confirm {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cp-home-banner.typ-cart-order-confirm .feature {
+  width: 100%;
+}
+.cp-home-banner.typ-cart-order-confirm .feature .feature-item {
+  height: 14.5rem;
 }
 .cp-home-banner .cmp-image__image {
   width: 100%;

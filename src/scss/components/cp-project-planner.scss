@@ -1,154 +1,222 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-project-planner{
-    border: 1px solid $clr-border;
-    padding: 16px;
-    border-radius: 12px;
-    position: relative;
-    .cong-img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    .cp-title{
-        padding: 0 0 15px 0;
-        display: flex;
-        justify-content: flex-start;
-        border-bottom: 1px solid $clr-border;
-        margin-bottom: 12px;
-        align-items: center;
-        position: relative;
-        .title{
-            display: flex;
+.cp-project-planner {
+    .cont-wrap {
+        padding-right: 10rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding-right: 0;
+            margin-bottom: 1.6rem;
+        }
+
+        .sec-head {
+            margin-bottom: 1rem;
+        }
+
+        .desc {
             color: $clr-base;
-            font-size: 20px;
-            line-height: 28px;
-            font-family: $font-semiBold;
-            @media only screen and (max-width: $media-sm) {
-                font-size: 16px;
-                line-height: 24px;
-                padding: 0px 0 10px 0px;
-            }
+            line-height: 2.8rem;
         }
-        .icon-wrap{
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            background: #FFF8E5;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            @media only screen and (max-width: $media-sm) {
-                width: 32px;
-                height: 32px;
-            }
-        }
-        .icon{
-            color: #FFB800;
-            font-size: 20px;
-            @media only screen and (max-width: $media-sm) {
-                font-size: 14px;
-            }
-        }
-        .btn-link{
-            position: relative;
-            margin: 0 0 0 auto;
-            @media only screen and (max-width: $media-sm) {
-                font-size: 12px;
-                line-height: 16px;
+
+        .btn-wrap {
+            margin-top: 3.2rem;
+
+            .btn {
+                min-width: 24rem
             }
         }
     }
-    .planner-details{
-        position: relative;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid $clr-border;
-        .heading{
+
+    .project-planner-wrap {
+        border: 1px solid #DEDEDE;
+        padding: 2.4rem;
+        background-color: #fff;
+        @include border-radius(1.6rem);
+        margin-bottom: 1.2rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem;
+        }
+
+        &.typ-bg-color {
+            border-color: #FFD466;
+            background-color: #FFF8E5;
+        }
+
+        .title {
+            font-size: 2rem;
+            color: $clr-base;
             font-family: $font-semiBold;
-            color: $clr-base;
-            font-size: 20px;
-            line-height: 28px;
-            text-align: center;
-            margin-bottom: 10px;
-            padding: 0 15px;
         }
-        .sub-heading{
-            font-family: $font-medium;
-            color: $clr-base;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            margin-bottom: 10px;
+
+        .sub-title {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
         }
-        .planner-card{
-            background: #00398C;
-            border-radius: 12px;
-            padding: 32px 40px;
-            @media only screen and (max-width: $media-sm) {
-                border-radius: 8px;
-                padding: 24px;
+
+        .cont-sec {
+            border-top: 1px solid #FFD466;
+            padding-top: 1.6rem;
+            margin-top: 1.6rem;
+        }
+
+        .desc {
+            font-size: 1.4rem;
+            color: $clr-base;
+            line-height: 2rem;
+        }
+
+        .progress-bar-wrap {
+            background-color: #00398C;
+            padding: 1.2rem;
+            @include border-radius(0.8rem);
+            margin-top: 1.6rem;
+
+            .ellipsis {
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
             }
-            ul{
-                list-style: none;
-                li{
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 12px 0;
-                    border-bottom: 1px solid #6498E2;
-                    &:first-of-type{
-                        padding-top: 0;
-                    }
-                    &:last-of-type{
-                        padding-bottom: 0;
-                        border-bottom: 0;
-                    }
+
+            .dates-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .date {
+                    font-size: 1.2rem;
+                    color: #fff;
+                    font-family: $font-medium;
                 }
             }
-            .content{
-                display: flex;
-                flex-direction: column;
-                position: relative;
+
+            .progress {
+                height: 4px;
+                margin: 8px 0;
+                overflow: hidden;
+                background-color: #f5f5f5;
+                border-radius: 11px;
+
+                .progress-bar {
+                    float: left;
+                    width: 0%;
+                    height: 100%;
+                    color: #fff;
+                    text-align: center;
+                    background-color: #00A441;
+                    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+                    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+                    -webkit-transition: width .6s ease;
+                    -o-transition: width .6s ease;
+                    transition: width .6s ease;
+                }
             }
-            .label{
-                font-family: $font-regular;
-                font-size: 14px;
-                line-height: 20px;
-                color: #8BB2E9;
-                text-align: left;
-                padding-bottom: 6px;
-            }
-            .details{
-                font-family: $font-semiBold;
-                font-size: 20px;
-                line-height: 28px;
-                color: $clr-root;
-                text-align: left;
-            }
-            .tag{
-                margin-top: 6px;
-                background: #CCEDD9;
-                border: 1px solid #66C88D;
-                border-radius: 30px;
-                padding: 2px 8px;
-                text-align: center;
-                font-size: 12px;
-                line-height: 18px;
+
+            .days {
+                font-size: 1rem;
+                color: #fff;
                 font-family: $font-medium;
-                color: $clr-base;
+                text-align: right;
             }
         }
     }
-    .action-wrap{
-        justify-content: space-between;
-        display: flex;
-        &.btn-primary{
-            min-width: 250px;
-            width: 100%;
+
+    .planner-img-wrap {
+        width: 280px;
+        height: 280px;
+        @include border-radius(50%);
+        border: 3px solid #ECF2FB;
+        margin: auto;
+        background-color: rgba(236, 242, 251, 10%);
+        overflow: hidden;
+        padding: 28px 0 0 40px;
+        margin-bottom: 2.4rem;
+
+        &.blue-circle {
+            background-color: rgba(236, 242, 251, 10%);
+            border: 3px solid #ECF2FB;
+        }
+
+        &.green-circle {
+            background-color: rgba(153, 218, 179, 10%);
+            border: 3px solid #99DAB3;
+        }
+
+        &.orange-circle {
+            background-color: rgba(255, 227, 153, 10%);
+            border: 3px solid #FFE399;
+        }
+
+        &.pink-circle {
+            background-color: rgba(237, 155, 171, 10%);
+            border: 3px solid #ED9BAB;
+        }
+    }
+
+    .planner-cont-wrap {
+        text-align: center;
+        max-width: 217px;
+        margin: auto;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.6rem;
+        }
+
+        .title {
+            font-size: 2.4rem;
+            color: $clr-base;
+            font-family: $font-semiBold;
+            margin-bottom: 1.2rem;
+        }
+
+        .desc {
+            color: $clr-base;
+            line-height: 2.8rem;
+        }
+    }
+
+    .project-planner-main {
+        @media only screen and (max-width: $media-mobile) {
+            border: 1px solid #DEDEDE;
+            @include border-radius(1.2rem);
+            padding: 1.6rem;
+
+            .planner-head-title {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                font-family: $font-semiBold;
+                color: $clr-base;
+                padding-bottom: 1.2rem;
+                margin-bottom: 1.2rem;
+                border-bottom: 1px solid #DEDEDE;
+                gap: 0.8rem;
+
+                .icon {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    background-color: #FFF8E5;
+                    @include border-radius(50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFB800;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .desc {
+                color: $clr-base;
+                line-height: 2.4rem;
+                margin-bottom: 1.6rem;
+            }
+
+            .btn {
+                min-width: 100%;
+            }
         }
     }
 }

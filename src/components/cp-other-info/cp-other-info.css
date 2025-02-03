@@ -49,6 +49,17 @@
   font-family: "Poppins Regular";
   line-height: 1.6rem;
 }
+.cp-other-info .other-info-list .other-info-item .sub-item.typ-green {
+  border: 1px solid #66C88D;
+  background: #E5F6EC;
+  font-size: 1.4rem;
+  color: #00A441;
+  font-family: "Poppins Medium";
+  border-radius: 26px;
+  max-width: 16rem;
+  text-align: center;
+  padding: 0.3rem;
+}
 .cp-other-info .other-info-list .other-info-item .sub-item-list {
   display: flex;
 }
@@ -122,6 +133,15 @@
 }
 .cp-other-info.typ-tiscon .other-info-list .other-info-item .icon {
   color: #3D7EDB;
+}
+.cp-other-info.typ-payment .tag {
+  border: 1px solid #66C88D;
+  background-color: #CCEDD9;
+  border-radius: 2.6rem;
+  font-size: 1.2rem;
+  color: #333333;
+  padding: 2px 8px;
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=cp-other-info.css.map */

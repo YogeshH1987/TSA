@@ -238,6 +238,261 @@
         }
     }
 
+    &.typ-flr-plan {
+        padding: 0;
+        width: 48%;
+        margin-bottom: 0;
+
+        @media only screen and (max-width: $media-sm) {
+            width: 100%;
+        }
+
+        .custom-radio {
+            padding: 0;
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            background: $clr-root;
+            border: 4px solid #D2042D;
+        }
+    }
+
+    &.typ-house {
+        .custom-radio {
+            padding: 0;
+            border: 0;
+
+            @media only screen and (max-width: $media-sm) {
+                // min-width: 15rem;
+                min-width: 50%;
+                width: 100%;
+            }
+        }
+
+        input[type=radio]:checked {
+            &+.custom-radio {
+                background: $clr-root;
+                border: 0;
+
+                .home-typ-card {
+                    .img-wrap {
+                        border: 4px solid #D2042D;
+                    }
+                }
+            }
+        }
+    }
+
+    &.typ-book-demo {
+        .custom-radio {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.2rem 1.6rem;
+
+            @media only screen and (max-width: $media-sm) {
+                min-width: 16.5rem;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &.typ-plan {
+        .custom-radio {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            font-family: $font-medium;
+            padding: 1.6rem;
+
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                padding: 1.4rem;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &.typ-build-cost {
+        .custom-radio {
+            position: relative;
+
+            &:before {
+                font-size: 3.3rem;
+                content: "\e944";
+                font-family: "icomoon" !important;
+                color: #DEDEDE;
+                position: absolute;
+                top: -1.5rem;
+                background: $clr-root;
+                left: 50%;
+                transform: translateX(-50%);
+                @include border-radius(50%);
+            }
+
+            padding: 3.2rem 1.6rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 2.4rem 1rem 2rem;
+            }
+
+            @media only screen and (max-width: $media-sm) {
+                min-width: 11.2rem;
+            }
+
+            .material-wrap {
+                width: 100%;
+
+                .img-wrap {
+                    width: 7.2rem;
+                    height: 7.2rem;
+                    background: #FFC633;
+                    padding: 1rem;
+                    margin-bottom: 1.2rem;
+                    @include border-radius(50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .icon {
+                        font-size: 3.9rem;
+                        line-height: 7.2rem;
+                        color: $clr-root;
+                    }
+                }
+
+                .home-typ {
+                    font-family: $font-semiBold;
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                    text-align: center;
+                    color: $clr-base;
+                    position: relative;
+                    padding-bottom: 1.2rem;
+                    margin-bottom: 1.6rem;
+                    text-transform: capitalize;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 3px;
+                        width: 4.8rem;
+                        background: #FFC633;
+                        @include border-radius(1rem);
+                    }
+                }
+
+                .detail-list {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 1.6rem;
+                    flex-direction: column;
+                    text-align: left;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        align-items: center;
+                    }
+
+                    .title {
+                        color: $clr-para;
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                        margin-bottom: 0.2rem;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            text-align: center;
+                        }
+                    }
+
+                    .desc {
+                        color: $clr-black;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        font-family: $font-medium;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            font-size: 1.2rem;
+                            line-height: 1.6rem;
+                            text-align: center;
+                            min-height: 3.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        input[type=radio]:checked {
+            &+.custom-radio {
+                &:before {
+                    content: "\e91a";
+                    color: #00A441;
+                }
+            }
+        }
+
+        &.typ-yellow {
+            input[type=radio]:checked {
+                &+.custom-radio {
+                    background: #FFF8E5;
+                    border: 4px solid #FFB800;
+                }
+            }
+        }
+
+        &.typ-red {
+            .material-wrap {
+                .img-wrap {
+                    background: #E46881;
+                }
+
+                .home-typ {
+                    &:after {
+                        background: #E46881;
+                    }
+                }
+            }
+
+            input[type=radio]:checked {
+                &+.custom-radio {
+                    background: #FFF8E5;
+                    border: 4px solid #E46881;
+                }
+            }
+        }
+
+        &.typ-orange {
+            .material-wrap {
+                .img-wrap {
+                    background: #F16933;
+                }
+
+                .home-typ {
+                    &:after {
+                        background: #F16933;
+                    }
+                }
+            }
+
+            input[type=radio]:checked {
+                &+.custom-radio {
+                    background: #FFF8E5;
+                    border: 4px solid #F16933;
+                }
+            }
+        }
+    }
+
     &.typ-blog-quiz {
         .custom-radio {
             align-items: start;
@@ -246,11 +501,13 @@
             position: relative;
         }
 
-        input[type="radio"]:checked+.typ-correct, input[type="radio"]:checked+.typ-incorrect {
+        input[type="radio"]:checked+.typ-correct,
+        input[type="radio"]:checked+.typ-incorrect {
             border-color: #66C88D;
             background-color: #E5F6EC;
             color: $clr-base;
             font-family: $font-medium;
+
             &::after {
                 content: "\e938";
                 width: 2.4rem;
@@ -268,53 +525,339 @@
                 transform: translateY(-50%)
             }
         }
+
         input[type="radio"]:checked+.typ-incorrect {
             background-color: #FDECE5;
             border-color: #F58F66;
-            &::after { content: "\e91f"; color: #EE4400; font-size: 2.4rem;}
+
+            &::after {
+                content: "\e91f";
+                color: #EE4400;
+                font-size: 2.4rem;
+            }
         }
     }
 
-    &.typ-circle-radio{
-        .custom-radio{ position: relative; padding: 0; padding-left: 4rem; display: block; border: none; background: none; color: $clr-base;}
+    &.typ-circle-radio {
+        .custom-radio {
+            position: relative;
+            padding: 0;
+            padding-left: 4rem;
+            display: block;
+            border: none;
+            background: none;
+            color: $clr-base;
+        }
+
         .checkmark {
             position: absolute;
             top: 0;
             left: 0;
             height: 21px;
             width: 21px;
-            background-color: rgba(0,0,0,0);
+            background-color: rgba(0, 0, 0, 0);
             border-radius: 50%;
             border: 2px solid #999999;
             transition: all 0.3s;
 
-          }
-          input[type="radio"]:checked+.custom-radio .checkmark {
-            background-color: rgba(0,0,0,0);
+        }
+
+        input[type="radio"]:checked+.custom-radio .checkmark {
+            background-color: rgba(0, 0, 0, 0);
             border-color: #3D7EDB;
-          }
-          .checkmark::after {
+        }
+
+        .checkmark::after {
             content: "";
             position: absolute;
             display: none;
-          }
-          .checkmark::after{
-            top: 2px;
-           left: 2px;
-           width: 13px;
-           height: 13px;
-           border-radius: 50%;
-           background: #3D7EDB;
-       }
-          input[type="radio"]:checked+.custom-radio .checkmark::after {
-            display: block;
-          }
+        }
 
-          input[type=radio]:checked + .custom-radio {
+        .checkmark::after {
+            top: 2px;
+            left: 2px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #3D7EDB;
+        }
+
+        input[type="radio"]:checked+.custom-radio .checkmark::after {
+            display: block;
+        }
+
+        input[type=radio]:checked+.custom-radio {
             border: none;
-            background:none;
+            background: none;
             font-family: $font-medium;
-        }   
+        }
     }
+
+    &.typ-shipping-radio {
+        width: 50%;
+        padding: 0 1rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+            padding: 0;
+        }
+
+        .custom-radio {
+            position: relative;
+            padding: 1.6rem 1.6rem 1.6rem 4.6rem;
+
+
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            height: 21px;
+            width: 21px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            border: 2px solid #999999;
+            transition: all 0.3s;
+
+        }
+
+
+
+        input[type="radio"]:checked+.custom-radio .checkmark {
+            background-color: rgba(0, 0, 0, 0);
+            border-color: #3D7EDB;
+        }
+
+        .checkmark::after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .checkmark::after {
+            top: 3px;
+            left: 3px;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: #3D7EDB;
+        }
+
+        input[type="radio"]:checked+.custom-radio .checkmark::after {
+            display: block;
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            font-family: $font-regular;
+            color: $clr-base;
+        }
+
+        input[type=radio]:checked+.custom-radio .tag {
+            background-color: #fff !important;
+        }
+    }
+
+    &.typ-delivery-cart {
+        width: 19%;
+        margin-bottom: 0;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 31.5%;
+        }
+
+        .custom-radio {
+            min-width: 100%;
+        }
+    }
+
+    &.typ-dealer-cart {
+        width: 18%;
+        text-align: center;
+        margin-bottom: 0;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 31.5%;
+        }
+
+        .custom-radio {
+            position: relative;
+            padding: 0;
+            border: none;
+            background: none;
+
+            .dealer-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .icon {
+                    width: 72px;
+                    height: 72px;
+                    border: 1px solid #DEDEDE;
+                    border-radius: 1.2rem;
+                    font-size: 2.4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999999;
+                    margin-bottom: 1.2rem;
+
+                }
+
+                .title {
+                    font-size: 12px;
+                }
+
+                .desc {
+                    font-size: 10px !important;
+                    line-height: normal;
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            border: none;
+            background: none;
+            font-family: $font-medium;
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            .dealer-wrap {
+                .icon {
+                    border: 1px solid #FFB800;
+                    background-color: #FFF8E5;
+                    color: #FFB800;
+                    position: relative;
+
+                    &::after {
+                        content: "\e91a";
+                        color: #FFB800;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        font-size: 1.6rem;
+
+                    }
+
+                    &.typ-green {
+                        border-color: #00A441;
+                        color: #00A441;
+                        background-color: #E5F6EC;
+
+                        &::after {
+                            color: #00A441;
+                        }
+                    }
+                }
+
+                .title {
+                    color: $clr-base;
+                }
+            }
+        }
+    }
+
+    &.typ-payment {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+
+        &:last-child {
+            border: none;
+        }
+
+        .custom-radio {
+            border: 0;
+            align-items: flex-start;
+            padding: 1.2rem 1.6rem 1.2rem 4.6rem;
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            border: 0;
+            background-color: #fff;
+        }
+    }
+
+    &.typ-face-rating {
+        .custom-radio {
+            min-width: 40px;
+            max-width: 40px;
+            border: 0;
+            background: transparent;
+            position: relative;
+
+            @media only screen and (max-width: $media-mobile) {
+                min-width: 30px;
+                max-width: 30px;
+            }
+
+            .result {
+                display: none;
+                position: absolute;
+                bottom: -22px;
+                width: 100%;
+                white-space: nowrap;
+                font-size: 1.2rem;
+                color: $clr-base;
+            }
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            border: 0;
+            background-color: transparent;
+            color: $clr-base;
+
+            .result {
+                display: block;
+                color: $clr-base;
+            }
+        }
+    }
+
+    &.typ-shipping-edit {
+        margin-bottom: 2.4rem;
+
+        .custom-radio {
+            min-width: 14.9rem;
+            padding: 1.2rem 0;
+        }
+    }
+
+    &.typ-service-provider {
+        width: 48%;
+        margin-bottom: 0;
+        @media only screen and (max-width: $media-mobile) {  width: 47%;}
+        .custom-radio {
+            width: 100%;
+            padding: 1.6rem;
+            align-items: start;
+            font-family: $font-medium;
+            color: $clr-base;
+            min-height: 148px;
+            .icon {
+                border: 1px solid #DEDEDE;
+                width: 5.6rem;
+                height: 5.6rem;
+                padding: 1.2rem;
+                color: #333333;
+                font-size: 3.2rem;
+                border-radius: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.6rem;
+                background-color: #FFFFFF;
+            }
+        }
+        input[type=radio]:checked+.custom-radio {
+            color: $clr-base;
+            .icon { color: #3D7EDB;}
+        }
+    }
+    
 
 }

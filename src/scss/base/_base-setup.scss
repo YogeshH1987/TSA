@@ -11,7 +11,7 @@ html,
 body {
   font-family: $font-regular;
   color: $clr-para;
-  font-size: 62.5%;
+  font-size: 10px; 
   height: 100%;
   position: relative;
   scroll-behavior: smooth;
@@ -137,7 +137,13 @@ p {
     display: block !important;
   }
 }
+.cm-mobile-flex {
+  display: none !important;
 
+  @media only screen and (max-width: $media-mobile) {
+    display: flex !important;
+  }
+}
 .table-cell-mobile {
   display: none !important;
 
@@ -161,6 +167,14 @@ p {
     display: none !important;
   }
 }
+.cm-desktop-flex {
+  display: flex !important;
+
+  @media only screen and (max-width: $media-mobile) {
+    display: none !important;
+  }
+}
+
 .inline-desktop {
   display: inline-block !important;
 
@@ -217,15 +231,20 @@ p {
   }
 
 }
-
 .cm-box {
-  border: 1px solid $clr-border;
-  border-radius: 16px;
+  border: 1px solid #dedede;
+  @include border-radius(1.6rem);
   padding: 1.6rem 3.2rem;
 
   @media only screen and (max-width: $media-mobile) {
     border: 0;
     padding: 2.4rem 0 0;
+  }
+  &.typ-book-demo{
+    padding: 3.2rem 6rem;
+    @media only screen and (max-width: $media-mobile) {
+      padding: 0;
+    }
   }
 }
 

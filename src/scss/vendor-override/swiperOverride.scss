@@ -128,6 +128,24 @@
     }
   }
 
+  &.typ-blog-nav {
+    padding-bottom: 8rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+      padding-bottom: 0;
+    }
+
+    .swiper-slide {
+      width: 29.6rem !important;
+      margin-right: 1.8rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
   &.typ-home-testimonial {
     padding-bottom: 0;
 
@@ -144,6 +162,15 @@
         margin-right: 1.2rem;
       }
     }
+  }
+
+  &.typ-architects {
+    padding-bottom: 9.6rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 0;
+    }
+
   }
 
   &.typ-fabricators,
@@ -388,6 +415,12 @@
       border: 1px solid $clr-border;
       overflow: hidden;
 
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
       @media only screen and (max-width: $media-mobile) {
         width: 4.7rem !important;
         height: 4.7rem;
@@ -440,6 +473,24 @@
   &.typ-real-stories {
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
+    }
+
+    .swiper-slide {
+      width: 29.7rem;
+      height: 52.8rem;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-right: 1.2rem;
+
+    }
+  }
+
+  &.typ-rebar-stories {
+    padding-bottom: 8rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+      padding-bottom: 0;
     }
 
     .swiper-slide {
@@ -695,6 +746,7 @@
     }
   }
 
+  &.typ-why-tiscon-nav,
   &.typ-why-tiscon {
 
     .swiper-slide {
@@ -705,6 +757,15 @@
         width: 16.0rem;
         margin-right: 1.2rem;
       }
+    }
+  }
+
+  &.typ-why-tiscon-nav {
+    padding-bottom: 8rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+      padding-bottom: 0;
     }
   }
 
@@ -727,6 +788,18 @@
     margin-right: -2rem;
   }
 
+  &.typ-why-pravesh {
+    padding-bottom: 2.2rem;
+
+    .swiper-slide {
+      width: 23.0rem;
+      border: 1px solid #dedede;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-right: 2rem;
+    }
+  }
+
   &.artical-list-wrap {
     margin-bottom: 0;
     padding-bottom: 2.4rem;
@@ -741,17 +814,30 @@
   }
 
   &.typ-nestudio-big {
-  
-    @media only screen and (max-width: $media-mobile) {  padding-bottom: 40px;}
+
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 40px;
+    }
+
     .swiper-slide {
       max-height: 350px;
-      @media only screen and (max-width: $media-mobile) {min-height: 350px; border-radius: 1.2rem; overflow: hidden; border: 1px solid #ccc; }
+
+      @media only screen and (max-width: $media-mobile) {
+        min-height: 350px;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        border: 1px solid #ccc;
+      }
+
       img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         max-height: 350px;
-        @media only screen and (max-width: $media-mobile) {   min-height: 350px;}
+
+        @media only screen and (max-width: $media-mobile) {
+          min-height: 350px;
+        }
       }
     }
   }
@@ -771,6 +857,58 @@
         min-height: 56px;
       }
     }
+
+  }
+
+  &.typ-architect-pdp {
+    width: 100%;
+
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &.typ-thumb-architect-pdp {
+    margin-top: 2.1rem;
+
+    .swiper-slide {
+      height: 8.3rem;
+      border-radius: 8px;
+      border: 1px solid #DEDEDE;
+      overflow: hidden;
+
+      align-items: initial;
+
+      @media only screen and (max-width: $media-mobile) {
+        height: 4.7rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &.car-shed-plp {
+    .swiper-slide {
+      height: auto;
+    }
+  }
+
+  &.p-0 {
+    padding: 0;
+  }
+
+  &.typ-common-p-m {
+
+    padding-bottom: 3.2rem;
+    margin-bottom: 3.4rem;
 
   }
 }

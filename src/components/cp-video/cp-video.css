@@ -144,5 +144,26 @@
   display: none;
   padding-left: 0;
 }
+.cp-video.typ-architect {
+  overflow: hidden;
+}
+.cp-video.typ-architect .content-wrap {
+  display: flex;
+  align-items: end;
+  background: rgba(0, 0, 0, 0.302);
+}
+.cp-video.typ-architect .content-wrap::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 13.8rem;
+  bottom: 0;
+}
+.cp-video.typ-architect .content-wrap .title {
+  z-index: 1;
+}
 
 /*# sourceMappingURL=cp-video.css.map */

@@ -199,5 +199,34 @@
     width: calc(94% - 6.4rem);
   }
 }
+.cp-img-detail.typ-build-cost {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: 0;
+}
+.cp-img-detail.typ-build-cost .img-wrap {
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  height: 13rem;
+}
+.cp-img-detail.typ-build-cost .img-wrap img {
+  height: 100%;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  object-fit: cover;
+}
+.cp-img-detail.typ-build-cost .detail-wrap {
+  padding: 0.8rem;
+}
+.cp-img-detail.typ-build-cost .detail-wrap .detail-tile {
+  font-family: "Poppins Semibold";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 0.8rem;
+}
 
 /*# sourceMappingURL=cp-img-detail.css.map */

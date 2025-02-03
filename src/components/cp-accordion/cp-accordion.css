@@ -171,5 +171,61 @@
 .cp-accordion .typ-pravesh-card .sec-sub-title {
   padding-bottom: 0;
 }
+.cp-accordion.typ-cart-summery .acc-item {
+  border: solid 1px #DEDEDE;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion.typ-cart-summery .acc-item {
+    margin-inline: 0;
+  }
+}
+.cp-accordion.typ-cart-summery .acc-item.active {
+  background-color: #FFF;
+}
+.cp-accordion.typ-cart-summery .acc-item.active .acc-head::before {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.cp-accordion.typ-cart-summery .acc-item.active .acc-head .desc {
+  display: none;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-head {
+  background: #ECF2FB;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem 1.2rem 1.2rem;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-head::before {
+  content: "\e90e";
+  color: #333333;
+  right: 10px;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-head .desc {
+  font-size: 1.2rem;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-head .font-medium {
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-head .title {
+  font-size: 2rem;
+  color: #00398C;
+  line-height: 2.8rem;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-head .price {
+  font-size: 2rem;
+  color: #00398C;
+}
+.cp-accordion.typ-cart-summery .acc-item .acc-cont {
+  padding: 0;
+}
 
 /*# sourceMappingURL=cp-accordion.css.map */

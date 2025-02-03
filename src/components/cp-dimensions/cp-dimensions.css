@@ -48,5 +48,9 @@
   justify-content: center;
   align-items: center;
 }
+.cp-dimensions.typ-pravesh-pdp .img-wrap {
+  width: 20rem;
+  height: 22rem;
+}
 
 /*# sourceMappingURL=cp-dimensions.css.map */

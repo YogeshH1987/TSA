@@ -2,27 +2,28 @@
 @import "../config/mixin";
 
 
-.cp-breadcrumb{
+.cp-breadcrumb {
     display: flex;
     padding: 1.6rem 0;
-   
+
     @media only screen and (max-width: $media-sm) {
         padding-top: 1.2rem;
         padding-bottom: 0.8rem;
     }
-   
-    
-    & li+li::before{
+
+
+    & li+li::before {
         content: '/';
         font-size: 1.6rem;
         padding-inline: 0.4rem;
+
         @media only screen and (max-width: $media-sm) {
             font-size: 1.2rem;
         }
     }
- 
-    .breadcrumb-items{
-        .breadcrumb-link{
+
+    .breadcrumb-items {
+        .breadcrumb-link {
             font-family: $font-regular;
             font-size: 1.6rem;
             line-height: 2.4rem;
@@ -32,13 +33,31 @@
                 font-size: 1.2rem;
                 line-height: 1.6rem;
             }
-            &.active{
+
+            &.active {
                 color: $clr-base;
-           }
-           &.type-bold{
-            font-family: $font-medium;
-           }
+            }
         }
     }
- }
- 
+
+    &.typ-architectural-plans {
+        @media only screen and (max-width: $media-mobile) {
+            bottom: -40px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .breadcrumb-link {
+            @media only screen and (max-width: $media-mobile) {
+                color: #DEDEDE;
+            }
+
+            &.active {
+                @media only screen and (max-width: $media-mobile) {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}

@@ -53,5 +53,47 @@
     min-width: 14rem;
   }
 }
+.cp-model-content.typ-cal-result {
+  text-align: left;
+}
+.cp-model-content.typ-cal-result .title {
+  font-family: "Poppins Semibold";
+  color: #333333;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-model-content.typ-cal-result .title {
+    font-size: 2rem;
+  }
+}
+.cp-model-content.typ-cal-result .desc {
+  margin-bottom: 2.4rem;
+  font-family: "Poppins Regular";
+  font-size: 1.6rem;
+  padding: 0;
+  line-height: 2.4rem;
+  color: #666666;
+}
+@media only screen and (max-width: 768px) {
+  .cp-model-content.typ-cal-result .desc {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    line-height: 2rem;
+  }
+}
+.cp-model-content.typ-cal-result .btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-model-content.typ-cal-result .btn-wrap {
+    margin-top: 3.2rem;
+  }
+}
+.cp-model-content.typ-cal-result .btn-wrap .btn {
+  width: 50%;
+}
 
 /*# sourceMappingURL=cp-model-content.css.map */

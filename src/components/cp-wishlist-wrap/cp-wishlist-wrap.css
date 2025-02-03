@@ -4,5 +4,35 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+.cp-wishlist-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.cp-wishlist-wrap .lhs {
+  width: 30%;
+}
+.cp-wishlist-wrap .lhs .left-side-menu {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  border: 1px solid #DEDEDE;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.cp-wishlist-wrap .lhs .left-side-menu .left-side-menu-item {
+  padding: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+.cp-wishlist-wrap .lhs .left-side-menu .left-side-menu-item .icon {
+  width: 2.4rem;
+  color: #333333;
+}
+.cp-wishlist-wrap .rhs {
+  width: 70%;
+}
 
 /*# sourceMappingURL=cp-wishlist-wrap.css.map */

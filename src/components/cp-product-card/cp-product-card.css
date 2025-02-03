@@ -625,16 +625,33 @@
 .cp-product-card.img-pravesh.typ-list-view {
   height: 28rem;
 }
-.cp-product-card.dashboard-prod {
-  padding: 0;
-  height: 294px;
-  width: 294px;
-  border: 0;
+.cp-product-card.typ-cart {
+  width: 32%;
 }
-.cp-product-card.dashboard-prod a {
-  display: block;
-  width: 100%;
-  height: 100%;
+.cp-product-card.typ-cart .lhs {
+  border-bottom: 1px solid #dedede;
+}
+.cp-product-card.typ-cart .prod-title {
+  font-size: 1.6rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+}
+.cp-product-card.typ-cart .size-code {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.cp-product-card.typ-cart .select-text {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+  text-decoration: underline;
+}
+.cp-product-card.typ-cart .img-wrap {
+  height: 12rem;
+}
+.cp-product-card.typ-cart .price-wrap {
+  margin: 0;
 }
 
 /*# sourceMappingURL=cp-product-card.css.map */

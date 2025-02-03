@@ -27,5 +27,21 @@
   border-left: 1px solid #DEDEDE;
   border-right: 1px solid #DEDEDE;
 }
+.cp-counter.typ-build-cost {
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  max-width: 11.1rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+.cp-counter.typ-build-cost .btn-count {
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+}
+.cp-counter.typ-build-cost .number-product {
+  height: 3.2rem;
+}
 
 /*# sourceMappingURL=cp-counter.css.map */
