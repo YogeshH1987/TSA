@@ -1,17 +1,15 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-home-banner {
+.cp-home-banner{
     position: relative;
     padding: 5.6rem 0;
     margin-bottom: 4rem;
-
     @media only screen and (max-width: 768px) {
         padding: 2.4rem 0 1.2rem;
         margin-bottom: 2.4rem;
-        background: #F3F4F6;
+        background: #F3F4F6 ;
     }
-
     .cmp-title,
     .banner-title {
         font-size: 4rem;
@@ -19,7 +17,6 @@
         font-family: $font-semiBold;
         color: $clr-base;
         margin-bottom: 3.2rem;
-
         @media only screen and (max-width: $media-mobile) {
             font-size: 2.4rem;
             line-height: 3.2rem;
@@ -27,7 +24,7 @@
         }
     }
 
-    .container {
+    .container{
         position: relative;
     }
 
@@ -37,116 +34,71 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 2rem;
-
         @media only screen and (max-width: 768px) {
             width: 100%;
             gap: 1.2rem;
-        }
-
+        }        
+        
         .feature-item {
-            width: 31%;
-            /* Adjust width to account for 20px gutter */
-            height: 11rem;
-            display: flex;
-            margin: 0;
+            width: 31%; /* Adjust width to account for 20px gutter */
+            height: 11rem;    
+            display: flex;  
+            margin: 0 ;  
             overflow: hidden;
-
-            &:nth-child(1) {
-                order: 3;
-            }
-
-            //PLANS
-            &:nth-child(2) {
-                order: 8;
-            }
-
-            //SHOP
-            &:nth-child(3) {
-                order: 1;
-            }
-
-            //REBARS
-            &:nth-child(4) {
-                order: 4
-            }
-
-            //ARCHITECTS
-            &:nth-child(5) {
-                order: 2;
-            }
-
-            //CALCULATOR
-            &:nth-child(6) {
-                order: 6;
-            }
-
-            //BUDGET
-            &:nth-child(7) {
-                order: 5;
-            }
-
-            //INSPIRATION
-            &:nth-child(8) {
-                order: 7;
-            }
-
-            //CAUTION 
+            &:nth-child(1) { order: 3; } //PLANS
+            &:nth-child(2) { order: 8; } //SHOP
+            &:nth-child(3) { order: 1; } //REBARS
+            &:nth-child(4) { order: 4 } //ARCHITECTS
+            &:nth-child(5) { order: 2; } //CALCULATOR
+            &:nth-child(6) { order: 6; } //BUDGET
+            &:nth-child(7) { order: 5; } //INSPIRATION
+            &:nth-child(8) { order: 7; } //CAUTION 
             @media only screen and (max-width: 768px) {
-                width: 48%;
+                width:  48%;
                 height: 9.2rem;
                 // display: block;
-                order: initial;
+                order: initial; 
                 margin-bottom: 1.2rem;
             }
-
             &.typ-resize {
                 height: 15.6rem;
-                width: 48%;
-                /* Larger items for bigger screens */
-
+                width: 48%; /* Larger items for bigger screens */
+                
                 @media only screen and (max-width: 768px) {
                     height: 13rem;
-                    width: 48%;
-                    /* Adjust width and gutter for mobile */
+                    width:  48%; /* Adjust width and gutter for mobile */
                 }
-
                 .cmp-teaser,
-                .feature-card {
-
+                .feature-card{
                     .cmp-image,
-                    .f-img {
+                    .f-img{
                         max-width: 14.3rem;
                         max-height: 13.6rem;
-
                         @media only screen and (max-width: $media-mobile) {
                             width: 8rem;
                             height: 8rem;
                         }
-                    }
+                    }            
                 }
             }
-        }
-
-        .grid-sizer {
+        }       
+        .grid-sizer{
             width: 31%;
-            height: 11rem;
+            height: 11rem;    
             display: none;
-            order: 0;
-
+            order: 0; 
             @media only screen and (max-width: 1024px) {
-                width: 31%;
+              width: 31%;
             }
-
             @media only screen and (max-width: 768px) {
-                display: block;
-                width: 48%;
-                height: 9.2rem;
+                display: block; 
+                width:  48%;
+                height: 9.2rem;              
             }
         }
     }
-
     .cmp-teaser,
-    .feature-card {
+    .feature-card{
         border: 1px solid $clr-border;
         background: $clr-root;
         padding: 1.2rem;
@@ -156,29 +108,25 @@
         display: block;
         width: 100%;
         height: 100%;
-
         &:hover,
-        &.active {
+        &.active{
             box-shadow: 0px 8px 24px 0px #00000014;
             border: 2px solid $clr-border
         }
-
         .cmp-teaser__pretitle,
-        .f-title {
+        .f-title{
             font-family: $font-semiBold;
             font-size: 1.4rem;
             line-height: 2rem;
             color: $clr-base;
             text-transform: uppercase;
-
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
             }
         }
-
         .cmp-teaser__title,
-        .f-desc {
+        .f-desc{
             font-family: $font-regular;
             font-size: 1.2rem;
             line-height: 1.6rem;
@@ -186,9 +134,8 @@
             margin-bottom: 0.6rem;
             max-width: 65%;
         }
-
-        .cmp-teaser__description p,
-        .f-offer {
+        .cmp-teaser__description p ,
+        .f-offer{
             background: $clr-secondary;
             padding: .2rem 0.8rem;
             color: $clr-root;
@@ -198,15 +145,13 @@
             @include border-radius(2.6rem);
             display: inline-block;
         }
-
         .cmp-image,
-        .f-img {
+        .f-img{
             position: absolute;
             bottom: 0;
             right: 0;
             max-width: 9.4rem;
             max-height: 9.4rem;
-
             @media only screen and (max-width: $media-mobile) {
                 width: 8rem;
                 height: 8rem;
@@ -214,23 +159,9 @@
         }
     }
 
-    &.typ-cart-order-confirm {
-        padding: 0;
-        margin-bottom: 0;
-
-        .feature {
-            width: 100%;
-
-            .feature-item {
-                height: 14.5rem;
-            }
-        }
+    .cmp-image__image{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
-
-    .cmp-image__image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
 }

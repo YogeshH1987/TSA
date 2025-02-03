@@ -25,30 +25,15 @@ function handleResponsiveFeatures() {
     }
 }
 
-// function bannerFeatureMobile() {
-//     const grid = document.querySelector('.feature');
-//     const iso = new Isotope(grid, {
-//         itemSelector: '.feature-item',
-//         layoutMode: 'masonry',
-//         masonry: {
-//             columnWidth: '.grid-sizer',
-//             gutter: 12,
-//         },
-//     });
-// }
-
 function bannerFeatureMobile() {
-    const grids = document.querySelectorAll('.feature');
-    grids.forEach((grid) => {
-        // Initialize Isotope for each .feature container
-        new Isotope(grid, {
-            itemSelector: '.feature-item',
-            layoutMode: 'masonry',
-            masonry: {
-                columnWidth: '.grid-sizer',
-                gutter: 12,
-            },
-        });
+    const grid = document.querySelector('.feature');
+    const iso = new Isotope(grid, {
+        itemSelector: '.feature-item',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: '.grid-sizer',
+            gutter: 12,
+        },
     });
 }
 

@@ -1,4 +1,4 @@
-  @import "../config/variables";
+@import "../config/variables";
 
 
 .cp-search{
@@ -47,36 +47,38 @@
       }
     }
   }
-  &.type-trade-hand-tool{
-      width: 50.4rem;
-      @media only screen and (max-width: $media-mobile) {
-          width: 34.3rem;
-      }
+    &.type-trade-hand-tool{
+        width: 50.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            width: 34.3rem;
+        }
+        .search-wrap{
+            
+            @media only screen and (max-width: $media-mobile) {
+                display: block;
+                max-width: 34.3rem;
+            }
+        }
+        
+    }
+
+    &.typ-full-width{
+      width: 100%;
       .search-wrap{
-          
-          @media only screen and (max-width: $media-mobile) {
-              display: block;
-              max-width: 34.3rem;
-          }
+        @media only screen and (max-width: $media-mobile) {
+          display: block;
+          width: 100%;
+          min-width: 34.3rem;
+        }
       }
-      
-  }
+     
+    }
 
-  &.typ-full-width{
-    width: 100%;
-    .search-wrap{
+    &.typ-wiron-home{
+      margin-top: 3rem;
       @media only screen and (max-width: $media-mobile) {
-        display: block;
-        width: 100%;
-        min-width: 34.3rem;
+        margin-top: 4.8rem;
       }
-    }    
-  }
-
-  &.typ-wiron-home{
-    margin-top: 3rem;
-    @media only screen and (max-width: $media-mobile) {
-      margin-top: 4.8rem;
     }
     &.typ-blog-search{
       position: relative;
@@ -120,12 +122,4 @@
       }
     }
     
-  }
-  &.typ-offer{
-    width: 100%;
-    margin-bottom: 3.6rem;
-    .search-input{
-      max-width: 38.4rem;
-    }
-  }
 }

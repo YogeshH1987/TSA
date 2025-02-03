@@ -16,13 +16,6 @@ function productSelectList() {
         const $dropdownList = $(this).siblings('.select-dropdown-list'); // Target specific dropdown list
         $('.select-dropdown-list').not($dropdownList).removeClass('active'); // Close other dropdowns
         $dropdownList.toggleClass('active'); // Toggle current dropdown
-
-        // Toggle drop shadow on the button when dropdown is active
-        if ($dropdownList.hasClass('active')) {
-            $(this).addClass('active-dropdown');
-        } else {
-            $(this).removeClass('active-dropdown');
-        }
     });
 
     $('.select-dropdown-list-item').off('click').on('click', function(e) {
@@ -33,15 +26,11 @@ function productSelectList() {
         $dropdownButton.find('span').text($(this).text()); // Update button text
         $dropdownButton.attr('data-value', itemValue); // Update data-value
         $(this).closest('.select-dropdown-list').removeClass('active'); // Close dropdown list
-
-        // Remove drop shadow when dropdown is closed
-        $dropdownButton.removeClass('active-dropdown');
     });
 
     // Close dropdowns when clicking outside
     $(document).off('click').on('click', function() {
         $('.select-dropdown-list').removeClass('active');
-        $('.select-dropdown-button').removeClass('active-dropdown'); // Remove shadow on click outside
     });
 }
 

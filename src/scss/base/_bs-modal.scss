@@ -340,7 +340,7 @@
 
             @media only screen and (max-width: $media-mobile) {
                 padding: 0px;
-                background-color: transparent;
+                background-color:transparent;
             }
         }
 
@@ -433,14 +433,4 @@
         }
     }
 
-    &.typ-customise-estimate {
-        max-width: 400px;
-        max-height: 100%;
-
-        .modal-body {
-            @media only screen and (max-width: $media-sm) {
-                padding: 1.6rem 0;
-            }
-        }
-    }
 }

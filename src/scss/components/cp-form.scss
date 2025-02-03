@@ -12,42 +12,33 @@
   }
 
   .form-group {
-    margin-bottom: 3.2rem;
-
-    @media only screen and (max-width: $media-sm) {
-      margin-bottom: 2.4rem;
-    }
-
-    &.typ-border {
-      padding-top: 1.6rem;
-      border-top: 1px solid $clr-border;
-    }
-
     .form-label {
       font-family: $font-regular;
       font-size: 1.4rem;
       line-height: 2rem;
-      color: $clr-para;
       margin-bottom: 0.8rem;
       display: block;
-
-      sup {
-        color: $clr-secondary;
-      }
-
-      .clr-gray {
-        color: #999999;
-      }
     }
 
     .form-control {
       width: 100%;
-      padding: 1.1rem 1.6rem;
+      padding: 1.2rem 1.6rem;
       border: 1px solid $clr-border;
       font-family: $font-regular;
       font-size: 1.6rem;
       line-height: 2.4rem;
       border-radius: 1.2rem;
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1; /* Firefox */
+        font-family: $font-regular;
+      }
+      
+      &::-ms-input-placeholder { /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
+      }
+
     }
 
     .form-textarea {
@@ -59,7 +50,16 @@
       line-height: 2.4rem;
       border-radius: 1.2rem;
       min-height: 15.6rem;
-
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1; /* Firefox */
+        font-family: $font-regular;
+      }
+      
+      &::-ms-input-placeholder { /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
+      }
     }
 
     .err-mgs {
@@ -72,167 +72,66 @@
     }
   }
 
-  .feedback-personal-data {
-    .form-group {
-      .form-label {
-        font-family: $font-regular;
-        font-size: 1.4rem;
-        line-height: 2rem;
-        margin-bottom: 0.8rem;
-        display: block;
-      }
+  .act-wrap {
+    .btn-submit {
+      width: 100%;
+    }
+  }
 
-      .form-group {
-        .form-label {
-          font-family: $font-regular;
-          font-size: 1.4rem;
-          line-height: 2rem;
-          margin-bottom: 0.8rem;
-          display: block;
-        }
+  .disabled {
+    background-color: #ededed;
+    color: #b3b3b3;
+    border: none;
+  }
 
-        .form-control {
-          width: 100%;
-          padding: 1.2rem 1.6rem;
-          border: 1px solid $clr-border;
-          font-family: $font-regular;
-          font-size: 1.6rem;
-          line-height: 2.4rem;
-          border-radius: 1.2rem;
+  .star-label,
+  .review-label,
+  .title-label {
+    font-family: $font-regular;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 0.8rem;
+  }
 
-          &::placeholder {
-            color: #B3B3B3;
-            opacity: 1;
-            /* Firefox */
-            font-family: $font-regular;
-          }
+  .star-rating {
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid $clr-border;
+    margin-bottom: 2.4rem;
 
-          &::-ms-input-placeholder {
-            /* Edge 12-18 */
-            color: #B3B3B3;
-            font-family: $font-regular;
-          }
+    .icon {
+      font-size: 4.8rem;
+      color: #cccccc;
+    }
 
-        }
+    .star-selected {
+      color: #ffb800;
+    }
+  }
 
-        .form-textarea {
-          width: 100%;
-          padding: 1.2rem 1.6rem;
-          border: 1px solid $clr-border;
-          font-family: $font-regular;
-          font-size: 1.6rem;
-          line-height: 2.4rem;
-          border-radius: 1.2rem;
-          min-height: 15.6rem;
+  &.typ-location,
+  &.typ-language {
+    .act-wrap {
+      margin-top: 2.4rem;
+      text-align: center;
 
-          &::placeholder {
-            color: #B3B3B3;
-            opacity: 1;
-            /* Firefox */
-            font-family: $font-regular;
-          }
-
-          &::-ms-input-placeholder {
-            /* Edge 12-18 */
-            color: #B3B3B3;
-            font-family: $font-regular;
-          }
-        }
-
-        .err-mgs {
-          color: $clr-secondary;
-          font-family: $font-medium;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          margin-bottom: 2.4rem;
-          display: block;
-        }
-      }
-
-      .act-wrap {
-        .btn-submit {
-          width: 100%;
-        }
-      }
-
-      .disabled {
-        background-color: #ededed;
-        color: #b3b3b3;
-        border: none;
-      }
-
-      .star-label,
-      .review-label,
-      .title-label {
-        font-family: $font-regular;
-        font-size: 1.4rem;
-        line-height: 2rem;
-        margin-bottom: 0.8rem;
-      }
-
-      .star-rating {
-        padding-bottom: 2.4rem;
-        border-bottom: 1px solid $clr-border;
+      .btn-submit {
         margin-bottom: 2.4rem;
-
-        .icon {
-          font-size: 4.8rem;
-          color: #cccccc;
-        }
-
-        .star-selected {
-          color: #ffb800;
-        }
       }
+    }
 
-      &.typ-location,
-      &.typ-language {
-        .act-wrap {
-          margin-top: 2.4rem;
-          text-align: center;
+    .radio-wrap {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
 
-          .btn-submit {
-            margin-bottom: 2.4rem;
-          }
-        }
+    .bs-radio {
+      margin-bottom: 0;
 
-        .radio-wrap {
-          display: flex;
-          justify-content: flex-start;
-          flex-wrap: wrap;
-          gap: 0.8rem;
-        }
-
-        .bs-radio {
-          margin-bottom: 0;
-
-          .custom-radio {
-            min-width: 8.4rem;
-            padding: 1.25rem 0;
-          }
-        }
-      }
-
-      &.typ-book-demo {
-        margin: 0;
-
-        .form-group {
-          .form-label {
-            margin-bottom: 1.6rem;
-          }
-
-          .form-control {
-            max-width: 34.4rem;
-          }
-        }
-
-        .btn-default {
-          min-width: 22rem;
-
-          @media only screen and (max-width: $media-mobile) {
-            min-width: 100%;
-          }
-        }
+      .custom-radio {
+        min-width: 8.4rem;
+        padding: 1.25rem 0;
       }
     }
   }
@@ -361,81 +260,6 @@
     font-size: 1.2rem;
     font-family: "Poppins Regular";
   }
-
-  .captcha {
-    margin-top: 1.6rem;
-  }
-
-  &.mt-0 {
-    margin-top: 0;
-  }
-
-  &.typ-cart-shipping {
-    margin-top: 0;
-    .desc {
-      font-size: 1.2rem;
-      color: #666666;
-    }
-
-    .mt-8 {
-      margin-top: 8px;
-    }
-
-    .form-group {
-      margin-bottom: 2.4rem;
-
-      .form-control {
-        color: $clr-base;
-        font-family: $font-medium !important;
-
-      }
-
-      .select-dropdown {
-        width: 100%;
-
-        .select-dropdown-button {
-
-          width: 100%;
-
-          .select-text {
-            color: $clr-base;
-            font-family: $font-medium;
-          }
-
-          .zmdi-chevron-down {
-            &::after {
-              font-size: 1.4rem;
-            }
-          }
-        }
-
-        .select-dropdown-list-item {
-          color: $clr-base;
-          font-family: $font-medium;
-          font-size: 1.4rem;
-        }
-      }
-    }
-
-    .typ-request-submit {
-      min-width: 100%;
-    }
-
-    .form-input-wrap {
-      position: relative;
-      .icon-padding{padding-left: 32px;}
-      .icon-check {
-        width: 1.6rem;
-        height: 1.6rem;
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 1.6rem;
-        color: #00A441;
-        cursor: pointer;
-      }
-    }
-
-  }
+  .captcha{ margin-top: 1.6rem;}
+  &.mt-0{ margin-top: 0;}
 }

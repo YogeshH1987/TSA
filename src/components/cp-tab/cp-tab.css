@@ -33,7 +33,6 @@
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   padding: 0.6rem 1.6rem;
-  display: block;
 }
 .cp-tab .tab-list .tab-item .title.typ-capital {
   text-transform: capitalize;
@@ -44,28 +43,11 @@
   font-family: "Poppins Regular";
   padding-bottom: 2.4rem;
 }
-.cp-tab .tab-list .tab-item .count {
-  background-color: #FFFFFF;
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  font-family: "Poppins Medium";
-  border-radius: 26px;
-  right: 59px;
-  width: 20px;
-  height: 20px;
-  top: 13px;
-  text-align: center;
-  padding: 0.2rem;
-}
 .cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
   border: 1px solid #DEDEDE;
-  color: #333333;
+  color: #FFFFFF;
   background: #3D7EDB;
   text-shadow: #333333 0.9px 0 0.9px;
-}
-.cp-tab .tab-list .tab-item:hover .count, .cp-tab .tab-list .tab-item.active .count {
-  background-color: #D2042D;
-  color: #FFFFFF;
 }
 .cp-tab .tab-container {
   padding-top: 2.4rem;
@@ -398,28 +380,10 @@
     margin-top: 2.4rem;
   }
 }
-.cp-tab.typ-offer {
-  margin-top: 1.2rem;
-}
-.cp-tab.typ-offer .tab-container {
-  padding-top: 1.2rem;
-}
 @media only screen and (max-width: 768px) {
   .cp-tab.typ-offer .tab-container {
     padding-top: 0rem;
   }
-}
-.cp-tab.typ-rebar {
-  max-width: 62rem;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 768px) {
-  .cp-tab.typ-rebar {
-    max-width: 100%;
-  }
-}
-.cp-tab.typ-rebar .tab-list {
-  justify-content: center;
 }
 .cp-tab.typ-blog-filter {
   display: flex;
@@ -449,8 +413,44 @@
   background: #FFE399;
   border-bottom: 1px solid #A77800;
 }
+.cp-tab.typ-blog-filter .tab-list .tab-item .count {
+  background-color: #D2042D;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  border-radius: 26px;
+  right: 59px;
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  text-align: center;
+  padding: 0.2rem;
+}
 .cp-tab.typ-blog-filter .tab-container {
   padding-top: 0;
+}
+.cp-tab.typ-blog-filter .tab-container .filter-menu-list {
+  right: 42px;
+  top: 81px;
+  background: #FFFFFF;
+  padding: 1rem;
+  z-index: 2;
+  height: 74%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-blog-filter .tab-container .filter-menu-list {
+    right: -20px;
+    top: 65px;
+    z-index: 2;
+  }
+}
+.cp-tab.typ-blog-filter .tab-container .filter-menu-list.active {
+  display: block;
+}
+.cp-tab.typ-blog-filter .tab-container .title {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
 }
 .cp-tab.typ-help-policies {
   width: 100%;
@@ -505,123 +505,94 @@
     font-size: 4.8rem;
   }
 }
-.cp-tab.typ-architect-plan .tab-list .tab-item .title {
-  text-transform: capitalize;
+.cp-tab.type-recommendation {
+  border: 1px solid #DEDEDE;
+  padding: 16px;
+  border-radius: 12px;
+}
+.cp-tab.type-recommendation .tab-container {
+  padding-top: 24px;
+}
+.cp-tab.type-recommendation .tab-list {
+  gap: 0;
+}
+.cp-tab.type-recommendation .tab-list .tab-item {
+  margin-right: 6px;
+}
+.cp-tab.type-recommendation .tab-list .tab-item:last-of-type {
+  margin-right: 0;
+}
+.cp-tab.type-recommendation .cp-tab-title {
+  padding: 0 5px 15px 0;
+  border-bottom: 1px solid #DEDEDE;
   display: flex;
-  gap: 1rem;
-  padding: 1.6rem 1.6rem;
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Poppins Semibold";
+  margin-bottom: 12px;
   align-items: center;
 }
-.cp-tab.typ-architect-plan .tab-list .tab-item:hover .title, .cp-tab.typ-architect-plan .tab-list .tab-item.active .title {
-  text-shadow: none;
+@media only screen and (max-width: 991px) {
+  .cp-tab.type-recommendation .cp-tab-title {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 5px 10px 0px;
+  }
 }
-.cp-tab.typ-architect-plan .tab-content .desc {
-  font-size: 1.4rem;
-  margin-bottom: 1.6rem;
-}
-.cp-tab.typ-architect-plan .tab-content .cp-checkbox {
-  margin-bottom: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-.cp-tab.typ-architect-plan .tab-content .cp-checkbox label {
-  font-size: 1.4rem;
-  color: #333333;
-}
-.cp-tab.typ-floor-plan .tab-list {
-  justify-content: center;
-  margin-top: 2.4rem;
-}
-.cp-tab.typ-floor-plan .tab-container {
-  padding-top: 0rem;
-}
-.cp-tab.typ-floor-plan .tab-content .img-wrap {
-  height: 100%;
-  height: calc(100vh - 16rem);
-}
-.cp-tab.typ-floor-plan .tab-content .img-wrap img {
-  height: 100%;
-  object-fit: cover;
-}
-.cp-tab.typ-architect-pdp {
-  margin-top: 1.6rem;
-}
-.cp-tab.typ-architect-pdp .tab-list .tab-item .title {
-  padding: 1.6rem 1.2rem;
-  display: block;
-  text-transform: capitalize;
-}
-.cp-tab.typ-result {
-  position: relative;
-}
-.cp-tab.typ-result .tab-list {
-  border-bottom: 1px solid #DEDEDE;
-  border-top: 1px solid #DEDEDE;
-}
-.cp-tab.typ-result .tab-list .tab-item .title {
-  border: 0;
-  position: relative;
-  padding: 1.6rem 2rem;
-  min-width: 18.8rem;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+.cp-tab.type-recommendation .cp-tab-title .icon-wrap {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #FAE6EA;
   text-align: center;
-  text-transform: capitalize;
-}
-.cp-tab.typ-result .tab-list .tab-item .title::after {
-  position: absolute;
-  content: "";
-  background: #D2042D;
-  width: 0%;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  transition: all ease-in 0.3s;
-}
-.cp-tab.typ-result .tab-list .tab-item:hover .title, .cp-tab.typ-result .tab-list .tab-item.active .title {
-  background: none;
-  color: #333333;
-  text-transform: capitalize;
-}
-.cp-tab.typ-result .tab-list .tab-item:hover .title::after, .cp-tab.typ-result .tab-list .tab-item.active .title::after {
-  width: 100%;
-}
-.cp-tab.typ-result.typ-calculator-border-tabs .tab-list {
-  overflow: hidden;
-}
-@media only screen and (max-width: 768px) {
-  .cp-tab.typ-result.typ-calculator-border-tabs .tab-list .tab-item {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-tab.typ-result.typ-calculator-border-tabs .tab-list .tab-item .title {
-    min-width: 100%;
-    font-size: 1.4rem;
-  }
-}
-.cp-tab.typ-calculator-result {
-  width: 100%;
-  margin: 2rem 0;
-}
-.cp-tab.typ-calculator-result .tab-list {
-  gap: 0.6rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
-.cp-tab.typ-calculator-result .tab-list .tab-item .title {
-  padding: 0.4rem 1rem;
-  text-transform: capitalize;
-  display: block;
-  font-size: 1.2rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-tab.typ-calculator-result .tab-list .tab-item .title {
-    padding: 0.4rem 0.7rem;
+@media only screen and (max-width: 991px) {
+  .cp-tab.type-recommendation .cp-tab-title .icon-wrap {
+    width: 32px;
+    height: 32px;
   }
 }
-.cp-tab.typ-calculator-result .tab-list .tab-item:hover .title, .cp-tab.typ-calculator-result .tab-list .tab-item.active .title {
+.cp-tab.type-recommendation .cp-tab-title .icon {
+  color: #D2042D;
+  font-size: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-tab.type-recommendation .cp-tab-title .icon {
+    font-size: 14px;
+  }
+}
+.cp-tab.type-recommendation .tab-list .tab-item .title {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Poppins Regular";
+  color: #666666;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  padding: 6px 15px;
+}
+.cp-tab.type-recommendation .tab-list .tab-item.active .title, .cp-tab.type-recommendation .tab-list .tab-item:hover .title {
   text-shadow: none;
-  color: #fff;
+  border-color: #3d7edb;
+  font-family: "Poppins Semibold";
+  color: #FFFFFF;
+}
+.cp-tab.type-recommendation .grid-col {
+  max-width: 388px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-tab.type-recommendation .grid-col {
+    max-width: 100%;
+  }
+}
+.cp-tab.type-recommendation .lyt-grid {
+  flex-direction: column;
 }
 
 .cp-inside-tab .tab-list {

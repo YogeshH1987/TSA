@@ -2,32 +2,5 @@
 @import "../config/mixin";
 
 .cp-wishlist-wrap{
-    display: flex;
-    justify-content: space-between;
-    gap: 1.6rem;
-    .lhs{
-        width: 30%;
-        .left-side-menu{
-            display: flex;
-            flex-wrap: wrap;
-            border-radius: 16px;
-            border: 1px solid $clr-border;
-            flex-direction: column;
-            align-items: flex-start;
-            overflow: hidden;
-            .left-side-menu-item{
-                padding: 2.4rem;
-                display: flex;
-                justify-content: space-between;
-                gap: 1.2rem;
-                .icon{
-                    width: 2.4rem;
-                    color: $clr-base;
-                }
-            }
-        }
-    }
-    .rhs{
-        width: 70%;
-    }
+    
 }

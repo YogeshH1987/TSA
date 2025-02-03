@@ -1,27 +1,27 @@
 
-// @import "../config/variables";
-// @import "../config/mixin";
+@import "../config/variables";
+@import "../config/mixin";
 
 
-// .cp-wishlist-wrap{
-//     display: flex;
-//     justify-content: space-between;
-//     gap: 1.6rem;
-// .lhs{
-// width: 30%;
-// .left-side-menu{
-//     display: flex;
-//     flex-wrap: wrap;
-//     border-radius: 16px;
-//     border: 1px solid #dedede;
-//     .left-side-menu-item{
-//         display: flex;
-//         justify-content: space-between;
-//         gap: 1.2rem;
-//     }
-// }
-// }
-// .rhs{
-//     width: 70%;
-// }
-// }
+.cp-wishlist-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+.lhs{
+width: 30%;
+.left-side-menu{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    border: 1px solid #dedede;
+    .left-side-menu-item{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.2rem;
+    }
+}
+}
+.rhs{
+    width: 70%;
+}
+}

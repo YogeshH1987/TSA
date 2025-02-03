@@ -28,7 +28,6 @@
         @include border-radius(50px);
         @include transition(all, 2s, ease);
         padding: 0.6rem 1.6rem;
-        display: block;
 
         &.typ-capital {
           text-transform: capitalize;
@@ -43,31 +42,14 @@
 
       }
 
-      .count {
-        background-color: $clr-root;
-        color: $clr-root;
-        font-size: 1.2rem;
-        font-family: $font-medium;
-        border-radius: 26px;
-        right: 59px;
-        width: 20px;
-        height: 20px;
-        top: 13px;
-        text-align: center;
-        padding: 0.2rem;
-      }
       &:hover,
       &.active {
         .title {
           border: 1px solid $clr-border;
           // font-family: $font-semiBold;
-          color: $clr-base;
+          color: $clr-root;
           background: $clr-primary;
           text-shadow: $clr-base 0.9px 0 0.9px;
-        }
-        .count{
-          background-color: $clr-secondary;
-          color: $clr-root;
         }
       }
     }
@@ -476,11 +458,7 @@
   }
 
   &.typ-offer {
-    margin-top: 1.2rem;
-
     .tab-container {
-      padding-top: 1.2rem;
-
       @media only screen and (max-width: $media-mobile) {
         padding-top: 0rem;
       }
@@ -488,18 +466,6 @@
     }
   }
 
-  &.typ-rebar {
-    max-width: 62rem;
-    margin: 0 auto;
-
-    @media only screen and (max-width: $media-mobile) {
-      max-width: 100%;
-    }
-
-    .tab-list {
-      justify-content: center;
-    }
-  }
   &.typ-blog-filter {
     display: flex;
     flex-wrap: wrap;
@@ -529,37 +495,51 @@
         &.active {
           background: #FFE399;
           border-bottom: 1px solid #A77800;
-        }        
+        }
+
+        .count {
+          background-color: $clr-secondary;
+          color: $clr-root;
+          font-size: 1.2rem;
+          font-family: $font-medium;
+          border-radius: 26px;
+          right: 59px;
+          width: 20px;
+          height: 20px;
+          top: 13px;
+          text-align: center;
+          padding: 0.2rem;
+        }
       }
     }
 
     .tab-container {
       padding-top: 0;
 
-      // .filter-menu-list {
-      //   right: 42px;
-      //   top: 81px;
-      //   background: $clr-root;
-      //   padding: 1rem;
-      //   z-index: 2;
-      //   height: 74%;
+      .filter-menu-list {
+        right: 42px;
+        top: 81px;
+        background: $clr-root;
+        padding: 1rem;
+        z-index: 2;
+        height: 74%;
 
-      //   @media only screen and (max-width: $media-mobile) {
-      //     right: -20px;
-      //     top: 65px;
-      //     z-index: 2;
-      //   }
+        @media only screen and (max-width: $media-mobile) {
+          right: -20px;
+          top: 65px;
+          z-index: 2;
+        }
 
-      //   &.active {
-      //     display: block;
-      //   }
-      // }
+        &.active {
+          display: block;
+        }
+      }
 
-      // .title {
-      //   font-size: 1.6rem;
-      //   font-family: $font-semiBold;
-      //   color: $clr-base;
-      // }
+      .title {
+        font-size: 1.6rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+      }
     }
   }
 
@@ -645,180 +625,91 @@
       }
     }
   }
-
-  &.typ-architect-plan {
-    .tab-list {
-      .tab-item {
-        .title {
-          text-transform: capitalize;
-          display: flex;
-          gap: 1rem;
-          padding: 1.6rem 1.6rem;
-          align-items: center;
-        }
-
-        &:hover,
-        &.active {
-          .title {
-            text-shadow: none;
-          }
+  &.type-recommendation{
+    border: 1px solid $clr-border;
+    padding: 16px;
+    border-radius: 12px;
+    .tab-container{
+      padding-top: 24px;
+    }
+    .tab-list{
+      gap: 0; 
+      .tab-item{
+        margin-right: 6px;
+        &:last-of-type{
+          margin-right: 0;
         }
       }
     }
-
-    .tab-content {
-      .desc {
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
-      }
-
-      .cp-checkbox {
-        margin-bottom: 1rem;
-        display: flex;
-        gap: 1rem;
-
-        label {
-          font-size: 1.4rem;
-          color: $clr-base;
-        }
-      }
-    }
-  }
-
-  &.typ-floor-plan {
-    .tab-list {
-      justify-content: center;
-      margin-top: 2.4rem;
-    }
-
-    .tab-container {
-      padding-top: 0rem;
-    }
-
-    .tab-content {
-
-      .img-wrap {
-        height: 100%;
-        height: calc(100vh - 16rem);
-
-        img {
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-
-  &.typ-architect-pdp {
-    margin-top: 1.6rem;
-
-    .tab-list {
-      .tab-item {
-        .title {
-          padding: 1.6rem 1.2rem;
-          display: block;
-          text-transform: capitalize;
-        }
-      }
-    }
-  }
-
-  &.typ-result {
-    position: relative;
-
-    .tab-list {
+    .cp-tab-title{
+      padding: 0 5px 15px 0;
       border-bottom: 1px solid $clr-border;
-      border-top: 1px solid $clr-border;
-
-      .tab-item {
-        .title {
-          border: 0;
-          position: relative;
-          padding: 1.6rem 2rem;
-          min-width: 18.8rem;
-          font-size: 1.6rem;
-          line-height: 2.4rem;
-          text-align: center;
-          text-transform: capitalize;
-
-          &::after {
-            position: absolute;
-            content: '';
-            background: #D2042D;
-            width: 0%;
-            height: 4px;
-            left: 0;
-            bottom: 0;
-            transition: all ease-in 0.3s;
-          }
+      display: flex;
+      color: $clr-base;
+      font-size: 20px;
+      line-height: 28px;
+      font-family: $font-semiBold;
+      margin-bottom: 12px;
+      align-items: center;
+      @media only screen and (max-width: $media-sm) {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0px 5px 10px 0px;
+      }
+      .icon-wrap{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: #FAE6EA;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        @media only screen and (max-width: $media-sm) {
+          width: 32px;
+          height: 32px;
         }
-
-        &:hover,
-        &.active {
-          .title {
-            background: none;
-            color: $clr-base;
-            text-transform: capitalize;
-
-            &::after {
-              width: 100%;
-            }
-          }
+      }
+      .icon{
+        color: #D2042D;
+        font-size: 20px;
+        @media only screen and (max-width: $media-sm) {
+          font-size: 14px;
         }
       }
     }
-
-    &.typ-calculator-border-tabs {
-      .tab-list {
-        overflow: hidden;
-        .tab-item {
-          @media only screen and (max-width: $media-mobile) {
-            width: 50%;
-          }
-
-          .title {
-            @media only screen and (max-width: $media-mobile) {
-              min-width: 100%;
-              font-size: 1.4rem;
-            }
-          }
+    .tab-list .tab-item{
+      .title{
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $font-regular;
+        color: $clr-para;
+        text-decoration: none;
+        @include transition(all, 0.4s, ease);
+        padding: 6px 15px;
+      }
+      &.active,
+      &:hover{
+        .title{
+          text-shadow: none;
+          border-color: #3d7edb;
+          font-family: $font-semiBold;
+          color: $clr-root;
         }
+      } 
+    } 
+    .grid-col{
+      max-width: 388px;
+      @media only screen and (max-width: $media-sm) {
+        max-width: 100%;
       }
     }
-  }
-
-  &.typ-calculator-result {
-    width: 100%;
-    margin: 2rem 0;
-
-    .tab-list {
-      gap: 0.6rem;
-      justify-content: center;
-
-      .tab-item {
-        .title {
-          padding: 0.4rem 1rem;
-          text-transform: capitalize;
-          display: block;
-          font-size: 1.2rem;
-
-          @media only screen and (max-width: $media-mobile) {
-            padding: 0.4rem 0.7rem;
-          }
-        }
-
-        &:hover,
-        &.active {
-          .title {
-            text-shadow: none;
-            color: #fff;
-          }
-        }
-      }
+    .lyt-grid{
+      flex-direction: column;
     }
   }
 }
-
 
 .cp-inside-tab {
   .tab-list {
@@ -845,4 +736,6 @@
       padding: 1rem 4.5rem;
     }
   }
+
+
 }

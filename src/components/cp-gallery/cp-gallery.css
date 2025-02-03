@@ -84,20 +84,6 @@
     width: 60%;
   }
 }
-.cp-gallery .gallery-card.typ-architech-style {
-  background-color: #fff;
-  border-color: #DEDEDE;
-}
-.cp-gallery .gallery-card.typ-architech-style .img-wrap {
-  max-height: 100%;
-}
-.cp-gallery .gallery-card.typ-architech-style .content-wrap .title {
-  font-family: "Poppins Semibold";
-  margin-bottom: 1.2rem;
-}
-.cp-gallery .gallery-card.typ-architech-style .content-wrap .feature-item {
-  padding-bottom: 0.8rem;
-}
 .cp-gallery .btn-wrap {
   text-align: center;
   margin-top: 3.2rem;

@@ -1,138 +1,59 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-
 .cp-offer-banner {
-    background-color: #00398C;
     position: relative;
-    padding: 3rem 2rem;
-    @include border-radius(1.6rem);
-    z-index: 2;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 176px;
+    width: 100%;
+    border-radius: 16px;
     overflow: hidden;
-    height: 100%;
-    @media only screen and (max-width: $media-mobile) {   padding: 1.6rem;}
-    &::before {
-        content: '';
-        background: linear-gradient(269.84deg, rgba(0, 0, 0, 0) 28.84%, rgba(0, 0, 0, 0.9) 79.53%);
+    padding: 10px 10px 10px 24px;
+    img{
+        object-fit: cover;
         position: absolute;
         left: 0;
         top: 0;
-        width: 100%;
         height: 100%;
-        z-index: -1;
     }
-
-    &::after {
-        content: "\e93a";
-        left: -8%;
-        position: absolute;
-        top: -4%;
-        z-index: -1;
-        color: #3D7EDB;
-        font-size: 15rem;
-        font-family: 'icomoon' !important;
-        opacity: 30%;
-
-        // @media only screen and (max-width: $media-mobile) {
-        //     left: -44%;
-        //     top: 5%;
-        //     font-size: 43rem;
-        // }
-    }
-
-    .shop-now-btn {
-        background-color: #fff;
-        padding: 8px 10px;
-        color: #3D7EDB;
-        font-size: 1.2rem;
-        max-height: 3.2rem;
+    .offer-content{
         display: flex;
-        align-items: center;
-        min-width: auto;
-
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
     }
-
-    .tag-wrap {
-        margin-bottom: 8px;
-
-        .tag {
-            color: #3D7EDB;
-            border-radius: 2.6rem;
-            font-size: 1rem;
-            background-color: #fff;
-            font-family: $font-medium;
-            padding: 4px 8px;
-        }
-    }
-
-    .desc {
-        color: #fff;
-        font-size: 1.4rem;
-    }
-
-    .font-bold {
-        font-family: $font-semiBold;
-    }
-
-    &.typ-2 {
-        background: linear-gradient(89.04deg, #012A67 0.3%, #2867C1 100.68%);
-
-        &::before,
-        &::after {
-            content: none;
-        }
-
-        .cont-wrap {
+    .offer-text{
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: $clr-root;
+        .big{
             display: flex;
-            align-items: center;
-            gap: 1.2rem;
-            @media only screen and (max-width: $media-mobile) {
-                align-items: start;
-            }
-            .icon {
-                width: 3.6rem;
-                height: 3.6rem;
-                flex: 0 0 3.6rem;
-                background: #FFFFFF;
-                border-radius: 50%;
-                color: #3D7EDB;
-                font-size: 2rem;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .desc {
-                color: #FFFFFF;
-                font-size: 1.2rem;
-                font-family: $font-regular;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                @media only screen and (max-width: $media-mobile) {
-                    align-items: start;
-                    flex-direction: column;
-                }
-            }
-
-            .link {
-                color: #FFFFFF;
-                text-decoration: underline;
-                font-size: 1.4rem;
-                white-space: nowrap;
+            width: 100%;
+            font-size: 36px;
+            line-height: 48px;
+            font-family: $font-semiBold;
+            width: 100%;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 28px;
+                line-height: 40px;
             }
         }
-    }
-
-    &.typ-mobile-full {
-        @media only screen and (max-width: $media-mobile) {
-            margin: 0 -16px;
-            @include border-radius(0);
-        }
+    } 
+    .action-wrap{
+        position: relative;
+        display: flex;
+        margin-top: 5px;
+        .btn-link{
+            color: $clr-root;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &::after{
+                background: $clr-root;
+            }
+        }  
     }
 }

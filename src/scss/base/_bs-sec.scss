@@ -23,10 +23,6 @@
       margin-bottom: 1.6rem;
     }
 
-    &.typ-align-center {
-      text-align: center;
-    }
-
     &.typ-plp-pravesh {
       margin-bottom: 0;
     }
@@ -76,30 +72,6 @@
         line-height: 2.4rem;
       }
     }
-
-    &.typ-flex {
-      position: relative;
-
-      .btn {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-    }
-
-    &.typ-calculator-result {
-      margin-bottom: 1.2rem;
-
-      .typ2 {
-        font-size: 2.4rem;
-        @media only screen and (max-width: $media-sm) {  font-size: 2rem;}
-        
-      }
-    }
-    &.sp-sec-head{
-      text-align: center;
-      @media only screen and (max-width: $media-sm) { text-align: left;}
-    }
   }
 
   .sec-title {
@@ -133,11 +105,6 @@
         font-size: 2.4rem;
       }
     }
-
-    &.typ2 {
-      font-size: 2.4rem;
-      line-height: 3.2rem;
-    }
   }
 
   .sec-sub-title {
@@ -157,7 +124,6 @@
         padding-left: 1rem;
       }
     }
-    &.typ-2{font-size: 1.6rem;}
   }
 
   .sec-desc {
@@ -189,19 +155,6 @@
 
   &.typ-gray-bg {
     background: #ecf2fb;
-  }
-
-  &.typ-natural-gray-bg {
-    background: #F3F4F6;
-  }
-
-  &.typ-white-bg {
-    background: #fff;
-    padding: 4rem 0 !important;
-
-    @media only screen and (max-width: $media-mobile) {
-      padding: 2.4rem 0 !important;
-    }
   }
 
   &.typ-curve {
@@ -304,9 +257,7 @@
       margin-top: 13rem;
     }
   }
-&.typ-service-provider{
-  margin-top: 15rem;
-}
+
   &.typ-commerce-blog,
   &.typ-vegetable-patch,
   &.typ-similar-prod {
@@ -512,22 +463,6 @@
     .sec-desc {
       @media only screen and (max-width: $media-sm) {
         padding-top: 1rem;
-      }
-    }
-
-    .btn-wrap {
-      display: flex;
-      gap: 1.2rem;
-      margin-top: 3.2rem;
-      align-items: center;
-      justify-content: center;
-
-      .typ-stories-btn {
-        min-width: 22rem;
-
-        @media only screen and (max-width: $media-sm) {
-          min-width: 16rem
-        }
       }
     }
   }
@@ -833,14 +768,6 @@
     }
   }
 
-  &.mb-4 {
-    margin-bottom: 4rem;
-
-    @media only screen and (max-width: $media-sm) {
-      margin-bottom: 2.4rem;
-    }
-  }
-
   &.typ-pravesh-pdp {
     position: relative;
     padding-top: 0;
@@ -883,103 +810,6 @@
   &.typ-windows-pro {
     .sec-title {
       font-size: 2rem;
-    }
-  }
-
-  &.typ-home-loan {
-    .container {
-      max-width: 103rem;
-
-      @media only screen and (max-width: $media-tab) {
-        width: 100%;
-        padding: 0rem 1.6rem;
-        max-width: auto;
-      }
-    }
-  }
-
-  &.typ-pravesh-pdp-sec {
-    .container {
-      max-width: 100%;
-
-      .lyt-pdp {
-        align-items: normal;
-
-        .grid-col {
-
-          // height: 100vh;
-          &:first-child {
-            background-color: #F3F4F6;
-            padding-left: 10rem;
-            padding-right: 3.2rem;
-          }
-
-          &:last-child {
-            padding-right: 10rem;
-            padding-top: 3rem;
-            padding-left: 3.2rem;
-          }
-        }
-      }
-
-      .sec-head {
-        margin-bottom: 2rem;
-        position: relative;
-
-        .view-btn {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-      }
-    }
-
-    .btn-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-top: 1px solid #dedede;
-      position: relative;
-
-      &::before {
-        position: absolute;
-        top: -1px;
-        left: -52px;
-        content: "";
-        background: #dedede;
-        width: 16%;
-        height: 1px;
-      }
-
-      &::after {
-        position: absolute;
-        top: -1px;
-        right: -79px;
-        content: "";
-        background: #dedede;
-        width: 16%;
-        height: 1px;
-      }
-
-      .btn {
-        min-width: 10.4rem;
-      }
-
-      .price {
-        font-size: 2.4rem;
-        color: $clr-para;
-        font-family: $font-semiBold;
-
-        .total-cost {
-          font-size: 1.6rem;
-          font-family: $font-regular;
-        }
-
-        .price-icon {
-          font-size: 1.4rem;
-          font-family: $font-regular;
-        }
-      }
     }
   }
 
@@ -1046,43 +876,12 @@
         }
       }
     }
-
-    &.typ-architect-filter {
-      margin-top: 0;
-
-      .filter-sec {
-        margin-bottom: 2.4rem;
-
-        .filter-tag {
-          font-size: 1.4rem;
-          display: flex;
-          align-items: center;
-          gap: 4px;
-          border: 1px solid #B1CBF1;
-          background-color: #D8E5F8;
-          @include border-radius(100px);
-
-          .bold-text {
-            font-family: $font-medium;
-            color: $clr-base;
-          }
-
-          .close {
-            color: #000;
-          }
-        }
-      }
-    }
   }
 
   &.typ-about-brand {
     position: relative;
     overflow-y: hidden;
-
-    @media only screen and (max-width: $media-mobile) {
-      margin-top: 2.4rem;
-    }
-
+    @media only screen and (max-width: $media-mobile) { margin-top: 2.4rem;}
     &::after {
 
       // content: '';
@@ -1105,10 +904,9 @@
       color: #ECF2FB;
       font-size: 90rem;
       font-family: 'icomoon' !important;
-
       @media only screen and (max-width: $media-mobile) {
         left: -34%;
-        top: -3%;
+        top: -3%; 
         font-size: 39rem;
       }
     }
@@ -1176,7 +974,6 @@
       color: #D8E5F8;
       font-size: 90rem;
       font-family: 'icomoon' !important;
-
       @media only screen and (max-width: $media-mobile) {
         left: -73%;
         top: -8%;
@@ -1191,14 +988,9 @@
         margin-bottom: 6rem;
       }
     }
-
-    .swiper-pagination {
-      display: block;
-
+    .swiper-pagination{display: block;
       @media only screen and (max-width: $media-mobile) {
-        .swiper-pagination {
-          display: none;
-        }
+        .swiper-pagination{display: none;}
       }
     }
 
@@ -1209,11 +1001,7 @@
     overflow-x: hidden;
     padding: 0;
     margin: 6.4rem 0 2.4rem;
-
-    @media only screen and (max-width: $media-mobile) {
-      margin: 2.4rem 0 0rem;
-    }
-
+    @media only screen and (max-width: $media-mobile) {  margin: 2.4rem 0 0rem;}
     .sec-title,
     .desc {
       color: #fff !important;
@@ -1312,137 +1100,38 @@
       font-family: $font-bold;
     }
   }
+  &.typ-about-news{
+    .sec-head{display: flex; align-items: center; justify-content: space-between;}
+  }
 
-  &.typ-about-news {
-    .sec-head {
+  &.typ-dashboard{
+    display: flex;
+    position: relative;
+    padding-top: 0;
+    .mb-16{
+      margin-bottom: 16px;
+    }
+    .lyt-dashboard{
       display: flex;
-      align-items: center;
+      position: relative;
       justify-content: space-between;
+      .grid-col-lht{
+        width: 294px;
+      }
+      .grid-col-rht{
+        width: calc(100% - 318px);
+      }
     }
-  }
-
-  &.typ-explore-styles {
-    .btn-wrap {
-      gap: 2rem;
+    .lyt-dashboard-inner{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 3.2rem;
-    }
-  }
-
-  &.typ-architect-collection {
-    margin-top: -145px;
-
-    @media only screen and (max-width: $media-mobile) {
-      margin-top: -100px;
-    }
-
-    .sec-head {
-      margin-bottom: 1.6rem;
-
-      .sec-title {
-        font-size: 2rem;
-        font-family: $font-medium;
-        color: #fff;
-
-        @media only screen and (max-width: $media-mobile) {
-          font-size: 1.4rem;
-        }
+      position: relative;
+      justify-content: space-between;
+      .grid-col-lht{
+        width: 505px;
+      }
+      .grid-col-rht{
+        width: calc(100% - 522px);
       }
     }
-  }
-
-  &.typ-myCart {
-    margin-top: 6.4rem;
-
-    .sec-head {
-      margin-top: 2.4rem;
-      margin-bottom: 1.6rem;
-    }
-
-    .sec-title {
-      font-size: 2rem;
-      line-height: 2.8rem;
-    }
-  }
-
-  &.typ-white-bg {
-    background-color: #fff;
-  }
-
-  .mt-32 {
-    margin-top: 3.2rem;
-  }
-
-  &.mt-0 {
-    margin-top: 0;
-  }
-
-  &.typ-colonial {
-    .btn-moodboard {
-      min-width: 34.3rem;
-
-      @media only screen and (max-width: $media-mobile) {}
-    }
-  }
-
-  &.typ-architech-plans {
-    margin-bottom: 0rem;
-
-  }
-
-  &.car-shed-plp {
-    overflow: hidden;
-    background: #FFF4D7;
-    padding: 2.4rem 0;
-  }
-
-  &.typ-architect-shed {
-    margin: 0;
-  }
-
-  &.typ-delivery-payment {
-    .container {
-      @media only screen and (max-width: $media-mobile) {
-        padding: 0;
-      }
-
-      .typ-cart-btn {
-        @media only screen and (max-width: $media-mobile) {
-          padding: 0 1.6rem;
-          margin-top: 1.2rem;
-        }
-
-        .btn {
-          @media only screen and (max-width: $media-mobile) {
-            min-width: 100%;
-          }
-        }
-      }
-    }
-  }
-
-  &.typ-calculator-result {
-    .container {
-      @media only screen and (max-width: $media-mobile) {
-        padding: 0;
-      }
-    }
-  }
-  &.border-bottom{ border-bottom:  1px solid #DEDEDE;}
-  &.typ-order-confirmation-sec{
-    .order-3{
-      @media only screen and (max-width: $media-mobile) {order: 3;}
-    }
-    .order-2{
-      @media only screen and (max-width: $media-mobile) {order: 2;}
-    }
-    .order-4{
-      @media only screen and (max-width: $media-mobile) {order: 4;}
-    }
-  }
-  &.typ-mobile-white-bg{
-    @media only screen and (max-width: $media-mobile) { background-color: #fff;}
   }
 }

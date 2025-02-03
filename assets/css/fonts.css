@@ -68,70 +68,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dashboard:before {
-  content: "\e98d";
-}
-
-.icon-format-line-spacing:before {
-  content: "\e98c";
-}
-
-.icon-print:before {
-  content: "\e993";
-}
-
-.icon-rotate-left:before {
-  content: "\e994";
-}
-
-.icon-aspect-ratio:before {
-  content: "\e995";
-}
-
-.icon-noun-house-plan-4527605-1:before {
-  content: "\e996";
-}
-
-.icon-global:before {
-  content: "\e997";
-}
-
-.icon-Union:before {
-  content: "\e998";
-}
-
-.icon-broken-image:before {
-  content: "\e999";
-}
-
-.icon-thermostat:before {
-  content: "\e99a";
-}
-
-.icon-home-fill:before {
-  content: "\e99b";
-}
-
-.icon-bathtub:before {
-  content: "\e99d";
-}
-
-.icon-copy:before {
-  content: "\e98f";
-}
-
-.icon-homeconstruction:before {
-  content: "\e990";
-}
-
-.icon-article-bookmark:before {
-  content: "\e991";
-}
-
-.icon-tag:before {
-  content: "\e992";
-}
-
 .icon-more-2:before {
   content: "\e986";
   color: #00a441;
@@ -157,6 +93,14 @@
   content: "\e98b";
 }
 
+.icon-instagram:before {
+  content: "\e98c";
+}
+
+.icon-twitter:before {
+  content: "\e98d";
+}
+
 .icon-whatsapp:before {
   content: "\e98e";
 }
@@ -167,6 +111,7 @@
 
 .icon-play-arrow:before {
   content: "\e984";
+  color: #3d7edb;
 }
 
 .icon-send:before {
@@ -198,11 +143,11 @@
   content: "\e97b";
 }
 
-.icon-people-outline:before {
+.icon-people_outline:before {
   content: "\e97c";
 }
 
-.icon-touch-app:before {
+.icon-touch_app:before {
   content: "\e97d";
 }
 
@@ -418,7 +363,7 @@
   content: "\e946";
 }
 
-.icon-check-circle:before {
+.icon-check_circle:before {
   content: "\e944";
 }
 

@@ -77,10 +77,6 @@
   display: flex;
   justify-content: center;
 }
-.cp-login .rhs .desc.typ-small {
-  font-size: 1.2rem;
-  margin-top: 8px;
-}
 .cp-login .rhs .desc .typ-clr-black {
   color: #333333;
 }
@@ -129,13 +125,11 @@
 .cp-login .rhs .form-wrap .form-group .form-input::placeholder {
   color: #B3B3B3;
   opacity: 1;
-  font-family: "Poppins Regular";
   /* Firefox */
 }
 .cp-login .rhs .form-wrap .form-group .form-input::-ms-input-placeholder {
   /* Edge 12 -18 */
   color: #B3B3B3;
-  font-family: "Poppins Regular";
   opacity: 1;
 }
 .cp-login .rhs .form-wrap .form-group .forgot-link {
@@ -422,23 +416,6 @@
     font-size: 1.2rem;
   }
 }
-.cp-login .rhs .customer-message {
-  padding: 1.6rem;
-  background-color: #FFFBF2;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
-}
-.cp-login .rhs .customer-message .desc {
-  color: #333333;
-  font-family: "Poppins Medium";
-}
-.cp-login .rhs .customer-message .cp-checkbox {
-  padding: 1.6rem 0 0;
-}
-.cp-login .rhs .customer-message .cp-checkbox label {
-  font-family: "Poppins Medium";
-}
 .cp-login input[type=number]::-webkit-inner-spin-button,
 .cp-login input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -488,54 +465,6 @@
 }
 .cp-login .step-sec .step-main .step.finish {
   background-color: #FFB800;
-}
-.cp-login .step-sec.typ-2 {
-  padding: 1.2rem 4rem 4rem;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-login .step-sec.typ-2 {
-    padding: 1.6rem;
-  }
-}
-.cp-login .step-sec.typ-2 .steps-num-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cp-login .step-sec.typ-2 .steps-num-main .steps-num {
-  color: #DED3DE;
-}
-.cp-login .step-sec.typ-2 .steps-num-main .text {
-  text-decoration: underline;
-}
-.cp-login .step-sec.typ-2 .steps-num-main .exit-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.4rem;
-  color: #fff;
-}
-.cp-login .step-sec.typ-2 .steps-num-main .exit-btn .icon {
-  width: 1.6rem;
-  height: 1.6rem;
-  font-size: 1.6rem;
-  color: #FFF;
-}
-.cp-login .step-sec.typ-2 .step-main .step {
-  width: auto;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 100%;
-}
-.cp-login .step-sec.typ-2 .step-main .step.finish {
-  background-color: #00A441;
 }
 .cp-login.mt-2 {
   margin-top: 2.4rem;
@@ -588,9 +517,6 @@
   .cp-login .sticky.typ-p-0 {
     padding: 1.6rem 0;
   }
-}
-.cp-login .sticky .w-50 {
-  min-width: 50%;
 }
 .cp-login .steps-content {
   max-height: 550px;
@@ -670,46 +596,6 @@
   font-family: "Poppins Medium";
   color: #333333;
 }
-.cp-login .steps-content .typ-steps.typ-buisness .custom-radio {
-  position: relative;
-  font-family: "Poppins Medium";
-  font-size: 1.4rem;
-  color: #333333;
-}
-.cp-login .steps-content .typ-steps.typ-buisness .custom-radio .small-text {
-  display: block;
-  font-family: "Poppins Regular";
-  font-size: 1.2rem;
-  color: #666666;
-}
-.cp-login .steps-content .typ-steps.typ-buisness .checkmark {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 16px;
-  height: 21px;
-  width: 21px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  border: 2px solid #999999;
-  transition: all 0.3s;
-}
-.cp-login .steps-content .typ-steps.typ-buisness .checkmark::after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.cp-login .steps-content .typ-steps.typ-buisness .checkmark::after {
-  top: 3px;
-  left: 3px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #3D7EDB;
-}
-.cp-login .steps-content .typ-steps.typ-buisness input[type=radio]:checked + .custom-radio .checkmark::after {
-  display: block;
-}
 .cp-login .steps-content .typ-size {
   display: flex;
   gap: 1.2rem;
@@ -721,14 +607,6 @@
 .cp-login .steps-content .typ-size .bs-radio .custom-radio {
   min-width: auto;
   padding: 1.2rem 1.6rem;
-}
-.cp-login .steps-content .typ-size .bs-radio.col-3 {
-  width: 31.4%;
-}
-@media only screen and (max-width: 768px) {
-  .cp-login .steps-content .typ-size .bs-radio.col-3 {
-    width: 30.5%;
-  }
 }
 .cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
   min-width: 76px;

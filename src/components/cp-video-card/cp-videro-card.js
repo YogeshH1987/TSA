@@ -88,12 +88,10 @@ $(document).ready(function () {
     
 });
 
-var winWidth = $(window).width();
-var swiper;
+let swiper; // Scoped to this function
 
 $(document).ready(function () { 
     realStoriesSlider();  
-    rebarRealStoriesSlider();
 });
 
 $(window).resize(function () {
@@ -113,18 +111,5 @@ function realStoriesSlider() {
         swiper.destroy(true, true);
         swiper = undefined;
       }
-    }
-}
-
-function rebarRealStoriesSlider() {  
-    if (!swiper) {
-            swiper = new Swiper(".js-rebar-stories", {
-            slidesPerView: "auto",
-            loop: false,
-            navigation: {
-                nextEl: ".swiper-button-next.rebar-next",
-                prevEl: ".swiper-button-prev.rebar-prev",
-            },
-        });
     }
 }

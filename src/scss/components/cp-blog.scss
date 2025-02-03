@@ -114,7 +114,7 @@
         .post-date {
             border-top: 1px solid $clr-border;
             padding-top: 1.2rem;
-
+            display: flex;
             .post-detail {
                 color: $clr-para;
                 font-family: $font-regular;
@@ -135,6 +135,7 @@
                 }
 
                 &:first-child {
+                    padding-left: 0;
                     &::before {
                         display: none;
                         padding-left: 0;
@@ -196,7 +197,6 @@
             }
         }
     }
-   
 }
 
 .blog-btn-wrap {

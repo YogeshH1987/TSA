@@ -38,10 +38,6 @@ function toggleLayout() {
       .toggleClass('typ-list-view', viewType === 'list')
       .toggleClass('typ-grid-view', viewType === 'grid');
 
-      $('.cp-design-card')
-      .toggleClass('typ-list-view', viewType === 'list')
-      .toggleClass('typ-grid-view', viewType === 'grid');
-
     // Call the slider function to manage Swiper instance based on view type
     plpSlider();
   });

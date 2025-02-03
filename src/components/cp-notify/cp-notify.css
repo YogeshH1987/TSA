@@ -356,20 +356,5 @@
   transform: translateY(-61%);
   color: rgba(255, 255, 255, 0.2);
 }
-.cp-notify.typ-rebars .notify-title {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  margin-bottom: 0.4rem;
-}
-.cp-notify.typ-rebars .btn-wrap {
-  text-align: right;
-}
-.cp-notify.typ-rebars .btn {
-  background: transparent;
-  border: 1px solid #FFFFFF;
-}
-.cp-notify.typ-rebars .btn:hover {
-  color: #FFFFFF;
-}
 
 /*# sourceMappingURL=cp-notify.css.map */

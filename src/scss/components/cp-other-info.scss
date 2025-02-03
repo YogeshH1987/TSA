@@ -1,17 +1,16 @@
+
 @import "../config/variables";
 @import "../config/mixin";
 
 
-.cp-other-info {
+.cp-other-info{
     margin-top: 4.8rem;
     margin-bottom: 2.4rem;
-
     @media only screen and (max-width: $media-mobile) {
         margin-block: 3.2rem;
-    }
-
-    .other-info-list {
-        .other-info-item {
+        }
+    .other-info-list{
+        .other-info-item{
             border-radius: 12px;
             border: 1px solid $clr-border;
             padding: 1.6rem 4rem 1.6rem 1.6rem;
@@ -24,13 +23,11 @@
             flex-direction: column;
             position: relative;
             cursor: pointer;
-
             @media only screen and (max-width: $media-mobile) {
-                font-size: 1.4rem;
-                line-height: 2rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
             }
-
-            &:after {
+            &:after{
                 content: "\e907";
                 position: absolute;
                 right: 0;
@@ -40,75 +37,52 @@
                 font-family: 'icomoon' !important;
                 transform: translate(-50%, -50%) rotate(181deg)
             }
-
-            .sub-item {
-                font-size: 1.4rem;
-                color: $clr-para;
-                font-family: $font-regular;
-                line-height: 1.6rem;
-
-                &.typ-green {
-                    border: 1px solid #66C88D;
-                    background: #E5F6EC;
-                    font-size: 1.4rem;
-                    color: #00A441;
-                    font-family: $font-medium;
-                    border-radius: 26px;
-                    max-width: 16rem;
-                    text-align: center;
-                    padding: 0.3rem;
-
-                }
-            }
-
-            .sub-item-list {
-                display: flex;
-
-                .icon {
-                    color: #FFB800;
-                    position: relative;
-
-                    &:nth-child(5) {
-                        padding-right: 1rem;
-
-                        &::after {
-                            content: '';
-                            background-color: $clr-para;
-                            width: 1px;
-                            height: 13px;
-                            position: absolute;
-                            right: 5px;
-                            top: 1px;
-                        }
+        .sub-item{
+            font-size: 1.4rem;
+            color: $clr-para;
+            font-family: $font-regular;
+            line-height: 1.6rem;
+        }
+        .sub-item-list{
+            display: flex;
+            .icon{
+                color: #FFB800;
+                position: relative;
+                &:nth-child(5){
+                    padding-right: 1rem;
+                    &::after{
+                        content: '';
+                        background-color: $clr-para;
+                        width: 1px;
+                        height: 13px;
+                        position: absolute;
+                        right: 5px;
+                        top: 1px;
                     }
                 }
             }
         }
+        }
     }
-
-    .act-wrap {
+    .act-wrap{
         position: sticky;
         bottom: 20px;
     }
-
-    &.typ-icon {
-        .other-info-list {
+    &.typ-icon{
+        .other-info-list{
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
             gap: 2rem;
-
-            .other-info-item {
+            .other-info-item{
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: row;
                 gap: 1.2rem;
                 width: 50%;
-
                 @media only screen and (max-width: $media-mobile) {
                     width: 100%;
                 }
-
                 .icon {
                     font-size: 2.4rem;
                     line-height: 2.6rem;
@@ -117,47 +91,32 @@
             }
         }
     }
-
-    &.typ-tiscon {
-        .other-info-list {
+    &.typ-tiscon{
+        .other-info-list{
             display: flex;
             align-items: flex-start;
-            gap: 2rem;
-
-            @media only screen and (max-width: $media-mobile) {
+            gap:2rem;
+            @media only screen and (max-width: $media-mobile){
                 flex-wrap: wrap;
                 gap: 1.2rem;
                 margin-bottom: 0;
             }
-
-            .other-info-item {
+            .other-info-item{
                 flex-wrap: nowrap;
                 flex-direction: row;
                 width: 50%;
                 gap: 1.2rem;
                 align-items: center;
-
-                @media only screen and (max-width: $media-mobile) {
+                @media only screen and (max-width: $media-mobile){
                     margin-bottom: 0;
                     width: 100%;
                 }
-
-                .icon {
+                .icon{
                     color: $clr-primary;
                 }
             }
         }
     }
-
-    &.typ-payment {
-        .tag {
-            border: 1px solid #66C88D;
-            background-color: #CCEDD9;
-            border-radius: 2.6rem;
-            font-size: 1.2rem;
-            color: $clr-base;
-            padding: 2px 8px;
-            display: inline-flex;
-        }
-    }
 }
+
+

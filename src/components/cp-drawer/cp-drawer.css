@@ -45,9 +45,6 @@
   align-items: center;
   padding: 1.2rem 0;
 }
-.cp-drawer .head-sec.p-0 {
-  padding: 0;
-}
 .cp-drawer .head-sec .drawer-title {
   font-family: "Poppins Medium";
   font-size: 2.4rem;
@@ -114,7 +111,6 @@
 }
 .cp-drawer.typ-blog {
   padding-left: 0;
-  padding-right: 0;
 }
 .cp-drawer.typ-blog .head-sec {
   border-bottom: 1px solid #dedede;
@@ -158,102 +154,6 @@
 @media only screen and (max-width: 768px) {
   .cp-drawer.typ-help-policy .cp-tab .tab-list {
     margin: 0 1.6rem;
-  }
-}
-.cp-drawer.typ-offer .head-sec .drawer-title {
-  font-family: "Poppins Medium";
-  font-size: 2.8rem;
-  line-height: 3.2rem;
-  color: #333333;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer.typ-offer .head-sec .drawer-title {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-}
-.cp-drawer.typ-offer .drawer-sub-title {
-  font-family: "Poppins Medium";
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  color: #333333;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer.typ-offer .drawer-sub-title {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-}
-.cp-drawer.typ-no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-.cp-drawer.typ-border .head-sec {
-  border-bottom: 1px solid #dedede;
-  padding: 0 2rem 1.6rem;
-}
-.cp-drawer.typ-setback {
-  padding-bottom: 0;
-}
-.cp-drawer.typ-setback .cont-sec {
-  padding: 2rem;
-  position: relative;
-}
-.cp-drawer.typ-setback .cont-sec .cont-title {
-  font-family: "Poppins Medium";
-  font-size: 1.6rem;
-  margin-bottom: 1.2rem;
-  color: #333333;
-}
-.cp-drawer.typ-setback .cont-sec .cont-desc {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-}
-.cp-drawer.typ-setback .cont-sec .img-wrap {
-  margin: 1.6rem 0;
-}
-.cp-drawer.typ-setback .cont-sec .price-list-item {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  padding: 0.8rem 1.6rem;
-  background: #FFF8E5;
-  border: 1px solid #FFD466;
-  color: #A77800;
-  gap: 0.4rem;
-  margin-top: 1.2rem;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
-}
-.cp-drawer.typ-setback .cont-sec .price-list-item .icon {
-  font-size: 2.4rem;
-  width: 2.4rem;
-  height: 2.4rem;
-}
-.cp-drawer.typ-setback .cont-sec .price-list-item .desc {
-  color: #A77800;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-}
-.cp-drawer.typ-setback .btn-wrap {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  padding: 1.2rem 2rem 2.4rem;
-  display: flex;
-  gap: 2rem;
-}
-.cp-drawer.typ-setback .btn-wrap .btn {
-  min-width: 48%;
-}
-@media only screen and (max-width: 768px) {
-  .cp-drawer.typ-floor-plans {
-    height: 100%;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
   }
 }
 

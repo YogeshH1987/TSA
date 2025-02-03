@@ -77,11 +77,6 @@
                 justify-content: center;
             }
 
-            &.typ-small {
-                font-size: 1.2rem;
-                margin-top: 8px;
-            }
-
             .typ-clr-black {
                 color: #333333;
             }
@@ -134,14 +129,12 @@
                     &::placeholder {
                         color: #B3B3B3;
                         opacity: 1;
-                        font-family: $font-regular;
                         /* Firefox */
                     }
 
                     &::-ms-input-placeholder {
                         /* Edge 12 -18 */
                         color: #B3B3B3;
-                        font-family: $font-regular;
                         opacity: 1;
                     }
                 }
@@ -149,7 +142,6 @@
                 .forgot-link {
 
                     font-size: 1.4rem;
-
                     @media only screen and (max-width: $media-mobile) {
                         font-size: 1.2rem;
                         // bottom: -25px;
@@ -472,29 +464,7 @@
 
         .btn-link {
             font-size: 1.4rem;
-
-            @media only screen and (max-width: $media-mobile) {
-                font-size: 1.2rem;
-            }
-        }
-
-        .customer-message {
-            padding: 1.6rem;
-            background-color: #FFFBF2;
-            @include border-radius(1.2rem);
-
-            .desc {
-                color: $clr-base;
-                font-family: $font-medium;
-            }
-
-            .cp-checkbox {
-                padding: 1.6rem 0 0;
-
-                label {
-                    font-family: $font-medium;
-                }
-            }
+            @media only screen and (max-width: $media-mobile) {  font-size: 1.2rem;}
         }
     }
 
@@ -526,8 +496,6 @@
         .steps-num {
             font-family: $font-medium;
             font-size: 1.2rem;
-
-
         }
 
         .step-main {
@@ -551,59 +519,6 @@
             }
         }
 
-        &.typ-2 {
-            padding: 1.2rem 4rem 4rem;
-            @include border-radius(0);
-            margin-bottom: 0;
-            @media only screen and (max-width: $media-mobile) { padding: 1.6rem;}
-            .steps-num-main {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-
-                .steps-num {
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: space-between;
-                    color: #DED3DE;
-                }
-
-                .text {
-                    text-decoration: underline;
-                }
-
-                .exit-btn {
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                    font-size: 1.4rem;
-                    color: #fff;
-
-                    .icon {
-                        width: 1.6rem;
-                        height: 1.6rem;
-                        font-size: 1.6rem;
-                        color: #FFF;
-                    }
-                }
-            }
-
-            .step-main {
-                .step {
-                    width:auto;
-                    -ms-flex-preferred-size: 0;
-                    flex-basis: 0;
-                    -webkit-box-flex: 1;
-                    -ms-flex-positive: 1;
-                    flex-grow: 1;
-                    max-width: 100%;
-                    &.finish {
-                        background-color: #00A441;
-                    }
-                }
-            }
-        }
     }
 
     &.mt-2 {
@@ -660,10 +575,6 @@
             @media only screen and (max-width: $media-mobile) {
                 padding: 1.6rem 0;
             }
-        }
-
-        .w-50 {
-            min-width: 50%;
         }
     }
 
@@ -750,62 +661,11 @@
                 span:last-child {
                     flex: 0 0 calc(100% - 5rem);
                 }
-
             }
 
             input[type="radio"]:checked+.custom-radio {
                 font-family: $font-medium;
                 color: $clr-base;
-            }
-
-            &.typ-buisness {
-                .custom-radio {
-                    position: relative;
-                    font-family: $font-medium;
-                    font-size: 1.4rem;
-                    color: $clr-base;
-
-                    .small-text {
-                        display: block;
-                        font-family: $font-regular;
-                        font-size: 1.2rem;
-                        color: #666666;
-                    }
-
-                }
-
-                .checkmark {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 16px;
-                    height: 21px;
-                    width: 21px;
-                    background-color: rgba(0, 0, 0, 0);
-                    border-radius: 50%;
-                    border: 2px solid #999999;
-                    transition: all 0.3s;
-                }
-
-                .checkmark::after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                }
-
-                .checkmark::after {
-                    top: 3px;
-                    left: 3px;
-                    width: 11px;
-                    height: 11px;
-                    border-radius: 50%;
-                    background: #3D7EDB;
-                }
-
-                input[type="radio"]:checked+.custom-radio .checkmark::after {
-                    display: block;
-                }
-
             }
         }
 
@@ -820,11 +680,6 @@
                 .custom-radio {
                     min-width: auto;
                     padding: 1.2rem 1.6rem;
-                }
-
-                &.col-3 {
-                    width: 31.4%;
-                    @media only screen and (max-width: $media-mobile) { width: 30.5%;}
                 }
             }
 
