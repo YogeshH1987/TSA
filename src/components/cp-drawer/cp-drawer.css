@@ -198,5 +198,25 @@
       border-radius: 0;
       -webkit-border-radius: 0;
       -moz-border-radius: 0; } }
+  .cp-drawer.typ-sp-detail {
+    padding: 2.4rem 3.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-drawer.typ-sp-detail {
+        padding: 2.4rem 1.6rem; } }
+    .cp-drawer.typ-sp-detail .head-sec {
+      padding: 0rem 0 2.4rem; }
+      .cp-drawer.typ-sp-detail .head-sec .drawer-title {
+        font-size: 2rem;
+        font-family: "Poppins Semibold"; }
+      .cp-drawer.typ-sp-detail .head-sec .location {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 1.2rem;
+        color: #333333;
+        font-family: "Poppins Medium"; }
+        .cp-drawer.typ-sp-detail .head-sec .location .icon {
+          font-size: 1.2rem;
+          color: #333333; }
 
 /*# sourceMappingURL=cp-drawer.css.map */

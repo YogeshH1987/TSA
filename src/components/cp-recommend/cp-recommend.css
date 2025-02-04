@@ -34,7 +34,10 @@
       .cp-recommend .content-wrap .location-sec .location-text {
         font-size: 1.2rem;
         font-family: "Poppins Regular";
-        color: #808080; }
+        color: #808080;
+        display: flex;
+        align-items: center;
+        gap: 4px; }
     .cp-recommend .content-wrap .rating-sec {
       display: flex;
       align-items: center;
@@ -50,6 +53,8 @@
           text-align: center;
           margin-right: 5px;
           padding: 2px 8px; }
+          .cp-recommend .content-wrap .rating-sec .rating-cont .rating-text.yellow {
+            background-color: #FFB800; }
         .cp-recommend .content-wrap .rating-sec .rating-cont .rupee-icon {
           border: 1px solid #DEDEDE;
           border-radius: 26px;
@@ -80,7 +85,7 @@
       justify-content: space-between;
       gap: 1rem; }
       .cp-recommend .content-wrap .btn-wrap .btn {
-        padding: 8px 1.6rem;
+        padding: 4px 1.6rem;
         font-size: 1.2rem;
         min-width: auto; }
     .cp-recommend .content-wrap .tag-list {
@@ -89,8 +94,8 @@
       justify-content: flex-end;
       gap: 0.8rem; }
       .cp-recommend .content-wrap .tag-list .tag-link {
-        width: 4rem;
-        height: 4rem;
+        width: 3.2rem;
+        height: 3.2rem;
         border-radius: 0.8rem;
         -webkit-border-radius: 0.8rem;
         -moz-border-radius: 0.8rem;
@@ -158,5 +163,15 @@
         .cp-recommend.typ-sp-detail .link {
           font-size: 1.2rem;
           padding-top: 1.2rem; } }
+  .cp-recommend.typ-sp-drawer .img-wrap {
+    width: 40%;
+    max-height: 130px;
+    flex: initial; }
+  .cp-recommend.typ-sp-drawer .content-wrap .location-sec .location-text {
+    margin-bottom: 5px; }
+    .cp-recommend.typ-sp-drawer .content-wrap .location-sec .location-text .icon.active {
+      color: #FFB800; }
+  .cp-recommend.typ-sp-drawer .content-wrap .rating-sec {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=cp-recommend.css.map */

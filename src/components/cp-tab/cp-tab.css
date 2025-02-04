@@ -354,7 +354,20 @@
       text-transform: capitalize;
       display: block; }
     .cp-tab.typ-help-policies .tab-list .tab-item:hover .title, .cp-tab.typ-help-policies .tab-list .tab-item.active .title {
-      text-shadow: none; }
+      color: #fff;
+      text-shadow: #fff 0.9px 0 0.9px; }
+.cp-tab.typ-sp-landing {
+  width: 100%; }
+  .cp-tab.typ-sp-landing .tab-list {
+    gap: 0.8rem; }
+    .cp-tab.typ-sp-landing .tab-list .tab-item .title {
+      text-transform: capitalize;
+      display: block;
+      background: transparent; }
+    .cp-tab.typ-sp-landing .tab-list .tab-item:hover .title, .cp-tab.typ-sp-landing .tab-list .tab-item.active .title {
+      color: #fff;
+      text-shadow: #fff 0.9px 0 0.9px;
+      background: #3D7EDB; }
 .cp-tab.typ-about .tab-item:hover .title, .cp-tab.typ-about .tab-item.active .title {
   text-shadow: #fff 0.9px 0 0.9px !important; }
 .cp-tab.typ-about-timeline .tab-list .tab-item .title {

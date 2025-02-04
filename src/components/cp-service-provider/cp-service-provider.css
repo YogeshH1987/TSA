@@ -6,6 +6,8 @@
 /*opacity- end*/
 .cp-service-provider .cont-wrap {
   margin-bottom: 5.6rem; }
+  .cp-service-provider .cont-wrap:last-child {
+    margin-bottom: 0; }
   @media only screen and (max-width: 991px) {
     .cp-service-provider .cont-wrap {
       margin-bottom: 4rem; } }
@@ -147,12 +149,6 @@
       padding-bottom: 0; } }
   .cp-service-provider .cont-wrap.typ-review .cont-head .review-desc {
     margin-top: 1.6rem; }
-  .cp-service-provider .cont-wrap.typ-review .cont-head .star-rating {
-    display: flex;
-    margin-top: 1.2rem; }
-    .cp-service-provider .cont-wrap.typ-review .cont-head .star-rating .icon {
-      font-size: 3.2rem;
-      color: #CCCCCC; }
   .cp-service-provider .cont-wrap.typ-review .text-bold {
     font-family: "Poppins Semibold";
     font-size: 1.6rem;
@@ -164,10 +160,17 @@
     @media only screen and (max-width: 991px) {
       .cp-service-provider .cont-wrap.typ-review .link {
         font-size: 1.4rem; } }
+  .cp-service-provider .cont-wrap .typ-comment {
+    margin-top: 1.6rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-service-provider .cont-wrap .typ-comment {
+        margin-bottom: 0; } }
 .cp-service-provider .mt-12 {
   margin-top: 1.2rem; }
 .cp-service-provider .mb-12 {
   margin-bottom: 1.2rem; }
+.cp-service-provider .mb-32 {
+  margin-bottom: 3.2rem; }
 .cp-service-provider .border-bottom {
   border-bottom: 1px solid #DEDEDE;
   padding-bottom: 1.6rem; }
@@ -216,5 +219,97 @@
     height: 2.4rem;
     font-size: 2.4rem;
     color: #3D7EDB; }
+.cp-service-provider .enquiry-icon-wrap {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 2.4rem auto 0; }
+  .cp-service-provider .enquiry-icon-wrap .list-item {
+    font-size: 1.2rem;
+    color: #999999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0; }
+    .cp-service-provider .enquiry-icon-wrap .list-item .icon {
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      padding: 8px;
+      font-size: 2.4rem;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .cp-service-provider .enquiry-icon-wrap .btn {
+    width: 100%;
+    min-width: 100%; }
+.cp-service-provider .drawer-sub-title {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  margin-bottom: 1.6rem; }
+.cp-service-provider .photo-gallery-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  width: 100%; }
+  .cp-service-provider .photo-gallery-wrap .photo-gallery-list {
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    border: 1px solid #DEDEDE;
+    max-height: 220px;
+    overflow: hidden;
+    width: 100%; }
+    .cp-service-provider .photo-gallery-wrap .photo-gallery-list img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+@media only screen and (max-width: 991px) {
+  .cp-service-provider .product-detail-info {
+    position: relative;
+    padding-bottom: 140px; } }
+@media only screen and (max-width: 991px) {
+  .cp-service-provider .product-detail-info .enquiry-icon-wrap {
+    max-width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; } }
+@media only screen and (max-width: 991px) {
+  .cp-service-provider .product-detail-info .typ-col-wrap {
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    border: 1px solid #DEDEDE;
+    margin: 0; } }
+  @media only screen and (max-width: 991px) and (max-width: 991px) {
+    .cp-service-provider .product-detail-info .typ-col-wrap .grid-col {
+      padding: 0; } }
+
+@media only screen and (max-width: 991px) {
+  .cp-service-provider .product-detail-info .typ-col-wrap .content-wrap {
+    padding: 1.6rem 1.2rem;
+    border: none; } }
+@media only screen and (max-width: 991px) {
+  .cp-service-provider .product-detail-info .typ-col-wrap .content-wrap .rating-sec {
+    margin-bottom: 0; } }
+@media only screen and (max-width: 991px) {
+  .cp-service-provider .product-detail-info .project-detail-img {
+    border-radius: 12px 0 0 12px;
+    -webkit-border-radius: 12px 0 0 12px;
+    -moz-border-radius: 12px 0 0 12px;
+    margin-bottom: 0; } }
+.cp-service-provider .typ-sp-drawer .bs-radio .custom-radio {
+  padding: 1.2rem 1.6rem; }
 
 /*# sourceMappingURL=cp-service-provider.css.map */

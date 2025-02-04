@@ -3,13 +3,15 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
     dealerSlider();  
-    aboutNews() 
+    aboutNews() ;
+    dealerNearYou() 
 });
 
 $(window).resize(function () {
   if ($(window).width() < 769) {
     dealerSlider();
-    aboutNews() 
+    aboutNews() ;
+    dealerNearYou() 
   }
 });
 
@@ -61,6 +63,28 @@ function aboutNews() {
 }
 
 
+
+function dealerNearYou() {
+  var swiper = new Swiper(".js-dealer-near-you", {
+      slidesPerView: 1.1,
+      spaceBetween: 20,
+      loop: false,
+      navigation: false,
+      pagination:false,
+      breakpoints: {
+          // when window width is <= 499px
+          768: {
+              slidesPerView: 1.1,
+              spaceBetween: 12,
+          },
+          // when window width is <= 999px
+          999: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+          }
+      }
+  });
+}
 
 
 

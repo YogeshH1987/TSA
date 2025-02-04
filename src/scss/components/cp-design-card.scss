@@ -264,9 +264,14 @@
 
         &.typ-vertical-border {
             max-width: 100%;
+
             .content-wrap {
                 padding: 2rem 0;
-                @media only screen and (max-width: $media-mobile) {  padding: 1.6rem 0;}
+
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 1.6rem 0;
+                }
+
                 .detail-list {
                     .detail-item {
 
@@ -275,7 +280,10 @@
                         border-bottom: 0;
                         width: 48%;
                         border-right: 1px solid #ccc;
-                        &:last-child{border: 0;}
+
+                        &:last-child {
+                            border: 0;
+                        }
                     }
                 }
             }
@@ -633,6 +641,21 @@
             font-family: "Poppins Medium";
             color: #A77800;
             line-height: 1.6rem;
+        }
+    }
+
+    &.typ-drawer-sp-detail {
+        @include border-radius(0);
+        border: 0;
+        border-bottom: 1px solid #DEDEDE;
+        padding-bottom: 16px;
+        margin-bottom: 2.4rem;
+        .content-wrap {
+            padding: 0;
+
+            .detail-title {
+                color: #666666;
+            }
         }
     }
 }

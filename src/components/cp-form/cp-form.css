@@ -38,6 +38,15 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       border-radius: 1.2rem; }
+      .cp-form .form-group .form-control::placeholder {
+        color: #B3B3B3;
+        opacity: 1;
+        /* Firefox */
+        font-family: "Poppins Regular"; }
+      .cp-form .form-group .form-control::-ms-input-placeholder {
+        /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: "Poppins Regular"; }
     .cp-form .form-group .form-textarea {
       width: 100%;
       padding: 1.2rem 1.6rem;
@@ -177,7 +186,8 @@
         margin: 2rem -1.5rem 3.8rem;
         order: 3; } }
     .cp-form.typ-comment .form-group {
-      position: relative; }
+      position: relative;
+      margin-bottom: 0; }
       .cp-form.typ-comment .form-group textarea {
         resize: none; }
       .cp-form.typ-comment .form-group .icon {
@@ -189,6 +199,17 @@
         color: #CCCCCC;
         font-size: 3.2rem;
         margin: auto; }
+  .cp-form .form-input-wrap {
+    position: relative; }
+    .cp-form .form-input-wrap .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      font-size: 2.4rem;
+      color: #999999;
+      cursor: pointer; }
   .cp-form.typ-help-policies .desc {
     font-size: 1.4rem;
     color: #333333; }
@@ -197,6 +218,15 @@
     .cp-form.typ-help-policies .form-group .form-control {
       color: #333333;
       font-family: "Poppins Medium"; }
+      .cp-form.typ-help-policies .form-group .form-control::placeholder {
+        color: #B3B3B3;
+        opacity: 1;
+        /* Firefox */
+        font-family: "Poppins Regular"; }
+      .cp-form.typ-help-policies .form-group .form-control::-ms-input-placeholder {
+        /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: "Poppins Regular"; }
     .cp-form.typ-help-policies .form-group .select-dropdown {
       width: 100%; }
       .cp-form.typ-help-policies .form-group .select-dropdown .select-dropdown-button {
@@ -278,5 +308,17 @@
         font-size: 1.6rem;
         color: #00A441;
         cursor: pointer; }
+  .cp-form.typ-review-sp .feedback-title {
+    font-family: "Poppins Medium";
+    color: #333333;
+    font-size: 1.6rem; }
+  .cp-form.typ-review-sp .star-rating {
+    display: flex;
+    margin-top: 1.2rem; }
+    .cp-form.typ-review-sp .star-rating .icon {
+      font-size: 3.2rem;
+      color: #CCCCCC; }
+      .cp-form.typ-review-sp .star-rating .icon.star-selected {
+        color: #FFB800; }
 
 /*# sourceMappingURL=cp-form.css.map */

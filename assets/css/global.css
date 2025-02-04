@@ -2180,6 +2180,23 @@ p {
     border-color: #3D7EDB;
     color: #3D7EDB;
     padding: 1.2rem 1.6rem; }
+  .btn.Need-help-btn {
+    background-color: #D2042D;
+    position: fixed;
+    right: 6rem;
+    bottom: 2.4rem;
+    min-width: auto;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    z-index: 1;
+    color: #fff !important;
+    border: 0; }
+    @media only screen and (max-width: 768px) {
+      .btn.Need-help-btn {
+        right: 2.4rem; } }
+    .btn.Need-help-btn .icon {
+      color: #fff;
+      font-size: 2.4rem; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }
@@ -2752,6 +2769,38 @@ p {
       color: #333333; }
       .bs-radio.typ-service-provider input[type=radio]:checked + .custom-radio .icon {
         color: #3D7EDB; }
+
+.star-rating {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* hide 'none' input from screenreaders */
+  /* set icon padding and size */
+  /* set default star color */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */ }
+  .star-rating .rating-group {
+    display: inline-flex; }
+  .star-rating .rating__icon {
+    pointer-events: none; }
+  .star-rating .rating__input {
+    position: absolute !important;
+    left: -9999px !important; }
+  .star-rating .rating__input--none {
+    display: none; }
+  .star-rating .rating__label {
+    cursor: pointer;
+    padding: 0 2px;
+    font-size: 3.2rem; }
+  .star-rating .rating__icon--star {
+    color: #FFB800; }
+  .star-rating .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #CCCCCC; }
+  .star-rating .rating-group:hover .rating__label .rating__icon--star {
+    color: #FFB800; }
+  .star-rating .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #CCCCCC; }
 
 .bs-modal {
   position: relative;

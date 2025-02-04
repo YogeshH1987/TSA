@@ -447,5 +447,17 @@
       font-family: "Poppins Medium";
       color: #A77800;
       line-height: 1.6rem; }
+  .cp-design-card.typ-drawer-sp-detail {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 16px;
+    margin-bottom: 2.4rem; }
+    .cp-design-card.typ-drawer-sp-detail .content-wrap {
+      padding: 0; }
+      .cp-design-card.typ-drawer-sp-detail .content-wrap .detail-title {
+        color: #666666; }
 
 /*# sourceMappingURL=cp-design-card.css.map */

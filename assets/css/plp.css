@@ -36,7 +36,7 @@
   .lyt-grid.typ-col-4 {
     flex-wrap: wrap; }
     .lyt-grid.typ-col-4 .grid-col {
-      width: 22.5%; }
+      width: 23.5%; }
       @media only screen and (max-width: 768px) {
         .lyt-grid.typ-col-4 .grid-col {
           width: 100%; } }
@@ -231,6 +231,29 @@
       @media only screen and (max-width: 768px) {
         .lyt-grid.typ-col-5 .grid-col {
           width: 100%; } }
+  .lyt-grid.typ-col-6 {
+    gap: 0;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: initial;
+    margin-right: -10px;
+    margin-left: -10px; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-col-6 {
+        margin-right: 0px;
+        margin-left: 0px;
+        gap: 1.2rem; } }
+    .lyt-grid.typ-col-6 .grid-col {
+      width: auto;
+      flex: 0 0 16.66%;
+      max-width: 16.66%;
+      padding: 0 1rem; }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-col-6 .grid-col {
+          flex: 0 0 48%;
+          max-width: 48%;
+          padding: 0 0px; } }
   .lyt-grid .grid-col-w-65 {
     width: 65% !important; }
     @media only screen and (max-width: 768px) {

@@ -42,6 +42,9 @@
                 font-size: 1.2rem;
                 font-family: $font-regular;
                 color: #808080;
+                display: flex;
+                align-items: center;
+                gap: 4px;
             }
         }
 
@@ -62,6 +65,7 @@
                     text-align: center;
                     margin-right: 5px;
                     padding: 2px 8px;
+                    &.yellow{ background-color: #FFB800;}
                 }
 
                 .rupee-icon {
@@ -105,7 +109,7 @@
             gap: 1rem;
 
             .btn {
-                padding: 8px 1.6rem;
+                padding: 4px 1.6rem;
                 font-size: 1.2rem;
                 min-width: auto;
             }
@@ -119,8 +123,8 @@
             gap: 0.8rem;
 
             .tag-link {
-                width: 4rem;
-                height: 4rem;
+                width: 3.2rem;
+                height: 3.2rem;
                 border-radius: 0.8rem;
                 -webkit-border-radius: 0.8rem;
                 -moz-border-radius: 0.8rem;
@@ -138,11 +142,15 @@
         border: 0;
         @include border-radius(0);
         flex-direction: column;
-    
+
         .content-wrap {
             padding: 0;
             padding-bottom: 4px;
-            @media only screen and (max-width: $media-mobile) { padding-bottom: 0px;}
+
+            @media only screen and (max-width: $media-mobile) {
+                padding-bottom: 0px;
+            }
+
             .location-sec {
                 .location-text {
                     font-size: 1.6rem;
@@ -150,10 +158,18 @@
                     display: flex;
                     align-items: center;
                     gap: 8px;
-                    @media only screen and (max-width: $media-mobile) {  font-size: 1.2rem;}
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.2rem;
+                    }
+
                     .icon {
                         font-size: 2.4rem;
-                        @media only screen and (max-width: $media-mobile) { font-size: 1.6rem;}
+
+                        @media only screen and (max-width: $media-mobile) {
+                            font-size: 1.6rem;
+                        }
+
                         &.active {
                             color: #FFB800;
                         }
@@ -164,7 +180,10 @@
             .rating-sec {
                 .rating-cont {
                     font-size: 1.4rem;
-                    @media only screen and (max-width: $media-mobile) {  font-size: 1.2rem;}
+
+                    @media only screen and (max-width: $media-mobile) {
+                        font-size: 1.2rem;
+                    }
                 }
             }
 
@@ -174,7 +193,12 @@
                 justify-content: space-between;
                 font-size: 2rem;
                 margin-bottom: 1.6rem;
-                @media only screen and (max-width: $media-mobile) { font-size: 1.6rem; margin-bottom: 8px;}
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.6rem;
+                    margin-bottom: 8px;
+                }
+
                 .icon {
 
                     color: #000;
@@ -195,7 +219,37 @@
             display: block;
             padding-top: 1.6rem;
             display: block;
-            @media only screen and (max-width: $media-mobile) {  font-size: 1.2rem;  padding-top: 1.2rem;}
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.2rem;
+                padding-top: 1.2rem;
+            }
+        }
+    }
+
+    &.typ-sp-drawer {
+        .img-wrap {
+            width: 40%;
+            max-height: 130px;
+            flex: initial;
+        }
+
+        .content-wrap {
+            .location-sec {
+                .location-text {
+                    margin-bottom: 5px;
+
+                    .icon {
+                        &.active {
+                            color: #FFB800;
+                        }
+                    }
+                }
+            }
+
+            .rating-sec {
+                margin-bottom: 0;
+            }
         }
     }
 }

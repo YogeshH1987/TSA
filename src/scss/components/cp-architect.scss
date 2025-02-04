@@ -137,10 +137,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      max-height: 26rem;
+      max-height: 24rem;
 
       @media only screen and (max-width: $media-mobile) {
-        max-height: 29.6rem;
+        max-height: 28rem;
       }
     }
 
@@ -199,7 +199,9 @@
           font-family: $font-medium;
           line-height: 1.6rem;
           margin-right: 1.2rem;
-
+          &.no-seperator{
+            &::after { content: none;}
+          }
           &::after {
             content: "";
             position: absolute;
@@ -246,6 +248,7 @@
     .icon {
       color: $clr-root;
       font-size: 2.4rem;
+      cursor: pointer;
     }
   }
 
@@ -440,4 +443,49 @@
       }
     }
   }
+  &.typ-sp-card{
+    border: #DEDEDE 1px solid;
+    width: 100%;
+
+    .img-wrap {
+      max-height: 12rem;
+
+      &::after {
+        content: none;
+      }
+
+      img {
+        max-height: 12rem;
+      }
+    }
+
+    .detail-wrap {
+      background-color: #fff;
+      padding: 1.2rem;
+      position: static;
+
+      .location-item {
+        .details {
+          color: $clr-base;
+          font-size: 2rem;
+          @media only screen and (max-width: $media-sm) { font-size: 1.6rem;}
+        }
+      }
+
+      .detail-right {
+        border: 1px solid $clr-base;
+        @include border-radius(0.6rem);
+        padding: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          color: $clr-base;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
+.w-100{width: 100%;}

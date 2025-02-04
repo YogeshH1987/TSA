@@ -294,4 +294,32 @@
             @include border-radius(0)
         }
     }
+
+    &.typ-sp-detail {
+        padding: 2.4rem 3.2rem;
+        @media only screen and (max-width: $media-mobile) {   padding: 2.4rem 1.6rem;}
+        .head-sec {
+            padding: 0rem 0 2.4rem;
+
+            .drawer-title {
+                font-size: 2rem;
+                font-family: $font-semiBold;
+            }
+
+            .location {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 1.2rem;
+                color: $clr-base;
+                font-family: $font-medium;
+
+                .icon {
+                    font-size: 1.2rem;
+                    color: $clr-base;
+                }
+            }
+        }
+
+    }
 }

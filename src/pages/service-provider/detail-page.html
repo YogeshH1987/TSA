@@ -19,12 +19,15 @@
     <link rel="stylesheet" href="/css/plp.css" />
     <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
-    <link rel="stylesheet" href="/components/cp-service-provider/cp-service-provider.css" />
     <link rel="stylesheet" href="/components/cp-recommend/cp-recommend.css" />
     <link rel="stylesheet" href="/components/cp-architect/cp-architect.css" />
-    <link rel="stylesheet" href="/components/cp-profile-progress-bar/cp-profile-progress-bar.css" />
- 
-    
+    <link rel="stylesheet" href="../components/cp-customer-review/cp-customer-review.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="/components/cp-notification/cp-notification.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-design-card/cp-design-card.css" />
+    <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
+    <link rel="stylesheet" href="/components/cp-service-provider/cp-service-provider.css" />
 </head>
 
 <body>
@@ -495,80 +498,79 @@
 
         <section class="bs-sec typ-no-top-padding">
             <div class="container">
-                <div class="cp-profile-progress-bar">
-                    <div class="profile-head text-center">
-                        <h3 class="profile-title">Finish setting up your profile</h3>
-                        <p class="desc">Complete your details to publish this business</p>
-                        <div class="progress-num">10% complete</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-track"></div>
-                        <div id="step1" class="progress-step is-complete">
-                            Price & experience
-                        </div>
-                        <div id="step2" class="progress-step is-complete">
-                            Add a project
-                        </div>
-                        <div id="step3" class="progress-step is-complete">
-                            About us
-                        </div>
-                        <div id="step4" class="progress-step is-complete">
-                            Services offered
-                        </div>
-                    </div>
-                </div>
                 <div class="cp-service-provider">
-                    <div class="lyt-grid typ-col-2 typ-col-wrap">
-                        <div class="grid-col grid-col-w-65-sp">
-                            <div class="project-detail-img">
-                                <picture>
-                                    <source media="(max-width:768px)"
-                                        srcset="../../components/cp-service-provider/images/img1.png">
-                                    <source media="(max-width:991px)"
-                                        srcset="../../components/cp-service-provider/images/img1t.png">
-                                    <img src="../../components/cp-service-provider/images/img1.png" alt="img">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="grid-col grid-col-w-35-sp">
-
-                            <div class="project-Info-wrap">
-                                <div class="cp-recommend typ-sp-detail">
-
-                                    <div class="content-wrap border-bottom">
-                                        <h2 class="title">IAK Architects PVT.LTD <span class="icon icon-edit"></span>
-                                        </h2>
-                                        <ul class="location-sec">
-                                            <li class="location-text">
-                                                <span class="icon icon-location"></span>
-                                                Vaishali Nagar
-                                            </li>
-                                            <li class="location-text">
-                                                <span class="icon icon-star active"></span>
-                                                15+ years of experience
-                                            </li>
-                                        </ul>
-                                        <ul class="rating-sec">
-                                            <li class="rating-cont">
-                                                <span class="rupee-icon">
-                                                    ₹₹
-                                                </span>
-                                            </li>
-                                            <li class="rating-cont">
-                                                <span class="rating-text">
-                                                    <span class="icon-star"></span>
-                                                    4.5</span>
-                                                50+ Ratings
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="link">+ Add your price category & experience</a>
+                    <div class="product-detail-info">
+                        <div class="lyt-grid typ-col-2 typ-col-wrap">
+                            <div class="grid-col grid-col-w-65-sp">
+                                <div class="project-detail-img">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../../components/cp-service-provider/images/img1.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../../components/cp-service-provider/images/img1.png">
+                                        <img src="../../components/cp-service-provider/images/img1.png" alt="img">
+                                    </picture>
                                 </div>
                             </div>
+                            <div class="grid-col grid-col-w-35-sp">
 
+                                <div class="project-Info-wrap">
+                                    <div class="cp-recommend typ-sp-detail">
+
+                                        <div class="content-wrap border-bottom">
+                                            <h2 class="title">IAK Architects PVT.LTD
+                                            </h2>
+                                            <ul class="location-sec">
+                                                <li class="location-text">
+                                                    <span class="icon icon-location"></span>
+                                                    Vaishali Nagar
+                                                </li>
+                                                <li class="location-text">
+                                                    <span class="icon icon-star active"></span>
+                                                    15+ years of experience
+                                                </li>
+                                            </ul>
+                                            <ul class="rating-sec">
+                                                <li class="rating-cont">
+                                                    <span class="rupee-icon">
+                                                        ₹₹
+                                                    </span>
+                                                </li>
+                                                <li class="rating-cont">
+                                                    <span class="rating-text">
+                                                        <span class="icon-star"></span>
+                                                        4.5</span>
+                                                    50+ Ratings
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="enquiry-icon-wrap">
+                                    <button class="list-item">
+                                        <span class="icon icon-unfill-like"></span>
+                                        Like
+                                    </button>
+                                    <button class="list-item">
+                                        <span class="icon icon-share"></span>
+                                        Share
+                                    </button>
+                                    <button class="list-item">
+                                        <span class="icon icon-web"></span>
+                                        Website
+                                    </button>
+                                    <button class="list-item">
+                                        <span class="icon icon-call"></span>
+                                        Call
+                                    </button>
+                                    <button class="btn js-drawer" data-id="send-enquiry">Send enquiry</button>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
-
                     <div class="lyt-grid typ-col-2 typ-col-wrap">
                         <div class="grid-col grid-col-w-65">
 
@@ -587,7 +589,7 @@
                             </div>
                             <div class="cont-wrap" id="project">
                                 <div class="cont-head">
-                                    <h3 class="cont-title">Projects <span class="count">0</span>  <span class="icon icon-edit"></span></h3>
+                                    <h3 class="cont-title">Projects <span class="count">0</span></h3>
                                 </div>
                                 <div class="cont-sec">
                                     <div class="bs-swiper swiper typ-architect js-architect p-0">
@@ -616,7 +618,7 @@
                                                                     <span class="price">90 lacs</span>
                                                                 </li>
                                                             </ul>
-                                                            <a class="detail-right">
+                                                            <a class="detail-right js-drawer" data-id="project-detail">
                                                                 <span class="icon icon-arrow"></span>
                                                             </a>
                                                         </div>
@@ -648,7 +650,7 @@
                                                                     <span class="price">90 lacs</span>
                                                                 </li>
                                                             </ul>
-                                                            <a class="detail-right">
+                                                            <a class="detail-right js-drawer" data-id="project-detail">
                                                                 <span class="icon icon-arrow"></span>
                                                             </a>
                                                         </div>
@@ -679,7 +681,7 @@
                                                                     <span class="price">90 lacs</span>
                                                                 </li>
                                                             </ul>
-                                                            <a class="detail-right">
+                                                            <a class="detail-right js-drawer" data-id="project-detail">
                                                                 <span class="icon icon-arrow"></span>
                                                             </a>
                                                         </div>
@@ -710,7 +712,7 @@
                                                                     <span class="price">90 lacs</span>
                                                                 </li>
                                                             </ul>
-                                                            <a class="detail-right">
+                                                            <a class="detail-right js-drawer" data-id="project-detail">
                                                                 <span class="icon icon-arrow"></span>
                                                             </a>
                                                         </div>
@@ -741,7 +743,7 @@
                                                                     <span class="price">90 lacs</span>
                                                                 </li>
                                                             </ul>
-                                                            <a class="detail-right">
+                                                            <a class="detail-right js-drawer" data-id="project-detail">
                                                                 <span class="icon icon-arrow"></span>
                                                             </a>
                                                         </div>
@@ -754,13 +756,22 @@
                                             <div class="swiper-button-prev"></div>
                                             <div class="swiper-button-next"></div>
                                         </div> -->
-                                    </div>>
+                                    </div>
                                 </div>
+                                <!-- <div class="cont-sec">
+                                    <div class="cp-notification typ-sp-detail">
+                                        <div class="icon"><img src="/images/review.svg" alt=""></div>
+                                        <div class="cont-wrap">
+                                            <h4 class="title">No projects to show yet</h4>
+                                            <p class="desc">Currently we do not have any projects to showcase here</p>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
 
-                            <div class="cont-wrap"  id="about">
+                            <div class="cont-wrap" id="about">
                                 <div class="cont-head">
-                                    <h3 class="cont-title">About us <span class="icon icon-edit"></span></h3>
+                                    <h3 class="cont-title">About us</h3>
                                 </div>
                                 <div class="cont-sec">
                                     <p class="desc"> Contemporary home designs are often a combination of more than just
@@ -773,7 +784,7 @@
                                                 <span class="icon icon-profile"></span>
                                                 <span class="text">
                                                     8-10 architects </span>
-                                                <span class="icon icon-edit"></span>
+
                                             </li>
                                             <li class="about-details-list">
                                                 <span class="icon icon-unfill-like"></span>
@@ -814,8 +825,10 @@
                                                 <span class="text">
                                                     <span class="text-bold"> Social media pages</span>
                                                     <ul class="social-media-wrap">
-                                                        <li class="social-media-list"><img src="/images/instagram.svg" alt="instagram"></li>
-                                                        <li class="social-media-list"><img src="/images/facebook.svg" alt="facebook"></li>
+                                                        <li class="social-media-list"><img src="/images/instagram.svg"
+                                                                alt="instagram"></li>
+                                                        <li class="social-media-list"><img src="/images/facebook.svg"
+                                                                alt="facebook"></li>
                                                     </ul>
                                                 </span>
                                             </li>
@@ -824,73 +837,148 @@
                                 </div>
                             </div>
 
-                            <div class="cont-wrap typ-bg-pink">
+                            <div class="cont-wrap">
                                 <div class="cont-head">
-                                    <h3 class="cont-title">Services </h3>
-                                    <p class="desc"> Add your services offered as an architect</p>
+                                    <h3 class="cont-title">Services
+                                    </h3>
+                                    <!-- <p class="desc"> Add your services offered as an architect</p> -->
 
                                 </div>
                                 <div class="cont-sec">
-                                    <div class="radio-wrap typ-services">
-                                        <div class="bs-radio">
-                                            <input id="services1" name="services" type="radio">
-                                            <label for="services1" class="custom-radio">
-                                                <span>Interior design</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="bs-radio">
-                                            <input id="services2" name="services" type="radio">
-                                            <label for="services2" class="custom-radio">
-                                                <span>External elevation</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="bs-radio">
-                                            <input id="services3" name="services" type="radio">
-                                            <label for="services3" class="custom-radio">
-                                                <span>Floor plan / layout</span>
-                                            </label>
-                                        </div>
-                                        <div class="bs-radio">
-                                            <input id="services4" name="services" type="radio">
-                                            <label for="services4" class="custom-radio">
-                                                <span>Structural design</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="bs-radio">
-                                            <input id="services5" name="services" type="radio">
-                                            <label for="services5" class="custom-radio">
-                                                <span>End-to-end project execution</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="bs-radio">
-                                            <input id="services6" name="services" type="radio">
-                                            <label for="services6" class="custom-radio">
-                                                <span>Execution supervision</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="bs-radio">
-                                            <input id="services7" name="services" type="radio">
-                                            <label for="services7" class="custom-radio">
-                                                <span>Others</span>
-                                            </label>
-                                        </div>
+                                    <div class="services-tags">
+                                        <span class="tag">
+                                            Interior design
+                                        </span> <span class="tag">
+                                            Interior design
+                                        </span> <span class="tag">
+                                            Interior design
+                                        </span> <span class="tag">
+                                            Interior design
+                                        </span>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="cont-wrap" id="reviews">
+                            <div class="cont-wrap typ-review" id="reviews">
                                 <div class="cont-head border-bottom">
-                                    <h3 class="cont-title">Reviews (0)</h3>
+                                    <h3 class="cont-title">Reviews (200)</h3>
+                                    <p class="review-desc cm-desktop">Have you used their services? Rate this provider.
+                                    </p>
+                                    <div class="star-rating cm-desktop">
+                                        <span class="icon icon-star"></span>
+                                        <span class="icon icon-star"></span>
+                                        <span class="icon icon-star"></span>
+                                        <span class="icon icon-star"></span>
+                                        <span class="icon icon-star"></span>
+                                    </div>
                                 </div>
-                                <div class="cont-sec text-center">
-                                    <h3 class="sub-title"> No review yet</h3>
-                                    <p class="desc clr-dark">Reviews your customers leave will appear here</p>
+                                <div class="cont-sec">
+                                    <h3 class="text-bold cm-desktop">Customer reviews (20)</h3>
+                                    <ul>
+                                        <li>
+                                            <div class="cp-customer-review typ-sp-review">
+                                                <div class="review-star">
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                </div>
+                                                <span class="post-date">Posted on 28-09-2024</span>
+                                                <h3 class="title">Strong and useful</h3>
+                                                <p class="desc">
+                                                    "Tata Steel Aashiyana” made my home’s renovation extremely
+                                                    easy for me. Daily rate updates of the products made it
+                                                    possible that I could buy building material for my home at
+                                                    the best rates.
+                                                </p>
+                                                <ul class="customer-detail">
+                                                    <li>
+                                                        <h3 class="customer-name">Hemant Biswas</h3>
+
+                                                    </li>
+                                                    <li>
+                                                        <span class="helpful">
+                                                            Helpful?<span class="count-text">yes<span
+                                                                    class="count-number">(2)</span></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cp-customer-review typ-sp-review">
+                                                <div class="review-star">
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star"></span>
+                                                </div>
+                                                <span class="post-date">Posted on 28-09-2024</span>
+                                                <h3 class="title">Strong and useful</h3>
+                                                <p class="desc">
+                                                    "Tata Steel Aashiyana” made my home’s renovation extremely
+                                                    easy for me. Daily rate updates of the products made it
+                                                    possible that I could buy building material for my home at
+                                                    the best rates.
+                                                </p>
+                                                <ul class="customer-detail">
+                                                    <li>
+                                                        <h3 class="customer-name">Hemant Biswas</h3>
+
+                                                    </li>
+                                                    <li>
+                                                        <span class="helpful">
+                                                            Helpful?<span class="count-text">yes<span
+                                                                    class="count-number">(2)</span></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cp-customer-review typ-sp-review">
+                                                <div class="review-star">
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                    <span class="icon icon-star typ-active"></span>
+                                                </div>
+                                                <span class="post-date">Posted on 28-09-2024</span>
+                                                <h3 class="title">Strong and useful</h3>
+                                                <p class="desc">
+                                                    "Tata Steel Aashiyana” made my home’s renovation extremely
+                                                    easy for me. Daily rate updates of the products made it
+                                                    possible that I could buy building material for my home at
+                                                    the best rates.
+                                                </p>
+                                                <ul class="customer-detail">
+                                                    <li>
+                                                        <h3 class="customer-name">Hemant Biswas</h3>
+
+                                                    </li>
+                                                    <li>
+                                                        <span class="helpful">
+                                                            Helpful?<span class="count-text">yes<span
+                                                                    class="count-number">(2)</span></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#" class="link">View all</a>
+                                    <div class="cp-form typ-comment ">
+                                        <div class="form-group js-drawer" data-id="write-review">
+                                            <textarea class="form-control" type="text" id="email"
+                                                placeholder="Write a review" rows="1"></textarea>
+                                            <span class="icon icon-send"></span>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -912,7 +1000,303 @@
     </footer>
     <!-- Footer end -->
 
+    <!-- project-detail -->
+    <div class="cp-drawer typ-sp-detail" id="project-detail">
+        <div class="head-sec">
+            <div class="text">
+                <h2 class="drawer-title">Riaz Villa</h2>
+                <p class="location"><span class="icon icon-location"></span> Andheri West </p>
+            </div>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cp-service-provider">
+            <div class="cont-wrap">
+                <div class="cp-design-card typ-architectual-plan typ-drawer-sp-detail">
+                    <div class="content-wrap">
+                        <ul class="detail-list">
+                            <li class="detail-item">
+                                <h4 class="detail-title">Completion year</h4>
+                                <p class="detail-desc">2023</p>
+                            </li>
+                            <li class="detail-item">
+                                <h4 class="detail-title">Project cost</h4>
+                                <p class="detail-desc">₹7,00,000</p>
+                            </li>
+                            <li class="detail-item">
+                                <h4 class="detail-title">Area</h4>
+                                <p class="detail-desc">1500 sq ft</p>
+                            </li>
+                            <li class="detail-item">
+                                <h4 class="detail-title">Size</h4>
+                                <p class="detail-desc">4 Bhk | G+1</p>
+                            </li>
+                        </ul>
 
+                    </div>
+                </div>
+                <h3 class="drawer-sub-title">Project highlights</h3>
+                <div class="cp-feature typ-sp-detail">
+                    <ul class="feature-list">
+                        <li class="feature-item">Big and spacious klitchen</li>
+                        <li class="feature-item">Separate pooja room</li>
+                        <li class="feature-item">Focus on garden and open spaces</li>
+                    </ul>
+                </div>
+
+                <h3 class="drawer-sub-title">Project photos (12)</h3>
+                <ul class="photo-gallery-wrap">
+                    <li class="photo-gallery-list">
+                        <picture>
+                            <source media="(max-width:768px)"
+                                srcset="../../components/cp-service-provider/images/img1.png">
+                            <source media="(max-width:991px)"
+                                srcset="../../components/cp-service-provider/images/img1.png">
+                            <img src="../../components/cp-service-provider/images/img1.png" alt="img">
+                        </picture>
+                    </li>
+
+                    <li class="photo-gallery-list">
+                        <picture>
+                            <source media="(max-width:768px)"
+                                srcset="../../components/cp-service-provider/images/img1.png">
+                            <source media="(max-width:991px)"
+                                srcset="../../components/cp-service-provider/images/img1.png">
+                            <img src="../../components/cp-service-provider/images/img1.png" alt="img">
+                        </picture>
+                    </li>
+
+                    <li class="photo-gallery-list">
+                        <picture>
+                            <source media="(max-width:768px)"
+                                srcset="../../components/cp-service-provider/images/img1.png">
+                            <source media="(max-width:991px)"
+                                srcset="../../components/cp-service-provider/images/img1.png">
+                            <img src="../../components/cp-service-provider/images/img1.png" alt="img">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- send enquiry -->
+    <div class="cp-drawer typ-sp-detail" id="send-enquiry">
+        <div class="head-sec">
+            <div class="text">
+                <h2 class="drawer-title">Send enquiry</h2>
+            </div>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cp-service-provider">
+            <div class="cont-wrap">
+                <div class="cp-recommend typ-sp-drawer mb-32">
+                    <a href="#" class="img-wrap">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="../components/cp-recommend/images/1.png">
+                            <source media="(max-width:991px)" srcset="../components/cp-recommend/images/1.png">
+                            <img src="../components/cp-recommend/images/1.png" alt="blog img">
+                        </picture>
+                    </a>
+                    <div class="content-wrap">
+
+                        <h2 class="title">IAK Architects PVT.LTD</span>
+                        </h2>
+                        <ul class="location-sec">
+                            <li class="location-text">
+                                <span class="icon icon-location"></span>
+                                Vaishali Nagar
+                            </li>
+                            <li class="location-text">
+                                <span class="icon icon-star active"></span>
+                                15+ years of experience
+                            </li>
+                        </ul>
+                        <ul class="rating-sec">
+                            <li class="rating-cont">
+                                <span class="rupee-icon">
+                                    ₹₹
+                                </span>
+                            </li>
+                            <li class="rating-cont">
+                                <span class="rating-text">
+                                    <span class="icon-star"></span>
+                                    4.5</span>
+                                50+ Ratings
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="cp-form typ-help-policies mt-0">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control validate-name" value="Avinash Malhotra"
+                            placeholder="Enter your name" required="">
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mobile number</label>
+                        <input type="text" id="phone-number" class="form-control validate-mobile" value=""
+                            placeholder="Enter mobile number" required="">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Location of service required</label>
+                        <div class="form-input-wrap">
+                            <input type="text" id="pincode" class="form-control validate-field" value="400004"
+                                placeholder="" required=""> <span class="icon icon-edit-1"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+                    <h3 class="drawer-sub-title"> Please select a reason</h3>
+                    <div class="form-group">
+                        <div class="radio-wrap typ-sp-drawer">
+                            <div class="bs-radio">
+                                <input id="reason1" name="reason" type="radio">
+                                <label for="reason1" class="custom-radio">
+                                    <span>Request a call back</span>
+                                </label>
+                            </div>
+
+                            <div class="bs-radio">
+                                <input id="reason2" name="reason" type="radio">
+                                <label for="reason2" class="custom-radio">
+                                    <span>Request for quote</span>
+                                </label>
+                            </div>
+
+                            <div class="bs-radio col-3">
+                                <input id="reason3" name="reason" type="radio">
+                                <label for="reason3" class="custom-radio">
+                                    <span>Other questions</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Write message</label>
+                        </textarea>
+                        <textarea id="query" rows="4" class="form-control" placeholder="Add your message"
+                            cols="50"></textarea>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="desc">Please tick the box to continue</p>
+                        <div class="captcha"><img src="/images/captcha.png" alt=""></div>
+                    </div>
+
+
+                    <div class="act-wrap">
+                        <button class="btn btn-default typ-request-submit" type="button">Submit enquiry</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Write a review -->
+    <div class="cp-drawer typ-sp-detail" id="write-review">
+        <div class="head-sec">
+            <div class="text">
+                <h2 class="drawer-title">Write a review</h2>
+            </div>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cp-service-provider">
+            <div class="cont-wrap">
+                <div class="cp-recommend typ-sp-drawer mb-32">
+                    <a href="#" class="img-wrap">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="../components/cp-recommend/images/1.png">
+                            <source media="(max-width:991px)" srcset="../components/cp-recommend/images/1.png">
+                            <img src="../components/cp-recommend/images/1.png" alt="blog img">
+                        </picture>
+                    </a>
+                    <div class="content-wrap">
+
+                        <h2 class="title">IAK Architects PVT.LTD</span>
+                        </h2>
+                        <ul class="location-sec">
+                            <li class="location-text">
+                                <span class="icon icon-location"></span>
+                                Vaishali Nagar
+                            </li>
+                            <li class="location-text">
+                                <span class="icon icon-star active"></span>
+                                15+ years of experience
+                            </li>
+                        </ul>
+                        <ul class="rating-sec">
+                            <li class="rating-cont">
+                                <span class="rupee-icon">
+                                    ₹₹
+                                </span>
+                            </li>
+                            <li class="rating-cont">
+                                <span class="rating-text">
+                                    <span class="icon-star"></span>
+                                    4.5</span>
+                                50+ Ratings
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="cp-form typ-help-policies typ-review-sp mt-0">
+                    <div class="form-group border-bottom">
+                        <p class="feedback-title">Star ratings</p>
+                        <div class="star-rating">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star icon-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star icon-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star icon-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio" checked>
+                                    <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star icon-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star icon-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group error">
+                        <label class="form-label">Review title</label>
+                        <input type="text" id="review-title" class="form-control validate-name"
+                            value="The best in class" placeholder="" required="">
+                        <span class="error-msg"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="form-label">Write your review</label>
+                        </textarea>
+                        <textarea id="query" rows="4" class="form-control" placeholder="Add your message"
+                            cols="50">Agrico products are best when it comes to building your home or DYI projects.</textarea>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="desc">Please tick the box to continue</p>
+                        <div class="captcha"><img src="/images/captcha.png" alt=""></div>
+                    </div>
+
+
+                    <div class="act-wrap">
+                        <button class="btn btn-default typ-request-submit" type="button">Submit enquiry</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cm-overlay"></div>
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
@@ -921,6 +1305,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
     <script src="/components/cp-architect/cp-architect.js"></script>
     <!-- endbuild -->
 </body>

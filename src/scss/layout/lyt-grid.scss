@@ -55,7 +55,7 @@
     flex-wrap: wrap;
 
     .grid-col {
-      width: 22.5%;
+      width: 23.5%;
 
       @media only screen and (max-width: $media-mobile) {
         width: 100%;
@@ -399,6 +399,34 @@
     }
   }
 
+  &.typ-col-6 {
+    gap: 0;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: initial;
+    margin-right: -10px;
+    margin-left: -10px;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: 0px;
+      margin-left: 0px;
+      gap: 1.2rem;
+    }
+
+    .grid-col {
+      width: auto;
+      flex: 0 0 16.66%;
+      max-width: 16.66%;
+      padding: 0 1rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        flex: 0 0 48%;
+        max-width: 48%;
+        padding: 0 0px;
+      }
+    }
+  }
 
   .grid-col-w-65 {
     width: 65% !important;
@@ -431,14 +459,23 @@
       width: 100% !important;
     }
   }
-  .grid-col-w-65-sp{
+
+  .grid-col-w-65-sp {
     width: 65% !important;
-    @media only screen and (max-width: $media-mobile) {width: 30% !important}
+
+    @media only screen and (max-width: $media-mobile) {
+      width: 30% !important
+    }
   }
-  .grid-col-w-35-sp{
+
+  .grid-col-w-35-sp {
     width: 35% !important;
-    @media only screen and (max-width: $media-mobile) {width: 70%!important}
+
+    @media only screen and (max-width: $media-mobile) {
+      width: 70% !important
+    }
   }
+
   .grid-col-w-100 {
     width: 100% !important;
   }

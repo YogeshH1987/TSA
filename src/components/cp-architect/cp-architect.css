@@ -91,10 +91,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-height: 26rem; }
+    max-height: 24rem; }
     @media only screen and (max-width: 768px) {
       .cp-architect-card .img-wrap .img {
-        max-height: 29.6rem; } }
+        max-height: 28rem; } }
   .cp-architect-card .img-wrap::after {
     content: "";
     position: absolute;
@@ -137,6 +137,8 @@
           font-family: "Poppins Medium";
           line-height: 1.6rem;
           margin-right: 1.2rem; }
+          .cp-architect-card .bottom-sec .location-list .location-item .details.no-seperator::after {
+            content: none; }
           .cp-architect-card .bottom-sec .location-list .location-item .details::after {
             content: "";
             position: absolute;
@@ -165,7 +167,8 @@
     border: 1px solid #FFFFFF; }
     .cp-architect-card .detail-right .icon {
       color: #FFFFFF;
-      font-size: 2.4rem; }
+      font-size: 2.4rem;
+      cursor: pointer; }
   .cp-architect-card.typ-about-nestudio .bottom-sec .location-list .location-item .details {
     margin: 0;
     font-family: "Poppins Regular";
@@ -271,5 +274,39 @@
     color: #FFFFFF;
     font-family: "Poppins Medium";
     line-height: 1.6rem; }
+  .cp-architect-card.typ-sp-card {
+    border: #DEDEDE 1px solid;
+    width: 100%; }
+    .cp-architect-card.typ-sp-card .img-wrap {
+      max-height: 12rem; }
+      .cp-architect-card.typ-sp-card .img-wrap::after {
+        content: none; }
+      .cp-architect-card.typ-sp-card .img-wrap img {
+        max-height: 12rem; }
+    .cp-architect-card.typ-sp-card .detail-wrap {
+      background-color: #fff;
+      padding: 1.2rem;
+      position: static; }
+      .cp-architect-card.typ-sp-card .detail-wrap .location-item .details {
+        color: #333333;
+        font-size: 2rem; }
+        @media only screen and (max-width: 991px) {
+          .cp-architect-card.typ-sp-card .detail-wrap .location-item .details {
+            font-size: 1.6rem; } }
+      .cp-architect-card.typ-sp-card .detail-wrap .detail-right {
+        border: 1px solid #333333;
+        border-radius: 0.6rem;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem;
+        padding: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .cp-architect-card.typ-sp-card .detail-wrap .detail-right .icon {
+          color: #333333;
+          font-size: 1.6rem; }
+
+.w-100 {
+  width: 100%; }
 
 /*# sourceMappingURL=cp-architect.css.map */

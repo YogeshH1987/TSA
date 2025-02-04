@@ -48,6 +48,19 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       border-radius: 1.2rem;
+
+      &::placeholder {
+        color: #B3B3B3;
+        opacity: 1;
+        /* Firefox */
+        font-family: $font-regular;
+      }
+
+      &::-ms-input-placeholder {
+        /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: $font-regular;
+      }
     }
 
     .form-textarea {
@@ -265,6 +278,7 @@
 
     .form-group {
       position: relative;
+      margin-bottom: 0;
 
       textarea {
         resize: none;
@@ -283,6 +297,21 @@
     }
   }
 
+  .form-input-wrap {
+    position: relative;
+
+    .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      font-size: 2.4rem;
+      color: #999999;
+      cursor: pointer;
+    }
+  }
+
   &.typ-help-policies {
     .desc {
       font-size: 1.4rem;
@@ -295,6 +324,19 @@
       .form-control {
         color: $clr-base;
         font-family: $font-medium;
+
+        &::placeholder {
+          color: #B3B3B3;
+          opacity: 1;
+          /* Firefox */
+          font-family: $font-regular;
+        }
+
+        &::-ms-input-placeholder {
+          /* Edge 12-18 */
+          color: #B3B3B3;
+          font-family: $font-regular;
+        }
 
       }
 
@@ -372,6 +414,7 @@
 
   &.typ-cart-shipping {
     margin-top: 0;
+
     .desc {
       font-size: 1.2rem;
       color: #666666;
@@ -423,7 +466,11 @@
 
     .form-input-wrap {
       position: relative;
-      .icon-padding{padding-left: 32px;}
+
+      .icon-padding {
+        padding-left: 32px;
+      }
+
       .icon-check {
         width: 1.6rem;
         height: 1.6rem;
@@ -437,5 +484,27 @@
       }
     }
 
+  }
+
+  &.typ-review-sp {
+    .feedback-title {
+      font-family: $font-medium;
+      color: $clr-base;
+      font-size: 1.6rem;
+    }
+
+    .star-rating {
+      display: flex;
+      margin-top: 1.2rem;
+
+      .icon {
+        font-size: 3.2rem;
+        color: #CCCCCC;
+
+        &.star-selected {
+          color: #FFB800;
+        }
+      }
+    }
   }
 }

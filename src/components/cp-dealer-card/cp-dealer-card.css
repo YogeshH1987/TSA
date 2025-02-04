@@ -18,7 +18,7 @@
     border: 2px solid #DEDEDE; }
   .cp-dealer-card .top-band {
     display: flex;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     flex-wrap: wrap; }
     .cp-dealer-card .top-band .band-tag {
       background: #D8E5F8;
@@ -44,7 +44,8 @@
       font-family: "Poppins Regular";
       color: #808080;
       position: relative;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      margin-bottom: 6px; }
       .cp-dealer-card .dealer-info .location-sec .location-text:nth-child(1)::after {
         background-color: #808080;
         width: 1px;
@@ -59,7 +60,7 @@
       font-size: 1.2rem;
       font-family: "Poppins Regular";
       color: #808080;
-      margin-top: 1.2rem; }
+      margin-top: 0.6rem; }
       .cp-dealer-card .dealer-info .rating-sec .rating-cont:nth-child(1) {
         background: #D2042D;
         font-size: 1.2rem;
@@ -71,7 +72,7 @@
       .cp-dealer-card .dealer-info .rating-sec .rating-cont.typ-green {
         background: #00A441; }
   .cp-dealer-card.typ-2 .location-sec {
-    margin: 0.8rem 0 1.2rem; }
+    margin: 0.8rem 0 0.6rem; }
   .cp-dealer-card.typ-2 .top-band {
     align-items: center; }
     .cp-dealer-card.typ-2 .top-band .brand-title {
@@ -88,7 +89,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.8rem; }
+    gap: 0.8rem;
+    margin-top: 1.2rem; }
     .cp-dealer-card.typ-2 .action-wrap .link {
       color: #3D7EDB;
       font-size: 1.4rem;
@@ -175,6 +177,29 @@
       text-decoration: none !important; }
     .cp-dealer-card.blue-card .news-icon {
       color: rgba(236, 242, 251, 0.2) !important; }
+  .cp-dealer-card.typ-sp-dealer .dealer-info .btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.2rem; }
+    .cp-dealer-card.typ-sp-dealer .dealer-info .btn-wrap .btn {
+      padding: 4px 1.6rem;
+      font-size: 1.2rem;
+      min-width: auto; }
+  .cp-dealer-card.typ-sp-dealer .dealer-info .tag-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.8rem; }
+    .cp-dealer-card.typ-sp-dealer .dealer-info .tag-list .tag-link {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      -moz-border-radius: 0.8rem;
+      background: #F3F4F6;
+      font-size: 2rem; }
 
 .typ-store {
   min-width: 15rem;

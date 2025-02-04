@@ -55,7 +55,7 @@
             .feature-item {
                 width: 50%;
 
-               
+
 
                 &:nth-child(3) {
                     padding-bottom: 0rem;
@@ -64,18 +64,33 @@
                 &:nth-child(4) {
                     padding-bottom: 0rem;
                 }
+
                 @media only screen and (max-width: $media-mobile) {
                     width: 100%;
                     padding-bottom: 1.2rem;
+
                     &:nth-child(3) {
                         padding-bottom: 1.6rem;
                     }
 
-             
+
                 }
             }
         }
     }
-    &.typ-architectual-pdp{
-    .desc{ font-size: 1.4rem; line-height: 2rem; margin-bottom: 8px;}}
+
+    &.typ-architectual-pdp {
+        .desc {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom: 8px;
+        }
+    }
+
+    &.typ-sp-detail {
+        margin-bottom: 2.4rem;
+        .feature-item {
+            padding-bottom: 1.2rem;
+        }
+    }
 }

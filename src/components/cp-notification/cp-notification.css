@@ -17,12 +17,10 @@
     .cp-notification {
       margin-bottom: 2.4rem; } }
   .cp-notification .icon {
-    width: 74px;
-    flex: 0 0 74px; }
+    width: 74px; }
     @media only screen and (max-width: 991px) {
       .cp-notification .icon {
-        width: 54px;
-        flex: 0 0 54px; } }
+        width: 54px; } }
   .cp-notification .cont-wrap .title {
     font-size: 2rem;
     font-family: "Poppins Semibold";
@@ -45,6 +43,14 @@
       @media only screen and (max-width: 991px) {
         .cp-notification .right-sec .close {
           font-size: 1.6rem; } }
+  .cp-notification.typ-sp-detail {
+    text-align: center;
+    flex-direction: column; }
+    .cp-notification.typ-sp-detail .icon {
+      width: 20rem;
+      margin: auto; }
+    .cp-notification.typ-sp-detail .cont-wrap .title {
+      font-size: 2.8rem; }
 
 .disable-content {
   position: absolute;
