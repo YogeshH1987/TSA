@@ -1,0 +1,77 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-recent-view-prod{
+    border: 1px solid $clr-border;
+    padding: 16px;
+    border-radius: 12px;
+    .cp-title{
+        padding: 0 0 15px 0;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid $clr-border;
+        margin-bottom: 12px;
+        align-items: center;
+        position: relative;
+        .title{
+            display: flex;
+            color: $clr-base;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: $font-semiBold;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0px 0 10px 0px;
+            }
+        }
+        .icon-wrap{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #FFF8E5;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            @media only screen and (max-width: $media-sm) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .icon{
+            color: #FFB800;
+            font-size: 20px;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .content-wrap{
+        display: flex;
+        justify-content: start;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        .img-wrap{
+            flex-shrink: 0;
+            overflow: hidden;
+            width: 110px;
+            height: 110px;
+            display: flex;
+            align-items: center;
+            border-radius: 12px;
+            border: 1px solid $clr-border;
+            background: $clr-root;
+            margin-right: 12px;
+            img{
+                width: 100%;
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}

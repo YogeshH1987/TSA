@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="shortcut icon" href="/images/favicon.png" />
+
+		<title>Dashboard</title>
+		<meta name="description" content="description goes here" />
+		<link rel="stylesheet" href="/css/fonts.css" />
+		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="/css/vendor.css" />
+		<link rel="stylesheet" href="/css/dashboard.css" />
+		<link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+		<link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+		<link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+		<link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
+
+		<link rel="stylesheet" href="/components/cp-sidebar-menu/cp-sidebar-menu.css" />
+		<link rel="stylesheet" href="/components/cp-offer-banner/cp-offer-banner.css" />
+
+		<link rel="stylesheet" href="/components/cp-user-profile-builder/cp-user-profile-builder.css" />
+		<link rel="stylesheet" href="/components/cp-ongoing-orders/cp-ongoing-orders.css" />
+		<link rel="stylesheet" href="/components/cp-family-home-card/cp-family-home-card.css" />
+		<link rel="stylesheet" href="/components/cp-project-planner/cp-project-planner.css" />
+		<link rel="stylesheet" href="/components/cp-product-card/cp-product-card.css" />
+		<link rel="stylesheet" href="/components/cp-budget-tracker/roundslider.min.css" />
+		<!-- this should be called in vendor-->
+		<link rel="stylesheet" href="/components/cp-budget-tracker/cp-budget-tracker.css" />
+		<link rel="stylesheet" href="/components/cp-your-dealers/cp-your-dealers.css" />
+		<link rel="stylesheet" href="/components/cp-recently-saved/cp-recently-saved.css" />
+		<link rel="stylesheet" href="/components/cp-recent-view-prod/cp-recent-view-prod.css" />
+
+		<link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
+		<link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
+		<link rel="stylesheet" href="/components/cp-toast/cp-toast.css" />
+		<link rel="stylesheet" href="/components/cp-recommendations/cp-recommendations.css" />
+
+		<!-- <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-blog/cp-blog.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-video/cp-video.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-toast/cp-toast.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-img-detail/cp-img-detail.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-customer-testimonial/cp-customer-testimonial.css" /> -->
+		<link rel="stylesheet" href="/components/cp-home-banner/cp-home-banner.css" />
+		<!-- <link rel="stylesheet" href="/components/cp-architect/cp-architect.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-icon-details/cp-icon-details.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-design-style/cp-design-style.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-design-card/cp-design-card.css" /> -->
+		<!-- <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" /> -->
+		<link rel="stylesheet" href="/components/cp-bottom-sticky/cp-bottom-sticky.css" />
+		<link rel="stylesheet" href="../components/cp-sub-menu/cp-sub-menu.css" />
+		<link rel="stylesheet" href="../components/cp-offers/cp-offers.css" />
+
+	</head>
+
+	<body>
+		<!-- Header Start -->
+		<header>
+			<div class="cp-header">
+				<div class="container">
+					<div class="top-sec">
+						<div class="hamburger-menu">
+							<div class="open-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="lhs">
+							<div class="logo-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+									<source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+									<img src="/images/TSA-logo.png" alt="logo tsa" />
+								</picture>
+							</div>
+							<div class="location-wrap">
+								<span class="icon-location map-icon"></span>
+								<input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+								<a href="#" class="update-location">Update location</a>
+								<span class="icon-edit icon"></span>
+							</div>
+							<div class="cp-search">
+								<div class="search-wrap">
+									<input type="text" class="search-input" placeholder="Search">
+									<span class="search-icon icon-search"></span>
+								</div>
+							</div>
+						</div>
+						<div class="rhs">
+
+							<div class="quick-link-wrap">
+								<ul class="quick-link-list">
+									<li class="quick-link-icon-item">
+										<a href="#" class="icon-search quick-link-item"></a>
+									</li>
+									<li class="quick-link-icon-item">
+										<a href="#" class="icon-cart quick-link-item"></a>
+									</li>
+									<li class="quick-link-icon-item">
+										<a href="#" class="icon-profile quick-link-item"></a>
+									</li>
+									<li class="quick-link-icon-item">
+										<a href="#" class="icon-language quick-link-item"></a>
+									</li>
+
+								</ul>
+							</div>
+							<button class="btn btn-order">Place order on call</button>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-sec">
+					<div class="container">
+						<span class="close icon-close js-close-nav"></span>
+
+						<div class="cp-search">
+							<div class="search-wrap">
+								<input type="text" class="search-input" placeholder="Search">
+								<span class="search-icon icon-search"></span>
+							</div>
+						</div>
+						<nav>
+							<ul class="nav-list">
+								<li class="nav-item">
+									<span class="nav-icon icon-cart typ1"></span>
+									<a href="javascript:void(0)" class="nav-link">Shop products</a>
+									<span class="arrow"></span>
+									<div class="sub-nav-menu">
+										<div class="cp-sub-menu">
+											<div class="top-sec">
+												<div class="lhs">
+
+													<h2 class="title js-shop-cat">
+														<span class="header-icon icon-cart"></span>
+														Shop by category
+													</h2>
+
+													<ul class="cat-grid open-inner-menu">
+														<h2 class="title cm-mobile inner-heading">
+															<span class="inside-icon icon-arrow"></span>
+															Shop by category
+														</h2>
+														<li class="col js-category-menu">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/image 4868.png"
+																	alt="menu-img" />
+																<h3 class="col-title">Home construction</h3>
+															</div>
+															<ul class="cont-wrap open-category-menu">
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Rebars</a>
+																	<span class="new-lable">New</span>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Superlinks</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Roof designs</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Binding wire
+																		fencing</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Green blocks</a>
+																</li>
+															</ul>
+														</li>
+														<li class="col">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/fabrication.png"
+																	alt="menu-img" />
+																<h3 class="col-title">Fabrication</h3>
+															</div>
+															<ul class="cont-wrap">
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Rectangular
+																		tubes</a>
+
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Square tubes</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Circlular
+																		tubes</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">GI Roofing
+																		sheets</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Colored roofing
+																		sheets</a>
+																</li>
+																<li class="inner-menu-item">
+																	<h3 class="title typ2">Fabricated homes </h3>
+																</li>
+															</ul>
+														</li>
+														<li class="col">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/interior.png"
+																	alt="menu-img" />
+																<h3 class="col-title">Interiors</h3>
+															</div>
+															<ul class="cont-wrap">
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Doors</a>
+
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Windows</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Door frames</a>
+																</li>
+															</ul>
+														</li>
+														<li class="col">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/tool&diya.png"
+																	alt="menu-img" />
+																<h3 class="col-title">Tools & DIY</h3>
+															</div>
+															<ul class="cont-wrap">
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Trade hand
+																		tools</a>
+
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">DIY tool
+																		kits</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Files</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Industrial &
+																		hardware</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Garden tools</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Agri tool</a>
+																</li>
+																<li class="inner-menu-item">
+																	<a href="#" class="inner-menu-link">Soil
+																		conditioner</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="rhs ">
+
+													<h2 class="title js-brand-menu">
+														<span class="header-icon icon-cart "></span>
+														Shop by brand
+													</h2>
+													<ul class="menu-list open-inner-menu">
+														<h2 class="title cm-mobile inner-heading">
+															<span class="inside-icon icon-arrow"></span>
+															Shop by brand
+														</h2>
+														<li class="menu-item">
+
+															<a class="menu-link" href="#">
+																<span class="brand-logo">
+																	<img src="/images/TataTisconLogo 1.png" alt="brand">
+																</span>
+																Tiscon
+															</a>
+														</li>
+														<li class="menu-item">
+															<a class="menu-link" href="#">
+																<span class="brand-logo">
+																	<img src="/images/Frame 1597882718.png" alt="brand">
+																</span>
+																Wiron</a>
+														</li>
+
+														<li class="menu-item">
+															<a href="#" class="menu-link">
+																<span class="brand-logo">
+																	<img src="/images/TataTisconLogo 2.png" alt="brand">
+																</span>
+																Structura
+															</a>
+														</li>
+														<li class="menu-item">
+															<a class="menu-link" href="#">
+																<span class="brand-logo">
+																	<img src="/images/TataTisconLogo 2 (1).png"
+																		alt="brand">
+																</span>
+																Agrico
+															</a>
+														</li>
+														<li class="menu-item">
+															<a href="#" class="menu-link">
+																<span class="brand-logo">
+																	<img src="/images/Frame 1597882714.png" alt="brand">
+																</span>
+																Durashine
+															</a>
+														</li>
+														<li class="menu-item">
+															<a href="#" class="menu-link">
+																<span class="brand-logo">
+																	<img src="/images/Frame 1597882713.png" alt="brand">
+																</span>
+																Pravesh
+															</a>
+														</li>
+														<li class="menu-item">
+															<a href="#" class="menu-link">
+																<span class="brand-logo">
+																	<img src="/images/Frame 1597882715.png" alt="brand">
+																</span>
+																DhurviGold
+
+															</a>
+														</li>
+														<li class="menu-item">
+															<a href="#" class="menu-link">
+																<span class="brand-logo">
+																	<img src="/images/TataTisconLogo 2 (2).png"
+																		alt="brand">
+																</span>
+																Tiscobuild
+															</a>
+														</li>
+														<li class="menu-item">
+															<a href="#" class="menu-link">
+																<span class="brand-logo">
+																	<img src="/images/Frame 1597882713 (1).png"
+																		alt="brand">
+																</span>
+																Nestin
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="btn btn-link text-right cm-desktop">View all
+														offers</a>
+												</div>
+											</div>
+											<div class="bottom-menu-sec">
+
+												<h2 class="title js-offers-menu">
+													<span class="header-icon icon-cart"></span>
+													Available offers
+												</h2>
+
+												<ul class="offers-list typ-sub-menu open-inner-menu">
+													<h2 class="title cm-mobile inner-heading">
+														<span class="inside-icon icon-arrow"></span>
+														Available offers
+													</h2>
+													<li class="offers-item">
+														<div class="cp-offers">
+															<div class="lft typ-blue">
+																<span>Discount</span>
+															</div>
+															<div class="rht typ-blue-border">
+																<h3 class="title">Navratri special</h3>
+																<p class="desc">Get 5% off on all products sitewide, on
+																	the purchase of min Rs. 10,000</p>
+																<span class="offer-valid">Valid till 31 Oct 2024</span>
+															</div>
+														</div>
+													</li>
+
+													<li class="offers-item">
+														<div class="cp-offers">
+															<div class="lft typ-green">
+																<span>CASHBACK</span>
+															</div>
+															<div class="rht typ-green-border">
+																<h3 class="title">Instant cashback</h3>
+																<p class="desc">Get 5% off on all products sitewide, on
+																	the purchase of min Rs. 10,000</p>
+																<span class="offer-valid">Valid till 31 Oct 2024</span>
+															</div>
+														</div>
+													</li>
+
+													<li class="offers-item">
+														<div class="cp-offers">
+															<div class="lft typ-yellow">
+																<span>Discount</span>
+															</div>
+															<div class="rht typ-yellow-border">
+																<h3 class="title">Navratri special</h3>
+																<p class="desc">Get 5% off on all products sitewide, on
+																	the purchase of min Rs. 10,000</p>
+																<span class="offer-valid">Valid till 31 Oct 2024</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<span class="nav-icon icon-brochure typ2"></span>
+									<a href="#" class="nav-link">Home building guide</a>
+									<span class="arrow"></span>
+									<div class="sub-nav-menu">
+										<div class="cp-sub-menu">
+											<div class="top-sec typ2">
+												<div class="lhs">
+													<h2 class="title">Explore by stage </h2>
+													<ul class="cat-grid">
+														<li class="col typ2">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/planning.png"
+																	alt="menu-img" />
+															</div>
+															<a href="#" class="col-title">Planning stage</a>
+
+
+														</li>
+														<li class="col typ2">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/planning.png"
+																	alt="menu-img" />
+															</div>
+															<a href="#" class="col-title">Exterior construction</a>
+
+
+														</li>
+														<li class="col typ2">
+															<div class="img-wrap">
+																<img src="../components/cp-sub-menu/images/planning.png"
+																	alt="menu-img" />
+															</div>
+															<a href="#" class="col-title">Interior construction</a>
+
+
+														</li>
+
+													</ul>
+												</div>
+												<div class="rhs ">
+													<h2 class="title">Learning centre </h2>
+													<ul class="menu-list">
+														<li class="menu-item active">
+															<a class="menu-link" href="#">Popular articles</a>
+														</li>
+														<li class="menu-item">
+															<a class="menu-link" href="#">Trending videos</a>
+														</li>
+														<li class="menu-item">
+															<a class="menu-link" href="#">Featured content</a>
+														</li>
+														<li class="menu-item">
+															<a href="#" class="menu-link">User testimonials</a>
+														</li>
+
+													</ul>
+													<a href="#" class="btn btn-link text-right">View all offers</a>
+												</div>
+												<div class="rhs typ3">
+													<div class="img-wrap">
+														<img src="../components/cp-sub-menu/images/not-sure.png"
+															alt="" />
+														<h3 class="
+													">Not surewhere tostart?</h3>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<span class="nav-icon icon-calculator typ3"></span>
+									<a href="#" class="nav-link">Design & calculators</a>
+								</li>
+								<li class="nav-item">
+									<span class="nav-icon icon-calculator typ4"></span>
+									<a href="#" class="nav-link">Service providers</a>
+								</li>
+								<li class="nav-item">
+									<span class="nav-icon icon-call typ5"></span>
+									<a href="#" class="nav-link">Help centre</a>
+								</li>
+								<li class="nav-item">
+									<span class="nav-icon icon-Question typ6"></span>
+									<a href="#" class="nav-link">FAQs</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
+
+			</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<main class="main">
+			<!-- breadcrumb starts -->
+			<section class="bs-sec typ-first-sec pd-bottom-8">
+				<div class="container">
+					<div class="sec-cont">
+						<ul class="cp-breadcrumb">
+							<li class="breadcrumb-items">
+								<a href="#" class="breadcrumb-link">Home</a>
+							</li>
+							<li class="breadcrumb-items">
+								<a href="#" class="breadcrumb-link">Profile</a>
+							</li>
+							<li class="breadcrumb-items">
+								<a href="#" class="breadcrumb-link active type-bold">My dashboard</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- breadcrumb ends -->
+
+			<!--Dadhboard Main-->
+			<section class="bs-sec typ-dashboard">
+				<div class="container">
+					<div class="sec-cont">
+						<div class="lyt-dashboard">
+							<div class="grid-col-lht">
+
+								<nav class="cp-sidebar-menu">
+									<ul class="menu-wrap">
+										<li class="menu-item active">
+											<a href="#" class="menu-link">
+												<span class="icon icon-box"></span>
+												<span class="menu-text">My dashboard</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="#" class="menu-link">
+												<span class="icon icon-cart"></span>
+												<span class="menu-text">My orders</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="#" class="menu-link">
+												<span class="icon icon-unfill-like"></span>
+												<span class="menu-text">My wishlist</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="#" class="menu-link">
+												<span class="icon icon-location-2"></span>
+												<span class="menu-text">My addresses</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div class="cp-product-card dashboard-prod js-bg"
+									style="background-image: url(&quot;/images/bonanza-banner.jpg&quot;); background-size: cover; background-repeat: no-repeat;">
+									<a href="#">
+										<div class="img-wrap bg-img">
+											<img src="/images/bonanza-banner.jpg" alt="product_img">
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="grid-col-rht">
+
+								<div class="cp-prof-builder mb-16">
+									<div class="prof-builder-header">
+										<div class="welcome-details">
+											<div class="profile-pic">
+												<img src="../components/cp-user-profile-builder/images/profile_pic.png"
+													alt="Profile Picture" />
+											</div>
+											<div class="welcome-text">
+												<p class="greeting">Welcome</p>
+												<h3 class="name">Ramaswamy</h3>
+											</div>
+											<div class="badge dreamer">
+												<div class="badge-icon">
+													<span class="icon icon-bricks-2"></span>
+												</div>
+												<span class="badge-text">Dreamer</span>
+												<span class="completion-status">6/6</span>
+											</div>
+										</div>
+										<div class="update-profile">
+											<div id="profilSlider" data-steps="6" data-completed-steps="2"></div>
+											<div class="content">
+												<h3 class="heading">Complete your profile: 2/6</h3>
+												<p class="para">Add your Pincode to receive recommendations.</p>
+												<a href="#" class="btn btn-link">Update profile</a>
+											</div>
+										</div>
+									</div>
+									<div class="skills-wrap">
+										<p class="sub-heading">Welcome! Explore 3 tools earn the Planner badge.</p>
+										<div class="skills-list">
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Building cost estimator
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Budget tracker
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Project planner
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												EMI calculator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Rebar estimator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Shed estimator
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cp-prof-builder mb-16">
+									<div class="prof-builder-header">
+										<div class="welcome-details">
+											<div class="profile-pic">
+												<img src="../components/cp-user-profile-builder/images/profile_pic.png"
+													alt="Profile Picture" />
+											</div>
+											<div class="welcome-text">
+												<p class="greeting">Welcome</p>
+												<h3 class="name">Ramaswamy</h3>
+											</div>
+											<div class="badge planner">
+												<div class="badge-icon">
+													<span class="icon icon-bricks-2"></span>
+												</div>
+												<span class="badge-text">Planner</span>
+												<span class="completion-status">6/6</span>
+											</div>
+										</div>
+										<a href="#" class="btn btn-link">Update profile</a>
+									</div>
+									<div class="skills-wrap">
+										<p class="sub-heading">You’re doing excellent! use 2 more tools to unlock the
+											builder badge.</p>
+										<div class="skills-list">
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Building cost estimator
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Budget tracker
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Project planner
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												EMI calculator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Rebar estimator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Shed estimator
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cp-prof-builder mb-16">
+									<div class="prof-builder-header">
+										<div class="welcome-details">
+											<div class="profile-pic">
+												<img src="../components/cp-user-profile-builder/images/profile_pic.png"
+													alt="Profile Picture" />
+											</div>
+											<div class="welcome-text">
+												<p class="greeting">Welcome</p>
+												<h3 class="name">Ramaswamy</h3>
+											</div>
+											<div class="badge builder">
+												<div class="badge-icon">
+													<span class="icon icon-bricks-2"></span>
+												</div>
+												<span class="badge-text">Builder</span>
+												<span class="completion-status">6/6</span>
+											</div>
+										</div>
+										<a href="#" class="btn btn-link">Update profile</a>
+									</div>
+									<div class="skills-wrap">
+										<p class="sub-heading">You’re doing excellent! use 2 more tools to unlock the
+											builder badge.</p>
+										<div class="skills-list">
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Building cost estimator
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Budget tracker
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Project planner
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												EMI calculator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Rebar estimator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Shed estimator
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cp-prof-builder mb-16">
+
+									<div class="prof-builder-header">
+										<div class="welcome-details">
+											<div class="profile-pic">
+												<img src="../components/cp-user-profile-builder/images/profile_pic.png"
+													alt="Profile Picture" />
+											</div>
+											<div class="welcome-text">
+												<p class="greeting">Welcome</p>
+												<h3 class="name">Ramaswamy</h3>
+											</div>
+											<div class="badge pro-builder">
+												<div class="badge-icon">
+													<span class="icon icon-bricks-2"></span>
+												</div>
+												<span class="badge-text">Pro builder</span>
+												<span class="completion-status">6/6</span>
+											</div>
+										</div>
+										<a href="#" class="btn btn-link">Update profile</a>
+									</div>
+									<div class="skills-wrap">
+										<p class="sub-heading">Almost there! explore 1 more tool to become a pro
+											builder.</p>
+										<div class="skills-list">
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Building cost estimator
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Budget tracker
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												Project planner
+											</div>
+											<div class="skills active">
+												<span class="icon icon-check"></span>
+												EMI calculator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Rebar estimator
+											</div>
+											<div class="skills">
+												<span class="icon icon-check"></span>
+												Shed estimator
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="lyt-dashboard-inner">
+									<div class="grid-col-lht">
+
+										<div class="advert-card cp-ongoing-orders mb-16">
+											<div class="cp-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												<h3 class="title">Ongoing orders</h3>
+												<a href="#" class="btn btn-link">View all</a>
+											</div>
+
+											<div class="product-wrap">
+												<div class="img-wrap">
+													<img src="../components/cp-ongoing-orders/images/prod-01.png"
+														alt="blog img">
+													<span class="count">+4</span>
+												</div>
+												<div class="product-details">
+													<h3 class="order-details">Order no. #<span
+															class="order-id">12345789018</span></h3>
+													<div class="payment-status">
+														<span class="icon icon-info2"></span>
+														Payment pending
+													</div>
+													<div class="amt">
+														<span class="rupee">₹</span>30,500</span>
+													</div>
+												</div>
+												<div class="action-wrap">
+													<button class="btn btn-primary">Pay now</button>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="long-card force-left">
+											<div class="cp-family-home-card">
+												<div class="cp-title">
+													<div class="icon-wrap">
+														<span class="icon icon-calculator"></span>
+													</div>
+													<h3 class="title">Ajay's family home
+														<span class="location">Hinjewadi - 490819</span>
+													</h3>
+													<a href="#" class="btn btn-link">View details</a>
+												</div>
+
+												<div class="img-wrap">
+													<img src="../components/cp-family-home-card/images/construction.jpg"
+														alt="construction img" />
+												</div>
+
+												<div class="current-status planning">
+													<div class="icon-wrap">
+														<span class="icon icon-box"></span>
+													</div>
+													<div class="content">
+														<span class="label">Curent Status</span>
+														<h3 class="heading">Planning stage</h3>
+													</div>
+													<div class="action-wrap">
+														<button class="btn btn-primary">
+															<span class="icon icon-edit"></span>
+														</button>
+													</div>
+												</div>
+
+												<div class="current-status construction">
+													<div class="icon-wrap">
+														<span class="icon icon-box"></span>
+													</div>
+													<div class="content">
+														<span class="label">Curent Status</span>
+														<h3 class="heading">Construction stage</h3>
+													</div>
+													<div class="action-wrap">
+														<button class="btn btn-primary">
+															<span class="icon icon-edit"></span>
+														</button>
+													</div>
+												</div>
+
+												<div class="current-status interior">
+													<div class="icon-wrap">
+														<span class="icon icon-box"></span>
+													</div>
+													<div class="content">
+														<span class="label">Curent Status</span>
+														<h3 class="heading">Interiors stage</h3>
+													</div>
+													<div class="action-wrap">
+														<button class="btn btn-primary">
+															<span class="icon icon-edit"></span>
+														</button>
+													</div>
+												</div>
+
+												<div class="configuration">
+													<h3 class="heading">Configuration</h3>
+													<div class="details-wrap">
+														<ul class="details">
+															<li class="list">3,500 sq. ft.</li>
+															<li class="list">3 bedrooms</li>
+															<li class="list">G+2 floors</li>
+														</ul>
+														<div class="action-wrap">
+															<button class="btn btn-primary">
+																<span class="icon icon-edit"></span>
+															</button>
+														</div>
+													</div>
+												</div>
+
+												<div class="project-photos">
+													<h3 class="heading">
+														Project photos <span class="count">(12)</span>
+														<a href="#" class="btn btn-link">View all</a>
+													</h3>
+													<div class="photo-list">
+														<div class="img-wrap">
+															<img src="../components/cp-family-home-card/images/project_photo_01.jpg"
+																alt="project photo" />
+														</div>
+														<div class="img-wrap">
+															<img src="../components/cp-family-home-card/images/project_photo_03.jpg"
+																alt="project photo" />
+														</div>
+														<div class="img-wrap">
+															<img src="../components/cp-family-home-card/images/project_photo_03.jpg"
+																alt="project photo" />
+														</div>
+														<div class="img-wrap">
+															<img src="../components/cp-family-home-card/images/project_photo_04.jpg"
+																alt="project photo" />
+														</div>
+														<div class="img-wrap">
+															<img src="../components/cp-family-home-card/images/project_photo_05.jpg"
+																alt="project photo" />
+														</div>
+														<div class="img-wrap">
+															<img src="../components/cp-family-home-card/images/project_photo_06.jpg"
+																alt="project photo" />
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="cp-box cp-watch-story mb-16">
+												<div class="content">
+													<p>Learn from people like you who have <br />recently built their
+														home
+													</p>
+													<a href="#" tareget="_blank">Watch Rakesh Sampat's story</a>
+												</div>
+												<a href="#" class="video-thumb">
+													<img src="../components/cp-family-home-card/images/video-thumb.jpg"
+														alt="video thumbnail" />
+												</a>
+											</div>
+										</div>
+
+										<div class="short-card force-left cp-project-planner mb-16">
+											<img class="cong-img"
+												src="../components/cp-project-planner/images/congratulations.png"
+												alt="congratulations image" />
+											<div class="cp-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												<h3 class="title">Project Planner</h3>
+											</div>
+											<div class="planner-details">
+												<h3 class="heading">Agrawal’s holiday home is ready!!</h3>
+												<p class="sub-heading">Congratulations on the completion of your dream
+													home!</p>
+												<div class="planner-card">
+													<ul>
+														<li>
+															<div class="content">
+																<lable class="label">Started on</lable>
+																<h3 class="details">01 Jan 25</h3>
+															</div>
+															<div class="content">
+																<lable class="label">Ended on</lable>
+																<h3 class="details">31 Dec 25</h3>
+															</div>
+														</li>
+														<li>
+															<div class="content">
+																<lable class="label">Completed in</lable>
+																<h3 class="details">365 days</h3>
+																<span class="tag">Before time</span>
+															</div>
+															<div class="content">
+																<lable class="label">Amount spent</lable>
+																<h3 class="details">8,00,00,000</h3>
+																<span class="tag">Within Budget</span>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="action-wrap">
+												<button class="btn btn-primary">View home building story</button>
+												<button class="btn btn-outline">Go to project planner</button>
+											</div>
+										</div>
+
+										<div class="short-card force-left cp-budget-tracker mb-16">
+											<div class="cp-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												<h3 class="title">Budget tracker</h3>
+												<a href="#" class="btn btn-link">View all</a>
+											</div>
+											<div class="budget-details">
+												<h3 class="heading">Total budget</h3>
+												<div class="amount-wrap">
+													₹
+													<span class="amount">
+														2,00,00,000</span>
+												</div>
+												<div id="budget-slider"></div>
+												<div class="breakup-wrap">
+													<div class="breakup balance">
+														<label class="label">Balance</label>
+														<div class="amount-wrap">
+															₹
+															<span class="amount">
+																50,00,000</span>
+															<span class="percent">25%</span>
+														</div>
+													</div>
+													<div class="breakup spent">
+														<label class="label">Spent</label>
+														<div class="amount-wrap">
+															₹
+															<span class="amount">
+																1,50,00,000</span>
+															<span class="percent">75%</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="action-wrap">
+												<button class="btn btn-outline">Add an expense</button>
+											</div>
+										</div>
+
+										<div class="short-card force-left cp-your-dealers mb-16">
+											<div class="cp-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												<h3 class="title">Your dealers</h3>
+											</div>
+											<div class="dealer-card">
+												<ul class="tag">
+													<li>Dealer</li>
+												</ul>
+												<div class="dealer-wrap">
+													<div class="dealer-info">
+														<h3 class="dealer-name">Jyoti Dealers Pvt. Ltd.</h3>
+														<div class="dealer-location">
+															<span class="icon icon-location-2"></span>
+															3.5 Vaishali Nagar
+														</div>
+													</div>
+													<div class="action-wrap">
+														<button class="btn btn-primary">
+															<span class="icon icon-call"></span>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="dealer-card">
+												<ul class="tag">
+													<li>Dealer</li>
+												</ul>
+												<div class="dealer-wrap">
+													<div class="dealer-info">
+														<h3 class="dealer-name">Jyoti Dealers Pvt. Ltd.</h3>
+														<div class="dealer-location">
+															<span class="icon icon-location-2"></span>
+															3.5 Vaishali Nagar
+														</div>
+													</div>
+													<div class="action-wrap">
+														<button class="btn btn-primary">
+															<span class="icon icon-call"></span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="short-card force-left cp-recently-saved mb-16">
+											<div class="cp-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												<h3 class="title">Recently saved</h3>
+												<a href="#" class="btn btn-link">View all</a>
+											</div>
+											<ul class="recent-wrap">
+												<li class="recent-item">
+													<a href="#">
+														<div class="img-wrap">
+															<img src="../components/cp-recently-saved/images/prod_01.png"
+																alt="image" />
+														</div>
+														<div class="prod-details">
+															<h2 class="title">Pravesh Classic...</h2>
+															<h3 class="category">Products</h3>
+														</div>
+													</a>
+												</li>
+												<li class="recent-item">
+													<a href="#">
+														<div class="img-wrap">
+															<img src="../components/cp-recently-saved/images/prod_02.png"
+																alt="image" />
+														</div>
+														<div class="prod-details">
+															<h2 class="title">Hear from home...</h2>
+															<h3 class="category">Video</h3>
+														</div>
+													</a>
+												</li>
+												<li class="recent-item">
+													<a href="#">
+														<div class="img-wrap">
+															<img src="../components/cp-recently-saved/images/prod_03.png"
+																alt="image" />
+														</div>
+														<div class="prod-details">
+															<h2 class="title">Find your loan...</h2>
+															<h3 class="category">Article</h3>
+														</div>
+													</a>
+												</li>
+												<li class="recent-item">
+													<a href="#">
+														<div class="img-wrap">
+															<img src="../components/cp-recently-saved/images/prod_04.png"
+																alt="image" />
+														</div>
+														<div class="prod-details">
+															<h2 class="title">Goan style villa</h2>
+															<h3 class="category">Design</h3>
+														</div>
+													</a>
+												</li>
+												<li class="recent-item">
+													<a href="#">
+														<div class="img-wrap">
+															<img src="../components/cp-recently-saved/images/prod_05.png"
+																alt="image" />
+														</div>
+														<div class="prod-details">
+															<h2 class="title">Seth Associates</h2>
+															<h3 class="category">Architect</h3>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="grid-col-rht">
+
+										<div class="cp-box cp-offer-banner mb-16">
+											<img src="../components/cp-offer-banner/images/offer-banner.jpg"
+												alt="Offer banner" />
+											<div class="offer-content">
+												<h3 class="offer-text">
+													Offer for you
+													<span class="big">Save 3%</span>
+													on your first Tiscon order
+												</h3>
+												<div class="action-wrap">
+													<a href="#" class="btn btn-link">Shop Now</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="cp-box cp-recent-view-prod mb-16">
+											<div class="cp-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												<h3 class="title">Recently viewed products</h3>
+											</div>
+											<div class="content-wrap">
+												<a href="#" class="img-wrap">
+													<img src="../components/cp-recent-view-prod/images/prod-01.png"
+														alt="blog img">
+												</a>
+												<a href="#" class="img-wrap">
+													<img src="../components/cp-recent-view-prod/images/prod-02.png"
+														alt="blog img">
+												</a>
+												<a href="#" class="img-wrap">
+													<img src="../components/cp-recent-view-prod/images/prod-03.png"
+														alt="blog img">
+												</a>
+											</div>
+										</div>
+
+										<div class="cp-box cp-tab type-recommendation cp-recommendations mb-16">
+											<h3 class="cp-tab-title">
+												<div class="icon-wrap">
+													<span class="icon icon-calculator"></span>
+												</div>
+												Recommendations
+											</h3>
+											<ul class="tab-list">
+												<li class="tab-item active" data-target="#tab1">
+													<h3 class="title typ-capital">Articles</h3>
+												</li>
+												<li class="tab-item" data-target="#tab2">
+													<h3 class="title typ-capital">Videos</h3>
+												</li>
+												<li class="tab-item" data-target="#tab3">
+													<h3 class="title typ-capital">Products</h3>
+												</li>
+												<li class="tab-item" data-target="#tab4">
+													<h3 class="title typ-capital">Designs</h3>
+												</li>
+											</ul>
+
+											<div class="tab-container js-accordion">
+												<div class="tab-content active" id="tab1">
+													<div class="sec-cont">
+														<ul class="lyt-grid">
+															<li class="grid-col">
+																<div class="cp-blog">
+																	<a href="#" class="img-wrap">
+																		<picture>
+																			<source media="(max-width:768px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-01.jpg">
+																			<source media="(max-width:991px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-01.jpg">
+																			<img src="../components/cp-recommendations/images/home-constrcution-01.jpg"
+																				alt="blog img">
+																		</picture>
+																	</a>
+																	<div class="content-wrap">
+																		<ul class="tag-list">
+																			<li class="tag-item">
+																				<span class="tag">Home
+																					construction</span>
+																			</li>
+																			<li class="tag-item">
+																				<span
+																					class="icon js-add-favorite icon-unfill-like"></span>
+																			</li>
+																		</ul>
+																		<h3 class="c-title">
+																			From blueprint to budget: Understanding the
+																			actual costs
+																			of building a home
+																		</h3>
+																		<div class="post-date">
+																			<span class="post-detail">20 Dec 2024</span>
+																			<span class="post-detail">5 mins</span>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="grid-col">
+																<div class="cp-blog">
+																	<a href="#" class="img-wrap">
+																		<picture>
+																			<source media="(max-width:768px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-02.jpg">
+																			<source media="(max-width:991px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-02.jpg">
+																			<img src="../components/cp-recommendations/images/home-constrcution-02.jpg"
+																				alt="blog img">
+																		</picture>
+																	</a>
+																	<div class="content-wrap">
+																		<ul class="tag-list">
+																			<li class="tag-item">
+																				<span class="tag">Home
+																					construction</span>
+																			</li>
+																			<li class="tag-item">
+																				<span
+																					class="icon js-add-favorite icon-unfill-like"></span>
+																			</li>
+																		</ul>
+																		<h3 class="c-title">
+																			From blueprint to budget: Understanding the
+																			actual costs
+																			of building a home
+																		</h3>
+																		<div class="post-date">
+																			<span class="post-detail">20 Dec 2024</span>
+																			<span class="post-detail">5 mins</span>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="grid-col">
+																<div class="cp-blog">
+																	<a href="#" class="img-wrap">
+																		<picture>
+																			<source media="(max-width:768px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-03.jpg">
+																			<source media="(max-width:991px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-03.jpg">
+																			<img src="../components/cp-recommendations/images/home-constrcution-03.jpg"
+																				alt="blog img">
+																		</picture>
+																	</a>
+																	<div class="content-wrap">
+																		<ul class="tag-list">
+																			<li class="tag-item">
+																				<span class="tag">Home
+																					construction</span>
+																			</li>
+																			<li class="tag-item">
+																				<span
+																					class="icon js-add-favorite icon-unfill-like"></span>
+																			</li>
+																		</ul>
+																		<h3 class="c-title">
+																			From blueprint to budget: Understanding the
+																			actual costs
+																			of building a home
+																		</h3>
+																		<div class="post-date">
+																			<span class="post-detail">20 Dec 2024</span>
+																			<span class="post-detail">5 mins</span>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="tab-content" id="tab2">
+													<div class="sec-cont">
+														<ul class="lyt-grid">
+															<li class="grid-col">
+																<div class="video-wrap">
+																	<a href="#">
+																		<div class="img-wrap">
+																			<img src="../components/cp-recommendations/images/video-tata-tiscon.jpg"
+																				alt="video img" />
+																		</div>
+																		<h3 class="title">
+																			<span class="icon icon-play"></span>
+																			Benefits of Tata Tiscon 550 SD Rebars
+																		</h3>
+																	</a>
+																</div>
+															</li>
+															<li class="grid-col">
+																<div class="video-wrap">
+																	<a href="#">
+																		<div class="img-wrap">
+																			<img src="../components/cp-recommendations/images/video-tata-tiscon.jpg"
+																				alt="video img" />
+																		</div>
+																		<h3 class="title">
+																			<span class="icon icon-play"></span>
+																			Benefits of Tata Tiscon 550 SD Rebars
+																		</h3>
+																	</a>
+																</div>
+															</li>
+															<li class="grid-col">
+																<div class="video-wrap">
+																	<a href="#">
+																		<div class="img-wrap">
+																			<img src="../components/cp-recommendations/images/video-tata-tiscon.jpg"
+																				alt="video img" />
+																		</div>
+																		<h3 class="title">
+																			<span class="icon icon-play"></span>
+																			Benefits of Tata Tiscon 550 SD Rebars
+																		</h3>
+																	</a>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="tab-content" id="tab3">
+													<div class="sec-cont">
+														<ul class="lyt-grid">
+															<li class="grid-col">
+																<div class="product-wrap">
+																	<div class="prod-img">
+																		<img src="../components/cp-recommendations/images/product-01.png"
+																			alt="prod img">
+																	</div>
+																	<div class="prod-details">
+																		<h3 class="prod-brand">Structura</h3>
+																		<h2 class="prod-name">Rectangular pipes</h2>
+																		<div class="price">₹1024 per piece</div>
+																		<div class="offer-price">₹980 <span
+																				class="qty">per
+																				piece</span></div>
+																	</div>
+																</div>
+															</li>
+															<li class="grid-col">
+																<div class="product-wrap">
+																	<div class="prod-img">
+																		<img src="../components/cp-recommendations/images/product-02.png"
+																			alt="prod img">
+																	</div>
+																	<div class="prod-details">
+																		<h3 class="prod-brand">Agrico</h3>
+																		<h2 class="prod-name">Stillson pipe wrench</h2>
+																		<div class="price">₹375 per piece</div>
+																		<div class="offer-price">₹280 <span
+																				class="qty">per
+																				piece</span></div>
+																	</div>
+																</div>
+															</li>
+															<li class="grid-col">
+																<div class="product-wrap">
+																	<div class="prod-img">
+																		<img src="../components/cp-recommendations/images/product-03.png"
+																			alt="prod img">
+																	</div>
+																	<div class="prod-details">
+																		<h3 class="prod-brand">Pravesh</h3>
+																		<h2 class="prod-name">Single panel solid wood
+																			door</h2>
+																		<div class="price">₹21,024 per piece</div>
+																		<div class="offer-price">₹19,380 <span
+																				class="qty">per piece</span></div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="tab-content" id="tab4">
+													<div class="sec-cont">
+														<ul class="lyt-grid">
+															<li class="grid-col">
+																<div class="cp-blog">
+																	<a href="#" class="img-wrap">
+																		<picture>
+																			<source media="(max-width:768px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-01.jpg">
+																			<source media="(max-width:991px)"
+																				srcset="../components/cp-recommendations/images/home-constrcution-01.jpg">
+																			<img src="../components/cp-recommendations/images/home-constrcution-01.jpg"
+																				alt="blog img">
+																		</picture>
+																	</a>
+																	<div class="content-wrap">
+																		<ul class="tag-list">
+																			<li class="tag-item">
+																				<span class="tag">Home
+																					construction</span>
+																			</li>
+																			<li class="tag-item">
+																				<span
+																					class="icon js-add-favorite icon-unfill-like"></span>
+																			</li>
+																		</ul>
+																		<h3 class="c-title">
+																			From blueprint to budget: Understanding the
+																			actual costs
+																			of building a home
+																		</h3>
+																		<div class="post-date">
+																			<span class="post-detail">20 Dec 2024</span>
+																			<span class="post-detail">5 mins</span>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cp-toast" style="display: block;">Added to Favorite</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<!--Dadhboard Main-->
+
+		</main>
+		<!-- Footer Start -->
+		<footer>
+			<div class="cp-footer">
+				<div class="container">
+					<div class="footer-catagery">
+						<div class="footer-link">
+							<h2 class="footer-link-title">Design & inspiration </h2>
+							<ul class="f-link-list">
+								<li class="f-link">
+									<a href="#" class="link">Home designs</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Railing designs</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Gate designs</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Car shed designs</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Roof designs</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-link">
+							<h2 class="footer-link-title">Tools & calculators</h2>
+							<ul class="f-link-list">
+								<li class="f-link">
+									<a href="#" class="link">Building cost estimator</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Budget tracker</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Project planner</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Rebar estimator</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Shed estimator</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Fencing estimator</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-link">
+							<h2 class="footer-link-title">Service providers</h2>
+							<ul class="f-link-list">
+								<li class="f-link">
+									<a href="#" class="link">Architects</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Contractors & masonss</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Fabricators</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Dealers</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Register as a service provider</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-link">
+							<h2 class="footer-link-title">Home building guides</h2>
+							<ul class="f-link-list">
+								<li class="f-link">
+									<a href="#" class="link">Planning stage</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Construction stage</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Interior stage</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Learning zone</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-link">
+							<h2 class="footer-link-title">Company</h2>
+							<ul class="f-link-list">
+								<li class="f-link">
+									<a href="#" class="link">About Tata Steel Aashiyana</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Help & Support</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">FAQs</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Policies</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Terms & Conditions</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Disclaimer</a>
+								</li>
+								<li class="f-link">
+									<a href="#" class="link">Sitemap</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="brand-bar">
+						<div class="lhs">
+							<div class="brand-logo">
+								<picture>
+									<source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+									<source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+									<img src="/images/TSA-logo.png" alt="logo tsa" />
+								</picture>
+							</div>
+							<div class="policy-wrap">
+								<ul class="policy-list">
+									<li class="policy-item">
+										Contact us: 1800-108-8282
+									</li>
+									<li class="policy-item">
+										<a href="" class="policy-link">Privacy policy</a>
+									</li>
+									<li class="policy-item">
+										<a href="" class="policy-link">Cookie policy</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="rhs">
+							<div class="media-wrap">
+								<h2 class="media-title">Connect with us</h2>
+								<ul class="media-list">
+									<li class="media-item">
+										<a href="" class="media-link">
+											<span class="icon icon-face-book"></span>
+										</a>
+									</li>
+									<li class="media-item">
+										<a href="" class="media-link">
+											<span class="icon icon-insta"></span>
+										</a>
+									</li>
+									<li class="media-item">
+										<a href="" class="media-link">
+											<span class="icon icon-youtube"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="extra-content">
+						<spam class="copywright">© 2024 Tata Steel</spam>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer end -->
+
+		<!---bottom Sticky start-->
+		<div class="cp-bottom-sticky">
+			<div class="container">
+				<ul class="bottom-nav-list">
+					<li class="nav-list-item">
+						<a href="#" class="nav-link">
+							<span class="icon icon-aashiyan"></span>
+							Tata Steel Aashiyana
+						</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="#" class="nav-link">
+							<span class="icon icon-shop-product"></span>
+							Shop Products
+						</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="#" class="nav-link">
+							<span class="icon icon-home-guide"></span>
+							Home Guides
+						</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="#" class="nav-link">
+							<span class="icon icon-calculator"></span>
+							Design & Calculator
+						</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="#" class="nav-link">
+							<span class="icon icon-service"></span>
+							Service Providers
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!---bottom Sticky End-->
+
+
+
+		<div class="cm-overlay"></div>
+
+		<!-- build:js assets/js/vendor.js -->
+		<script src="/js/vendor/jquery-3.7.1.min.js"></script>
+		<script src="/js/vendor/swiper-bundle.min.js"></script>
+		<script src="/js/vendor/isotope.pkgd.min.js"></script>
+		<script src="/js/vendor/roundslider.min.js"></script>
+		<!-- endbuild -->
+		<!-- build:js assets/js/custom.min.js -->
+		<script src="/js/global.js"></script>
+		<script src="/components/cp-header/cp-header.js"></script>
+		<script src="/components/cp-home-banner/cp-home-banner.js"></script>
+		<script src="/components/cp-blog/cp-blog.js"></script>
+		<script src="/components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
+		<script src="/components/cp-architect/cp-architect.js"></script>
+		<script src="/components/cp-design-card/cp-design-card.js"></script>
+
+		<script src="/components/cp-product-card/cp-product-card.js"></script>
+		<script src="/components/cp-user-profile-builder/profile-status.js"></script>
+		<script src="/components/cp-budget-tracker/budget-tracker.js"></script>
+		<!-- endbuild -->
+	</body>
+
+</html>

@@ -1,0 +1,178 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-ongoing-orders {
+  border: 1px solid #DEDEDE;
+  padding: 16px;
+  border-radius: 12px;
+}
+.cp-ongoing-orders .cp-title {
+  padding: 0 0 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 12px;
+  align-items: center;
+  position: relative;
+}
+.cp-ongoing-orders .cp-title .title {
+  display: flex;
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .cp-title .title {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0 10px 0px;
+  }
+}
+.cp-ongoing-orders .cp-title .icon-wrap {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #E5F6EC;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .cp-title .icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+}
+.cp-ongoing-orders .cp-title .icon {
+  color: #00A441;
+  font-size: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .cp-title .icon {
+    font-size: 14px;
+  }
+}
+.cp-ongoing-orders .cp-title .btn-link {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .cp-title .btn-link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.cp-ongoing-orders .product-wrap {
+  display: flex;
+  justify-content: start;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .product-wrap {
+    flex-wrap: wrap;
+  }
+}
+.cp-ongoing-orders .product-wrap .img-wrap {
+  width: 78px;
+  height: 78px;
+  padding: 12px;
+  border: 1px solid #DEDEDE;
+  border-radius: 12px;
+  background: #fff;
+  margin-right: 24px;
+  flex-shrink: 0;
+  position: relative;
+}
+.cp-ongoing-orders .product-wrap .img-wrap img {
+  width: 100%;
+}
+.cp-ongoing-orders .product-wrap .img-wrap .count {
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  background: #D2042D;
+  line-height: 27px;
+  text-align: center;
+  position: absolute;
+  right: -11px;
+  top: -6px;
+  z-index: 1;
+  color: #FFFFFF;
+  font-family: "Poppins Semibold";
+  font-size: 14px;
+}
+.cp-ongoing-orders .product-wrap .product-details {
+  position: relative;
+  width: 83%;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .product-wrap .product-details {
+    width: calc(100% - 105px);
+  }
+}
+.cp-ongoing-orders .product-wrap .product-details .order-details {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .product-wrap .product-details .order-details {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.cp-ongoing-orders .product-wrap .product-details .payment-status {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Poppins Medium";
+  color: #EE4400;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.cp-ongoing-orders .product-wrap .product-details .payment-status icon {
+  font-size: 16px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.cp-ongoing-orders .product-wrap .product-details .amt {
+  font-family: "Poppins Semibold";
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .product-wrap .product-details .amt {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.cp-ongoing-orders .action-wrap {
+  align-items: end;
+  display: flex;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .action-wrap {
+    flex-grow: 1;
+    margin-top: 24px;
+  }
+}
+.cp-ongoing-orders .action-wrap .btn {
+  min-width: 110px;
+  padding: 1rem 1.6rem;
+  font-size: 14px;
+  line-height: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-ongoing-orders .action-wrap .btn {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=cp-ongoing-orders.css.map */

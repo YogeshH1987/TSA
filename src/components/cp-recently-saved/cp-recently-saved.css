@@ -1,0 +1,122 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-recently-saved {
+  border: 1px solid #DEDEDE;
+  padding: 16px;
+  border-radius: 12px;
+}
+.cp-recently-saved .cp-title {
+  padding: 0 0 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 12px;
+  align-items: center;
+  position: relative;
+}
+.cp-recently-saved .cp-title .title {
+  display: flex;
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 991px) {
+  .cp-recently-saved .cp-title .title {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0 10px 0px;
+  }
+}
+.cp-recently-saved .cp-title .icon-wrap {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #FFF8E5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-recently-saved .cp-title .icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+}
+.cp-recently-saved .cp-title .icon {
+  color: #FFB800;
+  font-size: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-recently-saved .cp-title .icon {
+    font-size: 14px;
+  }
+}
+.cp-recently-saved .cp-title .btn-link {
+  position: relative;
+  margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 991px) {
+  .cp-recently-saved .cp-title .btn-link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.cp-recently-saved .recent-wrap {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+}
+.cp-recently-saved .recent-item {
+  display: flex;
+  margin-right: 10px;
+}
+.cp-recently-saved .recent-item:last-of-type {
+  margin-right: 0;
+}
+.cp-recently-saved a {
+  text-decoration: none;
+}
+.cp-recently-saved .img-wrap {
+  width: 105px;
+  height: 105px;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.cp-recently-saved .img-wrap img {
+  width: 100%;
+}
+.cp-recently-saved .prod-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cp-recently-saved .prod-details .title {
+  font-family: "Poppins Medium";
+  font-size: 10px;
+  line-height: 12px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+.cp-recently-saved .prod-details .category {
+  font-family: "Poppins Regular";
+  font-size: 10px;
+  line-height: 12px;
+  color: #333333;
+}
+
+/*# sourceMappingURL=cp-recently-saved.css.map */

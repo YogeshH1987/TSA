@@ -1,0 +1,320 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-prof-builder {
+    border: 1px solid $clr-border;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 0 0 20px;
+
+    .prof-builder-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        position: relative;
+        border-bottom: 1px solid $clr-border;
+        padding: 0 0 12px;
+        .welcome-details {
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: $media-sm) {
+                flex-wrap: wrap;
+            }
+            
+        }
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+            display: flex;
+            overflow: hidden;
+            flex-shrink: 0;
+            @media only screen and (max-width: $media-sm) {
+                width: 32px;
+                height: 32px;
+                margin-right: 8px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .welcome-text {
+            .greeting {
+                font-size: 14px;
+                line-height: 14px;
+                color: $clr-base;
+                font-family: $font-regular;
+                margin: 0;
+                @media only screen and (max-width: $media-sm) {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+
+            .name {
+                margin: 0;
+                font-size: 20px;
+                line-height: 24px;
+                color: $clr-base;
+                font-family: $font-medium;
+                @media only screen and (max-width: $media-sm) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .badge {
+            margin-left: 16px;
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            border-radius: 100px;
+            @media only screen and (max-width: $media-sm) {
+                margin-left: 35px;
+                padding: 6px;
+                flex: 100% 0 0;
+                max-width: 140px;
+                margin-top: 5px;
+            }
+            .badge-icon{
+                height: 20px;
+                width: 20px;
+                margin-right: 8px;
+                background: $clr-root;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 10px;
+                line-height: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $font-medium;
+                icon{
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
+            .badge-text {
+                color: $clr-root;
+                font-size: 12px;
+                line-height: 16px;
+                font-family: $font-medium;
+            }
+
+            .completion-status {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20px;
+                width: 26px;
+                margin-left: 8px;
+                background: $clr-root;
+                border-radius: 16px;
+                text-align: center;
+                font-size: 10px;
+                line-height: 10px;
+                font-family: $font-medium;
+            }
+
+            &.dreamer{
+                background-color: #333333;
+                .badge-icon{
+                    color: #333333;
+                    icon{
+                        color: #333333;
+                    }
+                }
+                .completion-status {
+                    color: #333333;
+                }
+            }
+            &.planner{
+                background-color: #FFB800;
+                .badge-icon{
+                    color: #FFB800;
+                    icon{
+                        color: #FFB800;
+                    }
+                }
+                .completion-status {
+                    color: #FFB800;
+                }
+            }
+            &.builder{
+                background-color: #3D7EDB;
+                .badge-icon{
+                    color: #3D7EDB;
+                    icon{
+                        color: #3D7EDB;
+                    }
+                }
+                .completion-status {
+                    color: #3D7EDB;
+                }
+                
+            }
+            &.pro-builder{
+                background-color: #5A245A;
+                .badge-icon{
+                    color: #5A245A;
+                    icon{
+                        color: #5A245A;
+                    }
+                }
+                .completion-status {
+                    color: #5A245A;
+                }
+            }
+            &.dreamer{
+                background-color: #333333;
+                .badge-icon{
+                    color: #333333;
+                    icon{
+                        color: #333333;
+                    }
+                }
+                .completion-status {
+                    color: #333333;
+                }
+            }
+            &.planner{
+                background-color: #FFB800;
+                .badge-icon{
+                    color: #FFB800;
+                    icon{
+                        color: #FFB800;
+                    }
+                }
+                .completion-status {
+                    color: #FFB800;
+                }
+            }
+            &.builder{
+                background-color: #3D7EDB;
+                .badge-icon{
+                    color: #3D7EDB;
+                    icon{
+                        color: #3D7EDB;
+                    }
+                }
+                .completion-status {
+                    color: #3D7EDB;
+                }
+            }
+        }
+    }
+    .update-profile{
+        display: flex;
+        padding: 8px 12px;
+        border: 1px solid $clr-border;
+        border-radius: 12px;
+        
+        #profilSlider{
+            margin-right: 10px;
+        }
+
+        .content{
+            display: block;
+            position: relative;
+        }
+        
+        .heading{
+            font-size: 12px;
+            line-height: 16px;
+            font-family: $font-medium;
+            color: $clr-base;
+            margin-bottom: 4px;
+        }
+        .para{
+            font-size: 10px;
+            line-height: 12px;
+            font-family: $font-regular;
+            color: #666;
+            margin-bottom: 2px;
+        }
+        .btn-link{
+            position: relative;
+            right: inherit;
+            top: inherit;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 16px;
+            @media only screen and (max-width: $media-sm) {
+                top: inherit;
+                bottom: inherit;
+            }
+        }
+        .rs-handle,
+        .rs-handle.rs-move{
+            display: none;
+        }
+    }
+    .btn-link{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        @media only screen and (max-width: $media-sm) {
+            font-size: 12px;
+            line-height: 16px;
+            top: auto;
+            bottom: 22px;
+        }
+    }
+
+    .skills-wrap {
+        .sub-heading {
+            margin: 0 0 8px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: $font-medium;
+            color: $clr-base;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        .skills-list {
+            display: flex;
+            white-space: nowrap;
+            overflow-x: auto;
+            .skills {
+                background-color: $clr-root;
+                border: 1px solid #999999;
+                padding: 7px 8px;
+                border-radius: 4px;
+                font-size: 12px;
+                line-height: 16px;
+                font-family: $font-medium;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                margin-right: 8px;
+                color: $clr-base;
+                @media only screen and (max-width: $media-sm) {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+
+                &:last-of-type{
+                    margin-right: 0;
+                }
+                .icon{
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #999999;
+                    margin: 0 4px 0 0;
+                }
+                &.active{
+                    border: 1px solid #00A441;
+                    .icon{
+                        color: #00A441;
+                    }
+                }
+            }
+        }
+    }
+}

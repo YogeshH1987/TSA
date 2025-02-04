@@ -1,0 +1,111 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-recently-saved{
+    border: 1px solid $clr-border;
+    padding: 16px;
+    border-radius: 12px;
+    .cp-title{
+        padding: 0 0 15px 0;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid $clr-border;
+        margin-bottom: 12px;
+        align-items: center;
+        position: relative;
+        .title{
+            display: flex;
+            color: $clr-base;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: $font-semiBold;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0px 0 10px 0px;
+            }
+        }
+        .icon-wrap{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #FFF8E5;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            @media only screen and (max-width: $media-sm) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .icon{
+            color: #FFB800;
+            font-size: 20px;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 14px;
+            }
+        }
+
+        .btn-link{
+            position: relative;
+            margin: 0 0 0 auto;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+    .recent-wrap{
+      list-style: none;
+      display: flex;
+      justify-content: start;
+      overflow: hidden;
+    }
+    .recent-item{
+      display: flex;
+      margin-right: 10px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+
+    a{
+      text-decoration: none;
+    }
+    .img-wrap{
+      width: 105px;
+      height: 105px;
+      border: 1px solid $clr-border;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 12px;
+      img{
+        width: 100%;
+      }
+    }
+    .prod-details{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .title{
+        font-family: $font-medium;
+        font-size: 10px;
+        line-height: 12px;
+        color: $clr-base;
+        margin-bottom: 4px;
+      }
+      .category{
+        font-family: $font-regular;
+        font-size: 10px;
+        line-height: 12px;
+        color: $clr-base;
+      }
+    }
+}
