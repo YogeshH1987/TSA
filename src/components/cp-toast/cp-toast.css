@@ -22,26 +22,20 @@
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 10;
-  display: none;
-}
-.cp-toast .msg {
-  font-family: "Poppins Semibold";
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #00A441;
-}
-@media only screen and (max-width: 768px) {
+  display: none; }
   .cp-toast .msg {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-.cp-toast.typ-error {
-  border: 1px dashed #F58F66;
-  background: #FCDACC;
-}
-.cp-toast.typ-error .msg {
-  color: #F58F66;
-}
+    font-family: "Poppins Semibold";
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #00A441; }
+    @media only screen and (max-width: 768px) {
+      .cp-toast .msg {
+        font-size: 1.4rem;
+        line-height: 2rem; } }
+  .cp-toast.typ-error {
+    border: 1px dashed #F58F66;
+    background: #FCDACC; }
+    .cp-toast.typ-error .msg {
+      color: #F58F66; }
 
 /*# sourceMappingURL=cp-toast.css.map */

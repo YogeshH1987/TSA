@@ -8,319 +8,246 @@
   border: 1px solid #DEDEDE;
   padding: 16px;
   border-radius: 12px;
-  margin: 0 0 20px;
-}
-.cp-prof-builder .prof-builder-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-  position: relative;
-  border-bottom: 1px solid #DEDEDE;
-  padding: 0 0 12px;
-}
-.cp-prof-builder .prof-builder-header .welcome-details {
-  display: flex;
-  align-items: center;
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .prof-builder-header .welcome-details {
-    flex-wrap: wrap;
-  }
-}
-.cp-prof-builder .prof-builder-header .profile-pic {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 12px;
-  display: flex;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .prof-builder-header .profile-pic {
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-  }
-}
-.cp-prof-builder .prof-builder-header .profile-pic img {
-  width: 100%;
-}
-.cp-prof-builder .prof-builder-header .welcome-text .greeting {
-  font-size: 14px;
-  line-height: 14px;
-  color: #333333;
-  font-family: "Poppins Regular";
-  margin: 0;
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .prof-builder-header .welcome-text .greeting {
-    font-size: 12px;
-    line-height: 14px;
-  }
-}
-.cp-prof-builder .prof-builder-header .welcome-text .name {
-  margin: 0;
-  font-size: 20px;
-  line-height: 24px;
-  color: #333333;
-  font-family: "Poppins Medium";
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .prof-builder-header .welcome-text .name {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-.cp-prof-builder .prof-builder-header .badge {
-  margin-left: 16px;
-  display: flex;
-  align-items: center;
-  padding: 6px;
-  border-radius: 100px;
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .prof-builder-header .badge {
-    margin-left: 35px;
-    padding: 6px;
-    flex: 100% 0 0;
-    max-width: 140px;
-    margin-top: 5px;
-  }
-}
-.cp-prof-builder .prof-builder-header .badge .badge-icon {
-  height: 20px;
-  width: 20px;
-  margin-right: 8px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 10px;
-  line-height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Poppins Medium";
-}
-.cp-prof-builder .prof-builder-header .badge .badge-icon icon {
-  font-size: 10px;
-  line-height: 10px;
-}
-.cp-prof-builder .prof-builder-header .badge .badge-text {
-  color: #FFFFFF;
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Poppins Medium";
-}
-.cp-prof-builder .prof-builder-header .badge .completion-status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  width: 26px;
-  margin-left: 8px;
-  background: #FFFFFF;
-  border-radius: 16px;
-  text-align: center;
-  font-size: 10px;
-  line-height: 10px;
-  font-family: "Poppins Medium";
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer {
-  background-color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon {
-  color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon icon {
-  color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer .completion-status {
-  color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.planner {
-  background-color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.planner .badge-icon {
-  color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.planner .badge-icon icon {
-  color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.planner .completion-status {
-  color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.builder {
-  background-color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.builder .badge-icon {
-  color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.builder .badge-icon icon {
-  color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.builder .completion-status {
-  color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.pro-builder {
-  background-color: #5A245A;
-}
-.cp-prof-builder .prof-builder-header .badge.pro-builder .badge-icon {
-  color: #5A245A;
-}
-.cp-prof-builder .prof-builder-header .badge.pro-builder .badge-icon icon {
-  color: #5A245A;
-}
-.cp-prof-builder .prof-builder-header .badge.pro-builder .completion-status {
-  color: #5A245A;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer {
-  background-color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon {
-  color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon icon {
-  color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.dreamer .completion-status {
-  color: #333333;
-}
-.cp-prof-builder .prof-builder-header .badge.planner {
-  background-color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.planner .badge-icon {
-  color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.planner .badge-icon icon {
-  color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.planner .completion-status {
-  color: #FFB800;
-}
-.cp-prof-builder .prof-builder-header .badge.builder {
-  background-color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.builder .badge-icon {
-  color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.builder .badge-icon icon {
-  color: #3D7EDB;
-}
-.cp-prof-builder .prof-builder-header .badge.builder .completion-status {
-  color: #3D7EDB;
-}
-.cp-prof-builder .update-profile {
-  display: flex;
-  padding: 8px 12px;
-  border: 1px solid #DEDEDE;
-  border-radius: 12px;
-}
-.cp-prof-builder .update-profile #profilSlider {
-  margin-right: 10px;
-}
-.cp-prof-builder .update-profile .content {
-  display: block;
-  position: relative;
-}
-.cp-prof-builder .update-profile .heading {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Poppins Medium";
-  color: #333333;
-  margin-bottom: 4px;
-}
-.cp-prof-builder .update-profile .para {
-  font-size: 10px;
-  line-height: 12px;
-  font-family: "Poppins Regular";
-  color: #666;
-  margin-bottom: 2px;
-}
-.cp-prof-builder .update-profile .btn-link {
-  position: relative;
-  right: inherit;
-  top: inherit;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 16px;
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .update-profile .btn-link {
-    top: inherit;
-    bottom: inherit;
-  }
-}
-.cp-prof-builder .update-profile .rs-handle,
-.cp-prof-builder .update-profile .rs-handle.rs-move {
-  display: none;
-}
-.cp-prof-builder .btn-link {
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-@media only screen and (max-width: 991px) {
+  margin: 0 0 20px; }
+  .cp-prof-builder .prof-builder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 0 0 12px; }
+    .cp-prof-builder .prof-builder-header .welcome-details {
+      display: flex;
+      align-items: center; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .prof-builder-header .welcome-details {
+          flex-wrap: wrap; } }
+    .cp-prof-builder .prof-builder-header .profile-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 12px;
+      display: flex;
+      overflow: hidden;
+      flex-shrink: 0; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .prof-builder-header .profile-pic {
+          width: 32px;
+          height: 32px;
+          margin-right: 8px; } }
+      .cp-prof-builder .prof-builder-header .profile-pic img {
+        width: 100%; }
+    .cp-prof-builder .prof-builder-header .welcome-text .greeting {
+      font-size: 14px;
+      line-height: 14px;
+      color: #333333;
+      font-family: "Poppins Regular";
+      margin: 0; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .prof-builder-header .welcome-text .greeting {
+          font-size: 12px;
+          line-height: 14px; } }
+    .cp-prof-builder .prof-builder-header .welcome-text .name {
+      margin: 0;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      font-family: "Poppins Medium"; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .prof-builder-header .welcome-text .name {
+          font-size: 16px;
+          line-height: 20px; } }
+    .cp-prof-builder .prof-builder-header .badge {
+      margin-left: 16px;
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      border-radius: 100px; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .prof-builder-header .badge {
+          margin-left: 35px;
+          padding: 6px;
+          flex: 100% 0 0;
+          max-width: 140px;
+          margin-top: 5px; } }
+      .cp-prof-builder .prof-builder-header .badge .badge-icon {
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 10px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins Medium"; }
+        .cp-prof-builder .prof-builder-header .badge .badge-icon icon {
+          font-size: 10px;
+          line-height: 10px; }
+      .cp-prof-builder .prof-builder-header .badge .badge-text {
+        color: #FFFFFF;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: "Poppins Medium"; }
+      .cp-prof-builder .prof-builder-header .badge .completion-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 26px;
+        margin-left: 8px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 10px;
+        font-family: "Poppins Medium"; }
+      .cp-prof-builder .prof-builder-header .badge.dreamer {
+        background-color: #333333; }
+        .cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon {
+          color: #333333; }
+          .cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon icon {
+            color: #333333; }
+        .cp-prof-builder .prof-builder-header .badge.dreamer .completion-status {
+          color: #333333; }
+      .cp-prof-builder .prof-builder-header .badge.planner {
+        background-color: #FFB800; }
+        .cp-prof-builder .prof-builder-header .badge.planner .badge-icon {
+          color: #FFB800; }
+          .cp-prof-builder .prof-builder-header .badge.planner .badge-icon icon {
+            color: #FFB800; }
+        .cp-prof-builder .prof-builder-header .badge.planner .completion-status {
+          color: #FFB800; }
+      .cp-prof-builder .prof-builder-header .badge.builder {
+        background-color: #3D7EDB; }
+        .cp-prof-builder .prof-builder-header .badge.builder .badge-icon {
+          color: #3D7EDB; }
+          .cp-prof-builder .prof-builder-header .badge.builder .badge-icon icon {
+            color: #3D7EDB; }
+        .cp-prof-builder .prof-builder-header .badge.builder .completion-status {
+          color: #3D7EDB; }
+      .cp-prof-builder .prof-builder-header .badge.pro-builder {
+        background-color: #5A245A; }
+        .cp-prof-builder .prof-builder-header .badge.pro-builder .badge-icon {
+          color: #5A245A; }
+          .cp-prof-builder .prof-builder-header .badge.pro-builder .badge-icon icon {
+            color: #5A245A; }
+        .cp-prof-builder .prof-builder-header .badge.pro-builder .completion-status {
+          color: #5A245A; }
+      .cp-prof-builder .prof-builder-header .badge.dreamer {
+        background-color: #333333; }
+        .cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon {
+          color: #333333; }
+          .cp-prof-builder .prof-builder-header .badge.dreamer .badge-icon icon {
+            color: #333333; }
+        .cp-prof-builder .prof-builder-header .badge.dreamer .completion-status {
+          color: #333333; }
+      .cp-prof-builder .prof-builder-header .badge.planner {
+        background-color: #FFB800; }
+        .cp-prof-builder .prof-builder-header .badge.planner .badge-icon {
+          color: #FFB800; }
+          .cp-prof-builder .prof-builder-header .badge.planner .badge-icon icon {
+            color: #FFB800; }
+        .cp-prof-builder .prof-builder-header .badge.planner .completion-status {
+          color: #FFB800; }
+      .cp-prof-builder .prof-builder-header .badge.builder {
+        background-color: #3D7EDB; }
+        .cp-prof-builder .prof-builder-header .badge.builder .badge-icon {
+          color: #3D7EDB; }
+          .cp-prof-builder .prof-builder-header .badge.builder .badge-icon icon {
+            color: #3D7EDB; }
+        .cp-prof-builder .prof-builder-header .badge.builder .completion-status {
+          color: #3D7EDB; }
+  .cp-prof-builder .update-profile {
+    display: flex;
+    padding: 8px 12px;
+    border: 1px solid #DEDEDE;
+    border-radius: 12px; }
+    .cp-prof-builder .update-profile #profilSlider {
+      margin-right: 10px; }
+    .cp-prof-builder .update-profile .content {
+      display: block;
+      position: relative; }
+    .cp-prof-builder .update-profile .heading {
+      font-size: 12px;
+      line-height: 16px;
+      font-family: "Poppins Medium";
+      color: #333333;
+      margin-bottom: 4px; }
+    .cp-prof-builder .update-profile .para {
+      font-size: 10px;
+      line-height: 12px;
+      font-family: "Poppins Regular";
+      color: #666;
+      margin-bottom: 2px; }
+    .cp-prof-builder .update-profile .btn-link {
+      position: relative;
+      right: inherit;
+      top: inherit;
+      display: inline-block;
+      font-size: 12px;
+      line-height: 16px; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .update-profile .btn-link {
+          top: inherit;
+          bottom: inherit; } }
+    .cp-prof-builder .update-profile .rs-handle,
+    .cp-prof-builder .update-profile .rs-handle.rs-move {
+      display: none; }
   .cp-prof-builder .btn-link {
-    font-size: 12px;
-    line-height: 16px;
-    top: auto;
-    bottom: 22px;
-  }
-}
-.cp-prof-builder .skills-wrap .sub-heading {
-  margin: 0 0 8px;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: "Poppins Medium";
-  color: #333333;
-}
-@media only screen and (max-width: 991px) {
+    position: absolute;
+    right: 0;
+    top: 10px; }
+    @media only screen and (max-width: 991px) {
+      .cp-prof-builder .btn-link {
+        font-size: 12px;
+        line-height: 16px;
+        top: auto;
+        bottom: 22px; } }
   .cp-prof-builder .skills-wrap .sub-heading {
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-.cp-prof-builder .skills-wrap .skills-list {
-  display: flex;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-.cp-prof-builder .skills-wrap .skills-list .skills {
-  background-color: #FFFFFF;
-  border: 1px solid #999999;
-  padding: 7px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Poppins Medium";
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  margin-right: 8px;
-  color: #333333;
-}
-@media only screen and (max-width: 991px) {
-  .cp-prof-builder .skills-wrap .skills-list .skills {
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-.cp-prof-builder .skills-wrap .skills-list .skills:last-of-type {
-  margin-right: 0;
-}
-.cp-prof-builder .skills-wrap .skills-list .skills .icon {
-  font-size: 14px;
-  line-height: 14px;
-  color: #999999;
-  margin: 0 4px 0 0;
-}
-.cp-prof-builder .skills-wrap .skills-list .skills.active {
-  border: 1px solid #00A441;
-}
-.cp-prof-builder .skills-wrap .skills-list .skills.active .icon {
-  color: #00A441;
-}
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Poppins Medium";
+    color: #333333; }
+    @media only screen and (max-width: 991px) {
+      .cp-prof-builder .skills-wrap .sub-heading {
+        font-size: 12px;
+        line-height: 16px; } }
+  .cp-prof-builder .skills-wrap .skills-list {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto; }
+    .cp-prof-builder .skills-wrap .skills-list .skills {
+      background-color: #FFFFFF;
+      border: 1px solid #999999;
+      padding: 7px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      line-height: 16px;
+      font-family: "Poppins Medium";
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      color: #333333; }
+      @media only screen and (max-width: 991px) {
+        .cp-prof-builder .skills-wrap .skills-list .skills {
+          font-size: 12px;
+          line-height: 16px; } }
+      .cp-prof-builder .skills-wrap .skills-list .skills:last-of-type {
+        margin-right: 0; }
+      .cp-prof-builder .skills-wrap .skills-list .skills .icon {
+        font-size: 14px;
+        line-height: 14px;
+        color: #999999;
+        margin: 0 4px 0 0; }
+      .cp-prof-builder .skills-wrap .skills-list .skills.active {
+        border: 1px solid #00A441; }
+        .cp-prof-builder .skills-wrap .skills-list .skills.active .icon {
+          color: #00A441; }
 
 /*# sourceMappingURL=cp-user-profile-builder.css.map */

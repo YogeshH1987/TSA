@@ -8,206 +8,168 @@
   border: 1px solid #DEDEDE;
   padding: 16px;
   border-radius: 12px;
-  position: relative;
-}
-.cp-budget-tracker .cp-title {
-  padding: 0 0 15px 0;
-  display: flex;
-  justify-content: flex-start;
-  border-bottom: 1px solid #DEDEDE;
-  margin-bottom: 12px;
-  align-items: center;
-  position: relative;
-}
-.cp-budget-tracker .cp-title .title {
-  display: flex;
-  color: #333333;
-  font-size: 20px;
-  line-height: 28px;
-  font-family: "Poppins Semibold";
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .cp-title .title {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0px 0 10px 0px;
-  }
-}
-.cp-budget-tracker .cp-title .icon-wrap {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: #FDECE5;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .cp-title .icon-wrap {
-    width: 32px;
-    height: 32px;
-  }
-}
-.cp-budget-tracker .cp-title .icon {
-  color: #EE4400;
-  font-size: 20px;
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .cp-title .icon {
-    font-size: 14px;
-  }
-}
-.cp-budget-tracker .cp-title .btn-link {
-  position: relative;
-  margin: 0 0 0 auto;
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .cp-title .btn-link {
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-.cp-budget-tracker .budget-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.cp-budget-tracker .budget-details .heading {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: "Poppins Medium";
-  color: #333333;
-  text-align: center;
-}
-.cp-budget-tracker .budget-details .amount-wrap {
-  font-size: 24px;
-  line-height: 32px;
-  font-family: "Poppins Semibold";
-  color: #333333;
-  margin-bottom: 16px;
-  text-align: center;
-  display: flex;
-}
-.cp-budget-tracker .budget-details .breakup-wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #DEDEDE;
-}
-.cp-budget-tracker .budget-details .breakup {
-  width: calc(50% - 6px);
-  position: relative;
-  padding: 12px 16px;
-  border: 1px solid #EDEDED;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-}
-.cp-budget-tracker .budget-details .breakup .label {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Poppins Regular";
-  color: #333333;
-  text-align: center;
-  display: flex;
-  position: relative;
-  align-items: center;
-  padding-left: 12px;
-  margin-bottom: 6px;
-}
-.cp-budget-tracker .budget-details .breakup .label::before {
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  left: 0;
-}
-.cp-budget-tracker .budget-details .breakup.balance .label:before {
-  background: #FCDACC;
-}
-.cp-budget-tracker .budget-details .breakup.spent .label:before {
-  background: #F16933;
-}
-.cp-budget-tracker .budget-details .breakup .amount-wrap {
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Poppins Semibold";
-  color: #333333;
-  text-align: center;
-  display: flex;
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .budget-details .breakup .amount-wrap {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-.cp-budget-tracker .budget-details .breakup .percent {
-  border-radius: 26px;
-  padding: 4px 8px;
-  background: #EDEDED;
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Poppins Medium";
-  color: #666;
-  margin-left: 5px;
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .budget-details .breakup .percent {
-    padding: 2px 5px;
-    border-radius: 22px;
-    margin-left: 2px;
-  }
-}
-.cp-budget-tracker #budget-slider {
-  margin-bottom: 20px;
-}
-.cp-budget-tracker .action-wrap {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-@media only screen and (max-width: 991px) {
-  .cp-budget-tracker .action-wrap .btn.btn-outline {
+  position: relative; }
+  .cp-budget-tracker .cp-title {
+    padding: 0 0 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 12px;
+    align-items: center;
+    position: relative; }
+    .cp-budget-tracker .cp-title .title {
+      display: flex;
+      color: #333333;
+      font-size: 20px;
+      line-height: 28px;
+      font-family: "Poppins Semibold"; }
+      @media only screen and (max-width: 991px) {
+        .cp-budget-tracker .cp-title .title {
+          font-size: 16px;
+          line-height: 24px;
+          padding: 0px 0 10px 0px; } }
+    .cp-budget-tracker .cp-title .icon-wrap {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: #FDECE5;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px; }
+      @media only screen and (max-width: 991px) {
+        .cp-budget-tracker .cp-title .icon-wrap {
+          width: 32px;
+          height: 32px; } }
+    .cp-budget-tracker .cp-title .icon {
+      color: #EE4400;
+      font-size: 20px; }
+      @media only screen and (max-width: 991px) {
+        .cp-budget-tracker .cp-title .icon {
+          font-size: 14px; } }
+    .cp-budget-tracker .cp-title .btn-link {
+      position: relative;
+      margin: 0 0 0 auto; }
+      @media only screen and (max-width: 991px) {
+        .cp-budget-tracker .cp-title .btn-link {
+          font-size: 12px;
+          line-height: 16px; } }
+  .cp-budget-tracker .budget-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .cp-budget-tracker .budget-details .heading {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: "Poppins Medium";
+      color: #333333;
+      text-align: center; }
+    .cp-budget-tracker .budget-details .amount-wrap {
+      font-size: 24px;
+      line-height: 32px;
+      font-family: "Poppins Semibold";
+      color: #333333;
+      margin-bottom: 16px;
+      text-align: center;
+      display: flex; }
+    .cp-budget-tracker .budget-details .breakup-wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #DEDEDE; }
+    .cp-budget-tracker .budget-details .breakup {
+      width: calc(50% - 6px);
+      position: relative;
+      padding: 12px 16px;
+      border: 1px solid #EDEDED;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px; }
+      .cp-budget-tracker .budget-details .breakup .label {
+        font-size: 12px;
+        line-height: 16px;
+        font-family: "Poppins Regular";
+        color: #333333;
+        text-align: center;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-left: 12px;
+        margin-bottom: 6px; }
+        .cp-budget-tracker .budget-details .breakup .label::before {
+          content: '';
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          left: 0; }
+      .cp-budget-tracker .budget-details .breakup.balance .label:before {
+        background: #FCDACC; }
+      .cp-budget-tracker .budget-details .breakup.spent .label:before {
+        background: #F16933; }
+      .cp-budget-tracker .budget-details .breakup .amount-wrap {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Poppins Semibold";
+        color: #333333;
+        text-align: center;
+        display: flex;
+        margin-bottom: 0; }
+        @media only screen and (max-width: 991px) {
+          .cp-budget-tracker .budget-details .breakup .amount-wrap {
+            font-size: 14px;
+            line-height: 20px; } }
+      .cp-budget-tracker .budget-details .breakup .percent {
+        border-radius: 26px;
+        padding: 4px 8px;
+        background: #EDEDED;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: "Poppins Medium";
+        color: #666;
+        margin-left: 5px; }
+        @media only screen and (max-width: 991px) {
+          .cp-budget-tracker .budget-details .breakup .percent {
+            padding: 2px 5px;
+            border-radius: 22px;
+            margin-left: 2px; } }
+  .cp-budget-tracker #budget-slider {
+    margin-bottom: 20px; }
+  .cp-budget-tracker .action-wrap {
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+    @media only screen and (max-width: 991px) {
+      .cp-budget-tracker .action-wrap .btn.btn-outline {
+        width: 100%; } }
+  .cp-budget-tracker .rs-handle {
+    opacity: 0; }
+  .cp-budget-tracker .rs-tooltip .perc-value {
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    display: block; }
+  .cp-budget-tracker .rs-tooltip .perc-label {
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "Poppins Medium";
+    color: #666; }
+  .cp-budget-tracker .rs-tooltip.rs-edit:hover {
+    pointer-events: none;
+    cursor: default;
+    border-color: transparent; }
+  .cp-budget-tracker .rs-tooltip.rs-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-  }
-}
-.cp-budget-tracker .rs-handle {
-  opacity: 0;
-}
-.cp-budget-tracker .rs-tooltip .perc-value {
-  font-size: 24px;
-  line-height: 26px;
-  font-family: "Poppins Semibold";
-  color: #333333;
-  display: block;
-}
-.cp-budget-tracker .rs-tooltip .perc-label {
-  font-size: 10px;
-  line-height: 12px;
-  font-family: "Poppins Medium";
-  color: #666;
-}
-.cp-budget-tracker .rs-tooltip.rs-edit:hover {
-  pointer-events: none;
-  cursor: default;
-  border-color: transparent;
-}
-.cp-budget-tracker .rs-tooltip.rs-edit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  z-index: 1;
-}
+    padding: 0;
+    z-index: 1; }
 
 /*# sourceMappingURL=cp-budget-tracker.css.map */
