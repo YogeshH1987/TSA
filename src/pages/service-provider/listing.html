@@ -17,37 +17,10 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
     <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
-    <link rel="stylesheet" href="/components/cp-agrico-search/cp-agrico-search.css" />
-    <link rel="stylesheet" href="/components/cp-agrico-banner/cp-agrico-banner.css" />
-    <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
     <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
-    <link rel="stylesheet" href="../../components/cp-calculate-material/cp-calculate-material.css" />
-    <link rel="stylesheet" href="../../components/cp-video-card/cp-video-card.css" />
     <link rel="stylesheet" href="../../components/cp-architect/cp-architect.css" />
-    <link rel="stylesheet" href="../../components/cp-customer-testimonial/cp-customer-testimonial.css" />
-    <link rel="stylesheet" href="../../components/cp-dealer-card/cp-dealer-card.css" />
     <link rel="stylesheet" href="../../components/cp-blog/cp-blog.css" />
-    <link rel="stylesheet" href="../../components/cp-other-info/cp-other-info.css" />
-    <link rel="stylesheet" href="../../components/cp-img-detail/cp-img-detail.css" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="../../components/cp-product-card/cp-product-card.css" />
-    <link rel="stylesheet" href="../../components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
-    <link rel="stylesheet" href="../../components/cp-content-info/cp-content-info.css" />
-    <link rel="stylesheet" href="../../components/cp-useful-card/cp-useful-card.css" />
-    <link rel="stylesheet" href="../../components/cp-single-banner/cp-single-banner.css" />
-    <link rel="stylesheet" href="../../components/cp-size-rates/cp-size-rates.css" />
-    <link rel="stylesheet" href="../../components/cp-table/cp-table.css" />
-    <link rel="stylesheet" href="../../components/cp-size-description/cp-size-description.css" />
-    <link rel="stylesheet" href="../../components/cp-feature/cp-feature.css" />
-    <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" />
-    <link rel="stylesheet" href="/components/cp-home-plan/cp-home-plan.css" />
-    <link rel="stylesheet" href="/components/cp-architectural-plans-banner/cp-architectural-plans-banner.css" />
-    <link rel="stylesheet" href="/components/cp-design-card/cp-design-card.css" />
-    <link rel="stylesheet" href="/components/cp-video/cp-video.css" />
-    <link rel="stylesheet" href="../../components/cp-trade-hand-tool-card/cp-trade-hand-tool-card.css" />
     <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
-    <link rel="stylesheet" href="../components/cp-home-idea/cp-home-idea.css" />
-    <link rel="stylesheet" href="../components/cp-dropdown/cp-dropdown.css" />
     <link rel="stylesheet" href="/components/cp-recommend/cp-recommend.css" />
     <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
     <link rel="stylesheet" href="/components/cp-service-provider/cp-service-provider.css" />
@@ -168,9 +141,9 @@
 
         <section class="bs-sec typ-plp typ-blog typ-architect-filter">
             <div class="container">
-                <div class="cp-form">
+                <div class="cp-form mt-0">
                     <div class="filter-dropdown">
-                        <div class="cp-select">
+                        <div class="cp-select typ-style">
                             <div class="select-dropdown">
                                 <button role="button" data-value="" class="select-dropdown-button"
                                     id="workingDaysDropdown">
@@ -178,21 +151,36 @@
                                 </button>
                                 <ul class="select-dropdown-list">
                                     <li class="dropdown-item">
-                                        <span data-value="all-days" class="select-dropdown-list-item">All days</span>
+                                        <span data-value="Architects"
+                                            class="select-dropdown-list-item">Architects</span>
                                     </li>
                                     <li class="dropdown-item">
-                                        <span data-value="custom-days" class="select-dropdown-list-item">Custom
-                                            days</span>
+                                        <span data-value="Engineers" class="select-dropdown-list-item">Engineers</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="Contractors"
+                                            class="select-dropdown-list-item">Contractors</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="Fabricators"
+                                            class="select-dropdown-list-item">Fabricators</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="Dealers" class="select-dropdown-list-item">Dealers</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="Masons" class="select-dropdown-list-item">Masons</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <button class="btn btn-filter js-drawer" data-id="filter"><span class="icon icon-page-info"></span> Filter
+                        <button class="btn btn-filter js-drawer" data-id="filter"><span
+                                class="icon icon-page-info"></span> Filter
                             <span class="count">1</span>
                         </button>
                     </div>
                 </div>
-                <div class="filter-sec">
+                <div class="filter-sec typ-show">
                     <span class="filter-tag">Budget: <span class="bold-text">₹₹</span> <span
                             class="close icon-close"></span></span>
                     <span class="filter-tag">Area: <span class="bold-text">3-5 years</span> <span
@@ -1070,402 +1058,105 @@
 
                 <ul class="tab-list">
                     <li class="tab-item" data-target="#tab1">
-                        <h3 class="title">Budget</h3>
+                        <h3 class="title">Location</h3>
                     </li>
-                    <li class="tab-item" data-target="#tab2">
-                        <h3 class="title">Plot size</h3>
+                    <li class="tab-item active" data-target="#tab2">
+                        <h3 class="title">Cost</h3>
                     </li>
                     <li class="tab-item" data-target="#tab3">
-                        <h3 class="title">Built up area</h3>
+                        <h3 class="title">Experience</h3>
                     </li>
-                    <li class="tab-item active" data-target="#tab4">
-                        <h3 class="title">Bed & bath <span class="count">01</span></h3>
+                    <li class="tab-item" data-target="#tab4">
+                        <h3 class="title">Services provided</h3>
                     </li>
                     <li class="tab-item" data-target="#tab5">
-                        <h3 class="title">Styles</h3>
+                        <h3 class="title">Rating</h3>
                     </li>
-                    <li class="tab-item" data-target="#tab6">
-                        <h3 class="title">States & regions</h3>
-                    </li>
+
 
                 </ul>
                 <div class="tab-container">
                     <div class="tab-content" id="tab1">
-                        <ul class="filter-menu-list">
+                        <ul class="filter-menu-list cp-form">
                             <li class="menu-list-item">
-                                <h3 class="title">Budget</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="list-head-sec">
+                                    <h3 class="title">Location</h3>
+                                </div>
+                            </li>
+                            <li class="menu-list-item">
+                                <div class="form-group">
+                                    <label class="form-label">Pincode</label>
+                                    <input type="text" id="openat" class="form-control validate-mobile" value=""
+                                        placeholder="302020" required="">
+                                    <span class="error-msg"></span>
+                                </div>
 
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
+                                <div class="form-group">
+                                    <label class="form-label">Extend radius</label>
+                                    <div class="cp-select typ-style">
+                                        <div class="select-dropdown">
+                                            <button role="button" data-value="" class="select-dropdown-button"
+                                                id="workingDaysDropdown">
+                                                <span class="select-text">Select </span> <i
+                                                    class="zmdi zmdi-chevron-down"></i>
+                                            </button>
+                                            <ul class="select-dropdown-list">
+                                                <li class="dropdown-item">
+                                                    <span data-value="10 km"
+                                                        class="select-dropdown-list-item">10 km</span>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <span data-value="20 km"
+                                                        class="select-dropdown-list-item">20 km</span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="tab2">
+                    <div class="tab-content active" id="tab2">
                         <ul class="filter-menu-list">
                             <li class="menu-list-item">
-                                <h3 class="title">Plot size</h3>
-                                <p class="desc">No. of bedrooms</p>
+                                <div class="list-head-sec">
+                                    <h3 class="title">Cost</h3>
+                                </div>
                                 <ul class="inner-menu-list">
                                     <li class="menu-list-item">
                                         <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
                                             <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
+                                            <label for="Planning">₹ Budget architect</label>
                                         </div>
                                     </li>
                                     <li class="menu-list-item">
                                         <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
                                             <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
+                                            <label for="Construction">₹₹ Mid range architect</label>
                                         </div>
                                     </li>
                                     <li class="menu-list-item">
                                         <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
                                             <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
+                                            <label for="Interiors">₹₹₹Premium architect</label>
                                         </div>
                                     </li>
                                 </ul>
 
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-content" id="tab3">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Built up area</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                  
                     </div>
 
-                    <div class="tab-content active" id="tab4">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Bed & bath</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="tab-content" id="tab4">
+                   
                     </div>
 
                     <div class="tab-content" id="tab5">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Built up area</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                  
                     </div>
-
-                    <div class="tab-content" id="tab6">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Built up area</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
                 <div class="act-wrap">
                     <button type="button" class="btn btn-outline">Clear all</button>
@@ -1553,422 +1244,7 @@
             </div>
         </div>
     </div>
-  <!-- filter -->
-    <div class="cp-drawer typ-blog" id="filter">
-        <div class="head-sec">
-            <h2 class="drawer-title">Filters</h2>
-            <a href="#" class="icon icon-close js-close-btn"></a>
-        </div>
-        <div class="sec-cont">
-            <div class="cp-tab typ-blog-filter typ-architect-plan">
 
-                <ul class="tab-list">
-                    <li class="tab-item" data-target="#tab1">
-                        <h3 class="title">Budget</h3>
-                    </li>
-                    <li class="tab-item" data-target="#tab2">
-                        <h3 class="title">Plot size</h3>
-                    </li>
-                    <li class="tab-item" data-target="#tab3">
-                        <h3 class="title">Built up area</h3>
-                    </li>
-                    <li class="tab-item active" data-target="#tab4">
-                        <h3 class="title">Bed & bath <span class="count">01</span></h3>
-                    </li>
-                    <li class="tab-item" data-target="#tab5">
-                        <h3 class="title">Styles</h3>
-                    </li>
-                    <li class="tab-item" data-target="#tab6">
-                        <h3 class="title">States & regions</h3>
-                    </li>
-
-                </ul>
-                <div class="tab-container">
-                    <div class="tab-content" id="tab1">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Budget</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="tab2">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Plot size</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="tab3">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Built up area</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content active" id="tab4">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Bed & bath</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="tab5">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Built up area</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="tab6">
-                        <ul class="filter-menu-list">
-                            <li class="menu-list-item">
-                                <h3 class="title">Built up area</h3>
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <p class="desc">No. of bedrooms</p>
-                                <ul class="inner-menu-list">
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Planning">
-                                            <label for="Planning">1</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Construction">
-                                            <label for="Construction">2</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="Interiors">
-                                            <label for="Interiors">3</label>
-                                        </div>
-                                    </li>
-                                    <li class="menu-list-item">
-                                        <div class="cp-checkbox typ-2 typ-border-0 typ-blog">
-                                            <input type="checkbox" id="honeloan">
-                                            <label for="homeloans">4</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="act-wrap">
-                    <button type="button" class="btn btn-outline">Clear all</button>
-                    <button type="button" class="btn">Apply filters</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
     <div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
@@ -1983,13 +1259,7 @@
     <script src="../../components/cp-blog/cp-blog.js"></script>
     <script src="../../components/cp-architect/cp-architect.js"></script>
     <script src="../../components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
-    <script src="../../components/cp-dealer-card/cp-dealer-card.js"></script>
-    <script src="../../components/cp-product-card/cp-product-card.js"></script>
-    <script src="/components/cp-design-card/cp-design-card.js"></script>
-    <script src="/components/cp-video/cp-video.js"></script>
-    <script src="/components/cp-home-plan/cp-home-plan.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
-    <script src="../components/cp-dropdown/cp-dropdown.js"></script>
     <!-- endbuild -->
 </body>
 

@@ -1797,6 +1797,9 @@ p {
           border-radius: 100px;
           -webkit-border-radius: 100px;
           -moz-border-radius: 100px; }
+          @media only screen and (max-width: 768px) {
+            .bs-sec.typ-blog.typ-architect-filter .filter-sec .filter-tag {
+              font-size: 1.2rem; } }
           .bs-sec.typ-blog.typ-architect-filter .filter-sec .filter-tag .bold-text {
             font-family: "Poppins Medium";
             color: #333333; }
@@ -2017,6 +2020,8 @@ p {
   @media only screen and (max-width: 768px) {
     .bs-sec.typ-mobile-white-bg {
       background-color: #fff; } }
+  .bs-sec .typ-show {
+    display: flex !important; }
 
 .btn {
   display: inline-block;

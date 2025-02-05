@@ -514,30 +514,20 @@
     margin-bottom: 4rem;
 
     .cp-select {
-      .select-dropdown-button {
-        .select-text {
-          color: $clr-base;
-          font-family: $font-medium;
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+      }
+
+      .select-dropdown {
+        @media only screen and (max-width: $media-mobile) {
+          display: block;
+          width: 100%;
         }
 
-        .zmdi-chevron-down {
-          &::after {
-            font-size: 1.4rem;
-            color: #000;
+        .select-dropdown-button {
+          @media only screen and (max-width: $media-mobile) {
+            width: 100%;
           }
-        }
-      }
-
-      .select-dropdown-list {
-        padding: 1.6rem;
-      }
-
-      .dropdown-item {
-        border: 0;
-        @include border-radius(4px);
-        margin-bottom: 8px;
-        &:hover{
-          .select-dropdown-list-item{ color: $clr-base; font-family: $font-medium;}
         }
       }
     }
@@ -545,7 +535,7 @@
     .btn-filter {
       position: relative;
       min-width: auto;
-      padding: 1.2rem 1.6rem;
+      padding: 1rem 1.6rem;
       display: flex;
       align-items: center;
       gap: 1.2rem;

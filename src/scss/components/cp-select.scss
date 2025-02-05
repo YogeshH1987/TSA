@@ -194,8 +194,43 @@
                 left: auto;
                 padding: 1.2rem;
                 @include border-radius(12px);
+
                 .dropdown-item {
                     border: none;
+                }
+            }
+        }
+
+    }
+
+    &.typ-style {
+        .select-dropdown-button {
+            .select-text {
+                color: $clr-base;
+                font-family: $font-medium;
+            }
+
+            .zmdi-chevron-down {
+                &::after {
+                    font-size: 1.4rem;
+                    color: #000;
+                }
+            }
+        }
+
+        .select-dropdown-list {
+            padding: 1.6rem;
+        }
+
+        .dropdown-item {
+            border: 0;
+            @include border-radius(4px);
+            margin-bottom: 8px;
+
+            &:hover {
+                .select-dropdown-list-item {
+                    color: $clr-base;
+                    font-family: $font-medium;
                 }
             }
         }

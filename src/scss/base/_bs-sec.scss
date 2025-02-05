@@ -92,13 +92,20 @@
 
       .typ2 {
         font-size: 2.4rem;
-        @media only screen and (max-width: $media-sm) {  font-size: 2rem;}
-        
+
+        @media only screen and (max-width: $media-sm) {
+          font-size: 2rem;
+        }
+
       }
     }
-    &.sp-sec-head{
+
+    &.sp-sec-head {
       text-align: center;
-      @media only screen and (max-width: $media-sm) { text-align: left;}
+
+      @media only screen and (max-width: $media-sm) {
+        text-align: left;
+      }
     }
   }
 
@@ -157,7 +164,10 @@
         padding-left: 1rem;
       }
     }
-    &.typ-2{font-size: 1.6rem;}
+
+    &.typ-2 {
+      font-size: 1.6rem;
+    }
   }
 
   .sec-desc {
@@ -304,10 +314,15 @@
       margin-top: 13rem;
     }
   }
-&.typ-service-provider{
-  margin-top: 19rem;
-  @media only screen and (max-width: $media-sm) {  margin-top: 15rem;}
-}
+
+  &.typ-service-provider {
+    margin-top: 19rem;
+
+    @media only screen and (max-width: $media-sm) {
+      margin-top: 15rem;
+    }
+  }
+
   &.typ-commerce-blog,
   &.typ-vegetable-patch,
   &.typ-similar-prod {
@@ -1063,6 +1078,10 @@
           background-color: #D8E5F8;
           @include border-radius(100px);
 
+          @media only screen and (max-width: $media-mobile) {
+            font-size: 1.2rem;
+          }
+
           .bold-text {
             font-family: $font-medium;
             color: $clr-base;
@@ -1431,19 +1450,38 @@
       }
     }
   }
-  &.border-bottom{ border-bottom:  1px solid #DEDEDE;}
-  &.typ-order-confirmation-sec{
-    .order-3{
-      @media only screen and (max-width: $media-mobile) {order: 3;}
+
+  &.border-bottom {
+    border-bottom: 1px solid #DEDEDE;
+  }
+
+  &.typ-order-confirmation-sec {
+    .order-3 {
+      @media only screen and (max-width: $media-mobile) {
+        order: 3;
+      }
     }
-    .order-2{
-      @media only screen and (max-width: $media-mobile) {order: 2;}
+
+    .order-2 {
+      @media only screen and (max-width: $media-mobile) {
+        order: 2;
+      }
     }
-    .order-4{
-      @media only screen and (max-width: $media-mobile) {order: 4;}
+
+    .order-4 {
+      @media only screen and (max-width: $media-mobile) {
+        order: 4;
+      }
     }
   }
-  &.typ-mobile-white-bg{
-    @media only screen and (max-width: $media-mobile) { background-color: #fff;}
+
+  &.typ-mobile-white-bg {
+    @media only screen and (max-width: $media-mobile) {
+      background-color: #fff;
+    }
+  }
+
+  .typ-show {
+    display: flex !important;
   }
 }

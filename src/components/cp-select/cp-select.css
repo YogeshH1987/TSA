@@ -136,5 +136,22 @@
   -moz-border-radius: 12px; }
   .cp-select.typ-2 .select-dropdown .select-dropdown-list .dropdown-item {
     border: none; }
+.cp-select.typ-style .select-dropdown-button .select-text {
+  color: #333333;
+  font-family: "Poppins Medium"; }
+.cp-select.typ-style .select-dropdown-button .zmdi-chevron-down::after {
+  font-size: 1.4rem;
+  color: #000; }
+.cp-select.typ-style .select-dropdown-list {
+  padding: 1.6rem; }
+.cp-select.typ-style .dropdown-item {
+  border: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 8px; }
+  .cp-select.typ-style .dropdown-item:hover .select-dropdown-list-item {
+    color: #333333;
+    font-family: "Poppins Medium"; }
 
 /*# sourceMappingURL=cp-select.css.map */
