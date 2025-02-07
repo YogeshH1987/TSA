@@ -446,7 +446,7 @@
   &.typ-sp-card{
     border: #DEDEDE 1px solid;
     width: 100%;
-
+    height: 100%;
     .img-wrap {
       max-height: 12rem;
 
@@ -468,6 +468,7 @@
         .details {
           color: $clr-base;
           font-size: 2rem;
+          line-height: 2rem;
           @media only screen and (max-width: $media-sm) { font-size: 1.6rem;}
         }
       }

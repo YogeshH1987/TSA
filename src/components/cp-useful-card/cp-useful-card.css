@@ -87,5 +87,7 @@
         @media only screen and (max-width: 991px) {
           .cp-useful-card.typ-architech-style-card .content-wrap .list li + li::before {
             font-size: 1.2rem; } }
+  .cp-useful-card.typ-architech-style-card .link {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=cp-useful-card.css.map */

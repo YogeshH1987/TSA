@@ -1,0 +1,71 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.artical-list-main .artical-list {
+  display: flex;
+  gap: 1.6rem;
+  border-bottom: 1px solid #DEDEDE;
+  padding-bottom: 2.4rem;
+  margin-bottom: 2.4rem; }
+  @media only screen and (max-width: 991px) {
+    .artical-list-main .artical-list {
+      flex-direction: column;
+      border: 0; } }
+  .artical-list-main .artical-list .img-wrap {
+    width: 25%;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    position: relative;
+    overflow: hidden;
+    height: 9.4rem; }
+    @media only screen and (max-width: 991px) {
+      .artical-list-main .artical-list .img-wrap {
+        width: 100%; } }
+    .artical-list-main .artical-list .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .artical-list-main .artical-list .cont-wrap {
+    width: 75%; }
+    @media only screen and (max-width: 991px) {
+      .artical-list-main .artical-list .cont-wrap {
+        width: 100%; } }
+    .artical-list-main .artical-list .cont-wrap .title {
+      font-size: 1rem;
+      font-family: "Poppins Medium";
+      color: #D2042D;
+      line-height: normal;
+      margin-bottom: 0.4rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .artical-list-main .artical-list .cont-wrap .desc {
+      font-size: 1.4rem;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      line-height: 2rem;
+      margin-bottom: 0.8rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .artical-list-main .artical-list .cont-wrap .date-time {
+      font-size: 1rem;
+      color: #666666; }
+      .artical-list-main .artical-list .cont-wrap .date-time::before {
+        content: '|';
+        font-size: 1rem;
+        padding-inline: 0.4rem;
+        color: #DEDEDE; }
+        @media only screen and (max-width: 991px) {
+          .artical-list-main .artical-list .cont-wrap .date-time::before {
+            font-size: 1.2rem; } }
+      .artical-list-main .artical-list .cont-wrap .date-time:first-child::before {
+        content: none; }
+
+/*# sourceMappingURL=cp-artical.css.map */

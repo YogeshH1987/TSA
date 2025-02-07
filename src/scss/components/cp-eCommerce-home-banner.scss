@@ -1207,20 +1207,22 @@
             }
         }
     }
-
+    //   this section added for Estimated building cost - calculator result  start
     &.typ-calculator-result {
         .feature-type-2 {
             gap: 2rem;
             flex-wrap: wrap;
 
             @media only screen and (max-width: $media-mobile) {
-            gap: 1.2rem;}
+                gap: 1.2rem;
+            }
         }
 
         .feature-item {
             order: initial !important;
             height: 13rem;
             width: 23.1%;
+
             @media only screen and (max-width: $media-mobile) {
                 width: 48.2%;
             }
@@ -1229,6 +1231,7 @@
                 .f-title {
                     font-size: 2rem;
                     text-transform: capitalize;
+
                     @media only screen and (max-width: $media-mobile) {
                         font-size: 1.4rem;
                     }
@@ -1327,7 +1330,7 @@
                         }
 
                         .icon {
-                            color:#FFC633;
+                            color: #FFC633;
                         }
                     }
 
@@ -1345,7 +1348,7 @@
                         }
 
                         .icon {
-                            color:#E46881;
+                            color: #E46881;
                         }
                     }
 
@@ -1357,15 +1360,116 @@
                 .feature-card {
                     background-color: #fff;
                     border: 1px solid #DEDEDE;
-                    .f-desc{ font-size: 1.2rem; font-family: $font-regular;}
-                    .f-title{ font-size: 1.4rem;}
+
+                    .f-desc {
+                        font-size: 1.2rem;
+                        font-family: $font-regular;
+                    }
+
+                    .f-title {
+                        font-size: 1.4rem;
+                    }
+
                     .f-img {
                         &::after {
-                            background-color:rgba(222, 222, 222, 20%);
+                            background-color: rgba(222, 222, 222, 20%);
                         }
 
                         .icon {
-                            color:rgba(222, 222, 222, 1);
+                            color: rgba(222, 222, 222, 1);
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+    //   this section added for Estimated building cost - calculator result  end
+    &.typ-home-building {
+        background-color: transparent;
+        padding: 0 0 2rem 0;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #DEDEDE;
+        .feature-type-2 {
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width: $media-mobile) {
+                gap: 1.2rem;
+            }
+        }
+
+        .feature-item {
+            order: initial !important;
+            height: 13rem;
+            width: 23.1%;
+            @media only screen and (max-width: $media-mobile) { width: 47.9%;}
+
+            .feature-card {
+                background-color: #fff;
+
+                .f-title {
+                    font-size: 1.4rem;
+                    text-transform: capitalize;
+                    max-width: 100%;
+          
+                }
+
+                .f-img {
+                    min-width: 9rem;
+                    min-height: 9.5rem;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    z-index: 1;
+
+                    &:after {
+                        width: 10rem;
+                        height: 10rem;
+                        right: -15px;
+                        bottom: -15px;
+                        border-radius: 50%;
+                        position: absolute;
+                        content: '';
+                        opacity: 30%;
+                        z-index: -1;
+                    }
+
+                    .icon {
+                        font-size: 5.6rem;
+                        width: 4.6rem;
+                        height: 3.6rem;
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                .feature-card {
+                    .f-img {
+                        &::after {
+                            background-color: #ED9BAB;
+                        }
+
+                        .icon {
+                            color: #DB3657;
+                        }
+                    }
+
+                }
+
+            }
+
+            &:nth-child(2) {
+                .feature-card {
+                    .f-img {
+                        &::after {
+                            background-color: #B1CBF1;
+                        }
+
+                        .icon {
+                            color: #6498E2;
                         }
                     }
 

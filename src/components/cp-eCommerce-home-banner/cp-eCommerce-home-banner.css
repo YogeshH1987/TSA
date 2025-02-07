@@ -715,5 +715,58 @@
         background-color: rgba(222, 222, 222, 0.2); }
       .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-img .icon {
         color: #dedede; }
+  .cp-eCommerce-home-banner.typ-home-building {
+    background-color: transparent;
+    padding: 0 0 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #DEDEDE; }
+    .cp-eCommerce-home-banner.typ-home-building .feature-type-2 {
+      gap: 2rem;
+      flex-wrap: wrap; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-home-building .feature-type-2 {
+          gap: 1.2rem; } }
+    .cp-eCommerce-home-banner.typ-home-building .feature-item {
+      order: initial !important;
+      height: 13rem;
+      width: 23.1%; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-home-building .feature-item {
+          width: 47.9%; } }
+      .cp-eCommerce-home-banner.typ-home-building .feature-item .feature-card {
+        background-color: #fff; }
+        .cp-eCommerce-home-banner.typ-home-building .feature-item .feature-card .f-title {
+          font-size: 1.4rem;
+          text-transform: capitalize;
+          max-width: 100%; }
+        .cp-eCommerce-home-banner.typ-home-building .feature-item .feature-card .f-img {
+          min-width: 9rem;
+          min-height: 9.5rem;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          z-index: 1; }
+          .cp-eCommerce-home-banner.typ-home-building .feature-item .feature-card .f-img:after {
+            width: 10rem;
+            height: 10rem;
+            right: -15px;
+            bottom: -15px;
+            border-radius: 50%;
+            position: absolute;
+            content: '';
+            opacity: 30%;
+            z-index: -1; }
+          .cp-eCommerce-home-banner.typ-home-building .feature-item .feature-card .f-img .icon {
+            font-size: 5.6rem;
+            width: 4.6rem;
+            height: 3.6rem; }
+      .cp-eCommerce-home-banner.typ-home-building .feature-item:nth-child(1) .feature-card .f-img::after {
+        background-color: #ED9BAB; }
+      .cp-eCommerce-home-banner.typ-home-building .feature-item:nth-child(1) .feature-card .f-img .icon {
+        color: #DB3657; }
+      .cp-eCommerce-home-banner.typ-home-building .feature-item:nth-child(2) .feature-card .f-img::after {
+        background-color: #B1CBF1; }
+      .cp-eCommerce-home-banner.typ-home-building .feature-item:nth-child(2) .feature-card .f-img .icon {
+        color: #6498E2; }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */
