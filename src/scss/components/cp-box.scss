@@ -412,7 +412,7 @@
             }
         }
     }
-
+    //   this section added for Estimated building cost - calculator result  start
     .estimate-time-wrap {
         background-color: #F3F4F6;
         @include border-radius(8px);
@@ -437,4 +437,5 @@
             }
         }
     }
+        //   this section added for Estimated building cost - calculator result  end
 }
