@@ -1484,4 +1484,33 @@
   .typ-show {
     display: flex !important;
   }
+
+  &.typ-planning-stage {
+
+    .sub-title {
+      font-family: $font-medium;
+      font-size: 1.6rem;
+      color: #666;
+      margin-bottom: 8px;
+
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .sec-title {
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 1.6rem;
+      color: $clr-base;
+      line-height: 2.8rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
 }

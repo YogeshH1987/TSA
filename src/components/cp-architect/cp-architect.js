@@ -2,13 +2,15 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
   architectSlider();
-  architechProject()
+  architechProject();
+  experts()
 });
 
 $(window).resize(function () {
   if ($(window).width() < 769) {
     architectSlider();
-    architechProject()
+    architechProject();
+    experts()
   }
 });
 
@@ -52,3 +54,26 @@ function architechProject() {
       }
   });
 }
+
+function experts() {
+  var swiper = new Swiper(".js-experts", {
+      slidesPerView: 1.7,
+      spaceBetween: 12,
+      loop: false,
+      navigation: false,
+      pagination:false,
+      breakpoints: {
+          // when window width is <= 499px
+          768: {
+              slidesPerView: 1.7,
+              spaceBetween: 12,
+          },
+          // when window width is <= 999px
+          999: {
+              slidesPerView: 6,
+              spaceBetween: 20,
+          }
+      }
+  });
+}
+

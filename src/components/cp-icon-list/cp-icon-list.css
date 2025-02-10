@@ -1,0 +1,57 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-icon-list {
+  border-bottom: 1px solid #DEDEDE;
+  padding-bottom: 4rem; }
+  .cp-icon-list .title {
+    font-size: 2rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    margin-bottom: 1.6rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-icon-list .title {
+        font-size: 1.6rem; } }
+  .cp-icon-list .cp-icon-list-wrap {
+    display: flex;
+    gap: 4rem; }
+    @media only screen and (max-width: 991px) {
+      .cp-icon-list .cp-icon-list-wrap {
+        gap: 2rem; } }
+    .cp-icon-list .cp-icon-list-wrap .list-item {
+      font-size: 1.4rem;
+      color: #333333;
+      max-width: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
+      .cp-icon-list .cp-icon-list-wrap .list-item .icon {
+        width: 6.4rem;
+        height: 6.4rem;
+        font-size: 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        margin-bottom: 1.6rem; }
+        .cp-icon-list .cp-icon-list-wrap .list-item .icon.orange {
+          color: #F16933;
+          background: #FDECE5; }
+        .cp-icon-list .cp-icon-list-wrap .list-item .icon.yellow {
+          color: #FFB800;
+          background: #FFF8E5; }
+        .cp-icon-list .cp-icon-list-wrap .list-item .icon.green {
+          color: #00A441;
+          background: #E5F6EC; }
+        .cp-icon-list .cp-icon-list-wrap .list-item .icon.blue {
+          color: #3D7EDB;
+          background: #ECF2FB; }
+
+/*# sourceMappingURL=cp-icon-list.css.map */

@@ -307,6 +307,45 @@
         .cp-architect-card.typ-sp-card .detail-wrap .detail-right .icon {
           color: #333333;
           font-size: 1.6rem; }
+  .cp-architect-card.typ-home-building {
+    border: #DEDEDE 1px solid;
+    width: 100%;
+    height: 100%; }
+    .cp-architect-card.typ-home-building .img-wrap {
+      max-height: 12rem; }
+      .cp-architect-card.typ-home-building .img-wrap::after {
+        content: none; }
+      .cp-architect-card.typ-home-building .img-wrap img {
+        max-height: 12rem; }
+    .cp-architect-card.typ-home-building .detail-wrap {
+      background-color: #fff;
+      padding: 1.2rem;
+      position: static;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .cp-architect-card.typ-home-building .detail-wrap .bottom-sec {
+        width: 100%; }
+      .cp-architect-card.typ-home-building .detail-wrap .location-item .details {
+        color: #333333;
+        font-size: 2rem;
+        line-height: 2rem; }
+        @media only screen and (max-width: 991px) {
+          .cp-architect-card.typ-home-building .detail-wrap .location-item .details {
+            font-size: 1.6rem; } }
+      .cp-architect-card.typ-home-building .detail-wrap .detail-right {
+        border: 1px solid #333333;
+        border-radius: 0.6rem;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem;
+        padding: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .cp-architect-card.typ-home-building .detail-wrap .detail-right .icon {
+          color: #333333;
+          font-size: 1.6rem; }
 
 .w-100 {
   width: 100%; }

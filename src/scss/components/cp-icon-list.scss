@@ -1,0 +1,62 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-icon-list {
+ border-bottom: 1px solid #DEDEDE;
+ padding-bottom: 4rem;
+    .title {
+        font-size: 2rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        margin-bottom: 1.6rem;
+        @media only screen and (max-width: $media-sm) {   font-size: 1.6rem;}
+    }
+
+    .cp-icon-list-wrap {
+        display: flex;
+        gap: 4rem;
+        @media only screen and (max-width: $media-sm) { gap: 2rem;}
+        .list-item {
+            font-size: 1.4rem;
+            color: $clr-base;
+            max-width: 8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .icon {
+                width: 6.4rem;
+                height: 6.4rem;
+                font-size: 3.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include border-radius(50%);
+                margin-bottom: 1.6rem;
+
+                &.orange {
+                    color: #F16933;
+                    background: #FDECE5;
+                }
+
+                &.yellow {
+                    color: #FFB800;
+                    background: #FFF8E5;
+
+                }
+
+                &.green {
+                    color: #00A441;
+                    background: #E5F6EC;
+                }
+
+                &.blue {
+                    color: #3D7EDB;
+                    background: #ECF2FB;
+                }
+            }
+        }
+    }
+}

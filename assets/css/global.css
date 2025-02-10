@@ -2022,6 +2022,24 @@ p {
       background-color: #fff; } }
   .bs-sec .typ-show {
     display: flex !important; }
+  .bs-sec.typ-planning-stage .sub-title {
+    font-family: "Poppins Medium";
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 8px; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-planning-stage .sub-title {
+        font-size: 1.2rem; } }
+  .bs-sec.typ-planning-stage .sec-title {
+    margin-bottom: 8px; }
+  .bs-sec.typ-planning-stage .desc {
+    font-size: 1.6rem;
+    color: #333333;
+    line-height: 2.8rem; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-planning-stage .desc {
+        font-size: 1.4rem;
+        line-height: 2.4rem; } }
 
 .btn {
   display: inline-block;

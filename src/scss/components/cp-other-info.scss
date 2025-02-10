@@ -166,8 +166,12 @@
         margin-bottom: 0;
         border-bottom: 1px solid #DEDEDE;
         padding-bottom: 3.2rem;
-        @media only screen and (max-width: $media-mobile) {margin: 0 -1.6rem;
-            padding: 1.6rem 1.6rem 3.2rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+            margin: 0 -1.6rem;
+            padding: 1.6rem 1.6rem 3.2rem;
+        }
+
         .other-info-list {
             .other-info-item {
                 margin-bottom: 0;
@@ -207,5 +211,25 @@
             }
         }
 
+    }
+
+    &.typ-common-questions {
+        .other-info-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            @media only screen and (max-width: $media-sm) {flex-direction: column; gap: 1.6rem;}
+            .other-info-item{
+                flex: 0 0 calc(50% - 1rem);
+                max-width: calc(50% - 1rem);
+                margin-bottom: 0;
+                font-size: 1.4rem;
+                
+                @media only screen and (max-width: $media-sm) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }

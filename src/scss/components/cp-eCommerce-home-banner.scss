@@ -1207,6 +1207,7 @@
             }
         }
     }
+
     //   this section added for Estimated building cost - calculator result  start
     &.typ-calculator-result {
         .feature-type-2 {
@@ -1386,12 +1387,14 @@
 
         }
     }
+
     //   this section added for Estimated building cost - calculator result  end
     &.typ-home-building {
         background-color: transparent;
         padding: 0 0 2rem 0;
         margin-bottom: 2rem;
         border-bottom: 1px solid #DEDEDE;
+
         .feature-type-2 {
             gap: 2rem;
             flex-wrap: wrap;
@@ -1405,7 +1408,10 @@
             order: initial !important;
             height: 13rem;
             width: 23.1%;
-            @media only screen and (max-width: $media-mobile) { width: 47.9%;}
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 47.9%;
+            }
 
             .feature-card {
                 background-color: #fff;
@@ -1414,7 +1420,7 @@
                     font-size: 1.4rem;
                     text-transform: capitalize;
                     max-width: 100%;
-          
+
                 }
 
                 .f-img {
@@ -1477,6 +1483,104 @@
 
             }
 
+        }
+    }
+
+    &.typ-mood-board {
+        background-color: #fff;
+        padding: 0;
+        height: 100%;
+        padding-top: 24px;
+        margin: 0;
+
+        .feature {
+            height: 100%;
+
+            @media only screen and (max-width: $media-sm) {
+                height: 136px;
+            }
+
+            .feature-item {
+                order: initial;
+                width: 100%;
+                height: 100%;
+
+                .feature-card {
+                    padding: 4rem 2.4rem;
+
+                    @media only screen and (max-width: $media-sm) {
+                        padding: 1.6rem;
+                    }
+                }
+
+                .cont-wrap {
+                    position: absolute;
+                    bottom: 0;
+
+                    @media only screen and (max-width: $media-sm) {
+                        position: static;
+                    }
+                }
+
+                .f-desc {
+                    font-size: 2rem;
+
+                    @media only screen and (max-width: $media-sm) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .f-title {
+                    text-transform: capitalize;
+                    font-size: 2.8rem;
+                    max-width: 100%;
+                    line-height: 4rem;
+                    margin-bottom: 1.2rem;
+
+                    @media only screen and (max-width: $media-sm) {
+                        font-size: 1.6rem;
+                        max-width: 58%;
+                        line-height: 2.4rem;
+                    }
+                }
+
+                .f-img {
+                    position: absolute;
+                    top: 0;
+                    bottom: auto;
+                    right: 0;
+                    width: 22.6rem;
+                    height: 22.6rem;
+                    max-width: 22.6rem;
+                    max-height: 22.6rem;
+                    z-index: 1;
+
+                    @media only screen and (max-width: $media-sm) {
+                        width: 12.6rem;
+                        height: 12.6rem;
+                        max-width: 12.6rem;
+                        max-height: 12.6rem;
+                    }
+
+                    &::after {
+                        background: #FFF8E5;
+                        width: 22.6rem;
+                        height: 22.6rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: -28px;
+                        top: -23px;
+                        content: '';
+                        opacity: 1;
+                        z-index: -1;
+
+                        @media only screen and (max-width: $media-sm) {
+                            width: 14.6rem;
+                            height: 14.6rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
