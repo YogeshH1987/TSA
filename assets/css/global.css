@@ -3648,6 +3648,9 @@ p {
     padding-bottom: 8rem; }
     .bs-swiper.typ-feature-banner .swiper-slide {
       width: 19rem; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.typ-feature-banner.pb-0 {
+        padding-bottom: 0; } }
   .bs-swiper.typ-why-tiscon-nav .swiper-slide, .bs-swiper.typ-why-tiscon .swiper-slide {
     width: 29.5rem;
     margin-right: 2rem; }

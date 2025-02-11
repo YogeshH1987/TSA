@@ -744,6 +744,11 @@
     .swiper-slide {
       width: 19rem;
     }
+
+    &.pb-0{
+      @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 0;}
+    }
   }
 
   &.typ-why-tiscon-nav,
