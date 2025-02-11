@@ -479,8 +479,6 @@
         overflow: hidden; }
     .lyt-grid.typ-explore-style .grid-col-2 {
       width: auto;
-      flex: 0 0 24%;
-      max-width: 24%;
       flex: 0 0 calc(24% - 1rem);
       max-width: calc(24% - 1rem); }
       @media only screen and (max-width: 768px) {

@@ -10,7 +10,8 @@
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
   -moz-border-radius: 1.2rem;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fff; }
   .cp-recommend .img-wrap {
     width: 10.4rem;
     flex: 0 0 10.4rem; }

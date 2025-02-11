@@ -47,6 +47,12 @@
         .cp-icon-list .cp-icon-list-wrap .list-item .icon.yellow {
           color: #FFB800;
           background: #FFF8E5; }
+        .cp-icon-list .cp-icon-list-wrap .list-item .icon.pink {
+          color: #DB3657;
+          background: #FAE6EA; }
+        .cp-icon-list .cp-icon-list-wrap .list-item .icon.purple {
+          color: #5A245A;
+          background: #EEE9EE; }
         .cp-icon-list .cp-icon-list-wrap .list-item .icon.green {
           color: #00A441;
           background: #E5F6EC; }

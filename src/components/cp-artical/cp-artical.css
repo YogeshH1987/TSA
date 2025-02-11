@@ -99,5 +99,34 @@
         flex-direction: initial; } }
     .cp-artical.typ-col-6 .artical-list-main .artical-list .img-wrap {
       height: auto; }
+    .cp-artical.typ-col-6 .artical-list-main .artical-list .cont-wrap .desc {
+      -webkit-line-clamp: 2; }
+.cp-artical.typ-col-3 .artical-list-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; }
+  @media only screen and (max-width: 991px) {
+    .cp-artical.typ-col-3 .artical-list-main {
+      flex-direction: column; } }
+  .cp-artical.typ-col-3 .artical-list-main .artical-list {
+    border: 1px solid #DEDEDE;
+    padding-bottom: 2.4rem;
+    margin: 0;
+    padding: 1.2rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    flex: 0 0 calc(33% - 1rem);
+    max-width: calc(33% - 1rem);
+    background-color: #fff; }
+    @media only screen and (max-width: 991px) {
+      .cp-artical.typ-col-3 .artical-list-main .artical-list {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-direction: initial; } }
+    .cp-artical.typ-col-3 .artical-list-main .artical-list .img-wrap {
+      width: 16rem; }
+    .cp-artical.typ-col-3 .artical-list-main .artical-list .cont-wrap .desc {
+      -webkit-line-clamp: 2; }
 
 /*# sourceMappingURL=cp-artical.css.map */

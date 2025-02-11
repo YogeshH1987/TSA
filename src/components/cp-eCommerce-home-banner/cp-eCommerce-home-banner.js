@@ -2,11 +2,14 @@ let swiper;
 
 $(document).ready(function () {
     handleResponsiveFeatures();
-    category()
+    category();
+    homeBuilding()
 });
 
 $(window).resize(function () {
     handleResponsiveFeatures();
+    category();
+    homeBuilding()
 });
 
 function handleResponsiveFeatures() {
@@ -92,6 +95,31 @@ function category() {
             },
             375: {
                 slidesPerView: 2.3,
+            }
+        }
+    });
+
+}
+
+function homeBuilding() {
+    swiper = new Swiper(".js-home-building", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: false,
+        navigation: {
+            nextEl: ".swiper-button-next.feature-next",
+            prevEl: ".swiper-button-prev.feature-prev",
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+            },
+            1028: {
+                slidesPerView: 3
+            },
+            375: {
+                slidesPerView: 2.2,
             }
         }
     });

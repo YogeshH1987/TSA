@@ -291,5 +291,29 @@
       justify-content: center;
       width: 100%;
       height: 100%; }
+    .cp-budget-tracker.typ-home-building.typ-vertical {
+      margin-top: 0; }
+      .cp-budget-tracker.typ-home-building.typ-vertical .cp-title {
+        flex-wrap: wrap; }
+        .cp-budget-tracker.typ-home-building.typ-vertical .cp-title .icon-wrap {
+          height: 32px;
+          width: 32px; }
+        .cp-budget-tracker.typ-home-building.typ-vertical .cp-title .title {
+          font-size: 1.6rem; }
+        .cp-budget-tracker.typ-home-building.typ-vertical .cp-title .budget-price {
+          margin-left: 40px;
+          width: 100%;
+          font-size: 2rem; }
+      .cp-budget-tracker.typ-home-building.typ-vertical .budget-details {
+        flex-direction: column;
+        gap: 6px; }
+        .cp-budget-tracker.typ-home-building.typ-vertical .budget-details .left-sec {
+          width: 100%; }
+        .cp-budget-tracker.typ-home-building.typ-vertical .budget-details .right-sec {
+          width: 100%; }
+          .cp-budget-tracker.typ-home-building.typ-vertical .budget-details .right-sec .breakup-wrap {
+            flex-direction: initial; }
+            .cp-budget-tracker.typ-home-building.typ-vertical .budget-details .right-sec .breakup-wrap .breakup {
+              padding: 5px; }
 
 /*# sourceMappingURL=cp-budget-tracker.css.map */
