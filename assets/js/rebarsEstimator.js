@@ -41,7 +41,7 @@ TSA.RebarsCalculator = {
             renderer: 'svg',
             loop: false,  // Change to `true` if you want it to loop
             autoplay: false,
-            path: 'http://localhost:8000/components/cp-rebar-estimator/json/verticalBuilding-feb3.json'  // Update with the correct JSON path
+            path: 'http://localhost:8000/components/cp-rebar-estimator/json/Artboard-1.json'  // Update with the correct JSON path
         });
     
         // Initialize noUiSlider
