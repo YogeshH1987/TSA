@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
     <link rel="stylesheet" href="/css/plp.css" />
     <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
@@ -27,6 +28,12 @@
     <link rel="stylesheet" href="/components/cp-video/cp-video.css" />
     <link rel="stylesheet" href="/components/cp-artical/cp-artical.css" />
     <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
+    <link rel="stylesheet" href="/components/cp-other-info/cp-other-info.css" />
+    <link rel="stylesheet" href="/components/cp-icon-list/cp-icon-list.css" />
+    <link rel="stylesheet" href="/components/cp-design-card/cp-design-card.css" />
+    <link rel="stylesheet" href="../../components/cp-calculator-box/cp-calculator-box.css" />
+    <link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />
+    <link rel="stylesheet" href="/components/cp-budget-tracker/cp-budget-tracker.css" />
 </head>
 
 <body>
@@ -138,21 +145,58 @@
                 </div>
             </div>
         </section>
-
+        <section class="bs-sec typ-planning-stage">
+            <div class="container">
+                <div class="sec-head">
+                    <p class="sub-title">
+                        ALL YOU NEED TO KNOW
+                    </p>
+                    <h2 class="sec-title">Planning stage</h2>
+                    <p class="desc">Planning your home is an exciting journey, and with the right guidance, it can be
+                        stress-free and
+                        enjoyable. </p>
+                    <p class="desc">This guide will help you plan every detail, from budget to design, ensuring a solid
+                        foundation for your dream home.</p>
+                </div>
+                <div class="sec-cont">
+                    <div class="cp-icon-list">
+                        <h3 class="title">This guide will help you</h3>
+                        <ul class="cp-icon-list-wrap">
+                            <li class="list-item">
+                                <div class="icon icon-cash orange"></div>
+                                Estimate costs
+                            </li>
+                            <li class="list-item">
+                                <div class="icon icon-pencil yellow"></div>
+                                Choose designs
+                            </li>
+                            <li class="list-item">
+                                <div class="icon icon-profile green"></div>
+                                Find the right expert
+                            </li>
+                            <li class="list-item">
+                                <div class="icon icon-success blue"></div>
+                                Stay organised
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Related videos -->
-        <section class="bs-sec">
+        <section class="bs-sec typ-no-bottom-padding">
             <div class="container">
                 <div class="sec-head">
                     <h2 class="sec-title">Understand your costs</h2>
                 </div>
                 <div class="sec-cont">
 
-                    <div class="lyt-grid">
+                    <div class="lyt-grid typ-col-2">
                         <div class="grid-col">
-                            <div class="cp-eCommerce-home-banner typ-home-building">
+                            <div class="cp-eCommerce-home-banner typ-home-building-stage">
                                 <div class="feature-type-2">
-                                    <div class="feature-item">
+                                    <div class="feature-item red-card">
                                         <a href="#" class="feature-card">
                                             <h2 class="f-title">BUILDING COST<br> ESTIMATOR</h2>
                                             <div class="f-img">
@@ -161,7 +205,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="feature-item">
+                                    <div class="feature-item blue-card">
                                         <a href="#" class="feature-card">
                                             <h2 class="f-title">HOME LOAN EMI <br>CALCULATOR</h2>
                                             <div class="f-img">
@@ -172,8 +216,37 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="artical-list-wrap">
+                            <div class="cp-artical">
                                 <ul class="artical-list-main">
+                                    <li class="artical-list">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../../components/cp-blog-detail/images/blog1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../../components/cp-blog-detail/images/blog1.png">
+                                                <img src="../../components/cp-blog-detail/images/blog1.png" alt="blog">
+                                            </picture>
+                                            <ul class="tag-list typ-3">
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-unfill-like js-add-favorite"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cont-wrap">
+                                            <h3 class="title">BUDGET HOME</h3>
+                                            <p class="desc">
+                                                Finding your loan match: Expert advice for selecting the perfect home
+                                                loan selecting the perfect home
+                                                loan</p>
+                                            <ul class="tag-list">
+                                                <li class="tag-item">
+                                                    <span class="date-time">20 Dec 2024 </span>
+                                                    <span class="date-time"> 5 mins </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                     <li class="artical-list">
                                         <div class="img-wrap">
                                             <picture>
@@ -278,6 +351,90 @@
                                 <div class="content-wrap">
                                     <h3 class="title">DIY ways to design for small spaces</h3>
                                 </div>
+                            </div>
+                            <!-- Budget tracker -->
+
+                            <div class="cp-budget-tracker typ-home-building">
+                                <div class="cp-title">
+                                    <div class="icon-wrap">
+                                        <span class="icon icon-calculator"></span>
+                                    </div>
+                                    <h3 class="title">Budget tracker</h3>
+                                </div>
+                                <div class="budget-details">
+                                    <div class="left-sec"><img src="/images/budgettracker.svg" alt="budgettracker">
+                                    </div>
+                                    <div class="right-sec">
+
+                                        <h2 class="title">Budget amount</h2>
+
+                                        <div class="cp-noui-range-slide noUi-target" data-id="budgetTrackerRange"></div>
+                                        <div class="act-form">
+                                            <input type="text" id="budgetTrackerValue" value="2000000"
+                                                class="input-field">
+                                            <button class="btn budget-btn">Set budget</button>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- Budget tracker pie chart -->
+                            <div class="cp-budget-tracker typ-home-building hide">
+                                <div class="cp-title">
+                                    <div class="icon-wrap">
+                                        <span class="icon icon-rupee"></span>
+                                    </div>
+                                    <h3 class="title">Budget tracker</h3>
+                                    <span class="budget-price">₹20,00,000 <span class="icon icon-edit"></span></span>
+                                </div>
+                                <div class="budget-details">
+                                    <div class="left-sec">
+                                        <div class="pie-chart">
+                                            <div class="progress-container">
+                                                <svg class="progress-ring" width="168" height="168">
+                                                    <circle class="progress-ring-background" cx="84" cy="84" r="74"
+                                                        stroke="#FCDACC" stroke-width="20" fill="transparent" />
+                                                    <circle class="progress-ring-circle" cx="84" cy="84" r="74"
+                                                        stroke="#F16933" stroke-width="20" fill="transparent" />
+                                                </svg>
+                                                <div class="progress-text">85% <br> <span class="text">Spent</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-sec">
+                                        <div class="breakup-wrap">
+                                            <div class="breakup balance">
+                                                <label class="label">Balance</label>
+                                                <div class="amount-wrap">
+                                                    ₹
+                                                    <span class="amount">
+                                                        20,800 </span>
+                                                    <span class="percent">15%</span>
+                                                </div>
+                                            </div>
+                                            <div class="breakup spent">
+                                                <label class="label">Spent</label>
+                                                <div class="amount-wrap">
+                                                    ₹
+                                                    <span class="amount">
+                                                        2,46,000</span>
+                                                    <span class="percent">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="action-wrap">
+                                            <button class="btn">Add expense</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -441,14 +598,16 @@
                 </div>
             </div>
         </section>
+        
         <!-- Explore by styles start -->
-        <section class="bs-sec typ-about-news typ-explore-styles  typ-no-top-padding">
+        <section class="bs-sec typ-about-news  typ-no-top-padding">
             <div class="container">
                 <div class="sec-head">
                     <h2 class="sec-title">Explore by styles</h2>
                     <a href="#" class="btn btn-link view-btn"> View All</a>
                 </div>
                 <div class="sec-cont">
+
                     <div class="cp-tab typ-help-policies">
                         <ul class="tab-list">
                             <li class="tab-item active" data-target="#tab1">
@@ -467,378 +626,205 @@
                                 <h3 class="title">Kerala</h3>
                             </li>
                         </ul>
-                        <div class="tab-container">
-                            <div class="tab-content active" id="tab1">
-                                <div class="bs-swiper js-architech-style typ-nestudio">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="cp-architect-card typ-architect-style">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <img src="../components/cp-architect/images/style1.png"
-                                                            alt="arch-img" class="img">
-                                                    </picture>
-                                                </div>
-                                                <div class="detail-wrap">
-                                                    <h3 class="card-title">Colonial 1</h3>
-                                                    <div class="bottom-sec">
-                                                        <ul class="location-list">
-                                                            <li class="location-item">
-                                                                <ul class="tag-list">
-                                                                    <li class="tag-item">
-                                                                        <span class="tag">3 BHK</span>
-                                                                        <span class="tag">2 floors</span>
-                                                                        <span class="tag">32 lacs</span>
-                                                                        <span class="tag">3150 sq.ft</span>
+                        <div class="lyt-grid typ-explore-style">
+                            <div class="grid-col grid-col-8">
+                                <div class="tab-container">
+                                    <div class="tab-content active" id="tab1">
+                                        <div class="bs-swiper js-explore-style typ-nestudio">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="cp-architect-card typ-architect-style">
+                                                        <div class="img-wrap">
+                                                            <picture>
+                                                                <source media="(max-width:768px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <source media="(max-width:991px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <img src="../components/cp-architect/images/style1.png"
+                                                                    alt="arch-img" class="img">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="detail-wrap">
+                                                            <h3 class="card-title">Colonial 1</h3>
+                                                            <div class="bottom-sec">
+                                                                <ul class="location-list">
+                                                                    <li class="location-item">
+                                                                        <ul class="tag-list">
+                                                                            <li class="tag-item">
+                                                                                <span class="tag">3 BHK</span>
+                                                                                <span class="tag">2 floors</span>
+                                                                                <span class="tag">32 lacs</span>
+                                                                                <span class="tag">3150 sq.ft</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="location-item">
+                                                                        <a href="#" class="link"> View details</a>
                                                                     </li>
                                                                 </ul>
-                                                            </li>
-                                                            <li class="location-item">
-                                                                <a href="#" class="link"> View details</a>
-                                                            </li>
-                                                        </ul>
 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="cp-architect-card typ-architect-style">
+                                                        <div class="img-wrap">
+                                                            <picture>
+                                                                <source media="(max-width:768px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <source media="(max-width:991px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <img src="../components/cp-architect/images/style1.png"
+                                                                    alt="arch-img" class="img">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="detail-wrap">
+                                                            <h3 class="card-title">Colonial 1</h3>
+                                                            <div class="bottom-sec">
+                                                                <ul class="location-list">
+                                                                    <li class="location-item">
+                                                                        <ul class="tag-list">
+                                                                            <li class="tag-item">
+                                                                                <span class="tag">3 BHK</span>
+                                                                                <span class="tag">2 floors</span>
+                                                                                <span class="tag">32 lacs</span>
+                                                                                <span class="tag">3150 sq.ft</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="location-item">
+                                                                        <a href="#" class="link"> View details</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="cp-architect-card typ-architect-style">
+                                                        <div class="img-wrap">
+                                                            <picture>
+                                                                <source media="(max-width:768px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <source media="(max-width:991px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <img src="../components/cp-architect/images/style1.png"
+                                                                    alt="arch-img" class="img">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="detail-wrap">
+                                                            <h3 class="card-title">Colonial 1</h3>
+                                                            <div class="bottom-sec">
+                                                                <ul class="location-list">
+                                                                    <li class="location-item">
+                                                                        <ul class="tag-list">
+                                                                            <li class="tag-item">
+                                                                                <span class="tag">3 BHK</span>
+                                                                                <span class="tag">2 floors</span>
+                                                                                <span class="tag">32 lacs</span>
+                                                                                <span class="tag">3150 sq.ft</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="location-item">
+                                                                        <a href="#" class="link"> View details</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="cp-architect-card typ-architect-style">
+                                                        <div class="img-wrap">
+                                                            <picture>
+                                                                <source media="(max-width:768px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <source media="(max-width:991px)"
+                                                                    srcset="../components/cp-architect/images/style1.png">
+                                                                <img src="../components/cp-architect/images/style1.png"
+                                                                    alt="arch-img" class="img">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="detail-wrap">
+                                                            <h3 class="card-title">Colonial 1</h3>
+                                                            <div class="bottom-sec">
+                                                                <ul class="location-list">
+                                                                    <li class="location-item">
+                                                                        <ul class="tag-list">
+                                                                            <li class="tag-item">
+                                                                                <span class="tag">3 BHK</span>
+                                                                                <span class="tag">2 floors</span>
+                                                                                <span class="tag">32 lacs</span>
+                                                                                <span class="tag">3150 sq.ft</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="location-item">
+                                                                        <a href="#" class="link"> View details</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-architect-card typ-architect-style">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <img src="../components/cp-architect/images/style1.png"
-                                                            alt="arch-img" class="img">
-                                                    </picture>
-                                                </div>
-                                                <div class="detail-wrap">
-                                                    <h3 class="card-title">Colonial 1</h3>
-                                                    <div class="bottom-sec">
-                                                        <ul class="location-list">
-                                                            <li class="location-item">
-                                                                <ul class="tag-list">
-                                                                    <li class="tag-item">
-                                                                        <span class="tag">3 BHK</span>
-                                                                        <span class="tag">2 floors</span>
-                                                                        <span class="tag">32 lacs</span>
-                                                                        <span class="tag">3150 sq.ft</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="location-item">
-                                                                <a href="#" class="link"> View details</a>
-                                                            </li>
-                                                        </ul>
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-architect-card typ-architect-style">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <img src="../components/cp-architect/images/style1.png"
-                                                            alt="arch-img" class="img">
-                                                    </picture>
-                                                </div>
-                                                <div class="detail-wrap">
-                                                    <h3 class="card-title">Colonial 1</h3>
-                                                    <div class="bottom-sec">
-                                                        <ul class="location-list">
-                                                            <li class="location-item">
-                                                                <ul class="tag-list">
-                                                                    <li class="tag-item">
-                                                                        <span class="tag">3 BHK</span>
-                                                                        <span class="tag">2 floors</span>
-                                                                        <span class="tag">32 lacs</span>
-                                                                        <span class="tag">3150 sq.ft</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="location-item">
-                                                                <a href="#" class="link"> View details</a>
-                                                            </li>
-                                                        </ul>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-architect-card typ-architect-style">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-architect/images/style1.png">
-                                                        <img src="../components/cp-architect/images/style1.png"
-                                                            alt="arch-img" class="img">
-                                                    </picture>
-                                                </div>
-                                                <div class="detail-wrap">
-                                                    <h3 class="card-title">Colonial 1</h3>
-                                                    <div class="bottom-sec">
-                                                        <ul class="location-list">
-                                                            <li class="location-item">
-                                                                <ul class="tag-list">
-                                                                    <li class="tag-item">
-                                                                        <span class="tag">3 BHK</span>
-                                                                        <span class="tag">2 floors</span>
-                                                                        <span class="tag">32 lacs</span>
-                                                                        <span class="tag">3150 sq.ft</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="location-item">
-                                                                <a href="#" class="link"> View details</a>
-                                                            </li>
-                                                        </ul>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-
-                            </div>
-                            <div class="tab-content" id="tab2">
-                                <h3 class="content">tab-content 2</h3>
-                            </div>
-                            <div class="tab-content" id="tab3">
-                                <div class="bs-swiper swiper typ-home-style js-home-style">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="cp-design-card">
-                                                <div class="img-wrap">
-                                                    <img src="../components/cp-design-card/images/style-1.png"
-                                                        alt="style-img" />
-                                                </div>
-                                                <div class="content-wrap">
-                                                    <h3 class="desg-name">Prasinos</h3>
-                                                    <ul class="detail-list">
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Area</h4>
-                                                            <p class="detail-desc">3150 Sq. ft.</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Floors</h4>
-                                                            <p class="detail-desc">2</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Type</h4>
-                                                            <p class="detail-desc">5 BHK</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Est. budget</h4>
-                                                            <p class="detail-desc">32.5 lacs</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-design-card">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-design-card/images/style-2.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-design-card/images/style-2.png">
-                                                        <img src="../components/cp-design-card/images/style-2.png"
-                                                            alt="style-img" />
-                                                    </picture>
-                                                </div>
-                                                <div class="content-wrap">
-                                                    <h3 class="desg-name">Natachandra</h3>
-                                                    <ul class="detail-list">
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Area</h4>
-                                                            <p class="detail-desc">3150 Sq. ft.</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Floors</h4>
-                                                            <p class="detail-desc">2</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Type</h4>
-                                                            <p class="detail-desc">5 BHK</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Est. budget</h4>
-                                                            <p class="detail-desc">32.5 lacs</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-design-card">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-design-card/images/style-3.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-design-card/images/style-3.png">
-                                                        <img src="../components/cp-design-card/images/style-3.png"
-                                                            alt="style-img" />
-                                                    </picture>
-                                                </div>
-                                                <div class="content-wrap">
-                                                    <h3 class="desg-name">Arcadia</h3>
-                                                    <ul class="detail-list">
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Area</h4>
-                                                            <p class="detail-desc">3150 Sq. ft.</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Floors</h4>
-                                                            <p class="detail-desc">2</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Type</h4>
-                                                            <p class="detail-desc">5 BHK</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Est. budget</h4>
-                                                            <p class="detail-desc">32.5 lacs</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-design-card">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-design-card/images/style-4.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-design-card/images/style-4.png">
-                                                        <img src="../components/cp-design-card/images/style-4.png"
-                                                            alt="style-img" />
-                                                    </picture>
-                                                </div>
-                                                <div class="content-wrap">
-                                                    <h3 class="desg-name">Hasta - Hand of god</h3>
-                                                    <ul class="detail-list">
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Area</h4>
-                                                            <p class="detail-desc">3150 Sq. ft.</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Floors</h4>
-                                                            <p class="detail-desc">2</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Type</h4>
-                                                            <p class="detail-desc">5 BHK</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Est. budget</h4>
-                                                            <p class="detail-desc">32.5 lacs</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-design-card">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-design-card/images/style-1.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-design-card/images/style-1.png">
-                                                        <img src="../components/cp-design-card/images/style-1.png"
-                                                            alt="style-img" />
-                                                    </picture>
-                                                </div>
-                                                <div class="content-wrap">
-                                                    <h3 class="desg-name">Prasinos</h3>
-                                                    <ul class="detail-list">
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Area</h4>
-                                                            <p class="detail-desc">3150 Sq. ft.</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Floors</h4>
-                                                            <p class="detail-desc">2</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Type</h4>
-                                                            <p class="detail-desc">5 BHK</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Est. budget</h4>
-                                                            <p class="detail-desc">32.5 lacs</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="cp-design-card">
-                                                <div class="img-wrap">
-                                                    <picture>
-                                                        <source media="(max-width:768px)"
-                                                            srcset="../components/cp-design-card/images/style-2.png">
-                                                        <source media="(max-width:991px)"
-                                                            srcset="../components/cp-design-card/images/style-2.png">
-                                                        <img src="../components/cp-design-card/images/style-2.png"
-                                                            alt="style-img" />
-                                                    </picture>
-                                                </div>
-                                                <div class="content-wrap">
-                                                    <h3 class="desg-name">Natachandra</h3>
-                                                    <ul class="detail-list">
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Area</h4>
-                                                            <p class="detail-desc">3150 Sq. ft.</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Floors</h4>
-                                                            <p class="detail-desc">2</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Type</h4>
-                                                            <p class="detail-desc">5 BHK</p>
-                                                        </li>
-                                                        <li class="detail-item">
-                                                            <h4 class="detail-title">Est. budget</h4>
-                                                            <p class="detail-desc">32.5 lacs</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="tab-content" id="tab2">
+                                        <h3 class="content">tab-content 2</h3>
+                                    </div>
+                                    <div class="tab-content" id="tab3">
+                                        <h3 class="content">tab-content 2</h3>
+                                    </div>
+                                    <div class="tab-content" id="tab4">
+                                        <h3 class="content">tab-content 4</h3>
+                                    </div>
+                                    <div class="tab-content" id="tab5">
+                                        <h3 class="content">tab-content 5</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-content" id="tab4">
-                                <h3 class="content">tab-content 4</h3>
-                            </div>
-                            <div class="tab-content" id="tab5">
-                                <h3 class="content">tab-content 5</h3>
+                            <div class="grid-col grid-col-2">
+                                <div class="cp-eCommerce-home-banner typ-mood-board">
+                                    <div class="feature">
+                                        <div class="feature-item">
+                                            <a href="#" class="feature-card">
+                                                <div class="cont-wrap">
+                                                    <p class="f-desc">Inspiration </p>
+                                                    <h2 class="f-title">
+                                                        Get inspired by mood boards</h2>
+                                                    <div class="btn-wrap">
+                                                        <button class="btn btn-link view-btn"> Explore now<p></p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="f-img">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-eCommerce-home-banner/images/moodboards.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-eCommerce-home-banner/images/moodboards.png">
+                                                        <img src="../../components/cp-eCommerce-home-banner/images/moodboards.png"
+                                                            alt="moodboards">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--Experts who will bring your dream to life starts   -->
         <section class="bs-sec">
             <div class="container border-bottom">
@@ -846,86 +832,87 @@
                     <h2 class="sec-title">Experts who will bring your dream to life</h2>
                 </div>
                 <div class="sec-cont">
-                    <div class="lyt-grid typ-col-6">
-                        <div class="grid-col">
-                            <div class="cp-architect-card typ-sp-card">
-                                <div class="img-wrap">
-                                    <picture>
-                                        <source media="(max-width:768px)"
-                                            srcset="../components/cp-architect/images/istockphoto-1.png">
-                                        <source media="(max-width:991px)"
-                                            srcset="../components/cp-architect/images/istockphoto-1.png">
-                                        <img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img"
-                                            class="img" />
-                                    </picture>
+                    <div class="bs-swiper js-experts  p-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cp-architect-card typ-home-building">
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-architect/images/istockphoto-1.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-architect/images/istockphoto-1.png">
+                                            <img src="../components/cp-architect/images/istockphoto-1.png"
+                                                alt="arch-img" class="img" />
+                                        </picture>
+                                    </div>
+                                    <div class="detail-wrap">
+                                        <div class="bottom-sec">
+                                            <ul class="location-list">
+                                                <li class="location-item">
+                                                    <span class="details">Architects & engineers</span>
+                                                </li>
+                                            </ul>
+                                            <a class="detail-right">
+                                                <span class="icon icon-arrow"></span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="detail-wrap">
-                                    <div class="bottom-sec">
-                                        <ul class="location-list">
-                                            <li class="location-item">
-                                                <span class="details">Architects & engineers</span>
-                                            </li>
-                                        </ul>
-                                        <a class="detail-right">
-                                            <span class="icon icon-arrow"></span>
-                                        </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cp-architect-card typ-home-building">
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-architect/images/istockphoto-1.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-architect/images/istockphoto-1.png">
+                                            <img src="../components/cp-architect/images/istockphoto-1.png"
+                                                alt="arch-img" class="img" />
+                                        </picture>
+                                    </div>
+                                    <div class="detail-wrap">
+                                        <div class="bottom-sec">
+                                            <ul class="location-list">
+                                                <li class="location-item">
+                                                    <span class="details">Contractors & masons</span>
+                                                </li>
+                                            </ul>
+                                            <a class="detail-right">
+                                                <span class="icon icon-arrow"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cp-architect-card typ-home-building">
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-architect/images/istockphoto-1.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-architect/images/istockphoto-1.png">
+                                            <img src="../components/cp-architect/images/istockphoto-1.png"
+                                                alt="arch-img" class="img" />
+                                        </picture>
+                                    </div>
+                                    <div class="detail-wrap">
+                                        <div class="bottom-sec">
+                                            <ul class="location-list">
+                                                <li class="location-item">
+                                                    <span class="details">Fabricators</span>
+                                                </li>
+                                            </ul>
+                                            <a class="detail-right">
+                                                <span class="icon icon-arrow"></span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-col">
-                            <div class="cp-architect-card typ-sp-card">
-                                <div class="img-wrap">
-                                    <picture>
-                                        <source media="(max-width:768px)"
-                                            srcset="../components/cp-architect/images/istockphoto-1.png">
-                                        <source media="(max-width:991px)"
-                                            srcset="../components/cp-architect/images/istockphoto-1.png">
-                                        <img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img"
-                                            class="img" />
-                                    </picture>
-                                </div>
-                                <div class="detail-wrap">
-                                    <div class="bottom-sec">
-                                        <ul class="location-list">
-                                            <li class="location-item">
-                                                <span class="details">Contractors & masons</span>
-                                            </li>
-                                        </ul>
-                                        <a class="detail-right">
-                                            <span class="icon icon-arrow"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-col">
-                            <div class="cp-architect-card typ-sp-card">
-                                <div class="img-wrap">
-                                    <picture>
-                                        <source media="(max-width:768px)"
-                                            srcset="../components/cp-architect/images/istockphoto-1.png">
-                                        <source media="(max-width:991px)"
-                                            srcset="../components/cp-architect/images/istockphoto-1.png">
-                                        <img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img"
-                                            class="img" />
-                                    </picture>
-                                </div>
-                                <div class="detail-wrap">
-                                    <div class="bottom-sec">
-                                        <ul class="location-list">
-                                            <li class="location-item">
-                                                <span class="details">Fabricators</span>
-                                            </li>
-                                        </ul>
-                                        <a class="detail-right">
-                                            <span class="icon icon-arrow"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
@@ -1004,7 +991,74 @@
                 </div>
             </div>
         </section>
-
+        <section class="bs-sec typ-no-bottom-padding">
+            <div class="container">
+                <div class="sec-cont">
+                    <div class="cp-artical typ-col-6">
+                        <ul class="artical-list-main">
+                            <li class="artical-list">
+                                <div class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../../components/cp-blog-detail/images/blog1.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../../components/cp-blog-detail/images/blog1.png">
+                                        <img src="../../components/cp-blog-detail/images/blog1.png" alt="blog">
+                                    </picture>
+                                    <ul class="tag-list typ-3">
+                                        <li class="tag-item">
+                                            <button class="tag-link icon-unfill-like js-add-favorite"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-wrap">
+                                    <h3 class="title">BUDGET HOME</h3>
+                                    <p class="desc">
+                                        Finding your loan match: Expert advice for selecting the perfect home
+                                        loan selecting the perfect home
+                                        loan</p>
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="date-time">20 Dec 2024 </span>
+                                            <span class="date-time"> 5 mins </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="artical-list">
+                                <div class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../../components/cp-blog-detail/images/blog1.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../../components/cp-blog-detail/images/blog1.png">
+                                        <img src="../../components/cp-blog-detail/images/blog1.png" alt="blog">
+                                    </picture>
+                                    <ul class="tag-list typ-3">
+                                        <li class="tag-item">
+                                            <button class="tag-link icon-unfill-like js-add-favorite"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cont-wrap">
+                                    <h3 class="title">BUDGET HOME</h3>
+                                    <p class="desc">
+                                        Finding your loan match: Expert advice for selecting the perfect home
+                                        loan selecting the perfect home
+                                        loan</p>
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="date-time">20 Dec 2024 </span>
+                                            <span class="date-time"> 5 mins </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- customer testimonial start -->
         <section class="bs-sec typ-gray-bg typ-curve typ-customers ">
             <div class="container">
@@ -1156,6 +1210,26 @@
             </div>
         </section>
 
+        <section class="bs-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Common questions</h2>
+                </div>
+
+                <div class="sec-cont">
+                    <div class="cp-other-info typ-common-questions">
+                        <ul class="other-info-list">
+                            <li class="other-info-item">Are you ready to build your own home?</li>
+                            <li class="other-info-item">Can you navigate plot registration like a pro?</li>
+                            <li class="other-info-item">What's your loan approval readiness score?</li>
+                            <li class="other-info-item">How to easily obtain a building plan approval</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <!-- Footer Start -->
     <footer>
@@ -1173,7 +1247,7 @@
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
     <script src="/js/vendor/isotope.pkgd.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
@@ -1181,7 +1255,9 @@
     <script src="/components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
     <script src="../../components/cp-architect/cp-architect.js"></script>
     <script src="/components/cp-design-card/cp-design-card.js"></script>
+    <script src="/js/budget-tracker.js"></script>
     <!-- endbuild -->
+
 </body>
 
 </html>

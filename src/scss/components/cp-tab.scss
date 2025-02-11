@@ -640,6 +640,9 @@
         }
       }
     }
+    .tab-container{
+      .desc{ color: $clr-base; margin-bottom: 3.2rem;}
+    }
   }
 
   &.typ-about {

@@ -407,6 +407,9 @@
       color: #fff;
       text-shadow: #fff 0.9px 0 0.9px;
       background: #3D7EDB; }
+  .cp-tab.typ-sp-landing .tab-container .desc {
+    color: #333333;
+    margin-bottom: 3.2rem; }
 .cp-tab.typ-about .tab-item:hover .title, .cp-tab.typ-about .tab-item.active .title {
   text-shadow: #fff 0.9px 0 0.9px !important; }
 .cp-tab.typ-about-timeline .tab-list .tab-item .title {

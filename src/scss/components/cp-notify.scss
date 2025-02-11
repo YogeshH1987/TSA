@@ -381,6 +381,7 @@
         }
     }
     &.typ-quiz{ padding: 2.4rem 15.4rem 2.4rem 2.4rem; margin-bottom: 3.2rem;
+        @media only screen and (max-width: $media-mobile) {    padding: 2.4rem 5.4rem 2.4rem 2.4rem;}
         .notify-title{ font-size: 2.8rem;}
     }
 }

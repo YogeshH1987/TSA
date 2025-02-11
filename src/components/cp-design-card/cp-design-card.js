@@ -2,12 +2,14 @@ var winWidth = $(window).width();
 
 $(document).ready(function() {
     homeStyleSlider();
-    architechStyleSlider()
+    architechStyleSlider();
+    exporebystyle()
 });
 
 $(window).resize(function() {
     homeStyleSlider();
-    architechStyleSlider()
+    architechStyleSlider();
+    exporebystyle()
 });
 
 function homeStyleSlider() {
@@ -48,6 +50,35 @@ function architechStyleSlider() {
     });
 }
 
+function exporebystyle() {
+  var swiper = new Swiper(".js-explore-style", {
+      loop: false,
+      slidesPerView: 1.2,
+      spaceBetween: 12,
+      navigation: false,
+      breakpoints: {
+          // when window width is >= 320px
+          768: {
+            slidesPerView: 1.2,
+            spaceBetween: 12
+          },
+          992: {
+            slidesPerView: 1.2,
+            spaceBetween: 12
+          },
+          // when window width is >= 480px
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 12
+          },
+          // when window width is >= 640px
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }
+  });
+}
 // roated image description page
 $(document).ready(function(){
   // Event listener for rotating images

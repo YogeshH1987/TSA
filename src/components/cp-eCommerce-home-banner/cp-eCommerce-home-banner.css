@@ -768,5 +768,149 @@
         background-color: #B1CBF1; }
       .cp-eCommerce-home-banner.typ-home-building .feature-item:nth-child(2) .feature-card .f-img .icon {
         color: #6498E2; }
+  .cp-eCommerce-home-banner.typ-mood-board {
+    background-color: #fff;
+    padding: 0;
+    height: 100%;
+    padding-top: 24px;
+    margin: 0; }
+    .cp-eCommerce-home-banner.typ-mood-board .feature {
+      height: 100%; }
+      @media only screen and (max-width: 991px) {
+        .cp-eCommerce-home-banner.typ-mood-board .feature {
+          height: 136px; } }
+      .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item {
+        order: initial;
+        width: 100%;
+        height: 100%; }
+        .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .feature-card {
+          padding: 4rem 2.4rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .feature-card {
+              padding: 1.6rem; } }
+        .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .cont-wrap {
+          position: absolute;
+          bottom: 4rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .cont-wrap {
+              position: static; } }
+        .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-desc {
+          font-size: 2rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-desc {
+              font-size: 1.4rem; } }
+        .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-title {
+          text-transform: capitalize;
+          font-size: 2.8rem;
+          max-width: 100%;
+          line-height: 4rem;
+          margin-bottom: 1.2rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-title {
+              font-size: 1.6rem;
+              max-width: 58%;
+              line-height: 2.4rem; } }
+        .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-img {
+          position: absolute;
+          top: 0;
+          bottom: auto;
+          right: 0;
+          width: 22.6rem;
+          height: 22.6rem;
+          max-width: 22.6rem;
+          max-height: 22.6rem;
+          z-index: 1; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-img {
+              width: 12.6rem;
+              height: 12.6rem;
+              max-width: 12.6rem;
+              max-height: 12.6rem; } }
+          .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-img::after {
+            background: #FFF8E5;
+            width: 22.6rem;
+            height: 22.6rem;
+            border-radius: 50%;
+            position: absolute;
+            right: -28px;
+            top: -23px;
+            content: '';
+            opacity: 1;
+            z-index: -1; }
+            @media only screen and (max-width: 991px) {
+              .cp-eCommerce-home-banner.typ-mood-board .feature .feature-item .f-img::after {
+                width: 14.6rem;
+                height: 14.6rem; } }
+  .cp-eCommerce-home-banner.typ-home-building-stage {
+    background-color: transparent;
+    padding: 0 0 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #DEDEDE; }
+    .cp-eCommerce-home-banner.typ-home-building-stage .feature-type-2 {
+      gap: 2rem;
+      flex-wrap: wrap; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-home-building-stage .feature-type-2 {
+          gap: 1.2rem; } }
+    .cp-eCommerce-home-banner.typ-home-building-stage .feature-item {
+      order: initial !important;
+      height: 13rem;
+      width: 31%; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-home-building-stage .feature-item {
+          width: 47.9%; } }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item .feature-card {
+        background-color: #fff; }
+        .cp-eCommerce-home-banner.typ-home-building-stage .feature-item .feature-card .f-title {
+          font-size: 1.4rem;
+          text-transform: capitalize;
+          max-width: 100%; }
+        .cp-eCommerce-home-banner.typ-home-building-stage .feature-item .feature-card .f-img {
+          min-width: 9rem;
+          min-height: 9.5rem;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          z-index: 1; }
+          .cp-eCommerce-home-banner.typ-home-building-stage .feature-item .feature-card .f-img:after {
+            width: 10rem;
+            height: 10rem;
+            right: -15px;
+            bottom: -15px;
+            border-radius: 50%;
+            position: absolute;
+            content: '';
+            opacity: 30%;
+            z-index: -1; }
+          .cp-eCommerce-home-banner.typ-home-building-stage .feature-item .feature-card .f-img .icon {
+            font-size: 5.6rem;
+            width: 4.6rem;
+            height: 3.6rem; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.red-card .f-img::after {
+        background-color: #ED9BAB; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.red-card .f-img .icon {
+        color: #DB3657; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.blue-card .f-img::after {
+        background-color: #B1CBF1; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.blue-card .f-img .icon {
+        color: #6498E2; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.yellow-card .f-img::after {
+        background-color: #FFE399; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.yellow-card .f-img .icon {
+        color: #FFC633; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.green-card .f-img::after {
+        background-color: #99DAB3; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.green-card .f-img .icon {
+        color: #33B667; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.orange-card .f-img::after {
+        background-color: #F8B499; }
+      .cp-eCommerce-home-banner.typ-home-building-stage .feature-item.orange-card .f-img .icon {
+        color: #F16933; }
+    .cp-eCommerce-home-banner.typ-home-building-stage.bs-swiper {
+      margin-bottom: 0;
+      border-bottom: 0; }
+      .cp-eCommerce-home-banner.typ-home-building-stage.bs-swiper .swiper-wrapper {
+        gap: 0rem;
+        flex-wrap: initial; }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */

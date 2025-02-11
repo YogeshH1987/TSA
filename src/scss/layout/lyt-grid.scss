@@ -535,4 +535,43 @@
   &.align-center {
     align-items: center;
   }
+  &.typ-explore-style { 
+
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: initial;
+    gap: 2rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: 0;
+      margin-left: 0;
+      gap: 2rem;
+    }
+    .grid-col-8 {
+      width: auto;
+      flex: 0 0 calc(76% - 1rem);
+      max-width: calc(76% - 1rem);
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+      .bs-swiper{ overflow: hidden;}
+    }
+    .grid-col-2 {
+      width: auto;
+      flex: 0 0 calc(24% - 1rem);
+      max-width: calc(24% - 1rem);
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  }
 }
