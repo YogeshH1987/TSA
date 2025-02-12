@@ -369,6 +369,39 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-business-center:before {
+  content: "\e9a1"; }
+
+.icon-help:before {
+  content: "\e9a3"; }
+
+.icon-listcheck:before {
+  content: "\e9a4"; }
+
+.icon-persontick:before {
+  content: "\e9a5"; }
+
+.icon-quick-reference:before {
+  content: "\e9a6"; }
+
+.icon-star-2:before {
+  content: "\e9a7"; }
+
+.icon-time:before {
+  content: "\e9a8"; }
+
+.icon-verified-user:before {
+  content: "\e9a9"; }
+
+.icon-tools:before {
+  content: "\e99f"; }
+
+.icon-shipping:before {
+  content: "\e99e"; }
+
+.icon-eye-close:before {
+  content: "\e99c"; }
+
 .icon-dashboard:before {
   content: "\e98d"; }
 
@@ -1949,6 +1982,28 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .bs-sec.typ-dashboard {
+    display: flex;
+    position: relative;
+    padding-top: 0; }
+    .bs-sec.typ-dashboard .mb-16 {
+      margin-bottom: 16px; }
+    .bs-sec.typ-dashboard .lyt-dashboard {
+      display: flex;
+      position: relative;
+      justify-content: space-between; }
+      .bs-sec.typ-dashboard .lyt-dashboard .grid-col-lht {
+        width: 294px; }
+      .bs-sec.typ-dashboard .lyt-dashboard .grid-col-rht {
+        width: calc(100% - 318px); }
+    .bs-sec.typ-dashboard .lyt-dashboard-inner {
+      display: flex;
+      position: relative;
+      justify-content: space-between; }
+      .bs-sec.typ-dashboard .lyt-dashboard-inner .grid-col-lht {
+        width: 505px; }
+      .bs-sec.typ-dashboard .lyt-dashboard-inner .grid-col-rht {
+        width: calc(100% - 522px); }
   .bs-sec.typ-explore-styles .btn-wrap {
     gap: 2rem;
     display: flex;

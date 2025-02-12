@@ -1341,6 +1341,44 @@
     }
   }
 
+  &.typ-dashboard {
+    display: flex;
+    position: relative;
+    padding-top: 0;
+
+    .mb-16 {
+      margin-bottom: 16px;
+    }
+
+    .lyt-dashboard {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+
+      .grid-col-lht {
+        width: 294px;
+      }
+
+      .grid-col-rht {
+        width: calc(100% - 318px);
+      }
+    }
+
+    .lyt-dashboard-inner {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+
+      .grid-col-lht {
+        width: 505px;
+      }
+
+      .grid-col-rht {
+        width: calc(100% - 522px);
+      }
+    }
+  }
+
   &.typ-explore-styles {
     .btn-wrap {
       gap: 2rem;

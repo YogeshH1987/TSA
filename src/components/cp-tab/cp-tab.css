@@ -566,6 +566,43 @@
         text-shadow: #333333 0.9px 0 0.9px; }
         .cp-tab.typ-service-provider .tab-list .tab-item:hover .title::after, .cp-tab.typ-service-provider .tab-list .tab-item.active .title::after {
           width: 100%; }
+.cp-tab.typ-my-order {
+  margin-bottom: 3.2rem;
+  margin-top: 0rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-tab.typ-my-order {
+      margin-top: 2rem; } }
+  .cp-tab.typ-my-order .tab-list {
+    border-bottom: 1px solid #DEDEDE; }
+    @media only screen and (max-width: 768px) {
+      .cp-tab.typ-my-order .tab-list {
+        margin: 0 -16px; } }
+    .cp-tab.typ-my-order .tab-list .tab-item {
+      width: 33%;
+      text-align: center; }
+      .cp-tab.typ-my-order .tab-list .tab-item .title {
+        border: 0;
+        position: relative;
+        padding: 1.6rem 4rem;
+        text-transform: capitalize; }
+        @media only screen and (max-width: 768px) {
+          .cp-tab.typ-my-order .tab-list .tab-item .title {
+            padding: 1.6rem 1rem; } }
+        .cp-tab.typ-my-order .tab-list .tab-item .title::after {
+          position: absolute;
+          content: '';
+          background: #D2042D;
+          width: 0%;
+          height: 4px;
+          left: 0;
+          bottom: 0;
+          transition: all ease-in 0.3s; }
+      .cp-tab.typ-my-order .tab-list .tab-item:hover .title, .cp-tab.typ-my-order .tab-list .tab-item.active .title {
+        background: none;
+        color: #333333;
+        text-shadow: #333333 0.9px 0 0.9px; }
+        .cp-tab.typ-my-order .tab-list .tab-item:hover .title::after, .cp-tab.typ-my-order .tab-list .tab-item.active .title::after {
+          width: 100%; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;
