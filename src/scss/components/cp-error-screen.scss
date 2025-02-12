@@ -1,0 +1,78 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-error-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 15rem);
+
+    @media only screen and (max-width: $media-mobile) {
+        height: calc(100vh - 24rem);
+    }
+
+    .img-wrap {
+        width: 20rem;
+        margin-bottom: 4rem;
+        @media only screen and (max-width: $media-mobile) {
+            height: 15.2rem;
+        }
+    }
+
+    .cont-info {
+        max-width: 39.2rem;
+        width: 100%;
+        text-align: center;
+
+        .title {
+            font-size: 2.8rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+            padding-bottom: 0.8rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 2rem;
+            }
+
+        }
+
+        .desc {
+            font-size: 1.6rem;
+            font-family: $font-regular;
+            color: $clr-base;
+            line-height: 2.4rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.4rem;
+            }
+        }
+
+        .btn-wrap {
+            display: flex;
+            flex-direction: column;
+            max-width: 34.3rem;
+            margin: 6.4rem auto 0;
+
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 100%;
+                padding-bottom: 1.6rem;
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0rem auto 0;
+                background-color: #fff;
+            }
+
+            .btn-link {
+                text-decoration: underline;
+                margin-top: 1.6rem;
+
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
