@@ -1996,6 +1996,9 @@ p {
         width: 294px; }
       .bs-sec.typ-dashboard .lyt-dashboard .grid-col-rht {
         width: calc(100% - 318px); }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-dashboard .lyt-dashboard .grid-col-rht {
+            width: 100%; } }
     .bs-sec.typ-dashboard .lyt-dashboard-inner {
       display: flex;
       position: relative;

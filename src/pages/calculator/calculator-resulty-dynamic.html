@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Calculator Result</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/components/cp-rebar-result/cp-rebar-result.css" />
+    <link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
+    <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
+    <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
+    <link rel="stylesheet" href="../../components/cp-price/cp-price.css" />
+    <link rel="stylesheet" href="../../components/cp-table/cp-table.css" />
+    <link rel="stylesheet" href="../../components/cp-blog/cp-blog.css" />
+    <link rel="stylesheet" href="../../components/cp-video-card/cp-video-card.css" />
+    <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
+    <link rel="stylesheet" href="/components/cp-recommend/cp-recommend.css" />
+    <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
+    <link rel="stylesheet" href="/components/cp-rating/cp-rating.css" />
+    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
+    <link rel="stylesheet" href="../../components/cp-model-content/cp-model-content.css" />
+    <link rel="stylesheet" href="/components/cp-image-pointers/cp-image-pointers.css" />
+</head>
+
+<body>
+    <main class="main">
+        <!-- Here is your result! start-->
+
+        <section class="bs-sec typ-calculator-result">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Here is your result!</h2>
+                </div>
+                <div class="cp-rebar-result typ-calculator-result">
+                    <div class="grid-col-lhs">
+                        <div class="cp-box typ-result">
+                            <div class="img-wrap">
+                                <span class="icon icon-language"></span>
+                            </div>
+                            <div class="cont-wrap">
+                                <h3 class="title">1500 sq.ft. | 2 floors | Partial house</h3>
+                                <p class="desc">2 bed rooms, 1 bathroom, 1 kitchen Jaipur</p>
+                                <span class="icon icon-edit"></span>
+                            </div>
+                        </div>
+                        <div class="cp-box typ-price">
+                            <div class="cont-wrap">
+                                <h3 class="title">Estimated building cost</h3>
+                                <div class="cp-tab typ-calculator-result">
+                                    <ul class="tab-list">
+                                        <li class="tab-item active"><a href="#" class="title" data-category="economy">Economy</a></li>
+                                        <li class="tab-item"><a href="#" class="title" data-category="standard">Standard</a></li>
+                                        <li class="tab-item"><a href="#" class="title" data-category="premium">Premium</a></li>
+                                        <li class="tab-item">
+                                            <a href="" data-toggle="modal" data-modal-id="#customiseEstimate" class="title model-open">Custom</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- This will dynamically show the total amount -->
+                                <p class="desc typ-flex"><span class="typ-small">₹</span><span
+                                        id="totalAmount">{{totalAmount}}</span> <span class="icon icon-info"></span></p>
+                                <a href="#" class="link">Set as my budget</a>
+
+                                <!-- The cost list will be populated dynamically -->
+                                <ul class="cost-list-wrap" id="costList"></ul>
+
+                                <div class="estimate-time-wrap">
+                                    <span class="title" id="estimateTime">
+                                        <span class="typ-small">Estimated time</span> <!-- Add class here -->
+                                        {{estimatedTimeValue}} <!-- This will display the estimated time -->
+                                    </span>
+                                    <span><a href="#" class="link" id="projectLink">{{projectLinkText}}</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Handlebars template -->
+                        <script id="cost-list-template" type="text/x-handlebars-template">
+                            <ul class="cost-list-wrap">
+                                {{#each estimateBuildingCostItems}}
+                                    <li class="cost-list">
+                                        <div class="icon {{iconColor}} {{iconClass}}"></div>
+                                        <p class="title">{{title}}</p>
+                                        <h3 class="price">₹{{formattedPrice}}</h3> <!-- Display price with commas -->
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </script>
+
+
+                        <div class="cp-box bottom-notify">
+                            <div class="img-wrap">
+                                <span class="icon icon-bell"></span>
+                            </div>
+                            <div class="cont-wrap">
+                                <h3 class="title">Estimates are approximate; consult professionals for more accurate
+                                    estimates.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-col-rhs">
+                        <div class="cp-tab typ-result typ-calculator-border-tabs">
+                            <ul class="tab-list">
+                                <li class="tab-item active" data-target="#tab1">
+                                    <h3 class="title">Overview</h3>
+                                </li>
+                                <li class="tab-item" data-target="#tab2">
+                                    <h3 class="title">Detailed breakup</h3>
+                                </li>
+                            </ul>
+                            <div class="tab-container">
+          
+                                <!-- Cost breakup -->
+                                <div class="tab-content" id="tab2">
+                                    <div class="wrapper">
+                                        <div class="sec-head">
+                                            <h2 class="sec-title typ2">Cost breakup</h2>
+                                        </div>
+                                        <!-- reapeat this section Cost breakup 1 start -->
+    <!-- Template for the cost list -->
+    <script id="cost-list-template" type="text/x-handlebars-template">
+        <ul class="prod-head">
+            {{#each estimateBuildingCostItems}}
+            <li class="prod-item">
+                <div class="icon {{iconColor}}">
+                    <i class="icon {{iconClass}}"></i>
+                </div>
+                <div class="prod-desc">
+                    <h3 class="title">{{title}}</h3>
+                    <span class="price">₹{{formattedPrice}}</span>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="desc">
+            <span class="typ-small">₹</span>
+            <span class="typ-large">{{totalAmountFormatted}}</span>
+        </div>
+    </script>
+
+    <!-- Template for the cost breakup (detailed view) -->
+    <script id="cost-breakup-template" type="text/x-handlebars-template">
+        {{#each levels}}
+            <div class="sec-cont">
+                <div class="result-wrap">
+                <ul class="prod-head">
+                    <li class="prod-item"><h3 class="title">{{title}}</h3></li>
+                    <li class="prod-item"><span class="price">₹{{price}}</span></li>
+                </ul>
+                <div class="cont-wrap">
+                    <table class="cp-table typ-rebar typ-cost-breakup">
+                        <tbody>
+                            {{#each items}}
+                            <tr class="view">
+                                <td class="text-left list-item">
+                                    <p class="table-head">{{categoryTitle}}
+                                    </p>
+                                    <p class="table-desc">{{categoryDescription}}</p>
+
+                                </td>
+                                <td class="text-right list-item price">₹{{categoryAmount}}</td>
+                            </tr>
+
+                            <tr class="fold">
+                                <td colspan="2" class="fold-wrap">
+                                    <table class="cp-table typ-rebar grey-bg">
+                                        <tbody>
+                                            {{#each details}}
+                                            <tr>
+                                                <td class="text-left list-item">
+                                                    <p class="table-head">{{productName}}</p>
+                                                    <p class="table-desc">{{productDescription}}</p>
+                                                </td>
+                                                <td class="text-right list-item price">₹{{productAmount}}</td>
+                                            </tr>
+                                        {{/each}}
+                            
+                                       
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- Item 1 end -->
+                            {{/each}}
+
+                        </tbody>
+                    </table>
+                </div></div>
+            </div>
+        {{/each}}
+    </script>
+
+    <!-- Container where data will be injected -->
+    <div id="costList"></div>
+
+                                        <!-- Cost breakup 1 end -->
+
+
+                                        <!-- Cost breakup 2 start -->
+
+
+                                        <!-- Cost breakup 2 end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--model pop up start-->
+
+    <div id="customiseEstimate" tabindex="-1" role="dialog"
+        class="bs-modal type-md fade typ-share typ-customise-estimate">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <!-- <button class="close-btn icon-close js-close " type="button "></button> -->
+                    <div class="cp-model-content typ-cal-result">
+                        <p class="title">Customise your estimate? </p>
+                        <p class="desc"> Customising your estimate will lorem ipsum dolor amet set.</p>
+                        <p class="desc">
+                            Are you sure you want to proceed?</p>
+                        <div class="btn-wrap">
+                            <button class="btn btn-outline js-close" type="button">Cancel</button>
+                            <button class="btn">Yes!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
+    <div class="cm-overlay"></div>
+
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/js/vendor/handlebars.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="/components/cp-select/cp-select.js"></script>
+    <script src="../../components/cp-video-card/cp-videro-card.js"></script>
+    <script src="../../components/cp-blog/cp-blog.js"></script>
+    <script src="../../components/cp-recommend/cp-recommend.js"></script>
+    <script src="../../components/cp-rebar-result/cp-rebar-result.js"></script>
+    <script src="/components/cp-product-card/cp-product-card.js"></script>
+    <script src="../../components/cp-rebar-estimator/calculator.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

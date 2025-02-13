@@ -1361,6 +1361,7 @@
 
       .grid-col-rht {
         width: calc(100% - 318px);
+        @media only screen and (max-width: $media-mobile) {width:100%}
       }
     }
 

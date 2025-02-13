@@ -2,7 +2,7 @@
 @import "../config/mixin";
 
 
-.cp-coupon-code{
+.cp-coupon-code {
     border-radius: 8px;
     border: 1px dashed #999999;
     padding: 1rem;
@@ -12,18 +12,21 @@
     position: relative;
     margin-bottom: 1.6rem;
     margin-top: 0.2rem;
+
     @media only screen and (max-width: $media-mobile) {
-        margin:0;
+        margin: 0;
 
     }
-    .code-info{
+
+    .code-info {
         font-size: 1.2rem;
         color: $clr-base;
         font-family: $font-regular;
         display: block;
-    
+
     }
-    .code{
+
+    .code {
         font-size: 1.2rem;
         font-family: $font-medium;
         color: #00A441;
@@ -34,16 +37,19 @@
         padding: 0.2rem 0.8rem;
         display: inline-block;
         margin-top: 0.8rem;
-    &.remove-code{
-        background: #00A441;
-        color: $clr-root;
-        border: 0;
-        .icon{
-            font-size: 1.3rem;
+
+        &.remove-code {
+            background: #00A441;
+            color: $clr-root;
+            border: 0;
+
+            .icon {
+                font-size: 1.3rem;
+            }
         }
     }
-    }
-    .btn-link{
+
+    .btn-link {
         text-decoration: underline;
         position: absolute;
         right: 12px;
@@ -51,15 +57,35 @@
         font-size: 1.4rem;
         font-family: $font-medium;
     }
-    &.typ-structura-pdp{
-        .btn-outline{
+
+    &.typ-structura-pdp {
+        .btn-outline {
             width: 100%;
         }
-        .apply-btn{
+
+        .apply-btn {
             min-width: 9.2rem;
             padding: 0.1rem 0;
             margin-left: 0.4rem;
             font-size: 1.2rem;
+        }
+    }
+
+    &.typ-my-order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFF8E5;
+        border: 1px dashed #FFB800;
+        @media only screen and (max-width: $media-mobile) {     margin-bottom: 1.6rem;}
+   
+        .code-info {
+            font-family: $font-medium;
+            color: #333333;
+        }
+
+        .code {
+            margin-top: 0;
         }
     }
 }

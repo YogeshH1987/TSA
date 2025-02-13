@@ -53,5 +53,19 @@
     padding: 0.1rem 0;
     margin-left: 0.4rem;
     font-size: 1.2rem; }
+  .cp-coupon-code.typ-my-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF8E5;
+    border: 1px dashed #FFB800; }
+    @media only screen and (max-width: 768px) {
+      .cp-coupon-code.typ-my-order {
+        margin-bottom: 1.6rem; } }
+    .cp-coupon-code.typ-my-order .code-info {
+      font-family: "Poppins Medium";
+      color: #333333; }
+    .cp-coupon-code.typ-my-order .code {
+      margin-top: 0; }
 
 /*# sourceMappingURL=cp-coupon-code.css.map */
