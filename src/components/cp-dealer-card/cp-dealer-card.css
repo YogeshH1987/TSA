@@ -200,6 +200,30 @@
       -moz-border-radius: 0.8rem;
       background: #F3F4F6;
       font-size: 2rem; }
+  .cp-dealer-card.typ-change-dealer {
+    background-color: #ECF2FB;
+    border: 2px solid #3D7EDB;
+    padding: 1.6rem; }
+    .cp-dealer-card.typ-change-dealer:hover {
+      box-shadow: none;
+      border: 2px solid #3D7EDB; }
+    .cp-dealer-card.typ-change-dealer .top-band .band-tag {
+      background-color: #fff; }
+    .cp-dealer-card.typ-change-dealer .dealer-info .location-sec .location-text {
+      color: #333333; }
+    .cp-dealer-card.typ-change-dealer .dealer-info .rating-sec .rating-cont {
+      color: #333333; }
+      .cp-dealer-card.typ-change-dealer .dealer-info .rating-sec .rating-cont.typ-green {
+        color: #fff; }
+    .cp-dealer-card.typ-change-dealer .red-text {
+      font-size: 1.2rem !important;
+      color: #EE4400 !important;
+      font-family: "Poppins Medium" !important; }
+    .cp-dealer-card.typ-change-dealer .w-100 {
+      width: 100%;
+      max-width: 100%; }
+  .cp-dealer-card .typ-dealer-list {
+    padding: 1.6rem; }
 
 .typ-store {
   min-width: 15rem;

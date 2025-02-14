@@ -20,11 +20,13 @@
 
     <link rel="stylesheet" href="/components/cp-sidebar-menu/cp-sidebar-menu.css" />
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
-    <link rel="stylesheet" href="/components/cp-order-management/cp-order-management.css" />
     <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="/components/cp-table/cp-table.css" />
     <link rel="stylesheet" href="/components/cp-coupon-code/cp-coupon-code.css" />
     <link rel="stylesheet" href="/components/cp-order-timeline/cp-order-timeline.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="../../components/cp-dealer-card/cp-dealer-card.css" />
+    <link rel="stylesheet" href="/components/cp-order-management/cp-order-management.css" />
 
 </head>
 
@@ -571,8 +573,7 @@
                                         </div>
 
                                         <div class="timeline-block timeline-block-right active">
-                                            <div class="marker"><i class="icon icon-check"
-                                                    aria-hidden="true"></i></div>
+                                            <div class="marker"><i class="icon icon-check" aria-hidden="true"></i></div>
                                             <div class="timeline-content">
                                                 <h3>Order placed</h3>
                                                 <span>13th Oct 2024</span>
@@ -580,7 +581,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="link">See all updates</a>
+                                    <a href="" class="link js-drawer" data-id="order-tracking">See all updates</a>
                                 </div>
                                 <div class="sec-cont">
                                     <div class="sec-head">
@@ -595,7 +596,7 @@
                                             <div class="icon icon-store"></div>
                                             <div class="dealer-text">
                                                 <h3 class="title">Himesh Kumar Steel Shop Pvt Ltd.</h3>
-                                                <a href="#" class="link">Change</a>
+                                                <a href="" class="link js-drawer" data-id="change-dealer">Change</a>
                                             </div>
                                         </div>
                                         <div class="prgress-bar-main">
@@ -817,25 +818,26 @@
 
                                 <div class="sec-cont">
                                     <div class="m-payment-wrap">
-                                    <div class="sec-head">
-                                        <h3 class="sub-title">
-                                            Payment details
-                                        </h3>
-                                        <p class="desc">Dealer assigned on 12th Oct 2024</p>
-                                    </div>
-                                    <div class="payment-details-wrap">
-                                        <div class="payment-details">
-                                            <div class="icon">
-                                                <img src="../../components/cp-bank-offer/images/logo-icici.png" alt="icici">
+                                        <div class="sec-head">
+                                            <h3 class="sub-title">
+                                                Payment details
+                                            </h3>
+                                            <p class="desc">Dealer assigned on 12th Oct 2024</p>
+                                        </div>
+                                        <div class="payment-details-wrap">
+                                            <div class="payment-details">
+                                                <div class="icon">
+                                                    <img src="../../components/cp-bank-offer/images/logo-icici.png"
+                                                        alt="icici">
+                                                </div>
+                                                <div class="payment-text">
+                                                    <span class="small-text">Payment method</span>
+                                                    <h3 class="title">ICICI Visa ending ****3006</h3>
+                                                </div>
+                                                <a href="#" class="link">View invoice</a>
                                             </div>
-                                            <div class="payment-text">
-                                                <span class="small-text">Payment method</span>
-                                                <h3 class="title">ICICI Visa ending ****3006</h3>
-                                            </div>
-                                            <a href="#" class="link">View invoice</a>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
 
                                 <div class="sec-cont">
@@ -848,7 +850,8 @@
                                         <ul class="delivery-details">
                                             <li class="delivery-details-list">
                                                 <h3 class="title">Kashika Sharma</h3>
-                                                <p class="desc typ-address">B-802, Sarvodaya Heights, next to Vijay Sales, S.V. Road. Borivali (West) - 400291. Mumbai, Maharashtra</p>
+                                                <p class="desc typ-address">B-802, Sarvodaya Heights, next to Vijay
+                                                    Sales, S.V. Road. Borivali (West) - 400291. Mumbai, Maharashtra</p>
                                             </li>
                                             <li class="delivery-details-list">
                                                 <h3 class="title">Contact number</h3>
@@ -1032,7 +1035,200 @@
     </footer>
     <!-- Footer end -->
 
+    <!-- change-dealer -->
+    <div class="cp-drawer typ-my-order-drawer" id="change-dealer">
+        <div class="head-sec">
+            <div class="text">
+                <h2 class="drawer-title">Change dealer</h2>
+                <p class="desc">Order no. #217376435</p>
+            </div>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrapper">
+            <div class="cont-sec">
+                <div class="order-dealer-wrap">
+                    <div class="order-dealer-head">
+                        <div class="head-text">
+                            <h3 class="title">Agrico</h3>
+                            <p class="desc">Order placed on 12th Oct 2024</p>
+                        </div>
+                        <div class="price">₹30,000</div>
+                    </div>
+                    <div class="cp-dealer-card typ-change-dealer">
+                        <div class="top-band">
+                            <span class="band-tag">Recommended</span>
+                            <span class="band-tag">Best service</span>
+                        </div>
+                        <div class="dealer-info">
+                            <h2 class="title">Wiron Dealers Pvt. Ltd.</h2>
+                            <ul class="location-sec w-100">
+                                <li class="location-text">
+                                    <span class="icon icon-location"></span>
+                                    3.5 kms away
+                                </li>
+                                <li class="location-text">
+                                    Vaishali Nagar
+                                </li>
+                                <li class="location-text w-100 red-text">
+                                    Low In stock
+                                </li>
+                            </ul>
+                            <ul class="rating-sec">
+                                <li class="rating-cont typ-green">
+                                    <span class="icon-star"></span>
+                                    4.5
+                                </li>
+                                <li class="rating-cont">
+                                    <span> 50+ ratings</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cp-search">
+                    <div class="search-wrap">
+                        <input type="text" class="search-input" placeholder="Search">
+                        <span class="search-icon icon-search"></span>
+                    </div>
+                </div>
 
+
+                <div class="cp-dealer-card typ-dealer-list mb-12">
+                    <div class="top-band">
+                        <span class="band-tag">Recommended</span>
+                        <span class="band-tag">Best service</span>
+                    </div>
+                    <div class="dealer-info">
+                        <h2 class="title">Wiron Dealers Pvt. Ltd.</h2>
+                        <ul class="location-sec">
+                            <li class="location-text">
+                                <span class="icon icon-location"></span>
+                                3.5 kms away
+                            </li>
+                            <li class="location-text">
+                                Vaishali Nagar
+                            </li>
+                            <li class="location-text">
+                                <span class="icon icon-truck"> </span>
+                                Free delivery
+                            </li>
+                        </ul>
+                        <ul class="rating-sec">
+                            <li class="rating-cont typ-green">
+                                <span class="icon-star"></span>
+                                4.5
+                            </li>
+                            <li class="rating-cont">
+                                <span> 50+ ratings</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="cp-dealer-card typ-dealer-list mb-12">
+                    <div class="top-band">
+                        <span class="band-tag">Recommended</span>
+                        <span class="band-tag">Best service</span>
+                    </div>
+                    <div class="dealer-info">
+                        <h2 class="title">Wiron Dealers Pvt. Ltd.</h2>
+                        <ul class="location-sec">
+                            <li class="location-text">
+                                <span class="icon icon-location"></span>
+                                3.5 kms away
+                            </li>
+                            <li class="location-text">
+                                Vaishali Nagar
+                            </li>
+                            <li class="location-text">
+                                <span class="icon icon-truck"> </span>
+                                Free delivery
+                            </li>
+                        </ul>
+                        <ul class="rating-sec">
+                            <li class="rating-cont typ-green">
+                                <span class="icon-star"></span>
+                                4.5
+                            </li>
+                            <li class="rating-cont">
+                                <span> 50+ ratings</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn btn-outline w-100">Back</button>
+            </div>
+        </div>
+
+    
+    </div>
+
+    </div>
+
+    <!-- track order-->
+    <div class="cp-drawer typ-my-order-drawer" id="order-tracking">
+        <div class="head-sec">
+            <div class="text">
+                <h2 class="drawer-title">Order tracking</h2>
+                <p class="desc">Order no. #217376435</p>
+            </div>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrapper">
+            <div class="cont-sec">
+
+                Status
+                <div class="cp-order-timeline">
+
+                    <div class="timeline-block timeline-block-right active">
+                        <div class="marker active"><i class="icon icon-check" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <h3>Order delivered successfully</h3>
+                            <span>15th Oct 2024</span>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-block timeline-block-right active">
+                        <div class="marker"><i class="icon icon-check" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <h3>Out for delivery</h3>
+                            <span>15th Oct 2024</span>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-block timeline-block-right active">
+                        <div class="marker"><i class="icon icon-check" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <h3>Shipping via ID 123456890765 <span class="icon-copy"></span></h3>
+                            <span>14th Oct 2024</span>
+
+                        </div>
+                    </div>
+
+
+                    <div class="timeline-block timeline-block-right active">
+                        <div class="marker"><i class="icon icon-check" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <h3>Ready for shipment</h3>
+                            <span>13th Oct 2024</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn btn-outline w-100">Back</button>
+            </div>
+        </div>
+
+
+    </div>
 
     <div class="cm-overlay"></div>
 
@@ -1043,6 +1239,7 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
     <!-- endbuild -->
 </body>
 

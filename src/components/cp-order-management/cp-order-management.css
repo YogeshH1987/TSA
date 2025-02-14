@@ -32,10 +32,15 @@
       color: #333333; }
       @media only screen and (max-width: 768px) {
         .cp-order-management .head-wrap .title {
-          font-size: 2rem;
-          margin-bottom: 1.6rem; } }
+          font-size: 2rem; } }
+    .cp-order-management .head-wrap .red-text {
+      color: #D2042D; }
     .cp-order-management .head-wrap .cp-search {
       width: 34.3rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-order-management .head-wrap .cp-search {
+          width: 100%;
+          margin-top: 1.6rem; } }
       .cp-order-management .head-wrap .cp-search .search-icon {
         color: #B3B3B3; }
       @media only screen and (max-width: 768px) {
@@ -242,6 +247,9 @@
           margin: 0 -1.6rem; } }
       .cp-order-management.typ-order-details .head-wrap .title {
         font-size: 2.4rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-order-management.typ-order-details .head-wrap .title {
+            font-size: 2rem; } }
       .cp-order-management.typ-order-details .head-wrap .payment-status {
         display: flex;
         align-items: center;
@@ -334,6 +342,23 @@
         .cp-order-management .delivery-details .delivery-details-list .desc {
           font-size: 1.4rem; } }
       .cp-order-management .delivery-details .delivery-details-list .desc.typ-address {
+        max-width: 400px; }
+  .cp-order-management .refund-details .refund-details-list {
+    margin-bottom: 1.6rem;
+    display: flex;
+    justify-content: space-between; }
+    .cp-order-management .refund-details .refund-details-list .title {
+      font-size: 1.6rem;
+      font-family: "Poppins Medium";
+      color: #333333; }
+    .cp-order-management .refund-details .refund-details-list .desc {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: #666666; }
+      @media only screen and (max-width: 768px) {
+        .cp-order-management .refund-details .refund-details-list .desc {
+          font-size: 1.4rem; } }
+      .cp-order-management .refund-details .refund-details-list .desc.typ-address {
         max-width: 400px; }
   @media only screen and (max-width: 768px) {
     .cp-order-management .m-payment-wrap {
@@ -467,5 +492,103 @@
     color: #CCCCCC; }
     .cp-order-management .review-star .icon.typ-active {
       color: #FFB800; }
+  .cp-order-management .typ-cancel-order-radio {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap; }
+    .cp-order-management .typ-cancel-order-radio .bs-radio {
+      margin-bottom: 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-order-management .typ-cancel-order-radio .bs-radio {
+          width: 100%; } }
+      .cp-order-management .typ-cancel-order-radio .bs-radio .custom-radio {
+        min-width: auto;
+        padding: 1.2rem 2.4rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-order-management .typ-cancel-order-radio .bs-radio .custom-radio {
+            min-width: 100%; } }
+  .cp-order-management .cp-form .form-label {
+    font-family: "Poppins Semibold" !important;
+    color: #333333 !important;
+    font-size: 1.6rem; }
+  .cp-order-management .mb-0 {
+    margin-bottom: 0 !important; }
+  .cp-order-management .typ-cancel-order {
+    background: #ECF2FB !important;
+    border: 1px solid #B1CBF1 !important;
+    border-radius: 1.6rem !important;
+    -webkit-border-radius: 1.6rem !important;
+    -moz-border-radius: 1.6rem !important; }
+    .cp-order-management .typ-cancel-order .prodcut-item {
+      margin-bottom: 0 !important; }
+  .cp-order-management .text-bold {
+    color: #333333;
+    font-family: "Poppins Semibold"; }
+  .cp-order-management .description {
+    max-width: 678px;
+    font-size: 1.2rem; }
+    .cp-order-management .description .link {
+      text-decoration: underline; }
+
+.typ-order-management {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end; }
+  @media only screen and (max-width: 768px) {
+    .typ-order-management {
+      gap: 1.2rem; } }
+  .typ-order-management .btn {
+    min-width: 34rem; }
+    @media only screen and (max-width: 768px) {
+      .typ-order-management .btn {
+        min-width: 48%; } }
+
+.typ-my-order-drawer .head-sec {
+  padding: 0rem 0 2.4rem; }
+  .typ-my-order-drawer .head-sec .drawer-title {
+    font-size: 2rem;
+    font-family: "Poppins Semibold"; }
+.typ-my-order-drawer .cont-wrapper {
+  position: relative; }
+.typ-my-order-drawer .cont-sec {
+  min-height: 74vh;
+  height: auto; }
+.typ-my-order-drawer .mb-12 {
+  margin-bottom: 1.2rem; }
+.typ-my-order-drawer .order-dealer-wrap {
+  margin-bottom: 2.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #DEDEDE; }
+  .typ-my-order-drawer .order-dealer-wrap .order-dealer-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #DEDEDE; }
+    .typ-my-order-drawer .order-dealer-wrap .order-dealer-head .head-text .title {
+      color: #00398C;
+      font-size: 2rem;
+      font-family: "Poppins Semibold"; }
+    .typ-my-order-drawer .order-dealer-wrap .order-dealer-head .head-text .desc {
+      font-size: 1.2rem;
+      color: #333333; }
+    .typ-my-order-drawer .order-dealer-wrap .order-dealer-head .price {
+      color: #00398C;
+      font-size: 2rem;
+      font-family: "Poppins Semibold"; }
+.typ-my-order-drawer .cp-search {
+  width: 100%;
+  margin-bottom: 2.4rem; }
+.typ-my-order-drawer .w-100 {
+  width: 100%;
+  min-width: 100%; }
+.typ-my-order-drawer .btn-wrap {
+  bottom: -16px;
+  position: sticky;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  padding: 1.2rem; }
 
 /*# sourceMappingURL=cp-order-management.css.map */

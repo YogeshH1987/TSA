@@ -265,6 +265,7 @@
                 justify-content: space-between;
                 gap: 1rem;
                 margin-top: 1.2rem;
+
                 .btn {
                     padding: 4px 1.6rem;
                     font-size: 1.2rem;
@@ -290,6 +291,54 @@
             }
         }
     }
+
+    &.typ-change-dealer {
+        background-color: #ECF2FB;
+        border: 2px solid #3D7EDB;
+        padding: 1.6rem;
+
+        &:hover {
+            box-shadow: none;
+            border: 2px solid #3D7EDB;
+        }
+
+        .top-band {
+            .band-tag {
+                background-color: #fff;
+            }
+        }
+
+        .dealer-info {
+            .location-sec {
+                .location-text {
+                    color: $clr-base;
+                }
+            }
+
+            .rating-sec {
+                .rating-cont {
+                    color: $clr-base;
+
+                    &.typ-green {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .red-text {
+            font-size: 1.2rem !important;
+            color: #EE4400 !important;
+            font-family: $font-medium !important;
+        }
+
+        .w-100 {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .typ-dealer-list{padding: 1.6rem;}
 }
 
 .typ-store {

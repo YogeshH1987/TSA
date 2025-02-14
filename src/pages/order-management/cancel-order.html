@@ -20,9 +20,13 @@
 
     <link rel="stylesheet" href="/components/cp-sidebar-menu/cp-sidebar-menu.css" />
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
-    <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="/components/cp-order-management/cp-order-management.css" />
-
+    <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
+    <link rel="stylesheet" href="/components/cp-table/cp-table.css" />
+    <link rel="stylesheet" href="/components/cp-coupon-code/cp-coupon-code.css" />
+    <link rel="stylesheet" href="/components/cp-order-timeline/cp-order-timeline.css" />
+    <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
 </head>
 
 <body>
@@ -533,314 +537,297 @@
                         </div>
 
                         <div class="grid-col-rht">
-                            <div class="cp-order-management">
+                            <!-- Cancel items -->
+                            <div class="cp-order-management typ-order-details">
                                 <div class="head-wrap">
-                                    <h2 class="title">My orders</h2>
-                                    <div class="cp-search">
-                                        <div class="search-wrap">
-                                            <input type="text" class="search-input" placeholder="Search">
-                                            <span class="search-icon icon-search"></span>
+                                    <h2 class="title">Cancel items</h2>
+                                    <p class="desc">Select items to cancel</p>
+                                </div>
+
+
+                                <div class="sec-cont">
+                                    <div class="order-details">
+                                        <div class="cp-cart-card typ-order-summery ">
+                                            <div class="prodcut-item">
+                                                <div class="product-img">
+                                                    <img src="/components/cp-cart/images/rebars-shipping.png"
+                                                        alt="rebars">
+                                                </div>
+
+                                                <div class="product-desc">
+                                                    <h3 class="title">Rebars</h3>
+                                                    <p class="desc">Silver iron rods CDS 145</p>
+
+                                                </div>
+                                                <div class="product-price">₹23,01,400</div>
+                                            </div>
+                                            <table class="cp-table typ-cart-summery ">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-left list-head list-item">Size</th>
+                                                        <th class="text-center list-head list-item">Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Item 1 -->
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check1">
+                                                                <label for="check1"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check2">
+                                                                <label for="check2"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check3">
+                                                                <label for="check3"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check4">
+                                                                <label for="check4"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="cp-cart-card typ-order-summery">
+                                            <div class="prodcut-item">
+                                                <div class="product-img">
+                                                    <img src="/components/cp-cart/images/rebars-shipping.png"
+                                                        alt="rebars">
+                                                </div>
+
+                                                <div class="product-desc">
+                                                    <h3 class="title">Rebars</h3>
+                                                    <p class="desc">Silver iron rods CDS 145</p>
+                                                </div>
+                                                <div class="product-price">₹23,01,400</div>
+                                            </div>
+                                            <table class="cp-table typ-cart-summery">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-left list-head list-item">Size</th>
+                                                        <th class="text-center list-head list-item">Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Item 1 -->
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check5">
+                                                                <label for="check5"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check6">
+                                                                <label for="check6"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+
+                                                    <tr class="sepretor">
+                                                        <td class="text-left list-item">
+                                                            <span class="cp-checkbox typ-order">
+                                                                <input type="checkbox" id="check7">
+                                                                <label for="check7"></label>
+                                                            </span> 8mm
+                                                        </td>
+                                                        <td class="text-center list-item">10</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="cp-tab typ-my-order">
-                                    <ul class="tab-list">
-                                        <li class="tab-item active" data-target="#tab1">
-                                            <h3 class="title">Active</h3>
-                                        </li>
-                                        <li class="tab-item" data-target="#tab2">
-                                            <h3 class="title">Delivered</h3>
-                                        </li>
-                                        <li class="tab-item" data-target="#tab3">
-                                            <h3 class="title">Canceled</h3>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-container">
-                                        <div class="tab-content active" id="tab1">
-                                            <div class="sec-cont">
-                                                <div class="my-order-cont-wrap">
-                                                    <div class="cont-head">
-                                                        <!-- tag color class - blue, yellow, green, & red -->
-                                                        <div class="order-date">Order date: 3rd Sept 2024 <span
-                                                                class="order-tag blue">Order placed</span></div>
-                                                        <h4 class="order-no">Order no. #12345789018 <span
-                                                                class="price">₹30,500</span></h4>
 
-                                                        <!-- status color class - red, green, & blue -->
-                                                        <div class="order-status red"><span
-                                                                class="icon icon-info"></span>Payment pending</div>
-                                                    </div>
-                                                    <p class="product-title">Tiscon - Total products (22)</p>
-                                                    <div class="product-list-wrap">
-                                                        <ul class="prodcut-list-main">
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list typ-number">+4</li>
-                                                        </ul>
-                                                        <div class="btn-wrap">
-                                                            <button class="btn btn-outline w-224">Track order</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="sec-cont">
-                                                <div class="my-order-cont-wrap">
-                                                    <div class="cont-head">
-                                                        <div class="order-date">Order date: 3rd Sept 2024 <span
-                                                                class="order-tag yellow">Ready for shipment</span></div>
-                                                        <h4 class="order-no">Order no. #12345789018 <span
-                                                                class="price">₹30,500</span></h4>
-                                                        <div class="order-status blue"><span
-                                                                class="icon icon-truck"></span>Estimated delivery: 28th
-                                                            Oct
-                                                            2024</div>
-                                                    </div>
-                                                    <p class="product-title">Tiscon - Total products (22)</p>
-                                                    <div class="product-list-wrap">
-                                                        <ul class="prodcut-list-main">
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                        </ul>
-                                                        <div class="btn-wrap">
-                                                            <button class="btn w-224">Pay now</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="sec-cont">
-                                                <div class="my-order-cont-wrap">
-                                                    <div class="cont-head">
-                                                        <div class="order-date">Order date: 3rd Sept 2024 <span
-                                                                class="order-tag yellow">Ready for shipment</span></div>
-                                                        <h4 class="order-no">Order no. #12345789018 <span
-                                                                class="price">₹30,500</span></h4>
-                                                        <div class="order-status blue"><span
-                                                                class="icon icon-truck"></span>Estimated delivery: 28th
-                                                            Oct
-                                                            2024</div>
-                                                    </div>
-                                                    <p class="product-title">Tiscon - Total products (22)</p>
-                                                    <div class="product-list-wrap">
-                                                        <ul class="prodcut-list-main">
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                        </ul>
-                                                        <div class="btn-wrap">
-                                                            <button class="btn btn-outline">cancel</button>
-                                                            <button class="btn">Retry payment</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+
+                            </div>
+
+                            <!-- Reason for cancellation -->
+                            <div class="cp-order-management typ-order-details hide">
+                                <div class="head-wrap">
+                                    <h2 class="title">Reason for cancellation</h2>
+                                    <p class="desc">Please tell us correct reason for cancellation. This information is
+                                        only used to improve our service.</p>
+                                </div>
+
+
+                                <div class="sec-cont">
+                                    <div class="sec-head">
+                                        <h3 class="sub-title">
+                                            Select reason
+                                        </h3>
+                                    </div>
+
+                                    <div class="radio-wrap typ-cancel-order-radio">
+                                        <div class="bs-radio">
+                                            <input id="reason1" name="reason" type="radio">
+                                            <label for="reason1" class="custom-radio">
+                                                <span>Items no longer needed</span>
+                                            </label>
                                         </div>
 
-                                        <div class="tab-content" id="tab2">
-                                            <div class="sec-cont">
-                                                <div class="my-order-cont-wrap">
-                                                    <div class="cont-head">
-                                                        <!-- tag color class - blue, yellow, green, & red -->
-                                                        <div class="order-date">Order date: 3rd Sept 2024 <span
-                                                                class="order-tag green">Delivered</span></div>
-                                                        <h4 class="order-no">Order no. #12345789018 <span
-                                                                class="price">₹30,500</span></h4>
-
-                                                        <!-- status color class - red, green, & blue -->
-                                                        <div class="order-status green"><span
-                                                                class="icon icon-check-circle"></span>Delivered on:
-                                                            20th Sept 2024</div>
-                                                    </div>
-                                                    <p class="product-title">Tiscon - Total products (22)</p>
-                                                    <div class="product-list-wrap">
-                                                        <ul class="prodcut-list-main">
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list typ-number">+4</li>
-                                                        </ul>
-                                                        <!-- <div class="btn-wrap">
-                                                        <button class="btn btn-outline w-224">Track order</button>
-                                                    </div> -->
-                                                    </div>
-
-                                                    <div class="btn-wrap-main text-center">
-                                                        <button class="btn btn-outline w-224">Reorder</button>
-                                                    </div>
-                                                </div>
-                                                <div class="rating-main">
-                                                    <div class="rating-head">
-                                                        <h3 class="head-title">Please rate your order experience</h3>
-                                                    </div>
-                                                    <div class="rating-sec">
-                                                        <div class="rating-wrap">
-                                                            <p class="desc">How likely are you to recommend Tata Steel
-                                                                Aashiyana
-                                                                to your friends & family?</p>
-                                                            <div class="radio-wrap cm-flex">
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face1" name="face" type="radio"
-                                                                        checked="">
-                                                                    <label for="face1" class="custom-radio">
-                                                                        <img src="/images/face1.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face2" name="face" type="radio">
-                                                                    <label for="face2" class="custom-radio">
-                                                                        <img src="/images/face2.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face3" name="face" type="radio">
-                                                                    <label for="face3" class="custom-radio">
-                                                                        <img src="/images/face3.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face4" name="face" type="radio">
-                                                                    <label for="face4" class="custom-radio">
-                                                                        <img src="/images/face4.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face5" name="face" type="radio">
-                                                                    <label for="face5" class="custom-radio">
-                                                                        <img src="/images/face5.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face6" name="face" type="radio">
-                                                                    <label for="face6" class="custom-radio">
-                                                                        <img src="/images/face6.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face7" name="face" type="radio">
-                                                                    <label for="face7" class="custom-radio">
-                                                                        <img src="/images/face7.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face8" name="face" type="radio">
-                                                                    <label for="face8" class="custom-radio">
-                                                                        <img src="/images/face8.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face9" name="face" type="radio">
-                                                                    <label for="face9" class="custom-radio">
-                                                                        <img src="/images/face9.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-                                                                <div class="bs-radio typ-face-rating">
-                                                                    <input id="face10" name="face" type="radio">
-                                                                    <label for="face10" class="custom-radio">
-                                                                        <img src="/images/face10.svg" alt="">
-                                                                        <span class="result">Not likely</span>
-                                                                    </label>
-
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="btn-wrap text-center">
-                                                            <button class="btn">Submit</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="bs-radio">
+                                            <input id="reason2" name="reason" type="radio">
+                                            <label for="reason2" class="custom-radio">
+                                                <span>Already purchased</span>
+                                            </label>
                                         </div>
 
-                                        <div class="tab-content" id="tab3">
-                                            <div class="sec-cont">
-                                                <div class="my-order-cont-wrap">
-                                                    <div class="cont-head">
-                                                        <!-- tag color class - blue, yellow, green, & red -->
-                                                        <div class="order-date">Order date: 3rd Sept 2024 <span
-                                                                class="order-tag red">Canceled</span></div>
-                                                        <h4 class="order-no">Order no. #12345789018 <span
-                                                                class="price">₹30,500</span></h4>
-
-                                                        <!-- status color class - red, green, & blue -->
-                                                        <div class="order-status red-icon"><span
-                                                                class="icon icon-close1"></span>Delivered on:
-                                                            20th Sept 2024</div>
-                                                    </div>
-                                                    <p class="product-title">Tiscon - Total products (22)</p>
-                                                    <div class="product-list-wrap">
-                                                        <ul class="prodcut-list-main">
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list"><img
-                                                                    src="../components/cp-order-management/images/img1.png"
-                                                                    alt=""></li>
-                                                            <li class="product-list typ-number">+4</li>
-                                                        </ul>
-                                                        <!-- <div class="btn-wrap">
-                                                        <button class="btn btn-outline w-224">Track order</button>
-                                                    </div> -->
-                                                    </div>
-
-                                                    <div class="btn-wrap-main text-center">
-                                                        <button class="btn btn-outline w-224">Reorder</button>
-                                                    </div>
-                                                </div>
-                                      
+                                        <div class="bs-radio">
+                                            <input id="reason3" name="services" type="radio">
+                                            <label for="reason3" class="custom-radio">
+                                                <span>Dealers not reachable</span>
+                                            </label>
+                                        </div>
+                                        <div class="bs-radio">
+                                            <input id="reason4" name="reason" type="radio">
+                                            <label for="reason4" class="custom-radio">
+                                                <span>Any other reason</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="cp-form hide">
+                                        <div class="form-group mb-0">
+                                            <label class="form-label">Write your reason</label>
+                                            <div id="services-container" class="services-form">
+                                                <textarea id="reason" rows="4" cols="36"
+                                                    placeholder="Write your reason here"
+                                                    class="form-control"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+
+                            </div>
+
+                            <!-- Cancellation request submitted - Approval pending -->
+                            <div class="cp-order-management typ-order-details hide">
+                                <div class="head-wrap">
+                                    <h2 class="title">Cancellation request submitted - <span class="red-text">Approval
+                                            pending</span></h2>
+                                    <p class="desc">Your cancellation request for following items is successfully
+                                        raised. You will be informed via SMS and email once it is approved.</p>
+                                </div>
+
+                                <div class="sec-cont">
+                                    <div class="delivery-details-wrap">
+                                        <ul class="delivery-details">
+                                            <li class="delivery-details-list">
+                                                <h3 class="title">Order no</h3>
+                                                <p class="desc">#217376435</p>
+                                            </li>
+                                            <li class="delivery-details-list">
+                                                <h3 class="title">Date of cancellation</h3>
+                                                <p class="desc">13th Oct 2024</p>
+                                            </li>
+                                            <li class="delivery-details-list">
+                                                <h3 class="title">Reason</h3>
+                                                <p class="desc">Items no longer needed</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div class="sec-cont">
+                                    <div class="sec-head">
+                                        <h3 class="sub-title">
+                                            Items canceled:
+                                        </h3>
+                                    </div>
+
+                           
+                                        <div class="cp-cart-card typ-order-summery typ-cancel-order">
+                                            <div class="prodcut-item">
+                                                <div class="product-img">
+                                                    <img src="/components/cp-cart/images/rebars-shipping.png"
+                                                        alt="rebars">
+                                                </div>
+
+                                                <div class="product-desc">
+                                                    <h3 class="title">Tiscon</h3>
+                                                    <p class="desc">Rebar 550 SD</p>
+                                                    <p class="desc">Size: <span class="text-bold">8 mm</span></p>
+                                                    <p class="desc">Qty: <span class="text-bold">10 nos</span></p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                               
+                                </div>
+
+                                <div class="sec-cont">
+                                    <div class="sec-head">
+                                        <h3 class="sub-title">
+                                            Refund details
+                                        </h3>
+                                    </div>
+
+
+                                    <div class="refund-details-wrap">
+                                        <ul class="refund-details">
+                                            <li class="refund-details-list">
+                                                <h3 class="title">Refund amount</h3>
+                                                <p class="desc">₹940</p>
+                                            </li>
+                                            <li class="refund-details-list">
+                                                <h3 class="title">Refund method</h3>
+                                                <p class="desc">Bank transfer ***4</p>
+                                            </li>
+                                            <li class="refund-details-list">
+                                                <h3 class="title">Estimated refund time</h3>
+                                                <p class="desc">4-7 business days</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                   
+                                </div>
+                                <div class="sec-cont">
+                                    <p class="description">If your refund is not processed within the estimated time, please contact our customer support at 1800-XXX-XXXX or email us at <a href="#" class="link">support@tatasteel.com</a> </p>
+                                </div>
+                            </div>
+                            <div class="btn-wrap typ-order-management">
+                                <button class="btn btn-outline" id="cancelBtn">Cancel</button>
+                                <button class="btn"  id="confirmBtn">Confirm</button>
                             </div>
                         </div>
                     </div>
@@ -1022,11 +1009,11 @@
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
-    <script src="/js/vendor/isotope.pkgd.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="/components/cp-order-management/cp-order-management.js"></script>
     <!-- endbuild -->
 </body>
 

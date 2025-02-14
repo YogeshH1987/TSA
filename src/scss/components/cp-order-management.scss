@@ -30,12 +30,21 @@
 
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2rem;
-                margin-bottom: 1.6rem;
             }
+
+        }
+
+        .red-text {
+            color: #D2042D;
         }
 
         .cp-search {
             width: 34.3rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 100%;
+                margin-top: 1.6rem;
+            }
 
             .search-icon {
                 color: #B3B3B3;
@@ -341,6 +350,10 @@
 
             .title {
                 font-size: 2.4rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 2rem;
+                }
             }
 
             .payment-status {
@@ -484,6 +497,34 @@
         }
     }
 
+    .refund-details {
+        .refund-details-list {
+            margin-bottom: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+
+            .title {
+                font-size: 1.6rem;
+                font-family: $font-medium;
+                color: $clr-base;
+            }
+
+            .desc {
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: #666666;
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.4rem;
+                }
+
+                &.typ-address {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+
     .m-payment-wrap {
         @media only screen and (max-width: $media-mobile) {
             padding: 2.4rem 1.6rem;
@@ -612,6 +653,10 @@
         @include border-radius(1.6rem);
         overflow: hidden;
 
+        @media only screen and (max-width: $media-mobile) {
+            // padding: 1.2rem;
+        }
+
         .product-head {
             padding: 1.6rem 2.4rem;
             background-color: #ECF2FB;
@@ -662,5 +707,165 @@
                 color: #FFB800;
             }
         }
+    }
+
+    .typ-cancel-order-radio {
+        display: flex;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+
+        .bs-radio {
+            margin-bottom: 0;
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 100%;
+            }
+
+            .custom-radio {
+                min-width: auto;
+                padding: 1.2rem 2.4rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+
+    .cp-form {
+        .form-label {
+            font-family: $font-semiBold !important;
+            color: $clr-base !important;
+            font-size: 1.6rem;
+        }
+    }
+
+    .mb-0 {
+        margin-bottom: 0 !important;
+    }
+
+    .typ-cancel-order {
+        background: #ECF2FB !important;
+        border: 1px solid #B1CBF1 !important;
+        @include border-radius(1.6rem !important);
+
+        .prodcut-item {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .text-bold {
+        color: $clr-base;
+        font-family: $font-semiBold;
+    }
+
+    .description {
+        max-width: 678px;
+        font-size: 1.2rem;
+
+        .link {
+            text-decoration: underline;
+        }
+    }
+}
+
+.typ-order-management {
+    margin-top: 3.2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: $media-mobile) {
+        gap: 1.2rem;
+    }
+
+    .btn {
+        min-width: 34rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            min-width: 48%;
+        }
+    }
+}
+
+
+// drawer
+.typ-my-order-drawer {
+    .head-sec {
+        padding: 0rem 0 2.4rem;
+
+        .drawer-title {
+            font-size: 2rem;
+            font-family: $font-semiBold;
+        }
+    }
+
+    .cont-wrapper {
+
+        position: relative;
+    }
+
+    .cont-sec {
+        min-height: 74vh;
+        height: auto;
+    }
+
+    .mb-12 {
+        margin-bottom: 1.2rem;
+    }
+
+    .order-dealer-wrap {
+        margin-bottom: 2.4rem;
+        padding-bottom: 2.4rem;
+        border-bottom: 1px solid #DEDEDE;
+
+        .order-dealer-head {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2.4rem;
+            padding-bottom: 1.6rem;
+            border-bottom: 1px solid #DEDEDE;
+
+            .head-text {
+                .title {
+                    color: #00398C;
+                    font-size: 2rem;
+                    font-family: $font-semiBold;
+                }
+
+                .desc {
+                    font-size: 1.2rem;
+                    color: $clr-base;
+                }
+
+
+            }
+
+            .price {
+                color: #00398C;
+                font-size: 2rem;
+                font-family: $font-semiBold;
+            }
+        }
+    }
+
+    .cp-search {
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    .w-100 {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .btn-wrap {
+        bottom: -16px;
+        position: sticky;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        padding: 1.2rem;
+
     }
 }
