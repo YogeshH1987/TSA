@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="/components/cp-order-management/cp-order-management.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
 
 </head>
 
@@ -791,7 +792,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="btn-wrap text-center">
-                                                            <button class="btn">Submit</button>
+                                                            <button class="btn model-open" data-toggle="modal"
+                                                                data-modal-id="#rate-experience">Submit</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -836,7 +838,7 @@
                                                         <button class="btn btn-outline w-224">Reorder</button>
                                                     </div>
                                                 </div>
-                                      
+
                                             </div>
                                         </div>
                                     </div>
@@ -1015,7 +1017,442 @@
     </footer>
     <!-- Footer end -->
 
+    <!--model pop up start-->
 
+    <div id="rate-experience" tabindex="-1" role="dialog" class="bs-modal type-lg fade typ-rate-experience">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content ">
+
+                    <button class="close-btn icon-close js-close " type="button "></button>
+                    <div class="cp-model-content">
+                        <h3 class="title">Please rate your order experience</h3>
+                        <div class="rating-main typ-3">
+                            <div class="rating-sec">
+                                <div class="step-sec">
+                                    <span class="steps-num-main">
+                                        <span class="steps-title">Please rate on a scale of 1-10 </span>
+                                        <span class="steps-num">Step - 1/4</span>
+                                    </span>
+                                    <div class="step-main typ-sp">
+                                        <div class="step active"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                    </div>
+                                </div>
+                                <!-- step1 -->
+                                <div class="tab">
+                                    <div class="rating-wrap">
+                                        <p class="desc">Were you able to find relevant information?</p>
+                                        <div class="radio-wrap cm-flex">
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face1" name="face" type="radio" checked="">
+                                                <label for="face1" class="custom-radio">
+                                                    <img src="/images/face1.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+                                            </div>
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face2" name="face" type="radio">
+                                                <label for="face2" class="custom-radio">
+                                                    <img src="/images/face2.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face3" name="face" type="radio">
+                                                <label for="face3" class="custom-radio">
+                                                    <img src="/images/face3.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face4" name="face" type="radio">
+                                                <label for="face4" class="custom-radio">
+                                                    <img src="/images/face4.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face5" name="face" type="radio">
+                                                <label for="face5" class="custom-radio">
+                                                    <img src="/images/face5.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face6" name="face" type="radio">
+                                                <label for="face6" class="custom-radio">
+                                                    <img src="/images/face6.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face7" name="face" type="radio">
+                                                <label for="face7" class="custom-radio">
+                                                    <img src="/images/face7.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face8" name="face" type="radio">
+                                                <label for="face8" class="custom-radio">
+                                                    <img src="/images/face8.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face9" name="face" type="radio">
+                                                <label for="face9" class="custom-radio">
+                                                    <img src="/images/face9.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face10" name="face" type="radio">
+                                                <label for="face10" class="custom-radio">
+                                                    <img src="/images/face10.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- step2 -->
+                                <div class="tab">
+                                    <div class="rating-wrap">
+                                        <p class="desc">Were you able to find the products you needed?</p>
+                                        <div class="radio-wrap cm-flex">
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face1" name="face" type="radio" checked="">
+                                                <label for="face1" class="custom-radio">
+                                                    <img src="/images/face1.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+                                            </div>
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face2" name="face" type="radio">
+                                                <label for="face2" class="custom-radio">
+                                                    <img src="/images/face2.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face3" name="face" type="radio">
+                                                <label for="face3" class="custom-radio">
+                                                    <img src="/images/face3.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face4" name="face" type="radio">
+                                                <label for="face4" class="custom-radio">
+                                                    <img src="/images/face4.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face5" name="face" type="radio">
+                                                <label for="face5" class="custom-radio">
+                                                    <img src="/images/face5.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face6" name="face" type="radio">
+                                                <label for="face6" class="custom-radio">
+                                                    <img src="/images/face6.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face7" name="face" type="radio">
+                                                <label for="face7" class="custom-radio">
+                                                    <img src="/images/face7.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face8" name="face" type="radio">
+                                                <label for="face8" class="custom-radio">
+                                                    <img src="/images/face8.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face9" name="face" type="radio">
+                                                <label for="face9" class="custom-radio">
+                                                    <img src="/images/face9.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face10" name="face" type="radio">
+                                                <label for="face10" class="custom-radio">
+                                                    <img src="/images/face10.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- step3 -->
+                                <div class="tab">
+                                    <div class="rating-wrap">
+                                        <p class="desc">Were you able to setup your account & login easily?</p>
+                                        <div class="radio-wrap cm-flex">
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face1" name="face" type="radio" checked="">
+                                                <label for="face1" class="custom-radio">
+                                                    <img src="/images/face1.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+                                            </div>
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face2" name="face" type="radio">
+                                                <label for="face2" class="custom-radio">
+                                                    <img src="/images/face2.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face3" name="face" type="radio">
+                                                <label for="face3" class="custom-radio">
+                                                    <img src="/images/face3.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face4" name="face" type="radio">
+                                                <label for="face4" class="custom-radio">
+                                                    <img src="/images/face4.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face5" name="face" type="radio">
+                                                <label for="face5" class="custom-radio">
+                                                    <img src="/images/face5.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face6" name="face" type="radio">
+                                                <label for="face6" class="custom-radio">
+                                                    <img src="/images/face6.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face7" name="face" type="radio">
+                                                <label for="face7" class="custom-radio">
+                                                    <img src="/images/face7.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face8" name="face" type="radio">
+                                                <label for="face8" class="custom-radio">
+                                                    <img src="/images/face8.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face9" name="face" type="radio">
+                                                <label for="face9" class="custom-radio">
+                                                    <img src="/images/face9.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face10" name="face" type="radio">
+                                                <label for="face10" class="custom-radio">
+                                                    <img src="/images/face10.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- step4 -->
+                                <div class="tab">
+                                    <div class="rating-wrap">
+                                        <p class="desc">Were you able to complete payment easily?</p>
+                                        <div class="radio-wrap cm-flex">
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face1" name="face" type="radio" checked="">
+                                                <label for="face1" class="custom-radio">
+                                                    <img src="/images/face1.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+                                            </div>
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face2" name="face" type="radio">
+                                                <label for="face2" class="custom-radio">
+                                                    <img src="/images/face2.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face3" name="face" type="radio">
+                                                <label for="face3" class="custom-radio">
+                                                    <img src="/images/face3.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face4" name="face" type="radio">
+                                                <label for="face4" class="custom-radio">
+                                                    <img src="/images/face4.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face5" name="face" type="radio">
+                                                <label for="face5" class="custom-radio">
+                                                    <img src="/images/face5.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face6" name="face" type="radio">
+                                                <label for="face6" class="custom-radio">
+                                                    <img src="/images/face6.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face7" name="face" type="radio">
+                                                <label for="face7" class="custom-radio">
+                                                    <img src="/images/face7.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face8" name="face" type="radio">
+                                                <label for="face8" class="custom-radio">
+                                                    <img src="/images/face8.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face9" name="face" type="radio">
+                                                <label for="face9" class="custom-radio">
+                                                    <img src="/images/face9.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="bs-radio typ-face-rating">
+                                                <input id="face10" name="face" type="radio">
+                                                <label for="face10" class="custom-radio">
+                                                    <img src="/images/face10.svg" alt="">
+                                                    <span class="result">Not likely</span>
+                                                </label>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- step5 -->
+
+                                 <div class="tab">
+                                    <div class="cp-form">
+                                        <div class="form-group mb-0">
+                                            <label class="form-label">Tell us how we can improve your experience</label>
+                                                <textarea id="suggesion" rows="4" cols="36" placeholder="Enter text" class="form-control"></textarea>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap text-center">
+                                    <button type="button" class="btn" id="nextBtn">Next</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
 
     <div class="cm-overlay"></div>
 
@@ -1027,6 +1464,7 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="/components/cp-order-management/experience-rating.js"></script>
     <!-- endbuild -->
 </body>
 

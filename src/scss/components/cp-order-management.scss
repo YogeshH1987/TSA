@@ -267,72 +267,6 @@
         }
     }
 
-    .rating-main {
-        @include border-radius(1.6rem);
-        border: 1px solid #DEDEDE;
-        margin-top: -24px;
-        overflow: hidden;
-        position: relative;
-        z-index: -1;
-
-        .radio-wrap {
-            gap: 8px;
-            display: flex;
-            justify-content: space-between;
-            margin: 1.6rem 0;
-
-            @media only screen and (max-width: $media-mobile) {
-                gap: 0px;
-            }
-        }
-
-        .rating-head {
-            background: #FFF1CC;
-            border-bottom: 1px solid #FFD466;
-            padding: 2.8rem 1.6rem 1.2rem;
-
-            .head-title {
-                font-size: 2rem;
-                font-family: $font-semiBold;
-                color: $clr-base;
-            }
-        }
-
-        .desc {
-            color: $clr-base;
-        }
-
-        .rating-sec {
-            display: flex;
-            justify-content: space-between;
-            padding: 1.2rem 1.6rem;
-            align-items: center;
-
-            @media only screen and (max-width: $media-mobile) {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .rating-wrap {
-                width: 65%;
-
-                @media only screen and (max-width: $media-mobile) {
-                    width: 100%;
-                }
-            }
-        }
-
-        &.typ-2 {
-            margin-top: 0;
-
-            .rating-head {
-                padding: 1.2rem 0;
-                margin: 0 2.4rem;
-                background-color: transparent;
-                border-bottom: 1px solid #DEDEDE;
-            }
-        }
-    }
 
     &.typ-order-details {
         padding: 0;
@@ -867,5 +801,155 @@
         right: 0;
         padding: 1.2rem;
 
+    }
+
+}
+
+.tab {
+    display: none;
+}
+
+// rating experience
+
+.rating-main {
+    @include border-radius(1.6rem);
+    border: 1px solid #DEDEDE;
+    margin-top: -24px;
+    overflow: hidden;
+    // position: relative;
+    // z-index: -1;
+
+    .radio-wrap {
+        gap: 8px;
+        display: flex;
+        justify-content: space-between;
+        margin: 1.6rem 0;
+
+        @media only screen and (max-width: $media-mobile) {
+            gap: 0px;
+        }
+    }
+
+    .rating-head {
+        background: #FFF1CC;
+        border-bottom: 1px solid #FFD466;
+        padding: 2.8rem 1.6rem 1.2rem;
+
+        .head-title {
+            font-size: 2rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+            @media only screen and (max-width: $media-mobile) {font-size: 1.6rem}
+        }
+    }
+
+    .desc {
+        color: $clr-base;
+    }
+
+    .rating-sec {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem 1.6rem;
+        align-items: center;
+
+        @media only screen and (max-width: $media-mobile) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .rating-wrap {
+            width: 65%;
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 100%;
+            }
+        }
+    }
+
+    &.typ-2 {
+        margin-top: 0;
+
+        .rating-head {
+            padding: 1.2rem 0;
+            margin: 0 2.4rem;
+            background-color: transparent;
+            border-bottom: 1px solid #DEDEDE;
+        }
+    }
+
+    &.typ-3 {
+        border: 0;
+        margin-top: 4rem;
+        @include border-radius(0);
+
+        .desc {
+            font-family: $font-medium
+        }
+
+        .rating-sec {
+            flex-direction: column;
+            padding: 0;
+            align-items: inherit;
+
+            .rating-wrap {
+                width: 100%
+            }
+        }
+
+        .step-sec {
+            .steps-num-main {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.2rem;
+                color: #333333;
+
+                .steps-num {
+                    font-family: $font-medium;
+                    color: #666666;
+                }
+            }
+
+            .step-main {
+                display: flex;
+                gap: 0.4rem;
+                margin-bottom: 2.4rem;
+
+                .step {
+                    width: auto;
+                    -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                    -webkit-box-flex: 1;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 100%;
+                    width: 25%;
+                    height: 3px;
+                    background-color: #CCCCCC;
+                    @include border-radius(1rem);
+
+                    &.active {
+                        background-color: #3D7EDB;
+                    }
+
+                    &.finish {
+                        background-color: #00A441;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.typ-rate-experience {
+    .title {
+        font-family: $font-semiBold;
+        font-size: 2rem;
+        color: $clr-base;
+    }
+
+    .cp-form {
+        margin-top: 0;
     }
 }
