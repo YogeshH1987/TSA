@@ -64,7 +64,10 @@
             color: $clr-base;
             font-size: 2.4rem;
             margin-bottom: 2rem;
-            @media only screen and (max-width: $media-mobile) {  font-size: 2rem; }
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 2rem;
+            }
         }
 
         .desc {
@@ -74,16 +77,48 @@
             padding: 0;
             line-height: 2.4rem;
             color: #666666;
-            @media only screen and (max-width: $media-mobile) {   font-size: 1.4rem; margin-bottom: 0.4rem;    line-height: 2rem;}
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.4rem;
+                margin-bottom: 0.4rem;
+                line-height: 2rem;
+            }
         }
 
         .btn-wrap {
             display: flex;
             align-items: center;
             gap: 1.6rem;
-            @media only screen and (max-width: $media-mobile) { margin-top: 3.2rem; }
+
+            @media only screen and (max-width: $media-mobile) {
+                margin-top: 3.2rem;
+            }
+
             .btn {
                 width: 50%;
+            }
+        }
+    }
+
+    &.typ-delete-address {
+        text-align: left;
+
+        .title {
+            text-align: center;
+            margin-bottom: 1.6rem;
+            font-size: 2rem;
+            font-family: $font-medium;
+            color: $clr-base;
+        }
+
+        .btn-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            margin-top: 2.4rem;
+            .btn {
+                flex: 0 0 calc(50% - 8px);
+                max-width: calc(50% - 8px);
             }
         }
     }

@@ -614,7 +614,8 @@
       align-items: center;
       justify-content: space-between;
       font-size: 1.2rem;
-      color: #333333; }
+      color: #333333;
+      margin-bottom: 4px; }
       .rating-main.typ-3 .step-sec .steps-num-main .steps-num {
         font-family: "Poppins Medium";
         color: #666666; }
@@ -641,11 +642,49 @@
         .rating-main.typ-3 .step-sec .step-main .step.finish {
           background-color: #00A441; }
 
-.typ-rate-experience .title {
-  font-family: "Poppins Semibold";
-  font-size: 2rem;
-  color: #333333; }
-.typ-rate-experience .cp-form {
-  margin-top: 0; }
+.typ-rate-experience {
+  max-width: 640px;
+  max-height: 328px; }
+  .typ-rate-experience.modal-show {
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 768px) {
+    .typ-rate-experience {
+      bottom: 0  !important;
+      -webkit-transform: translate(-50%, 0%) !important;
+      -moz-transform: translate(-50%, 0%) !important;
+      -ms-transform: translate(-50%, 0%) !important;
+      -o-transform: translate(-50%, 0%) !important;
+      transform: translate(-50%, 0%) !important;
+      top: auto  !important; } }
+  @media only screen and (max-width: 768px) {
+    .typ-rate-experience .modal-body {
+      padding: 1.6rem  !important; } }
+  .typ-rate-experience .modal-dialog {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px; }
+    @media only screen and (max-width: 768px) {
+      .typ-rate-experience .modal-dialog {
+        border-radius: 12px 12px 0 0 !important;
+        -webkit-border-radius: 12px 12px 0 0 !important;
+        -moz-border-radius: 12px 12px 0 0 !important;
+        -webkit-transform: translate(-50%, 0%) !important;
+        -moz-transform: translate(-50%, 0%) !important;
+        -ms-transform: translate(-50%, 0%) !important;
+        -o-transform: translate(-50%, 0%) !important;
+        transform: translate(-50%, 0%) !important;
+        bottom: 0  !important;
+        top: auto  !important;
+        height: auto  !important; } }
+  .typ-rate-experience .title {
+    font-family: "Poppins Semibold";
+    font-size: 2rem;
+    color: #333333; }
+    @media only screen and (max-width: 768px) {
+      .typ-rate-experience .title {
+        font-size: 1.6rem; } }
+  .typ-rate-experience .cp-form {
+    margin-top: 0; }
 
 /*# sourceMappingURL=cp-order-management.css.map */
