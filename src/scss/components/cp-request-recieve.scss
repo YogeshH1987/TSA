@@ -152,4 +152,31 @@
             }
         }
     }
+
+    &.typ-design-style-sq {
+        border-bottom: 1px solid #DEDEDE;
+        padding-bottom: 4rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            margin: 0 -1.6rem;
+            padding-bottom: 2.4rem;
+        }
+
+        .img-wrap {
+            max-width: 330px;
+            margin: 0 auto 2.4rem;
+        }
+
+        .desc {
+            color: $clr-base;
+            font-family: $font-medium;
+            margin-bottom: 2.4rem;
+
+            br {
+                @media only screen and (max-width: $media-mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
 }

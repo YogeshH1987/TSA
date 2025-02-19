@@ -210,6 +210,38 @@
       height: 14rem; }
     .cp-architect-card.typ-architect-style .img-wrap .img {
       max-height: 46rem; }
+    .cp-architect-card.typ-architect-style .img-wrap .tag-list {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 1.6rem; }
+      .cp-architect-card.typ-architect-style .img-wrap .tag-list .tag-item .tag {
+        background: #fff;
+        border-radius: 2.6rem;
+        -webkit-border-radius: 2.6rem;
+        -moz-border-radius: 2.6rem;
+        font-family: "Poppins Medium";
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #3D7EDB;
+        padding: 0.4rem 0.8rem; }
+      .cp-architect-card.typ-architect-style .img-wrap .tag-list .tag-item .icon {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #999999;
+        cursor: pointer;
+        background: #fff;
+        width: 2.4rem;
+        height: 2.4rem;
+        padding: 4px;
+        border-radius: 0.6rem;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem; }
     .cp-architect-card.typ-architect-style .detail-wrap {
       padding: 1.6rem; }
       .cp-architect-card.typ-architect-style .detail-wrap .card-title {
@@ -346,6 +378,30 @@
         .cp-architect-card.typ-home-building .detail-wrap .detail-right .icon {
           color: #333333;
           font-size: 1.6rem; }
+  @media only screen and (max-width: 991px) {
+    .cp-architect-card.typ-design-style-quiz {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0; } }
+  .cp-architect-card.typ-design-style-quiz .bottom-sec .location-list .location-item .link {
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Poppins Medium";
+    font-size: 1.4rem; }
+  @media only screen and (max-width: 991px) {
+    .cp-architect-card.typ-design-style-support .detail-right {
+      right: 18px;
+      top: -95%;
+      position: absolute; } }
+  @media only screen and (max-width: 991px) {
+    .cp-architect-card.typ-design-style-support .detail-wrap {
+      padding: 1.2rem; } }
+  .cp-architect-card.typ-design-style-support .card-title {
+    margin-bottom: 0; }
+    @media only screen and (max-width: 991px) {
+      .cp-architect-card.typ-design-style-support .card-title {
+        font-size: 1.4rem;
+        line-height: 2rem; } }
 
 .w-100 {
   width: 100%; }

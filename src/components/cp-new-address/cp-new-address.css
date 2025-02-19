@@ -138,13 +138,10 @@
     -o-transform: translate(-50%, 0%) !important;
     transform: translate(-50%, 0%) !important;
     top: auto  !important;
-    max-width: 100%; } }
+    max-width: 100% !important; } }
 .typ-edit-address.modal-show {
   top: 50%;
   transform: translate(-50%, -50%); }
-  @media only screen and (max-width: 768px) {
-    .typ-edit-address.modal-show {
-      max-width: 100% !important; } }
 @media only screen and (max-width: 768px) {
   .typ-edit-address .modal-body {
     padding: 0  !important; } }

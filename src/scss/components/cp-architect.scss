@@ -330,6 +330,42 @@
       .img {
         max-height: 46rem;
       }
+
+      .tag-list {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4rem 1.6rem;
+
+        .tag-item {
+          .tag {
+            background: #fff;
+            @include border-radius(2.6rem);
+            font-family: "Poppins Medium";
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: #3D7EDB;
+            padding: 0.4rem 0.8rem;
+          }
+
+          .icon {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #999999;
+            cursor: pointer;
+            background: #fff;
+            width: 2.4rem;
+            height: 2.4rem;
+            padding: 4px;
+            @include border-radius(0.6rem)
+          }
+        }
+      }
     }
 
     .detail-wrap {
@@ -523,7 +559,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .bottom-sec{width: 100%;}
+
+      .bottom-sec {
+        width: 100%;
+      }
+
       .location-item {
         .details {
           color: $clr-base;
@@ -548,6 +588,51 @@
           color: $clr-base;
           font-size: 1.6rem;
         }
+      }
+    }
+  }
+
+  &.typ-design-style-quiz {
+    @media only screen and (max-width: $media-sm) {
+      @include border-radius(0)
+    }
+
+    .bottom-sec {
+      .location-list {
+        .location-item {
+          .link {
+            color: #fff;
+            text-decoration: underline;
+            font-family: $font-medium;
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+    }
+  }
+
+  &.typ-design-style-support {
+    .detail-right {
+      @media only screen and (max-width: $media-sm) {
+        right: 18px;
+        top: -95%;
+        position: absolute;
+      }
+    }
+
+    .detail-wrap {
+      @media only screen and (max-width: $media-sm) {
+        padding: 1.2rem;
+      }
+    }
+
+    .card-title {
+      margin-bottom: 0;
+
+      @media only screen and (max-width: $media-sm) {
+        font-size: 1.4rem;
+        line-height: 2rem;
       }
     }
   }

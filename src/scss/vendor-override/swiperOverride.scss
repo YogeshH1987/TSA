@@ -745,9 +745,10 @@
       width: 19rem;
     }
 
-    &.pb-0{
+    &.pb-0 {
       @media only screen and (max-width: $media-mobile) {
-      padding-bottom: 0;}
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -915,5 +916,11 @@
     padding-bottom: 3.2rem;
     margin-bottom: 3.4rem;
 
+  }
+
+  &.typ-design-style-quiz {
+    @media only screen and (max-width: $media-mobile) {
+      margin-left: -2rem;
+    }
   }
 }

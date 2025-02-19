@@ -603,6 +603,37 @@
         text-shadow: #333333 0.9px 0 0.9px; }
         .cp-tab.typ-my-order .tab-list .tab-item:hover .title::after, .cp-tab.typ-my-order .tab-list .tab-item.active .title::after {
           width: 100%; }
+.cp-tab.typ-design-sq {
+  position: relative;
+  margin-bottom: 2.4rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-tab.typ-design-sq {
+      margin-bottom: 1.6rem; } }
+  .cp-tab.typ-design-sq .tab-list {
+    border-bottom: 1px solid #DEDEDE; }
+    .cp-tab.typ-design-sq .tab-list .tab-item .title {
+      border: 0;
+      position: relative;
+      padding: 1.6rem 4rem;
+      text-transform: initial; }
+      @media only screen and (max-width: 768px) {
+        .cp-tab.typ-design-sq .tab-list .tab-item .title {
+          padding: 1.6rem 1rem; } }
+      .cp-tab.typ-design-sq .tab-list .tab-item .title::after {
+        position: absolute;
+        content: '';
+        background: #D2042D;
+        width: 0%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        transition: all ease-in 0.3s; }
+    .cp-tab.typ-design-sq .tab-list .tab-item:hover .title, .cp-tab.typ-design-sq .tab-list .tab-item.active .title {
+      background: none;
+      color: #333333;
+      text-shadow: #333333 0.9px 0 0.9px; }
+      .cp-tab.typ-design-sq .tab-list .tab-item:hover .title::after, .cp-tab.typ-design-sq .tab-list .tab-item.active .title::after {
+        width: 100%; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

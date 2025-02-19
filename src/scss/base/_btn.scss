@@ -237,4 +237,8 @@
             font-size: 2.4rem;
         }
     }
+    &.common-lg-btn {
+        min-width: 34.3rem;
+        @media only screen and (max-width: $media-mobile) { min-width:100%; }
+    }
 }

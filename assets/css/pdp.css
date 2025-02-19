@@ -487,5 +487,36 @@
           flex: 0 0 100%;
           max-width: 100%;
           padding: 0; } }
+  .lyt-grid.typ-design-sq {
+    margin-bottom: 1.6rem;
+    flex-direction: initial; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-design-sq {
+        flex-direction: initial; } }
+    .lyt-grid.typ-design-sq .grid-col {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px); }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-design-sq .grid-col {
+          flex: 0 0 calc(50% - 6px);
+          max-width: calc(50% - 6px); } }
+  .lyt-grid.typ-design-quiz {
+    margin-bottom: 1.6rem;
+    flex-direction: initial;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-design-quiz {
+        flex-direction: initial; } }
+    .lyt-grid.typ-design-quiz .grid-col {
+      flex: 0 0 calc(33.33% - 14px);
+      max-width: calc(33.33% - 14px); }
+      @media only screen and (max-width: 768px) {
+        .lyt-grid.typ-design-quiz .grid-col {
+          flex: 0 0 calc(50% - 6px);
+          max-width: calc(50% - 6px); } }
+    @media only screen and (max-width: 768px) {
+      .lyt-grid.typ-design-quiz.w-100 .grid-col {
+        flex: 0 0 100%;
+        max-width: 100%; } }
 
 /*# sourceMappingURL=pdp.css.map */

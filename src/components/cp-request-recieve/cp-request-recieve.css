@@ -113,5 +113,22 @@
       max-width: 30rem;
       margin: auto;
       color: #EE4400; }
+  .cp-request-recieve.typ-design-style-sq {
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 4rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-request-recieve.typ-design-style-sq {
+        margin: 0 -1.6rem;
+        padding-bottom: 2.4rem; } }
+    .cp-request-recieve.typ-design-style-sq .img-wrap {
+      max-width: 330px;
+      margin: 0 auto 2.4rem; }
+    .cp-request-recieve.typ-design-style-sq .desc {
+      color: #333333;
+      font-family: "Poppins Medium";
+      margin-bottom: 2.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-request-recieve.typ-design-style-sq .desc br {
+          display: none; } }
 
 /*# sourceMappingURL=cp-request-recieve.css.map */

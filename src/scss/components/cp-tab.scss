@@ -1002,6 +1002,56 @@
       }
     }
   }
+
+  &.typ-design-sq {
+    position: relative;
+    margin-bottom: 2.4rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 1.6rem;
+    }
+    .tab-list {
+      border-bottom: 1px solid $clr-border;
+
+      .tab-item {
+        .title {
+          border: 0;
+          position: relative;
+          padding: 1.6rem 4rem;
+          text-transform: initial;
+
+          @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem 1rem;
+          }
+
+          &::after {
+            position: absolute;
+            content: '';
+            background: #D2042D;
+            width: 0%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            transition: all ease-in 0.3s;
+          }
+        }
+
+        &:hover,
+        &.active {
+          .title {
+            background: none;
+            color: $clr-base;
+            // font-family: $font-semiBold;
+            text-shadow: $clr-base 0.9px 0 0.9px;
+
+            &::after {
+              width: 100%;
+            }
+
+          }
+        }
+      }
+    }
+  }
 }
 
 

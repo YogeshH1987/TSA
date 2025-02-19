@@ -1,0 +1,267 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-design-style-quiz {
+    .img-wrap {
+        @include border-radius(1.2rem);
+        height: 20rem;
+        overflow: hidden;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    }
+
+    .title-wrap {
+        font-size: 1.6rem;
+        color: $clr-base;
+        font-family: $font-medium;
+        margin-top: 8px;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .selected-text {
+        background-color: rgba(0, 0, 0, 60%);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        height: 6.4rem;
+        padding: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+            height: 4rem;
+            padding: 0.4rem;
+        }
+    }
+
+    &.selected {
+        .img-wrap {
+            position: relative;
+            z-index: 1;
+
+            .selected-text {
+                display: flex;
+            }
+
+            &::after {
+                content: '';
+                border: 4px solid #D2042D;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 1.2rem;
+                -webkit-border-radius: 1.2rem;
+                -moz-border-radius: 1.2rem;
+                z-index: 1;
+            }
+        }
+    }
+
+    &.typ-2 {
+        .img-wrap {
+            @media only screen and (max-width: $media-mobile) {
+                height: 130px;
+            }
+        }
+    }
+}
+
+.cp-design-style-quiz-main {
+    .quiz-step {
+        display: none;
+    }
+
+    .sec-cont {
+        background-color: #DEDEDE;
+        padding: 2.4rem 0;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 0;
+            background-color: #fff;
+        }
+    }
+
+    .quiz-wrap {
+        display: flex;
+
+        @media only screen and (max-width: $media-mobile) {
+            flex-direction: column;
+        }
+
+        .quesion-wrap {
+            width: 30%;
+            padding-right: 6rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                text-align: center;
+                background-color: #612D61;
+                padding-right: 0rem;
+                width: auto;
+                margin: 0 -1.6rem 2.4rem;
+                padding-bottom: 16px;
+            }
+
+            .title {
+                font-size: 3.6rem;
+                font-family: $font-semiBold;
+                line-height: 4.8rem;
+                color: $clr-base;
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.6rem;
+                    color: #fff;
+                    font-family: $font-medium;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .image-list-wrap {
+            width: 70%;
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-wrap {
+        padding: 1.6rem 0;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+        }
+
+        .btn-steps {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: auto;
+            gap: 5px;
+            @media only screen and (max-width: $media-mobile) { font-size: 0;}
+            .icon {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.cp-desing-sq-banner {
+    background-color: #612D61;
+    padding: 2.4rem 0;
+
+
+
+    @media only screen and (max-width: $media-mobile) {
+        padding: 1.6rem 0;
+    }
+
+    &.mb-4 {
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .title-head {
+        font-size: 1.6rem;
+        font-family: $font-medium;
+        color: #fff;
+        text-align: center;
+    }
+
+    .step-sec {
+
+        @include border-radius(0);
+        margin-bottom: 0;
+        color: $clr-root;
+
+
+        .steps-num-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .steps-num {
+                font-family: $font-medium;
+                font-size: 1.2rem;
+                color: #DED3DE;
+            }
+
+            .text {
+                text-decoration: underline;
+            }
+
+            .exit-btn {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 1.4rem;
+                color: #fff;
+
+                .icon {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    font-size: 1.6rem;
+                    color: #FFF;
+                }
+            }
+        }
+
+        .step-main {
+
+            margin-top: 0.8rem;
+            display: flex;
+            gap: 0.4rem;
+
+            .step {
+                width: auto;
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+                height: 3px;
+                background-color: #FFFFFF;
+                @include border-radius(1rem);
+
+                &.finish {
+                    background-color: #00A441;
+                }
+
+                &.active {
+                    background-color: #FFB800;
+                }
+            }
+        }
+    }
+}
