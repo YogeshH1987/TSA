@@ -1,0 +1,253 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-moodboard-card {
+    background-color: #F3F4F6;
+    @include border-radius(1.6rem);
+    padding: 1.6rem;
+    height: 100%;
+
+    .head-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+
+        .title {
+            font-size: 1.6rem;
+            color: $clr-base;
+            margin-bottom: 0;
+            font-family: $font-semiBold;
+
+            .link {
+                font-size: 1.2rem;
+                display: block;
+                font-family: $font-medium;
+            }
+        }
+    }
+
+    .tag-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.8rem;
+
+        .tag-item {
+            .tag-link {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 0.8rem;
+                -webkit-border-radius: 0.8rem;
+                -moz-border-radius: 0.8rem;
+                background: #FFFFFF;
+                font-size: 2rem;
+                color: #999999;
+                &.icon-heart-fill{ color: #EE4400;}
+            }
+
+        }
+
+        &.bottom-icon {
+            margin-top: 1.6rem;
+
+            .tag-item {
+                width: 50%;
+
+                .tag-link {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .colonial {
+        margin: 0 -0.8rem;
+
+        .colonial-item {
+            width: 50%;
+            /* Adjust width to account for 20px gutter */
+            padding: 0.6rem 0.8rem;
+            display: flex;
+            overflow: hidden;
+
+            .colonial-card {
+                overflow: hidden;
+                border: 1px solid #DEDEDE;
+                border-radius: 1.6rem;
+                overflow: hidden;
+
+                -webkit-border-radius: 1.6rem;
+                -moz-border-radius: 1.6rem;
+                transition: all 2slinear;
+                -webkit-transition: all 2slinear;
+                -moz-transition: all 2s linear;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 10rem;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                &.typ-long-img {
+                    height: 21.2rem;
+
+                }
+            }
+
+
+        }
+
+        .grid-sizer {
+            width: 50%;
+            height: 10rem;
+            display: none;
+            order: 0;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+}
+
+.cp-moodboard-card-single-wrap {
+    max-width: 500px;
+    margin: auto;
+}
+
+.cp-moodboard-card-single {
+    .title {
+        font-size: 2.8rem;
+        color: $clr-base;
+        margin-bottom: 1.6rem;
+        font-family: $font-semiBold;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2.4rem;
+        }
+    }
+
+    .tag-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 1.6rem;
+
+        .tag-item {
+            width: 33%;
+
+            .tag-link {
+                width: 100%;
+                height: 4rem;
+                border-radius: 0.8rem;
+                -webkit-border-radius: 0.8rem;
+                -moz-border-radius: 0.8rem;
+                background: #F3F4F6;
+                font-size: 2rem;
+                color: #000000;
+
+                &.icon-heart-fill{ color: #EE4400;}
+            }
+
+        }
+    }
+
+    .cp-moodboard-card {
+        .colonial {
+            margin: 0 -0.8rem;
+
+            .colonial-item {
+                width: 50%;
+                /* Adjust width to account for 20px gutter */
+                padding: 0.6rem 0.8rem;
+                display: flex;
+                overflow: hidden;
+
+                .colonial-card {
+
+                    height: 14.4rem;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        height: 8.3em;
+                    }
+
+                    &.typ-long-img {
+                        height: 30rem;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            height: 17.8rem;
+                        }
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+.cp-moodboard-card-mordify {
+    padding: 3.2rem;
+    @include border-radius(2.4rem);
+    border: 1px solid #DEDEDE;
+    max-width: 600px;
+    margin: auto;
+
+    @media only screen and (max-width: $media-mobile) {
+        padding: 0rem;
+        @include border-radius(0);
+        border: 0;
+    }
+
+    .title {
+        font-size: 2.8rem;
+        color: $clr-base;
+        margin-bottom: 1.6rem;
+        font-family: $font-semiBold;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 1.6rem;
+
+
+        .link {
+            font-size: 1.6rem;
+            font-family: $font-medium;
+            text-decoration: underline;
+        }
+    }
+
+    .cont-sec {
+        @media only screen and (max-width: $media-mobile) {
+            height: calc(100vh - 374px);
+        }
+
+        .form-control {
+            color: $clr-base;
+            font-family: $font-medium;
+        }
+    }
+
+    .btn-wrap {
+        margin-top: 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1.6rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            margin-top: 0rem;
+            justify-content: center;
+        }
+
+        .btn {
+            min-width: 48%;
+        }
+    }
+}

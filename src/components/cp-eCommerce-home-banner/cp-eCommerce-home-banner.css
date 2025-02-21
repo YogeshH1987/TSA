@@ -912,5 +912,80 @@
       .cp-eCommerce-home-banner.typ-home-building-stage.bs-swiper .swiper-wrapper {
         gap: 0rem;
         flex-wrap: initial; }
+  .cp-eCommerce-home-banner.typ-moodboard-help {
+    background-color: #fff;
+    padding: 0;
+    height: 220px;
+    margin: 0; }
+    @media only screen and (max-width: 991px) {
+      .cp-eCommerce-home-banner.typ-moodboard-help {
+        height: auto; } }
+    .cp-eCommerce-home-banner.typ-moodboard-help .feature {
+      height: 100%; }
+      @media only screen and (max-width: 991px) {
+        .cp-eCommerce-home-banner.typ-moodboard-help .feature {
+          height: 136px; } }
+      .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item {
+        order: initial;
+        width: 100%;
+        height: 100%; }
+        .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .feature-card {
+          padding: 4rem 2.4rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .feature-card {
+              padding: 1.6rem; } }
+        .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .cont-wrap {
+          position: absolute;
+          bottom: 3rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .cont-wrap {
+              position: static; } }
+        .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-desc {
+          font-size: 1.6rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-desc {
+              font-size: 1.4rem; } }
+        .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-title {
+          text-transform: capitalize;
+          font-size: 2.8rem;
+          max-width: 100%;
+          line-height: 4rem;
+          margin-bottom: 1.2rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-title {
+              font-size: 1.6rem;
+              max-width: 33%;
+              line-height: 2.4rem; } }
+        .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-img {
+          position: absolute;
+          top: 0;
+          bottom: auto;
+          right: 0;
+          width: 22.6rem;
+          height: 22.6rem;
+          max-width: 22.6rem;
+          max-height: 22.6rem;
+          z-index: 1; }
+          @media only screen and (max-width: 991px) {
+            .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-img {
+              width: 12.6rem;
+              height: 12.6rem;
+              max-width: 12.6rem;
+              max-height: 12.6rem; } }
+          .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-img::after {
+            background: #FFF8E5;
+            width: 22.6rem;
+            height: 22.6rem;
+            border-radius: 50%;
+            position: absolute;
+            right: -28px;
+            top: -23px;
+            content: '';
+            opacity: 1;
+            z-index: -1; }
+            @media only screen and (max-width: 991px) {
+              .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-img::after {
+                width: 14.6rem;
+                height: 14.6rem; } }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */

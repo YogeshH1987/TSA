@@ -1,111 +1,133 @@
 @import "../config/variables";
 @import "../config/mixin";
-.cp-add-info-list{
+
+.cp-add-info-list {
     @include border-radius(1.2rem);
     border: 1px solid $clr-border;
-    .add-info-item{
+
+    .add-info-item {
         border-bottom: 1px solid $clr-border;
-        &:last-child{
+
+        &:last-child {
             border: none;
-       }  
+        }
     }
-          
-    .info-card{
+
+    .info-card {
         padding: 1.6rem 2rem;
         gap: 1rem;
         display: flex;
         align-items: center;
-        .icon{
+
+        .icon {
             font-size: 2.8rem;
             line-height: 3rem;
             color: $clr-primary;
-            &.active{
+
+            &.active {
                 color: $clr-secondary;
             }
         }
-        .info-title{
+
+        .info-title {
             font-family: $font-regular;
             font-size: 1.4rem;
             line-height: 2rem;
             color: $clr-base;
             margin-bottom: .3rem;
         }
-        .info-desc{
+
+        .info-desc {
             font-family: $font-regular;
             font-size: 1.2rem;
             line-height: 1.6rem;
             color: $clr-para;
         }
-        .info-link{
+
+        .info-link {
             color: $clr-primary;
             font-family: $font-medium;
             font-size: 1.2rem;
             line-height: 1.6rem;
             text-decoration: underline;
-        }           
+        }
     }
-    &.typ-pdp{
-        margin:3.2rem 0;
+
+    &.typ-pdp {
+        margin: 3.2rem 0;
+
         @media only screen and (max-width: $media-mobile) {
             order: 4;
-           
+
         }
-        .info-wrap{
+
+        .info-wrap {
             position: relative;
             width: 100%;
-            .info-link{
+
+            .info-link {
                 position: absolute;
                 right: 0;
                 top: 0;
+
                 @media only screen and (max-width: $media-mobile) {
                     position: relative;
                 }
             }
         }
     }
-    &.typ-calculate{
+
+    &.typ-calculate {
         @include border-radius(0);
         border: 0;
         margin-top: 2.4rem;
         display: flex;
         justify-content: space-between;
         gap: 1.2rem;
+
         @media only screen and (max-width: $media-mobile) {
             flex-wrap: wrap;
         }
-        .add-info-item{
+
+        .add-info-item {
             border: 1px solid $clr-border;
             @include border-radius(1.2rem);
             width: 33%;
+
             @media only screen and (max-width: $media-mobile) {
                 width: 100%;
             }
-            &:nth-child(2){
-                .info-card{
-                    .icon{
+
+            &:nth-child(2) {
+                .info-card {
+                    .icon {
                         color: #3D7EDB;
                         background: #D8E5F8;
                     }
                 }
             }
-            &:nth-child(3){
-                .info-card{
-                    .icon{
+
+            &:nth-child(3) {
+                .info-card {
+                    .icon {
                         background: #F6CDD5;
                         color: #D2042D;
                     }
                 }
             }
         }
-        .info-card{
+
+        .info-card {
             align-items: flex-start;
             width: 100%;
             gap: 1.2rem;
             text-align: left;
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 1.2rem 1.6rem;
             }
-            .icon{
+
+            .icon {
                 font-size: 2rem;
                 line-height: 3.2rem;
                 color: #00A441;
@@ -115,18 +137,62 @@
                 border-radius: 50%;
                 text-align: center;
             }
-            .info-wrap{
-                width: 90%;               
+
+            .info-wrap {
+                width: 90%;
             }
-            .info-title{
+
+            .info-title {
                 font-family: $font-semiBold;
                 font-size: 1.6rem;
                 line-height: 2.6rem;
                 color: $clr-base;
             }
-            .info-desc{
+
+            .info-desc {
                 font-size: 1.4rem;
                 line-height: 2rem;
+            }
+        }
+    }
+
+    &.typ-moodboards {
+        border: 0;
+
+        .add-info-item {
+            border: 1px solid #DEDEDE;
+            margin-bottom: 1.6rem;
+            @include border-radius(1.2rem);
+
+            .info-card {
+                padding: 1.2rem 1.6rem;
+                .info-title {
+                    font-size: 1.6rem;
+                    margin-bottom: 0;
+                    font-family: $font-semiBold;
+                }
+
+                .icon {
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    @include border-radius(50%);
+                    font-size: 2.4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &.blue{
+                        color: #3D7EDB;
+                        background-color: #ECF2FB;
+                    }
+                    &.green{
+                        color: #00A441;
+                        background-color: #CCEDD9;
+                    }
+                    &.red{
+                        color: #D2042D;
+                        background-color: #FAE6EA;
+                    }
+                }
             }
         }
     }

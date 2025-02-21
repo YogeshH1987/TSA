@@ -179,4 +179,12 @@
             }
         }
     }
+
+    &.typ-mooboard-result {
+        .title {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+    }
 }

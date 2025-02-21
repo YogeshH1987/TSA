@@ -2039,6 +2039,25 @@ p {
     background-color: #fff; }
   .bs-sec .mt-32 {
     margin-top: 3.2rem; }
+  .bs-sec .typ-btn-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 32px; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec .typ-btn-two {
+        gap: 0.8rem;
+        margin-top: 16px; } }
+    @media only screen and (max-width: 768px) {
+      .bs-sec .typ-btn-two .btn {
+        min-width: 49%; } }
+    @media only screen and (max-width: 768px) {
+      .bs-sec .typ-btn-two.w-100 {
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 768px) {
+      .bs-sec .typ-btn-two.w-100 .btn {
+        min-width: 100%; } }
   .bs-sec.mt-0 {
     margin-top: 0; }
   .bs-sec.typ-colonial .btn-moodboard {
@@ -3151,6 +3170,49 @@ p {
     .bs-modal.typ-about-gallery .nestudio-container {
       background-color: #F3F4F6;
       padding: 2rem; }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-next-thumb,
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-prev-thumb {
+        color: #333333;
+        cursor: pointer;
+        z-index: 1;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0;
+        border: 1px solid #333333;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-prev-thumb {
+        left: -12px;
+        right: auto; }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-next-thumb {
+        right: -12px;
+        left: auto; }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-next-thumb.swiper-button-disabled,
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-prev-thumb.swiper-button-disabled {
+        color: #b3b3b3;
+        opacity: 0.5; }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-next-thumb:after,
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-prev-thumb:after {
+        font-size: 2.4rem;
+        font-weight: normal;
+        font-family: 'icomoon';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-prev-thumb:after {
+        content: "\e91e"; }
+      .bs-modal.typ-about-gallery .nestudio-container .swiper-button-next-thumb:after {
+        content: '\e91d'; }
       @media only screen and (max-width: 768px) {
         .bs-modal.typ-about-gallery .nestudio-container {
           padding: 0px;
@@ -3222,6 +3284,174 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-modal.typ-customise-estimate .modal-body {
         padding: 1.6rem 0; } }
+  .bs-modal.typ-moodboard-gallery {
+    min-width: 670px;
+    max-height: 600px; }
+    @media only screen and (max-width: 768px) {
+      .bs-modal.typ-moodboard-gallery {
+        bottom: 0;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        top: auto;
+        min-width: 100%; } }
+    .bs-modal.typ-moodboard-gallery.modal-show {
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery.modal-show {
+          top: 0;
+          transform: none;
+          left: 0;
+          height: 100%;
+          max-height: 100%; } }
+    .bs-modal.typ-moodboard-gallery .modal-content .desc {
+      margin-bottom: 0rem;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery .modal-content .desc {
+          background: #fff;
+          padding: 20px 12px; } }
+    @media only screen and (max-width: 768px) {
+      .bs-modal.typ-moodboard-gallery .modal-content {
+        height: 100%; } }
+    @media only screen and (max-width: 768px) {
+      .bs-modal.typ-moodboard-gallery .modal-content .cp-model-content {
+        height: 89vh; } }
+    .bs-modal.typ-moodboard-gallery .close-btn {
+      top: 28px;
+      right: 30px;
+      color: #999; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery .close-btn {
+          top: 15px;
+          right: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .bs-modal.typ-moodboard-gallery .modal-body {
+        padding: 0rem;
+        background: #F3F4F6; } }
+    .bs-modal.typ-moodboard-gallery .modal-dialog {
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery .modal-dialog {
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          height: 100%; } }
+    .bs-modal.typ-moodboard-gallery .nestudio-container {
+      background-color: #F3F4F6;
+      padding: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery .nestudio-container {
+          display: flex;
+          align-items: center;
+          height: 76vh; } }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-next-thumb,
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-prev-thumb {
+        color: #333333;
+        cursor: pointer;
+        z-index: 1;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0;
+        border: 1px solid #333333;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-prev-thumb {
+        left: -12px;
+        right: auto; }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-next-thumb {
+        right: -12px;
+        left: auto; }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-next-thumb.swiper-button-disabled,
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-prev-thumb.swiper-button-disabled {
+        color: #b3b3b3;
+        opacity: 0.5; }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-next-thumb:after,
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-prev-thumb:after {
+        font-size: 2.4rem;
+        font-weight: normal;
+        font-family: 'icomoon';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-prev-thumb:after {
+        content: "\e91e"; }
+      .bs-modal.typ-moodboard-gallery .nestudio-container .swiper-button-next-thumb:after {
+        content: '\e91d'; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery .nestudio-container {
+          padding: 0px;
+          background-color: transparent; } }
+    .bs-modal.typ-moodboard-gallery .thumb-nestudio-container {
+      position: relative;
+      background: #fff; }
+      @media only screen and (max-width: 768px) {
+        .bs-modal.typ-moodboard-gallery .thumb-nestudio-container {
+          padding: 16px 10px;
+          position: absolute;
+          bottom: 11px;
+          left: 0;
+          right: 0; } }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-next-thumb,
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-prev-thumb {
+        color: #333333;
+        cursor: pointer;
+        z-index: 1;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0;
+        border: 1px solid #333333;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-prev-thumb {
+        left: var(--swiper-navigation-sides-offset, 10px);
+        right: auto; }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-next-thumb {
+        right: var(--swiper-navigation-sides-offset, 10px);
+        left: auto; }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-next-thumb.swiper-button-disabled,
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-prev-thumb.swiper-button-disabled {
+        color: #b3b3b3;
+        opacity: 0.5; }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-next-thumb:after,
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-prev-thumb:after {
+        font-size: 2.4rem;
+        font-weight: normal;
+        font-family: 'icomoon';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-prev-thumb:after {
+        content: "\e91e"; }
+      .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-next-thumb:after {
+        content: '\e91d'; }
 
 /* colors */
 /*font family*/
@@ -3788,6 +4018,40 @@ p {
         width: 100%;
         height: 100%;
         min-height: 56px; }
+  .bs-swiper.typ-moodboard-big .swiper-slide {
+    max-height: 350px; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.typ-moodboard-big .swiper-slide {
+        min-height: 350px;
+        border-radius: 0;
+        overflow: hidden;
+        border: 0; } }
+    .bs-swiper.typ-moodboard-big .swiper-slide img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: 350px; }
+      @media only screen and (max-width: 768px) {
+        .bs-swiper.typ-moodboard-big .swiper-slide img {
+          min-height: 350px; } }
+  .bs-swiper.typ-moodboard-thumb {
+    margin: 2.4rem 4rem 0;
+    padding-bottom: 0rem;
+    overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.typ-moodboard-thumb {
+        margin: 2.4rem 0rem 0;
+        overflow: visible; } }
+    .bs-swiper.typ-moodboard-thumb .swiper-slide {
+      border-radius: 8px;
+      border: 1px solid #DEDEDE;
+      min-height: 40px;
+      overflow: hidden; }
+      .bs-swiper.typ-moodboard-thumb .swiper-slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        min-height: 40px; }
   .bs-swiper.typ-architect-pdp {
     width: 100%; }
     .bs-swiper.typ-architect-pdp .swiper-slide img {

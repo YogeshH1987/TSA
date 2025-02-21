@@ -297,7 +297,11 @@
 
     &.typ-sp-detail {
         padding: 2.4rem 3.2rem;
-        @media only screen and (max-width: $media-mobile) {   padding: 2.4rem 1.6rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 2.4rem 1.6rem;
+        }
+
         .head-sec {
             padding: 0rem 0 2.4rem;
 
@@ -321,5 +325,15 @@
             }
         }
 
+    }
+
+    &.typ-moodboard-preview {
+        .head-sec {
+            padding: 0rem 0 2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.2rem 0 1.2rem;
+            }
+        }
     }
 }

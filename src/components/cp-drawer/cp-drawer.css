@@ -218,5 +218,10 @@
         .cp-drawer.typ-sp-detail .head-sec .location .icon {
           font-size: 1.2rem;
           color: #333333; }
+  .cp-drawer.typ-moodboard-preview .head-sec {
+    padding: 0rem 0 2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-drawer.typ-moodboard-preview .head-sec {
+        padding: 1.2rem 0 1.2rem; } }
 
 /*# sourceMappingURL=cp-drawer.css.map */

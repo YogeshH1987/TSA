@@ -338,6 +338,63 @@
             background-color: #F3F4F6;
             padding: 2rem;
 
+            .swiper-button-next-thumb,
+            .swiper-button-prev-thumb {
+                color: #333333;
+                cursor: pointer;
+                z-index: 1;
+                width: 2.8rem;
+                height: 2.8rem;
+                margin: 0;
+                border: 1px solid #333333;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+            }
+
+            .swiper-button-prev-thumb {
+                left: -12px;
+                right: auto;
+            }
+
+            .swiper-button-next-thumb {
+                right: -12px;
+                left: auto;
+            }
+
+            .swiper-button-next-thumb.swiper-button-disabled,
+            .swiper-button-prev-thumb.swiper-button-disabled {
+                color: #b3b3b3;
+                opacity: 0.5;
+            }
+
+            .swiper-button-next-thumb:after,
+            .swiper-button-prev-thumb:after {
+                font-size: 2.4rem;
+                font-weight: normal;
+                font-family: 'icomoon';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .swiper-button-prev-thumb:after {
+                content: "\e91e";
+            }
+
+            .swiper-button-next-thumb:after {
+                content: '\e91d';
+            }
+
             @media only screen and (max-width: $media-mobile) {
                 padding: 0px;
                 background-color: transparent;
@@ -441,6 +498,229 @@
             @media only screen and (max-width: $media-sm) {
                 padding: 1.6rem 0;
             }
+        }
+    }
+
+    &.typ-moodboard-gallery {
+        min-width: 670px;
+        max-height: 600px;
+
+        @media only screen and (max-width: $media-mobile) {
+            bottom: 0;
+            @include transform(translate(-50%, -0%));
+            top: auto;
+            min-width: 100%;
+        }
+
+        &.modal-show {
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            @media only screen and (max-width: $media-mobile) {
+                top: 0;
+                transform: none;
+                left: 0;
+                height: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .modal-content {
+            .desc {
+                margin-bottom: 0rem;
+                color: $clr-base;
+                font-family: $font-semiBold;
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    background: #fff;
+                    padding: 20px 12px;
+                }
+            }
+
+            @media only screen and (max-width: $media-mobile) {
+                height: 100%;
+            }
+
+            .cp-model-content {
+                @media only screen and (max-width: $media-mobile) {
+                    height: 89vh;
+                }
+            }
+        }
+
+        .close-btn {
+            top: 28px;
+            right: 30px;
+            color: #999;
+
+            @media only screen and (max-width: $media-mobile) {
+                top: 15px;
+                right: 20px;
+            }
+        }
+
+        .modal-body {
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0rem;
+                background: #F3F4F6;
+            }
+        }
+
+        .modal-dialog {
+            @include border-radius(12px);
+
+            @media only screen and (max-width: $media-mobile) {
+                @include border-radius(0);
+                // @include transform(translate(-50%, -0%));
+                // bottom: 0;
+                // top: auto;
+                height: 100%;
+            }
+        }
+
+        .nestudio-container {
+            background-color: #F3F4F6;
+            padding: 2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                display: flex;
+                align-items: center;
+                height: 76vh;
+            }
+
+            .swiper-button-next-thumb,
+            .swiper-button-prev-thumb {
+                color: #333333;
+                cursor: pointer;
+                z-index: 1;
+                width: 2.8rem;
+                height: 2.8rem;
+                margin: 0;
+                border: 1px solid #333333;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+            }
+
+            .swiper-button-prev-thumb {
+                left: -12px;
+                right: auto;
+            }
+
+            .swiper-button-next-thumb {
+                right: -12px;
+                left: auto;
+            }
+
+            .swiper-button-next-thumb.swiper-button-disabled,
+            .swiper-button-prev-thumb.swiper-button-disabled {
+                color: #b3b3b3;
+                opacity: 0.5;
+            }
+
+            .swiper-button-next-thumb:after,
+            .swiper-button-prev-thumb:after {
+                font-size: 2.4rem;
+                font-weight: normal;
+                font-family: 'icomoon';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .swiper-button-prev-thumb:after {
+                content: "\e91e";
+            }
+
+            .swiper-button-next-thumb:after {
+                content: '\e91d';
+            }
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0px;
+                background-color: transparent;
+            }
+        }
+
+        .thumb-nestudio-container {
+            position: relative;
+            background: #fff;
+
+            @media only screen and (max-width: $media-mobile) {
+                padding: 16px 10px;
+                position: absolute;
+                bottom: 11px;
+                left: 0;
+                right: 0;
+            }
+
+            .swiper-button-next-thumb,
+            .swiper-button-prev-thumb {
+                color: #333333;
+                cursor: pointer;
+                z-index: 1;
+                width: 2.8rem;
+                height: 2.8rem;
+                margin: 0;
+                border: 1px solid #333333;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+            }
+
+            .swiper-button-prev-thumb {
+                left: var(--swiper-navigation-sides-offset, 10px);
+                right: auto;
+            }
+
+            .swiper-button-next-thumb {
+                right: var(--swiper-navigation-sides-offset, 10px);
+                left: auto;
+            }
+
+            .swiper-button-next-thumb.swiper-button-disabled,
+            .swiper-button-prev-thumb.swiper-button-disabled {
+                color: #b3b3b3;
+                opacity: 0.5;
+            }
+
+            .swiper-button-next-thumb:after,
+            .swiper-button-prev-thumb:after {
+                font-size: 2.4rem;
+                font-weight: normal;
+                font-family: 'icomoon';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .swiper-button-prev-thumb:after {
+                content: "\e91e";
+            }
+
+            .swiper-button-next-thumb:after {
+                content: '\e91d';
+            }
+
         }
     }
 }

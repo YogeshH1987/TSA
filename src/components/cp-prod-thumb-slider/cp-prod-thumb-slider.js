@@ -3,7 +3,8 @@ $(document).ready(function () {
   proThumbSlider();
   proPopUpThumbSlider();
   proPopupGalleryThumbSlider();
-  proArchitechThumbSlider()
+  proArchitechThumbSlider();
+  proPopupMoodboardThumbSlider()
 });
 
 
@@ -11,7 +12,8 @@ $(window).resize(function () {
   proThumbSlider();
   proPopUpThumbSlider();
   proPopupGalleryThumbSlider();
-  proArchitechThumbSlider()
+  proArchitechThumbSlider();
+  proPopupMoodboardThumbSlider()
 });
 
 function proThumbSlider() {
@@ -65,6 +67,56 @@ function proPopupGalleryThumbSlider() {
       el: ".swiper-pagination",
       clickable: true,
   },
+  });
+
+}
+
+
+function proPopupMoodboardThumbSlider() {
+  // Initialize the main slider with Swiper
+  var popMoodboardthumbSlider = new Swiper(".js-popup-thumb-moodboard-slider", {
+    slidesPerView: 5,
+    spaceBetween: 8,
+    navigation: {
+      nextEl: '.swiper-button-next-thumb',
+      prevEl: '.swiper-button-prev-thumb'
+    },
+    freeMode: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 8
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 8
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 16
+      },
+      // when window width is >= 640px
+      1280: {
+        slidesPerView: 8,
+        spaceBetween: 16
+      }
+    }
+  });
+  var popmoodboardmainSlider = new Swiper(".js-popup-moodboard-slider", {
+    thumbs: {
+      swiper: popMoodboardthumbSlider,
+    },
+    navigation:false,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.swiper-button-next-thumb',
+      prevEl: '.swiper-button-prev-thumb'
+    },
+    pagination:false,
   });
 
 }

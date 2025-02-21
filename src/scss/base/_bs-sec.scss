@@ -1361,7 +1361,10 @@
 
       .grid-col-rht {
         width: calc(100% - 318px);
-        @media only screen and (max-width: $media-mobile) {width:100%}
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%
+        }
       }
     }
 
@@ -1432,6 +1435,41 @@
 
   .mt-32 {
     margin-top: 3.2rem;
+
+    @media only screen and (max-width: $media-mobile) {}
+  }
+
+  .typ-btn-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 32px;
+
+    @media only screen and (max-width: $media-mobile) {
+      gap: 0.8rem;
+      margin-top: 16px;
+    }
+
+    .btn {
+      @media only screen and (max-width: $media-mobile) {
+        min-width: 49%;
+      }
+    }
+
+    &.w-100 {
+      @media only screen and (max-width: $media-mobile) {
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        @media only screen and (max-width: $media-mobile) {
+          min-width: 100%;
+        }
+      }
+
+
+    }
   }
 
   &.mt-0 {
@@ -1553,4 +1591,7 @@
     }
   }
 }
-.mb-24{ margin-bottom: 2.4rem;}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}

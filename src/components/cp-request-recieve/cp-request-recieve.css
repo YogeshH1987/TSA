@@ -130,5 +130,9 @@
       @media only screen and (max-width: 768px) {
         .cp-request-recieve.typ-design-style-sq .desc br {
           display: none; } }
+  .cp-request-recieve.typ-mooboard-result .title {
+    max-width: 600px;
+    margin: auto;
+    text-align: center; }
 
 /*# sourceMappingURL=cp-request-recieve.css.map */

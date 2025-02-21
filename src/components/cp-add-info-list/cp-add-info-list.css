@@ -110,5 +110,38 @@
       .cp-add-info-list.typ-calculate .info-card .info-desc {
         font-size: 1.4rem;
         line-height: 2rem; }
+  .cp-add-info-list.typ-moodboards {
+    border: 0; }
+    .cp-add-info-list.typ-moodboards .add-info-item {
+      border: 1px solid #DEDEDE;
+      margin-bottom: 1.6rem;
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem; }
+      .cp-add-info-list.typ-moodboards .add-info-item .info-card {
+        padding: 1.2rem 1.6rem; }
+        .cp-add-info-list.typ-moodboards .add-info-item .info-card .info-title {
+          font-size: 1.6rem;
+          margin-bottom: 0;
+          font-family: "Poppins Semibold"; }
+        .cp-add-info-list.typ-moodboards .add-info-item .info-card .icon {
+          width: 3.6rem;
+          height: 3.6rem;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          font-size: 2.4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .cp-add-info-list.typ-moodboards .add-info-item .info-card .icon.blue {
+            color: #3D7EDB;
+            background-color: #ECF2FB; }
+          .cp-add-info-list.typ-moodboards .add-info-item .info-card .icon.green {
+            color: #00A441;
+            background-color: #CCEDD9; }
+          .cp-add-info-list.typ-moodboards .add-info-item .info-card .icon.red {
+            color: #D2042D;
+            background-color: #FAE6EA; }
 
 /*# sourceMappingURL=cp-add-info-list.css.map */
