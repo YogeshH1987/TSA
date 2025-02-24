@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Moodboard</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/css/plp.css" />
+
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
+
+    <link rel="stylesheet" href="../components/cp-moodboard-card/cp-moodboard-card.css" />
+    <link rel="stylesheet" href="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.css" />
+    <link rel="stylesheet" href="../components/cp-create-moodboard/cp-create-moodboard.css" />
+    <link rel="stylesheet" href="../../components/cp-design-style-quiz/cp-design-style-quiz.css" />
+    <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="cp-header">
+            <div class="container">
+                <div class="top-sec">
+                    <div class="hamburger-menu">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="lhs">
+                        <div class="logo-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="container">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop products</a>
+                                <ul class="sub-nav-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home building guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-link-wrap">
+                        <ul class="quick-link-list">
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-search quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-cart quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-profile quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-language quick-link-item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <div class="main">
+
+        <!-- Explore by styles  -->
+        <section class="bs-sec typ-first-sec  typ-natural-gray-bg typ-sec-moodboards">
+            <div class="container">
+                <div class="sec-cont">
+                    <ul class="cp-breadcrumb">
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Design & Calculate</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Moodboard</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link active">Create a moodboard</a>
+                        </li>
+                    </ul>
+            
+                </div>
+                <div class="sec-cont">
+                    <div class="cp-create-moodboard">
+
+                        <div class="categories-left-wrap">
+                            <h3 class="title">Select 1 image per category <a href="" class="link js-drawer" data-id="preview-moodboard">Preview</a> </h3>
+                            <div class="tab-container">
+                                <div class="tab-content" id="tab1">
+                                    <ul class="lyt-grid">
+                                      
+                                        <li class="grid-col">
+                                            <div class="category-img selected">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="tab2">
+                                    <ul class="lyt-grid">
+                                   
+                                        <li class="grid-col">
+                                            <div class="category-img selected">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="grid-col">
+                                            <div class="category-img">
+                                                <a href="#" class="img-wrap">
+                                                    <picture>
+                                                        <source media="(max-width:768px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <source media="(max-width:991px)"
+                                                            srcset="../components/cp-create-moodboard/images/img1.png">
+                                                        <img src="../components/cp-create-moodboard/images/img1.png"
+                                                            alt="blog img">
+                                                    </picture>
+                                                    <div class="selected-text">Selected</div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-right-wrap">
+                            <h3 class="title">Categories <span class="count">08</span></h3>
+                            <ul div class="add-category-wrap">
+                                <li class="add-category-list active" data-target="#tab1">
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-blog/images/blog-img.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-blog/images/blog-img.png">
+                                            <img src="../components/cp-blog/images/blog-img.png" alt="blog img">
+                                        </picture>
+                                    </div>
+                                    <div class="cont-sec">
+                                        <span class="cate-title"> Exterior elevation  </span> <span
+                                            class="icon icon-check"></span>
+                                    </div>
+                                </li>
+
+                                <li class="add-category-list" data-target="#tab2">
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-blog/images/blog-img.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-blog/images/blog-img.png">
+                                            <img src="../components/cp-blog/images/blog-img.png" alt="blog img">
+                                        </picture>
+                                    </div>
+                                    <div class="cont-sec">
+                                        <span class="cate-title"> Exterior elevation  </span> <span
+                                            class="icon icon-check"></span>
+                                    </div>
+                                </li>
+                                <li class="add-category-list"  data-target="#tab3">
+                                    <div class="img-wrap">
+                                        <div class="cp-attached-file">
+                                            <div class="upload-file-area">
+                                                <span class="icon icon-plus"></span>
+                                                <h3 class="title">Add Image</h3>
+                                                <label class="label">
+                                                    <input type="file" name="image" class="default-file-input"
+                                                        accept="image/*" onchange="previewImage(event)">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="preview-container"></div>
+                                    </div>
+                                    <div class="cont-sec">
+                                        <span class="cate-title">Exterior Elevation</span>
+                                        <span class="icon icon-check"></span>
+                                    </div>
+                                </li>
+
+                                <li class="add-category-list"  data-target="#tab4">
+                                    <div class="img-wrap">
+                                        <div class="cp-attached-file">
+                                            <div class="upload-file-area">
+                                                <span class="icon icon-plus"></span>
+                                                <h3 class="title">Add Image</h3>
+                                                <label class="label">
+                                                    <input type="file" name="image" class="default-file-input"
+                                                        accept="image/*" onchange="previewImage(event)">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="preview-container"></div>
+                                    </div>
+                                    <div class="cont-sec">
+                                        <span class="cate-title">Exterior Elevation</span>
+                                        <span class="icon icon-check"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="category-list-indicators">
+                            
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-outline">cancel</button>
+                                <button class="btn">save</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Explore by styles ends -->
+
+
+
+
+    </div>
+
+
+      <!-- preview-moodboard drawer-->
+      <div class="cp-drawer typ-moodboard-preview" id="preview-moodboard">
+        <div class="head-sec">
+          <h2 class="drawer-title">Preview</h2>
+          <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+            <div class="cp-moodboard-card-single">
+                <div class="cp-moodboard-card">
+    
+                    <div class="colonial">
+                        <div class="grid-sizer"></div>
+                        <div class="colonial-item">
+                            <a href="" class="colonial-card typ-long-img model-open" data-toggle="modal" data-modal-id="#gallery">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img1.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img1.png">
+                                    <img src="../components/cp-moodboard-card/images/img1.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card model-open" data-toggle="modal" data-modal-id="#gallery">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img2.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img2.png">
+                                    <img src="../components/cp-moodboard-card/images/img2.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img3.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img3.png">
+                                    <img src="../components/cp-moodboard-card/images/img3.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+    
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img4.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img4.png">
+                                    <img src="../components/cp-moodboard-card/images/img4.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card typ-long-img">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img6.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img6.png">
+                                    <img src="../components/cp-moodboard-card/images/img6.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img5.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img5.png">
+                                    <img src="../components/cp-moodboard-card/images/img5.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+                    
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img7.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img7.png">
+                                    <img src="../components/cp-moodboard-card/images/img7.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+                        <div class="colonial-item">
+                            <a href="#" class="colonial-card">
+                                <picture>
+                                    <source media="(max-width:768px)"
+                                        srcset="../components/cp-moodboard-card/images/img8.png">
+                                    <source media="(max-width:991px)"
+                                        srcset="../components/cp-moodboard-card/images/img8.png">
+                                    <img src="../components/cp-moodboard-card/images/img8.png" alt="style-img">
+                                </picture>
+                            </a>
+                        </div>
+    
+                    </div>
+    
+             
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- preview-moodboard drawer-->
+        <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="../../components/cp-blog/cp-blog.js"></script>
+    <script src="../../components/cp-moodboard-card/cp-moodboard-card.js"></script>
+    <script src="../../components/cp-create-moodboard/cp-create-moodboard.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

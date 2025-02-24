@@ -1,0 +1,268 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-create-moodboard {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  min-height: calc(100vh - 247px); }
+  .cp-create-moodboard .categories-left-wrap {
+    width: 65%; }
+    @media only screen and (max-width: 768px) {
+      .cp-create-moodboard .categories-left-wrap {
+        width: 100%;
+        padding-bottom: 250px; } }
+    .cp-create-moodboard .categories-left-wrap .title {
+      font-size: 2.8rem;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1.6rem;
+      margin-bottom: 2.4rem; }
+      .cp-create-moodboard .categories-left-wrap .title .link {
+        font-size: 1.6rem;
+        display: block;
+        font-family: "Poppins Medium";
+        text-decoration: underline; }
+    .cp-create-moodboard .categories-left-wrap .lyt-grid {
+      gap: 12px;
+      flex-direction: initial;
+      flex-wrap: wrap;
+      justify-content: start; }
+      .cp-create-moodboard .categories-left-wrap .lyt-grid .grid-col {
+        flex: 0 0 calc(25% - 9px);
+        max-width: calc(25% - 9px); }
+        @media only screen and (max-width: 768px) {
+          .cp-create-moodboard .categories-left-wrap .lyt-grid .grid-col {
+            flex: 0 0 calc(50% - 9px);
+            max-width: calc(50% - 9px); } }
+    .cp-create-moodboard .categories-left-wrap .category-img .img-wrap {
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem;
+      height: 24rem;
+      overflow: hidden;
+      display: block; }
+      @media only screen and (max-width: 768px) {
+        .cp-create-moodboard .categories-left-wrap .category-img .img-wrap {
+          height: 20rem; } }
+      .cp-create-moodboard .categories-left-wrap .category-img .img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .cp-create-moodboard .categories-left-wrap .category-img .title-wrap {
+      font-size: 1.6rem;
+      color: #333333;
+      font-family: "Poppins Medium";
+      margin-top: 8px; }
+      @media only screen and (max-width: 768px) {
+        .cp-create-moodboard .categories-left-wrap .category-img .title-wrap {
+          font-size: 1.4rem; } }
+    .cp-create-moodboard .categories-left-wrap .category-img .selected-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      color: #fff;
+      font-size: 1.4rem;
+      height: 4rem;
+      padding: 0.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none; }
+    .cp-create-moodboard .categories-left-wrap .category-img.selected .img-wrap {
+      position: relative;
+      z-index: 1; }
+      .cp-create-moodboard .categories-left-wrap .category-img.selected .img-wrap .selected-text {
+        display: flex; }
+      .cp-create-moodboard .categories-left-wrap .category-img.selected .img-wrap::after {
+        content: '';
+        border: 4px solid #D2042D;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        z-index: 1; }
+  .cp-create-moodboard .categories-right-wrap {
+    width: 35%;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    top: 154px;
+    height: calc(100vh - 154px);
+    padding: 3.2rem;
+    overflow-y: auto; }
+    @media only screen and (max-width: 768px) {
+      .cp-create-moodboard .categories-right-wrap {
+        width: 100%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        height: auto;
+        padding: 2.4rem 0;
+        overflow-y: hidden;
+        z-index: 1; } }
+    .cp-create-moodboard .categories-right-wrap .title {
+      font-size: 2.4rem;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 2.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-create-moodboard .categories-right-wrap .title {
+          display: none; } }
+      .cp-create-moodboard .categories-right-wrap .title .count {
+        background: #D2042D;
+        border-radius: 26px;
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-family: "Poppins Medium";
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12px;
+        height: 28px; }
+    .cp-create-moodboard .categories-right-wrap .category-list-indicators {
+      gap: 5px;
+      margin-top: 1.2rem;
+      display: none;
+      justify-content: center; }
+      .cp-create-moodboard .categories-right-wrap .category-list-indicators .dot {
+        height: 4px;
+        width: 12%;
+        background: #CCCCCC;
+        position: relative; }
+        .cp-create-moodboard .categories-right-wrap .category-list-indicators .dot.active {
+          background: #3D7EDB; }
+      @media only screen and (max-width: 768px) {
+        .cp-create-moodboard .categories-right-wrap .category-list-indicators {
+          display: flex; } }
+    .cp-create-moodboard .categories-right-wrap .add-category-wrap {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap; }
+      @media only screen and (max-width: 768px) {
+        .cp-create-moodboard .categories-right-wrap .add-category-wrap {
+          overflow: auto;
+          flex-wrap: initial;
+          padding: 0 1.6rem; } }
+      .cp-create-moodboard .categories-right-wrap .add-category-wrap::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */ }
+      .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list {
+        border: 1px solid #DEDEDE;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        overflow: hidden;
+        flex: 0 0 calc(50% - 4px);
+        max-width: calc(50% - 4px); }
+        @media only screen and (max-width: 768px) {
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list {
+            flex: 0 0 calc(44% - 4px);
+            max-width: calc(44% - 4px); } }
+        .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap {
+          height: 100px;
+          overflow: hidden; }
+          @media only screen and (max-width: 768px) {
+            .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap {
+              height: 72px; } }
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap .cp-attached-file {
+            height: 100%; }
+            .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap .cp-attached-file .upload-file-area {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              border-radius: 0;
+              height: 100%; }
+              .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap .cp-attached-file .upload-file-area .icon {
+                margin-bottom: 0; }
+              .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .img-wrap .cp-attached-file .upload-file-area .title {
+                font-size: 16px;
+                font-family: "Poppins Medium";
+                color: #999999;
+                margin-bottom: 0; }
+        .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .cont-sec {
+          display: flex;
+          padding: 1.2rem;
+          align-items: center;
+          justify-content: space-between;
+          gap: 4px; }
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .cont-sec .cate-title {
+            font-size: 1.6rem;
+            font-family: "Poppins Medium";
+            color: #333333;
+            margin-bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list .cont-sec .icon {
+            color: #DEDEDE;
+            width: 16px;
+            height: 16px;
+            font-size: 16px; }
+        .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list.active {
+          position: relative;
+          z-index: 1; }
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list.active::after {
+            content: '';
+            border: 2px solid #3D7EDB;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 1.2rem;
+            -webkit-border-radius: 1.2rem;
+            -moz-border-radius: 1.2rem;
+            z-index: 1; }
+          .cp-create-moodboard .categories-right-wrap .add-category-wrap .add-category-list.active .cont-sec .icon {
+            color: #00A441; }
+    .cp-create-moodboard .categories-right-wrap .btn-wrap {
+      margin-top: 2.4rem;
+      display: flex;
+      gap: 0.8rem;
+      justify-content: space-between; }
+      .cp-create-moodboard .categories-right-wrap .btn-wrap .btn {
+        min-width: 48%; }
+      @media only screen and (max-width: 768px) {
+        .cp-create-moodboard .categories-right-wrap .btn-wrap {
+          padding: 0 1.6rem;
+          margin-top: 1.6rem; } }
+
+.typ-sec-moodboards {
+  height: 100%; }
+  @media only screen and (max-width: 768px) {
+    .typ-sec-moodboards {
+      height: auto;
+      background-color: #fff !important; } }
+
+/*# sourceMappingURL=cp-create-moodboard.css.map */
