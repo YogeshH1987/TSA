@@ -53,11 +53,11 @@
 						</div>
 						<div class="calc-step step-1">
 							<div class="cp-box typ-calculate typ-building">
-								<div class="img-wrap">
-									<picture>
+								<div class="img-wrap"  id="house-animation">
+									<!-- <picture>
 										<source media="(max-width:768px)" srcset="../../components/cp-calculator-box/images/white box.png">
 										<img src="../../components/cp-calculator-box/images/white box.png" alt="Timeline_Cards"/>
-									</picture>
+									</picture> -->
 								</div>
 								<div class="cont-wrap">
 									<div class="cp-calculator-box typ-build-cost">
@@ -337,7 +337,7 @@
 							<div class="option-wrap">
 								<p class="option-txt">House with basement</p>
 								<div class="cp-switch">
-									<input id="switch-rounded" type="checkbox" />
+									<input id="switch-rounded" type="checkbox" checked/>
 									<label for="switch-rounded"></label>
 								</div>
 							</div>
@@ -472,7 +472,7 @@
 									</div>
 								</li>
 							</ul>
-							<a class="btn btn-link" href="#">Skip for now</a>
+							<a class="btn btn-link materialSkip" href="#" id="">Skip for now</a>
 						</div>
 						<div class="calc-step step-5 hide">
 							<h2 class="calc-title">Building cost estimator</h2>
@@ -497,7 +497,7 @@
 									</label>
 								</div>
 							</div> 
-							<a href="#" class="btn btn-link text-center">Skip for now</a>
+							<a href="#" class="btn btn-link text-center planSkip">Skip for now</a>
 						</div>				
 						<div class="act-wrap hide">
 							<button class="btn btn-outline typ-rebar-cal btn-back"><span class="icon icon-Left-arrow cm-mobile"></span><span class="cm-desktop">Back</span></button>
@@ -695,7 +695,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-	<!-- <script src="/components/cp-counter/cp-counter.js"></script> -->
+	<script src="/components/cp-counter/cp-counter.js"></script>
     <script src="/js/buildingCostEst.js"></script>
     <!-- endbuild -->
   </body>

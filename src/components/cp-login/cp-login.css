@@ -9,766 +9,987 @@
   justify-content: flex-start;
   border: 1px solid #dedede;
   border-radius: 24px;
-  /* For Firefox */ }
-  @media only screen and (max-width: 768px) {
-    .cp-login {
-      border: 0; } }
+  /* For Firefox */
+}
+@media only screen and (max-width: 768px) {
+  .cp-login {
+    border: 0;
+  }
+}
+.cp-login .lhs {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
   .cp-login .lhs {
-    width: 50%; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .lhs {
-        display: none; } }
-    .cp-login .lhs .img-wrap {
-      width: 100%;
-      height: 790px;
-      overflow: hidden; }
-      .cp-login .lhs .img-wrap img {
-        object-fit: cover;
-        height: 100%; }
+    display: none;
+  }
+}
+.cp-login .lhs .img-wrap {
+  width: 100%;
+  height: 790px;
+  overflow: hidden;
+}
+.cp-login .lhs .img-wrap img {
+  object-fit: cover;
+  height: 100%;
+}
+.cp-login .rhs {
+  width: 50%;
+  padding: 2.4rem 4.8rem 0;
+}
+@media only screen and (max-width: 768px) {
   .cp-login .rhs {
-    width: 50%;
-    padding: 2.4rem 4.8rem 0; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .rhs {
-        width: 100%;
-        padding: 0; } }
-    .cp-login .rhs .title {
-      font-size: 2.8rem;
-      font-family: "Poppins Semibold";
-      color: #333333;
-      line-height: 40px;
-      padding-bottom: 1.6rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .rhs .title {
-          font-size: 2.4rem; } }
-      .cp-login .rhs .title.typ-small {
-        font-size: 1.6rem;
-        margin-bottom: 0; }
-    .cp-login .rhs .sub-title {
-      font-size: 2rem;
-      color: #333333;
-      line-height: 28px;
-      display: block;
-      font-family: "Poppins Semibold"; }
-    .cp-login .rhs .desc {
-      font-size: 1.4rem;
-      color: #666666;
-      font-family: "Poppins Regular"; }
-      .cp-login .rhs .desc.typ2 {
-        font-family: "Poppins Medium";
-        text-align: center;
-        display: flex;
-        justify-content: center; }
-      .cp-login .rhs .desc.typ-small {
-        font-size: 1.2rem;
-        margin-top: 8px; }
-      .cp-login .rhs .desc .typ-clr-black {
-        color: #333333; }
-    .cp-login .rhs .form-wrap {
-      margin-top: 1.5rem; }
-      .cp-login .rhs .form-wrap.typ2 {
-        position: relative; }
-      .cp-login .rhs .form-wrap .form-group {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin-bottom: 2.4rem; }
-        @media only screen and (max-width: 768px) {
-          .cp-login .rhs .form-wrap .form-group {
-            margin-bottom: 25px; } }
-        .cp-login .rhs .form-wrap .form-group .form-label {
-          font-size: 1.4rem;
-          font-family: "Poppins Regular";
-          color: #666666;
-          padding-bottom: 0.8rem; }
-        .cp-login .rhs .form-wrap .form-group .form-input {
-          border-radius: 12px;
-          border: 1px solid #dedede;
-          font-size: 1.6rem;
-          font-family: "Poppins Medium";
-          color: #333333;
-          padding: 1rem;
-          width: 100%; }
-          .cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
-            width: 75px;
-            height: 64px;
-            text-align: center; }
-            @media only screen and (max-width: 768px) {
-              .cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
-                width: 60px; } }
-          .cp-login .rhs .form-wrap .form-group .form-input::placeholder {
-            color: #B3B3B3;
-            opacity: 1;
-            font-family: "Poppins Regular";
-            /* Firefox */ }
-          .cp-login .rhs .form-wrap .form-group .form-input::-ms-input-placeholder {
-            /* Edge 12 -18 */
-            color: #B3B3B3;
-            font-family: "Poppins Regular";
-            opacity: 1; }
-        .cp-login .rhs .form-wrap .form-group .forgot-link {
-          font-size: 1.4rem; }
-          @media only screen and (max-width: 768px) {
-            .cp-login .rhs .form-wrap .form-group .forgot-link {
-              font-size: 1.2rem; } }
-        .cp-login .rhs .form-wrap .form-group .otp-wrap {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 10px;
-          gap: 5px; }
-        .cp-login .rhs .form-wrap .form-group .error-msg {
-          color: #D2042D;
-          font-size: 1.2rem;
-          font-family: "Poppins Regular"; }
-          .cp-login .rhs .form-wrap .form-group .error-msg.typ-2 {
-            position: absolute;
-            top: 98px;
-            left: 0; }
-        .cp-login .rhs .form-wrap .form-group .icon {
-          width: 3.2rem;
-          height: 3.2rem;
-          position: absolute;
-          right: 5px;
-          bottom: 5px;
-          font-size: 2.4rem;
-          color: #999999;
-          cursor: pointer; }
-        .cp-login .rhs .form-wrap .form-group .msg-wrap {
-          margin-top: 1rem; }
-        .cp-login .rhs .form-wrap .form-group .forgot-link {
-          float: right; }
-      .cp-login .rhs .form-wrap .form-input-wrap {
-        position: relative; }
-    .cp-login .rhs .act-wrap .login-btn {
-      width: 100%;
-      margin-bottom: 1.6rem; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .rhs .act-wrap .desc {
-        font-size: 1.2rem;
-        text-align: center; } }
-    @media only screen and (max-width: 768px) {
-      .cp-login .rhs .act-wrap .btn-account {
-        font-size: 1.2rem; } }
-    .cp-login .rhs .act-wrap.typ2 {
-      position: absolute;
-      bottom: 0;
-      left: -53px;
-      border-top: 1px solid #dedede;
-      border-bottom: 1px solid #dedede;
-      right: 35px;
-      width: 124%;
-      padding-left: 6rem;
-      padding-right: 6rem;
-      padding-top: 2rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .rhs .act-wrap.typ2 {
-          position: fixed;
-          left: 0;
-          right: 0;
-          width: 97%;
-          padding-left: 1.6rem;
-          padding-right: 1.6rem;
-          border: 0;
-          background: #FFFFFF; } }
-    .cp-login .rhs .sign-up-sec {
-      margin-top: 24px; }
-      .cp-login .rhs .sign-up-sec .title {
-        font-size: 1.4rem;
-        font-family: "Poppins Regular";
-        color: #808080;
-        position: relative;
-        text-align: center; }
-        .cp-login .rhs .sign-up-sec .title::after {
-          position: absolute;
-          background: #dedede;
-          width: 132px;
-          left: 0;
-          top: 20px;
-          content: '';
-          height: 1px; }
-          @media only screen and (max-width: 768px) {
-            .cp-login .rhs .sign-up-sec .title::after {
-              width: 106px; } }
-        .cp-login .rhs .sign-up-sec .title::before {
-          position: absolute;
-          background: #dedede;
-          width: 132px;
-          right: 0;
-          top: 20px;
-          content: '';
-          height: 1px; }
-          @media only screen and (max-width: 768px) {
-            .cp-login .rhs .sign-up-sec .title::before {
-              width: 106px; } }
-      .cp-login .rhs .sign-up-sec .option-list {
-        display: flex;
-        justify-content: space-between;
-        gap: 1.6rem;
-        margin-bottom: 32px; }
-        .cp-login .rhs .sign-up-sec .option-list .option-list-item {
-          border: 1px solid #dedede;
-          border-radius: 12px;
-          text-align: center;
-          width: 50%;
-          display: flex;
-          justify-content: center;
-          padding: 1rem; }
-          .cp-login .rhs .sign-up-sec .option-list .option-list-item img {
-            width: 24px;
-            height: 24px; }
-        .cp-login .rhs .sign-up-sec .option-list.typ2 {
-          margin-bottom: 0; }
-          .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
-            border: 0;
-            margin-right: 2rem; }
-            @media only screen and (max-width: 768px) {
-              .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
-                margin-right: 0; } }
-            @media only screen and (max-width: 768px) {
-              .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item .btn {
-                font-size: 1.2rem; } }
-            .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child {
-              position: relative; }
-              .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child::after {
-                content: '';
-                background: #dedede;
-                width: 1px;
-                height: 28px;
-                right: -28px;
-                top: 12px;
-                position: absolute; }
-                @media only screen and (max-width: 768px) {
-                  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child::after {
-                    height: 19px;
-                    right: -17px;
-                    top: 12px; } }
-    .cp-login .rhs .bottom-sec {
-      display: flex;
-      justify-content: center;
-      gap: 0.8rem;
-      margin-bottom: 1.6rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .rhs .bottom-sec {
-          margin-bottom: 0.8rem; } }
-      .cp-login .rhs .bottom-sec .otp-timer {
-        font-size: 1.4rem;
-        font-family: "Poppins Regular";
-        color: #EE4400; }
-      .cp-login .rhs .bottom-sec .otp-txt-msg {
-        font-size: 1.4rem; }
-      .cp-login .rhs .bottom-sec .re-send-link {
-        color: #B3B3B3;
-        font-family: "Poppins Medium";
-        font-size: 1.4rem;
-        border-bottom: 1px solid #B3B3B3; }
-    .cp-login .rhs .valid-message {
-      font-size: 1.4rem;
-      color: #333333;
-      font-family: "Poppins Medium";
-      text-align: center; }
-    .cp-login .rhs .pass-verification {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 2.4rem;
-      margin-top: -2rem; }
-      .cp-login .rhs .pass-verification .verify-item {
-        font-size: 1rem;
-        font-family: "Poppins Regular";
-        color: #999;
-        position: relative;
-        padding-left: 2rem; }
-        .cp-login .rhs .pass-verification .verify-item:first-child {
-          padding-left: 0;
-          padding-bottom: 0.8rem; }
-          .cp-login .rhs .pass-verification .verify-item:first-child::after {
-            display: none; }
-        .cp-login .rhs .pass-verification .verify-item::after {
-          content: "\e92e";
-          position: absolute;
-          left: 0;
-          top: 0;
-          font-size: 1.2rem;
-          color: #999;
-          font-family: 'icomoon' !important; }
-        .cp-login .rhs .pass-verification .verify-item.completed {
-          color: #00A441;
-          position: relative; }
-          .cp-login .rhs .pass-verification .verify-item.completed::after {
-            content: "\e92e";
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 1.2rem;
-            color: #00A441;
-            font-family: 'icomoon' !important; }
-        .cp-login .rhs .pass-verification .verify-item.error {
-          color: #EE4400; }
-          .cp-login .rhs .pass-verification .verify-item.error::after {
-            content: "\e92e";
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 1.2rem;
-            color: #EE4400;
-            font-family: 'icomoon' !important; }
-    .cp-login .rhs.relative {
-      position: relative; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .rhs.relative {
-          position: static; } }
-    .cp-login .rhs.typ-2 {
-      padding-right: 1.6rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .rhs.typ-2 {
-          padding-right: 0; } }
-    .cp-login .rhs .btn-link {
-      font-size: 1.4rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .rhs .btn-link {
-          font-size: 1.2rem; } }
-    .cp-login .rhs .customer-message {
-      padding: 1.6rem;
-      background-color: #FFFBF2;
-      border-radius: 1.2rem;
-      -webkit-border-radius: 1.2rem;
-      -moz-border-radius: 1.2rem; }
-      .cp-login .rhs .customer-message .desc {
-        color: #333333;
-        font-family: "Poppins Medium"; }
-      .cp-login .rhs .customer-message .cp-checkbox {
-        padding: 1.6rem 0 0; }
-        .cp-login .rhs .customer-message .cp-checkbox label {
-          font-family: "Poppins Medium"; }
-  .cp-login input[type="number"]::-webkit-inner-spin-button,
-  .cp-login input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0; }
-  .cp-login input[type="number"] {
-    -moz-appearance: textfield; }
-  .cp-login .step-sec {
-    background-color: #612D61;
-    border-radius: 0.8rem;
-    -webkit-border-radius: 0.8rem;
-    -moz-border-radius: 0.8rem;
-    margin-bottom: 3.2rem;
-    padding: 1.2rem 1.6rem;
-    color: #FFFFFF; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .step-sec {
-        position: absolute;
-        left: 0;
-        right: 0;
-        border-radius: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0; } }
-    .cp-login .step-sec .steps-num {
-      font-family: "Poppins Medium";
-      font-size: 1.2rem; }
-    .cp-login .step-sec .step-main {
-      margin-top: 0.8rem;
-      display: flex;
-      gap: 0.4rem; }
-      .cp-login .step-sec .step-main .step {
-        width: 25%;
-        height: 3px;
-        background-color: #FFFFFF;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem; }
-        .cp-login .step-sec .step-main .step.active {
-          background-color: #FFB800; }
-        .cp-login .step-sec .step-main .step.finish {
-          background-color: #FFB800; }
-    .cp-login .step-sec.typ-2 {
-      padding: 1.2rem 4rem 4rem;
-      border-radius: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      margin-bottom: 0; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .step-sec.typ-2 {
-          padding: 1.6rem; } }
-      .cp-login .step-sec.typ-2 .steps-num-main {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; }
-        .cp-login .step-sec.typ-2 .steps-num-main .steps-num {
-          color: #DED3DE; }
-        .cp-login .step-sec.typ-2 .steps-num-main .text {
-          text-decoration: underline; }
-        .cp-login .step-sec.typ-2 .steps-num-main .exit-btn {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 1.4rem;
-          color: #fff; }
-          .cp-login .step-sec.typ-2 .steps-num-main .exit-btn .icon {
-            width: 1.6rem;
-            height: 1.6rem;
-            font-size: 1.6rem;
-            color: #FFF; }
-      .cp-login .step-sec.typ-2 .step-main .step {
-        width: auto;
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%; }
-        .cp-login .step-sec.typ-2 .step-main .step.finish {
-          background-color: #00A441; }
-  .cp-login.mt-2 {
-    margin-top: 2.4rem; }
-  .cp-login .sticky {
-    position: absolute;
-    bottom: 0;
-    background-color: #fff;
-    border-top: 1px solid #DEDEDE;
-    padding: 2.4rem 4.8rem;
     width: 100%;
+    padding: 0;
+  }
+}
+.cp-login .rhs .title {
+  font-size: 2.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  line-height: 40px;
+  padding-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .title {
+    font-size: 2.4rem;
+  }
+}
+.cp-login .rhs .title.typ-small {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+.cp-login .rhs .sub-title {
+  font-size: 2rem;
+  color: #333333;
+  line-height: 28px;
+  display: block;
+  font-family: "Poppins Semibold";
+}
+.cp-login .rhs .desc {
+  font-size: 1.4rem;
+  color: #666666;
+  font-family: "Poppins Regular";
+}
+.cp-login .rhs .desc.typ2 {
+  font-family: "Poppins Medium";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cp-login .rhs .desc.typ-small {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+.cp-login .rhs .desc .typ-clr-black {
+  color: #333333;
+}
+.cp-login .rhs .form-wrap {
+  margin-top: 1.5rem;
+}
+.cp-login .rhs .form-wrap.typ2 {
+  position: relative;
+}
+.cp-login .rhs .form-wrap .form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .form-wrap .form-group {
+    margin-bottom: 25px;
+  }
+}
+.cp-login .rhs .form-wrap .form-group .form-label {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+  padding-bottom: 0.8rem;
+}
+.cp-login .rhs .form-wrap .form-group .form-input {
+  border-radius: 12px;
+  border: 1px solid #dedede;
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding: 1rem;
+  width: 100%;
+}
+.cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
+  width: 75px;
+  height: 64px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .form-wrap .form-group .form-input.typ-otp {
+    width: 60px;
+  }
+}
+.cp-login .rhs .form-wrap .form-group .form-input::placeholder {
+  color: #B3B3B3;
+  opacity: 1;
+  font-family: "Poppins Regular";
+  /* Firefox */
+}
+.cp-login .rhs .form-wrap .form-group .form-input::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #B3B3B3;
+  font-family: "Poppins Regular";
+  opacity: 1;
+}
+.cp-login .rhs .form-wrap .form-group .forgot-link {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .form-wrap .form-group .forgot-link {
+    font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .form-wrap .form-group .otp-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.cp-login .rhs .form-wrap .form-group .error-msg {
+  color: #D2042D;
+  font-size: 1.2rem;
+  font-family: "Poppins Regular";
+}
+.cp-login .rhs .form-wrap .form-group .error-msg.typ-2 {
+  position: absolute;
+  top: 98px;
+  left: 0;
+}
+.cp-login .rhs .form-wrap .form-group .icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 2.4rem;
+  color: #999999;
+  cursor: pointer;
+}
+.cp-login .rhs .form-wrap .form-group .msg-wrap {
+  margin-top: 1rem;
+}
+.cp-login .rhs .form-wrap .form-group .forgot-link {
+  float: right;
+}
+.cp-login .rhs .form-wrap .form-input-wrap {
+  position: relative;
+}
+.cp-login .rhs .act-wrap .login-btn {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .act-wrap .desc {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .act-wrap .btn-account {
+    font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .act-wrap.typ2 {
+  position: absolute;
+  bottom: 0;
+  left: -53px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  right: 35px;
+  width: 124%;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .act-wrap.typ2 {
+    position: fixed;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 1.6rem;
-    border-radius: 0 0 24px 0; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .sticky {
-        padding: 1.6rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        position: static; } }
-    @media only screen and (max-width: 768px) {
-      .cp-login .sticky .desc {
-        width: 100%;
-        flex: 0 0 100%;
-        text-align: center; } }
-    .cp-login .sticky .btn-steps {
-      min-width: auto;
-      padding: 1.1rem 2rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .sticky .btn-steps {
-          min-width: 47%; } }
-    .cp-login .sticky .btn-link {
-      font-size: 1.4rem; }
-    .cp-login .sticky .login-btn {
-      margin-bottom: 0; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .sticky.typ-p-0 {
-        padding: 1.6rem 0; } }
-    .cp-login .sticky .w-50 {
-      min-width: 50%; }
+    right: 0;
+    width: 97%;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border: 0;
+    background: #FFFFFF;
+  }
+}
+.cp-login .rhs .sign-up-sec {
+  margin-top: 24px;
+}
+.cp-login .rhs .sign-up-sec .title {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #808080;
+  position: relative;
+  text-align: center;
+}
+.cp-login .rhs .sign-up-sec .title::after {
+  position: absolute;
+  background: #dedede;
+  width: 132px;
+  left: 0;
+  top: 20px;
+  content: "";
+  height: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .title::after {
+    width: 106px;
+  }
+}
+.cp-login .rhs .sign-up-sec .title::before {
+  position: absolute;
+  background: #dedede;
+  width: 132px;
+  right: 0;
+  top: 20px;
+  content: "";
+  height: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .title::before {
+    width: 106px;
+  }
+}
+.cp-login .rhs .sign-up-sec .option-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 32px;
+}
+.cp-login .rhs .sign-up-sec .option-list .option-list-item {
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.cp-login .rhs .sign-up-sec .option-list .option-list-item img {
+  width: 24px;
+  height: 24px;
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 {
+  margin-bottom: 0;
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
+  border: 0;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item .btn {
+    font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child {
+  position: relative;
+}
+.cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child::after {
+  content: "";
+  background: #dedede;
+  width: 1px;
+  height: 28px;
+  right: -28px;
+  top: 12px;
+  position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .sign-up-sec .option-list.typ2 .option-list-item:first-child::after {
+    height: 19px;
+    right: -17px;
+    top: 12px;
+  }
+}
+.cp-login .rhs .bottom-sec {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .bottom-sec {
+    margin-bottom: 0.8rem;
+  }
+}
+.cp-login .rhs .bottom-sec .otp-timer {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #EE4400;
+}
+.cp-login .rhs .bottom-sec .otp-txt-msg {
+  font-size: 1.4rem;
+}
+.cp-login .rhs .bottom-sec .re-send-link {
+  color: #B3B3B3;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  border-bottom: 1px solid #B3B3B3;
+}
+.cp-login .rhs .valid-message {
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: "Poppins Medium";
+  text-align: center;
+}
+.cp-login .rhs .pass-verification {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+  margin-top: -2rem;
+}
+.cp-login .rhs .pass-verification .verify-item {
+  font-size: 1rem;
+  font-family: "Poppins Regular";
+  color: #999;
+  position: relative;
+  padding-left: 2rem;
+}
+.cp-login .rhs .pass-verification .verify-item:first-child {
+  padding-left: 0;
+  padding-bottom: 0.8rem;
+}
+.cp-login .rhs .pass-verification .verify-item:first-child::after {
+  display: none;
+}
+.cp-login .rhs .pass-verification .verify-item::after {
+  content: "\e92e";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #999;
+  font-family: "icomoon" !important;
+}
+.cp-login .rhs .pass-verification .verify-item.completed {
+  color: #00A441;
+  position: relative;
+}
+.cp-login .rhs .pass-verification .verify-item.completed::after {
+  content: "\e92e";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #00A441;
+  font-family: "icomoon" !important;
+}
+.cp-login .rhs .pass-verification .verify-item.error {
+  color: #EE4400;
+}
+.cp-login .rhs .pass-verification .verify-item.error::after {
+  content: "\e92e";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #EE4400;
+  font-family: "icomoon" !important;
+}
+.cp-login .rhs.relative {
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs.relative {
+    position: static;
+  }
+}
+.cp-login .rhs.typ-2 {
+  padding-right: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs.typ-2 {
+    padding-right: 0;
+  }
+}
+.cp-login .rhs .btn-link {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .rhs .btn-link {
+    font-size: 1.2rem;
+  }
+}
+.cp-login .rhs .customer-message {
+  padding: 1.6rem;
+  background-color: #FFFBF2;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+}
+.cp-login .rhs .customer-message .desc {
+  color: #333333;
+  font-family: "Poppins Medium";
+}
+.cp-login .rhs .customer-message .cp-checkbox {
+  padding: 1.6rem 0 0;
+}
+.cp-login .rhs .customer-message .cp-checkbox label {
+  font-family: "Poppins Medium";
+}
+.cp-login input[type=number]::-webkit-inner-spin-button,
+.cp-login input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cp-login input[type=number] {
+  -moz-appearance: textfield;
+}
+.cp-login .step-sec {
+  background-color: #612D61;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  margin-bottom: 3.2rem;
+  padding: 1.2rem 1.6rem;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .step-sec {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+}
+.cp-login .step-sec .steps-num {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+}
+.cp-login .step-sec .step-main {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.cp-login .step-sec .step-main .step {
+  width: 25%;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+}
+.cp-login .step-sec .step-main .step.active {
+  background-color: #FFB800;
+}
+.cp-login .step-sec .step-main .step.finish {
+  background-color: #FFB800;
+}
+.cp-login .step-sec.typ-2 {
+  padding: 1.2rem 4rem 4rem;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .step-sec.typ-2 {
+    padding: 1.6rem;
+  }
+}
+.cp-login .step-sec.typ-2 .steps-num-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cp-login .step-sec.typ-2 .steps-num-main .steps-num {
+  color: #DED3DE;
+}
+.cp-login .step-sec.typ-2 .steps-num-main .text {
+  text-decoration: underline;
+}
+.cp-login .step-sec.typ-2 .steps-num-main .exit-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.cp-login .step-sec.typ-2 .steps-num-main .exit-btn .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.6rem;
+  color: #FFF;
+}
+.cp-login .step-sec.typ-2 .step-main .step {
+  width: auto;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.cp-login .step-sec.typ-2 .step-main .step.finish {
+  background-color: #00A441;
+}
+.cp-login.mt-2 {
+  margin-top: 2.4rem;
+}
+.cp-login .sticky {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #DEDEDE;
+  padding: 2.4rem 4.8rem;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem;
+  border-radius: 0 0 24px 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky {
+    padding: 1.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: static;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky .desc {
+    width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+}
+.cp-login .sticky .btn-steps {
+  min-width: auto;
+  padding: 1.1rem 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky .btn-steps {
+    min-width: 47%;
+  }
+}
+.cp-login .sticky .btn-link {
+  font-size: 1.4rem;
+}
+.cp-login .sticky .login-btn {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .sticky.typ-p-0 {
+    padding: 1.6rem 0;
+  }
+}
+.cp-login .sticky .w-50 {
+  min-width: 50%;
+}
+.cp-login .steps-content {
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 3rem;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.cp-login .steps-content::-webkit-scrollbar {
+  width: 4px;
+}
+.cp-login .steps-content::-webkit-scrollbar-track {
+  background: #fff;
+}
+.cp-login .steps-content::-webkit-scrollbar-thumb {
+  background: #DEDEDE;
+  border-radius: 1.2rem;
+}
+.cp-login .steps-content::-webkit-scrollbar-thumb:hover {
+  background: #DEDEDE;
+}
+@media only screen and (max-width: 768px) {
   .cp-login .steps-content {
-    max-height: 550px;
-    overflow-y: auto;
-    padding-right: 3rem;
-    /* width */
-    /* Track */
-    /* Handle */
-    /* Handle on hover */ }
-    .cp-login .steps-content::-webkit-scrollbar {
-      width: 4px; }
-    .cp-login .steps-content::-webkit-scrollbar-track {
-      background: #fff; }
-    .cp-login .steps-content::-webkit-scrollbar-thumb {
-      background: #DEDEDE;
-      border-radius: 1.2rem; }
-    .cp-login .steps-content::-webkit-scrollbar-thumb:hover {
-      background: #DEDEDE; }
-    @media only screen and (max-width: 768px) {
-      .cp-login .steps-content {
-        max-height: 100%;
-        padding-right: 0rem;
-        margin-top: 7rem; } }
-    .cp-login .steps-content .title {
-      font-size: 2rem;
-      line-height: 2.8rem;
-      margin-bottom: 2rem; }
-    .cp-login .steps-content .typ-steps {
-      margin-bottom: 1.2rem; }
-      .cp-login .steps-content .typ-steps .custom-radio {
-        width: 100%;
-        flex-direction: row;
-        gap: 10px;
-        padding: 1.2rem; }
-        .cp-login .steps-content .typ-steps .custom-radio .icon {
-          width: 40px;
-          height: 40px;
-          font-size: 2.4rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0.8rem;
-          background: #fff;
-          border-radius: 50%;
-          flex: 0 0 4rem; }
-          .cp-login .steps-content .typ-steps .custom-radio .icon.blue {
-            background: #ECF2FB;
-            color: #3D7EDB; }
-          .cp-login .steps-content .typ-steps .custom-radio .icon.orange {
-            background: #FFF8E5;
-            color: #FFB800; }
-          .cp-login .steps-content .typ-steps .custom-radio .icon.red {
-            background: #FAE6EA;
-            color: #D2042D; }
-          .cp-login .steps-content .typ-steps .custom-radio .icon.green {
-            background: #E5F6EC;
-            color: #00A441; }
-        .cp-login .steps-content .typ-steps .custom-radio span:last-child {
-          flex: 0 0 calc(100% - 5rem); }
-      .cp-login .steps-content .typ-steps input[type="radio"]:checked + .custom-radio {
-        font-family: "Poppins Medium";
-        color: #333333; }
-      .cp-login .steps-content .typ-steps.typ-buisness .custom-radio {
-        position: relative;
-        font-family: "Poppins Medium";
-        font-size: 1.4rem;
-        color: #333333; }
-        .cp-login .steps-content .typ-steps.typ-buisness .custom-radio .small-text {
-          display: block;
-          font-family: "Poppins Regular";
-          font-size: 1.2rem;
-          color: #666666; }
-      .cp-login .steps-content .typ-steps.typ-buisness .checkmark {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 16px;
-        height: 21px;
-        width: 21px;
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 50%;
-        border: 2px solid #999999;
-        transition: all 0.3s; }
-      .cp-login .steps-content .typ-steps.typ-buisness .checkmark::after {
-        content: "";
-        position: absolute;
-        display: none; }
-      .cp-login .steps-content .typ-steps.typ-buisness .checkmark::after {
-        top: 3px;
-        left: 3px;
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-        background: #3D7EDB; }
-      .cp-login .steps-content .typ-steps.typ-buisness input[type="radio"]:checked + .custom-radio .checkmark::after {
-        display: block; }
-    .cp-login .steps-content .typ-size {
-      display: flex;
-      gap: 1.2rem;
-      flex-wrap: wrap; }
-      .cp-login .steps-content .typ-size .bs-radio {
-        margin-bottom: 0; }
-        .cp-login .steps-content .typ-size .bs-radio .custom-radio {
-          min-width: auto;
-          padding: 1.2rem 1.6rem; }
-        .cp-login .steps-content .typ-size .bs-radio.col-3 {
-          width: 31.4%; }
-          @media only screen and (max-width: 768px) {
-            .cp-login .steps-content .typ-size .bs-radio.col-3 {
-              width: 30.5%; } }
-      .cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
-        min-width: 76px; }
-        @media only screen and (max-width: 768px) {
-          .cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
-            min-width: 74px; } }
-      .cp-login .steps-content .typ-size.typ-2 .bs-radio {
-        width: 48%; }
-    .cp-login .steps-content .form-wrap .form-group {
-      position: relative; }
-      .cp-login .steps-content .form-wrap .form-group .form-input {
-        padding-right: 4rem; }
-    .cp-login .steps-content .range-main {
-      display: block;
-      padding: 0 11px 0 0; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .steps-content .range-main {
-          padding: 0 15px 0 0; } }
-      .cp-login .steps-content .range-main .range {
-        position: relative;
-        width: 100%;
-        height: 5px; }
-        .cp-login .steps-content .range-main .range input {
-          width: 100%;
-          position: absolute;
-          top: 2px;
-          height: 0;
-          -webkit-appearance: none; }
-        .cp-login .steps-content .range-main .range input::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          width: 42px;
-          height: 44px;
-          margin: -8px 0 0;
-          border-radius: 50%;
-          background-image: url("../../components/cp-login/image/home-icon.svg");
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
-          cursor: pointer;
-          border: 0 !important; }
-        .cp-login .steps-content .range-main .range input::-moz-range-thumb {
-          width: 42px;
-          height: 44px;
-          margin: -8px 0 0;
-          border-radius: 50%;
-          background-image: url("../../components/cp-login/image/home-icon.svg");
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
-          cursor: pointer;
-          border: 0 !important; }
-        .cp-login .steps-content .range-main .range input::-ms-thumb {
-          width: 42px;
-          height: 44px;
-          margin: -8px 0 0 -8px;
-          border-radius: 50%;
-          background-image: url("../../components/cp-login/image/home-icon.svg");
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
-          cursor: pointer;
-          border: 0 !important; }
-        .cp-login .steps-content .range-main .range input::-webkit-slider-runnable-track {
-          width: 100%;
-          height: 2.4rem;
-          cursor: pointer;
-          background: #DEDEDE;
-          border-radius: 1.2rem; }
-        .cp-login .steps-content .range-main .range input::-moz-range-track {
-          width: 100%;
-          height: 2px;
-          cursor: pointer;
-          background: #b2b2b2; }
-        .cp-login .steps-content .range-main .range input::-ms-track {
-          width: 100%;
-          height: 2px;
-          cursor: pointer;
-          background: #b2b2b2; }
-        .cp-login .steps-content .range-main .range input:focus {
-          background: none;
-          outline: none; }
-        .cp-login .steps-content .range-main .range .range input::-ms-track {
-          width: 100%;
-          cursor: pointer;
-          background: transparent;
-          border-color: transparent;
-          color: transparent; }
-      .cp-login .steps-content .range-main .range-labels {
-        margin: 18px -41px 0;
-        padding: 0;
-        list-style: none;
-        display: flex; }
-        @media only screen and (max-width: 768px) {
-          .cp-login .steps-content .range-main .range-labels {
-            margin: 18px -19px 0; } }
-        .cp-login .steps-content .range-main .range-labels li {
-          position: relative;
-          width: 96.25px;
-          text-align: center;
-          color: #999999;
-          font-size: 14px;
-          cursor: pointer;
-          font-family: "Poppins Semibold"; }
-          @media only screen and (max-width: 768px) {
-            .cp-login .steps-content .range-main .range-labels li {
-              width: 75.25px; } }
-        .cp-login .steps-content .range-main .range-labels .active {
-          color: #333333;
-          font-size: 3.6rem; }
-          @media only screen and (max-width: 768px) {
-            .cp-login .steps-content .range-main .range-labels .active {
-              font-size: 2rem; } }
-        .cp-login .steps-content .range-main .range-labels .selected::before {
-          background: #333333; }
-        .cp-login .steps-content .range-main .range-labels .active.selected::before {
-          display: none; }
-    .cp-login .steps-content.typ-content {
-      max-height: 637px; }
-      @media only screen and (max-width: 768px) {
-        .cp-login .steps-content.typ-content {
-          max-height: 100%;
-          margin-top: 0; } }
+    max-height: 100%;
+    padding-right: 0rem;
+    margin-top: 7rem;
+  }
+}
+.cp-login .steps-content .title {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+.cp-login .steps-content .typ-steps {
+  margin-bottom: 1.2rem;
+}
+.cp-login .steps-content .typ-steps .custom-radio {
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1.2rem;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon {
+  width: 40px;
+  height: 40px;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 50%;
+  flex: 0 0 4rem;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.blue {
+  background: #ECF2FB;
+  color: #3D7EDB;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.orange {
+  background: #FFF8E5;
+  color: #FFB800;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.red {
+  background: #FAE6EA;
+  color: #D2042D;
+}
+.cp-login .steps-content .typ-steps .custom-radio .icon.green {
+  background: #E5F6EC;
+  color: #00A441;
+}
+.cp-login .steps-content .typ-steps .custom-radio span:last-child {
+  flex: 0 0 calc(100% - 5rem);
+}
+.cp-login .steps-content .typ-steps input[type=radio]:checked + .custom-radio {
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+.cp-login .steps-content .typ-steps.typ-buisness .custom-radio {
+  position: relative;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  color: #333333;
+}
+.cp-login .steps-content .typ-steps.typ-buisness .custom-radio .small-text {
+  display: block;
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  color: #666666;
+}
+.cp-login .steps-content .typ-steps.typ-buisness .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  height: 21px;
+  width: 21px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 2px solid #999999;
+  transition: all 0.3s;
+}
+.cp-login .steps-content .typ-steps.typ-buisness .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.cp-login .steps-content .typ-steps.typ-buisness .checkmark::after {
+  top: 3px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #3D7EDB;
+}
+.cp-login .steps-content .typ-steps.typ-buisness input[type=radio]:checked + .custom-radio .checkmark::after {
+  display: block;
+}
+.cp-login .steps-content .typ-size {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.cp-login .steps-content .typ-size .bs-radio {
+  margin-bottom: 0;
+}
+.cp-login .steps-content .typ-size .bs-radio .custom-radio {
+  min-width: auto;
+  padding: 1.2rem 1.6rem;
+}
+.cp-login .steps-content .typ-size .bs-radio.col-3 {
+  width: 31.4%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .typ-size .bs-radio.col-3 {
+    width: 30.5%;
+  }
+}
+.cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
+  min-width: 76px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .typ-size.typ-login .bs-radio .custom-radio {
+    min-width: 74px;
+  }
+}
+.cp-login .steps-content .typ-size.typ-2 .bs-radio {
+  width: 48%;
+}
+.cp-login .steps-content .form-wrap .form-group {
+  position: relative;
+}
+.cp-login .steps-content .form-wrap .form-group .form-input {
+  padding-right: 4rem;
+}
+.cp-login .steps-content .range-main {
+  display: block;
+  padding: 0 11px 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main {
+    padding: 0 15px 0 0;
+  }
+}
+.cp-login .steps-content .range-main .range {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+.cp-login .steps-content .range-main .range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+.cp-login .steps-content .range-main .range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 42px;
+  height: 44px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-login .steps-content .range-main .range input::-moz-range-thumb {
+  width: 42px;
+  height: 44px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-login .steps-content .range-main .range input::-ms-thumb {
+  width: 42px;
+  height: 44px;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-login .steps-content .range-main .range input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.4rem;
+  cursor: pointer;
+  background: #DEDEDE;
+  border-radius: 1.2rem;
+}
+.cp-login .steps-content .range-main .range input::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+.cp-login .steps-content .range-main .range input::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+.cp-login .steps-content .range-main .range input:focus {
+  background: none;
+  outline: none;
+}
+.cp-login .steps-content .range-main .range .range input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.cp-login .steps-content .range-main .range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main .range-labels {
+    margin: 18px -19px 0;
+  }
+}
+.cp-login .steps-content .range-main .range-labels li {
+  position: relative;
+  width: 96.25px;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main .range-labels li {
+    width: 75.25px;
+  }
+}
+.cp-login .steps-content .range-main .range-labels .active {
+  color: #333333;
+  font-size: 3.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content .range-main .range-labels .active {
+    font-size: 2rem;
+  }
+}
+.cp-login .steps-content .range-main .range-labels .selected::before {
+  background: #333333;
+}
+.cp-login .steps-content .range-main .range-labels .active.selected::before {
+  display: none;
+}
+.cp-login .steps-content.typ-content {
+  max-height: 637px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-login .steps-content.typ-content {
+    max-height: 100%;
+    margin-top: 0;
+  }
+}
 
 .typ-get-started {
   margin-top: 16rem;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
+.typ-get-started .img-wrap {
+  height: calc(100vh - 150px);
+  position: relative;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
   .typ-get-started .img-wrap {
-    height: calc(100vh - 150px);
-    position: relative;
-    width: 100%; }
-    @media only screen and (max-width: 768px) {
-      .typ-get-started .img-wrap {
-        height: calc(100vh - 130px); } }
-    .typ-get-started .img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center; }
-    .typ-get-started .img-wrap::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-      height: 100%; }
-    .typ-get-started .img-wrap .get-started-main {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-      max-width: 124rem;
-      right: 0;
-      margin: auto; }
-      @media only screen and (max-width: 768px) {
-        .typ-get-started .img-wrap .get-started-main {
-          width: 100%;
-          padding: 0rem 1.6rem;
-          bottom: 50px;
-          transform: none;
-          top: auto; } }
-      .typ-get-started .img-wrap .get-started-main .title {
-        color: #FFFFFF;
-        font-family: "Poppins Semibold";
-        font-size: 4rem;
-        line-height: 5.2rem; }
-        @media only screen and (max-width: 768px) {
-          .typ-get-started .img-wrap .get-started-main .title {
-            font-size: 2.8rem;
-            line-height: 4rem; } }
-      .typ-get-started .img-wrap .get-started-main .small-text {
-        font-size: 2.8rem;
-        line-height: 3rem;
-        margin-bottom: 2.4rem;
-        color: #FFFFFF;
-        font-family: "Poppins Semibold"; }
-        @media only screen and (max-width: 768px) {
-          .typ-get-started .img-wrap .get-started-main .small-text {
-            font-size: 2.4rem; } }
-        .typ-get-started .img-wrap .get-started-main .small-text.underline-text {
-          font-family: "Poppins Medium";
-          font-size: 1.4rem;
-          margin-top: 3.2rem; }
-          @media only screen and (max-width: 768px) {
-            .typ-get-started .img-wrap .get-started-main .small-text.underline-text {
-              text-align: center;
-              margin-top: 2.4rem; } }
-      .typ-get-started .img-wrap .get-started-main .brand {
-        font-size: 2rem;
-        font-family: "Poppins Medium"; }
-        @media only screen and (max-width: 768px) {
-          .typ-get-started .img-wrap .get-started-main .brand {
-            font-size: 1.6rem; } }
-      .typ-get-started .img-wrap .get-started-main .get-started-btn {
-        min-width: 23.6rem;
-        margin-top: 4.8rem; }
-        @media only screen and (max-width: 768px) {
-          .typ-get-started .img-wrap .get-started-main .get-started-btn {
-            min-width: 100%; } }
+    height: calc(100vh - 130px);
+  }
+}
+.typ-get-started .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.typ-get-started .img-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  height: 100%;
+}
+.typ-get-started .img-wrap .get-started-main {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  max-width: 124rem;
+  right: 0;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main {
+    width: 100%;
+    padding: 0rem 1.6rem;
+    bottom: 50px;
+    transform: none;
+    top: auto;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .title {
+  color: #FFFFFF;
+  font-family: "Poppins Semibold";
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .title {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .small-text {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  margin-bottom: 2.4rem;
+  color: #FFFFFF;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .small-text {
+    font-size: 2.4rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .small-text.underline-text {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  margin-top: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .small-text.underline-text {
+    text-align: center;
+    margin-top: 2.4rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .brand {
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .brand {
+    font-size: 1.6rem;
+  }
+}
+.typ-get-started .img-wrap .get-started-main .get-started-btn {
+  min-width: 23.6rem;
+  margin-top: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .typ-get-started .img-wrap .get-started-main .get-started-btn {
+    min-width: 100%;
+  }
+}
 
 .tab {
-  display: none; }
+  display: none;
+}
 
 /*# sourceMappingURL=cp-login.css.map */

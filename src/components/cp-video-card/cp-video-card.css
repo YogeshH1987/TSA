@@ -6,73 +6,91 @@
 /*opacity- end*/
 .cp-video-card {
   border-radius: 16px;
-  overflow: hidden; }
-  .cp-video-card .cont-sec {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
-    width: 100%;
-    height: 295px;
-    z-index: 1; }
-    .cp-video-card .cont-sec .video-title {
-      font-size: 1.6rem;
-      color: #FFFFFF;
-      font-family: "Poppins Medium";
-      position: absolute;
-      left: 24px;
-      bottom: 64px; }
-    .cp-video-card .cont-sec .video-desc {
-      font-size: 1.2rem;
-      color: #FFFFFF;
-      font-family: "Poppins Regular";
-      position: absolute;
-      left: 24px;
-      bottom: 24px; }
-  .cp-video-card .img-wrap {
-    position: relative; }
-  .cp-video-card .play-btn {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF;
-    font-size: 6rem;
-    z-index: 3;
-    cursor: pointer; }
-  .cp-video-card.typ-tiscon {
-    position: relative;
-    width: 29.7rem;
-    height: 52.8rem; }
-  .cp-video-card.typ-application .cont-sec {
-    background: 180deg, rgba(0, 0, 0, 0) 0%, #000000 100%; }
-    .cp-video-card.typ-application .cont-sec .video-title {
-      bottom: 23px; }
+  overflow: hidden;
+}
+.cp-video-card .cont-sec {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+  width: 100%;
+  height: 295px;
+  z-index: 1;
+}
+.cp-video-card .cont-sec .video-title {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  font-family: "Poppins Medium";
+  position: absolute;
+  left: 24px;
+  bottom: 64px;
+}
+.cp-video-card .cont-sec .video-desc {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-family: "Poppins Regular";
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+.cp-video-card .img-wrap {
+  position: relative;
+}
+.cp-video-card .play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-size: 6rem;
+  z-index: 3;
+  cursor: pointer;
+}
+.cp-video-card.typ-tiscon {
+  position: relative;
+  width: 29.7rem;
+  height: 52.8rem;
+}
+.cp-video-card.typ-application .cont-sec {
+  background: 180deg, rgba(0, 0, 0, 0) 0%, #000000 100%;
+}
+.cp-video-card.typ-application .cont-sec .video-title {
+  bottom: 23px;
+}
+.cp-video-card.typ-durashine .img-wrap {
+  width: 61rem;
+  height: 40rem;
+}
+@media only screen and (max-width: 991px) {
   .cp-video-card.typ-durashine .img-wrap {
-    width: 61rem;
-    height: 40rem; }
-    @media only screen and (max-width: 991px) {
-      .cp-video-card.typ-durashine .img-wrap {
-        width: 34.4rem;
-        height: 36.0rem; } }
+    width: 34.4rem;
+    height: 36rem;
+  }
+}
+.cp-video-card.typ-durashine .cont-sec {
+  width: 59.5rem;
+  height: 29.5rem;
+  border-radius: 16px;
+  right: 0;
+  left: auto;
+  bottom: 8rem;
+}
+@media only screen and (max-width: 991px) {
   .cp-video-card.typ-durashine .cont-sec {
-    width: 59.5rem;
-    height: 29.5rem;
-    border-radius: 16px;
-    right: 0;
-    left: auto;
-    bottom: 8rem; }
-    @media only screen and (max-width: 991px) {
-      .cp-video-card.typ-durashine .cont-sec {
-        width: 34rem;
-        height: 26.0rem; } }
-    .cp-video-card.typ-durashine .cont-sec .video-title {
-      font-size: 2.4rem;
-      max-width: 33.5rem; }
-      @media only screen and (max-width: 991px) {
-        .cp-video-card.typ-durashine .cont-sec .video-title {
-          font-size: 1.6rem;
-          width: 24.4rem;
-          bottom: 38px; } }
+    width: 34rem;
+    height: 26rem;
+  }
+}
+.cp-video-card.typ-durashine .cont-sec .video-title {
+  font-size: 2.4rem;
+  max-width: 33.5rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-video-card.typ-durashine .cont-sec .video-title {
+    font-size: 1.6rem;
+    width: 24.4rem;
+    bottom: 38px;
+  }
+}
 
 /*# sourceMappingURL=cp-video-card.css.map */

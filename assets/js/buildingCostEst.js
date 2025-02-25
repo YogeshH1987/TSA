@@ -4,107 +4,173 @@ TSA.buildingCostEst = {
 
     // Initialize function
     init: function () {
-        this.initSlider();
-        this.setupStepNavigation();
-        this.initSpaceRequirementCounters();
-        this.initMaterialSelection();
-        this.initBasement();
+        try {
+            this.initSlider();
+            this.setupStepNavigation();
+            this.initSpaceRequirementCounters();
+            this.initMaterialSelection();
+            this.initBasement();
+        } catch (err) {
+            console.error("Error during initialization:", err);
+        }
     },
 
     initSlider: function () {
-        // Initialize noUiSlider for Built-Up Area
-        const builtUpAreaSlider = document.querySelector('[data-id="builtUpAreaRange"]');
-        const numberFlrSlider = document.querySelector('[data-id="numberFlr"]');
-        const animationContainer = document.getElementById('lottie-animation');
+        try {
+            const builtUpAreaSlider = document.querySelector('[data-id="builtUpAreaRange"]');
+            const numberFlrSlider = document.querySelector('[data-id="numberFlr"]');
+            const animationContainer = document.getElementById('lottie-animation');
+            const houseAnimationContainer = document.getElementById('house-animation');
 
-        if (!animationContainer) return console.error('Lottie container not found!');
+            if (!animationContainer) {
+                throw new Error('Lottie container not found!');
+            }
+            if (!houseAnimationContainer) {
+                throw new Error('House animation container not found!');
+            }
 
-        // Load Lottie animation
-        const animation = lottie.loadAnimation({
-            container: animationContainer,
-            renderer: 'svg',
-            loop: false,  // Change to `true` if you want it to loop
-            autoplay: false,
-            path: 'http://localhost:8000/components/cp-building-estimator/json/Artboard-5floor.json'  // Update with the correct JSON path
-        });
-
-        if (builtUpAreaSlider) {
-            noUiSlider.create(builtUpAreaSlider, {
-                start: 700,
-                connect: [true, false],
-                range: {
-                    'min': 200,
-                    'max': 4000
-                },
-                step: 100,
-                pips: {
-                    mode: 'positions',
-                    values: [0, 100],
-                    density: 100
-                }
+            // Load Lottie animations
+            const animation = lottie.loadAnimation({
+                container: animationContainer,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                path: 'http://localhost:8000/components/cp-building-estimator/json/Artboard-5floor.json'
             });
 
-            builtUpAreaSlider.noUiSlider.on('update', function (values, handle) {
-                document.getElementById('builtUpAreaValue').value = Math.round(values[handle]) + ' Sq.ft';
+            const houseAnimation = lottie.loadAnimation({
+                container: houseAnimationContainer,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                path: 'http://localhost:8000/components/cp-building-estimator/json/House.json'
             });
 
-            document.getElementById('builtUpAreaValue').addEventListener('change', function () {
-                var value = parseInt(this.value.replace(' Sq.ft', ''), 10);
-                if (value >= 200 && value <= 4000) {
-                    builtUpAreaSlider.noUiSlider.set(value);
-                }
-            });
-        }
+            // Built-Up Area Slider Setup
+            if (builtUpAreaSlider) {
+                noUiSlider.create(builtUpAreaSlider, {
+                    start: 700,
+                    connect: [true, false],
+                    range: { min: 200, max: 4000 },
+                    step: 100,
+                    pips: {
+                        mode: 'positions',
+                        values: [0, 100],
+                        density: 100
+                    }
+                });
 
-        if (numberFlrSlider) {
-            noUiSlider.create(numberFlrSlider, {
-                start: 0,  // Start from 1 instead of 0
-                connect: [true, false],
-                range: { min: 0, max: 5 }, // Start range from 1
-                step: 1,
-                pips: {
-                    mode: 'values',
-                    values: [0, 1, 2, 3, 4],
-                    density: 2,
-                    format: {
-                        to: (value) => {
-                            return ['1', '2', '3', '4', 'More'][value - 1]; // Adjust index
+                // Update input value when slider moves
+                builtUpAreaSlider.noUiSlider.on('update', function (values, handle) {
+                    try {
+                        const sqFtValue = Math.round(values[handle]);
+                        document.getElementById('builtUpAreaValue').value = sqFtValue + ' Sq.ft';
+
+                        // Safely call updateHouseAnimation if it exists
+                        if (typeof TSA.buildingCostEst.updateHouseAnimation === 'function') {
+                            TSA.buildingCostEst.updateHouseAnimation(sqFtValue, houseAnimation);
+                        } else {
+                            console.error("updateHouseAnimation function is not defined!");
+                        }
+                    } catch (err) {
+                        console.error("Error in builtUpAreaSlider update handler:", err);
+                    }
+                });
+
+                // Handle manual input change
+                document.getElementById('builtUpAreaValue').addEventListener('change', function () {
+                    try {
+                        var value = parseInt(this.value.replace(' Sq.ft', ''), 10);
+                        if (value >= 200 && value <= 4000) {
+                            builtUpAreaSlider.noUiSlider.set(value);
+                        }
+                    } catch (err) {
+                        console.error("Error handling manual input change:", err);
+                    }
+                });
+            }
+
+            // Floor Number Slider Setup
+            if (numberFlrSlider) {
+                noUiSlider.create(numberFlrSlider, {
+                    start: 0,
+                    connect: [true, false],
+                    range: { min: 0, max: 4 },
+                    step: 1,
+                    pips: {
+                        mode: 'values',
+                        values: [0, 1, 2, 3, 4],
+                        density: 2,
+                        format: {
+                            to: (value) => {
+                                // Adjust index if needed
+                                return ['1', '2', '3', '4', 'More'][value - 1];
+                            }
                         }
                     }
+                });
+
+                // Safely call animateLottieBasedOnSlider if it exists
+                if (typeof TSA.buildingCostEst.animateLottieBasedOnSlider === 'function') {
+                    TSA.buildingCostEst.animateLottieBasedOnSlider(numberFlrSlider, animation);
+                } else {
+                    console.error("animateLottieBasedOnSlider function is not defined!");
+                }
+            }
+        } catch (err) {
+            console.error("Error in initSlider:", err);
+        }
+    },
+
+    // Function to animate Lottie based on slider value (for floor slider)
+    animateLottieBasedOnSlider: function (slider, animation) {
+        try {
+            if (!slider || !slider.noUiSlider || !animation) {
+                console.warn("Slider or animation instance not found!");
+                return;
+            }
+
+            const frameMapping = {
+                1: 0,
+                2: 50,
+                3: 100,
+                4: 150,
+                5: 200
+            };
+
+            slider.noUiSlider.on("update", function (values, handle) {
+                try {
+                    const floor = Math.round(values[handle]);
+                    console.log("Slider changed to:", floor);
+
+                    if (frameMapping[floor] !== undefined) {
+                        animation.goToAndStop(frameMapping[floor], true);
+                    }
+                } catch (err) {
+                    console.error("Error in animateLottieBasedOnSlider update handler:", err);
                 }
             });
-
-            // ✅ Use `this.animateLottieBasedOnSlider` instead of direct function call
-            this.animateLottieBasedOnSlider(numberFlrSlider, animation);
+        } catch (err) {
+            console.error("Error in animateLottieBasedOnSlider:", err);
         }
     },
 
-    // Function to animate Lottie based on slider value
-    animateLottieBasedOnSlider: function (slider, animation) {
-        if (!slider || !slider.noUiSlider || !animation) {
-            console.warn("Slider or animation instance not found!");
-            return;
-        }
-
-        // Map slider values (1 to 5) to animation frames
-        const frameMapping = {
-            1: 0,    // Ground level (G)
-            2: 50,   // G+1 level
-            3: 100,  // G+2 level
-            4: 150,  // G+3 level
-            5: 200   // More
-        };
-
-        slider.noUiSlider.on("update", function (values, handle) {
-            const floor = Math.round(values[handle]);  // Get selected value
-            console.log("Slider changed to:", floor);
-
-            if (frameMapping[floor] !== undefined) {
-                animation.goToAndStop(frameMapping[floor], true);
+    // Function to update the house animation based on built-up area slider value
+    updateHouseAnimation: function (sqFtValue, houseAnimation) {
+        try {
+            if (!houseAnimation) {
+                throw new Error("House animation instance not found!");
             }
-        });
+
+            // Map Sq.ft value (200 → 4000) to frames (0 → 100)
+            const frame = Math.round(((sqFtValue - 200) / (4000 - 200)) * 200);
+            // console.log(`Built-Up Area: ${sqFtValue} Sq.ft → Animation Frame: ${frame}`);
+            houseAnimation.goToAndStop(frame, true);
+        } catch (err) {
+            console.error("Error in updateHouseAnimation:", err);
+        }
     },
-    
+
     // Setup step navigation
     setupStepNavigation: function () {
         let currentStep = this.currentStep;
@@ -198,7 +264,7 @@ TSA.buildingCostEst = {
             button.addEventListener('click', (e) => {
                 const inputField = e.target.previousElementSibling;
                 let value = parseInt(inputField.value, 10) || 0;
-                value++;
+                // value++;
                 inputField.value = value;
                 const roomType = e.target.closest('.cp-img-detail').querySelector('.detail-tile').textContent.toLowerCase().replace(/\s+/g, "");
                 spaceRequirement[roomType] = value;
@@ -211,7 +277,7 @@ TSA.buildingCostEst = {
                 const inputField = e.target.nextElementSibling;
                 let value = parseInt(inputField.value, 10) || 0;
                 if (value > 0) {
-                    value--;
+                    // value--;
                     inputField.value = value;
                     const roomType = e.target.closest('.cp-img-detail').querySelector('.detail-tile').textContent.toLowerCase().replace(/\s+/g, "");
                     spaceRequirement[roomType] = value;
@@ -295,36 +361,106 @@ TSA.buildingCostEst = {
             });
         });
     },
+
+    initMaterialSkip: function () {
+        const materialSkipButton = document.querySelector(".materialSkip");
+        const step4 = document.querySelector(".calc-step.step-4");
+        const step5 = document.querySelector(".calc-step.step-5");
+        const planSkipButton = document.querySelector(".planSkip");
+
+        if (materialSkipButton && step4 && step5) {
+            materialSkipButton.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                try {
+                    // Retrieve or initialize building cost data
+                    let buildingCostData = JSON.parse(localStorage.getItem("buildingCostData")) || {};
+                    buildingCostData.selectedMaterial = "standard"; // Set default material to 'standard'
+
+                    // Store updated data in localStorage
+                    localStorage.setItem("buildingCostData", JSON.stringify(buildingCostData));
+
+                    // Move to Step 5
+                    Calculator.transitionToNextStep(step4, step5);
+                } catch (error) {
+                    console.error("Error updating localStorage or transitioning to the next step:", error);
+                }
+            });
+        }
+
+        if (planSkipButton) {
+            planSkipButton.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                try {
+                    // Retrieve or initialize building cost data
+                    let buildingCostData = JSON.parse(localStorage.getItem("buildingCostData")) || {};
+                    buildingCostData.architecturalPlan = ""; // Set architectural plan as empty string
+
+                    // Store updated data in localStorage
+                    localStorage.setItem("buildingCostData", JSON.stringify(buildingCostData));
+
+                    // Redirect to the result page
+                    window.location.href = "http://localhost:8000/calculator/calculator-result.html";
+                } catch (error) {
+                    console.error("Error updating localStorage or redirecting:", error);
+                }
+            });
+        }
+    },
+
+    transitionToNextStep: function (current, next) {
+        if (current && next) {
+            current.classList.add("fade-out");
+            setTimeout(() => {
+                current.classList.add("hide");
+                next.classList.remove("hide");
+                next.classList.add("fade-in");
+            }, 300);
+        }
+    },
     
     // Store values in localStorage
     storeValues: function () {
-        const builtUpAreaValue = document.getElementById('builtUpAreaValue').value.replace(' Sq.ft', '');
-        const numberFlrValue = document.querySelector('[data-id="numberFlr"]').noUiSlider.get();
-    
-        let buildingCostData = JSON.parse(localStorage.getItem('buildingCostData')) || {};
-        
-        buildingCostData = {
-            ...buildingCostData,  // Preserve existing values
-            builtUpArea: parseInt(builtUpAreaValue),
-            floor: parseInt(numberFlrValue),
-            spaceRequirement: JSON.parse(localStorage.getItem('spaceRequirement')) || {},
-            architecturalPlan: localStorage.getItem('selectedPlan') || '',
-            selectedMaterial: localStorage.getItem('selectedMaterial') || 'standard',
-        };
-    
-        localStorage.setItem('buildingCostData', JSON.stringify(buildingCostData));
-        console.log('Updated buildingCostData:', buildingCostData);
-    }    
+        try {
+            const builtUpAreaValue = document.getElementById('builtUpAreaValue').value.replace(' Sq.ft', '');
+            const numberFlrValue = document.querySelector('[data-id="numberFlr"]').noUiSlider.get();
+
+            let buildingCostData = JSON.parse(localStorage.getItem('buildingCostData')) || {};
+
+            buildingCostData = {
+                ...buildingCostData, // Preserve existing values
+                builtUpArea: parseInt(builtUpAreaValue),
+                floor: parseInt(numberFlrValue),
+                spaceRequirement: JSON.parse(localStorage.getItem('spaceRequirement')) || {},
+                architecturalPlan: localStorage.getItem('selectedPlan') || '',
+                selectedMaterial: localStorage.getItem('selectedMaterial') || 'standard',
+            };
+
+            localStorage.setItem('buildingCostData', JSON.stringify(buildingCostData));
+            console.log('Updated buildingCostData:', buildingCostData);
+        } catch (err) {
+            console.error("Error storing values:", err);
+        }
+    }
 };
 
 // Check if data is stored in localStorage
 function checkStoredData() {
-    const storedData = localStorage.getItem('buildingCost');
-    console.log(storedData ? JSON.parse(storedData) : 'No data found in localStorage.');
+    try {
+        const storedData = localStorage.getItem('buildingCost');
+        console.log(storedData ? JSON.parse(storedData) : 'No data found in localStorage.');
+    } catch (err) {
+        console.error("Error checking stored data:", err);
+    }
 }
 
-// Initialize the script when document is ready
+// Initialize the script when the document is ready
 $(document).ready(function () {
-    TSA.buildingCostEst.init();
-    checkStoredData();
+    try {
+        TSA.buildingCostEst.init();
+        checkStoredData();
+    } catch (err) {
+        console.error("Error during document ready:", err);
+    }
 });
