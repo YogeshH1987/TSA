@@ -117,7 +117,7 @@
 											<h3 class="detail-tile">Living room</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -135,7 +135,7 @@
 											<h3 class="detail-tile">Kitchen</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -153,7 +153,7 @@
 											<h3 class="detail-tile">Bedroom</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -171,7 +171,7 @@
 											<h3 class="detail-tile">Bathroom</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -189,7 +189,7 @@
 											<h3 class="detail-tile">Balcony</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -207,7 +207,7 @@
 											<h3 class="detail-tile">Puja room</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -225,7 +225,7 @@
 											<h3 class="detail-tile">Dinning area</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -243,7 +243,7 @@
 											<h3 class="detail-tile">Storage room</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -261,7 +261,7 @@
 											<h3 class="detail-tile">Garage</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -279,7 +279,7 @@
 											<h3 class="detail-tile">Servant room</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -297,7 +297,7 @@
 											<h3 class="detail-tile">Hall</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -315,7 +315,7 @@
 											<h3 class="detail-tile">Study</h3>
 											<div class="cp-counter typ-build-cost">
 												<button class="btn-count no-active btn-minus" disabled>-</button>
-												<input type="text"  class="number-product" value="1">
+												<input type="text"  class="number-product" value="0">
 												<button class="btn-count btn-plus">+</button>
 											</div>
 										</div>
@@ -326,12 +326,13 @@
 						<div class="calc-step step-3 hide">
 							<h2 class="calc-title">Building Cost Estimator</h2>
 							<p class="calc-desc">Select the number of floors</p>
-							<div class="img-wrap typ-no-flr">
+							<!-- <div class="img-wrap typ-no-flr">
 								<picture>
 									<source media="(max-width:768px)" srcset="../components/cp-rebar-estimator/images/frame.png">
 									<img src="../../components/cp-rebar-estimator/images/frame.png" alt="frame" />
 								  </picture>
-							</div>
+							</div> -->
+							<div class="img-wrap typ-no-flr" id="lottie-animation"></div>
 							<div data-id="numberFlr" class="cp-noui-range-slide typ-rebar typ-noflr"></div>
 							<div class="option-wrap">
 								<p class="option-txt">House with basement</p>
@@ -347,7 +348,7 @@
 							<ul class="lyt-grid typ-col-3-no-wrap">
 								<li class="grid-col">
 									<div class="bs-radio typ-build-cost typ-yellow">
-										<input id="material1" checked name="material" type="radio">
+										<input id="material1" value="economy" name="material" type="radio">
 										<label for="material1" class="custom-radio">
 											<div class="material-wrap">
 												<div class="img-wrap"><span class="icon icon-economy"></span></div>
@@ -389,7 +390,7 @@
 								</li>
 								<li class="grid-col">
 									<div class="bs-radio typ-build-cost typ-orange">
-										<input id="material2" name="material" type="radio">
+										<input id="material2" name="material" type="radio" value="standard">
 										<label for="material2" class="custom-radio">	
 											<div class="material-wrap">
 												<div class="img-wrap"><span class="icon icon-economy"></span></div>
@@ -431,7 +432,7 @@
 								</li>
 								<li class="grid-col">
 									<div class="bs-radio typ-build-cost typ-red">
-										<input id="material3" name="material" type="radio">
+										<input id="material3" name="material" type="radio" value="premium">
 										<label for="material3" class="custom-radio">	
 											<div class="material-wrap">
 												<div class="img-wrap"><span class="icon icon-economy"></span></div>
@@ -466,8 +467,7 @@
 														<p class="desc">Basic LED</p>
 													</li>
 												</ul>
-											</div>
-											
+											</div>											
 										</label>
 									</div>
 								</li>
@@ -479,7 +479,7 @@
 							<p class="calc-desc">Do you have an architectural plan?</p>
 							<div class="radio-wrap">
 								<div class="bs-radio typ-plan">
-									<input id="plan1" checked name="plan" type="radio">
+									<input id="plan1" name="plan" type="radio">
 									<label for="plan1" class="custom-radio">
 										My home design is ready
 									</label>
@@ -691,10 +691,11 @@
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-	<script src="/components/cp-counter/cp-counter.js"></script>
+	<!-- <script src="/components/cp-counter/cp-counter.js"></script> -->
     <script src="/js/buildingCostEst.js"></script>
     <!-- endbuild -->
   </body>
