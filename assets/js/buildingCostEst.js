@@ -95,7 +95,7 @@ TSA.buildingCostEst = {
                 noUiSlider.create(numberFlrSlider, {
                     start: 0,
                     connect: [true, false],
-                    range: { min: 0, max: 4 },
+                    range: { min: 0, max: 4 }, // Start range from 1
                     step: 1,
                     pips: {
                         mode: 'values',
@@ -103,8 +103,8 @@ TSA.buildingCostEst = {
                         density: 2,
                         format: {
                             to: (value) => {
-                                // Adjust index if needed
-                                return ['1', '2', '3', '4', 'More'][value - 1];
+                                const labels = ['0', '1', '2', '3', 'More']; // Properly indexed
+                                return labels[value]; 
                             }
                         }
                     }
@@ -214,7 +214,8 @@ TSA.buildingCostEst = {
                     showStep(currentStep);
                     actWrap.classList.remove('hide');
                     if (currentStep === 2) progressBar.classList.remove('hide');
-                }
+                    // if (currentStep === 5) window.location.href = "http://localhost:8000/calculator/calculator-result.html";
+                }                
                 TSA.buildingCostEst.storeValues();
             });
         });
@@ -368,45 +369,45 @@ TSA.buildingCostEst = {
         const step5 = document.querySelector(".calc-step.step-5");
         const planSkipButton = document.querySelector(".planSkip");
 
-        if (materialSkipButton && step4 && step5) {
+        // if (materialSkipButton && step4 && step5) {
             materialSkipButton.addEventListener("click", (event) => {
                 event.preventDefault(); // Prevent default anchor behavior
 
-                try {
+                // try {
                     // Retrieve or initialize building cost data
                     let buildingCostData = JSON.parse(localStorage.getItem("buildingCostData")) || {};
                     buildingCostData.selectedMaterial = "standard"; // Set default material to 'standard'
 
                     // Store updated data in localStorage
                     localStorage.setItem("buildingCostData", JSON.stringify(buildingCostData));
-
+                    alert()
                     // Move to Step 5
-                    Calculator.transitionToNextStep(step4, step5);
-                } catch (error) {
-                    console.error("Error updating localStorage or transitioning to the next step:", error);
-                }
+                    TSA.buildingCostEst.transitionToNextStep(step4, step5);
+                // } catch (error) {
+                //     console.error("Error updating localStorage or transitioning to the next step:", error);
+                // }
             });
-        }
+        // }
 
-        if (planSkipButton) {
+        // if (planSkipButton) {
             planSkipButton.addEventListener("click", (event) => {
                 event.preventDefault(); // Prevent default anchor behavior
 
-                try {
+                // try {
                     // Retrieve or initialize building cost data
                     let buildingCostData = JSON.parse(localStorage.getItem("buildingCostData")) || {};
                     buildingCostData.architecturalPlan = ""; // Set architectural plan as empty string
 
                     // Store updated data in localStorage
                     localStorage.setItem("buildingCostData", JSON.stringify(buildingCostData));
-
+                    alert()
                     // Redirect to the result page
                     window.location.href = "http://localhost:8000/calculator/calculator-result.html";
-                } catch (error) {
-                    console.error("Error updating localStorage or redirecting:", error);
-                }
+                // } catch (error) {
+                //     console.error("Error updating localStorage or redirecting:", error);
+                // }
             });
-        }
+        // }
     },
 
     transitionToNextStep: function (current, next) {
