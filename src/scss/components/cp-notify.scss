@@ -478,7 +478,11 @@
 
         .prgress-bar-main {
             max-width: 480px;
-            @media only screen and (max-width: $media-mobile) { margin-bottom: 1.6rem;}
+
+            @media only screen and (max-width: $media-mobile) {
+                margin-bottom: 1.6rem;
+            }
+
             .desc {
                 display: flex;
                 align-items: center;
@@ -514,6 +518,22 @@
                 background: #33B667;
                 @include border-radius(1.2rem);
             }
+        }
+    }
+
+    &.typ-project-planner {
+        flex-direction: column;
+        align-items: start;
+        background-color: #00398C;
+
+        .notify-title {
+            font-size: 2.4rem;
+        }
+
+        .btn-wrap {
+            align-self: start;
+            margin-top: 1.6rem;
+            .notify-btn{ background-color: #fff; color: #3D7EDB;}
         }
     }
 }

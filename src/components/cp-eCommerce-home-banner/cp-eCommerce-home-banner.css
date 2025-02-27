@@ -987,5 +987,86 @@
               .cp-eCommerce-home-banner.typ-moodboard-help .feature .feature-item .f-img::after {
                 width: 14.6rem;
                 height: 14.6rem; } }
+  .cp-eCommerce-home-banner.typ-color {
+    padding: 0;
+    background: transparent; }
+    @media only screen and (max-width: 768px) {
+      .cp-eCommerce-home-banner.typ-color .feature {
+        flex-wrap: wrap;
+        gap: 1.3rem; } }
+    .cp-eCommerce-home-banner.typ-color .feature .feature-card {
+      background: #FFFFFF; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-card .f-img {
+        z-index: 2;
+        min-width: 9rem;
+        min-height: 9.5rem;
+        align-items: center;
+        display: flex;
+        justify-content: center; }
+        .cp-eCommerce-home-banner.typ-color .feature .feature-card .f-img:after {
+          width: 10rem;
+          height: 10rem;
+          right: -15px;
+          bottom: -15px;
+          border-radius: 50%;
+          position: absolute;
+          content: '';
+          opacity: 30%;
+          z-index: -1; }
+          @media only screen and (max-width: 768px) {
+            .cp-eCommerce-home-banner.typ-color .feature .feature-card .f-img:after {
+              width: 9rem;
+              height: 9rem;
+              border-radius: 50%;
+              position: absolute;
+              right: -1.2rem;
+              bottom: -1.5rem;
+              content: "";
+              opacity: 0.3;
+              z-index: -1; } }
+        @media only screen and (max-width: 768px) {
+          .cp-eCommerce-home-banner.typ-color .feature .feature-card .f-img {
+            max-width: 6rem;
+            max-height: 6rem; } }
+        .cp-eCommerce-home-banner.typ-color .feature .feature-card .f-img .icon {
+          font-size: 5.6rem;
+          width: 4.6rem;
+          height: 3.6rem; }
+          @media only screen and (max-width: 768px) {
+            .cp-eCommerce-home-banner.typ-color .feature .feature-card .f-img .icon {
+              font-size: 4.6rem;
+              width: 2.6rem;
+              height: 2.6rem; } }
+    .cp-eCommerce-home-banner.typ-color .feature .feature-item {
+      width: 19.1rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-eCommerce-home-banner.typ-color .feature .feature-item {
+          width: 48%;
+          height: 13rem;
+          order: initial; } }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.red-card .f-img::after {
+        background-color: #ED9BAB; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.red-card .f-img .icon {
+        color: #DB3657; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.blue-card .f-img::after {
+        background-color: #B1CBF1; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.blue-card .f-img .icon {
+        color: #6498E2; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.purple-card .f-img::after {
+        background-color: #DED3DE; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.purple-card .f-img .icon {
+        color: #9C7C9C; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.yellow-card .f-img::after {
+        background-color: #FFE399; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.yellow-card .f-img .icon {
+        color: #FFC633; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.green-card .f-img::after {
+        background-color: #99DAB3; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.green-card .f-img .icon {
+        color: #33B667; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.orange-card .f-img::after {
+        background-color: #F8B499; }
+      .cp-eCommerce-home-banner.typ-color .feature .feature-item.orange-card .f-img .icon {
+        color: #F16933; }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */

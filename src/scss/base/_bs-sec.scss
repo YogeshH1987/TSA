@@ -1382,7 +1382,34 @@
       }
     }
   }
+  &.typ-project-planner {
+    display: flex;
+    position: relative;
+    padding-top: 0;
 
+    .mb-16 {
+      margin-bottom: 16px;
+    }
+
+    .lyt-project-details {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      .grid-col-lht {
+        width: 35%;
+        @media only screen and (max-width: $media-mobile) {   width: 100%;}
+      }
+
+      .grid-col-rht {
+        width: 65%;
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%
+        }
+      }
+    }
+
+  }
   &.typ-explore-styles {
     .btn-wrap {
       gap: 2rem;

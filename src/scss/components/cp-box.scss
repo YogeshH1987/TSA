@@ -247,6 +247,7 @@
             }
         }
     }
+
     //   this section added for Estimated building cost - calculator result  start
     &.bottom-notify {
         z-index: -1;
@@ -291,11 +292,16 @@
             margin-top: -4rem;
             flex-direction: column;
             z-index: 1;
+
             .cp-cart-card {
                 background-color: transparent;
                 border: 0;
                 padding: 0;
-                .prodcut-item{align-items: center;    margin-bottom: 0;}
+
+                .prodcut-item {
+                    align-items: center;
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -350,6 +356,76 @@
             font-family: 'icomoon' !important;
         }
     }
+
+    &.pp-check-list {
+        z-index: -1;
+        position: relative;
+        padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+        border: 1px solid #3D123D;
+        background: #3D123D;
+        position: relative;
+        @include border-radius(1.2rem);
+        align-items: center;
+
+        .img-wrap {
+            border-radius: 50%;
+            width: 3.6rem;
+            height: 3.6rem;
+            flex: 0 0 3.6rem;
+            background-color: #DED3DE;
+            margin-right: 1.2rem;
+
+            .icon {
+                color: #5A245A;
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .cont-wrap {
+            width: 100%;
+            padding-right: 2rem;
+        }
+
+        .title {
+            padding: 0;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: #fff;
+            font-family: $font-regular;
+        }
+
+        &::after {
+            content: "\e908";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            font-size: 1.6rem;
+            color: #fff;
+            transform: translateY(-50%);
+            font-family: 'icomoon' !important;
+        }
+
+        &.disable {
+            background: #EDEDED;
+            border: 1px solid #EDEDED;
+
+            .img-wrap {
+                background-color: #DEDEDE;
+
+                .icon {
+                    color: #B3B3B3;
+                }
+            }
+
+            .title {
+                color: #999999;
+            }
+        }
+    }
+
     //   this section added for Estimated building cost - calculator result  end
     .cost-list-wrap {
         display: flex;
@@ -412,6 +488,7 @@
             }
         }
     }
+
     //   this section added for Estimated building cost - calculator result  start
     .estimate-time-wrap {
         background-color: #F3F4F6;
@@ -437,5 +514,6 @@
             }
         }
     }
-        //   this section added for Estimated building cost - calculator result  end
+
+    //   this section added for Estimated building cost - calculator result  end
 }

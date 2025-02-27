@@ -32,3 +32,32 @@ function projectPlannerSlider() {
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const closeIcon = document.querySelector(".stage-steps-wrap .icon");
+    const stageStepsWrap = document.querySelector(".stage-steps-wrap");
+
+    if (closeIcon && stageStepsWrap) {
+        closeIcon.addEventListener("click", function () {
+            stageStepsWrap.style.display = "none";
+        });
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleLink = document.querySelector(".total-spent .link");
+    const detailWrap = document.querySelector(".detail-wrap");
+
+    toggleLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent page jump
+
+        if (detailWrap.style.display === "none") {
+            detailWrap.style.display = "block";
+            toggleLink.textContent = "Less details";
+        } else {
+            detailWrap.style.display = "none";
+            toggleLink.textContent = "More details";
+        }
+    });
+});

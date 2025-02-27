@@ -2007,6 +2007,26 @@ p {
         width: 505px; }
       .bs-sec.typ-dashboard .lyt-dashboard-inner .grid-col-rht {
         width: calc(100% - 522px); }
+  .bs-sec.typ-project-planner {
+    display: flex;
+    position: relative;
+    padding-top: 0; }
+    .bs-sec.typ-project-planner .mb-16 {
+      margin-bottom: 16px; }
+    .bs-sec.typ-project-planner .lyt-project-details {
+      display: flex;
+      position: relative;
+      justify-content: center; }
+      .bs-sec.typ-project-planner .lyt-project-details .grid-col-lht {
+        width: 35%; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-project-planner .lyt-project-details .grid-col-lht {
+            width: 100%; } }
+      .bs-sec.typ-project-planner .lyt-project-details .grid-col-rht {
+        width: 65%; }
+        @media only screen and (max-width: 768px) {
+          .bs-sec.typ-project-planner .lyt-project-details .grid-col-rht {
+            width: 100%; } }
   .bs-sec.typ-explore-styles .btn-wrap {
     gap: 2rem;
     display: flex;

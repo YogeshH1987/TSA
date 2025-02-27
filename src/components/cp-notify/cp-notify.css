@@ -387,5 +387,17 @@
         border-radius: 1.2rem;
         -webkit-border-radius: 1.2rem;
         -moz-border-radius: 1.2rem; }
+  .cp-notify.typ-project-planner {
+    flex-direction: column;
+    align-items: start;
+    background-color: #00398C; }
+    .cp-notify.typ-project-planner .notify-title {
+      font-size: 2.4rem; }
+    .cp-notify.typ-project-planner .btn-wrap {
+      align-self: start;
+      margin-top: 1.6rem; }
+      .cp-notify.typ-project-planner .btn-wrap .notify-btn {
+        background-color: #fff;
+        color: #3D7EDB; }
 
 /*# sourceMappingURL=cp-notify.css.map */
