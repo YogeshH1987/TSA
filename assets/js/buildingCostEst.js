@@ -1,35 +1,80 @@
 var TSA = TSA || {};
+
 TSA.buildingCostEst = {
     currentStep: 1, // Start from the first step
-
+    buildingCostLocal: {
+        architecturalPlan : "",
+        basement :true,
+        builtUpArea: 200,
+        currentStep: 1,
+        numberFlr: 0,
+        selectedMaterial: "standard",
+        spaceRequirement: { livingroom: 0, kitchen: 0, bedroom: 0, bathroom: 0, balcony: 0,
+            pujaroom: 0, dinningarea: 0, storageroom: 0, garage: 0,
+            servantroom: 0, hall: 0, study: 0}
+    },
     // Initialize function
     init: function () {
         try {
+            this.getBuildingCostData();
             this.initSlider();
             this.setupStepNavigation();
             this.initSpaceRequirementCounters();
             this.initMaterialSelection();
             this.initBasement();
+            this.initMaterialSkip();
         } catch (err) {
             console.error("Error during initialization:", err);
         }
+    },
+
+    getBuildingCostData: function () {
+        const data = JSON.parse(localStorage.getItem("buildingCost"));
+        console.log('data', data)
+        if(data !== null){
+            this.buildingCostLocal.architecturalPlan= data.architecturalPlan;
+            this.buildingCostLocal.basement = data.basement;
+            this.buildingCostLocal.builtUpArea = data.builtUpArea;
+            this.buildingCostLocal.currentStep = data.currentStep;
+            this.buildingCostLocal.numberFlr = data.numberFlr;
+            this.buildingCostLocal.selectedMaterial = data.selectedMaterial;
+            this.buildingCostLocal.spaceRequirement.livingroom = data.spaceRequirement.livingroom;
+            this.buildingCostLocal.spaceRequirement.kitchen = data.spaceRequirement.kitchen;
+            this.buildingCostLocal.spaceRequirement.bedroom = data.spaceRequirement.bedroom;
+            this.buildingCostLocal.spaceRequirement.bathroom = data.spaceRequirement.bathroom;
+            this.buildingCostLocal.spaceRequirement.balcony = data.spaceRequirement.balcony;
+            this.buildingCostLocal.spaceRequirement.pujaroom = data.spaceRequirement.pujaroom;
+            this.buildingCostLocal.spaceRequirement.dinningarea = data.spaceRequirement.dinningarea;
+            this.buildingCostLocal.spaceRequirement.storageroom = data.spaceRequirement.storageroom;
+            this.buildingCostLocal.spaceRequirement.garage = data.spaceRequirement.garage;
+            this.buildingCostLocal.spaceRequirement.servantroom = data.spaceRequirement.servantroom;
+            this.buildingCostLocal.spaceRequirement.hall = data.spaceRequirement.hall;
+            this.buildingCostLocal.spaceRequirement.study = data.spaceRequirement.study;            
+        }
+        console.log('buildingCostLocal', this.buildingCostLocal);
+    },
+
+    setBuildingCostData: function (updatedData) {
+        localStorage.setItem("buildingCost", JSON.stringify(updatedData));
+    },
+
+    // Store values in local object and update localStorage
+    updateBuildingCostLocal: function (updatedData) {
+        console.log('updatedData',updatedData)
+        this.buildingCostLocal = { ...this.buildingCostLocal, ...updatedData };
+        this.setBuildingCostData(this.buildingCostLocal);
     },
 
     initSlider: function () {
         try {
             const builtUpAreaSlider = document.querySelector('[data-id="builtUpAreaRange"]');
             const numberFlrSlider = document.querySelector('[data-id="numberFlr"]');
-            const animationContainer = document.getElementById('lottie-animation');
             const houseAnimationContainer = document.getElementById('house-animation');
+            const animationContainer = document.getElementById('lottie-animation');
 
-            if (!animationContainer) {
-                throw new Error('Lottie container not found!');
-            }
             if (!houseAnimationContainer) {
                 throw new Error('House animation container not found!');
             }
-
-            // Load Lottie animations
             const animation = lottie.loadAnimation({
                 container: animationContainer,
                 renderer: 'svg',
@@ -45,57 +90,30 @@ TSA.buildingCostEst = {
                 autoplay: false,
                 path: 'http://localhost:8000/components/cp-building-estimator/json/House.json'
             });
+            
 
-            // Built-Up Area Slider Setup
             if (builtUpAreaSlider) {
                 noUiSlider.create(builtUpAreaSlider, {
-                    start: 700,
+                    start: this.buildingCostLocal.builtUpArea || 200,
                     connect: [true, false],
                     range: { min: 200, max: 4000 },
-                    step: 100,
-                    pips: {
-                        mode: 'positions',
-                        values: [0, 100],
-                        density: 100
-                    }
+                    step: 100
                 });
 
-                // Update input value when slider moves
-                builtUpAreaSlider.noUiSlider.on('update', function (values, handle) {
-                    try {
-                        const sqFtValue = Math.round(values[handle]);
-                        document.getElementById('builtUpAreaValue').value = sqFtValue + ' Sq.ft';
-
-                        // Safely call updateHouseAnimation if it exists
-                        if (typeof TSA.buildingCostEst.updateHouseAnimation === 'function') {
-                            TSA.buildingCostEst.updateHouseAnimation(sqFtValue, houseAnimation);
-                        } else {
-                            console.error("updateHouseAnimation function is not defined!");
-                        }
-                    } catch (err) {
-                        console.error("Error in builtUpAreaSlider update handler:", err);
-                    }
-                });
-
-                // Handle manual input change
-                document.getElementById('builtUpAreaValue').addEventListener('change', function () {
-                    try {
-                        var value = parseInt(this.value.replace(' Sq.ft', ''), 10);
-                        if (value >= 200 && value <= 4000) {
-                            builtUpAreaSlider.noUiSlider.set(value);
-                        }
-                    } catch (err) {
-                        console.error("Error handling manual input change:", err);
-                    }
+                builtUpAreaSlider.noUiSlider.on('update', (values, handle) => {
+                    console.log('updateBuildingCostLocal builtUpAreaSlider', values)
+                    const sqFtValue = Math.round(values[handle]);
+                    document.getElementById('builtUpAreaValue').value = `${sqFtValue} Sq.ft`;
+                    this.updateBuildingCostLocal({ builtUpArea: sqFtValue });
+                    houseAnimation.goToAndStop((sqFtValue - 200) / (4000 - 200) * 768, true);
                 });
             }
 
-            // Floor Number Slider Setup
             if (numberFlrSlider) {
                 noUiSlider.create(numberFlrSlider, {
-                    start: 0,
+                    start: this.buildingCostLocal.numberFlr || 0,
                     connect: [true, false],
-                    range: { min: 0, max: 4 }, // Start range from 1
+                    range: { min: 0, max: 4 },
                     step: 1,
                     pips: {
                         mode: 'values',
@@ -110,70 +128,32 @@ TSA.buildingCostEst = {
                     }
                 });
 
-                // Safely call animateLottieBasedOnSlider if it exists
-                if (typeof TSA.buildingCostEst.animateLottieBasedOnSlider === 'function') {
-                    TSA.buildingCostEst.animateLottieBasedOnSlider(numberFlrSlider, animation);
-                } else {
-                    console.error("animateLottieBasedOnSlider function is not defined!");
-                }
+                numberFlrSlider.noUiSlider.on("update", (values, handle) => {
+                    console.log('updateBuildingCostLocal floor', values)
+
+                    const floor = Math.round(values[handle]);
+                    this.updateBuildingCostLocal({ numberFlr: floor });
+                    const frameMapping = {
+                        0: 0,
+                        1: 50,
+                        2: 100,
+                        3: 150,
+                        4: 200,
+                        5: 250,
+                    };
+                    if (frameMapping[floor] !== undefined) {
+                        animation.goToAndStop(frameMapping[floor], true);
+                    }
+                });
+                
             }
         } catch (err) {
             console.error("Error in initSlider:", err);
         }
     },
 
-    // Function to animate Lottie based on slider value (for floor slider)
-    animateLottieBasedOnSlider: function (slider, animation) {
-        try {
-            if (!slider || !slider.noUiSlider || !animation) {
-                console.warn("Slider or animation instance not found!");
-                return;
-            }
-
-            const frameMapping = {
-                1: 0,
-                2: 50,
-                3: 100,
-                4: 150,
-                5: 200
-            };
-
-            slider.noUiSlider.on("update", function (values, handle) {
-                try {
-                    const floor = Math.round(values[handle]);
-                    console.log("Slider changed to:", floor);
-
-                    if (frameMapping[floor] !== undefined) {
-                        animation.goToAndStop(frameMapping[floor], true);
-                    }
-                } catch (err) {
-                    console.error("Error in animateLottieBasedOnSlider update handler:", err);
-                }
-            });
-        } catch (err) {
-            console.error("Error in animateLottieBasedOnSlider:", err);
-        }
-    },
-
-    // Function to update the house animation based on built-up area slider value
-    updateHouseAnimation: function (sqFtValue, houseAnimation) {
-        try {
-            if (!houseAnimation) {
-                throw new Error("House animation instance not found!");
-            }
-
-            // Map Sq.ft value (200 → 4000) to frames (0 → 100)
-            const frame = Math.round(((sqFtValue - 200) / (4000 - 200)) * 200);
-            // console.log(`Built-Up Area: ${sqFtValue} Sq.ft → Animation Frame: ${frame}`);
-            houseAnimation.goToAndStop(frame, true);
-        } catch (err) {
-            console.error("Error in updateHouseAnimation:", err);
-        }
-    },
-
-    // Setup step navigation
     setupStepNavigation: function () {
-        let currentStep = this.currentStep;
+        let currentStep = this.buildingCostLocal.currentStep || 1;
         const steps = document.querySelectorAll('.calc-step');
         const step1Btn = document.querySelectorAll('.step1Btn');
         const backBtns = document.querySelectorAll('.btn-back');
@@ -184,106 +164,91 @@ TSA.buildingCostEst = {
         const stepText = document.querySelector('.calc-progress-bar .step-text');
 
         function showStep(stepNumber) {
-            steps.forEach((step, index) => {
-                step.classList.toggle('hide', index !== stepNumber - 1);
-            });
-
+            steps.forEach((step, index) => step.classList.toggle('hide', index !== stepNumber - 1));
             progressItems.forEach((item, index) => {
                 item.classList.toggle('complete', index < stepNumber - 1);
                 item.classList.toggle('ongoing', index === stepNumber - 1);
             });
-
             if (stepText) stepText.textContent = `Step - ${stepNumber}/${steps.length}`;
-        }
-
-        step1Btn.forEach(btn => {
-            btn.addEventListener('click', function () {
-                currentStep = 2;
-                showStep(currentStep);
+            if (currentStep === 1) {
+                progressBar.classList.add('hide');
+                actWrap.classList.add('hide');
+            }
+            if (currentStep > 1) {
                 actWrap.classList.remove('hide');
                 progressBar.classList.remove('hide');
                 $('.cp-building-estimator').removeClass('full-width');
-                TSA.buildingCostEst.storeValues();
-            });
-        });
+            }
+            if (currentStep === 6) {
+                btn.classList.add('js-last');
+            }  
+        }
 
-        nextBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                if (currentStep < steps.length) {
-                    currentStep++;
-                    showStep(currentStep);
-                    actWrap.classList.remove('hide');
-                    if (currentStep === 2) progressBar.classList.remove('hide');
-                    // if (currentStep === 5) window.location.href = "http://localhost:8000/calculator/calculator-result.html";
-                }                
-                TSA.buildingCostEst.storeValues();
-            });
-        });
+        step1Btn.forEach(btn => btn.addEventListener('click', () => {
+            currentStep = 2;
+            showStep(currentStep);            
+            this.updateBuildingCostLocal({ currentStep });
+        }));
 
-        backBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                if (currentStep > 1) {
-                    currentStep--;
-                    showStep(currentStep);
-                    if (currentStep === 1) {
-                        progressBar.classList.add('hide');
-                        actWrap.classList.add('hide');
-                    }
-                }
-                TSA.buildingCostEst.storeValues();
-            });
-        });
+        nextBtns.forEach(btn => btn.addEventListener('click', () => {
+            if (currentStep < steps.length) {
+                currentStep++;
+                showStep(currentStep);
+                // actWrap.classList.remove('hide');
+                // if (currentStep === 2) progressBar.classList.remove('hide');
+                // if (currentStep === 6) {
+                //     btn.classList.add('js-last');
+                // }                
+            }
+            this.updateBuildingCostLocal({ currentStep });
+        }));
+
+        backBtns.forEach(btn => btn.addEventListener('click', () => {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+                
+            }
+            this.updateBuildingCostLocal({ currentStep });
+        }));
 
         showStep(currentStep);
     },
 
-    // Initialize space requirement counters
     initSpaceRequirementCounters: function () {
-        let storedSpaceRequirement = localStorage.getItem('spaceRequirement');
-        let spaceRequirement = {};
+        let spaceRequirement = this.buildingCostLocal.spaceRequirement || {};
+        const minCount = 0;
+        const maxCount = 5;
 
-        try {
-            spaceRequirement = storedSpaceRequirement ? JSON.parse(storedSpaceRequirement) : {
-                livingroom: 0, kitchen: 0, bedroom: 0, bathroom: 0, balcony: 0,
-                pujaroom: 0, dinningarea: 0, storageroom: 0, garage: 0,
-                servantroom: 0, hall: 0, study: 0
-            };
-        } catch (error) {
-            console.warn('Error parsing spaceRequirement from localStorage:', error);
-            spaceRequirement = {
-                livingroom: 0, kitchen: 0, bedroom: 0, bathroom: 0, balcony: 0,
-                pujaroom: 0, dinningarea: 0, storageroom: 0, garage: 0,
-                servantroom: 0, hall: 0, study: 0
-            };
-        }
+        $(".cp-counter").each(function () {
+            const counter = $(this);
+            counter.find(".number-product").val(spaceRequirement[counter.data('room-type')]);
 
-        function updateLocalStorage() {
-            localStorage.setItem('spaceRequirement', JSON.stringify(spaceRequirement));
-        }
-
-        document.querySelectorAll('.btn-plus').forEach((button) => {
-            button.addEventListener('click', (e) => {
-                const inputField = e.target.previousElementSibling;
-                let value = parseInt(inputField.value, 10) || 0;
-                // value++;
-                inputField.value = value;
-                const roomType = e.target.closest('.cp-img-detail').querySelector('.detail-tile').textContent.toLowerCase().replace(/\s+/g, "");
-                spaceRequirement[roomType] = value;
-                updateLocalStorage();
+            counter.find(".btn-plus").click(function (e) {
+                const input = counter.find(".number-product");
+                let value = parseInt(input.val()) || minCount;
+                const roomType = counter.data('room-type');
+                spaceRequirement[roomType] = Math.min(value + 1, maxCount);
+                input.val(spaceRequirement[roomType]);
+                TSA.buildingCostEst.updateBuildingCostLocal({ spaceRequirement });
             });
-        });
 
-        document.querySelectorAll('.btn-minus').forEach((button) => {
-            button.addEventListener('click', (e) => {
-                const inputField = e.target.nextElementSibling;
-                let value = parseInt(inputField.value, 10) || 0;
-                if (value > 0) {
-                    // value--;
-                    inputField.value = value;
-                    const roomType = e.target.closest('.cp-img-detail').querySelector('.detail-tile').textContent.toLowerCase().replace(/\s+/g, "");
-                    spaceRequirement[roomType] = value;
-                    updateLocalStorage();
-                }
+            counter.find(".btn-minus").click(function (e) {
+                const input = counter.find(".number-product");
+                let value = parseInt(input.val()) || minCount;
+                const roomType = counter.data('room-type');
+                spaceRequirement[roomType] = Math.max(value - 1, minCount);
+                input.val(spaceRequirement[roomType]);
+                TSA.buildingCostEst.updateBuildingCostLocal({ spaceRequirement });
+            });
+
+            counter.find(".number-product").on("input", function (e) {
+                const input = $(this);
+                let value = parseInt(input.val()) || minCount;
+                const roomType = counter.data('room-type');
+                spaceRequirement[roomType] = Math.min(Math.max(value, minCount), maxCount);
+                input.val(spaceRequirement[roomType]);
+                TSA.buildingCostEst.updateBuildingCostLocal({ spaceRequirement });
             });
         });
     },
@@ -291,9 +256,7 @@ TSA.buildingCostEst = {
     // Initialize material selection
     initMaterialSelection: function () {
         const materialRadios = document.querySelectorAll('input[name="material"]');
-    
-        // Restore previously selected material from localStorage
-        let storedMaterial = localStorage.getItem('selectedMaterial');
+        let storedMaterial = this.buildingCostLocal.selectedMaterial;
         if (storedMaterial) {
             materialRadios.forEach(radio => {
                 if (radio.value === storedMaterial) {
@@ -302,114 +265,80 @@ TSA.buildingCostEst = {
                 }
             });
         }
-    
-        // Add event listener to update selection
         materialRadios.forEach(radio => {
             radio.addEventListener('change', function () {
-                // Remove 'selected' class from all options
                 document.querySelectorAll('.bs-radio').forEach(el => el.classList.remove('selected'));
-    
-                // Add 'selected' class to the parent div of the checked radio
                 this.closest('.bs-radio').classList.add('selected');
-    
-                // Store the selected material in localStorage
-                localStorage.setItem('selectedMaterial', this.value);
+                TSA.buildingCostEst.updateBuildingCostLocal({ selectedMaterial: this.value });
             });
-        });
-    },    
-
-    initBasement: function () {
-        let buildingCostData = JSON.parse(localStorage.getItem('buildingCostData')) || { basement: false, selectedMaterial: null };
-        const basementSwitch = document.getElementById('switch-rounded');
-    
-        // Restore the saved state for basement
-        if (buildingCostData.basement) {
-            basementSwitch.checked = true;
-        }
-    
-        // Add event listener to update basement state
-        basementSwitch.addEventListener('change', function () {
-            buildingCostData.basement = this.checked;
-            localStorage.setItem('buildingCostData', JSON.stringify(buildingCostData));
         });
     },
     
-    initPlanSelection: function () {
-        const planRadios = document.querySelectorAll('input[name="plan"]');
+    // Initialize basement toggle
+    initBasement: function () {
+        const basementSwitch = document.getElementById('switch-rounded');
+        if (this.buildingCostLocal.basement) {
+            basementSwitch.checked = this.buildingCostLocal.basement;
+        }
+        basementSwitch.addEventListener('change', function () {
+            TSA.buildingCostEst.updateBuildingCostLocal({ basement: this.checked });
+        });
+    },
     
-        // Restore previously selected plan from localStorage
-        let storedPlan = localStorage.getItem('selectedPlan');
+      // Initialize plan selection
+      initPlanSelection: function () {
+        const planRadios = document.querySelectorAll('input[name="plan"]');
+        let storedPlan = this.buildingCostLocal.architecturalPlan;
         if (storedPlan) {
             planRadios.forEach(radio => {
-                if (radio.id === storedPlan) {
+                if (radio.value === storedPlan) {
                     radio.checked = true;
                     radio.closest('.bs-radio').classList.add('selected');
                 }
             });
         }
-    
-        // Add event listener to update selection
         planRadios.forEach(radio => {
             radio.addEventListener('change', function () {
-                // Remove 'selected' class from all options
                 document.querySelectorAll('.bs-radio.typ-plan').forEach(el => el.classList.remove('selected'));
-    
-                // Add 'selected' class to the parent div of the checked radio
                 this.closest('.bs-radio').classList.add('selected');
-    
-                // Store the selected plan in localStorage
-                localStorage.setItem('selectedPlan', this.id);
+                TSA.buildingCostEst.updateBuildingCostLocal({ architecturalPlan: this.value });
             });
         });
     },
 
+    // Handle architectural plan selection and proceed to the next step
+    handleArchitecturalPlanSelection: function () {
+        const nextButton = document.querySelectorAll(".js-last");
+        nextButton.addEventListener("click", function () {
+            let selectedPlan = this.buildingCostLocal.architecturalPlan;
+            if (selectedPlan) {
+                TSA.buildingCostEst.updateBuildingCostLocal({ architecturalPlan: selectedPlan });
+                window.location.href = "http://localhost:8000/calculator/calculator-result.html";
+            } else {
+                alert("Please select an architectural plan before proceeding.");
+            }
+        });
+    },
+
+    // Handle skipping material selection
     initMaterialSkip: function () {
         const materialSkipButton = document.querySelector(".materialSkip");
         const step4 = document.querySelector(".calc-step.step-4");
         const step5 = document.querySelector(".calc-step.step-5");
         const planSkipButton = document.querySelector(".planSkip");
-
-        // if (materialSkipButton && step4 && step5) {
-            materialSkipButton.addEventListener("click", (event) => {
-                event.preventDefault(); // Prevent default anchor behavior
-
-                // try {
-                    // Retrieve or initialize building cost data
-                    let buildingCostData = JSON.parse(localStorage.getItem("buildingCostData")) || {};
-                    buildingCostData.selectedMaterial = "standard"; // Set default material to 'standard'
-
-                    // Store updated data in localStorage
-                    localStorage.setItem("buildingCostData", JSON.stringify(buildingCostData));
-                    alert()
-                    // Move to Step 5
-                    TSA.buildingCostEst.transitionToNextStep(step4, step5);
-                // } catch (error) {
-                //     console.error("Error updating localStorage or transitioning to the next step:", error);
-                // }
-            });
-        // }
-
-        // if (planSkipButton) {
-            planSkipButton.addEventListener("click", (event) => {
-                event.preventDefault(); // Prevent default anchor behavior
-
-                // try {
-                    // Retrieve or initialize building cost data
-                    let buildingCostData = JSON.parse(localStorage.getItem("buildingCostData")) || {};
-                    buildingCostData.architecturalPlan = ""; // Set architectural plan as empty string
-
-                    // Store updated data in localStorage
-                    localStorage.setItem("buildingCostData", JSON.stringify(buildingCostData));
-                    alert()
-                    // Redirect to the result page
-                    window.location.href = "http://localhost:8000/calculator/calculator-result.html";
-                // } catch (error) {
-                //     console.error("Error updating localStorage or redirecting:", error);
-                // }
-            });
-        // }
+        materialSkipButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            TSA.buildingCostEst.updateBuildingCostLocal({ selectedMaterial: "standard" });
+            TSA.buildingCostEst.transitionToNextStep(step4, step5);
+        });
+        planSkipButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            TSA.buildingCostEst.updateBuildingCostLocal({ architecturalPlan: "" });
+            window.location.href = "http://localhost:8000/calculator/calculator-result.html";
+        });
     },
-
+    
+    // Transition to next step
     transitionToNextStep: function (current, next) {
         if (current && next) {
             current.classList.add("fade-out");
@@ -419,32 +348,9 @@ TSA.buildingCostEst = {
                 next.classList.add("fade-in");
             }, 300);
         }
-    },
-    
-    // Store values in localStorage
-    storeValues: function () {
-        try {
-            const builtUpAreaValue = document.getElementById('builtUpAreaValue').value.replace(' Sq.ft', '');
-            const numberFlrValue = document.querySelector('[data-id="numberFlr"]').noUiSlider.get();
-
-            let buildingCostData = JSON.parse(localStorage.getItem('buildingCostData')) || {};
-
-            buildingCostData = {
-                ...buildingCostData, // Preserve existing values
-                builtUpArea: parseInt(builtUpAreaValue),
-                floor: parseInt(numberFlrValue),
-                spaceRequirement: JSON.parse(localStorage.getItem('spaceRequirement')) || {},
-                architecturalPlan: localStorage.getItem('selectedPlan') || '',
-                selectedMaterial: localStorage.getItem('selectedMaterial') || 'standard',
-            };
-
-            localStorage.setItem('buildingCostData', JSON.stringify(buildingCostData));
-            console.log('Updated buildingCostData:', buildingCostData);
-        } catch (err) {
-            console.error("Error storing values:", err);
-        }
-    }
+    },    
 };
+
 
 // Check if data is stored in localStorage
 function checkStoredData() {
