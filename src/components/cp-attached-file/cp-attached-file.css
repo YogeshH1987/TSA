@@ -173,5 +173,44 @@
       @media only screen and (max-width: 768px) {
         .cp-attached-file.typ-clr-yellow .upload-file-area .title {
           font-size: 1.2rem; } }
+.cp-attached-file.typ-project-planner .wrapper-thumb {
+  position: relative;
+  margin: 1rem 0;
+  justify-content: space-around;
+  width: 23%;
+  flex: 0 0 23%;
+  border-radius: 1.2rem;
+  border: 1px solid #DEDEDE;
+  overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .cp-attached-file.typ-project-planner .wrapper-thumb {
+      width: 30%;
+      flex: 0 0 30%; } }
+
+.file-upload {
+  position: relative;
+  display: none;
+  cursor: pointer; }
+  .file-upload .file-upload__label {
+    display: block;
+    color: #3D7EDB;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    white-space: nowrap; }
+  .file-upload .file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width: 0;
+    height: 100%;
+    opacity: 0; }
+  .file-upload.disable {
+    pointer-events: none;
+    display: block; }
+    .file-upload.disable .file-upload__label {
+      color: #B3B3B3; }
 
 /*# sourceMappingURL=cp-attached-file.css.map */

@@ -155,7 +155,8 @@
       .cp-cart-card.typ-order-summery .prodcut-item .title {
         font-size: 1.4rem;
         color: #333333;
-        font-family: "Poppins Semibold"; }
+        font-family: "Poppins Semibold";
+        margin-bottom: 3px; }
       .cp-cart-card.typ-order-summery .prodcut-item .desc {
         font-size: 1.2rem; }
       .cp-cart-card.typ-order-summery .prodcut-item .product-price {

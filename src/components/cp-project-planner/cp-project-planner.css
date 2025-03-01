@@ -301,16 +301,17 @@
       font-size: 1.4rem;
       color: #333333; }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list {
+    margin-bottom: 1.2rem; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec {
     border: 1px solid #DEDEDE;
     border-radius: 1.2rem;
     -webkit-border-radius: 1.2rem;
     -moz-border-radius: 1.2rem;
     padding: 1.6rem 2.4rem;
     position: relative;
-    margin-bottom: 1.2rem;
     overflow: hidden;
     background-color: #fff; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list::after {
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec::after {
       content: '';
       width: 8px;
       height: 100%;
@@ -320,39 +321,114 @@
       overflow: hidden;
       top: 0;
       bottom: 0; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .title {
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .title {
       font-size: 1.6rem;
       font-family: "Poppins Semibold";
-      color: #333333; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .desc {
-      font-size: 1.4rem;
-      color: #666;
-      margin-top: 4px; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .tag {
-      background-color: #FFF1CC;
-      border: 1px solid #FFD466;
-      border-radius: 26px;
-      -webkit-border-radius: 26px;
-      -moz-border-radius: 26px;
-      padding: 4px 8px;
-      font-family: "Poppins Medium";
-      font-size: 1.2rem;
       color: #333333;
-      display: inline-block;
-      line-height: 1.2rem;
-      margin-bottom: 1.6rem; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .expense-detail-wrap {
+      margin-bottom: 4px; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .desc {
+      font-size: 1.4rem;
+      color: #666; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap {
+      display: flex;
+      align-items: center;
+      gap: 5px; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag {
+        background-color: #FFF1CC;
+        border: 1px solid #FFD466;
+        border-radius: 26px;
+        -webkit-border-radius: 26px;
+        -moz-border-radius: 26px;
+        padding: 4px 8px;
+        font-family: "Poppins Medium";
+        font-size: 1.2rem;
+        color: #333333;
+        display: inline-block;
+        line-height: 1.2rem;
+        margin-bottom: 1.6rem; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.blue {
+          color: #3D7EDB;
+          background-color: #ECF2FB;
+          border-color: #3D7EDB; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.green {
+          color: #333333;
+          background-color: #CCEDD9;
+          border-color: #66C88D; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.red {
+          color: #EE4400;
+          background-color: #fff;
+          border-color: #EE4400; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .icon {
+        font-size: 1.8rem;
+        margin-left: auto;
+        color: #3D7EDB; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .text {
+        margin-left: auto;
+        font-size: 1.2rem;
+        font-family: "Poppins Medium";
+        color: #333333; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap {
       display: flex;
       gap: 4rem; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .expense-detail-wrap .expense-detail-list .expense-title {
-        margin-bottom: 4px; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .expense-detail-wrap .expense-detail-list .expense-title,
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .expense-detail-wrap .expense-detail-list .expense-detail {
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-title {
+        margin-bottom: 4px;
         font-size: 1.4rem;
         color: #666;
         display: block; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list .expense-detail-wrap .expense-detail-list .link {
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-detail {
+        font-size: 1.4rem;
+        color: #333333;
+        font-family: "Poppins Medium";
+        display: block; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .link {
         text-decoration: underline; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar {
+        margin-left: auto; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-container {
+          position: relative;
+          width: 40px;
+          height: 40px; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-circle {
+          width: 100%;
+          height: 100%;
+          transform: rotate(-90deg); }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar circle {
+          fill: none;
+          stroke-width: 4;
+          stroke-linecap: round;
+          transition: stroke-dasharray 0.5s ease; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .background-circle {
+          stroke: #F3F4F6; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress {
+          stroke: #4caf50;
+          stroke-dasharray: 67 100; }
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 10px;
+          color: #333333; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.blue::after {
+      background-color: #3D7EDB; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.green::after {
+      background-color: #00A441; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .check-list-btn {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.6rem; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .check-list-btn .btn {
+        padding: 1rem 1.6rem;
+        font-size: 1.4rem; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #333333;
+      margin-bottom: 8px; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent .price {
+        font-family: "Poppins Semibold";
+        font-size: 1.4rem; }
   .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list {
     background-color: #ECF2FB;
     border: 1px solid #B1CBF1;
@@ -360,7 +436,7 @@
     border-radius: 1.2rem;
     -webkit-border-radius: 1.2rem;
     -moz-border-radius: 1.2rem;
-    margin-top: -28px;
+    margin-top: -15px;
     z-index: -1;
     position: relative; }
     .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent {
@@ -393,12 +469,15 @@
             font-size: 1.2rem; } }
   .cp-project-planner .stage-wrap .stage-list-wrap.disable {
     pointer-events: none; }
-    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list .tag {
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec .tag {
       background-color: #333333;
       border-color: #333333;
       color: #FFFFFF; }
-    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list::after {
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec::after {
       background-color: #999999; }
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec .expense-detail-wrap .expense-detail {
+      color: #999;
+      font-family: "Poppins Regular"; }
     .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list {
       background-color: #EDEDED;
       border-color: #EDEDED; }
@@ -449,5 +528,30 @@
       color: #000; }
 .cp-project-planner .mb-32 {
   margin-bottom: 3.2rem; }
+.cp-project-planner .restart-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end; }
+  .cp-project-planner .restart-btn .btn {
+    padding: 1rem 1.6rem;
+    font-size: 1.4rem; }
+  .cp-project-planner .restart-btn .info-wrap {
+    display: flex;
+    border: 1px solid #FFD466;
+    background: #FFF8E5;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 0.8rem 1.6rem;
+    border-radius: 12px;
+    gap: 8px; }
+    .cp-project-planner .restart-btn .info-wrap .icon {
+      font-size: 2.4rem;
+      color: #A77800; }
+    .cp-project-planner .restart-btn .info-wrap .desc {
+      font-size: 1.2rem;
+      font-family: "Poppins Medium";
+      color: #A77800;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=cp-project-planner.css.map */

@@ -304,6 +304,24 @@
                 }
             }
         }
+
+        &.typ-pp-checklist {
+            padding-top: 1.6rem;
+            margin-top: 0rem;
+            flex-direction: column;
+            z-index: 1;
+
+            .cp-cart-card {
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+
+                .prodcut-item {
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 
     &.bottom-notify-breakout {

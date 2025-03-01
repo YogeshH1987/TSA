@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
     <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
+    <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
+    <link rel="stylesheet" href="/components/cp-rating/cp-rating.css" />
     <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
     <link rel="stylesheet" href="/components/cp-project-planner/cp-project-planner.css" />
 
@@ -505,6 +507,7 @@
                     <div class="lyt-project-details">
 
                         <div class="grid-col-rht">
+
                             <div class="stage-wrap mb-32">
                                 <div class="stage-steps-wrap">
                                     <p class="step-text">Step 1</p>
@@ -528,30 +531,65 @@
                                 </div>
                                 <ul class="stage-list-wrap">
                                     <li class="stage-list">
-                                        <div class="tag">Not started</div>
-                                        <ul class="expense-detail-wrap">
-                                            <li class="expense-detail-list">
-                                                <span class="expense-title">Started on</span>
-                                                <span class="expense-detail"><a href="#" class="link"> Add
-                                                        date</a></span>
-                                            </li>
+                                        <div class="stage-list-sec">
+                                            <div class="tag-wrap"><span class="tag">Not started</span></div>
+                                            <ul class="expense-detail-wrap">
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Started on</span>
+                                                    <span class="expense-detail"><a href="#" class="link"> Add
+                                                            date</a></span>
+                                                </li>
 
-                                            <li class="expense-detail-list">
-                                                <span class="expense-title">Expected end</span>
-                                                <span class="expense-detail">-</span>
-                                            </li>
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Expected end</span>
+                                                    <span class="expense-detail">-</span>
+                                                </li>
 
-                                            <li class="expense-detail-list">
-                                                <span class="expense-title">Completed on</span>
-                                                <span class="expense-detail">-</span>
-                                            </li>
-                                        </ul>
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Completed on</span>
+                                                    <span class="expense-detail">-</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="total-spend-list">
+                                            <div class="total-spent">Total Spent: <span class="price">₹0</span></div>
+                                            <div class="link-list">
+                                                <a href="#" class="link">Add an expense</a>
+                                                <a href="#" class="link">View expense diary</a>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li class="total-spend-list">
-                                        <div class="total-spent">Total Spent: <span class="price">₹0</span></div>
-                                        <div class="link-list">
-                                            <a href="#" class="link">Add an expense</a>
-                                            <a href="#" class="link">View expense diary</a>
+
+
+                                    <li class="stage-list">
+                                        <div class="stage-list-sec blue">
+                                            <div class="tag-wrap"><span class="tag blue">In Progress</span> <span
+                                                    class="icon icon-edit"></span></div>
+                                            <ul class="expense-detail-wrap">
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Started on</span>
+                                                    <span class="expense-detail"><a href="#" class="link"> Add
+                                                            date</a></span>
+                                                </li>
+
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Expected end</span>
+                                                    <span class="expense-detail">-</span>
+                                                </li>
+
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Completed on</span>
+                                                    <span class="expense-detail">-</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="total-spend-list">
+                                            <div class="total-spent">Total Spent: <span class="price">₹0</span></div>
+                                            <div class="link-list">
+                                                <a href="#" class="link">Add an expense</a>
+                                                <a href="#" class="link">View expense diary</a>
+                                            </div>
                                         </div>
                                     </li>
 
@@ -650,6 +688,37 @@
                                             </div>
                                         </div>
 
+                                        <div class="cp-box bottom-notify typ-pp-checklist">
+                                            <div class="cp-cart-card typ-order-summery">
+                                                <div class="prodcut-item">
+                                                    <div class="product-img">
+                                                        <img src="/components/cp-cart/images/rebars-shipping.png"
+                                                            alt="rebars">
+                                                    </div>
+
+                                                    <div class="product-desc">
+                                                        <h3 class="title">Rebars</h3>
+                                                        <div class="cp-rating typ-calculator-result">
+                                                            <ul class="rating-number-sec">
+                                                                <li class="item">
+                                                                    <div class="review-star">
+                                                                        <span class="icon icon-star active"></span>
+                                                                        <span class="icon icon-star active"></span>
+                                                                        <span class="icon icon-star active"></span>
+                                                                        <span class="icon icon-star active"></span>
+                                                                        <span class="icon icon-star"></span>
+                                                                    </div>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#" class="link">Shop rebars</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
 
                                     </div>
 
@@ -697,18 +766,26 @@
                                     <h3 class="title typ-2">Photo gallery
                                         <span class="sub-text"> Add bills, material or site photos at this stage</span>
                                     </h3>
-                                    <a href="#" class="link"> Add photos</a>
+
+
+                                    <div class="file-upload">
+                                        <label for="upload" class="file-upload__label"> Add photos</label>
+                                        <input id="upload" class="file-upload__input" type="file" name="images[]"
+                                            multiple="">
+                                    </div>
                                 </div>
 
-                                <div class="cp-attached-file typ-help-policies">
-                                    <div class="img-thumbs img-thumbs-hidden" id="img-preview"></div>
+                                <div class="cp-attached-file typ-project-planner">
+                                    <div class="img-thumbs" id="img-preview">
+
+
+                                    </div>
 
                                     <div class="upload-file-area">
                                         <span class="icon icon-camera"></span>
-                                        <h3 class="title">Upload file from device</h3>
-                                        <p class="desc">File formats: PNG, JPEG, PDF, PPT, DOC and DOCX. File size
-                                            should not exceed 2
-                                            MB.</p>
+                                        <h3 class="title">Upload your project photos</h3>
+                                        <p class="desc">Supported formats: PNG and JPEG. File size should not exceed 5
+                                            MB. Maximum up to 5 photos</p>
                                         <label class="label"> <input type="file" name="images[]" multiple=""
                                                 id="upload-img" class="default-file-input"> </label>
                                     </div>

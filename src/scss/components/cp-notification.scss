@@ -68,8 +68,32 @@
             width: 20rem;
             margin: auto;
         }
-        .cont-wrap{
-            .title{ font-size: 2.8rem;}
+
+        .cont-wrap {
+            .title {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    &.typ-project-planner {
+        text-align: center;
+        flex-direction: column;
+        border-bottom: 0;
+
+        .icon {
+            width: 20rem;
+            margin: auto;
+        }
+
+        .cont-wrap {
+            padding-right: 0;
+            max-width: 450px;
+            margin: auto;
+
+            .title {
+                font-size: 2.8rem;
+            }
         }
     }
 }

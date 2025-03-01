@@ -61,3 +61,42 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+document.querySelectorAll('#upload, #upload-img').forEach(input => {
+    input.addEventListener('change', function(event) {
+        let imgPreview = document.getElementById('img-preview');
+        let uploadFileArea = document.querySelector('.upload-file-area');
+        let fileUpload = document.querySelector('.file-upload');
+
+        if (event.target.files.length > 0) {
+            uploadFileArea.style.display = 'none'; // Hide upload area
+            fileUpload.style.display = 'block'; // Hide file upload button
+        } else {
+            uploadFileArea.style.display = 'block'; // Show upload area
+            fileUpload.style.display = 'none'; // Show file upload button
+        }
+
+        Array.from(event.target.files).forEach(file => {
+            if (file.type.startsWith('image/')) {
+                let reader = new FileReader();
+
+                reader.onload = function(e) {
+                    let imgWrapper = document.createElement('div');
+                    imgWrapper.classList.add('wrapper-thumb');
+
+                    let img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.classList.add('img-preview-thumb');
+
+                    imgWrapper.appendChild(img);
+                    imgPreview.appendChild(imgWrapper);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+});
+
+

@@ -189,7 +189,7 @@
     .upload-file-area {
       padding: 3.7rem 2.4rem;
       margin: 0;
-    
+
       .desc {
         max-width: 346px;
         margin: auto;
@@ -206,26 +206,96 @@
 
   &.typ-clr-yellow {
     margin-bottom: 3.2rem;
-    @media only screen and (max-width: $media-mobile) {   margin-bottom: 0rem; height: 100%;}
+
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 0rem;
+      height: 100%;
+    }
+
     .upload-file-area {
       border: 2px dashed #FFB800;
       background-color: #FFFBF2;
-      @media only screen and (max-width: $media-mobile) { padding: 3.7rem 0rem;    height: 100%;
+
+      @media only screen and (max-width: $media-mobile) {
+        padding: 3.7rem 0rem;
+        height: 100%;
         align-items: center;
         justify-content: center;
-        display: flex
-;
-        flex-direction: column;}
+        display: flex;
+        flex-direction: column;
+      }
+
       .icon {
         color: #FFB800;
-        @media only screen and (max-width: $media-mobile) { font-size: 2.4rem;         width: 2.4rem;
-          height: 2.4rem;}
+
+        @media only screen and (max-width: $media-mobile) {
+          font-size: 2.4rem;
+          width: 2.4rem;
+          height: 2.4rem;
+        }
       }
 
       .title {
         color: #FFB800;
-        @media only screen and (max-width: $media-mobile) { font-size: 1.2rem; }
+
+        @media only screen and (max-width: $media-mobile) {
+          font-size: 1.2rem;
+        }
       }
+    }
+  }
+  &.typ-project-planner{
+
+    .wrapper-thumb {
+      position: relative;
+      margin: 1rem 0;
+      justify-content: space-around;
+      width: 23%;
+      flex: 0 0 23%;
+      border-radius: 1.2rem;
+      border: 1px solid #DEDEDE;
+      overflow: hidden;
+  
+      @media only screen and (max-width: $media-mobile) {
+        width: 30%;
+        flex: 0 0 30%;
+      }
+    }
+  }
+}
+
+.file-upload {
+  position: relative;
+  display: none;
+  cursor: pointer;
+
+  .file-upload__label {
+    display: block;
+
+    color: #3D7EDB;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    white-space: nowrap;
+
+  }
+
+  .file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+  }
+
+  &.disable {
+    pointer-events: none;
+    display: block;
+    .file-upload__label {
+      color: #B3B3B3;
     }
   }
 }

@@ -232,6 +232,18 @@
         .cp-box.bottom-notify.typ-product-notify .cp-cart-card .prodcut-item {
           align-items: center;
           margin-bottom: 0; }
+    .cp-box.bottom-notify.typ-pp-checklist {
+      padding-top: 1.6rem;
+      margin-top: 0rem;
+      flex-direction: column;
+      z-index: 1; }
+      .cp-box.bottom-notify.typ-pp-checklist .cp-cart-card {
+        background-color: transparent;
+        border: 0;
+        padding: 0; }
+        .cp-box.bottom-notify.typ-pp-checklist .cp-cart-card .prodcut-item {
+          align-items: center;
+          margin-bottom: 0; }
   .cp-box.bottom-notify-breakout {
     z-index: -1;
     position: relative;

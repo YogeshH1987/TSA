@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
 
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
+    <link rel="stylesheet" href="/components/cp-notification/cp-notification.css" />
+    <link rel="stylesheet" href="/components/cp-home-completion/cp-home-completion.css" />
     <link rel="stylesheet" href="/components/cp-project-planner/cp-project-planner.css" />
 
 </head>
@@ -546,25 +548,64 @@
                         </div>
 
                         <div class="grid-col-rht">
+                            
+                            <div class="cp-home-completion">
+                                <h1 class="title">Agrawal’s holiday home is ready!!</h1>
+                                <p class="desc">Congratulations on the completion of your dream home!</p>
+                                <div class="detials-wrap">
+                                    <ul class="home-detail-wrap">
+                                        <li class="home-detail-list">
+                                            <span class="detail-title">Started on</span>
+                                            <span class="detail-info">01 Jan 24</span>
+                                        </li>
+
+                                        <li class="home-detail-list">
+                                            <span class="detail-title">Ended on</span>
+                                            <span class="detail-info">31 Dec 24</span>
+                                        </li>
+
+                                        <li class="home-detail-list">
+                                            <span class="detail-title">Completed in</span>
+                                            <span class="detail-info">365 days</span>
+                                            <span class="tag">Before time</span>
+                                        </li>
+
+                                        <li class="home-detail-list">
+                                            <span class="detail-title">Amount spent</span>
+                                            <span class="detail-info">8,00,00,000</span>
+                                            <span class="tag">Within budget</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <a href="#" class="link"> View your home building story in photos</a>
+                            </div>
+
+                    
+                                    <div class="cp-notification typ-project-planner hide">
+                                        <div class="icon"><img src="/images/review.svg" alt=""></div>
+                                        <div class="cont-wrap">
+                                            <h4 class="title">There are currently no stages
+                                                in with this status</h4>
+                                            <p class="desc">Currently we do not have any stage to showcase here</p>
+                                        </div>
+                                    </div>
+                                
                             <div class="stage-wrap">
                                 <div class="stage-head-sec">
                                     <h3 class="title">Stages <a href="#" class="link">Learn more</a></h3>
                                     <div class="cp-select typ-stages">
                                         <div class="select-dropdown">
-                                            <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                            <button href="#" role="button" data-value="All" class="select-dropdown-button">
                                                 <span class="select-text">All </span> <i
                                                     class="zmdi zmdi-chevron-down"></i>
                                             </button>
                                             <ul class="select-dropdown-list">
                                                 <li class="dropdown-item">
-                                                    <span data-value="1" class="select-dropdown-list-item">1</span>
+                                                    <span data-value="Complete" class="select-dropdown-list-item">Complete</span>
                                                 </li>
                                                 <li class="dropdown-item">
-                                                    <span data-value="2" class="select-dropdown-list-item">2</span>
-
-                                                </li>
-                                                <li class="dropdown-item">
-                                                    <span data-value="3" class="select-dropdown-list-item">3</span>
+                                                    <span data-value="In Progress" class="select-dropdown-list-item">In Progress</span>
 
                                                 </li>
                                             </ul>
@@ -583,18 +624,63 @@
                                 </div>
                                 <ul class="stage-list-wrap">
                                     <li class="stage-list">
-                                        <h3 class="title"> Planning & Design</h3>
-                                        <p class="desc">Hire an architect, finalize design style, and...</p>
+                                        <div class="stage-list-sec green">
+                                            <h3 class="title">Planning & design</h3>
+                                            <div class="tag-wrap"><span class="tag green">Completed</span><span class="text">Completed on 25 Mar 25</span></div>
+                                           
+                                        </div>
                                     </li>
 
                                     <li class="stage-list">
-                                        <h3 class="title">Land preparation & Approvals</h3>
-                                        <p class="desc">Obtain building permits, clear the site, and secure...</p>
+                                        <div class="stage-list-sec green">
+                                            <h3 class="title">Planning & design</h3>
+                                            <div class="tag-wrap"><span class="tag green">Completed</span><span class="tag red">Delayed</span> </div>
+                                            <div class="total-spent">Total Spent: <span class="price">₹10,000</span></div>
+                                        </div>
                                     </li>
 
                                     <li class="stage-list">
-                                        <h3 class="title"> Foundation</h3>
-                                        <p class="desc">Excavate and level land, pour concrete footing...</p>
+                                        <div class="stage-list-sec">
+                                            <h3 class="title">Land preparation & Approvals</h3>
+                                            <p class="desc">Obtain building permits, clear the site, and secure...</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="stage-list">
+                                        <div class="stage-list-sec">
+                                            <h3 class="title"> Foundation</h3>
+                                               <div class="tag-wrap"><span class="tag blue">In progress</span><span class="text">Delayed by 10 days</span></div>
+                                               <ul class="expense-detail-wrap">
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Started on</span>
+                                                    <span class="expense-detail"> 01 Jan 25</span>
+                                                </li>
+
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Expected end</span>
+                                                    <span class="expense-detail">15 Feb 25</span>
+                                                </li>
+
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Total Spent</span>
+                                                    <span class="expense-detail">₹30,000 <a href="#" class="link">Add an expense</a></span>
+                                                </li>
+                                                <li class="radial-progressbar">
+                                                    <div class="progress-container">
+                                                        <svg class="progress-circle" viewBox="0 0 36 36">
+                                                            <circle class="background-circle" cx="18" cy="18" r="16"/>
+                                                            <circle class="progress" cx="18" cy="18" r="16"/>
+                                                        </svg>
+                                                        <div class="progress-text">2/3</div>
+                                                    </div>
+                                                
+                                                </li>
+                                            </ul>
+                                            <div class="btn-wrap check-list-btn">
+                                                <button class="btn btn-outline">Add photo</button>
+                                                <button class="btn">View checklist</button>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

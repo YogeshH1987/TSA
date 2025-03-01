@@ -528,34 +528,34 @@
                                 </div>
                                 <ul class="stage-list-wrap disable">
                                     <li class="stage-list">
-                                        <div class="tag">Paused for 30 days</div>
-                                        <ul class="expense-detail-wrap">
-                                            <li class="expense-detail-list">
-                                                <span class="expense-title">Started on</span>
-                                                <span class="expense-detail"><a href="#" class="link"> Add
-                                                        date</a></span>
-                                            </li>
+                                        <div class="stage-list-sec">
+                                            <div class="tag-wrap"><span class="tag">>Paused for 30 days</span></div>
+                                      
+                                            <ul class="expense-detail-wrap">
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Started on</span>
+                                                    <span class="expense-detail">01 Jan 25</span>
+                                                </li>
 
-                                            <li class="expense-detail-list">
-                                                <span class="expense-title">Expected end</span>
-                                                <span class="expense-detail">-</span>
-                                            </li>
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Expected end</span>
+                                                    <span class="expense-detail">15 Feb 25</span>
+                                                </li>
 
-                                            <li class="expense-detail-list">
-                                                <span class="expense-title">Completed on</span>
-                                                <span class="expense-detail">-</span>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="total-spend-list">
-                                        <div class="total-spent">Total Spent: <span class="price">₹0</span></div>
-                                        <div class="link-list">
-                                            <a href="#" class="link">Add an expense</a>
-                                            <a href="#" class="link">View expense diary</a>
+                                                <li class="expense-detail-list">
+                                                    <span class="expense-title">Completed on</span>
+                                                    <span class="expense-detail"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="total-spend-list">
+                                            <div class="total-spent">Total Spent: <span class="price">₹0</span></div>
+                                            <div class="link-list">
+                                                <a href="#" class="link">Add an expense</a>
+                                                <a href="#" class="link">View expense diary</a>
+                                            </div>
                                         </div>
                                     </li>
-
-
                                 </ul>
 
                             </div>
@@ -697,22 +697,41 @@
                                     <h3 class="title typ-2">Photo gallery
                                         <span class="sub-text"> Add bills, material or site photos at this stage</span>
                                     </h3>
-                                    <a href="#" class="link disable"> Add photos</a>
+
+
+                                    <div class="file-upload disable">
+                                        <label for="upload" class="file-upload__label"> Add photos</label>
+                                        <input id="upload" class="file-upload__input" type="file" name="images[]"
+                                            multiple="">
+                                    </div>
                                 </div>
 
-                                <div class="cp-attached-file typ-help-policies">
-                                    <div class="img-thumbs img-thumbs-hidden" id="img-preview"></div>
+                                <div class="cp-attached-file typ-project-planner">
+                                    <div class="img-thumbs" id="img-preview">
+                                        <div class="wrapper-thumb"><img
+                                                src="blob:http://localhost:8000/7cf3199c-641e-4340-891b-adf37c2afe19"
+                                                class="img-preview-thumb"></div>
+                                        <div class="wrapper-thumb"><img
+                                                src="blob:http://localhost:8000/7cc8a86d-550a-4b7c-bf44-892fb1a1d6a5"
+                                                class="img-preview-thumb"></div>
+                                        <div class="wrapper-thumb"><img
+                                                src="blob:http://localhost:8000/2f0a9dc5-eb64-4d9c-a60e-5a83722c2c43"
+                                                class="img-preview-thumb"></div>
+                                        <div class="wrapper-thumb"><img
+                                                src="blob:http://localhost:8000/5d38dc17-479b-482e-95af-a5ff371b3e17"
+                                                class="img-preview-thumb"></div>
 
-                                    <div class="upload-file-area">
-                                        <span class="icon icon-camera"></span>
-                                        <h3 class="title">Upload file from device</h3>
-                                        <p class="desc">File formats: PNG, JPEG, PDF, PPT, DOC and DOCX. File size
-                                            should not exceed 2
-                                            MB.</p>
-                                        <label class="label"> <input type="file" name="images[]" multiple=""
-                                                id="upload-img" class="default-file-input"> </label>
                                     </div>
 
+
+                                </div>
+                            </div>
+                            <div class="stage-wrap">
+                                <div class="btn-wrap restart-btn">
+                                    <div class="info-wrap">
+                                        <span class="icon icon-info"></span>
+                                        <p class="desc">Paused on 10 Jan 25 for financial reasons</p>
+                                    </div> <button class="btn">Restart project</button>
                                 </div>
                             </div>
                         </div>

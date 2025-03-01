@@ -1,0 +1,69 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-home-completion {
+    margin-bottom: 2rem;
+    .title {
+        font-size: 2.4rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        text-align: center;
+        margin: 0 0 8px;
+    }
+
+    .desc {
+        font-size: 1.6rem;
+        font-family: $font-regular;
+        color: $clr-base;
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .detials-wrap {
+        background-color: #00398C;
+        @include border-radius(1.2rem);
+        padding: 2.4rem;
+
+        .home-detail-wrap {
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+
+            .home-detail-list {
+                .detail-title {
+                    font-size: 1.4rem;
+                    color: #8BB2E9;
+                    display: block;
+                }
+
+                .detail-info {
+                    font-size: 2rem;
+                    font-family: $font-semiBold;
+                    color: #fff;
+                    display: block;
+                }
+
+                .tag {
+                    @include border-radius(2.6rem);
+                    background-color: #CCEDD9;
+                    border: 1px solid #66C88D;
+                    font-size: 1.2rem;
+                    font-family: $font-medium;
+                    color: $clr-base;
+                    display: inline-block;
+                    padding: 2px 8px;
+                }
+            }
+
+  
+        }
+    }
+    .link {
+        text-decoration: underline;
+        font-size: 1.6rem;
+        text-align: center;
+        display: block;
+        margin-top: 1.6rem;
+    }
+}

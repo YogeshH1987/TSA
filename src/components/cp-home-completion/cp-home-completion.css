@@ -1,0 +1,58 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-home-completion {
+  margin-bottom: 2rem; }
+  .cp-home-completion .title {
+    font-size: 2.4rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    text-align: center;
+    margin: 0 0 8px; }
+  .cp-home-completion .desc {
+    font-size: 1.6rem;
+    font-family: "Poppins Regular";
+    color: #333333;
+    text-align: center;
+    margin-bottom: 1.6rem; }
+  .cp-home-completion .detials-wrap {
+    background-color: #00398C;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    padding: 2.4rem; }
+    .cp-home-completion .detials-wrap .home-detail-wrap {
+      display: flex;
+      gap: 5px;
+      justify-content: space-between; }
+      .cp-home-completion .detials-wrap .home-detail-wrap .home-detail-list .detail-title {
+        font-size: 1.4rem;
+        color: #8BB2E9;
+        display: block; }
+      .cp-home-completion .detials-wrap .home-detail-wrap .home-detail-list .detail-info {
+        font-size: 2rem;
+        font-family: "Poppins Semibold";
+        color: #fff;
+        display: block; }
+      .cp-home-completion .detials-wrap .home-detail-wrap .home-detail-list .tag {
+        border-radius: 2.6rem;
+        -webkit-border-radius: 2.6rem;
+        -moz-border-radius: 2.6rem;
+        background-color: #CCEDD9;
+        border: 1px solid #66C88D;
+        font-size: 1.2rem;
+        font-family: "Poppins Medium";
+        color: #333333;
+        display: inline-block;
+        padding: 2px 8px; }
+  .cp-home-completion .link {
+    text-decoration: underline;
+    font-size: 1.6rem;
+    text-align: center;
+    display: block;
+    margin-top: 1.6rem; }
+
+/*# sourceMappingURL=cp-home-completion.css.map */
