@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="/components/cp-notification/cp-notification.css" />
     <link rel="stylesheet" href="/components/cp-home-completion/cp-home-completion.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
     <link rel="stylesheet" href="/components/cp-project-planner/cp-project-planner.css" />
 
 </head>
@@ -548,7 +549,7 @@
                         </div>
 
                         <div class="grid-col-rht">
-                            
+
                             <div class="cp-home-completion">
                                 <h1 class="title">Agrawal’s holiday home is ready!!</h1>
                                 <p class="desc">Congratulations on the completion of your dream home!</p>
@@ -581,31 +582,34 @@
                                 <a href="#" class="link"> View your home building story in photos</a>
                             </div>
 
-                    
-                                    <div class="cp-notification typ-project-planner hide">
-                                        <div class="icon"><img src="/images/review.svg" alt=""></div>
-                                        <div class="cont-wrap">
-                                            <h4 class="title">There are currently no stages
-                                                in with this status</h4>
-                                            <p class="desc">Currently we do not have any stage to showcase here</p>
-                                        </div>
-                                    </div>
-                                
+
+                            <div class="cp-notification typ-project-planner hide">
+                                <div class="icon"><img src="/images/review.svg" alt=""></div>
+                                <div class="cont-wrap">
+                                    <h4 class="title">There are currently no stages
+                                        in with this status</h4>
+                                    <p class="desc">Currently we do not have any stage to showcase here</p>
+                                </div>
+                            </div>
+
                             <div class="stage-wrap">
                                 <div class="stage-head-sec">
                                     <h3 class="title">Stages <a href="#" class="link">Learn more</a></h3>
                                     <div class="cp-select typ-stages">
                                         <div class="select-dropdown">
-                                            <button href="#" role="button" data-value="All" class="select-dropdown-button">
+                                            <button href="#" role="button" data-value="All"
+                                                class="select-dropdown-button">
                                                 <span class="select-text">All </span> <i
                                                     class="zmdi zmdi-chevron-down"></i>
                                             </button>
                                             <ul class="select-dropdown-list">
                                                 <li class="dropdown-item">
-                                                    <span data-value="Complete" class="select-dropdown-list-item">Complete</span>
+                                                    <span data-value="Complete"
+                                                        class="select-dropdown-list-item">Complete</span>
                                                 </li>
                                                 <li class="dropdown-item">
-                                                    <span data-value="In Progress" class="select-dropdown-list-item">In Progress</span>
+                                                    <span data-value="In Progress" class="select-dropdown-list-item">In
+                                                        Progress</span>
 
                                                 </li>
                                             </ul>
@@ -624,18 +628,27 @@
                                 </div>
                                 <ul class="stage-list-wrap">
                                     <li class="stage-list">
-                                        <div class="stage-list-sec green">
+                                        <div class="stage-list-sec">
                                             <h3 class="title">Planning & design</h3>
-                                            <div class="tag-wrap"><span class="tag green">Completed</span><span class="text">Completed on 25 Mar 25</span></div>
-                                           
+                                            <p class="desc">Hire an architect, finalize design style, and...</p>
+                                            <div class="info-wrap">
+                                                <span class="icon icon-info"></span>
+                                                <p class="desc">Mark as complete or in-progress as the next step has
+                                                    begun</p>
+                                            </div>
+                                            <!-- <div class="tag-wrap"><span class="tag green">Completed</span><span class="text">Completed on 25 Mar 25</span></div> -->
+
                                         </div>
                                     </li>
 
                                     <li class="stage-list">
                                         <div class="stage-list-sec green">
                                             <h3 class="title">Planning & design</h3>
-                                            <div class="tag-wrap"><span class="tag green">Completed</span><span class="tag red">Delayed</span> </div>
-                                            <div class="total-spent">Total Spent: <span class="price">₹10,000</span></div>
+                                            <div class="tag-wrap"><span class="tag green">Completed</span><span
+                                                    class="tag red">Delayed</span> <span class="tag grey">Paused for 30
+                                                    days</span> </div>
+                                            <div class="total-spent">Total Spent: <span class="price">₹10,000</span>
+                                            </div>
                                         </div>
                                     </li>
 
@@ -649,8 +662,9 @@
                                     <li class="stage-list">
                                         <div class="stage-list-sec">
                                             <h3 class="title"> Foundation</h3>
-                                               <div class="tag-wrap"><span class="tag blue">In progress</span><span class="text">Delayed by 10 days</span></div>
-                                               <ul class="expense-detail-wrap">
+                                            <div class="tag-wrap"><span class="tag blue">In progress</span><span
+                                                    class="text">Delayed by 10 days</span></div>
+                                            <ul class="expense-detail-wrap">
                                                 <li class="expense-detail-list">
                                                     <span class="expense-title">Started on</span>
                                                     <span class="expense-detail"> 01 Jan 25</span>
@@ -663,17 +677,18 @@
 
                                                 <li class="expense-detail-list">
                                                     <span class="expense-title">Total Spent</span>
-                                                    <span class="expense-detail">₹30,000 <a href="#" class="link">Add an expense</a></span>
+                                                    <span class="expense-detail">₹30,000 <a href="#" class="link">Add an
+                                                            expense</a></span>
                                                 </li>
                                                 <li class="radial-progressbar">
                                                     <div class="progress-container">
                                                         <svg class="progress-circle" viewBox="0 0 36 36">
-                                                            <circle class="background-circle" cx="18" cy="18" r="16"/>
-                                                            <circle class="progress" cx="18" cy="18" r="16"/>
+                                                            <circle class="background-circle" cx="18" cy="18" r="16" />
+                                                            <circle class="progress" cx="18" cy="18" r="16" />
                                                         </svg>
                                                         <div class="progress-text">2/3</div>
                                                     </div>
-                                                
+
                                                 </li>
                                             </ul>
                                             <div class="btn-wrap check-list-btn">
@@ -683,6 +698,7 @@
                                         </div>
                                     </li>
                                 </ul>
+                                <span class="js-drawer" data-id="timeline"> timeline drawer</span>
                             </div>
                         </div>
                     </div>
@@ -859,7 +875,102 @@
 
 
 
+    <!-- timeline-->
+    <div class="cp-drawer" id="timeline">
+        <div class="head-sec">
+            <h2 class="drawer-title">Ideal timeline for a home</h2>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+            <div class="cp-project-planner typ-2">
+                <div class="cp-home-completion typ-timeline-drawer">
 
+                    <div class="detials-wrap">
+                        <ul class="home-detail-wrap">
+                            <li class="home-detail-list">
+                                <span class="icon icon-planning-stage"></span>
+                                <div class="detail-sec">
+                                    <span class="detail-title">Plot size</span>
+                                    <span class="detail-info">1,000 Sq. ft.</span>
+                                </div>
+                            </li>
+
+                            <li class="home-detail-list">
+                                <span class="icon icon-planning-stage"></span>
+                                <div class="detail-sec">
+                                    <span class="detail-title">Built-up area</span>
+                                    <span class="detail-info">1,200 Sq. ft.</span>
+                                </div>
+                            </li>
+                            <li class="home-detail-list">
+                                <span class="icon icon-planning-stage"></span>
+                                <div class="detail-sec">
+                                    <span class="detail-title">Built-up area</span>
+                                    <span class="detail-info">1,200 Sq. ft.</span>
+                                </div>
+                            </li>
+
+                            <li class="home-detail-list">
+                                <span class="icon icon-planning-stage"></span>
+                                <div class="detail-sec">
+                                    <span class="detail-title">Built-up area</span>
+                                    <span class="detail-info">1,200 Sq. ft.</span>
+                                </div>
+                            </li>
+
+                            <li class="home-detail-list w-100">
+                                <span class="icon icon-planning-stage"></span>
+                                <div class="detail-sec">
+                                    <span class="detail-title">Weather conditions</span>
+                                    <span class="detail-info">Uninterrupted by rains & harsh weather</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-wrap">
+                    <span class="icon icon-info"></span>
+                    <p class="desc">Regional variations, labor availability, and other circumstances may impact your
+                        construction time. Consult a local experts for a more specific timeline.</p>
+                </div>
+
+                <ul class="ideal-timeline-wrap">
+                    <li class="ideal-timeline-list">
+                        <div class="timeline-details">
+                        <h3 class="title"> Foundation</h3>
+                        <p class="desc">Hire an architect, finalize design style, and prepare a structure</p></div>
+                        <div class="days">45 days</div>
+                    </li>
+
+                    <li class="ideal-timeline-list">
+                        <div class="timeline-details">
+                        <h3 class="title"> Foundation</h3>
+                        <p class="desc">Hire an architect, finalize design style, and prepare a structure</p></div>
+                        <div class="days">45 days</div>
+                    </li>
+
+                    <li class="ideal-timeline-list">
+                        <div class="timeline-details">
+                        <h3 class="title"> Foundation</h3>
+                        <p class="desc">Hire an architect, finalize design style, and prepare a structure</p></div>
+                        <div class="days">45 days</div>
+                    </li>
+
+                    <li class="ideal-timeline-list">
+                        <div class="timeline-details">
+                        <h3 class="title"> Foundation</h3>
+                        <p class="desc">Hire an architect, finalize design style, and prepare a structure</p></div>
+                        <div class="days">45 days</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
 
 
     <div class="cm-overlay"></div>

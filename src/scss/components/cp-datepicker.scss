@@ -1,0 +1,87 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.ui-datepicker {
+    width: 20em;
+    font-size: 1.4rem !important;
+    padding: 1rem;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #F3F4F6;
+    border-radius: 1.2rem;
+}
+.ui-widget-header {
+    border: 0;
+    background: #F3F4F6;
+    border-radius: 24px !important;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    font-size: 1.2rem;
+    color: #808080;
+}
+.ui-datepicker-month{display: block; font-family: $font-semiBold; font-size: 2rem; color: #00398C;}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    padding: 8px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 0;
+    background: transparent;
+    text-align: center;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 0;
+    background: #00398C;
+    color: #fff;
+    border-radius: 50%;
+    font-family: $font-semiBold
+}
+
+.ui-datepicker .ui-datepicker-prev span{
+
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    text-indent: 9999px;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 12px;
+}
+.ui-datepicker .ui-datepicker-prev .ui-icon, .ui-datepicker .ui-datepicker-next .ui-icon { background-image: none;}
+.ui-datepicker .ui-datepicker-prev:after, .ui-datepicker .ui-datepicker-next:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(45deg);
+    margin: 5px 0px 0px 12px;
+}
+.ui-datepicker .ui-datepicker-next {
+    float: right;
+    margin-right: 12px;
+}
+.ui-datepicker .ui-datepicker-next:after {
+    transform: rotate(-135deg);
+    margin: 5px 0px 0px 5px;
+}.ui-icon {
+    animation: none;
+    width: auto;
+    height: auto;
+}

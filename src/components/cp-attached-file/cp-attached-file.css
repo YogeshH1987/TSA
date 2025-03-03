@@ -186,11 +186,31 @@
     .cp-attached-file.typ-project-planner .wrapper-thumb {
       width: 30%;
       flex: 0 0 30%; } }
+.cp-attached-file.typ-project-planner .img-thumbs {
+  margin: 0; }
+.cp-attached-file.typ-project-planner .desc {
+  font-size: 1.4rem;
+  color: #333333; }
+.cp-attached-file.typ-project-planner.typ-modal {
+  height: 100%; }
+  .cp-attached-file.typ-project-planner.typ-modal .wrapper-thumb {
+    position: relative;
+    margin: 1rem 0;
+    justify-content: space-around;
+    width: 31%;
+    flex: 0 0 31%;
+    border-radius: 1.2rem;
+    border: 1px solid #DEDEDE;
+    overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      .cp-attached-file.typ-project-planner.typ-modal .wrapper-thumb {
+        width: 30%;
+        flex: 0 0 30%; } }
 
 .file-upload {
   position: relative;
-  display: none;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
   .file-upload .file-upload__label {
     display: block;
     color: #3D7EDB;

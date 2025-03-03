@@ -5,227 +5,174 @@
 /*opacity*/
 /*opacity- end*/
 .cp-accordion {
-  margin-bottom: 3rem;
-}
-.cp-accordion .acc-item {
-  border-bottom: solid 1px #DEDEDE;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-}
-@media only screen and (max-width: 768px) {
+  margin-bottom: 3rem; }
   .cp-accordion .acc-item {
-    margin-inline: -1.6rem;
-  }
-}
-.cp-accordion .acc-item.active {
-  background: #FFF6F2;
-}
-.cp-accordion .acc-item.active .acc-head {
-  padding-bottom: 1.6rem;
-}
-.cp-accordion .acc-item.active .acc-head:before {
-  content: "\e922";
-}
-.cp-accordion .acc-head {
-  position: relative;
-  cursor: pointer;
-  font-family: "Poppins Semibold";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333333;
-  padding: 2.2rem 4rem 2.2rem 2rem;
-}
-.cp-accordion .acc-head:before {
-  content: "\e921";
-  font-family: "icomoon";
-  position: absolute;
-  font-size: 2.2rem;
-  line-height: 2.4rem;
-  color: #3D7EDB;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-}
-@media only screen and (max-width: 991px) {
-  .cp-accordion .acc-head:before {
-    font-size: 2rem;
-    line-height: 2.2rem;
-  }
-}
-.cp-accordion .acc-cont {
-  display: none;
-  padding: 0 2rem 2rem;
-}
-.cp-accordion .acc-cont .acc-desc {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333333;
-  margin-bottom: 1.6rem;
-}
-.cp-accordion.typ-policy .acc-item .acc-head::after {
-  color: #3D7EDB;
-}
-.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list {
-  margin-bottom: 2rem;
-}
-.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .acc-subTitle {
-  font-family: "Poppins Semibold";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333333;
-  margin-bottom: 0.8rem;
-}
-.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list {
-  padding: 1rem 0;
-  border-bottom: 1px solid #DEDEDE;
-}
-.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list .acc-desc {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333333;
-}
-.cp-accordion.typ-policy .acc-item.active {
-  background-color: #f3f4f6;
-  border-bottom: 1px solid #DEDEDE;
-  border-top: 1px solid #DEDEDE;
-}
-.cp-accordion.typ-help {
-  border-top: solid 1px #DEDEDE;
-  margin-bottom: 0;
-}
-.cp-accordion.typ-help .acc-item .acc-head {
-  font-family: "Poppins Regular";
-}
-.cp-accordion.typ-help .acc-item.active {
-  border-top: 0;
-}
-.cp-accordion.typ-help .acc-item.active .acc-head {
-  font-family: "Poppins Semibold";
-}
-.cp-accordion.typ-help .ans-desc {
-  color: #333333;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  margin-bottom: 1.2rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-accordion.typ-help .acc-item {
-    margin-inline: 0;
-  }
-}
-.cp-accordion .acc-item-card .acc-head-card {
-  position: relative;
-  border-bottom: 1px solid #DEDEDE;
-  padding-bottom: 1.6rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-accordion .acc-item-card .acc-head-card {
-    padding: 1.2rem 1.2rem;
-  }
-}
-.cp-accordion .acc-item-card .acc-head-card:before {
-  content: none;
-  font-family: "icomoon";
-  position: absolute;
-  font-size: 2.2rem;
-  line-height: 2.4rem;
-  color: #333333;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-}
-@media only screen and (max-width: 991px) {
-  .cp-accordion .acc-item-card .acc-head-card:before {
+    border-bottom: solid 1px #DEDEDE;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease; }
+    @media only screen and (max-width: 768px) {
+      .cp-accordion .acc-item {
+        margin-inline: -1.6rem; } }
+    .cp-accordion .acc-item.active {
+      background: #FFF6F2; }
+      .cp-accordion .acc-item.active .acc-head {
+        padding-bottom: 1.6rem; }
+        .cp-accordion .acc-item.active .acc-head:before {
+          content: "\e922"; }
+  .cp-accordion .acc-head {
+    position: relative;
+    cursor: pointer;
+    font-family: "Poppins Semibold";
     font-size: 1.4rem;
-    line-height: 1.8rem;
-    content: "\e90e";
-  }
-}
-.cp-accordion .acc-item-card.active .acc-head-card:before {
-  content: none;
-}
-@media only screen and (max-width: 991px) {
+    line-height: 2rem;
+    color: #333333;
+    padding: 2.2rem 4rem 2.2rem 2rem; }
+    .cp-accordion .acc-head:before {
+      content: "\e921";
+      font-family: 'icomoon';
+      position: absolute;
+      font-size: 2.2rem;
+      line-height: 2.4rem;
+      color: #3D7EDB;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease; }
+      @media only screen and (max-width: 991px) {
+        .cp-accordion .acc-head:before {
+          font-size: 2rem;
+          line-height: 2.2rem; } }
+  .cp-accordion .acc-cont {
+    display: none;
+    padding: 0 2rem 2rem; }
+    .cp-accordion .acc-cont .acc-desc {
+      font-family: "Poppins Regular";
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #333333;
+      margin-bottom: 1.6rem; }
+  .cp-accordion.typ-policy .acc-item .acc-head::after {
+    color: #3D7EDB; }
+  .cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list {
+    margin-bottom: 2rem; }
+    .cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .acc-subTitle {
+      font-family: "Poppins Semibold";
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #333333;
+      margin-bottom: 0.8rem; }
+    .cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list {
+      padding: 1rem 0;
+      border-bottom: 1px solid #DEDEDE; }
+      .cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list .acc-desc {
+        font-family: "Poppins Regular";
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #333333; }
+  .cp-accordion.typ-policy .acc-item.active {
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE; }
+  .cp-accordion.typ-help {
+    border-top: solid 1px #DEDEDE;
+    margin-bottom: 0; }
+    .cp-accordion.typ-help .acc-item .acc-head {
+      font-family: "Poppins Regular"; }
+    .cp-accordion.typ-help .acc-item.active {
+      border-top: 0; }
+      .cp-accordion.typ-help .acc-item.active .acc-head {
+        font-family: "Poppins Semibold"; }
+    .cp-accordion.typ-help .ans-desc {
+      color: #333333;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-accordion.typ-help .acc-item {
+        margin-inline: 0; } }
+  .cp-accordion .acc-item-card .acc-head-card {
+    position: relative;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-accordion .acc-item-card .acc-head-card {
+        padding: 1.2rem 1.2rem; } }
+    .cp-accordion .acc-item-card .acc-head-card:before {
+      content: none;
+      font-family: 'icomoon';
+      position: absolute;
+      font-size: 2.2rem;
+      line-height: 2.4rem;
+      color: #333333;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease; }
+      @media only screen and (max-width: 991px) {
+        .cp-accordion .acc-item-card .acc-head-card:before {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          content: "\e90e"; } }
   .cp-accordion .acc-item-card.active .acc-head-card:before {
-    content: "\e92a";
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-accordion .acc-cont-card {
-    padding: 0 1.2rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-accordion .typ-pravesh-card {
-    padding: 0;
-  }
-}
-.cp-accordion .typ-pravesh-card .sec-sub-title {
-  padding-bottom: 0;
-}
-.cp-accordion.typ-cart-summery .acc-item {
-  border: solid 1px #DEDEDE;
-  border-radius: 1.2rem;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  margin-bottom: 1.2rem;
-  overflow: hidden;
-}
-@media only screen and (max-width: 768px) {
+    content: none; }
+    @media only screen and (max-width: 991px) {
+      .cp-accordion .acc-item-card.active .acc-head-card:before {
+        content: "\e92a"; } }
+  @media only screen and (max-width: 768px) {
+    .cp-accordion .acc-cont-card {
+      padding: 0 1.2rem; } }
+  @media only screen and (max-width: 768px) {
+    .cp-accordion .typ-pravesh-card {
+      padding: 0; } }
+  .cp-accordion .typ-pravesh-card .sec-sub-title {
+    padding-bottom: 0; }
   .cp-accordion.typ-cart-summery .acc-item {
-    margin-inline: 0;
-  }
-}
-.cp-accordion.typ-cart-summery .acc-item.active {
-  background-color: #FFF;
-}
-.cp-accordion.typ-cart-summery .acc-item.active .acc-head::before {
-  transform: translateY(-50%) rotate(-180deg);
-}
-.cp-accordion.typ-cart-summery .acc-item.active .acc-head .desc {
-  display: none;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-head {
-  background: #ECF2FB;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 4rem 1.2rem 1.2rem;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-head::before {
-  content: "\e90e";
-  color: #333333;
-  right: 10px;
-  font-size: 1.6rem;
-  transition: all 0.3s ease;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-head .desc {
-  font-size: 1.2rem;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-head .font-medium {
-  font-family: "Poppins Medium";
-  color: #333333;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-head .title {
-  font-size: 2rem;
-  color: #00398C;
-  line-height: 2.8rem;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-head .price {
-  font-size: 2rem;
-  color: #00398C;
-}
-.cp-accordion.typ-cart-summery .acc-item .acc-cont {
-  padding: 0;
-}
+    border: solid 1px #DEDEDE;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.2rem;
+    overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      .cp-accordion.typ-cart-summery .acc-item {
+        margin-inline: 0; } }
+    .cp-accordion.typ-cart-summery .acc-item.active {
+      background-color: #FFF; }
+      .cp-accordion.typ-cart-summery .acc-item.active .acc-head::before {
+        transform: translateY(-50%) rotate(-180deg); }
+      .cp-accordion.typ-cart-summery .acc-item.active .acc-head .desc {
+        display: none; }
+    .cp-accordion.typ-cart-summery .acc-item .acc-head {
+      background: #ECF2FB;
+      display: flex;
+      gap: 1.2rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 4rem 1.2rem 1.2rem; }
+      .cp-accordion.typ-cart-summery .acc-item .acc-head::before {
+        content: "\e90e";
+        color: #333333;
+        right: 10px;
+        font-size: 1.6rem;
+        transition: all 0.3s ease; }
+      .cp-accordion.typ-cart-summery .acc-item .acc-head .desc {
+        font-size: 1.2rem; }
+      .cp-accordion.typ-cart-summery .acc-item .acc-head .font-medium {
+        font-family: "Poppins Medium";
+        color: #333333; }
+      .cp-accordion.typ-cart-summery .acc-item .acc-head .title {
+        font-size: 2rem;
+        color: #00398C;
+        line-height: 2.8rem; }
+      .cp-accordion.typ-cart-summery .acc-item .acc-head .price {
+        font-size: 2rem;
+        color: #00398C; }
+    .cp-accordion.typ-cart-summery .acc-item .acc-cont {
+      padding: 0; }
 
 /*# sourceMappingURL=cp-accordion.css.map */

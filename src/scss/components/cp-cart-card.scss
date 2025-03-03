@@ -207,6 +207,7 @@
             }
         }
     }
+
     //   this section added for Estimated building cost - calculator result  start
     &.typ-order-summery {
         padding: 1.6rem 1.2rem;
@@ -257,6 +258,7 @@
             }
         }
     }
+
     //   this section added for Estimated building cost - calculator result  end
     &.typ-order-confirmation {
         border: 1px solid #DEDEDE;
@@ -264,7 +266,11 @@
         @include border-radius(1.6rem);
         z-index: 2;
         position: relative;
-        @media only screen and (max-width: $media-mobile) { padding: 1.2rem }
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.2rem
+        }
+
         .head-title {
             font-size: 2.4rem;
             font-family: $font-semiBold;
@@ -272,18 +278,26 @@
             padding-bottom: 1.2rem;
             margin-bottom: 1.2rem;
             color: $clr-base;
-            @media only screen and (max-width: $media-mobile) {  font-size: 1.6rem; }
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+            }
+
             &.typ-2 {
                 font-size: 1.4rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 font-family: $font-medium;
-                @media only screen and (max-width: $media-mobile) {   font-family: $font-medium;}
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-family: $font-medium;
+                }
             }
 
             .link {
-                text-decoration: underline;white-space: nowrap;
+                text-decoration: underline;
+                white-space: nowrap;
             }
         }
 
@@ -292,14 +306,21 @@
             color: $clr-base;
             margin-bottom: 1.6rem;
             line-height: 2.8rem;
-            @media only screen and (max-width: $media-mobile) {    font-size: 1.4rem;  line-height: 2rem;}
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
         }
 
         .radio-wrap {
             gap: 1.6rem;
             display: flex;
             justify-content: space-between;
-            @media only screen and (max-width: $media-mobile) {gap: 0rem; }
+
+            @media only screen and (max-width: $media-mobile) {
+                gap: 0rem;
+            }
         }
 
         .btn-wrap {
@@ -417,8 +438,65 @@
 
         }
     }
-&.typ-rate-exper{
-    @media only screen and (max-width: $media-mobile) {
-    margin: 2.4rem 0;}
-}
+
+    &.typ-rate-exper {
+        @media only screen and (max-width: $media-mobile) {
+            margin: 2.4rem 0;
+        }
+    }
+
+    &.project-planner {
+        padding: 1.2rem 1.2rem;
+        @include border-radius(1.2rem);
+        border-bottom: 1px solid #99DAB3;
+        background-color: #E5F6EC;
+        margin-top: 1.2rem;
+
+        &:last-child {
+            border: 0;
+        }
+
+        .prodcut-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0;
+
+            .product-img {
+                width: 5.6rem;
+                height: 5.6rem;
+                border: 1px solid #DEDEDE;
+                background-color: #fff;
+                @include border-radius(1.2rem);
+                overflow: hidden;
+            }
+
+            .title {
+                font-size: 1.4rem;
+                color: #333333;
+                margin-bottom: 3px;
+            }
+
+            .desc {
+                font-size: 1.2rem;
+            }
+
+            .product-price {
+                font-family: $font-semiBold;
+                font-size: 1.6rem;
+                margin-left: auto;
+                color: $clr-base;
+            }
+
+            .link {
+                font-size: 1.4rem;
+                text-decoration: underline;
+                margin-left: auto;
+                font-family: $font-medium;
+            }
+        }
+        &.yellow-bg{
+            border: 1px solid #FFD466;
+            background-color: #FFF8E5;
+        }
+    }
 }

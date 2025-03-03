@@ -7,156 +7,120 @@
 .cp-profile-progress-bar {
   border-bottom: 1px solid #DEDEDE;
   padding-bottom: 1.6rem;
-  margin-bottom: 4rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-profile-progress-bar .profile-head {
-    text-align: left;
-  }
-}
-.cp-profile-progress-bar .profile-head .profile-title {
-  font-size: 2.8rem;
-  color: #333333;
-  font-family: "Poppins Semibold";
-}
-@media only screen and (max-width: 768px) {
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-profile-progress-bar .profile-head {
+      text-align: left; } }
   .cp-profile-progress-bar .profile-head .profile-title {
-    font-size: 2rem;
-  }
-}
-.cp-profile-progress-bar .profile-head .desc {
-  color: #333333;
-}
-.cp-profile-progress-bar .progress-num {
-  background-color: #ECF2FB;
-  padding: 4px 12px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  font-size: 1.4rem;
-  font-family: "Poppins Medium";
-  color: #3D7EDB;
-  display: inline-block;
-  margin-top: 1.6rem;
-}
-@media only screen and (max-width: 768px) {
+    font-size: 2.8rem;
+    color: #333333;
+    font-family: "Poppins Semibold"; }
+    @media only screen and (max-width: 768px) {
+      .cp-profile-progress-bar .profile-head .profile-title {
+        font-size: 2rem; } }
+  .cp-profile-progress-bar .profile-head .desc {
+    color: #333333; }
   .cp-profile-progress-bar .progress-num {
-    font-size: 1.2rem;
-  }
-}
-.cp-profile-progress-bar .progress {
-  position: relative;
-  display: flex;
-  margin-top: 16px;
-}
-.cp-profile-progress-bar .progress .progress-track {
-  position: absolute;
-  top: 5px;
-  width: 75%;
-  height: 2px;
-  background-color: #ccc;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-@media only screen and (max-width: 768px) {
-  .cp-profile-progress-bar .progress .progress-track {
-    right: auto;
-  }
-}
-.cp-profile-progress-bar .progress .progress-step {
-  position: relative;
-  width: 100%;
-  font-size: 16px;
-  text-align: center;
-  color: #B3B3B3;
-}
-@media only screen and (max-width: 768px) {
-  .cp-profile-progress-bar .progress .progress-step {
-    font-size: 14px;
-    text-align: left;
-  }
-}
-.cp-profile-progress-bar .progress .progress-step:last-child:after {
-  display: none;
-}
-.cp-profile-progress-bar .progress .progress-step:before {
-  content: "\e938";
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  width: 14px;
-  height: 14px;
-  background: #fff;
-  border: 4px solid #1D2955;
-  border-radius: 100%;
-  color: transparent;
-  outline: 5px #fff solid;
-}
-@media only screen and (max-width: 768px) {
-  .cp-profile-progress-bar .progress .progress-step:before {
-    margin: 0;
-  }
-}
-.cp-profile-progress-bar .progress .progress-step:after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  width: 0%;
-  transition: width 1s ease-in;
-  height: 2px;
-  background: #1D2955;
-  z-index: -1;
-}
-@media only screen and (max-width: 768px) {
-  .cp-profile-progress-bar .progress .progress-step:after {
-    left: 0;
-  }
-}
-.cp-profile-progress-bar .progress .progress-step.is-active {
-  color: #B3B3B3;
-}
-.cp-profile-progress-bar .progress .progress-step.is-active:before {
-  border: 3px solid #1D2955;
-  animation: pulse 2s infinite;
-}
-.cp-profile-progress-bar .progress .progress-step.is-complete {
-  font-family: "Poppins Medium";
-  color: #333333;
-}
-.cp-profile-progress-bar .progress .progress-step.is-complete:before {
-  font-family: "icomoon";
-  font-size: 5px;
-  color: #fff;
-  background: green;
-  border: 4px solid transparent;
-}
-.cp-profile-progress-bar .progress .progress-step.is-complete:after {
-  background: #00A441;
-  animation: nextStep 1s;
-  animation-fill-mode: forwards;
-}
+    background-color: #ECF2FB;
+    padding: 4px 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-size: 1.4rem;
+    font-family: "Poppins Medium";
+    color: #3D7EDB;
+    display: inline-block;
+    margin-top: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-profile-progress-bar .progress-num {
+        font-size: 1.2rem; } }
+  .cp-profile-progress-bar .progress {
+    position: relative;
+    display: flex;
+    margin-top: 16px; }
+    .cp-profile-progress-bar .progress .progress-track {
+      position: absolute;
+      top: 5px;
+      width: 75%;
+      height: 2px;
+      background-color: #ccc;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      margin: auto; }
+      @media only screen and (max-width: 768px) {
+        .cp-profile-progress-bar .progress .progress-track {
+          right: auto; } }
+    .cp-profile-progress-bar .progress .progress-step {
+      position: relative;
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+      color: #B3B3B3; }
+      @media only screen and (max-width: 768px) {
+        .cp-profile-progress-bar .progress .progress-step {
+          font-size: 14px;
+          text-align: left; } }
+      .cp-profile-progress-bar .progress .progress-step:last-child:after {
+        display: none; }
+      .cp-profile-progress-bar .progress .progress-step:before {
+        content: "\e938";
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 14px;
+        height: 14px;
+        background: #fff;
+        border: 4px solid #1D2955;
+        border-radius: 100%;
+        color: transparent;
+        outline: 5px #fff solid; }
+        @media only screen and (max-width: 768px) {
+          .cp-profile-progress-bar .progress .progress-step:before {
+            margin: 0; } }
+      .cp-profile-progress-bar .progress .progress-step:after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        width: 0%;
+        transition: width 1s ease-in;
+        height: 2px;
+        background: #1D2955;
+        z-index: -1; }
+        @media only screen and (max-width: 768px) {
+          .cp-profile-progress-bar .progress .progress-step:after {
+            left: 0; } }
+      .cp-profile-progress-bar .progress .progress-step.is-active {
+        color: #B3B3B3; }
+        .cp-profile-progress-bar .progress .progress-step.is-active:before {
+          border: 3px solid #1D2955;
+          animation: pulse 2s infinite; }
+      .cp-profile-progress-bar .progress .progress-step.is-complete {
+        font-family: "Poppins Medium";
+        color: #333333; }
+        .cp-profile-progress-bar .progress .progress-step.is-complete:before {
+          font-family: 'icomoon';
+          font-size: 5px;
+          color: #fff;
+          background: green;
+          border: 4px solid transparent; }
+        .cp-profile-progress-bar .progress .progress-step.is-complete:after {
+          background: #00A441;
+          animation: nextStep 1s;
+          animation-fill-mode: forwards; }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(33, 131, 221, 0.4);
-  }
+    box-shadow: 0 0 0 0 rgba(33, 131, 221, 0.4); }
   70% {
-    box-shadow: 0 0 0 10px rgba(33, 131, 221, 0);
-  }
+    box-shadow: 0 0 0 10px rgba(33, 131, 221, 0); }
   100% {
-    box-shadow: 0 0 0 0 rgba(33, 131, 221, 0);
-  }
-}
+    box-shadow: 0 0 0 0 rgba(33, 131, 221, 0); } }
 @keyframes nextStep {
   0% {
-    width: 0%;
-  }
+    width: 0%; }
   100% {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 /*# sourceMappingURL=cp-profile-progress-bar.css.map */

@@ -244,7 +244,8 @@
       }
     }
   }
-  &.typ-project-planner{
+
+  &.typ-project-planner {
 
     .wrapper-thumb {
       position: relative;
@@ -255,10 +256,37 @@
       border-radius: 1.2rem;
       border: 1px solid #DEDEDE;
       overflow: hidden;
-  
+
       @media only screen and (max-width: $media-mobile) {
         width: 30%;
         flex: 0 0 30%;
+      }
+    }
+
+    .img-thumbs {
+      margin: 0;
+    }
+
+    .desc {
+      font-size: 1.4rem;
+      color: $clr-base;
+    }
+    &.typ-modal{
+      height: 100%;
+      .wrapper-thumb {
+        position: relative;
+        margin: 1rem 0;
+        justify-content: space-around;
+        width: 31%;
+        flex: 0 0 31%;
+        border-radius: 1.2rem;
+        border: 1px solid #DEDEDE;
+        overflow: hidden;
+  
+        @media only screen and (max-width: $media-mobile) {
+          width: 30%;
+          flex: 0 0 30%;
+        }
       }
     }
   }
@@ -266,8 +294,9 @@
 
 .file-upload {
   position: relative;
-  display: none;
+  // display: none;
   cursor: pointer;
+  text-align: center;
 
   .file-upload__label {
     display: block;
@@ -294,6 +323,7 @@
   &.disable {
     pointer-events: none;
     display: block;
+
     .file-upload__label {
       color: #B3B3B3;
     }

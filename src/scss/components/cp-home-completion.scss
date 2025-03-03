@@ -4,6 +4,7 @@
 
 .cp-home-completion {
     margin-bottom: 2rem;
+
     .title {
         font-size: 2.4rem;
         font-family: $font-semiBold;
@@ -56,14 +57,42 @@
                 }
             }
 
-  
+
         }
     }
+
     .link {
         text-decoration: underline;
         font-size: 1.6rem;
         text-align: center;
         display: block;
         margin-top: 1.6rem;
+    }
+
+    &.typ-timeline-drawer {
+        .home-detail-wrap {
+            flex-wrap: wrap;
+            gap: 20px 5px;
+            .home-detail-list {
+                display: flex;
+                gap: 5px;
+                width: calc(50% - 4px);
+                .icon{
+                    @include border-radius(50%);
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    flex: 0 0 2.4rem;
+                    background-color: #B1CBF1;
+                    font-size: 1.2rem;
+                    color: #00398C;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .detail-title{font-size: 1.2rem;}
+                .detail-info{ font-size: 1.4rem;}
+                &.w-100{ width: calc(100%);}
+            }
+        }
     }
 }

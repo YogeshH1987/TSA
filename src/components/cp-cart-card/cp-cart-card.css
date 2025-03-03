@@ -295,5 +295,47 @@
   @media only screen and (max-width: 768px) {
     .cp-cart-card.typ-rate-exper {
       margin: 2.4rem 0; } }
+  .cp-cart-card.project-planner {
+    padding: 1.2rem 1.2rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    border-bottom: 1px solid #99DAB3;
+    background-color: #E5F6EC;
+    margin-top: 1.2rem; }
+    .cp-cart-card.project-planner:last-child {
+      border: 0; }
+    .cp-cart-card.project-planner .prodcut-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0; }
+      .cp-cart-card.project-planner .prodcut-item .product-img {
+        width: 5.6rem;
+        height: 5.6rem;
+        border: 1px solid #DEDEDE;
+        background-color: #fff;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        overflow: hidden; }
+      .cp-cart-card.project-planner .prodcut-item .title {
+        font-size: 1.4rem;
+        color: #333333;
+        margin-bottom: 3px; }
+      .cp-cart-card.project-planner .prodcut-item .desc {
+        font-size: 1.2rem; }
+      .cp-cart-card.project-planner .prodcut-item .product-price {
+        font-family: "Poppins Semibold";
+        font-size: 1.6rem;
+        margin-left: auto;
+        color: #333333; }
+      .cp-cart-card.project-planner .prodcut-item .link {
+        font-size: 1.4rem;
+        text-decoration: underline;
+        margin-left: auto;
+        font-family: "Poppins Medium"; }
+    .cp-cart-card.project-planner.yellow-bg {
+      border: 1px solid #FFD466;
+      background-color: #FFF8E5; }
 
 /*# sourceMappingURL=cp-cart-card.css.map */

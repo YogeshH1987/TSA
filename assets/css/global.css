@@ -2016,14 +2016,15 @@ p {
     .bs-sec.typ-project-planner .lyt-project-details {
       display: flex;
       position: relative;
-      justify-content: center; }
+      justify-content: center;
+      gap: 2rem; }
       .bs-sec.typ-project-planner .lyt-project-details .grid-col-lht {
         width: 35%; }
         @media only screen and (max-width: 768px) {
           .bs-sec.typ-project-planner .lyt-project-details .grid-col-lht {
             width: 100%; } }
       .bs-sec.typ-project-planner .lyt-project-details .grid-col-rht {
-        width: 65%; }
+        width: calc(65% - 2rem); }
         @media only screen and (max-width: 768px) {
           .bs-sec.typ-project-planner .lyt-project-details .grid-col-rht {
             width: 100%; } }
@@ -3472,6 +3473,21 @@ p {
         content: "\e91e"; }
       .bs-modal.typ-moodboard-gallery .thumb-nestudio-container .swiper-button-next-thumb:after {
         content: '\e91d'; }
+  .bs-modal.typ-project-planner .modal-dialog {
+    max-width: 29rem;
+    margin: auto;
+    background: linear-gradient(0deg, #FFFFFF 0%, #8DCEFF 100%);
+    padding: 2.4rem;
+    border-radius: 2.4rem;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    height: 85%; }
+    .bs-modal.typ-project-planner .modal-dialog .modal-body {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
 
 /* colors */
 /*font family*/

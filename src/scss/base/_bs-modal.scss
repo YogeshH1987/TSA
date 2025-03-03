@@ -723,4 +723,23 @@
 
         }
     }
+
+    &.typ-project-planner {
+        .modal-dialog {
+            max-width: 29rem;
+            margin: auto;
+            background: linear-gradient(0deg, #FFFFFF 0%, #8DCEFF 100%);
+            padding: 2.4rem;
+            @include border-radius(2.4rem);
+            height: 85%;
+
+            .modal-body {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
 }

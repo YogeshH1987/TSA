@@ -5,197 +5,162 @@
 /*opacity*/
 /*opacity- end*/
 .cp-new-address .head-wrap {
-  margin-bottom: 3.2rem;
-}
-.cp-new-address .head-wrap .title {
-  font-size: 3.6rem;
-  color: #333333;
-  font-family: "Poppins Semibold";
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.cp-new-address .head-wrap .link {
-  color: #3D7EDB;
-  font-size: 1.6rem;
-  font-family: "Poppins Medium";
-}
-.cp-new-address .head-wrap .link .link-text {
-  text-decoration: underline;
-}
+  margin-bottom: 3.2rem; }
+  .cp-new-address .head-wrap .title {
+    font-size: 3.6rem;
+    color: #333333;
+    font-family: "Poppins Semibold";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+  .cp-new-address .head-wrap .link {
+    color: #3D7EDB;
+    font-size: 1.6rem;
+    font-family: "Poppins Medium"; }
+    .cp-new-address .head-wrap .link .link-text {
+      text-decoration: underline; }
 .cp-new-address .cp-new-address-wrap {
   padding: 3.2rem;
   border: 1px solid #DEDEDE;
   border-radius: 2.4rem;
   -webkit-border-radius: 2.4rem;
-  -moz-border-radius: 2.4rem;
-}
+  -moz-border-radius: 2.4rem; }
 .cp-new-address .address-sec {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-}
-.cp-new-address .address-sec .address-list {
-  flex: 0 0 calc(50% - 1rem);
-  max-width: calc(50% - 1rem);
-  padding: 1.6rem;
-  border: 1px solid #DEDEDE;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
-  position: relative;
-  padding-bottom: 45px;
-  z-index: 1;
-}
-@media only screen and (max-width: 768px) {
+  gap: 2rem; }
   .cp-new-address .address-sec .address-list {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    padding: 1.6rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    position: relative;
+    padding-bottom: 45px;
+    z-index: 1; }
+    @media only screen and (max-width: 768px) {
+      .cp-new-address .address-sec .address-list {
+        flex: 0 0 100%;
+        max-width: 100%; } }
+    .cp-new-address .address-sec .address-list.active {
+      background-color: #ECF2FB; }
+      .cp-new-address .address-sec .address-list.active::after {
+        content: '';
+        border: 2px solid #3D7EDB;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        z-index: -1; }
+      .cp-new-address .address-sec .address-list.active .detail-list.tag {
+        background-color: #fff !important;
+        color: #333333;
+        font-family: "Poppins Medium"; }
+    .cp-new-address .address-sec .address-list .shipping-detail .detail-list {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+      color: #333333;
+      display: flex;
+      gap: 12px; }
+      .cp-new-address .address-sec .address-list .shipping-detail .detail-list.tag {
+        background-color: #D8E5F8;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 4px; }
+      .cp-new-address .address-sec .address-list .shipping-detail .detail-list.title {
+        font-size: 1.6rem;
+        font-family: "Poppins Medium"; }
+        .cp-new-address .address-sec .address-list .shipping-detail .detail-list.title .small-text {
+          color: #808080;
+          font-size: 1.2rem;
+          display: block;
+          font-family: "Poppins Regular"; }
+        .cp-new-address .address-sec .address-list .shipping-detail .detail-list.title.typ-delivery-info {
+          display: flex;
+          gap: 8px;
+          align-items: center; }
+          .cp-new-address .address-sec .address-list .shipping-detail .detail-list.title.typ-delivery-info .icon {
+            font-size: 2.4rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            color: #999999; }
+      .cp-new-address .address-sec .address-list .shipping-detail .detail-list .link {
+        font-family: "Poppins Medium";
+        font-size: 1.2rem;
+        text-decoration: underline;
+        position: relative; }
+        @media only screen and (max-width: 768px) {
+          .cp-new-address .address-sec .address-list .shipping-detail .detail-list .link {
+            font-size: 1.2rem; } }
+      .cp-new-address .address-sec .address-list .shipping-detail .detail-list .link + .link::before {
+        content: '|';
+        font-size: 1.2rem;
+        padding-inline: 0.4rem;
+        font-family: "Poppins Regular";
+        position: absolute;
+        left: -12px; }
+        @media only screen and (max-width: 991px) {
+          .cp-new-address .address-sec .address-list .shipping-detail .detail-list .link + .link::before {
+            font-size: 1.2rem; } }
+      .cp-new-address .address-sec .address-list .shipping-detail .detail-list .icon-delate {
+        margin-left: auto;
+        font-size: 2.4rem; }
+      .cp-new-address .address-sec .address-list .shipping-detail .detail-list.btn-link {
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: 12px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 1.2rem;
+        margin-bottom: 0px; }
+  .cp-new-address .address-sec.typ-modal .address-list {
+    padding-bottom: 1.6rem;
     flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-.cp-new-address .address-sec .address-list.active {
-  background-color: #ECF2FB;
-}
-.cp-new-address .address-sec .address-list.active::after {
-  content: "";
-  border: 2px solid #3D7EDB;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
-  z-index: -1;
-}
-.cp-new-address .address-sec .address-list.active .detail-list.tag {
-  background-color: #fff !important;
-  color: #333333;
-  font-family: "Poppins Medium";
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list {
-  font-size: 1.2rem;
-  margin-bottom: 6px;
-  color: #333333;
-  display: flex;
-  gap: 12px;
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list.tag {
-  background-color: #D8E5F8;
-  font-size: 1.2rem;
-  display: inline-block;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list.title {
-  font-size: 1.6rem;
-  font-family: "Poppins Medium";
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list.title .small-text {
-  color: #808080;
-  font-size: 1.2rem;
-  display: block;
-  font-family: "Poppins Regular";
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list.title.typ-delivery-info {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list.title.typ-delivery-info .icon {
-  font-size: 2.4rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  color: #999999;
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list .link {
-  font-family: "Poppins Medium";
-  font-size: 1.2rem;
-  text-decoration: underline;
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  .cp-new-address .address-sec .address-list .shipping-detail .detail-list .link {
-    font-size: 1.2rem;
-  }
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list .link + .link::before {
-  content: "|";
-  font-size: 1.2rem;
-  padding-inline: 0.4rem;
-  font-family: "Poppins Regular";
-  position: absolute;
-  left: -12px;
-}
-@media only screen and (max-width: 991px) {
-  .cp-new-address .address-sec .address-list .shipping-detail .detail-list .link + .link::before {
-    font-size: 1.2rem;
-  }
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list .icon-delate {
-  margin-left: auto;
-  font-size: 2.4rem;
-}
-.cp-new-address .address-sec .address-list .shipping-detail .detail-list.btn-link {
-  margin-bottom: 0px;
-  position: absolute;
-  bottom: 12px;
-  width: 100%;
-  left: 0;
-  right: 0;
-  padding: 0 1.2rem;
-  margin-bottom: 0px;
-}
-.cp-new-address .address-sec.typ-modal .address-list {
-  padding-bottom: 1.6rem;
-  flex: 0 0 100%;
-  max-width: 100%;
-}
+    max-width: 100%; }
 
 @media only screen and (max-width: 768px) {
   .typ-edit-address {
-    bottom: 0 !important;
+    bottom: 0  !important;
     -webkit-transform: translate(-50%, 0%) !important;
     -moz-transform: translate(-50%, 0%) !important;
     -ms-transform: translate(-50%, 0%) !important;
     -o-transform: translate(-50%, 0%) !important;
     transform: translate(-50%, 0%) !important;
-    top: auto !important;
-    max-width: 100% !important;
-  }
-}
+    top: auto  !important;
+    max-width: 100% !important; } }
 .typ-edit-address.modal-show {
   top: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 @media only screen and (max-width: 768px) {
   .typ-edit-address .modal-body {
-    padding: 0 !important;
-  }
-}
+    padding: 0  !important; } }
 .typ-edit-address .modal-dialog {
   border-radius: 12px;
   -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-}
-@media only screen and (max-width: 768px) {
-  .typ-edit-address .modal-dialog {
-    border-radius: 12px 12px 0 0 !important;
-    -webkit-border-radius: 12px 12px 0 0 !important;
-    -moz-border-radius: 12px 12px 0 0 !important;
-    -webkit-transform: translate(-50%, 0%) !important;
-    -moz-transform: translate(-50%, 0%) !important;
-    -ms-transform: translate(-50%, 0%) !important;
-    -o-transform: translate(-50%, 0%) !important;
-    transform: translate(-50%, 0%) !important;
-    bottom: 0 !important;
-    top: auto !important;
-    height: auto !important;
-  }
-}
+  -moz-border-radius: 12px; }
+  @media only screen and (max-width: 768px) {
+    .typ-edit-address .modal-dialog {
+      border-radius: 12px 12px 0 0 !important;
+      -webkit-border-radius: 12px 12px 0 0 !important;
+      -moz-border-radius: 12px 12px 0 0 !important;
+      -webkit-transform: translate(-50%, 0%) !important;
+      -moz-transform: translate(-50%, 0%) !important;
+      -ms-transform: translate(-50%, 0%) !important;
+      -o-transform: translate(-50%, 0%) !important;
+      transform: translate(-50%, 0%) !important;
+      bottom: 0  !important;
+      top: auto  !important;
+      height: auto  !important; } }
 
 /*# sourceMappingURL=cp-new-address.css.map */

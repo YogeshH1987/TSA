@@ -10,24 +10,19 @@
   -moz-border-radius: 1.2rem;
   height: 20rem;
   overflow: hidden;
-  display: block;
-}
-.cp-design-style-quiz .img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  display: block; }
+  .cp-design-style-quiz .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 .cp-design-style-quiz .title-wrap {
   font-size: 1.6rem;
   color: #333333;
   font-family: "Poppins Medium";
-  margin-top: 8px;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-style-quiz .title-wrap {
-    font-size: 1.4rem;
-  }
-}
+  margin-top: 8px; }
+  @media only screen and (max-width: 768px) {
+    .cp-design-style-quiz .title-wrap {
+      font-size: 1.4rem; } }
 .cp-design-style-quiz .selected-text {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -42,209 +37,161 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-style-quiz .selected-text {
-    font-size: 1.4rem;
-    height: 4rem;
-    padding: 0.4rem;
-  }
-}
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    .cp-design-style-quiz .selected-text {
+      font-size: 1.4rem;
+      height: 4rem;
+      padding: 0.4rem; } }
 .cp-design-style-quiz.selected .img-wrap {
   position: relative;
-  z-index: 1;
-}
-.cp-design-style-quiz.selected .img-wrap .selected-text {
-  display: flex;
-}
-.cp-design-style-quiz.selected .img-wrap::after {
-  content: "";
-  border: 4px solid #D2042D;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
-  z-index: 1;
-}
+  z-index: 1; }
+  .cp-design-style-quiz.selected .img-wrap .selected-text {
+    display: flex; }
+  .cp-design-style-quiz.selected .img-wrap::after {
+    content: '';
+    border: 4px solid #D2042D;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    z-index: 1; }
 @media only screen and (max-width: 768px) {
   .cp-design-style-quiz.typ-2 .img-wrap {
-    height: 130px;
-  }
-}
+    height: 130px; } }
 
 .cp-design-style-quiz-main .quiz-step {
-  display: none;
-}
+  display: none; }
 .cp-design-style-quiz-main .sec-cont {
   background-color: #DEDEDE;
-  padding: 2.4rem 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-style-quiz-main .sec-cont {
-    padding: 0;
-    background-color: #fff;
-  }
-}
+  padding: 2.4rem 0; }
+  @media only screen and (max-width: 768px) {
+    .cp-design-style-quiz-main .sec-cont {
+      padding: 0;
+      background-color: #fff; } }
 .cp-design-style-quiz-main .quiz-wrap {
-  display: flex;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-style-quiz-main .quiz-wrap {
-    flex-direction: column;
-  }
-}
-.cp-design-style-quiz-main .quiz-wrap .quesion-wrap {
-  width: 30%;
-  padding-right: 6rem;
-}
-@media only screen and (max-width: 768px) {
+  display: flex; }
+  @media only screen and (max-width: 768px) {
+    .cp-design-style-quiz-main .quiz-wrap {
+      flex-direction: column; } }
   .cp-design-style-quiz-main .quiz-wrap .quesion-wrap {
-    text-align: center;
-    background-color: #612D61;
-    padding-right: 0rem;
-    width: auto;
-    margin: 0 -1.6rem 2.4rem;
-    padding-bottom: 16px;
-  }
-}
-.cp-design-style-quiz-main .quiz-wrap .quesion-wrap .title {
-  font-size: 3.6rem;
-  font-family: "Poppins Semibold";
-  line-height: 4.8rem;
-  color: #333333;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-style-quiz-main .quiz-wrap .quesion-wrap .title {
-    font-size: 1.6rem;
-    color: #fff;
-    font-family: "Poppins Medium";
-    line-height: normal;
-  }
-}
-.cp-design-style-quiz-main .quiz-wrap .image-list-wrap {
-  width: 70%;
-}
-@media only screen and (max-width: 768px) {
+    width: 30%;
+    padding-right: 6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-style-quiz-main .quiz-wrap .quesion-wrap {
+        text-align: center;
+        background-color: #612D61;
+        padding-right: 0rem;
+        width: auto;
+        margin: 0 -1.6rem 2.4rem;
+        padding-bottom: 16px; } }
+    .cp-design-style-quiz-main .quiz-wrap .quesion-wrap .title {
+      font-size: 3.6rem;
+      font-family: "Poppins Semibold";
+      line-height: 4.8rem;
+      color: #333333; }
+      @media only screen and (max-width: 768px) {
+        .cp-design-style-quiz-main .quiz-wrap .quesion-wrap .title {
+          font-size: 1.6rem;
+          color: #fff;
+          font-family: "Poppins Medium";
+          line-height: normal; } }
   .cp-design-style-quiz-main .quiz-wrap .image-list-wrap {
-    width: 100%;
-  }
-}
+    width: 70%; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-style-quiz-main .quiz-wrap .image-list-wrap {
+        width: 100%; } }
 .cp-design-style-quiz-main .btn-wrap {
   padding: 1.6rem 0;
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: auto;
-}
-@media only screen and (max-width: 768px) {
-  .cp-design-style-quiz-main .btn-wrap {
-    width: 100%;
-  }
-}
-.cp-design-style-quiz-main .btn-wrap .btn-steps {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: auto;
-  gap: 5px;
-}
-@media only screen and (max-width: 768px) {
+  margin-left: auto; }
+  @media only screen and (max-width: 768px) {
+    .cp-design-style-quiz-main .btn-wrap {
+      width: 100%; } }
   .cp-design-style-quiz-main .btn-wrap .btn-steps {
-    font-size: 0;
-  }
-}
-.cp-design-style-quiz-main .btn-wrap .btn-steps .icon {
-  font-size: 3rem;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: auto;
+    gap: 5px; }
+    @media only screen and (max-width: 768px) {
+      .cp-design-style-quiz-main .btn-wrap .btn-steps {
+        font-size: 0; } }
+    .cp-design-style-quiz-main .btn-wrap .btn-steps .icon {
+      font-size: 3rem; }
 
 .cp-desing-sq-banner {
   background-color: #612D61;
-  padding: 2.4rem 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-desing-sq-banner {
-    padding: 1.6rem 0;
-  }
-}
-.cp-desing-sq-banner.mb-4 {
-  margin-bottom: 4rem;
-}
-@media only screen and (max-width: 768px) {
+  padding: 2.4rem 0; }
+  @media only screen and (max-width: 768px) {
+    .cp-desing-sq-banner {
+      padding: 1.6rem 0; } }
   .cp-desing-sq-banner.mb-4 {
-    margin-bottom: 2.4rem;
-  }
-}
-.cp-desing-sq-banner .title-head {
-  font-size: 1.6rem;
-  font-family: "Poppins Medium";
-  color: #fff;
-  text-align: center;
-}
-.cp-desing-sq-banner .step-sec {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  margin-bottom: 0;
-  color: #FFFFFF;
-}
-.cp-desing-sq-banner .step-sec .steps-num-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cp-desing-sq-banner .step-sec .steps-num-main .steps-num {
-  font-family: "Poppins Medium";
-  font-size: 1.2rem;
-  color: #DED3DE;
-}
-.cp-desing-sq-banner .step-sec .steps-num-main .text {
-  text-decoration: underline;
-}
-.cp-desing-sq-banner .step-sec .steps-num-main .exit-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.4rem;
-  color: #fff;
-}
-.cp-desing-sq-banner .step-sec .steps-num-main .exit-btn .icon {
-  width: 1.6rem;
-  height: 1.6rem;
-  font-size: 1.6rem;
-  color: #FFF;
-}
-.cp-desing-sq-banner .step-sec .step-main {
-  margin-top: 0.8rem;
-  display: flex;
-  gap: 0.4rem;
-}
-.cp-desing-sq-banner .step-sec .step-main .step {
-  width: auto;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 100%;
-  height: 3px;
-  background-color: #FFFFFF;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-}
-.cp-desing-sq-banner .step-sec .step-main .step.finish {
-  background-color: #00A441;
-}
-.cp-desing-sq-banner .step-sec .step-main .step.active {
-  background-color: #FFB800;
-}
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-desing-sq-banner.mb-4 {
+        margin-bottom: 2.4rem; } }
+  .cp-desing-sq-banner .title-head {
+    font-size: 1.6rem;
+    font-family: "Poppins Medium";
+    color: #fff;
+    text-align: center; }
+  .cp-desing-sq-banner .step-sec {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    margin-bottom: 0;
+    color: #FFFFFF; }
+    .cp-desing-sq-banner .step-sec .steps-num-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .cp-desing-sq-banner .step-sec .steps-num-main .steps-num {
+        font-family: "Poppins Medium";
+        font-size: 1.2rem;
+        color: #DED3DE; }
+      .cp-desing-sq-banner .step-sec .steps-num-main .text {
+        text-decoration: underline; }
+      .cp-desing-sq-banner .step-sec .steps-num-main .exit-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.4rem;
+        color: #fff; }
+        .cp-desing-sq-banner .step-sec .steps-num-main .exit-btn .icon {
+          width: 1.6rem;
+          height: 1.6rem;
+          font-size: 1.6rem;
+          color: #FFF; }
+    .cp-desing-sq-banner .step-sec .step-main {
+      margin-top: 0.8rem;
+      display: flex;
+      gap: 0.4rem; }
+      .cp-desing-sq-banner .step-sec .step-main .step {
+        width: auto;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        height: 3px;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem; }
+        .cp-desing-sq-banner .step-sec .step-main .step.finish {
+          background-color: #00A441; }
+        .cp-desing-sq-banner .step-sec .step-main .step.active {
+          background-color: #FFB800; }
 
 /*# sourceMappingURL=cp-design-style-quiz.css.map */

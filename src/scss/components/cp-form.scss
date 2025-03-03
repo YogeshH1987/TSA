@@ -566,4 +566,109 @@
       }
     }
   }
+
+  &.project-planner {
+    .desc {
+      font-size: 1.4rem;
+      color: $clr-base;
+    }
+
+    .info-wrap {
+      display: flex;
+      border: 1px solid #FFD466;
+      background: #FFF8E5;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.8rem 1.2rem;
+      border-radius: 12px;
+      gap: 8px;
+      margin-bottom: 2.4rem;
+
+      .icon {
+        font-size: 2.4rem;
+        color: #A77800;
+      }
+
+      .desc {
+        font-size: 1.2rem;
+        font-family: $font-medium;
+        color: #A77800;
+        margin-bottom: 0;
+      }
+    }
+
+    .form-input-wrap {
+      .icon {
+        color: #000;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 2.4rem;
+
+      .form-control {
+        color: $clr-base;
+        font-family: $font-medium;
+
+        &::placeholder {
+          color: #B3B3B3;
+          opacity: 1;
+          /* Firefox */
+          font-family: $font-regular;
+        }
+
+        &::-ms-input-placeholder {
+          /* Edge 12-18 */
+          color: #B3B3B3;
+          font-family: $font-regular;
+        }
+
+      }
+
+      .select-dropdown {
+        width: 100%;
+
+        .select-dropdown-button {
+
+          width: 100%;
+
+          .select-text {
+            color: $clr-base;
+            font-family: $font-medium;
+          }
+
+          .zmdi-chevron-down {
+            &::after {
+              font-size: 1.4rem;
+            }
+          }
+        }
+
+        .select-dropdown-list-item {
+          color: $clr-base;
+          font-family: $font-medium;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .typ-request-submit {
+      min-width: 100%;
+    }
+
+  }
+
+  &.typ-pp-modal {
+    height: calc(100% - 105px);
+
+    .typ-btn-two {
+      display: flex;
+      gap: 2rem;
+      background-color: #fff;
+      padding: 1.2rem 0;
+      .btn {
+        min-width: 49%
+      }
+    }
+  }
 }

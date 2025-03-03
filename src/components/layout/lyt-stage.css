@@ -7,42 +7,29 @@
 .lyt-stage .stage-list {
   display: flex;
   justify-content: space-between;
-  margin: 0 -1rem;
-}
-@media only screen and (max-width: 991px) {
-  .lyt-stage .stage-list {
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0px;
-  }
-}
+  margin: 0 -1rem; }
+  @media only screen and (max-width: 991px) {
+    .lyt-stage .stage-list {
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0px; } }
 .lyt-stage .stage-item {
-  margin: 0 1rem;
-}
-@media only screen and (max-width: 991px) {
-  .lyt-stage .stage-item {
-    margin: 0px;
-    margin-bottom: 1.2rem;
-  }
-  .lyt-stage .stage-item:last-child {
-    margin: 0px;
-  }
-}
+  margin: 0 1rem; }
+  @media only screen and (max-width: 991px) {
+    .lyt-stage .stage-item {
+      margin: 0px;
+      margin-bottom: 1.2rem; }
+      .lyt-stage .stage-item:last-child {
+        margin: 0px; } }
 .lyt-stage.type2 .stage-item {
-  width: 33.333333%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-stage.type2 .stage-item {
-    width: 100%;
-  }
-}
+  width: 33.333333%; }
+  @media only screen and (max-width: 768px) {
+    .lyt-stage.type2 .stage-item {
+      width: 100%; } }
 .lyt-stage.typ-pravesh .stage-item {
-  width: 25%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-stage.typ-pravesh .stage-item {
-    width: 100%;
-  }
-}
+  width: 25%; }
+  @media only screen and (max-width: 768px) {
+    .lyt-stage.typ-pravesh .stage-item {
+      width: 100%; } }
 
 /*# sourceMappingURL=lyt-stage.css.map */

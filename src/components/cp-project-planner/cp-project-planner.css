@@ -224,309 +224,386 @@
           font-family: "Poppins Medium"; }
         .cp-project-planner.typ-2 .project-planner-main .project-planner-wrap .detail-wrap .detail-list .icon {
           font-size: 1.6rem; }
-.cp-project-planner .stage-wrap {
-  padding-left: 2rem; }
-  .cp-project-planner .stage-wrap .stage-head-sec {
+.cp-project-planner .stage-wrap .stage-head-sec {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem; }
+  .cp-project-planner .stage-wrap .stage-head-sec .title {
     display: flex;
     align-items: center;
-    margin-bottom: 2.4rem; }
-    .cp-project-planner .stage-wrap .stage-head-sec .title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 2.4rem;
-      font-family: "Poppins Semibold";
-      color: #333333; }
-      .cp-project-planner .stage-wrap .stage-head-sec .title .link {
-        text-decoration: underline;
-        font-size: 1.2rem; }
-    .cp-project-planner .stage-wrap .stage-head-sec .cp-select {
-      margin-left: auto; }
-    .cp-project-planner .stage-wrap .stage-head-sec.typ-2 {
-      margin-bottom: 1.6rem; }
-      .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title {
-        font-size: 2rem;
-        justify-content: space-between;
-        width: 100%; }
-        .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title .count {
-          font-size: 1.2rem;
-          color: #808080;
-          font-family: "Poppins Regular"; }
-        .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title.typ-2 {
-          display: block; }
-          .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title.typ-2 .sub-text {
-            font-size: 1.4rem;
-            color: #333333;
-            margin-top: 4px;
-            font-family: "Poppins Regular";
-            display: block; }
-      .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .link {
-        text-decoration: underline;
-        font-size: 1.4rem;
-        white-space: nowrap; }
-        .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .link.disable {
-          color: #B3B3B3;
-          pointer-events: none; }
-  .cp-project-planner .stage-wrap .stage-steps-wrap {
-    background-color: #FFF8E5;
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-    padding: 1.6rem 2.4rem;
-    margin-bottom: 2.4rem;
-    position: relative; }
-    .cp-project-planner .stage-wrap .stage-steps-wrap .head-wrap {
-      border-bottom: 1px solid #FFE399;
-      padding-bottom: 1.2rem;
-      margin-bottom: 1.2rem; }
-      .cp-project-planner .stage-wrap .stage-steps-wrap .head-wrap .title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.4rem;
-        color: #333333;
-        font-family: "Poppins Medium"; }
-    .cp-project-planner .stage-wrap .stage-steps-wrap .icon {
-      color: #FFD466;
-      font-size: 2.4rem;
-      cursor: pointer;
-      position: absolute;
-      right: 12px;
-      top: 12px; }
-    .cp-project-planner .stage-wrap .stage-steps-wrap .step-text {
-      font-size: 1.2rem;
-      color: #333333;
-      font-family: "Poppins Medium"; }
-    .cp-project-planner .stage-wrap .stage-steps-wrap .desc {
-      font-size: 1.4rem;
-      color: #333333; }
-  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list {
-    margin-bottom: 1.2rem; }
-  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec {
-    border: 1px solid #DEDEDE;
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-    padding: 1.6rem 2.4rem;
-    position: relative;
-    overflow: hidden;
-    background-color: #fff;
-    z-index: 2; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec::after {
-      content: '';
-      width: 8px;
-      height: 100%;
-      background-color: #FFB800;
-      position: absolute;
-      left: 0;
-      overflow: hidden;
-      top: 0;
-      bottom: 0; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .title {
-      font-size: 1.6rem;
-      font-family: "Poppins Semibold";
-      color: #333333;
-      margin-bottom: 4px; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .desc {
-      font-size: 1.4rem;
-      color: #666; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap {
-      display: flex;
-      align-items: center;
-      gap: 5px; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag {
-        background-color: #FFF1CC;
-        border: 1px solid #FFD466;
-        border-radius: 26px;
-        -webkit-border-radius: 26px;
-        -moz-border-radius: 26px;
-        padding: 4px 8px;
-        font-family: "Poppins Medium";
+    gap: 12px;
+    font-size: 2.4rem;
+    font-family: "Poppins Semibold";
+    color: #333333; }
+    .cp-project-planner .stage-wrap .stage-head-sec .title .link {
+      text-decoration: underline;
+      font-size: 1.2rem; }
+  .cp-project-planner .stage-wrap .stage-head-sec .cp-select {
+    margin-left: auto; }
+  .cp-project-planner .stage-wrap .stage-head-sec.typ-2 {
+    margin-bottom: 1.6rem; }
+    .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title {
+      font-size: 2rem;
+      justify-content: space-between;
+      width: 100%; }
+      .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title .count {
         font-size: 1.2rem;
-        color: #333333;
-        display: inline-block;
-        line-height: 1.2rem;
-        margin-bottom: 1.6rem; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.blue {
-          color: #3D7EDB;
-          background-color: #ECF2FB;
-          border-color: #3D7EDB; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.green {
+        color: #808080;
+        font-family: "Poppins Regular"; }
+      .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title.typ-2 {
+        display: block; }
+        .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title.typ-2 .sub-text {
+          font-size: 1.4rem;
           color: #333333;
-          background-color: #CCEDD9;
-          border-color: #66C88D; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.red {
-          color: #EE4400;
-          background-color: #fff;
-          border-color: #EE4400; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .icon {
-        font-size: 1.8rem;
-        margin-left: auto;
-        color: #3D7EDB; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .text {
-        margin-left: auto;
-        font-size: 1.2rem;
-        font-family: "Poppins Medium";
-        color: #333333; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap {
-      display: flex;
-      gap: 4rem; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-title {
-        margin-bottom: 4px;
-        font-size: 1.4rem;
-        color: #666;
-        display: block; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-detail {
-        font-size: 1.4rem;
-        color: #333333;
-        font-family: "Poppins Medium";
-        display: block; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .link {
-        text-decoration: underline; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar {
-        margin-left: auto; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-container {
-          position: relative;
-          width: 40px;
-          height: 40px; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-circle {
-          width: 100%;
-          height: 100%;
-          transform: rotate(-90deg); }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar circle {
-          fill: none;
-          stroke-width: 4;
-          stroke-linecap: round;
-          transition: stroke-dasharray 0.5s ease; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .background-circle {
-          stroke: #F3F4F6; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress {
-          stroke: #4caf50;
-          stroke-dasharray: 67 100; }
-        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-text {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 10px;
-          color: #333333; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.blue::after {
-      background-color: #3D7EDB; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.green::after {
-      background-color: #00A441; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .check-list-btn {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 1.6rem; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .check-list-btn .btn {
-        padding: 1rem 1.6rem;
-        font-size: 1.4rem; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent {
-      display: flex;
-      align-items: center;
+          margin-top: 4px;
+          font-family: "Poppins Regular";
+          display: block; }
+    .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .link {
+      text-decoration: underline;
       font-size: 1.4rem;
-      color: #333333;
-      margin-bottom: 8px; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent .price {
-        font-family: "Poppins Semibold";
-        font-size: 1.4rem; }
-  .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list {
-    background-color: #ECF2FB;
-    border: 1px solid #B1CBF1;
-    padding: 20px 16px 12px;
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-    margin-top: -15px;
-    z-index: 1;
-    position: relative; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent {
+      white-space: nowrap; }
+      .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .link.disable {
+        color: #B3B3B3;
+        pointer-events: none; }
+.cp-project-planner .stage-wrap .stage-steps-wrap {
+  background-color: #FFF8E5;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  padding: 1.6rem 2.4rem;
+  margin-bottom: 2.4rem;
+  position: relative; }
+  .cp-project-planner .stage-wrap .stage-steps-wrap .head-wrap {
+    border-bottom: 1px solid #FFE399;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem; }
+    .cp-project-planner .stage-wrap .stage-steps-wrap .head-wrap .title {
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 1.4rem;
       color: #333333;
-      margin-bottom: 8px; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent .price {
-        font-family: "Poppins Semibold";
-        font-size: 1.6rem; }
-    .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list {
-      display: flex;
-      align-items: center;
-      gap: 1.6rem; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link {
-        text-decoration: underline;
-        font-size: 1.4rem;
-        position: relative; }
-      .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link + .link::before {
-        content: '|';
-        font-size: 1.4rem;
-        padding-inline: 0.4rem;
-        font-family: "Poppins Regular";
-        position: absolute;
-        left: -16px; }
-        @media only screen and (max-width: 991px) {
-          .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link + .link::before {
-            font-size: 1.2rem; } }
-  .cp-project-planner .stage-wrap .stage-list-wrap.disable {
-    pointer-events: none; }
-    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec .tag {
-      background-color: #333333;
-      border-color: #333333;
-      color: #FFFFFF; }
-    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec::after {
-      background-color: #999999; }
-    .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec .expense-detail-wrap .expense-detail {
-      color: #999;
-      font-family: "Poppins Regular"; }
-    .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list {
-      background-color: #EDEDED;
-      border-color: #EDEDED; }
-      .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .link {
-        color: #999999; }
-      .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .total-spent {
-        color: #999999; }
-      .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .price {
-        color: #999999; }
-      .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .link {
-        color: #999999; }
-  .cp-project-planner .stage-wrap .check-list-wrap {
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem;
-    border: 1px solid #DEDEDE; }
-    .cp-project-planner .stage-wrap .check-list-wrap .check-list {
-      border-bottom: 1px solid #DEDEDE;
-      padding: 1.6rem 2.4rem; }
-      .cp-project-planner .stage-wrap .check-list-wrap .check-list:last-child {
-        border-bottom: 0; }
-      .cp-project-planner .stage-wrap .check-list-wrap .check-list .check-title {
-        font-size: 1.6rem;
-        font-family: "Poppins Semibold";
-        color: #333333; }
-    .cp-project-planner .stage-wrap .check-list-wrap.disable {
-      pointer-events: none; }
-      .cp-project-planner .stage-wrap .check-list-wrap.disable .check-title {
-        color: #808080; }
-  .cp-project-planner .stage-wrap .stage-nav-wrap {
+      font-family: "Poppins Medium"; }
+  .cp-project-planner .stage-wrap .stage-steps-wrap .icon {
+    color: #FFD466;
+    font-size: 2.4rem;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 12px; }
+  .cp-project-planner .stage-wrap .stage-steps-wrap .step-text {
+    font-size: 1.2rem;
+    color: #333333;
+    font-family: "Poppins Medium"; }
+  .cp-project-planner .stage-wrap .stage-steps-wrap .desc {
+    font-size: 1.4rem;
+    color: #333333; }
+.cp-project-planner .stage-wrap .stage-list-wrap .stage-list {
+  margin-bottom: 1.2rem; }
+.cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec {
+  border: 1px solid #DEDEDE;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  padding: 1.6rem 2.4rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 2; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec::after {
+    content: '';
+    width: 8px;
+    height: 100%;
+    background-color: #FFB800;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    bottom: 0; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .title {
+    font-size: 1.6rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    margin-bottom: 4px; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .desc {
+    font-size: 1.4rem;
+    color: #666; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap {
     display: flex;
-    justify-content: space-between;
-    padding: 22px 16px;
     align-items: center;
-    border-bottom: 1px solid #DEDEDE; }
-    .cp-project-planner .stage-wrap .stage-nav-wrap .sub-title {
-      color: #808080;
-      font-size: 1.2rem; }
-    .cp-project-planner .stage-wrap .stage-nav-wrap .title {
-      font-size: 2rem;
+    gap: 5px; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag {
+      background-color: #FFF1CC;
+      border: 1px solid #FFD466;
+      border-radius: 26px;
+      -webkit-border-radius: 26px;
+      -moz-border-radius: 26px;
+      padding: 4px 8px;
+      font-family: "Poppins Medium";
+      font-size: 1.2rem;
+      color: #333333;
+      display: inline-block;
+      line-height: 1.2rem;
+      margin-bottom: 1.6rem; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.blue {
+        color: #3D7EDB;
+        background-color: #ECF2FB;
+        border-color: #3D7EDB; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.green {
+        color: #333333;
+        background-color: #CCEDD9;
+        border-color: #66C88D; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.red {
+        color: #EE4400;
+        background-color: #fff;
+        border-color: #EE4400; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.green-br {
+        color: #00A441;
+        background-color: #fff;
+        border-color: #00A441; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .tag.grey {
+        color: #fff;
+        background-color: #999999;
+        border-color: #999999; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .icon {
+      font-size: 1.8rem;
+      margin-left: auto;
+      color: #3D7EDB; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap .text {
+      margin-left: auto;
+      font-size: 1.2rem;
+      font-family: "Poppins Medium";
+      color: #333333; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap {
+    display: flex;
+    gap: 4rem; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-title {
+      margin-bottom: 4px;
+      font-size: 1.4rem;
+      color: #666;
+      display: block; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-detail {
+      font-size: 1.4rem;
+      color: #333333;
+      font-family: "Poppins Medium";
+      display: block; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .link {
+      text-decoration: underline; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar {
+      margin-left: auto; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-container {
+        position: relative;
+        width: 40px;
+        height: 40px; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-circle {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg); }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar circle {
+        fill: none;
+        stroke-width: 4;
+        stroke-linecap: round;
+        transition: stroke-dasharray 0.5s ease; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .background-circle {
+        stroke: #F3F4F6; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress {
+        stroke: #4caf50;
+        stroke-dasharray: 67 100; }
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar .progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10px;
+        color: #333333; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.blue::after {
+    background-color: #3D7EDB; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.green::after {
+    background-color: #00A441; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.no-color::after {
+    content: none; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .check-list-btn {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.6rem; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .check-list-btn .btn {
+      padding: 1rem 1.6rem;
+      font-size: 1.4rem; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #333333;
+    margin-bottom: 8px;
+    gap: 8px; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent .price {
+      font-family: "Poppins Semibold";
+      font-size: 1.4rem; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .no-stage {
+    max-width: 120px;
+    margin: auto;
+    text-align: center; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .no-stage .img {
+      max-width: 120px;
+      margin: auto; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .no-stage .title {
+      font-size: 1.6rem;
       font-family: "Poppins Semibold";
       color: #333333; }
-    .cp-project-planner .stage-wrap .stage-nav-wrap .icon {
-      font-size: 2.4rem;
+  .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .info-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 0;
+    gap: 8px;
+    border: 0;
+    border-top: 1px solid #DEDEDE;
+    margin-top: 8px;
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 0; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .info-wrap .icon {
+      font-size: 1.6rem;
+      color: #EE4400; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .info-wrap .desc {
+      font-size: 1rem;
+      font-family: "Poppins Medium";
+      color: #EE4400;
+      margin-bottom: 0; }
+.cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list {
+  background-color: #ECF2FB;
+  border: 1px solid #B1CBF1;
+  padding: 20px 16px 12px;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  margin-top: -15px;
+  z-index: 1;
+  position: relative; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #333333;
+    margin-bottom: 8px; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent .price {
+      font-family: "Poppins Semibold";
+      font-size: 1.6rem; }
+  .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link {
+      text-decoration: underline;
+      font-size: 1.4rem;
+      position: relative; }
+    .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link + .link::before {
+      content: '|';
+      font-size: 1.4rem;
+      padding-inline: 0.4rem;
+      font-family: "Poppins Regular";
+      position: absolute;
+      left: -16px; }
+      @media only screen and (max-width: 991px) {
+        .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link + .link::before {
+          font-size: 1.2rem; } }
+.cp-project-planner .stage-wrap .stage-list-wrap.disable {
+  pointer-events: none; }
+  .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec .tag {
+    background-color: #333333;
+    border-color: #333333;
+    color: #FFFFFF; }
+  .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec::after {
+    background-color: #999999; }
+  .cp-project-planner .stage-wrap .stage-list-wrap.disable .stage-list-sec .expense-detail-wrap .expense-detail {
+    color: #999;
+    font-family: "Poppins Regular"; }
+  .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list {
+    background-color: #EDEDED;
+    border-color: #EDEDED; }
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .link {
+      color: #999999; }
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .total-spent {
+      color: #999999; }
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .price {
+      color: #999999; }
+    .cp-project-planner .stage-wrap .stage-list-wrap.disable .total-spend-list .link {
+      color: #999999; }
+.cp-project-planner .stage-wrap .check-list-wrap {
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  border: 1px solid #DEDEDE; }
+  .cp-project-planner .stage-wrap .check-list-wrap .check-list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem; }
+    .cp-project-planner .stage-wrap .check-list-wrap .check-list-head .check-head-left .check-title {
+      font-size: 1.4rem;
+      width: 100%;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+    .cp-project-planner .stage-wrap .check-list-wrap .check-list-head .check-head-left .count {
+      font-size: 1.6rem;
+      color: #666666;
+      font-family: "Poppins Medium"; }
+    .cp-project-planner .stage-wrap .check-list-wrap .check-list-head .check-head-right .icon {
+      font-size: 1.2rem;
+      color: #000000;
       width: 2.4rem;
       height: 2.4rem;
-      cursor: pointer;
-      color: #000; }
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease; }
+  .cp-project-planner .stage-wrap .check-list-wrap .rotated {
+    transform: rotate(180deg); }
+  .cp-project-planner .stage-wrap .check-list-wrap .check-list {
+    padding: 1.6rem 2.4rem;
+    border-top: 1px solid #DEDEDE; }
+    .cp-project-planner .stage-wrap .check-list-wrap .check-list .form-group {
+      border-bottom: 1px solid #DEDEDE;
+      padding-bottom: 1.2rem; }
+    .cp-project-planner .stage-wrap .check-list-wrap .check-list .check-title {
+      font-size: 1.6rem;
+      font-family: "Poppins Semibold";
+      color: #333333; }
+    .cp-project-planner .stage-wrap .check-list-wrap .check-list .btn-wrap {
+      margin-top: 3.2rem;
+      text-align: right; }
+      .cp-project-planner .stage-wrap .check-list-wrap .check-list .btn-wrap .btn {
+        min-width: 34.3rem; }
+  .cp-project-planner .stage-wrap .check-list-wrap.disable {
+    pointer-events: none; }
+    .cp-project-planner .stage-wrap .check-list-wrap.disable .check-title {
+      color: #808080; }
+.cp-project-planner .stage-wrap .stage-nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 16px;
+  align-items: center;
+  border-bottom: 1px solid #DEDEDE; }
+  .cp-project-planner .stage-wrap .stage-nav-wrap .sub-title {
+    color: #808080;
+    font-size: 1.2rem; }
+  .cp-project-planner .stage-wrap .stage-nav-wrap .title {
+    font-size: 2rem;
+    font-family: "Poppins Semibold";
+    color: #333333; }
+  .cp-project-planner .stage-wrap .stage-nav-wrap .icon {
+    font-size: 2.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    color: #000; }
+.cp-project-planner .stage-wrap .upload-photo-wrap {
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  border: 1px solid #DEDEDE; }
 .cp-project-planner .mb-32 {
   margin-bottom: 3.2rem; }
 .cp-project-planner .restart-btn {
@@ -554,5 +631,47 @@
       font-family: "Poppins Medium";
       color: #A77800;
       margin-bottom: 0; }
+.cp-project-planner .info-wrap {
+  display: flex;
+  border: 1px solid #FFD466;
+  background: #FFF8E5;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  gap: 8px;
+  margin-bottom: 2.4rem; }
+  .cp-project-planner .info-wrap .icon {
+    font-size: 2.4rem;
+    color: #A77800; }
+  .cp-project-planner .info-wrap .desc {
+    font-size: 1.2rem;
+    font-family: "Poppins Medium";
+    color: #A77800;
+    margin-bottom: 0; }
+.cp-project-planner .ideal-timeline-wrap .ideal-timeline-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 1.6rem 0; }
+  .cp-project-planner .ideal-timeline-wrap .ideal-timeline-list .title {
+    font-size: 1.4rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    margin-bottom: 4px; }
+  .cp-project-planner .ideal-timeline-wrap .ideal-timeline-list .desc {
+    font-size: 1.2rem;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  .cp-project-planner .ideal-timeline-wrap .ideal-timeline-list .days {
+    font-size: 1.4rem;
+    font-family: "Poppins Semibold";
+    color: #333333;
+    white-space: nowrap; }
 
 /*# sourceMappingURL=cp-project-planner.css.map */

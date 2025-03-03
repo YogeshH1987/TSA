@@ -17,13 +17,18 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
     <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="/components/cp-checkbox/cp-checkbox.css" />
     <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
     <link rel="stylesheet" href="/components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="/components/cp-rating/cp-rating.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="../components/cp-datepicker/cp-datepicker.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
     <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
+    <link rel="stylesheet" href="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.css" />
     <link rel="stylesheet" href="/components/cp-project-planner/cp-project-planner.css" />
 
 </head>
@@ -500,20 +505,20 @@
         </section>
         <!-- breadcrumb ends -->
 
-        <!--Dadhboard Main-->
+        <!-- Main-->
         <section class="bs-sec typ-project-planner">
             <div class="container">
                 <div class="sec-cont cp-project-planner typ-2">
                     <div class="lyt-project-details">
-
                         <div class="grid-col-rht">
 
+
                             <div class="stage-wrap mb-32">
-                                <div class="stage-steps-wrap">
+                                <!-- <div class="stage-steps-wrap">
                                     <p class="step-text">Step 1</p>
                                     <p class="desc">Select your current stage to track your progress</p>
                                     <span class="icon icon-close-fill"></span>
-                                </div>
+                                </div> -->
 
                                 <div class="stage-nav-wrap">
                                     <div class="icon icon-Left-arrow"></div>
@@ -526,11 +531,31 @@
                             </div>
                             <div class="stage-wrap mb-32">
                                 <div class="stage-head-sec typ-2">
-                                    <h3 class="title">Timeline & expenses </h3>
+                                    <h3 class="title">Status <a href="" class="link js-drawer" data-id="status">Update
+                                            status</a></h3>
 
+                                </div>
+                                <div class="info-wrap">
+                                    <p class="desc">Paused from 10 Jan 25 to 15 Feb 25 and 20 Jan 25 Feb to 10 Mar 25
+                                    </p>
                                 </div>
                                 <ul class="stage-list-wrap">
                                     <li class="stage-list">
+                                        <div class="stage-list-sec no-color">
+                                            <div class="no-stage">
+                                                <img src="/images/illustration.svg" alt="">
+                                                <p class="title">Not started</p>
+                                            </div>
+                                        </div>
+                                        <div class="total-spend-list">
+                                            <div class="total-spent">Total Spent: <span class="price">₹0</span></div>
+                                            <div class="link-list">
+                                                <a href="#" class="link">Add an expense</a>
+                                                <a href="#" class="link">View expense diary</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="stage-list">
                                         <div class="stage-list-sec">
                                             <div class="tag-wrap"><span class="tag">Not started</span></div>
                                             <ul class="expense-detail-wrap">
@@ -558,23 +583,24 @@
                                                 <a href="#" class="link">View expense diary</a>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
 
 
                                     <li class="stage-list">
                                         <div class="stage-list-sec blue">
                                             <div class="tag-wrap"><span class="tag blue">In Progress</span> <span
+                                                    class="tag green-br">Before time</span> <span
+                                                    class="tag red">Delayed by 10 days</span> <span
                                                     class="icon icon-edit"></span></div>
                                             <ul class="expense-detail-wrap">
                                                 <li class="expense-detail-list">
                                                     <span class="expense-title">Started on</span>
-                                                    <span class="expense-detail"><a href="#" class="link"> Add
-                                                            date</a></span>
+                                                    <span class="expense-detail">01 Jan 25</span>
                                                 </li>
 
                                                 <li class="expense-detail-list">
                                                     <span class="expense-title">Expected end</span>
-                                                    <span class="expense-detail">-</span>
+                                                    <span class="expense-detail">01 Jan 25</span>
                                                 </li>
 
                                                 <li class="expense-detail-list">
@@ -599,13 +625,18 @@
                             </div>
 
                             <div class="stage-wrap mb-32">
-
-                                <div class="stage-head-sec typ-2">
-                                    <h3 class="title">Checklist <span class="count">0/12 completed</span> </h3>
-
-                                </div>
                                 <div class="check-list-wrap">
-                                    <div class="check-list">
+                                    <div class="check-list-head">
+                                        <div class="check-head-left">
+                                            <h3 class="check-title">Checklist</h3>
+                                            <span class="count">0/12 completed</span>
+                                        </div>
+                                        <div class="check-head-right">
+                                            <span class="icon icon-down-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="check-list hide">
+                                        <p class="check-title">Rough-in plumbing</p>
                                         <div class="form-group">
                                             <div class="cp-checkbox typ-pp-checklist">
                                                 <input type="checkbox" id="check1">
@@ -618,78 +649,7 @@
                                                 <input type="checkbox" id="check2">
                                                 <label for="check2">Hire a plumber</label>
                                             </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="check-list">
-                                        <div class="check-title">Water supply connection</div>
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check3">
-                                                <label for="check3">Connect to the municipal water supply line,
-                                                    including a shut-off valve</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check4">
-                                                <label for="check4">Install the main water supply pipe to the house and
-                                                    branch lines to individual fixtures</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check5">
-                                                <label for="check5">I have finances ready for building </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check6">
-                                                <label for="check6">I have building approvals &amp; permits</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="check-list">
-                                        <div class="check-title">Drainage system</div>
-
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check7">
-                                                <label for="check7">Install waste and vent pipes for sinks, toilets,
-                                                    showers and other fixtures, for proper drainage</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check8">
-                                                <label for="check8">Install P-traps under each fixture to prevent sewer
-                                                    gases from entering the house</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check9">
-                                                <label for="check9">Connect the drain lines to main sewer line</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="check-list">
-                                        <div class="check-title">Rough-in plumbing</div>
-
-                                        <div class="form-group">
-                                            <div class="cp-checkbox typ-pp-checklist">
-                                                <input type="checkbox" id="check10">
-                                                <label for="check10">Install waste and vent pipes for sinks, toilets,
-                                                    showers and other fixtures, for proper drainage</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="cp-box bottom-notify typ-pp-checklist">
-                                            <div class="cp-cart-card typ-order-summery">
+                                            <div class="cp-cart-card project-planner yellow-bg">
                                                 <div class="prodcut-item">
                                                     <div class="product-img">
                                                         <img src="/components/cp-cart/images/rebars-shipping.png"
@@ -698,32 +658,11 @@
 
                                                     <div class="product-desc">
                                                         <h3 class="title">Rebars</h3>
-                                                        <div class="cp-rating typ-calculator-result">
-                                                            <ul class="rating-number-sec">
-                                                                <li class="item">
-                                                                    <div class="review-star">
-                                                                        <span class="icon icon-star active"></span>
-                                                                        <span class="icon icon-star active"></span>
-                                                                        <span class="icon icon-star active"></span>
-                                                                        <span class="icon icon-star active"></span>
-                                                                        <span class="icon icon-star"></span>
-                                                                    </div>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
                                                         <a href="#" class="link">Shop rebars</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-
-                                    </div>
-
-                                    <div class="check-list">
-                                        <div class="check-title">Fixture Installation</div>
 
                                         <div class="form-group">
                                             <div class="cp-checkbox typ-pp-checklist">
@@ -731,6 +670,19 @@
                                                 <label for="check11">Install all plumbing fixtures like toilets, sinks,
                                                     showers and faucets after completing waterproofing and tiling.
                                                 </label>
+                                            </div>
+                                            <div class="cp-cart-card project-planner ">
+                                                <div class="prodcut-item">
+                                                    <div class="product-img">
+                                                        <img src="/components/cp-cart/images/rebars-shipping.png"
+                                                            alt="rebars">
+                                                    </div>
+
+                                                    <div class="product-desc">
+                                                        <h3 class="title">Foundation types</h3>
+                                                        <a href="#" class="link">Read more</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -740,57 +692,83 @@
                                                 <label for="check12">Connect fixtures to the plumbing pipes ensuring
                                                     proper sealing and alignment</label>
                                             </div>
-                                        </div>
-                                        <div class="cp-box pp-check-list">
-                                            <div class="img-wrap">
-                                                <span class="icon icon-article"></span>
-                                            </div>
-                                            <div class="cont-wrap">
-                                                <h3 class="title">Building a Strong Foundation: The Importance of
-                                                    High-Quality Rebars and Choosing the Right Grade​</h3>
+
+                                            <div class="cp-box pp-check-list">
+                                                <div class="img-wrap">
+                                                    <span class="icon icon-article"></span>
+                                                </div>
+                                                <div class="cont-wrap">
+                                                    <h3 class="title">Building a Strong Foundation: The Importance of
+                                                        High-Quality Rebars and Choosing the Right Grade​</h3>
+                                                </div>
                                             </div>
                                         </div>
 
-                                    </div>
-
-                                    <div class="check-list">
                                         <div class="btn-wrap">
                                             <button class="btn">Mark all complete</button>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
 
                             <div class="stage-wrap">
-                                <div class="stage-head-sec typ-2">
-                                    <h3 class="title typ-2">Photo gallery
-                                        <span class="sub-text"> Add bills, material or site photos at this stage</span>
-                                    </h3>
+
+                                <div class="check-list-wrap">
+                                    <div class="check-list-head">
+                                        <div class="check-head-left">
+                                            <h3 class="check-title">Photo gallery</h3>
+                                            <span class="count">Add bills, material or site photos at this stage</span>
+                                        </div>
+                                        <div class="check-head-right">
+                                            <span class="icon icon-down-arrow"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="check-list hide">
+                                        <div class="cp-attached-file typ-project-planner">
+                                            <div class="upload-file-area js-drawer uplaod-hoto-sec"
+                                                data-id="upload-photo">
+                                                <span class="icon icon-camera"></span>
+                                                <h3 class="title">Upload your project photos</h3>
+                                                <p class="desc">Supported formats: PNG and JPEG. File size should not
+                                                    exceed
+                                                    5
+                                                    MB. Maximum up to 5 photos</p>
+                                                <label class="label"> <input type="file" name="images[]" multiple=""
+                                                        class="default-file-input"> </label>
+                                            </div>
+
+                                            <div class="uploaded-images img-thumbs">
+                                                <div class="wrapper-thumb"><img
+                                                        src="../../components/cp-blog-detail/images/blog-banner2.png"
+                                                        class="img-preview-thumb"></div>
+                                                <div class="wrapper-thumb"><img
+                                                        src="../../components/cp-blog-detail/images/blog-banner2.png"
+                                                        class="img-preview-thumb"></div>
+                                                <div class="wrapper-thumb"><img
+                                                        src="../../components/cp-blog-detail/images/blog-banner2.png"
+                                                        class="img-preview-thumb"></div>
+                                                <div class="wrapper-thumb"><img
+                                                        src="../../components/cp-blog-detail/images/blog-banner2.png"
+                                                        class="img-preview-thumb"></div>
+
+                                            </div>
+                                            <div class="file-upload">
+                                                <label for="upload" class="file-upload__label"> Add photos</label>
+                                                <input id="upload" class="file-upload__input" type="file"
+                                                    name="images[]" multiple="">
+                                            </div>
+
+                                           <span class="model-open" data-toggle="modal"
+                                           data-modal-id="#gallery">photo gallery</span> 
+                                        </div>
 
 
-                                    <div class="file-upload">
-                                        <label for="upload" class="file-upload__label"> Add photos</label>
-                                        <input id="upload" class="file-upload__input" type="file" name="images[]"
-                                            multiple="">
                                     </div>
                                 </div>
 
-                                <div class="cp-attached-file typ-project-planner">
-                                    <div class="img-thumbs" id="img-preview">
-
-
-                                    </div>
-
-                                    <div class="upload-file-area">
-                                        <span class="icon icon-camera"></span>
-                                        <h3 class="title">Upload your project photos</h3>
-                                        <p class="desc">Supported formats: PNG and JPEG. File size should not exceed 5
-                                            MB. Maximum up to 5 photos</p>
-                                        <label class="label"> <input type="file" name="images[]" multiple=""
-                                                id="upload-img" class="default-file-input"> </label>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -966,21 +944,317 @@
     <!-- Footer end -->
 
 
+    <!-- Upload Photo-->
+    <div class="cp-drawer" id="upload-photo">
+        <div class="cp-form mt-0 typ-pp-modal">
+            <div class="head-sec">
+                <h2 class="drawer-title">Upload a photo</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+
+            <div class="cp-attached-file typ-project-planner typ-modal">
+                <p class="desc">Capture your progress! Upload photos to showcase and document your construction journey.
+                </p>
+
+                <div class="img-thumbs" id="img-preview">
+
+                </div>
+
+                <div class="upload-file-area">
+                    <span class="icon icon-camera"></span>
+                    <h3 class="title">Upload photo</h3>
+                    <p class="desc">Supported formats: PNG and JPEG. File size should not exceed 5 MB. Maximum up to 5
+                        photos</p>
+                    <label class="label"> <input type="file" name="images[]" multiple id="upload-img"
+                            class="default-file-input"> </label>
+                </div>
+               
+            </div>
+            <div class="btn-wrap text-center typ-btn-two">
+                <button type="submit" class="btn btn-outline" id="cancel-btn">Cancel</button>
+                <button type="submit" class="btn" id="save-btn">Save</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- status-->
+    <div class="cp-drawer" id="status">
+        <div class="request-form">
+            <div class="head-sec">
+                <h2 class="drawer-title">Status</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+            <div class="cont-wrap">
+                <div class="cp-form project-planner">
+                    <div class="form-group">
+                        <div class="cp-select">
+                            <h3 class="title">Status</h3>
+                            <div class="select-dropdown">
+                                <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                    <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
+                                </button>
+                                <ul class="select-dropdown-list">
+                                    <li class="dropdown-item">
+                                        <span data-value="1" class="select-dropdown-list-item">In progress</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="2" class="select-dropdown-list-item">In progress</span>
+
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="3" class="select-dropdown-list-item">In progress</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="cp-select">
+                            <h3 class="title">Reason for pause</h3>
+                            <div class="select-dropdown">
+                                <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                    <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
+                                </button>
+                                <ul class="select-dropdown-list">
+                                    <li class="dropdown-item">
+                                        <span data-value="1" class="select-dropdown-list-item">Financial reasons</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="2" class="select-dropdown-list-item">Financial reasons</span>
+
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="3" class="select-dropdown-list-item">Financial reasons</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group error">
+                        <label class="form-label">Start date</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control validate-name" value="" id="start-date"
+                                placeholder="" required="">
+                            <span class="icon icon-calender"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+
+                    <div class="form-group error">
+                        <label class="form-label">Estimated end date</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control validate-name" value="" id="end-date" placeholder=""
+                                required=""> <span class="icon icon-calender"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="info-wrap">
+                        <span class="icon icon-info"></span>
+                        <p class="desc">Will you be able to finish this on the expected end date? If not, change the end
+                            date.</p>
+                    </div>
+                    <div class="form-group error">
+                        <label class="form-label">Date of completion</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control validate-name" value="20-3-2025"
+                                id="date-of-completion" placeholder="" required="" disabled>
+                            <span class="icon icon-calender"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+
+                    <div class="act-wrap">
+                        <button class="btn btn-default typ-request-submit" type="button">Save status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <!--model pop up start-->
+
+    <div id="gallery" tabindex="-1" role="dialog" class="bs-modal type-lg fade typ-moodboard-gallery">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content ">
+
+                    <button class="close-btn icon-close js-close " type="button "></button>
+                    <div class="cp-model-content">
+                        <span class="icon"></span>
+                        <p class="desc">Photo Gallery</p>
+                        <!--Product thumb slider start-->
+                        <div class="cp-prod-thumb-slider">
+                            <div class="nestudio-container">
+                                <div class="bs-swiper typ-moodboard-big swiper js-popup-moodboard-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="swiper-button-prev-thumb"></div>
+                                <div class="swiper-button-next-thumb"></div>
+                            </div>
+                            <div class="thumb-nestudio-container">
+                                <div class="bs-swiper typ-moodboard-thumb js-popup-thumb-moodboard-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                    </div>
+                                </div>
 
 
 
+                            </div>
+                        </div>
+                        <!--Product thumb slider end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
 
     <div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
     <script src="/components/cp-select/cp-select.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="../components/cp-datepicker/cp-datepicker.js"></script>
+    <script src="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
     <script src="../components/cp-project-planner/cp-project-planner.js"></script>
     <!-- endbuild -->
 </body>
