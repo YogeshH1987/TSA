@@ -9,7 +9,7 @@ $(window).resize(function() {
 });
 
 const minCount = 1; // Minimum counter value
- const maxCount = 100; // Maximum counter value (optional)
+const maxCount = 100; // Maximum counter value (optional)
 
 function productCount() {
   $(".cp-counter").each(function () {

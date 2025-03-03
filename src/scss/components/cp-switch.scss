@@ -6,7 +6,8 @@
 		display: none;
 		&:checked {
 			& ~ label {
-				border-color: $clr-root;
+				background: #00A441;
+				border: 1px solid #00A441;
 				&::after {
 					translate: 3rem 0;
 					background: $clr-root;
@@ -26,8 +27,8 @@
 		height: 2.8rem;
 		padding: 2px;
 		@include border-radius(1.5rem);
-		background: #00A441;
-		border: 1px solid #00A441;
+		background: $clr-border;
+		border: 1px solid $clr-border;
 		cursor: pointer;
 		transition: 0.3s;
 		&::after {

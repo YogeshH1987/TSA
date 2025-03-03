@@ -7,19 +7,28 @@
 .lyt-review {
   display: flex;
   align-items: flex-start;
-  gap: 2rem; }
-  @media only screen and (max-width: 768px) {
-    .lyt-review {
-      flex-direction: column; } }
+  gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-review {
+    flex-direction: column;
+  }
+}
+.lyt-review .grid-col-lht {
+  width: 34.25%;
+}
+@media only screen and (max-width: 768px) {
   .lyt-review .grid-col-lht {
-    width: 34.25%; }
-    @media only screen and (max-width: 768px) {
-      .lyt-review .grid-col-lht {
-        width: 100%; } }
+    width: 100%;
+  }
+}
+.lyt-review .grid-col-rht {
+  width: 70%;
+}
+@media only screen and (max-width: 768px) {
   .lyt-review .grid-col-rht {
-    width: 70%; }
-    @media only screen and (max-width: 768px) {
-      .lyt-review .grid-col-rht {
-        width: 100%; } }
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=lyt-review.css.map */

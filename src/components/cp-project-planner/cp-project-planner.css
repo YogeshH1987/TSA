@@ -310,7 +310,8 @@
     padding: 1.6rem 2.4rem;
     position: relative;
     overflow: hidden;
-    background-color: #fff; }
+    background-color: #fff;
+    z-index: 2; }
     .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec::after {
       content: '';
       width: 8px;
@@ -437,7 +438,7 @@
     -webkit-border-radius: 1.2rem;
     -moz-border-radius: 1.2rem;
     margin-top: -15px;
-    z-index: -1;
+    z-index: 1;
     position: relative; }
     .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent {
       display: flex;

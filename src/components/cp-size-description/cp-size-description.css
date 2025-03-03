@@ -5,11 +5,13 @@
 /*opacity*/
 /*opacity- end*/
 .rebar-size-container {
-  display: flex; }
+  display: flex;
+}
 
 .cp-size-wrap {
   display: flex;
-  gap: 2rem; }
+  gap: 2rem;
+}
 
 .cp-size-description {
   border: 1px solid #FFE399;
@@ -17,26 +19,30 @@
   width: 33.33%;
   border-radius: 12px;
   -webkit-border-radius: 12px;
-  -moz-border-radius: 12px; }
-  .cp-size-description .size-header {
-    display: flex;
-    gap: 0.8rem;
-    align-items: center;
-    font-size: 1.6rem;
-    font-family: "Poppins Medium";
-    border-bottom: 1px solid #FFE399;
-    color: #000000;
-    padding: 1.2rem 1.6rem; }
-    .cp-size-description .size-header .icon {
-      width: 4rem;
-      height: 4rem;
-      background-color: #FFB800;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      padding: 0.8rem;
-      font-size: 2.4rem; }
-  .cp-size-description .size-details {
-    padding: 1.6rem 1.6rem; }
+  -moz-border-radius: 12px;
+}
+.cp-size-description .size-header {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  border-bottom: 1px solid #FFE399;
+  color: #000000;
+  padding: 1.2rem 1.6rem;
+}
+.cp-size-description .size-header .icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #FFB800;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  padding: 0.8rem;
+  font-size: 2.4rem;
+}
+.cp-size-description .size-details {
+  padding: 1.6rem 1.6rem;
+}
 
 /*# sourceMappingURL=cp-size-description.css.map */

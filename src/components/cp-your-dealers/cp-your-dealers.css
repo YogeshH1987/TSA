@@ -7,104 +7,127 @@
 .cp-your-dealers {
   border: 1px solid #DEDEDE;
   padding: 16px;
-  border-radius: 12px; }
-  .cp-your-dealers .cp-title {
-    padding: 0 0 15px 0;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 1px solid #DEDEDE;
-    margin-bottom: 12px;
-    align-items: center;
-    position: relative; }
-    .cp-your-dealers .cp-title .title {
-      display: flex;
-      color: #333333;
-      font-size: 20px;
-      line-height: 28px;
-      font-family: "Poppins Semibold"; }
-      @media only screen and (max-width: 991px) {
-        .cp-your-dealers .cp-title .title {
-          font-size: 16px;
-          line-height: 24px;
-          padding: 0px 0 10px 0px; } }
-    .cp-your-dealers .cp-title .icon-wrap {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      background: #E5F6EC;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px; }
-      @media only screen and (max-width: 991px) {
-        .cp-your-dealers .cp-title .icon-wrap {
-          width: 32px;
-          height: 32px; } }
-    .cp-your-dealers .cp-title .icon {
-      color: #00A441;
-      font-size: 20px; }
-      @media only screen and (max-width: 991px) {
-        .cp-your-dealers .cp-title .icon {
-          font-size: 14px; } }
-  .cp-your-dealers .dealer-card {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    border: 1px solid #DEDEDE;
-    padding: 16px;
-    border-radius: 12px;
-    margin-bottom: 16px; }
-    .cp-your-dealers .dealer-card:last-of-type {
-      margin-bottom: 0; }
-  .cp-your-dealers .dealer-wrap {
-    display: flex;
-    justify-content: space-between; }
-  .cp-your-dealers .tag {
-    list-style: none;
-    display: flex;
-    margin-bottom: 10px; }
-    .cp-your-dealers .tag li {
-      background: #D8E5F8;
-      border-radius: 4px;
-      text-align: center;
-      font-size: 12px;
-      line-height: 16px;
-      color: #333333;
-      font-family: "Poppins Medium";
-      padding: 4px 8px;
-      margin-right: 12px; }
-      .cp-your-dealers .tag li:last-of-type {
-        margin-right: 0; }
-  .cp-your-dealers .dealer-info {
-    display: flex;
-    flex-direction: column; }
-  .cp-your-dealers .dealer-name {
-    font-family: "Poppins Semibold";
+  border-radius: 12px;
+}
+.cp-your-dealers .cp-title {
+  padding: 0 0 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 12px;
+  align-items: center;
+  position: relative;
+}
+.cp-your-dealers .cp-title .title {
+  display: flex;
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 991px) {
+  .cp-your-dealers .cp-title .title {
     font-size: 16px;
-    line-height: 22px;
-    color: #333333;
-    margin-bottom: 8px; }
-  .cp-your-dealers .dealer-location {
-    font-size: 1.2rem;
-    font-family: "Poppins Regular";
-    color: #808080;
-    position: relative;
-    padding-right: 1rem; }
-  .cp-your-dealers .action-wrap {
-    align-items: end;
-    display: flex; }
-    .cp-your-dealers .action-wrap .btn {
-      min-width: 32px;
-      height: 32px;
-      font-size: 12px;
-      line-height: 12px;
-      padding: 0;
-      align-items: center;
-      justify-content: center;
-      display: flex; }
-      .cp-your-dealers .action-wrap .btn .icon {
-        font-size: 12px;
-        line-height: 12px; }
+    line-height: 24px;
+    padding: 0px 0 10px 0px;
+  }
+}
+.cp-your-dealers .cp-title .icon-wrap {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #E5F6EC;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-your-dealers .cp-title .icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+}
+.cp-your-dealers .cp-title .icon {
+  color: #00A441;
+  font-size: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-your-dealers .cp-title .icon {
+    font-size: 14px;
+  }
+}
+.cp-your-dealers .dealer-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid #DEDEDE;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.cp-your-dealers .dealer-card:last-of-type {
+  margin-bottom: 0;
+}
+.cp-your-dealers .dealer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cp-your-dealers .tag {
+  list-style: none;
+  display: flex;
+  margin-bottom: 10px;
+}
+.cp-your-dealers .tag li {
+  background: #D8E5F8;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  font-family: "Poppins Medium";
+  padding: 4px 8px;
+  margin-right: 12px;
+}
+.cp-your-dealers .tag li:last-of-type {
+  margin-right: 0;
+}
+.cp-your-dealers .dealer-info {
+  display: flex;
+  flex-direction: column;
+}
+.cp-your-dealers .dealer-name {
+  font-family: "Poppins Semibold";
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.cp-your-dealers .dealer-location {
+  font-size: 1.2rem;
+  font-family: "Poppins Regular";
+  color: #808080;
+  position: relative;
+  padding-right: 1rem;
+}
+.cp-your-dealers .action-wrap {
+  align-items: end;
+  display: flex;
+}
+.cp-your-dealers .action-wrap .btn {
+  min-width: 32px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.cp-your-dealers .action-wrap .btn .icon {
+  font-size: 12px;
+  line-height: 12px;
+}
 
 /*# sourceMappingURL=cp-your-dealers.css.map */
