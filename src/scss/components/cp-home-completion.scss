@@ -26,12 +26,25 @@
         @include border-radius(1.2rem);
         padding: 2.4rem;
 
+        @media only screen and (max-width: $media-mobile) {
+            padding: 2.4rem 1.6rem;
+        }
+
         .home-detail-wrap {
             display: flex;
             gap: 5px;
             justify-content: space-between;
 
+            @media only screen and (max-width: $media-mobile) {
+                flex-wrap: wrap;
+                gap: 24px 5px;
+            }
+
             .home-detail-list {
+                @media only screen and (max-width: $media-mobile) {
+                    width: calc(50% - 4px);
+                }
+
                 .detail-title {
                     font-size: 1.4rem;
                     color: #8BB2E9;
@@ -56,9 +69,31 @@
                     padding: 2px 8px;
                 }
             }
-
+            &.divider {
+                position: relative;
+        
+             
+        
+                &::after {
+                    
+                display: none;
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 41%;
+                    /* bottom: 0; */
+                    margin: auto;
+                    background: #6498E2;
+                    height: 1px;
+                    @media only screen and (max-width: $media-mobile) {
+                        display: block;
+                    }
+                }
+            }
 
         }
+
     }
 
     .link {
@@ -67,17 +102,23 @@
         text-align: center;
         display: block;
         margin-top: 1.6rem;
+
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+        }
     }
 
     &.typ-timeline-drawer {
         .home-detail-wrap {
             flex-wrap: wrap;
             gap: 20px 5px;
+
             .home-detail-list {
                 display: flex;
                 gap: 5px;
                 width: calc(50% - 4px);
-                .icon{
+
+                .icon {
                     @include border-radius(50%);
                     width: 2.4rem;
                     height: 2.4rem;
@@ -89,10 +130,21 @@
                     align-items: center;
                     justify-content: center;
                 }
-                .detail-title{font-size: 1.2rem;}
-                .detail-info{ font-size: 1.4rem;}
-                &.w-100{ width: calc(100%);}
+
+                .detail-title {
+                    font-size: 1.2rem;
+                }
+
+                .detail-info {
+                    font-size: 1.4rem;
+                }
+
+                &.w-100 {
+                    width: calc(100%);
+                }
             }
         }
     }
+
+
 }

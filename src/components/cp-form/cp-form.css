@@ -385,6 +385,9 @@
       margin-bottom: 0; }
   .cp-form.project-planner .form-input-wrap .icon {
     color: #000; }
+    .cp-form.project-planner .form-input-wrap .icon.disable {
+      color: #B3B3B3;
+      pointer-events: none; }
   .cp-form.project-planner .form-group {
     margin-bottom: 2.4rem; }
     .cp-form.project-planner .form-group .form-control {
@@ -423,5 +426,10 @@
       padding: 1.2rem 0; }
       .cp-form.typ-pp-modal .typ-btn-two .btn {
         min-width: 49%; }
+        @media only screen and (max-width: 768px) {
+          .cp-form.typ-pp-modal .typ-btn-two .btn.btn-outline {
+            border: 0;
+            color: #3D7EDB;
+            text-decoration: underline; } }
 
 /*# sourceMappingURL=cp-form.css.map */

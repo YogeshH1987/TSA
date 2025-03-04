@@ -223,5 +223,25 @@
     @media only screen and (max-width: 768px) {
       .cp-drawer.typ-moodboard-preview .head-sec {
         padding: 1.2rem 0 1.2rem; } }
+  .cp-drawer.typ-home-story-pp {
+    background-color: #F3F4F6;
+    padding: 0; }
+    .cp-drawer.typ-home-story-pp .head-sec {
+      padding: 2.4rem;
+      background-color: #fff; }
+    .cp-drawer.typ-home-story-pp .cont-wrap {
+      height: calc(100% - 92px);
+      padding: 2.4rem; }
+    .cp-drawer.typ-home-story-pp .cp-prod-thumb-slider {
+      position: relative;
+      height: calc(100% - 53px); }
+    .cp-drawer.typ-home-story-pp .home-story-container {
+      height: 100%;
+      display: flex;
+      align-items: center; }
+    .cp-drawer.typ-home-story-pp .thumb-home-story-container {
+      background: #fff;
+      padding: 1.6rem;
+      margin: 0 -2.4rem; }
 
 /*# sourceMappingURL=cp-drawer.css.map */

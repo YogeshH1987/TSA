@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/components/cp-notification/cp-notification.css" />
     <link rel="stylesheet" href="/components/cp-home-completion/cp-home-completion.css" />
     <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.css" />
     <link rel="stylesheet" href="/components/cp-project-planner/cp-project-planner.css" />
 
 </head>
@@ -554,7 +555,7 @@
                                 <h1 class="title">Agrawal’s holiday home is ready!!</h1>
                                 <p class="desc">Congratulations on the completion of your dream home!</p>
                                 <div class="detials-wrap">
-                                    <ul class="home-detail-wrap">
+                                    <ul class="home-detail-wrap divider">
                                         <li class="home-detail-list">
                                             <span class="detail-title">Started on</span>
                                             <span class="detail-info">01 Jan 24</span>
@@ -579,7 +580,7 @@
 
                                     </ul>
                                 </div>
-                                <a href="#" class="link"> View your home building story in photos</a>
+                                <a href="" class="link js-drawer" data-id="home-story"> View your home building story in photos</a>
                             </div>
 
 
@@ -616,7 +617,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="stage-steps-wrap">
+                                <!-- <div class="stage-steps-wrap">
                                     <div class="head-wrap">
                                         <h3 class="title">Stay ahead of your project by preparing for all stages <span
                                                 class="icon icon-close-fill"></span>
@@ -625,7 +626,7 @@
                                     </div>
                                     <p class="step-text">Step 1</p>
                                     <p class="desc">Select your current stage to track your progress</p>
-                                </div>
+                                </div> -->
                                 <ul class="stage-list-wrap">
                                     <li class="stage-list">
                                         <div class="stage-list-sec">
@@ -644,9 +645,11 @@
                                     <li class="stage-list">
                                         <div class="stage-list-sec green">
                                             <h3 class="title">Planning & design</h3>
-                                            <div class="tag-wrap"><span class="tag green">Completed</span><span
+                                            <div class="tag-wrap"><span class="tag green">Completed</span>
+                                                <!-- <span
                                                     class="tag red">Delayed</span> <span class="tag grey">Paused for 30
-                                                    days</span> </div>
+                                                    days</span>  -->
+                                                </div>
                                             <div class="total-spent">Total Spent: <span class="price">₹10,000</span>
                                             </div>
                                         </div>
@@ -662,9 +665,11 @@
                                     <li class="stage-list">
                                         <div class="stage-list-sec">
                                             <h3 class="title"> Foundation</h3>
-                                            <div class="tag-wrap"><span class="tag blue">In progress</span><span
-                                                    class="text">Delayed by 10 days</span></div>
-                                            <ul class="expense-detail-wrap">
+                                            <div class="tag-wrap"><span class="tag blue">In progress</span>
+                                                <!-- <span
+                                                    class="text">Delayed by 10 days</span> -->
+                                                </div>
+                                            <ul class="expense-detail-wrap typ-chart">
                                                 <li class="expense-detail-list">
                                                     <span class="expense-title">Started on</span>
                                                     <span class="expense-detail"> 01 Jan 25</span>
@@ -972,6 +977,161 @@
 
     </div>
 
+    <!-- home story -->
+    <div class="cp-drawer typ-home-story-pp" id="home-story">
+        <div class="head-sec">
+            <h2 class="drawer-title">Your home story</h2>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+         <!--Product thumb slider start-->
+         <div class="cp-prod-thumb-slider">
+            <div class="home-story-container">
+                <div class="bs-swiper typ-home-story-big swiper js-drawer-home-story-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <source media="(max-width:991px)"
+                                    srcset="../components/cp-architect/images/home1.png">
+                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                    class="img">
+                            </picture>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-button-prev-thumb"></div>
+                <div class="swiper-button-next-thumb"></div>
+            </div>
+            <div class="thumb-home-story-container">
+                <div class="bs-swiper typ-home-story-thumb js-drawer-thumb-home-story-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../components/cp-architect/images/home1.png" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!--Product thumb slider end-->
+        </div>
+
+
+
+    </div>
+
 
     <div class="cm-overlay"></div>
 
@@ -984,6 +1144,7 @@
     <script src="/components/cp-header/cp-header.js"></script>
     <script src="/components/cp-select/cp-select.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
     <script src="../components/cp-project-planner/cp-project-planner.js"></script>
     <!-- endbuild -->
 </body>

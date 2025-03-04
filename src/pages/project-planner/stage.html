@@ -588,9 +588,12 @@
 
                                     <li class="stage-list">
                                         <div class="stage-list-sec blue">
-                                            <div class="tag-wrap"><span class="tag blue">In Progress</span> <span
-                                                    class="tag green-br">Before time</span> <span
-                                                    class="tag red">Delayed by 10 days</span> <span
+                                            <div class="tag-wrap"><span class="tag blue">In Progress</span>
+                                                <!-- <span
+                                                    class="tag green-br">Before time</span>
+                                                     <span
+                                                    class="tag red">Delayed by 10 days</span> -->
+                                                     <span
                                                     class="icon icon-edit"></span></div>
                                             <ul class="expense-detail-wrap">
                                                 <li class="expense-detail-list">
@@ -657,7 +660,7 @@
                                                     </div>
 
                                                     <div class="product-desc">
-                                                        <h3 class="title">Rebars</h3>
+                                                        <h3 class="title typ-bold">Rebars</h3>
                                                         <a href="#" class="link">Shop rebars</a>
                                                     </div>
                                                 </div>
@@ -968,6 +971,10 @@
                     <label class="label"> <input type="file" name="images[]" multiple id="upload-img"
                             class="default-file-input"> </label>
                 </div>
+                <div class="divider"><span class="text">or</span></div>
+                <div class="btn-wrap camera-btn-wrap">
+                    <button class="btn btn-outline">Open camera and take photo</button>
+                </div>
                
             </div>
             <div class="btn-wrap text-center typ-btn-two">
@@ -986,7 +993,7 @@
                 <a href="#" class="icon icon-close js-close-btn"></a>
             </div>
             <div class="cont-wrap">
-                <div class="cp-form project-planner">
+                <div class="cp-form project-planner mt-0">
                     <div class="form-group">
                         <div class="cp-select">
                             <h3 class="title">Status</h3>
@@ -1039,7 +1046,7 @@
                         <label class="form-label">Start date</label>
                         <div class="form-input-wrap">
                             <input type="text" class="form-control validate-name" value="" id="start-date"
-                                placeholder="" required="">
+                                placeholder="Enter date" required="">
                             <span class="icon icon-calender"></span>
                         </div>
                         <span class="error-msg"></span>
@@ -1049,7 +1056,7 @@
                     <div class="form-group error">
                         <label class="form-label">Estimated end date</label>
                         <div class="form-input-wrap">
-                            <input type="text" class="form-control validate-name" value="" id="end-date" placeholder=""
+                            <input type="text" class="form-control validate-name" value="" id="end-date"   placeholder="Enter date"
                                 required=""> <span class="icon icon-calender"></span>
                         </div>
                         <span class="error-msg"></span>
@@ -1063,8 +1070,8 @@
                         <label class="form-label">Date of completion</label>
                         <div class="form-input-wrap">
                             <input type="text" class="form-control validate-name" value="20-3-2025"
-                                id="date-of-completion" placeholder="" required="" disabled>
-                            <span class="icon icon-calender"></span>
+                                id="date-of-completion"   placeholder="Enter date" required="" disabled>
+                            <span class="icon icon-calender disable"></span>
                         </div>
                         <span class="error-msg"></span>
                     </div>

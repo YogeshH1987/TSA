@@ -474,6 +474,8 @@
                 font-size: 1.4rem;
                 color: #333333;
                 margin-bottom: 3px;
+               
+                &.typ-bold{ font-family: $font-semiBold;}
             }
 
             .desc {
@@ -497,6 +499,37 @@
         &.yellow-bg{
             border: 1px solid #FFD466;
             background-color: #FFF8E5;
+        }
+        &.disable{
+            background-color: #EDEDED;
+            border-color: #DEDEDE;
+
+            .prodcut-item {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 0;
+    
+                .product-img {
+                img{
+                    filter: grayscale(100%);
+                }
+                }
+    
+                .title {
+                    font-size: 1.4rem;
+                    color:#999999;
+                   
+                }
+    
+                .desc {
+                    color: #999999;
+                }
+    
+         
+                .link {
+                    color: #999999;
+                }
+            }
         }
     }
 }

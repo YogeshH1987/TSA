@@ -830,7 +830,11 @@
     &.typ-service-provider {
         width: 48%;
         margin-bottom: 0;
-        @media only screen and (max-width: $media-mobile) {  width: 47%;}
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 47%;
+        }
+
         .custom-radio {
             width: 100%;
             padding: 1.6rem;
@@ -838,6 +842,7 @@
             font-family: $font-medium;
             color: $clr-base;
             min-height: 148px;
+
             .icon {
                 border: 1px solid #DEDEDE;
                 width: 5.6rem;
@@ -853,17 +858,86 @@
                 background-color: #FFFFFF;
             }
         }
+
         input[type=radio]:checked+.custom-radio {
             color: $clr-base;
-            .icon { color: #3D7EDB;}
+
+            .icon {
+                color: #3D7EDB;
+            }
         }
     }
-    
 
+    &.typ-img-radio {
+        width: 31.33%;
+
+        @media only screen and (max-width: $media-mobile) {
+            width: 48%;
+        }
+
+        margin-bottom: 0;
+
+        .custom-radio {
+            border: none;
+
+            @media only screen and (max-width: $media-mobile) {
+                min-width: 100%;
+            }
+
+            .title {
+                font-size: 1.6rem;
+                color: $clr-base;
+                font-family: $font-medium;
+                margin-bottom: 0;
+                @media only screen and (max-width: $media-mobile) {  font-size: 1.4rem; }
+            }
+
+            .img-wrap {
+                width: 100%;
+                height: 187px;
+                margin-bottom: 8px;
+                position: relative;
+                @include border-radius(1.6rem);
+                overflow: hidden;
+                @media only screen and (max-width: $media-mobile) {  height: 130px;}
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        input[type=radio]:checked+.custom-radio {
+            border: none;
+            color: $clr-base;
+            background-color: transparent;
+
+            .img-wrap {
+                &::after {
+                    content: '';
+                    border: 2px solid #D2042D;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    @include border-radius(1.6rem);
+                    z-index: 1;
+                }
+            }
+
+
+        }
+
+    }
 }
 
 // Rating star radio btn
 .star-rating {
+
     /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
     .rating-group {
         display: inline-flex;

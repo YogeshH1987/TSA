@@ -235,6 +235,12 @@
     font-size: 2.4rem;
     font-family: "Poppins Semibold";
     color: #333333; }
+    @media only screen and (max-width: 768px) {
+      .cp-project-planner .stage-wrap .stage-head-sec .title {
+        font-size: 2rem;
+        align-items: start;
+        flex-direction: column;
+        gap: 2px; } }
     .cp-project-planner .stage-wrap .stage-head-sec .title .link {
       text-decoration: underline;
       font-size: 1.2rem; }
@@ -246,6 +252,10 @@
       font-size: 2rem;
       justify-content: space-between;
       width: 100%; }
+      @media only screen and (max-width: 768px) {
+        .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title {
+          align-items: center;
+          flex-direction: initial; } }
       .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .title .count {
         font-size: 1.2rem;
         color: #808080;
@@ -261,7 +271,8 @@
     .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .link {
       text-decoration: underline;
       font-size: 1.4rem;
-      white-space: nowrap; }
+      white-space: nowrap;
+      font-family: "Poppins Medium"; }
       .cp-project-planner .stage-wrap .stage-head-sec.typ-2 .link.disable {
         color: #B3B3B3;
         pointer-events: none; }
@@ -310,6 +321,9 @@
   overflow: hidden;
   background-color: #fff;
   z-index: 2; }
+  @media only screen and (max-width: 768px) {
+    .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec {
+      padding: 1.6rem 2rem; } }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec::after {
     content: '';
     width: 8px;
@@ -325,9 +339,18 @@
     font-family: "Poppins Semibold";
     color: #333333;
     margin-bottom: 4px; }
+    @media only screen and (max-width: 768px) {
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .title {
+        font-size: 1.4rem; } }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .desc {
     font-size: 1.4rem;
-    color: #666; }
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    @media only screen and (max-width: 768px) {
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .desc {
+        font-size: 1.2rem; } }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .tag-wrap {
     display: flex;
     align-items: center;
@@ -377,16 +400,25 @@
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap {
     display: flex;
     gap: 4rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap {
+        gap: 2rem; } }
     .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-title {
       margin-bottom: 4px;
       font-size: 1.4rem;
       color: #666;
       display: block; }
+      @media only screen and (max-width: 768px) {
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-title {
+          font-size: 1.2rem; } }
     .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-detail {
       font-size: 1.4rem;
       color: #333333;
       font-family: "Poppins Medium";
       display: block; }
+      @media only screen and (max-width: 768px) {
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .expense-detail {
+          font-size: 1.2rem; } }
     .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .expense-detail-list .link {
       text-decoration: underline; }
     .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap .radial-progressbar {
@@ -416,6 +448,10 @@
         transform: translate(-50%, -50%);
         font-size: 10px;
         color: #333333; }
+    @media only screen and (max-width: 768px) {
+      .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .expense-detail-wrap.typ-chart {
+        gap: 1rem 2rem;
+        flex-wrap: wrap; } }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.blue::after {
     background-color: #3D7EDB; }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec.green::after {
@@ -439,6 +475,9 @@
     .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent .price {
       font-family: "Poppins Semibold";
       font-size: 1.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .total-spent .price {
+          font-size: 1.2rem; } }
   .cp-project-planner .stage-wrap .stage-list-wrap .stage-list-sec .no-stage {
     max-width: 120px;
     margin: auto;
@@ -454,7 +493,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.8rem 0;
+    padding: 0.8rem 0 0;
     gap: 8px;
     border: 0;
     border-top: 1px solid #DEDEDE;
@@ -469,7 +508,11 @@
       font-size: 1rem;
       font-family: "Poppins Medium";
       color: #EE4400;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-overflow: initial;
+      white-space: normal;
+      overflow: visible;
+      line-height: 1.2rem; }
 .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list {
   background-color: #ECF2FB;
   border: 1px solid #B1CBF1;
@@ -487,9 +530,15 @@
     font-size: 1.4rem;
     color: #333333;
     margin-bottom: 8px; }
+    @media only screen and (max-width: 768px) {
+      .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent {
+        font-size: 1.2rem; } }
     .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent .price {
       font-family: "Poppins Semibold";
       font-size: 1.6rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .total-spent .price {
+          font-size: 1.4rem; } }
   .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list {
     display: flex;
     align-items: center;
@@ -498,6 +547,9 @@
       text-decoration: underline;
       font-size: 1.4rem;
       position: relative; }
+      @media only screen and (max-width: 768px) {
+        .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link {
+          font-size: 1.2rem; } }
     .cp-project-planner .stage-wrap .stage-list-wrap .total-spend-list .link-list .link + .link::before {
       content: '|';
       font-size: 1.4rem;
@@ -562,7 +614,7 @@
   .cp-project-planner .stage-wrap .check-list-wrap .rotated {
     transform: rotate(180deg); }
   .cp-project-planner .stage-wrap .check-list-wrap .check-list {
-    padding: 1.6rem 2.4rem;
+    padding: 1.6rem 1.6rem;
     border-top: 1px solid #DEDEDE; }
     .cp-project-planner .stage-wrap .check-list-wrap .check-list .form-group {
       border-bottom: 1px solid #DEDEDE;
@@ -576,8 +628,13 @@
       text-align: right; }
       .cp-project-planner .stage-wrap .check-list-wrap .check-list .btn-wrap .btn {
         min-width: 34.3rem; }
+        @media only screen and (max-width: 991px) {
+          .cp-project-planner .stage-wrap .check-list-wrap .check-list .btn-wrap .btn {
+            min-width: 100%; } }
   .cp-project-planner .stage-wrap .check-list-wrap.disable {
     pointer-events: none; }
+    .cp-project-planner .stage-wrap .check-list-wrap.disable .check-list-head .check-head-left .check-title {
+      color: #999999; }
     .cp-project-planner .stage-wrap .check-list-wrap.disable .check-title {
       color: #808080; }
 .cp-project-planner .stage-wrap .stage-nav-wrap {
@@ -586,6 +643,9 @@
   padding: 22px 16px;
   align-items: center;
   border-bottom: 1px solid #DEDEDE; }
+  @media only screen and (max-width: 991px) {
+    .cp-project-planner .stage-wrap .stage-nav-wrap {
+      margin: 0 -16px; } }
   .cp-project-planner .stage-wrap .stage-nav-wrap .sub-title {
     color: #808080;
     font-size: 1.2rem; }
@@ -599,6 +659,11 @@
     height: 2.4rem;
     cursor: pointer;
     color: #000; }
+    @media only screen and (max-width: 991px) {
+      .cp-project-planner .stage-wrap .stage-nav-wrap .icon {
+        font-size: 1.6rem;
+        width: 1.6rem;
+        height: 1.6rem; } }
 .cp-project-planner .stage-wrap .upload-photo-wrap {
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
@@ -606,11 +671,19 @@
   border: 1px solid #DEDEDE; }
 .cp-project-planner .mb-32 {
   margin-bottom: 3.2rem; }
+  @media only screen and (max-width: 991px) {
+    .cp-project-planner .mb-32 {
+      margin-bottom: 2.4rem; } }
 .cp-project-planner .restart-btn {
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: end; }
+  justify-content: end;
+  margin-top: 3.2rem; }
+  @media only screen and (max-width: 991px) {
+    .cp-project-planner .restart-btn {
+      margin-top: 2.4rem;
+      flex-direction: column; } }
   .cp-project-planner .restart-btn .btn {
     padding: 1rem 1.6rem;
     font-size: 1.4rem; }
@@ -622,7 +695,11 @@
     align-items: start;
     padding: 0.8rem 1.6rem;
     border-radius: 12px;
-    gap: 8px; }
+    gap: 8px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 991px) {
+      .cp-project-planner .restart-btn .info-wrap {
+        width: 100%; } }
     .cp-project-planner .restart-btn .info-wrap .icon {
       font-size: 2.4rem;
       color: #A77800; }

@@ -34,7 +34,7 @@
       color: #333333; }
       @media only screen and (max-width: 768px) {
         .cp-service-provider-login .provider-head .head-title {
-          font-size: 2.4rem;
+          font-size: 2rem;
           text-align: left; } }
     .cp-service-provider-login .provider-head .sub-title {
       font-size: 2rem;

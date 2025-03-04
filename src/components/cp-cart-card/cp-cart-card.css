@@ -322,6 +322,8 @@
         font-size: 1.4rem;
         color: #333333;
         margin-bottom: 3px; }
+        .cp-cart-card.project-planner .prodcut-item .title.typ-bold {
+          font-family: "Poppins Semibold"; }
       .cp-cart-card.project-planner .prodcut-item .desc {
         font-size: 1.2rem; }
       .cp-cart-card.project-planner .prodcut-item .product-price {
@@ -337,5 +339,21 @@
     .cp-cart-card.project-planner.yellow-bg {
       border: 1px solid #FFD466;
       background-color: #FFF8E5; }
+    .cp-cart-card.project-planner.disable {
+      background-color: #EDEDED;
+      border-color: #DEDEDE; }
+      .cp-cart-card.project-planner.disable .prodcut-item {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0; }
+        .cp-cart-card.project-planner.disable .prodcut-item .product-img img {
+          filter: grayscale(100%); }
+        .cp-cart-card.project-planner.disable .prodcut-item .title {
+          font-size: 1.4rem;
+          color: #999999; }
+        .cp-cart-card.project-planner.disable .prodcut-item .desc {
+          color: #999999; }
+        .cp-cart-card.project-planner.disable .prodcut-item .link {
+          color: #999999; }
 
 /*# sourceMappingURL=cp-cart-card.css.map */

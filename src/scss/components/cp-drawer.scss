@@ -336,4 +336,38 @@
             }
         }
     }
+
+    &.typ-home-story-pp {
+        background-color: #F3F4F6;
+        padding: 0;
+
+        .head-sec {
+            padding: 2.4rem;
+            background-color: #fff;
+        }
+
+        .cont-wrap {
+            height: calc(100% - 92px);
+            padding: 2.4rem;
+        }
+
+        .cp-prod-thumb-slider {
+            position: relative;
+            height: calc(100% - 53px);
+            @media only screen and (max-width: $media-mobile) {
+            height: calc(100% - 29px);}
+        }
+
+        .home-story-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .thumb-home-story-container {
+            background: #fff;
+            padding: 1.6rem;
+            margin: 0 -2.4rem;
+        }
+    }
 }

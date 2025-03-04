@@ -1395,6 +1395,7 @@
       display: flex;
       position: relative;
       justify-content: center;
+      @media only screen and (max-width: $media-mobile) {  flex-direction: column; }
       gap: 2rem;
       .grid-col-lht {
         width: 35%;

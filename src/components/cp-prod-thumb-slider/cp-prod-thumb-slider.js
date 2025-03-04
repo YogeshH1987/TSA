@@ -4,7 +4,8 @@ $(document).ready(function () {
   proPopUpThumbSlider();
   proPopupGalleryThumbSlider();
   proArchitechThumbSlider();
-  proPopupMoodboardThumbSlider()
+  proPopupMoodboardThumbSlider();
+  drawerHomeSotryThumbSlider()
 });
 
 
@@ -13,7 +14,8 @@ $(window).resize(function () {
   proPopUpThumbSlider();
   proPopupGalleryThumbSlider();
   proArchitechThumbSlider();
-  proPopupMoodboardThumbSlider()
+  proPopupMoodboardThumbSlider();
+  drawerHomeSotryThumbSlider()
 });
 
 function proThumbSlider() {
@@ -120,6 +122,56 @@ function proPopupMoodboardThumbSlider() {
   });
 
 }
+
+function drawerHomeSotryThumbSlider() {
+  // Initialize the main slider with Swiper
+  var homeSotryThumbSlider = new Swiper(".js-drawer-thumb-home-story-slider", {
+    slidesPerView: 6,
+    spaceBetween: 8,
+    navigation: {
+      nextEl: '.swiper-button-next-thumb',
+      prevEl: '.swiper-button-prev-thumb'
+    },
+    freeMode: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView: 6,
+        spaceBetween: 8
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 8
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 16
+      },
+      // when window width is >= 640px
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 16
+      }
+    }
+  });
+  var homeSotryMainlider = new Swiper(".js-drawer-home-story-slider", {
+    thumbs: {
+      swiper: homeSotryThumbSlider,
+    },
+    navigation:false,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.swiper-button-next-thumb',
+      prevEl: '.swiper-button-prev-thumb'
+    },
+    pagination:false,
+  });
+
+}
+
 
 function proArchitechThumbSlider() {
   // Initialize the main slider with Swiper

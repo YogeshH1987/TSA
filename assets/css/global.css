@@ -1059,6 +1059,14 @@ p {
 .cm-text-right {
   text-align: right; }
 
+.cm-flex-img {
+  flex-wrap: wrap;
+  gap: 2rem;
+  display: flex; }
+  @media only screen and (max-width: 768px) {
+    .cm-flex-img {
+      gap: 1.2rem; } }
+
 .cm-flex {
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -2018,6 +2026,9 @@ p {
       position: relative;
       justify-content: center;
       gap: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-sec.typ-project-planner .lyt-project-details {
+          flex-direction: column; } }
       .bs-sec.typ-project-planner .lyt-project-details .grid-col-lht {
         width: 35%; }
         @media only screen and (max-width: 768px) {
@@ -2898,6 +2909,59 @@ p {
       color: #333333; }
       .bs-radio.typ-service-provider input[type=radio]:checked + .custom-radio .icon {
         color: #3D7EDB; }
+  .bs-radio.typ-img-radio {
+    width: 31.33%;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .bs-radio.typ-img-radio {
+        width: 48%; } }
+    .bs-radio.typ-img-radio .custom-radio {
+      border: none; }
+      @media only screen and (max-width: 768px) {
+        .bs-radio.typ-img-radio .custom-radio {
+          min-width: 100%; } }
+      .bs-radio.typ-img-radio .custom-radio .title {
+        font-size: 1.6rem;
+        color: #333333;
+        font-family: "Poppins Medium";
+        margin-bottom: 0; }
+        @media only screen and (max-width: 768px) {
+          .bs-radio.typ-img-radio .custom-radio .title {
+            font-size: 1.4rem; } }
+      .bs-radio.typ-img-radio .custom-radio .img-wrap {
+        width: 100%;
+        height: 187px;
+        margin-bottom: 8px;
+        position: relative;
+        border-radius: 1.6rem;
+        -webkit-border-radius: 1.6rem;
+        -moz-border-radius: 1.6rem;
+        overflow: hidden; }
+        @media only screen and (max-width: 768px) {
+          .bs-radio.typ-img-radio .custom-radio .img-wrap {
+            height: 130px; } }
+        .bs-radio.typ-img-radio .custom-radio .img-wrap img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .bs-radio.typ-img-radio input[type=radio]:checked + .custom-radio {
+      border: none;
+      color: #333333;
+      background-color: transparent; }
+      .bs-radio.typ-img-radio input[type=radio]:checked + .custom-radio .img-wrap::after {
+        content: '';
+        border: 2px solid #D2042D;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 1.6rem;
+        -webkit-border-radius: 1.6rem;
+        -moz-border-radius: 1.6rem;
+        z-index: 1; }
 
 .star-rating {
   /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
@@ -4076,7 +4140,7 @@ p {
     overflow: hidden; }
     @media only screen and (max-width: 768px) {
       .bs-swiper.typ-moodboard-thumb {
-        margin: 2.4rem 0rem 0;
+        margin: 0rem 0rem 0;
         overflow: visible; } }
     .bs-swiper.typ-moodboard-thumb .swiper-slide {
       border-radius: 8px;
@@ -4088,6 +4152,41 @@ p {
         width: 100%;
         height: 100%;
         min-height: 40px; }
+  .bs-swiper.typ-home-story-big .swiper-slide {
+    border-radius: 1.2rem;
+    overflow: hidden; }
+    .bs-swiper.typ-home-story-big .swiper-slide img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      min-height: 360px; }
+      @media only screen and (max-width: 768px) {
+        .bs-swiper.typ-home-story-big .swiper-slide img {
+          min-height: 255px; } }
+  .bs-swiper.typ-home-story-thumb {
+    margin: 0;
+    padding-bottom: 0rem;
+    overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.typ-home-story-thumb {
+        margin: 0rem 0rem 0;
+        overflow: visible; } }
+    .bs-swiper.typ-home-story-thumb .swiper-slide {
+      border-radius: 8px;
+      border: 1px solid #DEDEDE;
+      min-height: 60px;
+      overflow: hidden; }
+      @media only screen and (max-width: 768px) {
+        .bs-swiper.typ-home-story-thumb .swiper-slide {
+          min-height: 40px; } }
+      .bs-swiper.typ-home-story-thumb .swiper-slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        min-height: 60px; }
+        @media only screen and (max-width: 768px) {
+          .bs-swiper.typ-home-story-thumb .swiper-slide img {
+            min-height: 40px; } }
   .bs-swiper.typ-architect-pdp {
     width: 100%; }
     .bs-swiper.typ-architect-pdp .swiper-slide img {

@@ -218,7 +218,12 @@ p {
 .cm-text-right {
   text-align: right;
 }
-
+.cm-flex-img{
+  flex-wrap: wrap;
+  gap: 2rem;
+  display: flex;
+  @media only screen and (max-width: $media-mobile) {  gap: 1.2rem;}
+}
 .cm-flex {
   justify-content: flex-start;
   flex-wrap: wrap;

@@ -246,6 +246,37 @@
   }
 
   &.typ-project-planner {
+    .divider {
+      position: relative;
+      margin-bottom: 2.4rem;
+      text-align: center;
+
+      &::after {
+        content: '';
+        background-color: #DEDEDE;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: -1;
+      }
+
+      .text {
+        background-color: #fff;
+        padding: 8px 16px;
+        color: #808080;
+        font-size: 1.2rem
+      }
+    }
+
+    .camera-btn-wrap {
+      .btn {
+        min-width: 100%
+      }
+    }
 
     .wrapper-thumb {
       position: relative;
@@ -258,8 +289,16 @@
       overflow: hidden;
 
       @media only screen and (max-width: $media-mobile) {
-        width: 30%;
-        flex: 0 0 30%;
+        width: 48%;
+        flex: 0 0 48%;
+        margin: 0rem 0;
+      }
+    }
+
+    .img-preview-thumb {
+      height: 156px;
+      @media only screen and (max-width: $media-mobile) {
+        height: 125px;
       }
     }
 
@@ -271,8 +310,16 @@
       font-size: 1.4rem;
       color: $clr-base;
     }
-    &.typ-modal{
-      height: 100%;
+
+    &.typ-modal {
+      min-height: 100%;
+
+      .img-preview-thumb {
+        @media only screen and (max-width: $media-mobile) {
+          height: 80px;
+        }
+      }
+
       .wrapper-thumb {
         position: relative;
         margin: 1rem 0;
@@ -282,7 +329,7 @@
         border-radius: 1.2rem;
         border: 1px solid #DEDEDE;
         overflow: hidden;
-  
+
         @media only screen and (max-width: $media-mobile) {
           width: 30%;
           flex: 0 0 30%;
@@ -297,6 +344,7 @@
   // display: none;
   cursor: pointer;
   text-align: center;
+  margin-top: 1.6rem;
 
   .file-upload__label {
     display: block;

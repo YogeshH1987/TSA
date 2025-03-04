@@ -600,6 +600,11 @@
     .form-input-wrap {
       .icon {
         color: #000;
+
+        &.disable {
+          color: #B3B3B3;
+          pointer-events: none;
+        }
       }
     }
 
@@ -666,8 +671,17 @@
       gap: 2rem;
       background-color: #fff;
       padding: 1.2rem 0;
+
       .btn {
-        min-width: 49%
+        min-width: 49%;
+
+        &.btn-outline {
+          @media only screen and (max-width: $media-mobile) {
+            border: 0;
+            color: #3D7EDB;
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

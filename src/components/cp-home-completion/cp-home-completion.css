@@ -24,10 +24,20 @@
     -webkit-border-radius: 1.2rem;
     -moz-border-radius: 1.2rem;
     padding: 2.4rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-home-completion .detials-wrap {
+        padding: 2.4rem 1.6rem; } }
     .cp-home-completion .detials-wrap .home-detail-wrap {
       display: flex;
       gap: 5px;
       justify-content: space-between; }
+      @media only screen and (max-width: 768px) {
+        .cp-home-completion .detials-wrap .home-detail-wrap {
+          flex-wrap: wrap;
+          gap: 24px 5px; } }
+      @media only screen and (max-width: 768px) {
+        .cp-home-completion .detials-wrap .home-detail-wrap .home-detail-list {
+          width: calc(50% - 4px); } }
       .cp-home-completion .detials-wrap .home-detail-wrap .home-detail-list .detail-title {
         font-size: 1.4rem;
         color: #8BB2E9;
@@ -48,12 +58,31 @@
         color: #333333;
         display: inline-block;
         padding: 2px 8px; }
+      .cp-home-completion .detials-wrap .home-detail-wrap.divider {
+        position: relative; }
+        .cp-home-completion .detials-wrap .home-detail-wrap.divider::after {
+          display: none;
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 41%;
+          /* bottom: 0; */
+          margin: auto;
+          background: #6498E2;
+          height: 1px; }
+          @media only screen and (max-width: 768px) {
+            .cp-home-completion .detials-wrap .home-detail-wrap.divider::after {
+              display: block; } }
   .cp-home-completion .link {
     text-decoration: underline;
     font-size: 1.6rem;
     text-align: center;
     display: block;
     margin-top: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-home-completion .link {
+        font-size: 1.4rem; } }
   .cp-home-completion.typ-timeline-drawer .home-detail-wrap {
     flex-wrap: wrap;
     gap: 20px 5px; }

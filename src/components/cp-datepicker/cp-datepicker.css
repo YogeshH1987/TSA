@@ -88,4 +88,7 @@ html .ui-button.ui-state-disabled:active {
   width: auto;
   height: auto; }
 
+div#ui-datepicker-div {
+  position: fixed !important; }
+
 /*# sourceMappingURL=cp-datepicker.css.map */
