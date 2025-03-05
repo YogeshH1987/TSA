@@ -1,0 +1,99 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-shed-type {
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .cp-shed-type {
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem; } }
+  .cp-shed-type .detail-wrap {
+    padding: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-type .detail-wrap {
+        padding: 1.6rem; } }
+    .cp-shed-type .detail-wrap .detail-tile {
+      font-family: "Poppins Semibold";
+      font-size: 2rem;
+      line-height: 2.4rem;
+      color: #333333;
+      margin-bottom: 0.8rem; }
+    .cp-shed-type .detail-wrap .detail-desc {
+      font-family: "Poppins Regular";
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #666666;
+      margin-bottom: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical; }
+  .cp-shed-type .img-wrap {
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    height: 15.2rem;
+    overflow: hidden;
+    display: block; }
+    .cp-shed-type .img-wrap img {
+      height: 100%;
+      border-radius: 1.6rem;
+      -webkit-border-radius: 1.6rem;
+      -moz-border-radius: 1.6rem;
+      object-fit: cover; }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-type .img-wrap {
+        height: 14.4rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem; }
+        .cp-shed-type .img-wrap img {
+          border-radius: 1.2rem;
+          -webkit-border-radius: 1.2rem;
+          -moz-border-radius: 1.2rem; } }
+  .cp-shed-type .selected-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 4rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius: 0 0 1.6rem 1.6rem;
+    -webkit-border-radius: 0 0 1.6rem 1.6rem;
+    -moz-border-radius: 0 0 1.6rem 1.6rem; }
+  .cp-shed-type.selected .selected-text {
+    display: flex; }
+  .cp-shed-type.selected::after {
+    content: '';
+    border: 4px solid #D2042D;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    z-index: 1; }
+
+/*# sourceMappingURL=cp-shed-typ.css.map */

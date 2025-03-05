@@ -118,6 +118,33 @@
     }
   }
 
+  &.typ-shed-type {
+    padding-left: 0;
+
+    .arch-left {
+      .title {
+        font-size: 2.8rem;
+        line-height: 4rem;
+      }
+    }
+
+    .arch-left {
+      .desc {
+        color: $clr-base;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .arch-right {
+      @media only screen and (max-width: $media-mobile) {
+        overflow: visible;
+      }
+      .service-btn{
+        @media only screen and (max-width: $media-mobile) {
+        min-width: 100%;}
+      }
+    }
+  }
 }
 
 // swiper-card code for architect section

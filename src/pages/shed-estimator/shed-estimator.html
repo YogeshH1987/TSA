@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="/images/favicon.png" />
 
-    <title>Project Planner</title>
+    <title>Service Provider</title>
     <meta name="description" content="description goes here" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/global.css" />
@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
 
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
-    <link rel="stylesheet" href="../components/cp-datepicker/cp-datepicker.css" />
     <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
     <link rel="stylesheet" href="/components/cp-service-provider-login/cp-service-provider-login.css" />
+    <link rel="stylesheet" href="/components/cp-shed-estimator/cp-shed-estimator.css" />
 
 
 </head>
@@ -475,8 +475,9 @@
         <section class="bs-sec typ-first-sec typ-service-provider">
             <div class="container">
                 <div class="sec-head sp-sec-head cm-desktop">
-                    <h2 class="sec-title cm-desktop">Project planner</h2>
-                  
+                    <h2 class="sec-title cm-desktop">Shed estimator | A type</h2>
+                    <p class="desc">Estimate the right quantity of shed requirements for your field/plot</p>
+
                 </div>
                 <div class="cp-service-provider-login cp-login mt-100-mobile" id="service-provider-login">
                     <div class="step-sec typ-2">
@@ -493,212 +494,424 @@
                             <div class="step"></div>
                         </div>
                     </div>
-                    <div class="cp-service-provider-wrap typ-provider-steps">
-                        <!-- Your home building project 1 -->
+                    <div class="cp-service-provider-wrap typ-shed-steps">
+                        <!-- Select dimensions 1 -->
                         <div class="tab">
                             <div class="provider-head  text-center">
-                                <h3 class="head-title">Your home building project</h3>
+                                <p class="desc">Shed estimator</p>
+                                <h3 class="head-title">Select dimensions</h3>
                             </div>
-                            <div class="cont-wrap typ-width rhs">
+                            <div class="cont-wrap">
                                 <div class="steps-content">
+                                    <div class="cp-shed-estimator">
+                                        <div class="shed-estimator-wrap typ-border">
+                                            <ul class="shed-cont">
+                                                <li class="shed-list">
+                                                    <div class="img-wrap">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                alt="style-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label typ-bold">Width of shed (S) in
+                                                            ft</label>
+                                                        <div class="cp-select">
+                                                            <div class="select-dropdown">
+                                                                <button href="#" role="button" data-value=""
+                                                                    class="select-dropdown-button">
+                                                                    <span class="select-text">select </span> <i
+                                                                        class="zmdi zmdi-chevron-down"></i>
+                                                                </button>
+                                                                <ul class="select-dropdown-list">
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="1"
+                                                                            class="select-dropdown-list-item">1</span>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="2"
+                                                                            class="select-dropdown-list-item">2</span>
 
-                                    <div class="form-wrap typ2">
-                                        <div class="form-group">
-                                            <label class="form-label">Project name</label>
-                                            <input type="text" name="" id="project-name"
-                                                class="form-input validate-name" placeholder="Enter project name">
-                                            <span class="error-msg"></span>
-                                        </div>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="3"
+                                                                            class="select-dropdown-list-item">3</span>
 
-                         
-                                        <div class="form-group">
-                                            <label class="form-label">Construction start date</label>
-                                            <div class="form-input-wrap">
-                                                <input type="text" class="form-input validate-name" value="" id="start-date" placeholder="Enter date" required="">
-                                                <span class="icon icon-calender"></span>
-                                            </div>
-                                            <span class="error-msg"></span>
-                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
 
-                                        <div class="form-group error">
-                                            <label class="form-label">Estimated end date (Optional)</label>
-                                            <div class="form-input-wrap">
-                                                <input type="text" class="form-input validate-name" value="" id="end-date" placeholder="Enter date" required="">
-                                                <span class="icon icon-calender"></span>
-                                            </div>
-                                            <span class="error-msg"></span>
-                                        </div>
+                                                <li class="shed-list">
+                                                    <div class="img-wrap">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                alt="style-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label typ-bold">Column height at ends(HE) in
+                                                            ft</label>
+                                                        <div class="cp-select">
+                                                            <div class="select-dropdown">
+                                                                <button href="#" role="button" data-value=""
+                                                                    class="select-dropdown-button">
+                                                                    <span class="select-text">select </span> <i
+                                                                        class="zmdi zmdi-chevron-down"></i>
+                                                                </button>
+                                                                <ul class="select-dropdown-list">
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="1"
+                                                                            class="select-dropdown-list-item">1</span>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="2"
+                                                                            class="select-dropdown-list-item">2</span>
 
-                                        <div class="form-group">
-                                            <label class="form-label">Site location</label>
-                                            <input type="text" name="" id="site-location"
-                                                class="form-input validate-name" placeholder="Site location">
-                                            <span class="error-msg"></span>
-                                        </div>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="3"
+                                                                            class="select-dropdown-list-item">3</span>
 
-                                        <div class="form-group">
-                                            <label class="form-label">Budget</label>
-                                            <input type="text" name="" id="budget"
-                                                class="form-input validate-name" placeholder="Enter budget">
-                                            <span class="error-msg"></span>
-                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
 
-                                    
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- House details 2 -->
-                        <div class="tab">
-                            <div class="provider-head  text-center">
-                                <h3 class="head-title">House details</h3>
-                            </div>
-                            <div class="cont-wrap typ-width rhs">
-                                <div class="steps-content">
-
-                                    <div class="form-wrap typ2">
-                                        <div class="form-group">
-                                            <label class="form-label">Built up area (Sq. ft)</label>
-                                            <input type="text" name="" id="buildUpArea"
-                                                class="form-input validate-name" placeholder="Enter area">
-                                            <span class="error-msg"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label class="form-label">Number of floors</label>
-                                            <div class="cp-select">
-                                            
-                                                <div class="select-dropdown">
-                                                    <button href="#" role="button" data-value="" class="select-dropdown-button">
-                                                        <span class="select-text">Choose floors </span> <i class="zmdi zmdi-chevron-down"></i>
-                                                    </button>
-                                                    <ul class="select-dropdown-list">
-                                                        <li class="dropdown-item">
-                                                            <span data-value="1" class="select-dropdown-list-item">First</span>
-                                                        </li>
-                                                        <li class="dropdown-item">
-                                                            <span data-value="2" class="select-dropdown-list-item">Second</span>
-                    
-                                                        </li>
-                                                        <li class="dropdown-item">
-                                                            <span data-value="3" class="select-dropdown-list-item">Third</span>
-                    
-                                                        </li>
-                                                    </ul>
+                                            <div class="grey-form-wrap">
+                                                <div class="form-group">
+                                                    <label class="form-label typ-bold">Crown Height (HC) in ft</label>
+                                                    <input type="text" name="" id="bedrooms"
+                                                        class="form-input validate-name" value="1" disabled
+                                                        placeholder="Enter">
+                                                    <span class="error-msg"></span>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label class="form-label">Number or bedrooms</label>
-                                            <input type="text" name="" id="bedrooms"
-                                                class="form-input validate-name" placeholder="Enter number">
-                                            <span class="error-msg"></span>
+                                        <div class="shed-estimator-wrap">
+                                            <ul class="shed-cont">
+                                                <li class="shed-list">
+                                                    <div class="img-wrap">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                alt="style-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label typ-bold">Width of shed (S) in
+                                                            ft</label>
+                                                        <div class="cp-select">
+                                                            <div class="select-dropdown">
+                                                                <button href="#" role="button" data-value=""
+                                                                    class="select-dropdown-button">
+                                                                    <span class="select-text">select </span> <i
+                                                                        class="zmdi zmdi-chevron-down"></i>
+                                                                </button>
+                                                                <ul class="select-dropdown-list">
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="1"
+                                                                            class="select-dropdown-list-item">1</span>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="2"
+                                                                            class="select-dropdown-list-item">2</span>
+
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="3"
+                                                                            class="select-dropdown-list-item">3</span>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="shed-list">
+                                                    <div class="img-wrap">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                alt="style-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label typ-bold">Column height at ends(HE) in
+                                                            ft</label>
+                                                        <div class="cp-select">
+                                                            <div class="select-dropdown">
+                                                                <button href="#" role="button" data-value=""
+                                                                    class="select-dropdown-button">
+                                                                    <span class="select-text">select </span> <i
+                                                                        class="zmdi zmdi-chevron-down"></i>
+                                                                </button>
+                                                                <ul class="select-dropdown-list">
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="1"
+                                                                            class="select-dropdown-list-item">1</span>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="2"
+                                                                            class="select-dropdown-list-item">2</span>
+
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="3"
+                                                                            class="select-dropdown-list-item">3</span>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="grey-form-wrap">
+                                                <div class="form-group">
+                                                    <label class="form-label typ-bold">Crown Height (HC) in ft</label>
+                                                    <input type="text" name="" id="bedrooms"
+                                                        class="form-input validate-name" value="1" disabled
+                                                        placeholder="Enter">
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <!-- Select your home building stage 3 -->
+                        <!-- Select roof type 2 -->
                         <div class="tab">
                             <div class="provider-head  text-center">
-                                <h3 class="head-title">Select your home building stage</h3>
+                                <p class="desc">Shed estimator</p>
+                                <h3 class="head-title">Select roof type</h3>
                             </div>
                             <div class="cont-wrap">
                                 <div class="steps-content">
 
-                                    <div class="radio-wrap cm-flex-img">
-                                        <div class="bs-radio typ-img-radio">
-                                            <input id="img1" name="stage" type="radio" checked>
-                                            <label for="img1" class="custom-radio">
-                                             <span class="img-wrap">
-                                                <picture>
-                                                    <source media="(max-width:768px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <source media="(max-width:991px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <img src="../components/cp-create-moodboard/images/img1.png" alt="blog img">
-                                                </picture>
-                                             </span>
-                                                <span class="title">Planning & Design</span>
-                                            </label>
-                                        </div>
-                                        <div class="bs-radio typ-img-radio">
-                                            <input id="img2" name="stage" type="radio">
-                                            <label for="img2" class="custom-radio">
-                                             <span class="img-wrap">
-                                                <picture>
-                                                    <source media="(max-width:768px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <source media="(max-width:991px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <img src="../components/cp-create-moodboard/images/img1.png" alt="blog img">
-                                                </picture>
-                                             </span>
-                                                <span class="title">Planning & Design</span>
-                                            </label>
+                                    <div class="cp-shed-estimator">
+                                        <div class="shed-estimator-wrap typ-border">
+                                            <ul class="shed-cont">
+                                                <li class="shed-list">
+                                                    <div class="img-wrap typ-height">
+                                                        <div class="bs-swiper swiper js-roof-img">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <picture>
+                                                                        <source media="(max-width:768px)"
+                                                                            srcset="../components/cp-shed-estimator/images/roof.png">
+                                                                        <source media="(max-width:991px)"
+                                                                            srcset="../components/cp-shed-estimator/images/roof.png">
+                                                                        <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                            alt="style-img">
+                                                                    </picture>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <picture>
+                                                                        <source media="(max-width:768px)"
+                                                                            srcset="../components/cp-shed-estimator/images/roof.png">
+                                                                        <source media="(max-width:991px)"
+                                                                            srcset="../components/cp-shed-estimator/images/roof.png">
+                                                                        <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                            alt="style-img">
+                                                                    </picture>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <picture>
+                                                                        <source media="(max-width:768px)"
+                                                                            srcset="../components/cp-shed-estimator/images/roof.png">
+                                                                        <source media="(max-width:991px)"
+                                                                            srcset="../components/cp-shed-estimator/images/roof.png">
+                                                                        <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                            alt="style-img">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </li>
+
+                                                <li class="shed-list">
+                                                    <div class="form-group mb-32">
+                                                        <label class="form-label">Roofing sheet</label>
+                                                        <div class="cp-select">
+                                                            <div class="select-dropdown">
+                                                                <button href="#" role="button" data-value=""
+                                                                    class="select-dropdown-button">
+                                                                    <span class="select-text">select </span> <i
+                                                                        class="zmdi zmdi-chevron-down"></i>
+                                                                </button>
+                                                                <ul class="select-dropdown-list">
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="1"
+                                                                            class="select-dropdown-list-item">Durashine</span>
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="2"
+                                                                            class="select-dropdown-list-item">Durashine</span>
+
+                                                                    </li>
+                                                                    <li class="dropdown-item">
+                                                                        <span data-value="3"
+                                                                            class="select-dropdown-list-item">Durashine</span>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group mb-32">
+                                                        <label class="form-label">Purlin spacing (SP) in ft</label>
+                                                        <input type="text" name="" id="bedrooms"
+                                                            class="form-input validate-name" value="4" disabled
+                                                            placeholder="Enter">
+                                                        <span class="error-msg"></span>
+                                                    </div>
+
+                                                    <h2 class="cont-sub-title">Need wall side coverings</h2>
+                                                    <div class="radio-wrap typ-size mb-32">
+                                                        <div class="bs-radio col-3">
+                                                            <input id="employees1" name="employees" type="radio"
+                                                                checked>
+                                                            <label for="employees1" class="custom-radio">
+                                                                <span>Yes</span>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="bs-radio col-3">
+                                                            <input id="employees2" name="employees" type="radio">
+                                                            <label for="employees2" class="custom-radio">
+                                                                <span>No</span>
+                                                            </label>
+                                                        </div>
+
+
+
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
                                         </div>
 
-                                        <div class="bs-radio typ-img-radio">
-                                            <input id="img3" name="stage" type="radio">
-                                            <label for="img3" class="custom-radio">
-                                             <span class="img-wrap">
-                                                <picture>
-                                                    <source media="(max-width:768px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <source media="(max-width:991px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <img src="../components/cp-create-moodboard/images/img1.png" alt="blog img">
-                                                </picture>
-                                             </span>
-                                                <span class="title">Planning & Design</span>
-                                            </label>
-                                        </div>
 
-                                        <div class="bs-radio typ-img-radio">
-                                            <input id="img4" name="stage" type="radio">
-                                            <label for="img4" class="custom-radio">
-                                             <span class="img-wrap">
-                                                <picture>
-                                                    <source media="(max-width:768px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <source media="(max-width:991px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <img src="../components/cp-create-moodboard/images/img1.png" alt="blog img">
-                                                </picture>
-                                             </span>
-                                                <span class="title">Planning & Design</span>
-                                            </label>
-                                        </div>
-                                        <div class="bs-radio typ-img-radio">
-                                            <input id="img5" name="stage" type="radio" checked>
-                                            <label for="img5" class="custom-radio">
-                                             <span class="img-wrap">
-                                                <picture>
-                                                    <source media="(max-width:768px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <source media="(max-width:991px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <img src="../components/cp-create-moodboard/images/img1.png" alt="blog img">
-                                                </picture>
-                                             </span>
-                                                <span class="title">Planning & Design</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="bs-radio typ-img-radio">
-                                            <input id="img6" name="stage" type="radio" checked>
-                                            <label for="img6" class="custom-radio">
-                                             <span class="img-wrap">
-                                                <picture>
-                                                    <source media="(max-width:768px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <source media="(max-width:991px)" srcset="../components/cp-create-moodboard/images/img1.png">
-                                                    <img src="../components/cp-create-moodboard/images/img1.png" alt="blog img">
-                                                </picture>
-                                             </span>
-                                                <span class="title">Planning & Design</span>
-                                            </label>
-                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Select product 3 -->
+                        <div class="tab">
+                            <div class="provider-head  text-center">
+                                <p class="desc">Shed estimator</p>
+                                <h3 class="head-title">Select product</h3>
+                            </div>
+                            <div class="cont-wrap">
+                                <div class="steps-content">
+
+                                    <ul class="lyt-grid typ-col-3-no-wrap justify-center">
+                                        <li class="grid-col">
+                                            <div class="bs-radio typ-build-cost typ-yellow">
+                                                <input id="material1" value="economy" name="material" type="radio" checked>
+                                                <label for="material1" class="custom-radio">
+                                                    <div class="material-wrap typ-shed-estimator">
+                                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                                        <h2 class="home-typ">Structura</h2>
+                                                        <ul class="detail-list">
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Material</h3>
+                                                                <p class="desc">Standard steel grades
+                                                                </p>
+                                                            </li>
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Durability</h3>
+                                                                <p class="desc">General durability for standard usage</p>
+                                                            </li>
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Applications</h3>
+                                                                <p class="desc">Conventional construction and fabrication
+                                                                </p>
+                                                            </li>
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Cost</h3>
+                                                                <p class="desc">Economical
+                                                                </p>
+                                                            </li>
+                                                          
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="grid-col">
+                                            <div class="bs-radio typ-build-cost typ-orange">
+                                                <input id="material2" name="material" type="radio" value="standard">
+                                                <label for="material2" class="custom-radio">	
+                                                    <div class="material-wrap">
+                                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                                        <h2 class="home-typ">Structura Z+</h2>
+                                                        <ul class="detail-list">
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Material</h3>
+                                                                <p class="desc">Standard steel grades
+                                                                </p>
+                                                            </li>
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Durability</h3>
+                                                                <p class="desc">General durability for standard usage</p>
+                                                            </li>
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Applications</h3>
+                                                                <p class="desc">Conventional construction and fabrication
+                                                                </p>
+                                                            </li>
+                                                            <li class="detail-item">
+                                                                <h3 class="title">Cost</h3>
+                                                                <p class="desc">Economical
+                                                                </p>
+                                                            </li>
+                                                          
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                </label>
+                                            </div>
+                                        </li>
+                                     
+                                    </ul>
 
                                 </div>
                             </div>
                         </div>
 
-               
-                  
+
+
                     </div>
                     <div class="btn-wrap  flex">
                         <!-- <div class="text-center link">
@@ -726,13 +939,13 @@
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-select/cp-select.js"></script>
-    <script src="../components/cp-datepicker/cp-datepicker.js"></script>
     <script src="/components/cp-service-provider-login/cp-service-provider-steps.js"></script>
+    <script src="/components/cp-shed-estimator/cp-shed-estimator.js"></script>
     <!-- endbuild -->
 </body>
 

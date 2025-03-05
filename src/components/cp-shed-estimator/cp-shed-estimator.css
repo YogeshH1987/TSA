@@ -1,0 +1,87 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-shed-estimator .shed-estimator-wrap {
+  padding: 0 4rem; }
+  .cp-shed-estimator .shed-estimator-wrap .shed-cont {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list {
+      width: calc(50% - 1rem);
+      position: relative; }
+      .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap {
+        border: 1px solid #DEDEDE;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        height: 194px;
+        overflow: hidden;
+        margin-bottom: 1.2rem; }
+        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap.typ-height {
+          height: 20.8rem; }
+      .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .swiper-pagination {
+        position: static; }
+        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .swiper-pagination .swiper-pagination-bullet {
+          background: #808080; }
+        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .swiper-pagination .swiper-pagination-bullet-active {
+          background: #D2042D; }
+  .cp-shed-estimator .shed-estimator-wrap .form-group .form-label {
+    font-size: 1.4rem;
+    font-family: "Poppins Regular";
+    color: #666666;
+    padding-bottom: 0.8rem;
+    display: block; }
+    .cp-shed-estimator .shed-estimator-wrap .form-group .form-label.typ-bold {
+      font-family: "Poppins Semibold";
+      color: #000000; }
+  .cp-shed-estimator .shed-estimator-wrap .form-group .form-input {
+    border-radius: 12px;
+    border: 1px solid #dedede;
+    font-size: 1.6rem;
+    font-family: "Poppins Medium";
+    color: #333333;
+    padding: 1.2rem 1.6rem;
+    width: 100%; }
+    .cp-shed-estimator .shed-estimator-wrap .form-group .form-input:disabled {
+      background-color: #EDEDED;
+      color: #808080; }
+  .cp-shed-estimator .shed-estimator-wrap .form-group .cp-select .select-dropdown .select-dropdown-button .select-text {
+    color: #333; }
+  .cp-shed-estimator .shed-estimator-wrap .form-group .cp-select .select-dropdown .select-dropdown-button .zmdi-chevron-down::after {
+    content: "\e90e";
+    font-family: 'icomoon';
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #333333; }
+  .cp-shed-estimator .shed-estimator-wrap .form-group.mb-32 {
+    margin-bottom: 3.2rem; }
+  .cp-shed-estimator .shed-estimator-wrap .grey-form-wrap {
+    background-color: #F3F4F6;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    padding: 1.6rem 1.2rem;
+    margin-top: 4.8rem; }
+    .cp-shed-estimator .shed-estimator-wrap .grey-form-wrap .form-group .form-label {
+      color: #808080; }
+    .cp-shed-estimator .shed-estimator-wrap .grey-form-wrap .form-group .form-input:disabled {
+      background-color: #EDEDED;
+      color: #808080; }
+  .cp-shed-estimator .shed-estimator-wrap.typ-border {
+    padding-bottom: 4.8rem;
+    border-bottom: 3px solid #DEDEDE;
+    margin-bottom: 4.8rem; }
+    .cp-shed-estimator .shed-estimator-wrap.typ-border:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+
+/*# sourceMappingURL=cp-shed-estimator.css.map */

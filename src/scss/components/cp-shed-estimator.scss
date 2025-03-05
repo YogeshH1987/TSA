@@ -1,0 +1,137 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-shed-estimator {
+
+    .shed-estimator-wrap {
+        padding: 0 4rem;
+
+        .shed-cont {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            .shed-list {
+                width: calc(50% - 1rem);
+                position: relative;
+
+                .img-wrap {
+                    border: 1px solid #DEDEDE;
+                    @include border-radius(1.2rem);
+                    height: 194px;
+                    overflow: hidden;
+                    margin-bottom: 1.2rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    &.typ-height {
+                        height: 20.8rem;
+                    }
+                }
+
+                .swiper-pagination {
+                    position: static;
+
+                    .swiper-pagination-bullet {
+                        background: #808080;
+                    }
+
+                    .swiper-pagination-bullet-active {
+                        background: #D2042D;
+                    }
+                }
+            }
+        }
+
+        .form-group {
+            .form-label {
+                font-size: 1.4rem;
+                font-family: $font-regular;
+                color: #666666;
+                padding-bottom: 0.8rem;
+                display: block;
+
+                &.typ-bold {
+                    font-family: $font-semiBold;
+                    color: #000000;
+                }
+            }
+
+            .form-input {
+                border-radius: 12px;
+                border: 1px solid #dedede;
+                font-size: 1.6rem;
+                font-family: $font-medium;
+                color: #333333;
+                padding: 1.2rem 1.6rem;
+                width: 100%;
+
+                &:disabled {
+                    background-color: #EDEDED;
+                    color: #808080;
+                }
+            }
+
+            .cp-select {
+                .select-dropdown {
+                    .select-dropdown-button {
+                        .select-text {
+                            color: #333;
+                        }
+
+                        .zmdi-chevron-down {
+                            &::after {
+                                content: "\e90e";
+                                font-family: 'icomoon';
+                                font-size: 1.5rem;
+                                line-height: 2rem;
+                                color: #333333;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.mb-32 {
+                margin-bottom: 3.2rem;
+            }
+        }
+
+        .grey-form-wrap {
+            background-color: #F3F4F6;
+            @include border-radius(1.2rem);
+            padding: 1.6rem 1.2rem;
+            margin-top: 4.8rem;
+
+            .form-group {
+                .form-label {
+                    color: #808080;
+                }
+
+                .form-input {
+                    &:disabled {
+                        background-color: #EDEDED;
+                        color: #808080;
+                    }
+                }
+            }
+
+        }
+
+        &.typ-border {
+            padding-bottom: 4.8rem;
+            border-bottom: 3px solid #DEDEDE;
+            margin-bottom: 4.8rem;
+
+            &:last-child {
+                border-bottom: 0;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}

@@ -218,6 +218,16 @@
         }
     }
 
+    .typ-shed-steps {
+        @include border-radius(1.6rem 1.6rem 0 0);
+        margin-top: -16px;
+        flex-direction: column;
+        padding: 2.4rem 0;
+        @media only screen and (max-width: $media-mobile) {
+            margin-top: 85px;
+        }
+    }
+
     .mt-0 {
         margin-top: 0;
     }

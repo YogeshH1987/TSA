@@ -2570,7 +2570,7 @@ p {
         height: 7.2rem;
         background: #FFC633;
         padding: 1rem;
-        margin-bottom: 1.2rem;
+        margin: 0 auto 1.2rem;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -2636,6 +2636,9 @@ p {
               line-height: 1.6rem;
               text-align: center;
               min-height: 3.2rem; } }
+      .bs-radio.typ-build-cost .custom-radio .material-wrap.typ-shed-estimator .detail-list {
+        align-items: center;
+        text-align: center; }
   .bs-radio.typ-build-cost input[type=radio]:checked + .custom-radio:before {
     content: "\e91a";
     color: #00A441; }

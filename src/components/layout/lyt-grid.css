@@ -390,5 +390,7 @@
       .lyt-grid.typ-design-quiz.w-100 .grid-col {
         flex: 0 0 100%;
         max-width: 100%; } }
+  .lyt-grid.justify-center {
+    justify-content: center; }
 
 /*# sourceMappingURL=lyt-grid.css.map */

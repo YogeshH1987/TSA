@@ -350,7 +350,7 @@
                     height: 7.2rem;
                     background: #FFC633;
                     padding: 1rem;
-                    margin-bottom: 1.2rem;
+                    margin: 0 auto 1.2rem;
                     @include border-radius(50%);
                     display: flex;
                     align-items: center;
@@ -427,6 +427,12 @@
                             text-align: center;
                             min-height: 3.2rem;
                         }
+                    }
+                }
+                &.typ-shed-estimator{
+                    .detail-list {
+                        align-items: center;
+                        text-align: center;
                     }
                 }
             }

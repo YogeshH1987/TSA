@@ -235,6 +235,9 @@
     .cp-drawer.typ-home-story-pp .cp-prod-thumb-slider {
       position: relative;
       height: calc(100% - 53px); }
+      @media only screen and (max-width: 768px) {
+        .cp-drawer.typ-home-story-pp .cp-prod-thumb-slider {
+          height: calc(100% - 29px); } }
     .cp-drawer.typ-home-story-pp .home-story-container {
       height: 100%;
       display: flex;

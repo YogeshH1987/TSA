@@ -1885,6 +1885,9 @@
                         }
                     }
                 }
+                .f-title{
+                    @media only screen and (max-width: $media-mobile) { max-width: 100%;}
+                }
             }
 
             .feature-item {
