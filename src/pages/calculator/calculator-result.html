@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="../../components/cp-model-content/cp-model-content.css" />
     <link rel="stylesheet" href="/components/cp-image-pointers/cp-image-pointers.css" />
+    <link rel="stylesheet" href="/components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="../../components/cp-building-estimator/cp-building-estimator.css" />
+    
 </head>
 
 <body>
@@ -72,7 +75,7 @@
                                     </ul>
                                 </div>
                                 <p class="desc typ-flex"><span class="typ-small">₹</span>60,00,000 <span
-                                        class="icon icon-info"></span></p>
+                                        class="icon icon-help js-drawer" data-id="budget-help"></span></p>
                                 <a href="#" class="link">Set as my budget</a>
 
                                 <ul class="cost-list-wrap">
@@ -83,12 +86,13 @@
                                     </li>
                                     <li class="cost-list">
                                         <div class="icon blue icon-tool"></div>
-                                        <p class="title">Material</p>
+                                        <p class="title">Labour</p>
                                         <h3 class="price">₹15,00,000</h3>
                                     </li>
                                     <li class="cost-list">
                                         <div class="icon green icon-home"></div>
-                                        <p class="title">Material</p>
+                                        <p class="title">Others <span class="icon icon-info model-open"
+                                                data-toggle="modal" data-modal-id="#other-info"></span></p>
                                         <h3 class="price">₹15,00,000</h3>
                                     </li>
                                 </ul>
@@ -103,7 +107,7 @@
                         </div>
                         <div class="cp-box bottom-notify">
                             <div class="img-wrap">
-                                <span class="icon icon-bell"></span>
+                                <span class="icon icon-info1"></span>
                             </div>
                             <div class="cont-wrap">
                                 <h3 class="title">Estimates are approximate; consult professionals for more accurate
@@ -572,8 +576,7 @@
                                                     <div class="feature-item">
                                                         <a href="#" class="feature-card">
                                                             <h2 class="f-title">Decoding <br> technical specs</h2>
-                                                            <p class="f-desc">A beginner's guide to understanding
-                                                                building materials</p>
+                                                            <p class="f-desc link">Read more</p>
                                                             <div class="f-img">
                                                                 <div class="icon icon-article">
                                                                 </div>
@@ -1438,6 +1441,173 @@
         </div>
     </div>
     <!--model pop up end-->
+
+    <!--model pop up start-->
+
+    <div id="other-info" tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share typ-other-info">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <button class="close-btn icon-close js-close " type="button "></button>
+                    <div class="cp-model-content typ-other-info">
+                        <p class="title">Others</p>
+                        <p class="desc"> Following are the items included in the “Others” category</p>
+                        <ul class="info-wrap">
+                            <li class="info-list">Approvals & land preparations</li>
+                            <li class="info-list">Transportation</li>
+                            <li class="info-list">Miscellaneous expenses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
+
+
+    <!---order summery start-->
+    <div class="cp-drawer" id="budget-help">
+        <div class="head-sec p-0">
+            <!-- <h2 class="drawer-title">Offers & discounts  <span class="count">58</span></h2> -->
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+            <div class="cp-building-estimator budget-help-drawer">
+           
+                    <h2 class="calc-title">Building cost estimator</h2>
+                    <p class="calc-desc">Do you have material preferences?</p>
+                   <ul class="lyt-grid typ-col-3-no-wrap gap-8">
+                        <li class="grid-col">
+                            <div class="bs-radio typ-build-cost typ-yellow pointer-none">
+                                <input id="material1" value="economy" name="material" type="radio" checked>
+                                <label for="material1" class="custom-radio">
+                                    <div class="material-wrap typ-center-text">
+                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                        <h2 class="home-typ">economy</h2>
+                                        <ul class="detail-list">
+                                            <li class="detail-item">
+                                                <h3 class="title">Steel</h3>
+                                                <p class="desc">Secondary TMT</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Cement</h3>
+                                                <p class="desc">Grade 33</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Flooring</h3>
+                                                <p class="desc">Ceramic tiles</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Paint</h3>
+                                                <p class="desc">Lime wash</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Doors / Windows</h3>
+                                                <p class="desc">Hardwood ply</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Bathroom fixtures</h3>
+                                                <p class="desc">Bathroom fixtures</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Lighting fixtures</h3>
+                                                <p class="desc">Basic LED</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </label>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="bs-radio typ-build-cost typ-orange pointer-none">
+                                <input id="material2" name="material" type="radio" value="standard">
+                                <label for="material2" class="custom-radio">
+                                    <div class="material-wrap typ-center-text">
+                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                        <h2 class="home-typ">Standard</h2>
+                                        <ul class="detail-list">
+                                            <li class="detail-item">
+                                                <h3 class="title">Steel</h3>
+                                                <p class="desc">Primary TMT</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Cement</h3>
+                                                <p class="desc">Grade 33</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Flooring</h3>
+                                                <p class="desc">Ceramic tiles</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Paint</h3>
+                                                <p class="desc">Lime wash</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Doors / Windows</h3>
+                                                <p class="desc">Hardwood ply</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Bathroom fixtures</h3>
+                                                <p class="desc">Bathroom fixtures</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Lighting fixtures</h3>
+                                                <p class="desc">Basic LED</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </label>
+                            </div>
+                        </li>
+                        <li class="grid-col">
+                            <div class="bs-radio typ-build-cost typ-red pointer-none">
+                                <input id="material3" name="material" type="radio" value="premium">
+                                <label for="material3" class="custom-radio">
+                                    <div class="material-wrap typ-center-text">
+                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                        <h2 class="home-typ">Premium</h2>
+                                        <ul class="detail-list">
+                                            <li class="detail-item">
+                                                <h3 class="title">Steel</h3>
+                                                <p class="desc">Primary Super ductile</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Cement</h3>
+                                                <p class="desc">Grade 33</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Flooring</h3>
+                                                <p class="desc">Ceramic tiles</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Paint</h3>
+                                                <p class="desc">Lime wash</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Doors / Windows</h3>
+                                                <p class="desc">Hardwood ply</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Bathroom fixtures</h3>
+                                                <p class="desc">Bathroom fixtures</p>
+                                            </li>
+                                            <li class="detail-item">
+                                                <h3 class="title">Lighting fixtures</h3>
+                                                <p class="desc">Basic LED</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+               
+            </div>
+        </div>
+    </div>
+    <!---offer drawer end-->
     <div class="cm-overlay"></div>
 
 
@@ -1453,6 +1623,7 @@
     <script src="../../components/cp-recommend/cp-recommend.js"></script>
     <script src="../../components/cp-rebar-result/cp-rebar-result.js"></script>
     <script src="/components/cp-product-card/cp-product-card.js"></script>
+    <script src="/components/cp-drawer/cp-drawer.js"></script>
     <!-- endbuild -->
 </body>
 

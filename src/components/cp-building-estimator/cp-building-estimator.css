@@ -105,5 +105,11 @@
   .cp-building-estimator .lyt-grid.typ-col-3-no-wrap {
     max-width: 71.2rem;
     margin: 0 auto; }
+  .cp-building-estimator.budget-help-drawer {
+    margin: 0;
+    text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .cp-building-estimator.budget-help-drawer {
+        margin: 0; } }
 
 /*# sourceMappingURL=cp-building-estimator.css.map */

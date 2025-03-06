@@ -501,6 +501,17 @@
         }
     }
 
+    &.typ-other-info{
+        max-width: 400px;
+        max-height: 100%;
+
+        .modal-body {
+            @media only screen and (max-width: $media-sm) {
+                padding: 1.6rem 0;
+            }
+        }
+    }
+
     &.typ-moodboard-gallery {
         min-width: 670px;
         max-height: 600px;

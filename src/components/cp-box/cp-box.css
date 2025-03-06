@@ -220,9 +220,11 @@
         justify-content: center;
         gap: 4px;
         display: flex; }
-      .cp-box.typ-price .desc .typ-small,
-      .cp-box.typ-price .desc .icon {
+      .cp-box.typ-price .desc .typ-small {
         font-size: 2rem; }
+      .cp-box.typ-price .desc .icon {
+        font-size: 3rem;
+        cursor: pointer; }
     .cp-box.typ-price .link {
       font-size: 1.4rem;
       text-decoration: underline;
@@ -420,10 +422,20 @@
         font-size: 1.4rem;
         color: #666666;
         font-family: "Poppins Regular";
-        margin: 0; }
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 4px; }
         @media only screen and (max-width: 768px) {
           .cp-box .cost-list-wrap .cost-list .title {
             font-size: 1.2rem; } }
+        .cp-box .cost-list-wrap .cost-list .title .icon {
+          font-size: 1.4rem;
+          width: 1.4rem;
+          height: 1.4rem;
+          margin-bottom: 0;
+          color: #000000;
+          cursor: pointer; }
   .cp-box .estimate-time-wrap {
     background-color: #F3F4F6;
     border-radius: 8px;

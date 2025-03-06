@@ -113,7 +113,8 @@
             }
         }
     }
-    &.typ-shed{
+
+    &.typ-shed {
         margin-bottom: 1.4rem;
         position: relative;
         border: 1px solid $clr-border;
@@ -121,10 +122,12 @@
         padding: 1.2rem 2.4rem;
         gap: 1.2rem;
         align-items: center;
+
         @media only screen and (max-width: $media-mobile) {
             padding: 0.8rem 1.2rem;
             align-items: center;
         }
+
         .img-wrap {
             border-radius: 50%;
             width: 3.2rem;
@@ -135,28 +138,30 @@
             .icon {
                 color: $clr-root;
                 font-size: 1.8rem;
-                line-height:3.2rem;
+                line-height: 3.2rem;
                 display: flex;
                 justify-content: center;
 
-          
+
             }
         }
+
         .cont-wrap {
             padding-right: 3rem;
             width: 85%;
 
-            
-        .title {
-            font-size: 1.4rem;
-            line-height: 2rem;
-            margin-bottom:0;
-            color: #5A245A;
-            padding: 0;
-            font-family: $font-regular;
 
+            .title {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                margin-bottom: 0;
+                color: #5A245A;
+                padding: 0;
+                font-family: $font-regular;
+
+            }
         }
-        }
+
         .icon.icon-edit {
             position: absolute;
             top: 1.6rem;
@@ -165,6 +170,7 @@
             color: #000;
         }
     }
+
     &.typ-result {
         margin-bottom: 1.4rem;
         position: relative;
@@ -282,9 +288,13 @@
                 display: flex;
             }
 
-            .typ-small,
-            .icon {
+            .typ-small {
                 font-size: 2rem;
+            }
+
+            .icon {
+                font-size: 3rem;
+                cursor: pointer;
             }
         }
 
@@ -551,9 +561,21 @@
                 color: #666666;
                 font-family: $font-regular;
                 margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 4px;
 
                 @media only screen and (max-width: $media-mobile) {
                     font-size: 1.2rem;
+                }
+
+                .icon {
+                    font-size: 1.4rem;
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    margin-bottom: 0;
+                    color: #000000;
+                    cursor: pointer;
                 }
             }
         }

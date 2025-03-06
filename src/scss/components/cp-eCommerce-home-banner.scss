@@ -1365,6 +1365,12 @@
                     .f-desc {
                         font-size: 1.2rem;
                         font-family: $font-regular;
+                        &.link{
+                            font-size: 1.6rem;
+                            color: #3D7EDB;
+                            text-decoration: underline;
+                            margin-top: 1.2rem;
+                        }
                     }
 
                     .f-title {

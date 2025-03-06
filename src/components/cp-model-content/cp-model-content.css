@@ -73,6 +73,35 @@
           margin-top: 3.2rem; } }
       .cp-model-content.typ-cal-result .btn-wrap .btn {
         width: 50%; }
+  .cp-model-content.typ-other-info {
+    text-align: left; }
+    .cp-model-content.typ-other-info .title {
+      font-family: "Poppins Semibold";
+      color: #333333;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      text-align: center; }
+      @media only screen and (max-width: 768px) {
+        .cp-model-content.typ-other-info .title {
+          font-size: 2rem; } }
+    .cp-model-content.typ-other-info .desc {
+      margin-bottom: 3.2rem;
+      font-family: "Poppins Regular";
+      font-size: 1.4rem;
+      padding: 0;
+      line-height: 2rem;
+      color: #333333;
+      text-align: center; }
+      @media only screen and (max-width: 768px) {
+        .cp-model-content.typ-other-info .desc {
+          font-size: 1.4rem;
+          margin-bottom: 0.4rem;
+          line-height: 2rem; } }
+    .cp-model-content.typ-other-info .info-wrap .info-list {
+      font-size: 1.4rem;
+      color: #333333;
+      padding: 1.2rem;
+      border-bottom: #DEDEDE 1px solid; }
   .cp-model-content.typ-delete-address {
     text-align: left; }
     .cp-model-content.typ-delete-address .title {

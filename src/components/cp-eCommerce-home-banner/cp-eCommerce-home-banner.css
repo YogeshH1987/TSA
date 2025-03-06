@@ -709,6 +709,11 @@
       .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-desc {
         font-size: 1.2rem;
         font-family: "Poppins Regular"; }
+        .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-desc.link {
+          font-size: 1.6rem;
+          color: #3D7EDB;
+          text-decoration: underline;
+          margin-top: 1.2rem; }
       .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-title {
         font-size: 1.4rem; }
       .cp-eCommerce-home-banner.typ-calculator-result .feature-item:nth-child(6) .feature-card .f-img::after {

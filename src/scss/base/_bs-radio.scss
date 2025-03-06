@@ -318,6 +318,7 @@
     &.typ-build-cost {
         .custom-radio {
             position: relative;
+            min-width: auto;
 
             &:before {
                 font-size: 3.3rem;
@@ -429,7 +430,8 @@
                         }
                     }
                 }
-                &.typ-shed-estimator{
+
+                &.typ-center-text {
                     .detail-list {
                         align-items: center;
                         text-align: center;
@@ -494,6 +496,16 @@
                 &+.custom-radio {
                     background: #FFF8E5;
                     border: 4px solid #F16933;
+                }
+            }
+        }
+
+        &.pointer-none {
+            pointer-events: none;
+
+            .custom-radio {
+                @media only screen and (max-width: $media-sm) {
+                    min-width: auto;
                 }
             }
         }
@@ -895,7 +907,10 @@
                 color: $clr-base;
                 font-family: $font-medium;
                 margin-bottom: 0;
-                @media only screen and (max-width: $media-mobile) {  font-size: 1.4rem; }
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.4rem;
+                }
             }
 
             .img-wrap {
@@ -905,7 +920,11 @@
                 position: relative;
                 @include border-radius(1.6rem);
                 overflow: hidden;
-                @media only screen and (max-width: $media-mobile) {  height: 130px;}
+
+                @media only screen and (max-width: $media-mobile) {
+                    height: 130px;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
