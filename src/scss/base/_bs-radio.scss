@@ -500,10 +500,13 @@
             }
         }
 
-        &.pointer-none {
+        &.budget-help-drawer {
             pointer-events: none;
 
             .custom-radio {
+                &:before {
+                    content: none !important;
+                }
                 @media only screen and (max-width: $media-sm) {
                     min-width: auto;
                 }

@@ -69,7 +69,7 @@
                                             <a href="#" class="title">Premium</a>
                                         </li>
                                         <li class="tab-item">
-                                            <a href="" data-toggle="modal" data-modal-id="#customiseEstimate"
+                                            <a href="" data-toggle="modal" data-modal-class="customiseEstimate"
                                                 class="title model-open">Custom</a>
                                         </li>
                                     </ul>
@@ -92,7 +92,7 @@
                                     <li class="cost-list">
                                         <div class="icon green icon-home"></div>
                                         <p class="title">Others <span class="icon icon-info model-open"
-                                                data-toggle="modal" data-modal-id="#other-info"></span></p>
+                                                data-toggle="modal" data-modal-class="other-info"></span></p>
                                         <h3 class="price">₹15,00,000</h3>
                                     </li>
                                 </ul>
@@ -1421,7 +1421,7 @@
     <!--model pop up start-->
 
     <div id="customiseEstimate" tabindex="-1" role="dialog"
-        class="bs-modal type-md fade typ-share typ-customise-estimate">
+        class="bs-modal customiseEstimate type-md fade typ-share typ-customise-estimate">
         <div class="modal-dialog">
             <div class="modal-body">
                 <div class="modal-content">
@@ -1444,7 +1444,7 @@
 
     <!--model pop up start-->
 
-    <div id="other-info" tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share typ-other-info">
+    <div tabindex="-1" role="dialog" class="bs-modal other-info type-md fade typ-share typ-other-info">
         <div class="modal-dialog">
             <div class="modal-body">
                 <div class="modal-content">
@@ -1465,8 +1465,8 @@
     <!--model pop up end-->
 
 
-    <!---order summery start-->
-    <div class="cp-drawer" id="budget-help">
+    <!---budget-help start-->
+    <div class="cp-drawer budget-help">
         <div class="head-sec p-0">
             <!-- <h2 class="drawer-title">Offers & discounts  <span class="count">58</span></h2> -->
             <a href="#" class="icon icon-close js-close-btn"></a>
@@ -1478,7 +1478,7 @@
                     <p class="calc-desc">Do you have material preferences?</p>
                    <ul class="lyt-grid typ-col-3-no-wrap gap-8">
                         <li class="grid-col">
-                            <div class="bs-radio typ-build-cost typ-yellow pointer-none">
+                            <div class="bs-radio typ-build-cost typ-yellow budget-help-drawer">
                                 <input id="material1" value="economy" name="material" type="radio" checked>
                                 <label for="material1" class="custom-radio">
                                     <div class="material-wrap typ-center-text">
@@ -1520,7 +1520,7 @@
                             </div>
                         </li>
                         <li class="grid-col">
-                            <div class="bs-radio typ-build-cost typ-orange pointer-none">
+                            <div class="bs-radio typ-build-cost typ-orange budget-help-drawer">
                                 <input id="material2" name="material" type="radio" value="standard">
                                 <label for="material2" class="custom-radio">
                                     <div class="material-wrap typ-center-text">
@@ -1562,7 +1562,7 @@
                             </div>
                         </li>
                         <li class="grid-col">
-                            <div class="bs-radio typ-build-cost typ-red pointer-none">
+                            <div class="bs-radio typ-build-cost typ-red budget-help-drawer">
                                 <input id="material3" name="material" type="radio" value="premium">
                                 <label for="material3" class="custom-radio">
                                     <div class="material-wrap typ-center-text">
@@ -1607,7 +1607,7 @@
             </div>
         </div>
     </div>
-    <!---offer drawer end-->
+    <!---budget-help end-->
     <div class="cm-overlay"></div>
 
 
@@ -1623,7 +1623,7 @@
     <script src="../../components/cp-recommend/cp-recommend.js"></script>
     <script src="../../components/cp-rebar-result/cp-rebar-result.js"></script>
     <script src="/components/cp-product-card/cp-product-card.js"></script>
-    <script src="/components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-drawer/calculator-drawer.js"></script>
     <!-- endbuild -->
 </body>
 

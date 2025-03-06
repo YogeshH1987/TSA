@@ -101,6 +101,16 @@ function commonPopup() {
         $('.cm-overlay').addClass('active');
     });
 
+    // modal open using class
+    $('.model-open').on('click', function (e) {
+        e.preventDefault();
+        const modalClass = $(this).data('modal-class'); // Get the class name
+        console.log('Modal Class:', modalClass);
+        $('.' + modalClass).addClass('modal-show'); // Open modal using class
+        $('.cm-overlay').addClass('active');
+    });
+  // modal open using class end
+  
     // Close modal
     $('.js-close, .cm-overlay').on('click',function() {
         console.log('Close clicked');

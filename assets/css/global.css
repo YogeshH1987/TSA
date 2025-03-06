@@ -2660,10 +2660,12 @@ p {
   .bs-radio.typ-build-cost.typ-orange input[type=radio]:checked + .custom-radio {
     background: #FFF8E5;
     border: 4px solid #F16933; }
-  .bs-radio.typ-build-cost.pointer-none {
+  .bs-radio.typ-build-cost.budget-help-drawer {
     pointer-events: none; }
+    .bs-radio.typ-build-cost.budget-help-drawer .custom-radio:before {
+      content: none !important; }
     @media only screen and (max-width: 991px) {
-      .bs-radio.typ-build-cost.pointer-none .custom-radio {
+      .bs-radio.typ-build-cost.budget-help-drawer .custom-radio {
         min-width: auto; } }
   .bs-radio.typ-blog-quiz .custom-radio {
     align-items: start;
