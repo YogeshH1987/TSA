@@ -158,5 +158,22 @@
       .cp-table.typ-cart-summery .list-item.list-head {
         font-family: "Poppins Medium";
         font-size: 1.2rem; }
+  .cp-table.typ-shed-estimator {
+    width: 100%;
+    border: 0; }
+    .cp-table.typ-shed-estimator .list-item {
+      border: 0; }
+      .cp-table.typ-shed-estimator .list-item.list-head {
+        font-family: "Poppins Medium";
+        font-size: 1.2rem; }
+      .cp-table.typ-shed-estimator .list-item .list-item-head {
+        font-family: "Poppins Semibold";
+        font-size: 1.4rem;
+        color: #333333; }
+      .cp-table.typ-shed-estimator .list-item .list-item-desc {
+        font-size: 1.2rem;
+        color: #333333; }
+      .cp-table.typ-shed-estimator .list-item:nth-child(2) {
+        vertical-align: bottom; }
 
 /*# sourceMappingURL=cp-table.css.map */

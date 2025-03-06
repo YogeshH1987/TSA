@@ -1,0 +1,58 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-stages {
+  padding: 1.2rem 1.2rem;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  border: 1px solid #99DAB3;
+  background-color: #E5F6EC;
+  margin-top: 1.2rem; }
+  .cp-stages .prodcut-item {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 0; }
+    .cp-stages .prodcut-item .product-img {
+      width: 5.6rem;
+      height: 5.6rem;
+      border: 1px solid #DEDEDE;
+      background-color: #fff;
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem;
+      overflow: hidden;
+      position: relative; }
+    .cp-stages .prodcut-item .title {
+      font-size: 1.4rem;
+      color: #333333;
+      margin-bottom: 3px; }
+    .cp-stages .prodcut-item .link {
+      font-size: 1.2rem;
+      text-decoration: underline;
+      margin-left: auto;
+      font-family: "Poppins Medium"; }
+  .cp-stages.typ-video .product-img::after {
+    content: "\e90b";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem; }
+  .cp-stages.typ-cross-sell-pro {
+    border: 1px solid #FFD466;
+    background-color: #FFF8E5; }
+    .cp-stages.typ-cross-sell-pro .prodcut-item .title {
+      font-size: 1.6rem;
+      font-family: "Poppins Semibold"; }
+
+/*# sourceMappingURL=cp-stages.css.map */

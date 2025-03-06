@@ -1,0 +1,74 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-stages {
+    padding: 1.2rem 1.2rem;
+    @include border-radius(1.2rem);
+    border: 1px solid #99DAB3;
+    background-color: #E5F6EC;
+    margin-top: 1.2rem;
+
+    .prodcut-item {
+        display: flex;
+        gap: 1.2rem;
+        margin-bottom: 0;
+
+        .product-img {
+            width: 5.6rem;
+            height: 5.6rem;
+            border: 1px solid #DEDEDE;
+            background-color: #fff;
+            @include border-radius(1.2rem);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .title {
+            font-size: 1.4rem;
+            color: #333333;
+            margin-bottom: 3px;
+        }
+
+        .link {
+            font-size: 1.2rem;
+            text-decoration: underline;
+            margin-left: auto;
+            font-family: $font-medium;
+        }
+    }
+
+    &.typ-video {
+        .product-img {
+            &::after{
+                content: "\e90b";
+                font-family: 'icomoon' !important;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                color: #FFFFFF;
+                font-size: 1.6rem;
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
+
+    }
+    &.typ-cross-sell-pro{
+        border: 1px solid #FFD466;
+        background-color: #FFF8E5;
+
+        .prodcut-item {
+
+    
+            .title {
+                font-size: 1.6rem;
+                font-family: $font-semiBold;
+            }
+   
+        }
+    
+    }
+}

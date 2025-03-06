@@ -259,14 +259,42 @@
     &.typ-cart-summery {
         width: 100%;
         border: 0;
-       
 
-            .list-item {
-                border: 0;
-                &.list-head {
-                    font-family: $font-medium;
-                    font-size: 1.2rem;
-                }
+
+        .list-item {
+            border: 0;
+
+            &.list-head {
+                font-family: $font-medium;
+                font-size: 1.2rem;
             }
+        }
+    }
+
+    &.typ-shed-estimator {
+        width: 100%;
+        border: 0;
+
+        .list-item {
+            border: 0;
+
+            &.list-head {
+                font-family: $font-medium;
+                font-size: 1.2rem;
+            }
+
+            .list-item-head {
+                font-family: $font-semiBold;
+                font-size: 1.4rem;
+                color: $clr-base;
+            }
+            .list-item-desc {
+                font-size: 1.2rem;
+                color: $clr-base;
+            }
+            &:nth-child(2){
+                vertical-align: bottom;
+            }
+        }
     }
 }

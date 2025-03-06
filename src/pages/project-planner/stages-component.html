@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Project Planner</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
+    <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
+
+    <link rel="stylesheet" href="/components/cp-stages/cp-stages.css" />
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="cp-header">
+            <div class="container">
+                <div class="top-sec">
+                    <div class="hamburger-menu">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="lhs">
+                        <div class="logo-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+
+                        <div class="quick-link-wrap">
+                            <ul class="quick-link-list">
+                                <li class="quick-link-icon-item">
+                                    <a href="#" class="icon-search quick-link-item"></a>
+                                </li>
+                                <li class="quick-link-icon-item">
+                                    <a href="#" class="icon-cart quick-link-item"></a>
+                                </li>
+                                <li class="quick-link-icon-item">
+                                    <a href="#" class="icon-profile quick-link-item"></a>
+                                </li>
+                                <li class="quick-link-icon-item">
+                                    <a href="#" class="icon-language quick-link-item"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="container">
+                    <span class="close icon-close js-close-nav"></span>
+
+                    <div class="cp-search">
+                        <div class="search-wrap">
+                            <input type="text" class="search-input" placeholder="Search">
+                            <span class="search-icon icon-search"></span>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <span class="nav-icon icon-cart typ1"></span>
+                                <a href="javascript:void(0)" class="nav-link">Shop products</a>
+                                <span class="arrow"></span>
+                                <div class="sub-nav-menu">
+                                    <div class="cp-sub-menu">
+                                        <div class="top-sec">
+                                            <div class="lhs">
+
+                                                <h2 class="title js-shop-cat">
+                                                    <span class="header-icon icon-cart"></span>
+                                                    Shop by category
+                                                </h2>
+
+                                                <ul class="cat-grid open-inner-menu">
+                                                    <h2 class="title cm-mobile inner-heading">
+                                                        <span class="inside-icon icon-arrow"></span>
+                                                        Shop by category
+                                                    </h2>
+                                                    <li class="col js-category-menu">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/image 4868.png"
+                                                                alt="menu-img" />
+                                                            <h3 class="col-title">Home construction</h3>
+                                                        </div>
+                                                        <ul class="cont-wrap open-category-menu">
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Rebars</a>
+                                                                <span class="new-lable">New</span>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Superlinks</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Roof designs</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Binding wire
+                                                                    fencing</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Green blocks</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="col">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/fabrication.png"
+                                                                alt="menu-img" />
+                                                            <h3 class="col-title">Fabrication</h3>
+                                                        </div>
+                                                        <ul class="cont-wrap">
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Rectangular
+                                                                    tubes</a>
+
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Square tubes</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Circlular
+                                                                    tubes</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">GI Roofing
+                                                                    sheets</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Colored roofing
+                                                                    sheets</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <h3 class="title typ2">Fabricated homes </h3>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="col">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/interior.png"
+                                                                alt="menu-img" />
+                                                            <h3 class="col-title">Interiors</h3>
+                                                        </div>
+                                                        <ul class="cont-wrap">
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Doors</a>
+
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Windows</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Door frames</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="col">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/tool&diya.png"
+                                                                alt="menu-img" />
+                                                            <h3 class="col-title">Tools & DIY</h3>
+                                                        </div>
+                                                        <ul class="cont-wrap">
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Trade hand
+                                                                    tools</a>
+
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">DIY tool
+                                                                    kits</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Files</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Industrial &
+                                                                    hardware</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Garden tools</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Agri tool</a>
+                                                            </li>
+                                                            <li class="inner-menu-item">
+                                                                <a href="#" class="inner-menu-link">Soil
+                                                                    conditioner</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rhs ">
+
+                                                <h2 class="title js-brand-menu">
+                                                    <span class="header-icon icon-cart "></span>
+                                                    Shop by brand
+                                                </h2>
+                                                <ul class="menu-list open-inner-menu">
+                                                    <h2 class="title cm-mobile inner-heading">
+                                                        <span class="inside-icon icon-arrow"></span>
+                                                        Shop by brand
+                                                    </h2>
+                                                    <li class="menu-item">
+
+                                                        <a class="menu-link" href="#">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/TataTisconLogo 1.png" alt="brand">
+                                                            </span>
+                                                            Tiscon
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="#">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/Frame 1597882718.png" alt="brand">
+                                                            </span>
+                                                            Wiron</a>
+                                                    </li>
+
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/TataTisconLogo 2.png" alt="brand">
+                                                            </span>
+                                                            Structura
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="#">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/TataTisconLogo 2 (1).png" alt="brand">
+                                                            </span>
+                                                            Agrico
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/Frame 1597882714.png" alt="brand">
+                                                            </span>
+                                                            Durashine
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/Frame 1597882713.png" alt="brand">
+                                                            </span>
+                                                            Pravesh
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/Frame 1597882715.png" alt="brand">
+                                                            </span>
+                                                            DhurviGold
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/TataTisconLogo 2 (2).png" alt="brand">
+                                                            </span>
+                                                            Tiscobuild
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">
+                                                            <span class="brand-logo">
+                                                                <img src="/images/Frame 1597882713 (1).png" alt="brand">
+                                                            </span>
+                                                            Nestin
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="btn btn-link text-right cm-desktop">View all
+                                                    offers</a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-menu-sec">
+
+                                            <h2 class="title js-offers-menu">
+                                                <span class="header-icon icon-cart"></span>
+                                                Available offers
+                                            </h2>
+
+                                            <ul class="offers-list typ-sub-menu open-inner-menu">
+                                                <h2 class="title cm-mobile inner-heading">
+                                                    <span class="inside-icon icon-arrow"></span>
+                                                    Available offers
+                                                </h2>
+                                                <li class="offers-item">
+                                                    <div class="cp-offers">
+                                                        <div class="lft typ-blue">
+                                                            <span>Discount</span>
+                                                        </div>
+                                                        <div class="rht typ-blue-border">
+                                                            <h3 class="title">Navratri special</h3>
+                                                            <p class="desc">Get 5% off on all products sitewide, on
+                                                                the purchase of min Rs. 10,000</p>
+                                                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="offers-item">
+                                                    <div class="cp-offers">
+                                                        <div class="lft typ-green">
+                                                            <span>CASHBACK</span>
+                                                        </div>
+                                                        <div class="rht typ-green-border">
+                                                            <h3 class="title">Instant cashback</h3>
+                                                            <p class="desc">Get 5% off on all products sitewide, on
+                                                                the purchase of min Rs. 10,000</p>
+                                                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="offers-item">
+                                                    <div class="cp-offers">
+                                                        <div class="lft typ-yellow">
+                                                            <span>Discount</span>
+                                                        </div>
+                                                        <div class="rht typ-yellow-border">
+                                                            <h3 class="title">Navratri special</h3>
+                                                            <p class="desc">Get 5% off on all products sitewide, on
+                                                                the purchase of min Rs. 10,000</p>
+                                                            <span class="offer-valid">Valid till 31 Oct 2024</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-icon icon-brochure typ2"></span>
+                                <a href="#" class="nav-link">Home building guide</a>
+                                <span class="arrow"></span>
+                                <div class="sub-nav-menu">
+                                    <div class="cp-sub-menu">
+                                        <div class="top-sec typ2">
+                                            <div class="lhs">
+                                                <h2 class="title">Explore by stage </h2>
+                                                <ul class="cat-grid">
+                                                    <li class="col typ2">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/planning.png"
+                                                                alt="menu-img" />
+                                                        </div>
+                                                        <a href="#" class="col-title">Planning stage</a>
+
+
+                                                    </li>
+                                                    <li class="col typ2">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/planning.png"
+                                                                alt="menu-img" />
+                                                        </div>
+                                                        <a href="#" class="col-title">Exterior construction</a>
+
+
+                                                    </li>
+                                                    <li class="col typ2">
+                                                        <div class="img-wrap">
+                                                            <img src="../components/cp-sub-menu/images/planning.png"
+                                                                alt="menu-img" />
+                                                        </div>
+                                                        <a href="#" class="col-title">Interior construction</a>
+
+
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="rhs ">
+                                                <h2 class="title">Learning centre </h2>
+                                                <ul class="menu-list">
+                                                    <li class="menu-item active">
+                                                        <a class="menu-link" href="#">Popular articles</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="#">Trending videos</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="#">Featured content</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#" class="menu-link">User testimonials</a>
+                                                    </li>
+
+                                                </ul>
+                                                <a href="#" class="btn btn-link text-right">View all offers</a>
+                                            </div>
+                                            <div class="rhs typ3">
+                                                <div class="img-wrap">
+                                                    <img src="../components/cp-sub-menu/images/not-sure.png" alt="" />
+                                                    <h3 class="
+													">Not surewhere tostart?</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-icon icon-calculator typ3"></span>
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-icon icon-calculator typ4"></span>
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-icon icon-call typ5"></span>
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-icon icon-Question typ6"></span>
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <main class="main">
+        <!-- breadcrumb starts -->
+        <section class="bs-sec typ-first-sec pd-bottom-8">
+            <div class="container">
+                <div class="sec-cont">
+                    <!-- <ul class="cp-breadcrumb">
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Design & calculator</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">My plan</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link active type-bold"> Stage 3</a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb ends -->
+
+        <!-- Main-->
+        <section class="bs-sec typ-project-planner">
+            <div class="container">
+                <div class="sec-cont">
+                 <div class="cp-stages typ-video">
+                    <div class="prodcut-item">
+                        <div class="product-img">
+                            <img src="/components/cp-stages/images/img1.png" alt="rebars">
+                        </div>
+
+                        <div class="product-desc">
+                            <h3 class="title">Add some green- green living solutions</h3>
+                            <a href="#" class="link">Watch now</a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="cp-stages">
+                    <div class="prodcut-item">
+                        <div class="product-img">
+                            <img src="/components/cp-stages/images/img1.png" alt="rebars">
+                        </div>
+
+                        <div class="product-desc">
+                            <h3 class="title">Indoor garden Ideas for every Indian home</h3>
+                            <a href="#" class="link">Read more</a>
+                        </div>
+                    </div>
+                 </div>
+
+
+                 <div class="cp-stages">
+                    <div class="prodcut-item">
+                        <div class="product-img">
+                            <img src="/components/cp-stages/images/img2.png" alt="rebars">
+                        </div>
+
+                        <div class="product-desc">
+                            <h3 class="title">Explore available service providers in your area</h3>
+                            <a href="#" class="link">View all </a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="cp-stages">
+                    <div class="prodcut-item">
+                        <div class="product-img">
+                            <img src="/components/cp-stages/images/img3.png" alt="rebars">
+                        </div>
+
+                        <div class="product-desc">
+                            <h3 class="title">Explore home designs as per your need</h3>
+                            <a href="#" class="link">View all designs </a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="cp-stages">
+                    <div class="prodcut-item">
+                        <div class="product-img">
+                            <img src="/components/cp-stages/images/img4.png" alt="rebars">
+                        </div>
+
+                        <div class="product-desc">
+                            <h3 class="title">Estimate the cost to make your dream home</h3>
+                            <a href="#" class="link">Go to budget calculator </a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="cp-stages typ-cross-sell-pro">
+                    <div class="prodcut-item">
+                        <div class="product-img">
+                            <img src="/components/cp-stages/images/img5.png" alt="rebars">
+                        </div>
+
+                        <div class="product-desc">
+                            <h3 class="title">Tata Tiscon 550SD</h3>
+                            <a href="#" class="link">Shop Rebars </a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+        </section>
+        <!--Dadhboard Main-->
+
+    </main>
+    <!-- Footer Start -->
+    <footer>
+        <div class="cp-footer">
+            <div class="container">
+                <div class="footer-catagery">
+                    <div class="footer-link">
+                        <h2 class="footer-link-title">Design & inspiration </h2>
+                        <ul class="f-link-list">
+                            <li class="f-link">
+                                <a href="#" class="link">Home designs</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Railing designs</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Gate designs</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Car shed designs</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Roof designs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2 class="footer-link-title">Tools & calculators</h2>
+                        <ul class="f-link-list">
+                            <li class="f-link">
+                                <a href="#" class="link">Building cost estimator</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Budget tracker</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Project planner</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Rebar estimator</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Shed estimator</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Fencing estimator</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2 class="footer-link-title">Service providers</h2>
+                        <ul class="f-link-list">
+                            <li class="f-link">
+                                <a href="#" class="link">Architects</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Contractors & masonss</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Fabricators</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Dealers</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Register as a service provider</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2 class="footer-link-title">Home building guides</h2>
+                        <ul class="f-link-list">
+                            <li class="f-link">
+                                <a href="#" class="link">Planning stage</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Construction stage</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Interior stage</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Learning zone</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h2 class="footer-link-title">Company</h2>
+                        <ul class="f-link-list">
+                            <li class="f-link">
+                                <a href="#" class="link">About Tata Steel Aashiyana</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Help & Support</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">FAQs</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Policies</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Terms & Conditions</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Disclaimer</a>
+                            </li>
+                            <li class="f-link">
+                                <a href="#" class="link">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brand-bar">
+                    <div class="lhs">
+                        <div class="brand-logo">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="policy-wrap">
+                            <ul class="policy-list">
+                                <li class="policy-item">
+                                    Contact us: 1800-108-8282
+                                </li>
+                                <li class="policy-item">
+                                    <a href="" class="policy-link">Privacy policy</a>
+                                </li>
+                                <li class="policy-item">
+                                    <a href="" class="policy-link">Cookie policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="media-wrap">
+                            <h2 class="media-title">Connect with us</h2>
+                            <ul class="media-list">
+                                <li class="media-item">
+                                    <a href="" class="media-link">
+                                        <span class="icon icon-face-book"></span>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="" class="media-link">
+                                        <span class="icon icon-insta"></span>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="" class="media-link">
+                                        <span class="icon icon-youtube"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <spam class="copywright">© 2024 Tata Steel</spam>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+    <!-- Upload Photo-->
+    <div class="cp-drawer" id="upload-photo">
+        <div class="cp-form mt-0 typ-pp-modal">
+            <div class="head-sec">
+                <h2 class="drawer-title">Upload a photo</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+
+            <div class="cp-attached-file typ-project-planner typ-modal">
+                <p class="desc">Capture your progress! Upload photos to showcase and document your construction journey.
+                </p>
+
+                <div class="img-thumbs" id="img-preview">
+
+                </div>
+
+                <div class="upload-file-area">
+                    <span class="icon icon-camera"></span>
+                    <h3 class="title">Upload photo</h3>
+                    <p class="desc">Supported formats: PNG and JPEG. File size should not exceed 5 MB. Maximum up to 5
+                        photos</p>
+                    <label class="label"> <input type="file" name="images[]" multiple id="upload-img"
+                            class="default-file-input"> </label>
+                </div>
+                <div class="divider"><span class="text">or</span></div>
+                <div class="btn-wrap camera-btn-wrap">
+                    <button class="btn btn-outline">Open camera and take photo</button>
+                </div>
+               
+            </div>
+            <div class="btn-wrap text-center typ-btn-two">
+                <button type="submit" class="btn btn-outline" id="cancel-btn">Cancel</button>
+                <button type="submit" class="btn" id="save-btn">Save</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- status-->
+    <div class="cp-drawer" id="status">
+        <div class="request-form">
+            <div class="head-sec">
+                <h2 class="drawer-title">Status</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+            <div class="cont-wrap">
+                <div class="cp-form project-planner mt-0">
+                    <div class="form-group">
+                        <div class="cp-select">
+                            <h3 class="title">Status</h3>
+                            <div class="select-dropdown">
+                                <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                    <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
+                                </button>
+                                <ul class="select-dropdown-list">
+                                    <li class="dropdown-item">
+                                        <span data-value="1" class="select-dropdown-list-item">In progress</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="2" class="select-dropdown-list-item">In progress</span>
+
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="3" class="select-dropdown-list-item">In progress</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="cp-select">
+                            <h3 class="title">Reason for pause</h3>
+                            <div class="select-dropdown">
+                                <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                    <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
+                                </button>
+                                <ul class="select-dropdown-list">
+                                    <li class="dropdown-item">
+                                        <span data-value="1" class="select-dropdown-list-item">Financial reasons</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="2" class="select-dropdown-list-item">Financial reasons</span>
+
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span data-value="3" class="select-dropdown-list-item">Financial reasons</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group error">
+                        <label class="form-label">Start date</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control validate-name" value="" id="start-date"
+                                placeholder="Enter date" required="">
+                            <span class="icon icon-calender"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+
+                    <div class="form-group error">
+                        <label class="form-label">Estimated end date</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control validate-name" value="" id="end-date"   placeholder="Enter date"
+                                required=""> <span class="icon icon-calender"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="info-wrap">
+                        <span class="icon icon-info"></span>
+                        <p class="desc">Will you be able to finish this on the expected end date? If not, change the end
+                            date.</p>
+                    </div>
+                    <div class="form-group error">
+                        <label class="form-label">Date of completion</label>
+                        <div class="form-input-wrap">
+                            <input type="text" class="form-control validate-name" value="20-3-2025"
+                                id="date-of-completion"   placeholder="Enter date" required="" disabled>
+                            <span class="icon icon-calender disable"></span>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+
+                    <div class="act-wrap">
+                        <button class="btn btn-default typ-request-submit" type="button">Save status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <!--model pop up start-->
+
+    <div id="gallery" tabindex="-1" role="dialog" class="bs-modal type-lg fade typ-moodboard-gallery">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content ">
+
+                    <button class="close-btn icon-close js-close " type="button "></button>
+                    <div class="cp-model-content">
+                        <span class="icon"></span>
+                        <p class="desc">Photo Gallery</p>
+                        <!--Product thumb slider start-->
+                        <div class="cp-prod-thumb-slider">
+                            <div class="nestudio-container">
+                                <div class="bs-swiper typ-moodboard-big swiper js-popup-moodboard-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-architect/images/home1.png">
+                                                <img src="../components/cp-architect/images/home1.png" alt="homes"
+                                                    class="img">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="swiper-button-prev-thumb"></div>
+                                <div class="swiper-button-next-thumb"></div>
+                            </div>
+                            <div class="thumb-nestudio-container">
+                                <div class="bs-swiper typ-moodboard-thumb js-popup-thumb-moodboard-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../components/cp-architect/images/home1.png" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <!--Product thumb slider end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
+
+    <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="/components/cp-header/cp-header.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
