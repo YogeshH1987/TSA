@@ -161,8 +161,9 @@
       gap: 0.3rem; } }
   .lyt-grid.typ-col-3-no-wrap .grid-col {
     width: 33%; }
-  .lyt-grid.typ-col-3-no-wrap.gap-8 {
-    gap: 8px; }
+  .lyt-grid.typ-col-3-no-wrap.budget-help-drawer {
+    gap: 8px;
+    align-items: initial; }
   .lyt-grid.typ-col-4 {
     flex-wrap: wrap; }
     .lyt-grid.typ-col-4 .grid-col {
