@@ -151,20 +151,17 @@
     -moz-border-radius: 1.6rem;
     overflow: hidden;
     margin-bottom: 6.4rem;
-    background: linear-gradient(180deg, #FFF3CA 33.85%, #373737 86.7%);
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    padding: 3rem; }
+    justify-content: center; }
     @media only screen and (max-width: 768px) {
       .cp-rebar-result.typ-calculator-result .wrapper .wrapper-img-wrap {
         min-height: auto;
         border-radius: 0;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
-        margin-bottom: 4.8rem;
-        padding: 7rem 0rem; } }
+        margin-bottom: 4.8rem; } }
   .cp-rebar-result.typ-calculator-result .wrapper .bullet-list-wrap {
     background-color: #F3F4F6;
     padding: 2.4rem 2rem;
