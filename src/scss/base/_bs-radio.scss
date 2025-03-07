@@ -503,8 +503,10 @@
         &.budget-help-drawer {
             pointer-events: none;
             height: 100%;
+            margin-bottom: 0;
             .custom-radio {
                 height: 100%;
+                padding: 1.2rem 1.2rem;
                 &:before {
                     content: none !important;
                 }

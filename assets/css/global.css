@@ -2662,9 +2662,11 @@ p {
     border: 4px solid #F16933; }
   .bs-radio.typ-build-cost.budget-help-drawer {
     pointer-events: none;
-    height: 100%; }
+    height: 100%;
+    margin-bottom: 0; }
     .bs-radio.typ-build-cost.budget-help-drawer .custom-radio {
-      height: 100%; }
+      height: 100%;
+      padding: 1.2rem 1.2rem; }
       .bs-radio.typ-build-cost.budget-help-drawer .custom-radio:before {
         content: none !important; }
       @media only screen and (max-width: 991px) {

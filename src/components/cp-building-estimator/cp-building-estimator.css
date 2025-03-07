@@ -111,5 +111,8 @@
     @media only screen and (max-width: 768px) {
       .cp-building-estimator.budget-help-drawer {
         margin: 0; } }
+    .cp-building-estimator.budget-help-drawer .calc-desc {
+      margin: 0 auto 2rem;
+      max-width: 470px; }
 
 /*# sourceMappingURL=cp-building-estimator.css.map */

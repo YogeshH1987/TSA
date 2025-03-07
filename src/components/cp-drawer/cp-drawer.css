@@ -246,5 +246,10 @@
       background: #fff;
       padding: 1.6rem;
       margin: 0 -2.4rem; }
+  .cp-drawer.budget-help {
+    width: 62rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-drawer.budget-help {
+        width: 100%; } }
 
 /*# sourceMappingURL=cp-drawer.css.map */

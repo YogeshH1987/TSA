@@ -354,8 +354,10 @@
         .cp-prod-thumb-slider {
             position: relative;
             height: calc(100% - 53px);
+
             @media only screen and (max-width: $media-mobile) {
-            height: calc(100% - 29px);}
+                height: calc(100% - 29px);
+            }
         }
 
         .home-story-container {
@@ -369,5 +371,10 @@
             padding: 1.6rem;
             margin: 0 -2.4rem;
         }
+    }
+
+    &.budget-help {
+        width: 62rem;
+        @media only screen and (max-width: $media-mobile) { width: 100%;}
     }
 }
