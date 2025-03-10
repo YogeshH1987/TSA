@@ -6,13 +6,23 @@
 /*opacity- end*/
 .cp-shed-estimator .shed-estimator-wrap {
   padding: 0 4rem; }
+  @media only screen and (max-width: 768px) {
+    .cp-shed-estimator .shed-estimator-wrap {
+      padding: 0 1.6rem;
+      margin: 0 -1.6rem; } }
   .cp-shed-estimator .shed-estimator-wrap .shed-cont {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-estimator .shed-estimator-wrap .shed-cont {
+        flex-direction: column; } }
     .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list {
       width: calc(50% - 1rem);
       position: relative; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list {
+          width: 100%; } }
       .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap {
         border: 1px solid #DEDEDE;
         border-radius: 1.2rem;
@@ -25,14 +35,28 @@
           width: 100%;
           height: 100%;
           object-fit: contain; }
-        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap.typ-height {
+        .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap.typ-slider {
           height: 20.8rem; }
+          @media only screen and (max-width: 768px) {
+            .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap.typ-slider {
+              border: none;
+              border-radius: 0;
+              overflow: visible;
+              height: auto; } }
+          @media only screen and (max-width: 768px) {
+            .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .img-wrap.typ-slider .swiper-slide {
+              border: 1px solid #DEDEDE;
+              border-radius: 1.2rem;
+              -webkit-border-radius: 1.2rem;
+              -moz-border-radius: 1.2rem; } }
       .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .swiper-pagination {
         position: static; }
         .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .swiper-pagination .swiper-pagination-bullet {
           background: #808080; }
         .cp-shed-estimator .shed-estimator-wrap .shed-cont .shed-list .swiper-pagination .swiper-pagination-bullet-active {
           background: #D2042D; }
+    .cp-shed-estimator .shed-estimator-wrap .shed-cont.justify-center {
+      justify-content: center; }
   .cp-shed-estimator .shed-estimator-wrap .form-group .form-label {
     font-size: 1.4rem;
     font-family: "Poppins Regular";
@@ -70,6 +94,9 @@
     -moz-border-radius: 1.2rem;
     padding: 1.6rem 1.2rem;
     margin-top: 4.8rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-estimator .shed-estimator-wrap .grey-form-wrap {
+        margin-top: 3.2rem; } }
     .cp-shed-estimator .shed-estimator-wrap .grey-form-wrap .form-group .form-label {
       color: #808080; }
     .cp-shed-estimator .shed-estimator-wrap .grey-form-wrap .form-group .form-input:disabled {
@@ -79,6 +106,10 @@
     padding-bottom: 4.8rem;
     border-bottom: 3px solid #DEDEDE;
     margin-bottom: 4.8rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-estimator .shed-estimator-wrap.typ-border {
+        margin-bottom: 3.2rem;
+        padding-bottom: 3.2rem; } }
     .cp-shed-estimator .shed-estimator-wrap.typ-border:last-child {
       border-bottom: 0;
       margin-bottom: 0;
@@ -87,14 +118,28 @@
 .cp-shed-fence-estimator {
   max-width: 820px;
   margin: auto; }
+  .cp-shed-fence-estimator .requirement-sec {
+    margin-bottom: 3.2rem; }
   .cp-shed-fence-estimator .requirement-wrap {
     border: 1px solid #DEDEDE;
     border-radius: 1.6rem;
     -webkit-border-radius: 1.6rem;
     -moz-border-radius: 1.6rem;
-    padding: 2.4rem 10rem; }
+    padding: 2.4rem 10rem;
+    background-color: #fff; }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-fence-estimator .requirement-wrap {
+        padding: 2.4rem 0rem; } }
+    .cp-shed-fence-estimator .requirement-wrap.type-fence {
+      padding: 2.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-fence-estimator .requirement-wrap.type-fence {
+          padding: 1.6rem 0; } }
     .cp-shed-fence-estimator .requirement-wrap .requirement-head {
       margin-bottom: 1.7rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-fence-estimator .requirement-wrap .requirement-head {
+          padding: 0 1.6rem; } }
       .cp-shed-fence-estimator .requirement-wrap .requirement-head .title {
         font-size: 2rem;
         font-family: "Poppins Semibold";
@@ -104,6 +149,21 @@
         font-family: "Poppins Medium";
         font-size: 1.4rem;
         color: #333333; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-head.typ-fence {
+        text-align: center; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-head.typ-fence .title {
+          font-size: 2.8rem; }
+          @media only screen and (max-width: 768px) {
+            .cp-shed-fence-estimator .requirement-wrap .requirement-head.typ-fence .title {
+              text-align: left; } }
+    @media only screen and (max-width: 768px) {
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont {
+        padding: 0 1.6rem; } }
+    .cp-shed-fence-estimator .requirement-wrap .requirement-cont .sub-title {
+      font-size: 1.6rem;
+      font-family: "Poppins Medium";
+      color: #333333;
+      margin-bottom: 1.2rem; }
     .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item {
       display: flex;
       gap: 2rem;
@@ -113,6 +173,14 @@
       -moz-border-radius: 1.2rem;
       background-color: #ECF2FB;
       overflow: hidden; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item {
+          margin: 0 -1.2rem;
+          border-radius: 1.2rem 1.2rem 0 0;
+          -webkit-border-radius: 1.2rem 1.2rem 0 0;
+          -moz-border-radius: 1.2rem 1.2rem 0 0;
+          padding: 1.2rem;
+          flex-direction: column; } }
       .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img {
         width: 12rem;
         height: 12rem;
@@ -121,20 +189,25 @@
         -webkit-border-radius: 1.2rem;
         -moz-border-radius: 1.2rem;
         overflow: hidden; }
+        @media only screen and (max-width: 768px) {
+          .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img {
+            width: 100%;
+            order: 2; } }
         .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img img {
           width: 100%;
           height: 100%;
-          object-fit: cover; }
+          object-fit: contain; }
       .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img-slider .typ-shed-requirement {
         padding-bottom: 8px; }
       .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img-slider .product-image {
+        background-color: #fff;
         border: 1px solid #DEDEDE;
         overflow: hidden;
         border-radius: 1.2rem;
         -webkit-border-radius: 1.2rem;
         -moz-border-radius: 1.2rem;
         padding: 1rem;
-        height: 148rem; }
+        height: 14.8rem; }
         .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img-slider .product-image img {
           width: 100%;
           height: 100%;
@@ -145,6 +218,12 @@
           background: #808080; }
         .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-img-slider .swiper-pagination .swiper-pagination-bullet-active {
           background: #D2042D; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-desc {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          order: 1; } }
       .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-desc .title,
       .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item .product-desc .price {
         color: #00398C;
@@ -156,10 +235,103 @@
           display: flex;
           justify-content: space-between;
           align-items: center; }
+          @media only screen and (max-width: 768px) {
+            .cp-shed-fence-estimator .requirement-wrap .requirement-cont .prodcut-item.typ-2 .product-desc {
+              order: initial; } }
     .cp-shed-fence-estimator .requirement-wrap .requirement-cont .requirement-list {
       margin-top: 1.6rem;
       border-bottom: 1px solid #DEDEDE; }
     .cp-shed-fence-estimator .requirement-wrap .requirement-cont .btn-wrap {
       margin-top: 2.4rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .btn-wrap .btn {
+          min-width: 100%; } }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .btn-wrap.typ-fence {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-shed-fence-estimator .requirement-wrap .requirement-cont .btn-wrap.typ-fence .btn {
+            min-width: 50%; } }
+    .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap {
+      border: 1px solid #B1CBF1;
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem;
+      overflow: hidden;
+      margin-top: 1.6rem; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .product-dimension-head {
+        display: flex;
+        background-color: #D8E5F8;
+        justify-content: space-between;
+        padding: 8px 1.6rem;
+        border-bottom: 1px solid #B1CBF1; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .product-dimension-head .title {
+          font-size: 1.4rem;
+          color: #333333;
+          font-family: "Poppins Semibold"; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .product-dimension-head .icon {
+          font-size: 1.6rem;
+          color: #3D7EDB;
+          cursor: pointer; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .product-dimension-total {
+        background-color: #D8E5F8;
+        padding: 8px 1.6rem;
+        border-top: 1px solid #B1CBF1; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .product-dimension-cont {
+        padding: 1.2rem 1.6rem;
+        background-color: #ECF2FB; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .dimension-detail-wrap {
+        display: flex;
+        gap: 3rem; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .dimension-detail-wrap .dimension-detail-list .dimension-title {
+          font-size: 1.2rem;
+          color: #333333;
+          display: block;
+          margin-bottom: 2px; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .dimension-detail-wrap .dimension-detail-list .price {
+          font-size: 1.4rem;
+          color: #333333;
+          display: block;
+          font-family: "Poppins Semibold"; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .info-wrap {
+        display: flex;
+        background: #D8E5F8;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+        gap: 8px;
+        margin-bottom: 0; }
+        @media only screen and (max-width: 991px) {
+          .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .info-wrap {
+            width: 100%; } }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .info-wrap .icon {
+          font-size: 2.4rem;
+          color: #3D7EDB; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap .info-wrap .desc {
+          font-size: 1.4rem;
+          color: #3D7EDB;
+          margin-bottom: 0; }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap.typ-fence {
+        margin-top: 0rem; }
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap.typ-fence .dimension-detail-wrap {
+          flex-direction: column;
+          gap: 1.6rem; }
+          .cp-shed-fence-estimator .requirement-wrap .requirement-cont .product-dimension-wrap.typ-fence .dimension-detail-wrap .dimension-detail-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+    .cp-shed-fence-estimator .requirement-wrap .requirement-cont .fence-pro-cont {
+      display: flex;
+      gap: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-shed-fence-estimator .requirement-wrap .requirement-cont .fence-pro-cont {
+          flex-direction: column; } }
+      .cp-shed-fence-estimator .requirement-wrap .requirement-cont .fence-pro-cont .fence-pro-list {
+        width: calc(50% - 1rem); }
+        @media only screen and (max-width: 768px) {
+          .cp-shed-fence-estimator .requirement-wrap .requirement-cont .fence-pro-cont .fence-pro-list {
+            width: 100%; } }
 
 /*# sourceMappingURL=cp-shed-estimator.css.map */

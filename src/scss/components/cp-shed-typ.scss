@@ -6,6 +6,7 @@
     border: 1px solid $clr-border;
     background: $clr-root;
     overflow: hidden;
+
     @media only screen and (max-width: $media-mobile) {
         @include border-radius(1.2rem);
     }
@@ -30,8 +31,8 @@
         .detail-desc {
             font-family: $font-regular;
             font-size: 1.2rem;
-            line-height:1.6rem;
-            color:#666666;
+            line-height: 1.6rem;
+            color: #666666;
             margin-bottom: 0;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -105,4 +106,88 @@
         }
     }
 
+}
+
+.cp-fence-type {
+    .detail-wrap {
+        margin-top: 1.6rem;
+
+        .detail-tile {
+            font-family: $font-semiBold;
+            font-size: 1.6rem;
+            color: $clr-base;
+        }
+
+    }
+
+    .img-wrap {
+        height: 15.2rem;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        @include border-radius(1.6rem);
+        border: 1px solid $clr-border;
+
+        img {
+            height: 100%;
+            @include border-radius(1.6rem);
+            object-fit: cover;
+        }
+
+        @media only screen and (max-width: $media-mobile) {
+            height: 14.4rem;
+            @include border-radius(1.2rem);
+
+            img {
+                @include border-radius(1.2rem);
+            }
+        }
+
+        &::after {
+            content: '';
+            border: 4px solid #D2042D;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 1.2rem;
+            -webkit-border-radius: 1.2rem;
+            -moz-border-radius: 1.2rem;
+            z-index: 1;
+            opacity: 0;
+        }
+    }
+
+    .selected-text {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 1.4rem;
+        height: 4rem;
+        padding: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        @include border-radius(0 0 1.6rem 1.6rem);
+    }
+
+    &.selected {
+        .selected-text {
+            display: flex;
+        }
+
+        .img-wrap {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
 }

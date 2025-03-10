@@ -1,0 +1,181 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-fence-estimator .Product-img {
+  border: 1px solid #DEDEDE;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  height: 194px;
+  overflow: hidden;
+  margin-bottom: 2.4rem; }
+  .cp-fence-estimator .Product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+.cp-fence-estimator .cp-select .select-dropdown .select-dropdown-button .select-text {
+  color: #333;
+  font-family: "Poppins Medium"; }
+.cp-fence-estimator .cp-select .select-dropdown .select-dropdown-button .zmdi-chevron-down::after {
+  content: "\e90e";
+  font-family: 'icomoon';
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #333333; }
+.cp-fence-estimator .typ-fence-dimension,
+.cp-fence-estimator .typ-fence-dimension-head {
+  margin-bottom: 1.2rem; }
+  .cp-fence-estimator .typ-fence-dimension .custom-radio,
+  .cp-fence-estimator .typ-fence-dimension-head .custom-radio {
+    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1.2rem 1.2rem 1.2rem 6.2rem;
+    position: relative;
+    font-size: 1.6rem;
+    color: #666666; }
+  .cp-fence-estimator .typ-fence-dimension .details,
+  .cp-fence-estimator .typ-fence-dimension-head .details {
+    width: 28%; }
+  .cp-fence-estimator .typ-fence-dimension input[type="radio"]:checked + .custom-radio,
+  .cp-fence-estimator .typ-fence-dimension-head input[type="radio"]:checked + .custom-radio {
+    font-family: "Poppins Medium"; }
+  .cp-fence-estimator .typ-fence-dimension .checkmark,
+  .cp-fence-estimator .typ-fence-dimension-head .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    height: 21px;
+    width: 21px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border: 2px solid #999999;
+    transition: all 0.3s; }
+  .cp-fence-estimator .typ-fence-dimension .checkmark::after,
+  .cp-fence-estimator .typ-fence-dimension-head .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .cp-fence-estimator .typ-fence-dimension .checkmark::after,
+  .cp-fence-estimator .typ-fence-dimension-head .checkmark::after {
+    top: 3px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #3D7EDB; }
+  .cp-fence-estimator .typ-fence-dimension input[type="radio"]:checked + .custom-radio .checkmark::after,
+  .cp-fence-estimator .typ-fence-dimension-head input[type="radio"]:checked + .custom-radio .checkmark::after {
+    display: block; }
+.cp-fence-estimator .typ-fence-dimension-head {
+  pointer-events: none; }
+  .cp-fence-estimator .typ-fence-dimension-head .custom-radio {
+    border: none;
+    background-color: #F3F4F6;
+    font-family: "Poppins Medium";
+    font-size: 1.4rem;
+    color: #333333;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; }
+.cp-fence-estimator .cont-sub-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Poppins Semibold" !important; }
+  .cp-fence-estimator .cont-sub-title .icon-img {
+    border: 1px solid #DEDEDE;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    width: 5.6rem;
+    height: 5.6rem; }
+    .cp-fence-estimator .cont-sub-title .icon-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+.cp-fence-estimator .form-group {
+  margin-bottom: 2.4rem; }
+  .cp-fence-estimator .form-group .form-input {
+    border-radius: 12px;
+    border: 1px solid #dedede;
+    font-size: 1.6rem;
+    font-family: "Poppins Medium";
+    color: #333333;
+    padding: 1.2rem 1.6rem;
+    width: 100%; }
+  .cp-fence-estimator .form-group.typ-fence-flex {
+    display: flex;
+    gap: 1.2rem; }
+.cp-fence-estimator .cross-req-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 0;
+  padding: 0; }
+  .cp-fence-estimator .cross-req-btn-wrap .btn {
+    width: calc(50% - 0.5rem); }
+    @media only screen and (max-width: 768px) {
+      .cp-fence-estimator .cross-req-btn-wrap .btn {
+        min-width: auto; } }
+  .cp-fence-estimator .cross-req-btn-wrap .btn-cross {
+    background-color: #ECF2FB;
+    border: 1px solid #3D7EDB;
+    color: #3D7EDB;
+    font-family: "Poppins Medium"; }
+  .cp-fence-estimator .cross-req-btn-wrap .btn-cross-outline {
+    border: 1px solid #DEDEDE;
+    color: #666666;
+    background-color: #fff; }
+
+.cp-fence-estimator-type {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; }
+  .cp-fence-estimator-type .lhs {
+    width: calc(50% - 2rem);
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 2.4rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-fence-estimator-type .lhs {
+        width: 100%;
+        border: 0;
+        padding: 0; } }
+    .cp-fence-estimator-type .lhs .bs-swiper {
+      padding-bottom: 2.4rem; }
+    .cp-fence-estimator-type .lhs .btn-wrap .btn {
+      min-width: 34.3rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-fence-estimator-type .lhs .btn-wrap .btn {
+          min-width: 100%; } }
+  .cp-fence-estimator-type .rhs {
+    width: 50%; }
+    .cp-fence-estimator-type .rhs .fence-type-img-list {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-areas: "A C" "B C";
+      gap: 2rem; }
+      .cp-fence-estimator-type .rhs .fence-type-img-list .item1 {
+        grid-area: A; }
+      .cp-fence-estimator-type .rhs .fence-type-img-list .item2 {
+        grid-area: B; }
+      .cp-fence-estimator-type .rhs .fence-type-img-list .item3 {
+        grid-area: C; }
+      .cp-fence-estimator-type .rhs .fence-type-img-list .img-item {
+        border-radius: 1.6rem;
+        -webkit-border-radius: 1.6rem;
+        -moz-border-radius: 1.6rem;
+        overflow: hidden; }
+        .cp-fence-estimator-type .rhs .fence-type-img-list .img-item img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+
+/*# sourceMappingURL=cp-fence-estimator.css.map */

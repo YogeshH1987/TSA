@@ -1052,6 +1052,53 @@
       }
     }
   }
+
+  &.typ-fence-estimator {
+    position: relative;
+
+    .tab-list {
+      border-bottom: 1px solid $clr-border;
+      border-top: 1px solid $clr-border;
+
+      .tab-item {
+        .title {
+          border: 0;
+          position: relative;
+          padding: 1.6rem 2rem;
+          min-width: 18.8rem;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          text-align: center;
+          text-transform: capitalize;
+          margin-bottom: 0;
+          &::after {
+            position: absolute;
+            content: '';
+            background: #D2042D;
+            width: 0%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            transition: all ease-in 0.3s;
+          }
+        }
+
+        &:hover,
+        &.active {
+          .title {
+            background: none;
+            color: $clr-base;
+            text-transform: capitalize;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
 
 

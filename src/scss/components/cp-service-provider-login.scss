@@ -218,7 +218,7 @@
         }
     }
 
-    .typ-shed-steps {
+    .typ-shed-steps, .typ-fence-estimator {
         @include border-radius(1.6rem 1.6rem 0 0);
         margin-top: -16px;
         flex-direction: column;
@@ -226,7 +226,13 @@
         @media only screen and (max-width: $media-mobile) {
             margin-top: 85px;
         }
+        .provider-head {
+            .desc, .head-title{
+                @media only screen and (max-width: $media-mobile) { text-align: center;}
+            }
+        }
     }
+
 
     .mt-0 {
         margin-top: 0;

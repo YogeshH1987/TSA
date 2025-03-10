@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
 
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
-    <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
     <link rel="stylesheet" href="../../components/cp-login/cp-login.css" />
     <link rel="stylesheet" href="/components/cp-service-provider-login/cp-service-provider-login.css" />
     <link rel="stylesheet" href="/components/cp-shed-estimator/cp-shed-estimator.css" />
@@ -506,7 +505,7 @@
                                 <div class="steps-content">
                                     <div class="cp-shed-estimator">
                                         <div class="shed-estimator-wrap typ-border">
-                                            <ul class="shed-cont">
+                                            <ul class="shed-cont justify-center">
                                                 <li class="shed-list">
                                                     <div class="img-wrap">
                                                         <picture>
@@ -588,6 +587,25 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="shed-list">
+                                                    <div class="img-wrap">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../components/cp-shed-estimator/images/roof.png">
+                                                            <img src="../components/cp-shed-estimator/images/roof.png"
+                                                                alt="style-img">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label typ-bold">Rafter spacing (Sr) in ft</label>
+                                                        <input type="text" name="" id="bedrooms"
+                                                        class="form-input validate-name" value="1"
+                                                        placeholder="Enter">
                                                     </div>
                                                 </li>
                                             </ul>
@@ -715,10 +733,10 @@
 
                                     <div class="cp-shed-estimator">
                                         <div class="shed-estimator-wrap typ-border">
-                                            <ul class="shed-cont">
+                                            <ul class="shed-cont justify-center">
                                                 <li class="shed-list">
-                                                    <div class="img-wrap typ-height">
-                                                        <div class="bs-swiper swiper js-shed-type">
+                                                    <div class="img-wrap typ-slider">
+                                                        <div class="bs-swiper js-shed-type">
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
                                                                     <picture>
@@ -835,13 +853,13 @@
                             <div class="cont-wrap">
                                 <div class="steps-content">
 
-                                    <ul class="lyt-grid typ-col-3-no-wrap justify-center">
+                                    <ul class="lyt-grid typ-shed-estimator">
                                         <li class="grid-col">
-                                            <div class="bs-radio typ-build-cost typ-yellow">
+                                            <div class="bs-radio typ-build-cost typ-yellow typ-shed-estimator">
                                                 <input id="material1" value="economy" name="material" type="radio" checked>
                                                 <label for="material1" class="custom-radio">
-                                                    <div class="material-wrap typ-shed-estimator">
-                                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                                    <div class="material-wrap ">
+                                                        <div class="img-wrap"><img src="/images/structura.svg" alt=""></div>
                                                         <h2 class="home-typ">Structura</h2>
                                                         <ul class="detail-list">
                                                             <li class="detail-item">
@@ -871,11 +889,11 @@
                                             </div>
                                         </li>
                                         <li class="grid-col">
-                                            <div class="bs-radio typ-build-cost typ-orange">
+                                            <div class="bs-radio typ-build-cost typ-orange typ-shed-estimator">
                                                 <input id="material2" name="material" type="radio" value="standard">
                                                 <label for="material2" class="custom-radio">	
                                                     <div class="material-wrap">
-                                                        <div class="img-wrap"><span class="icon icon-economy"></span></div>
+                                                        <div class="img-wrap"><img src="/images/structura.svg" alt=""></div>
                                                         <h2 class="home-typ">Structura Z+</h2>
                                                         <ul class="detail-list">
                                                             <li class="detail-item">

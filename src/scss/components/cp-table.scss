@@ -278,6 +278,10 @@
         .list-item {
             border: 0;
 
+            @media only screen and (max-width: $media-mobile) {
+                width: auto;
+            }
+
             &.list-head {
                 font-family: $font-medium;
                 font-size: 1.2rem;
@@ -288,13 +292,27 @@
                 font-size: 1.4rem;
                 color: $clr-base;
             }
+
             .list-item-desc {
                 font-size: 1.2rem;
                 color: $clr-base;
+                display: flex;
+                gap: 4rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    flex-direction: column;
+                    gap: 0rem
+                }
             }
-            &:nth-child(2){
-                vertical-align: bottom;
+
+            &:nth-child(2) {
+
+                .list-item-desc {
+                    display: block;
+                }
             }
         }
     }
+
+
 }

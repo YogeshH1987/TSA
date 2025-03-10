@@ -634,6 +634,36 @@
       text-shadow: #333333 0.9px 0 0.9px; }
       .cp-tab.typ-design-sq .tab-list .tab-item:hover .title::after, .cp-tab.typ-design-sq .tab-list .tab-item.active .title::after {
         width: 100%; }
+.cp-tab.typ-fence-estimator {
+  position: relative; }
+  .cp-tab.typ-fence-estimator .tab-list {
+    border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE; }
+    .cp-tab.typ-fence-estimator .tab-list .tab-item .title {
+      border: 0;
+      position: relative;
+      padding: 1.6rem 2rem;
+      min-width: 18.8rem;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 0; }
+      .cp-tab.typ-fence-estimator .tab-list .tab-item .title::after {
+        position: absolute;
+        content: '';
+        background: #D2042D;
+        width: 0%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        transition: all ease-in 0.3s; }
+    .cp-tab.typ-fence-estimator .tab-list .tab-item:hover .title, .cp-tab.typ-fence-estimator .tab-list .tab-item.active .title {
+      background: none;
+      color: #333333;
+      text-transform: capitalize; }
+      .cp-tab.typ-fence-estimator .tab-list .tab-item:hover .title::after, .cp-tab.typ-fence-estimator .tab-list .tab-item.active .title::after {
+        width: 100%; }
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;

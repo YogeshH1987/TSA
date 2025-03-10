@@ -501,7 +501,7 @@
         }
     }
 
-    &.typ-other-info{
+    &.typ-other-info {
         max-width: 400px;
         max-height: 100%;
 
@@ -750,6 +750,23 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+            }
+        }
+    }
+
+    &.typ-dimensions {
+        max-width: 400px;
+        max-height: 100%;
+
+        .modal-body {
+            .title {
+                font-size: 2rem;
+                color: $clr-base;
+                font-family: $font-semiBold;
+            }
+
+            @media only screen and (max-width: $media-sm) {
+                padding: 1.6rem 0;
             }
         }
     }

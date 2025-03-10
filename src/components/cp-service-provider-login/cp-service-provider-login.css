@@ -157,7 +157,7 @@
     @media only screen and (max-width: 768px) {
       .cp-service-provider-login .typ-provider-steps {
         margin-top: 85px; } }
-  .cp-service-provider-login .typ-shed-steps {
+  .cp-service-provider-login .typ-shed-steps, .cp-service-provider-login .typ-fence-estimator {
     border-radius: 1.6rem 1.6rem 0 0;
     -webkit-border-radius: 1.6rem 1.6rem 0 0;
     -moz-border-radius: 1.6rem 1.6rem 0 0;
@@ -165,8 +165,11 @@
     flex-direction: column;
     padding: 2.4rem 0; }
     @media only screen and (max-width: 768px) {
-      .cp-service-provider-login .typ-shed-steps {
+      .cp-service-provider-login .typ-shed-steps, .cp-service-provider-login .typ-fence-estimator {
         margin-top: 85px; } }
+    @media only screen and (max-width: 768px) {
+      .cp-service-provider-login .typ-shed-steps .provider-head .desc, .cp-service-provider-login .typ-shed-steps .provider-head .head-title, .cp-service-provider-login .typ-fence-estimator .provider-head .desc, .cp-service-provider-login .typ-fence-estimator .provider-head .head-title {
+        text-align: center; } }
   .cp-service-provider-login .mt-0 {
     margin-top: 0; }
   .cp-service-provider-login .mb-0 {

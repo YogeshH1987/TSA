@@ -163,6 +163,9 @@
     border: 0; }
     .cp-table.typ-shed-estimator .list-item {
       border: 0; }
+      @media only screen and (max-width: 768px) {
+        .cp-table.typ-shed-estimator .list-item {
+          width: auto; } }
       .cp-table.typ-shed-estimator .list-item.list-head {
         font-family: "Poppins Medium";
         font-size: 1.2rem; }
@@ -172,8 +175,14 @@
         color: #333333; }
       .cp-table.typ-shed-estimator .list-item .list-item-desc {
         font-size: 1.2rem;
-        color: #333333; }
-      .cp-table.typ-shed-estimator .list-item:nth-child(2) {
-        vertical-align: bottom; }
+        color: #333333;
+        display: flex;
+        gap: 4rem; }
+        @media only screen and (max-width: 768px) {
+          .cp-table.typ-shed-estimator .list-item .list-item-desc {
+            flex-direction: column;
+            gap: 0rem; } }
+      .cp-table.typ-shed-estimator .list-item:nth-child(2) .list-item-desc {
+        display: block; }
 
 /*# sourceMappingURL=cp-table.css.map */

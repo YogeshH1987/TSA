@@ -380,6 +380,39 @@
           color: #B3B3B3; }
       .cp-box.pp-check-list.disable .title {
         color: #999999; }
+  .cp-box.pro-not-available {
+    position: relative;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid #EE4400;
+    background: #FDECE5;
+    position: relative;
+    margin-top: 1.2rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    align-items: center; }
+    .cp-box.pro-not-available .img-wrap {
+      border-radius: 50%;
+      width: 3.6rem;
+      height: 3.6rem;
+      flex: 0 0 3.6rem;
+      background-color: #F16933;
+      margin-right: 1.2rem; }
+      .cp-box.pro-not-available .img-wrap .icon {
+        color: #fff;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        display: flex;
+        justify-content: center; }
+    .cp-box.pro-not-available .cont-wrap {
+      width: 100%;
+      padding-right: 2rem; }
+    .cp-box.pro-not-available .title {
+      padding: 0;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #972B00;
+      font-family: "Poppins Regular"; }
   .cp-box .cost-list-wrap {
     display: flex;
     margin: 3.6rem 0 2.4rem; }

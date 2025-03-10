@@ -2544,6 +2544,7 @@ p {
   .bs-radio.typ-build-cost .custom-radio {
     position: relative;
     min-width: auto;
+    height: 100%;
     padding: 3.2rem 1.6rem; }
     .bs-radio.typ-build-cost .custom-radio:before {
       font-size: 3.3rem;
@@ -2978,6 +2979,18 @@ p {
         -webkit-border-radius: 1.6rem;
         -moz-border-radius: 1.6rem;
         z-index: 1; }
+  .bs-radio.typ-shed-estimator .custom-radio {
+    height: 100%; }
+  .bs-radio.typ-shed-estimator .material-wrap {
+    height: 100%; }
+    .bs-radio.typ-shed-estimator .material-wrap .img-wrap {
+      padding: 5px; }
+  .bs-radio.typ-shed-estimator .detail-list {
+    justify-content: flex-start;
+    align-items: center !important;
+    text-align: center !important; }
+  .bs-radio.typ-fence-size .custom-radio {
+    padding: 1.6rem; }
 
 .star-rating {
   /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
@@ -3574,6 +3587,16 @@ p {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+  .bs-modal.typ-dimensions {
+    max-width: 400px;
+    max-height: 100%; }
+    .bs-modal.typ-dimensions .modal-body .title {
+      font-size: 2rem;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+    @media only screen and (max-width: 991px) {
+      .bs-modal.typ-dimensions .modal-body {
+        padding: 1.6rem 0; } }
 
 /* colors */
 /*font family*/

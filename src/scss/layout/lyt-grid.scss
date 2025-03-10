@@ -53,6 +53,20 @@
       gap: 8px;
       align-items: initial;
     }
+    
+  }
+  &.typ-shed-estimator {
+    justify-content: center;
+    align-items: initial;
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: row;
+      gap: 0.8rem;
+    }
+
+    .grid-col {
+      width: 33%;
+      @media only screen and (max-width: $media-mobile) {   width: 50%;}
+    }
   }
 
   &.typ-col-4 {

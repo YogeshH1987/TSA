@@ -319,6 +319,7 @@
         .custom-radio {
             position: relative;
             min-width: auto;
+            height: 100%;
 
             &:before {
                 font-size: 3.3rem;
@@ -504,12 +505,15 @@
             pointer-events: none;
             height: 100%;
             margin-bottom: 0;
+
             .custom-radio {
                 height: 100%;
                 padding: 1.2rem 1.2rem;
+
                 &:before {
                     content: none !important;
                 }
+
                 @media only screen and (max-width: $media-sm) {
                     min-width: auto;
                 }
@@ -963,6 +967,32 @@
 
         }
 
+    }
+
+    &.typ-shed-estimator {
+        .custom-radio {
+            height: 100%;
+        }
+
+        .material-wrap {
+            height: 100%;
+
+            .img-wrap {
+                padding: 5px;
+            }
+        }
+
+        .detail-list {
+            justify-content: flex-start;
+            align-items: center !important;
+            text-align: center !important;
+        }
+    }
+
+    &.typ-fence-size {
+        .custom-radio {
+            padding: 1.6rem;
+        }
     }
 }
 
