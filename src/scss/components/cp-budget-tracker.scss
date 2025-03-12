@@ -629,6 +629,7 @@
             justify-content: center;
             width: 100%;
             height: 100%;
+            @media only screen and (max-width: $media-sm) { margin-bottom: 1.2rem;} 
         }
 
         .head-wrap {
@@ -693,12 +694,19 @@
 
                 .title {
                     font-size: 1.6rem;
+                    font-family: $font-medium;
+                    .icon {
+                        @media only screen and (max-width: $media-sm) {
+                        font-size: 18px;}
+                    }
                 }
 
                 .budget-price {
                     margin-left: 40px;
                     width: 100%;
                     font-size: 2rem;
+                    @media only screen and (max-width: $media-sm) {
+                    margin-top: -3px;}
                 }
             }
 

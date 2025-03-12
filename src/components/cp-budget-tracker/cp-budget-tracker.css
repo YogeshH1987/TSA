@@ -480,10 +480,14 @@
           height: 32px;
           width: 32px; }
         .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .title {
-          font-size: 1.6rem; }
+          font-size: 1.6rem;
+          font-family: "Poppins Medium"; }
+          .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .title .icon {
+            font-size: 18px; }
         .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .budget-price {
           margin-left: 40px;
           width: 100%;
-          font-size: 2rem; }
+          font-size: 2rem;
+          margin-top: -3px; }
 
 /*# sourceMappingURL=cp-budget-tracker.css.map */
