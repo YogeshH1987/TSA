@@ -2,20 +2,28 @@
 @import "../config/mixin";
 
 .cp-icon-list {
- border-bottom: 1px solid #DEDEDE;
- padding-bottom: 4rem;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 4rem;
+
     .title {
         font-size: 2rem;
         font-family: $font-semiBold;
         color: $clr-base;
         margin-bottom: 1.6rem;
-        @media only screen and (max-width: $media-sm) {   font-size: 1.6rem;}
+
+        @media only screen and (max-width: $media-sm) {
+            font-size: 1.6rem;
+        }
     }
 
     .cp-icon-list-wrap {
         display: flex;
         gap: 4rem;
-        @media only screen and (max-width: $media-sm) { gap: 2rem;}
+
+        @media only screen and (max-width: $media-sm) {
+            gap: 2rem;
+        }
+
         .list-item {
             font-size: 1.4rem;
             color: $clr-base;
@@ -46,17 +54,25 @@
                     background: #FFF8E5;
 
                 }
+
                 &.pink {
                     color: #DB3657;
                     background: #FAE6EA;
 
                 }
+
                 &.purple {
                     color: #5A245A;
                     background: #EEE9EE;
 
                 }
-                
+
+                &.grey {
+                    color: #808080;
+                    background: #EDEDED;
+
+                }
+
                 &.green {
                     color: #00A441;
                     background: #E5F6EC;
@@ -65,6 +81,62 @@
                 &.blue {
                     color: #3D7EDB;
                     background: #ECF2FB;
+                }
+            }
+        }
+    }
+
+    &.typ-budget-tracker {
+        border-bottom: 0;
+        padding-bottom: 0;
+        .cp-icon-list-wrap {
+            gap: 1.6rem;
+            flex-wrap: wrap;
+
+            .list-item {
+                font-size: 1.4rem;
+                color: #333333;
+                max-width: 100%;
+                display: flex;
+                flex-direction: initial;
+                align-items: center;
+                text-align: left;
+                justify-content: initial;
+                width: calc(33% - 0.7rem);
+                border: 1px solid #DEDEDE;
+                gap: 8px;
+                @include border-radius(1.2rem);
+                padding: 1.4rem;
+                @media only screen and (max-width: $media-sm) {    width: 100%;}
+                .cont-wrap {
+                    max-width: 20rem;
+                }
+
+                .title {
+                    font-size: 1.4rem;
+                    margin-bottom: 0;
+                }
+
+                .desc {
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    color: $clr-base;
+                }
+
+                .icon {
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    flex: 0 0 3.6rem;
+                    font-size: 2.4rem;
+                    margin-bottom: 0;
+                    padding: 5px;
+                }
+
+                .link {
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    margin-left: auto;
+                    font-family: $font-medium;
                 }
             }
         }

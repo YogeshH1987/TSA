@@ -85,6 +85,24 @@
       .cp-box.typ-building .img-wrap {
         width: 31.1rem;
         height: 20.4rem; } }
+  .cp-box.typ-budget-tracker {
+    z-index: 2;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .cp-box.typ-budget-tracker {
+        padding: 2.4rem 1.6rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem; } }
+    .cp-box.typ-budget-tracker .img-wrap {
+      background-color: #fff;
+      border-radius: 1.6rem;
+      -webkit-border-radius: 1.6rem;
+      -moz-border-radius: 1.6rem; }
+      @media only screen and (max-width: 768px) {
+        .cp-box.typ-budget-tracker .img-wrap .img-wrap {
+          width: 31.1rem;
+          height: 20.4rem; } }
   .cp-box.typ-shed {
     margin-bottom: 3.2rem;
     position: relative;
@@ -287,6 +305,58 @@
         .cp-box.bottom-notify.typ-pp-checklist .cp-cart-card .prodcut-item {
           align-items: center;
           margin-bottom: 0; }
+  .cp-box.bottom-notify-budget {
+    z-index: -1;
+    position: relative;
+    padding: 1.6rem;
+    padding-top: 4rem;
+    margin-top: -2rem;
+    border: 1px solid #FFC633;
+    background: #FFF8E5;
+    align-items: center;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-box.bottom-notify-budget {
+        flex-wrap: wrap; } }
+    .cp-box.bottom-notify-budget .img-wrap {
+      border-radius: 50%;
+      width: 3.6rem;
+      height: 3.6rem;
+      background-color: #FFC633;
+      margin-right: 1.2rem;
+      flex: 0 0 3.6rem; }
+      .cp-box.bottom-notify-budget .img-wrap .icon {
+        color: #FFFFFF;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        display: flex;
+        justify-content: center; }
+    .cp-box.bottom-notify-budget .cont-wrap {
+      width: 85%; }
+      @media only screen and (max-width: 768px) {
+        .cp-box.bottom-notify-budget .cont-wrap {
+          width: 83%; } }
+    .cp-box.bottom-notify-budget .link {
+      margin-left: auto;
+      text-decoration: underline;
+      font-size: 1.6rem;
+      white-space: nowrap; }
+      @media only screen and (max-width: 768px) {
+        .cp-box.bottom-notify-budget .link {
+          margin-left: 4.6rem;
+          width: 100%; } }
+    .cp-box.bottom-notify-budget .title {
+      padding: 0;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+    .cp-box.bottom-notify-budget .desc {
+      font-family: "Poppins Regular";
+      font-size: 1.4rem;
+      color: #000000; }
   .cp-box.bottom-notify-breakout {
     z-index: -1;
     position: relative;

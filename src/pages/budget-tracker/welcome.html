@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Budget Tracker</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
+    <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
+    <link rel="stylesheet" href="../../components/cp-calculator-box/cp-calculator-box.css" />
+    <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
+    <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
+    <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" />
+    <link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cp-header">
+            <div class="container">
+                <div class="top-sec">
+                    <div class="hamburger-menu">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="lhs">
+                        <div class="logo-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="container">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop products</a>
+                                <ul class="sub-nav-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home building guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-link-wrap">
+                        <ul class="quick-link-list">
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-search quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-cart quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-profile quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-language quick-link-item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- breadcrumbs starts-->
+        <section class="bs-sec typ-first-sec typ-no-bottom-padding">
+            <div class="container">
+                <div class="sec-cont">
+                    <ul class="cp-breadcrumb">
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link"> Design & calculators</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link active"> Expense diary</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bs-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Expense diary</h2>
+                    <p class="sec-desc">A simple tool to track, manage, and organize your home construction expenses
+                        effortlessly.</p>
+                </div>
+                <div class="sec-cont">
+                    <div class="cp-box typ-calculate typ-budget-tracker">
+                        <div class="img-wrap">
+                            <picture>
+                                <source media="(max-width:768px)"
+                                    srcset="../../components/cp-budget-tracker/images/img1.pngg">
+                                <img src="../../components/cp-budget-tracker/images/img1.png" alt="Timeline_Cards" />
+                            </picture>
+                        </div>
+                        <div class="cont-wrap">
+                            <div class="cp-calculator-box typ-build-cost">
+                                <h2 class="title">Budget amount</h2>
+                                <p class="desc">Set a clear and realistic budget for your home-building
+                                    and start tracking</p>
+                                    <div class="cp-noui-range-slide noUi-target" data-id="budgetTrackerRange"></div>
+                                    <div class="act-form">
+                                        <input type="text" id="budgetTrackerValue" value="2000000"
+                                            class="input-field">
+                                        <button class="btn budget-btn">Set budget</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cp-box bottom-notify-budget">
+                        <div class="img-wrap">
+                            <span class="icon icon-rupee"></span>
+                        </div>
+                        <div class="cont-wrap">
+                            <h3 class="title">Not sure about your budget?</h3>
+                            <p class="desc">Use our Budget calculator to get a quick & accurate estimate for your
+                                project.</p>
+                        </div>
+                        <a href="#" class="link"> Get estimate now</a>
+                    </div>
+
+                    <div class="cp-notify typ-budget-tracker">
+                        <div class="cont-wrap">
+                            <h3 class="notify-title">₹1,11,800</h3>
+                            <p class="notify-desc">
+                                Recommended from Budget calculator
+                            </p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#" download="" target="_blank" class="btn btn-icon notify-btn">Set as budget goal
+                                <span class="icon icon-rupee"></span></a>
+                        </div>
+                        <span class="notify-icon icon-rupee"></span>
+                    </div>
+                    <ul class="cp-add-info-list typ-calculate">
+                        <li class="add-info-item">
+                            <div class="info-card">
+                                <span class="icon icon-goal"></span>
+                                <div class="info-wrap">
+                                    <h2 class="info-title">Accurate projections</h2>
+                                    <p class="info-desc">Calculate total property area, including carpet, walls,
+                                        balconies, and more.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="add-info-item">
+                            <div class="info-card">
+                                <span class="icon icon-measurement"></span>
+                                <div class="info-wrap">
+                                    <h2 class="info-title">Easy usage</h2>
+                                    <p class="info-desc">No expertise needed, just input basic details.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="add-info-item">
+                            <div class="info-card">
+                                <span class="icon icon-cash"></span>
+                                <div class="info-wrap">
+                                    <h2 class="info-title">Negotiate confidently</h2>
+                                    <p class="info-desc">Know market rates to negotiate better with contractors and
+                                        suppliers.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manage your home construction end-->
+        <!--Learn about the home building journey start -->
+        <section class="bs-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Learn about the home building journey</h2>
+                </div>
+                <div class="sec-cont">
+                    <div class="lyt-grid typ-col-4">
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">Finding your loan match: Expert advice for selecting the perfect
+                                        home loan</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">The unique struggles for home construction loan approval in
+                                        smaller india...</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">Home loan v/s construction loan: Which one should you choose?
+                                    </h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">10 reasons for your home construction loan rejection</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Learn about the home building journey ends -->
+        <!-- Other calculators you may like start -->
+        <section class="bs-sec typ-gray-bg">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Other calculators you may like</h2>
+                </div>
+                <div class="sec-cont">
+                    <div class="cp-eCommerce-home-banner typ-calculate">
+                        <div class="feature">
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">EMI <br />CALCULATOR</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-eCommerce-home-banner/images/calculate.png">
+                                            <img src="../../components/cp-eCommerce-home-banner/images/calculate.png"
+                                                alt="calculate" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">REBAR <br />ESTIMATOR</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../../components/cp-eCommerce-home-banner/images/homedesign.png">
+                                            <img src="../../components/cp-eCommerce-home-banner/images/homedesign.png"
+                                                alt="diya-tool-kit" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">SHED <br />ESTIMATOR</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../../components/cp-eCommerce-home-banner/images/roofing.png">
+                                            <img src="../../components/cp-eCommerce-home-banner/images/roofing.png"
+                                                alt="roofing" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">FENCING <br />ESTIMATOR</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../../components/cp-eCommerce-home-banner/images/fence.png">
+                                            <img src="../../components/cp-eCommerce-home-banner/images/fence.png"
+                                                alt="fence" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Other calculators you may like ends -->
+    </main>
+    <!-- Footer Start -->
+    <footer>
+        <div class="cp-footer">
+            <picture>
+                <source media="(max-width:768px)" srcset="/images/footer_mob.png">
+                <img src="/images/footer.png" alt="Footer" />
+            </picture>
+        </div>
+    </footer>
+    <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <!-- <script src="/components/cp-counter/cp-counter.js"></script> -->
+    <script src="/js/budget-tracker.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

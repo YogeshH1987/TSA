@@ -276,6 +276,57 @@
         }
     }
 
+    &.typ-budget-tracker {
+        padding: 2.4rem;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: $media-mobile) {
+            flex-direction: column;
+            padding: 1.6rem;
+            align-items: flex-start;
+        }
+
+        .title {
+            max-width: 75%;
+        }
+
+        .btn-wrap {
+            flex-grow: 0;
+            z-index: 2;
+            align-self: flex-end;
+
+            @media only screen and (max-width: $media-mobile) {
+                align-self: flex-start;
+                flex-grow: 1;
+            }
+        }
+
+        .notify-icon {
+            position: absolute;
+            top: 28%;
+            right: -15px;
+            color: #9C7C9C;
+            font-size: 11.6rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                // top:4.2rem;
+                top: 1.2rem;
+                right: 0rem;
+                font-size: 8.6rem;
+            }
+        }
+
+        .notify-btn {
+            background-color: transparent;
+            color: #fff;
+            padding: 0.9rem 1.6rem;
+            min-width: 19.6rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+
     &.typ-notification {
         background: $clr-bg;
 
@@ -533,7 +584,11 @@
         .btn-wrap {
             align-self: start;
             margin-top: 1.6rem;
-            .notify-btn{ background-color: #fff; color: #3D7EDB;}
+
+            .notify-btn {
+                background-color: #fff;
+                color: #3D7EDB;
+            }
         }
     }
 }

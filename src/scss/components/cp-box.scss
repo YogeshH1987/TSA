@@ -114,6 +114,29 @@
         }
     }
 
+    &.typ-budget-tracker {
+        z-index: 2;
+        position: relative;
+
+        @media only screen and (max-width: $media-mobile) {
+            padding: 2.4rem 1.6rem;
+            @include border-radius(1.2rem);
+        }
+
+        .img-wrap {
+            background-color: #fff;
+            @include border-radius(1.6rem);
+
+            @media only screen and (max-width: $media-mobile) {
+                .img-wrap {
+                    width: 31.1rem;
+                    height: 20.4rem;
+                }
+            }
+        }
+
+    }
+
     &.typ-shed {
         margin-bottom: 3.2rem;
         position: relative;
@@ -385,6 +408,74 @@
         }
     }
 
+    &.bottom-notify-budget {
+        z-index: -1;
+        position: relative;
+        padding: 1.6rem;
+        padding-top: 4rem;
+        margin-top: -2rem;
+        border: 1px solid #FFC633;
+        background: #FFF8E5;
+        align-items: center;
+        @include border-radius(1.2rem);
+
+        @media only screen and (max-width: $media-mobile) {
+            flex-wrap: wrap;
+        }
+
+        .img-wrap {
+            border-radius: 50%;
+            width: 3.6rem;
+            height: 3.6rem;
+            background-color: #FFC633;
+            margin-right: 1.2rem;
+            flex: 0 0 3.6rem;
+
+            .icon {
+                color: $clr-root;
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .cont-wrap {
+            width: 85%;
+
+            @media only screen and (max-width: $media-mobile) {
+                width: 83%;
+            }
+        }
+
+        .link {
+            margin-left: auto;
+            text-decoration: underline;
+            font-size: 1.6rem;
+            white-space: nowrap;
+
+            @media only screen and (max-width: $media-mobile) {
+                margin-left: 4.6rem;
+                width: 100%;
+            }
+        }
+
+        .title {
+            padding: 0;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-base;
+            font-family: $font-semiBold;
+        }
+
+        .desc {
+            font-family: $font-regular;
+            font-size: 1.4rem;
+            color: $clr-black;
+        }
+
+    }
+
     &.bottom-notify-breakout {
         z-index: -1;
         position: relative;
@@ -508,7 +599,7 @@
 
     &.pro-not-available {
         position: relative;
-       padding: 1.2rem 1.6rem;
+        padding: 1.2rem 1.6rem;
         border: 1px solid #EE4400;
         background: #FDECE5;
         position: relative;
