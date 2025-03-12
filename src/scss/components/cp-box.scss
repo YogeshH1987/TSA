@@ -474,6 +474,12 @@
             color: $clr-black;
         }
 
+        &.exceed-budget{
+            border: 1px solid #F16933;
+            background: #FDECE5;
+            .img-wrap{ background-color: #EE4400;}
+        }
+
     }
 
     &.bottom-notify-breakout {

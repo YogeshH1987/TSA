@@ -1156,6 +1156,23 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-sec .sec-head {
         margin-bottom: 1.6rem; } }
+    .bs-sec .sec-head.budget .sec-title {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem; }
+      .bs-sec .sec-head.budget .sec-title .icon-setting {
+        width: 4rem;
+        height: 4rem;
+        background-color: #F3F4F6;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        font-size: 2.4rem;
+        color: #999999;
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center; }
     .bs-sec .sec-head.typ-align-center {
       text-align: center; }
     .bs-sec .sec-head.typ-plp-pravesh {
@@ -3596,6 +3613,16 @@ p {
       font-family: "Poppins Semibold"; }
     @media only screen and (max-width: 991px) {
       .bs-modal.typ-dimensions .modal-body {
+        padding: 1.6rem 0; } }
+  .bs-modal.edit-budget-amount {
+    max-width: 400px;
+    max-height: 100%; }
+    .bs-modal.edit-budget-amount .modal-body .title {
+      font-size: 2rem;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+    @media only screen and (max-width: 991px) {
+      .bs-modal.edit-budget-amount .modal-body {
         padding: 1.6rem 0; } }
 
 /* colors */

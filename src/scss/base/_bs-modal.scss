@@ -770,4 +770,21 @@
             }
         }
     }
+
+    &.edit-budget-amount {
+        max-width: 400px;
+        max-height: 100%;
+
+        .modal-body {
+            .title {
+                font-size: 2rem;
+                color: $clr-base;
+                font-family: $font-semiBold;
+            }
+
+            @media only screen and (max-width: $media-sm) {
+                padding: 1.6rem 0;
+            }
+        }
+    }
 }

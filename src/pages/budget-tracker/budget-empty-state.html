@@ -17,17 +17,17 @@
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
     <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
     <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
     <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
-    <link rel="stylesheet" href="../../components/cp-calculator-box/cp-calculator-box.css" />
-    <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
     <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
     <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" />
     <link rel="stylesheet" href="/components/cp-icon-list/cp-icon-list.css" />
-    <link rel="stylesheet" href="../../components/cp-noui-range-slider/cp-noui-range-slider.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="/components/cp-product-type/cp-product-type.css" />
+    <link rel="stylesheet" href="/components/cp-recommend/cp-recommend.css" />
     <link rel="stylesheet" href="/components/cp-budget-tracker/cp-budget-tracker.css" />
+    
 </head>
 
 <body>
@@ -141,8 +141,8 @@
 
         <section class="bs-sec">
             <div class="container">
-                <div class="sec-head">
-                    <h2 class="sec-title">Expense diary</h2>
+                <div class="sec-head budget">
+                    <h2 class="sec-title">Expense diary <span class="icon-setting icon-info2"></span></h2>
                 </div>
                 <div class="sec-cont">
                     <div class="cp-budget-tracker typ-budget-expenses typ-vertical">
@@ -151,7 +151,8 @@
                                 <span class="icon icon-rupee"></span>
                             </div>
                             <h3 class="title">Budget tracker</h3>
-                            <span class="budget-price">₹20,00,000 <span class="icon icon-edit"></span></span>
+                            <span class="budget-price">₹20,00,000 <span class="icon icon-edit  model-open"
+                                    data-toggle="modal" data-modal-class="edit-budget-amount"></span></span>
                         </div>
                         <div class="budget-details">
                             <div class="left-sec">
@@ -169,11 +170,12 @@
                                 </div>
                             </div>
                             <div class="right-sec">
-                                <div class="head-wrap cm-desktop">
+                                <div class="head-wrap cm-desktop-flex">
                                     <span class="icon icon-rupee"></span>
-                                    <div class="head-sec">
+                                    <div class="head-sec budget">
                                         <span class="sub-title"> Total budget</span>
-                                        <h3 class="price">₹20,00,000 <span class=" icon-edit"> </span></h3>
+                                        <h3 class="price">₹20,00,000 <span class=" icon-edit  model-open"
+                                                data-toggle="modal" data-modal-class="edit-budget-amount"> </span></h3>
                                     </div>
                                 </div>
                                 <div class="breakup-wrap">
@@ -202,6 +204,14 @@
                         </div>
 
                     </div>
+                    <div class="cp-box bottom-notify-budget exceed-budget">
+                        <div class="img-wrap">
+                            <span class="icon icon-info1"></span>
+                        </div>
+                        <div class="cont-wrap">
+                            <p class="desc">You have exceeded your budget by amount of ₹2,46,000.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -226,7 +236,7 @@
                                 <div class="icon icon-explore-style yellow"></div>
                                 <div class="cont-wrap">
                                     <p class="title">Foundation</p>
-                                    <p class="desc">Steel rebars, concrete 
+                                    <p class="desc">Steel rebars, concrete
                                         base, etc.</p>
                                 </div>
                                 <a href="#" class="link">+ Add </a>
@@ -235,7 +245,7 @@
                                 <div class="icon icon-exterior-construction blue"></div>
                                 <div class="cont-wrap">
                                     <p class="title">Structure</p>
-                                    <p class="desc">Steel sections for beams, pillars 
+                                    <p class="desc">Steel sections for beams, pillars
                                         columns, etc</p>
                                 </div>
                                 <a href="#" class="link">+ Add </a>
@@ -253,7 +263,7 @@
                                 <div class="icon icon-oil green"></div>
                                 <div class="cont-wrap">
                                     <p class="title">Plumbing</p>
-                                    <p class="desc">Concealed Pipes, water fittings 
+                                    <p class="desc">Concealed Pipes, water fittings
                                         faucets, etc</p>
                                 </div>
                                 <a href="#" class="link">+ Add </a>
@@ -270,13 +280,102 @@
                         </ul>
                     </div>
                     <div class="btn-wrap text-center mt-32 ">
-                        <button class="btn btn-outline common-lg-btn "><span class="icon icon-plus"></span> Add new expense</button>
+                        <button class="btn btn-outline common-lg-btn "><span class="icon icon-plus"></span> Add new
+                            expense</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Learn about the home building journey start -->
+        <section class="bs-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Add your first expense</h2>
+                </div>
+                <div class="sec-cont">
+                    <div class="cp-eCommerce-home-banner typ-budget-tracker">
+                        <div class="feature">
+                            <div class="feature-item orange-card">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Land prep</h2>
+                                    <p class="f-desc">Paperwork, site
+                                        clearing, etc</p>
+                                    <div class="f-img">
+                                        <div class="icon icon-explore-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="feature-item yellow-card">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Foundation</h2>
+                                    <p class="f-desc">Steel rebars, concrete
+                                        base, etc.</p>
+                                    <div class="f-img">
+                                        <div class="icon icon-tool">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="feature-item blue-card">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Structure</h2>
+                                    <p class="f-desc">Steel sections for beams, pillars
+                                        columns, etc</p>
+                                    <div class="f-img">
+                                        <div class="icon icon-argio">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="feature-item red-card">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Brick work</h2>
+                                    <p class="f-desc">Cement, bricks, steel rods for walls, etc</p>
+                                    <div class="f-img">
+                                        <div class="icon icon-power">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="feature-item green-card">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Plumbing</h2>
+                                    <p class="f-desc">Concealed Pipes, water fittings
+                                        faucets, etc</p>
+                                    <div class="f-img">
+                                        <div class="icon icon-oil">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="feature-item grey-card">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Electrical</h2>
+                                    <p class="f-desc">Concealed wiring, switchboards, conducts, etc</p>
+                                    <div class="f-img">
+                                        <div class="icon icon-article">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap text-center mt-32 ">
+                        <button class="btn btn-outline common-lg-btn "><span class="icon icon-plus"></span> Add new
+                            expense</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section class="bs-sec">
             <div class="container">
                 <div class="sec-head">
@@ -402,71 +501,306 @@
                     </div>
                 </div>
         </section>
-        <!-- Learn about the home building journey ends -->
-        <!-- Other calculators you may like start -->
-        <section class="bs-sec typ-gray-bg">
+
+        <section class="bs-sec typ-gray-bg typ-curve typ-about-news mb-4">
             <div class="container">
                 <div class="sec-head">
-                    <h2 class="sec-title">Other calculators you may like</h2>
+                    <h2 class="sec-title">Materials you may need</h2>
                 </div>
                 <div class="sec-cont">
-                    <div class="cp-eCommerce-home-banner typ-calculate">
-                        <div class="feature">
-                            <div class="feature-item">
-                                <a href="#" class="feature-card">
-                                    <h2 class="f-title">EMI <br />CALCULATOR</h2>
-                                    <div class="f-img">
-                                        <picture>
-                                            <source media="(max-width:768px)"
-                                                srcset="../components/cp-eCommerce-home-banner/images/calculate.png">
-                                            <img src="../../components/cp-eCommerce-home-banner/images/calculate.png"
-                                                alt="calculate" />
-                                        </picture>
+                    <div class="cp-product-material">
+                        <div class="bs-swiper swiper js-product-material">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="../components/cp-product-card/images/door-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="../components/cp-product-card/images/door-1.png">
+                                                <img src="../components/cp-product-card/images/door-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Pravesh</h3>
+                                        <p class="desc">Doors & windows</p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="feature-item">
-                                <a href="#" class="feature-card">
-                                    <h2 class="f-title">REBAR <br />ESTIMATOR</h2>
-                                    <div class="f-img">
-                                        <picture>
-                                            <source media="(max-width:768px)"
-                                                srcset="../../components/cp-eCommerce-home-banner/images/homedesign.png">
-                                            <img src="../../components/cp-eCommerce-home-banner/images/homedesign.png"
-                                                alt="diya-tool-kit" />
-                                        </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <img src="/components/cp-product-name-head/images/superlink_1-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Tiscon</h3>
+                                        <p class="desc">Rebars & superlinks</p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="feature-item">
-                                <a href="#" class="feature-card">
-                                    <h2 class="f-title">SHED <br />ESTIMATOR</h2>
-                                    <div class="f-img">
-                                        <picture>
-                                            <source media="(max-width:768px)"
-                                                srcset="../../components/cp-eCommerce-home-banner/images/roofing.png">
-                                            <img src="../../components/cp-eCommerce-home-banner/images/roofing.png"
-                                                alt="roofing" />
-                                        </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <img src="/components/cp-product-name-head/images/superlink_1-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Tiscon</h3>
+                                        <p class="desc">Rebars & superlinks</p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="feature-item">
-                                <a href="#" class="feature-card">
-                                    <h2 class="f-title">FENCING <br />ESTIMATOR</h2>
-                                    <div class="f-img">
-                                        <picture>
-                                            <source media="(max-width:768px)"
-                                                srcset="../../components/cp-eCommerce-home-banner/images/fence.png">
-                                            <img src="../../components/cp-eCommerce-home-banner/images/fence.png"
-                                                alt="fence" />
-                                        </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <img src="/components/cp-product-name-head/images/superlink_1-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Tiscon</h3>
+                                        <p class="desc">Rebars & superlinks</p>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <img src="/components/cp-product-name-head/images/superlink_1-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Tiscon</h3>
+                                        <p class="desc">Rebars & superlinks</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <img src="/components/cp-product-name-head/images/superlink_1-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Tiscon</h3>
+                                        <p class="desc">Rebars & superlinks</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                            <picture>
+                                                <source media="(max-width:768px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <source media="(max-width:991px)"
+                                                    srcset="/components/cp-product-name-head/images/superlink_1-1.png">
+                                                <img src="/components/cp-product-name-head/images/superlink_1-1.png"
+                                                    alt="prod-typ-image" class="img" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="prod-name">Tiscon</h3>
+                                        <p class="desc">Rebars & superlinks</p>
+                                    </div>
+                                </div>
+
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+
+        <section class="bs-sec typ-natural-gray-bg typ-curve ">
+            <div class="container">
+                <div class="sec-head">
+                    <div class="left">
+                        <h2 class="sec-title">Recommended service providers for you</h2>
+                    </div>
+                </div>
+                <div class="sec-cont">
+                    <div class="bs-swiper  js-architects-near-you p-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cp-recommend">
+                                    <a href="#" class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-recommend/images/1.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-recommend/images/1.png">
+                                            <img src="../components/cp-recommend/images/1.png"
+                                                alt="blog img" />
+                                        </picture>
+                                    </a>
+                                    <div class="content-wrap">
+                                        <span class="sub-title">Architect</span>
+                                        <h2 class="title">Tata Tiscon Dealers Pvt. Ltd.</h2>
+                                        <ul class="location-sec">
+                                            <li class="location-text">
+                                                <span class="icon icon-location"></span>
+                                                Vaishali Nagar
+                                            </li>
+                                        </ul>
+                                        <ul class="rating-sec">
+                                            <li class="rating-cont">
+                                                <span class="rating-text">
+                                                    <span class="icon-star"></span>
+                                                    4.5</span>
+                                            </li>
+                                            <li class="rating-cont">
+                                                <span class="wishlist"><i
+                                                        class="icon icon-heart-fill"></i>Saved
+                                                    by 90</span>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-wrap">
+                                            <button class="btn">Send enquiry</button>
+                                            <ul class="tag-list">
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-call"></button>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-unfill-like"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cp-recommend">
+                                    <a href="#" class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-recommend/images/1.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-recommend/images/1.png">
+                                            <img src="../components/cp-recommend/images/1.png"
+                                                alt="blog img" />
+                                        </picture>
+                                    </a>
+                                    <div class="content-wrap">
+                                        <span class="sub-title">Architect</span>
+                                        <h2 class="title">Tata Tiscon Dealers Pvt. Ltd.</h2>
+                                        <ul class="location-sec">
+                                            <li class="location-text">
+                                                <span class="icon icon-location"></span>
+                                                Vaishali Nagar
+                                            </li>
+                                        </ul>
+                                        <ul class="rating-sec">
+                                            <li class="rating-cont">
+                                                <span class="rating-text">
+                                                    <span class="icon-star"></span>
+                                                    4.5</span>
+
+
+
+                                            </li>
+                                            <li class="rating-cont">
+                                                <span class="wishlist"><i
+                                                        class="icon icon-heart-fill"></i>Saved
+                                                    by 90</span>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-wrap">
+                                            <button class="btn">Send enquiry</button>
+                                            <ul class="tag-list">
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-call"></button>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-unfill-like"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cp-recommend">
+                                    <a href="#" class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)"
+                                                srcset="../components/cp-recommend/images/1.png">
+                                            <source media="(max-width:991px)"
+                                                srcset="../components/cp-recommend/images/1.png">
+                                            <img src="../components/cp-recommend/images/1.png"
+                                                alt="blog img" />
+                                        </picture>
+                                    </a>
+                                    <div class="content-wrap">
+                                        <span class="sub-title">Architect</span>
+                                        <h2 class="title">Tata Tiscon Dealers Pvt. Ltd.</h2>
+                                        <ul class="location-sec">
+                                            <li class="location-text">
+                                                <span class="icon icon-location"></span>
+                                                Vaishali Nagar
+                                            </li>
+                                        </ul>
+                                        <ul class="rating-sec">
+                                            <li class="rating-cont">
+                                                <span class="rating-text">
+                                                    <span class="icon-star"></span>
+                                                    4.5</span>
+
+
+
+                                            </li>
+                                            <li class="rating-cont">
+                                                <span class="wishlist"><i
+                                                        class="icon icon-heart-fill"></i>Saved
+                                                    by 90</span>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-wrap">
+                                            <button class="btn">Send enquiry</button>
+                                            <ul class="tag-list">
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-call"></button>
+                                                </li>
+                                                <li class="tag-item">
+                                                    <button class="tag-link icon-unfill-like"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+
+
+                </div>
+            </div>
         </section>
         <!-- Other calculators you may like ends -->
     </main>
@@ -479,17 +813,42 @@
             </picture>
         </div>
     </footer>
+
+    <!--model pop up start-->
+
+    <div tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share edit-budget-amount">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <button class="close-btn icon-close js-close " type="button"></button>
+                    <div class="cp-model-content">
+                        <p class="title">Edit budget amount</p>
+                        <div class="cp-form typ-edit-budget-amount">
+                            <div class="form-group">
+                                <input type="text" name="" id="budget-amount" class="form-control validate-name"
+                                    value="₹ 40,00,000" placeholder="Enter Amount">
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-outline js-close" type="button">Cancel</button>
+                                <button class="btn">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
     <div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
-    <!-- <script src="/components/cp-counter/cp-counter.js"></script> -->
-    <script src="/js/buildingCostEst.js"></script>
+    <script src="/components/cp-product-type/cp-product-type.js"></script>
+    <script src="../../components/cp-recommend/cp-recommend.js"></script>
     <!-- endbuild -->
 </body>
 

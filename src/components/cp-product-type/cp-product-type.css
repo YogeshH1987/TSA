@@ -45,4 +45,37 @@
     .cp-product-type.typ-category .typ-card {
       height: 100%; }
 
+.cp-product-material {
+  background-color: transparent; }
+  .cp-product-material .typ-card {
+    background-color: transparent;
+    border: 0; }
+    .cp-product-material .typ-card .img-wrap {
+      background-color: #fff;
+      width: 100%;
+      height: 14rem;
+      border: 1px solid #DEDEDE;
+      padding: 4px;
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem;
+      margin-bottom: 1.2rem; }
+      .cp-product-material .typ-card .img-wrap img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%; }
+    .cp-product-material .typ-card .prod-name {
+      font-family: "Poppins Medium";
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #333333;
+      text-align: center; }
+    .cp-product-material .typ-card .desc {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666666; }
+  @media only screen and (max-width: 768px) {
+    .cp-product-material .swiper {
+      overflow: visible; } }
+
 /*# sourceMappingURL=cp-product-type.css.map */

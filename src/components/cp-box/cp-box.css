@@ -357,6 +357,11 @@
       font-family: "Poppins Regular";
       font-size: 1.4rem;
       color: #000000; }
+    .cp-box.bottom-notify-budget.exceed-budget {
+      border: 1px solid #F16933;
+      background: #FDECE5; }
+      .cp-box.bottom-notify-budget.exceed-budget .img-wrap {
+        background-color: #EE4400; }
   .cp-box.bottom-notify-breakout {
     z-index: -1;
     position: relative;

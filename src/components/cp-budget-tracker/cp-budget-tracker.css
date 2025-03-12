@@ -316,7 +316,10 @@
             .cp-budget-tracker.typ-home-building.typ-vertical .budget-details .right-sec .breakup-wrap .breakup {
               padding: 5px; }
   .cp-budget-tracker.typ-budget-expenses {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background-color: #fff; }
     @media only screen and (max-width: 991px) {
       .cp-budget-tracker.typ-budget-expenses {
         margin-top: 1.6rem; } }
@@ -434,6 +437,9 @@
       justify-content: center;
       width: 100%;
       height: 100%; }
+      @media only screen and (max-width: 991px) {
+        .cp-budget-tracker.typ-budget-expenses .pie-chart {
+          margin-bottom: 1.2rem; } }
     .cp-budget-tracker.typ-budget-expenses .head-wrap {
       display: flex;
       margin-bottom: 1.6rem; }
@@ -482,12 +488,15 @@
         .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .title {
           font-size: 1.6rem;
           font-family: "Poppins Medium"; }
-          .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .title .icon {
-            font-size: 18px; }
+          @media only screen and (max-width: 991px) {
+            .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .title .icon {
+              font-size: 18px; } }
         .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .budget-price {
           margin-left: 40px;
           width: 100%;
-          font-size: 2rem;
-          margin-top: -3px; }
+          font-size: 2rem; }
+          @media only screen and (max-width: 991px) {
+            .cp-budget-tracker.typ-budget-expenses.typ-vertical .cp-title .budget-price {
+              margin-top: -3px; } }
 
 /*# sourceMappingURL=cp-budget-tracker.css.map */

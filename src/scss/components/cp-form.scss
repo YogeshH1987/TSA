@@ -739,4 +739,26 @@
       }
     }
   }
+
+  &.typ-edit-budget-amount {
+    .form-group {
+      margin-bottom: 0;
+
+      .form-control {
+        color: $clr-base;
+        &:focus{
+          border-color: #3D7EDB;
+        }
+      }
+    }
+
+    .btn-wrap {
+      display: flex;
+      gap: 1.6rem;
+      margin-top: 3.2rem;
+      .btn {
+        min-width: 48%
+      }
+    }
+  }
 }

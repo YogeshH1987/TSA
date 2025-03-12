@@ -1,42 +1,49 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-product-type{
+.cp-product-type {
     background: $clr-primary;
     padding: 1.6rem 0 2.4rem;
-    .title{
+
+    .title {
         font-family: $font-medium;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: $clr-root;
         margin-bottom: 1.6rem;
     }
-    .typ-card{
+
+    .typ-card {
         padding: 1rem 0.2rem;
         border: 1px solid $clr-border;
         background: $clr-root;
         @include border-radius(1.2rem);
-        .img-wrap{
+
+        .img-wrap {
             max-width: 9.6rem;
             max-height: 4.8rem;
         }
-        .prod-name{
+
+        .prod-name {
             font-family: $font-medium;
             font-size: 1.4rem;
             line-height: 2rem;
             color: $clr-base;
             text-align: center;
         }
-        &.active{
-            .prod-name{
+
+        &.active {
+            .prod-name {
                 font-family: $font-semiBold;
                 color: $clr-primary;
-            }            
+            }
         }
     }
-    .btn-wrap{
+
+    .btn-wrap {
         text-align: center;
-        .btn{
+
+        .btn {
             min-width: 16.6rem;
             font-size: 1.6rem;
             line-height: 2.4rem;
@@ -44,11 +51,60 @@
         }
     }
 
-    &.typ-category{
+    &.typ-category {
         background: $clr-root;
         padding: 0;
-        .typ-card{
+
+        .typ-card {
             height: 100%;
+        }
+    }
+
+
+}
+
+.cp-product-material {
+    background-color: transparent;
+
+    .typ-card {
+        background-color: transparent;
+        border: 0;
+
+        .img-wrap {
+            background-color: #fff;
+            width: 100%;
+            height: 14rem;
+            border: 1px solid #DEDEDE;
+            padding: 4px;
+            @include border-radius(1.2rem);
+            margin-bottom: 1.2rem;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .prod-name {
+            font-family: $font-medium;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            text-align: center;
+        }
+
+
+        .desc {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666666;
+        }
+    }
+
+    @media only screen and (max-width: $media-mobile) {
+        .swiper {
+            overflow: visible;
         }
     }
 }

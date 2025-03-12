@@ -23,6 +23,28 @@
       margin-bottom: 1.6rem;
     }
 
+    &.budget {
+      .sec-title {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        .icon-setting {
+          width: 4rem;
+          height: 4rem;
+          background-color: #F3F4F6;
+          @include border-radius(8px);
+          font-size: 2.4rem;
+          color: #999999;
+          padding: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
     &.typ-align-center {
       text-align: center;
     }
@@ -1382,6 +1404,7 @@
       }
     }
   }
+
   &.typ-project-planner {
     display: flex;
     position: relative;
@@ -1395,11 +1418,19 @@
       display: flex;
       position: relative;
       justify-content: center;
-      @media only screen and (max-width: $media-mobile) {  flex-direction: column; }
+
+      @media only screen and (max-width: $media-mobile) {
+        flex-direction: column;
+      }
+
       gap: 2rem;
+
       .grid-col-lht {
         width: 35%;
-        @media only screen and (max-width: $media-mobile) {   width: 100%;}
+
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
       }
 
       .grid-col-rht {
@@ -1412,6 +1443,7 @@
     }
 
   }
+
   &.typ-explore-styles {
     .btn-wrap {
       gap: 2rem;

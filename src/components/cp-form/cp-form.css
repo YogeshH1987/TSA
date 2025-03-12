@@ -473,5 +473,17 @@
     gap: 1.6rem; }
     .cp-form.typ-edit-dimension .btn-wrap .btn {
       min-width: 48%; }
+  .cp-form.typ-edit-budget-amount .form-group {
+    margin-bottom: 0; }
+    .cp-form.typ-edit-budget-amount .form-group .form-control {
+      color: #333333; }
+      .cp-form.typ-edit-budget-amount .form-group .form-control:focus {
+        border-color: #3D7EDB; }
+  .cp-form.typ-edit-budget-amount .btn-wrap {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 3.2rem; }
+    .cp-form.typ-edit-budget-amount .btn-wrap .btn {
+      min-width: 48%; }
 
 /*# sourceMappingURL=cp-form.css.map */
