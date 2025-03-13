@@ -89,6 +89,7 @@
     &.typ-budget-tracker {
         border-bottom: 0;
         padding-bottom: 0;
+
         .cp-icon-list-wrap {
             gap: 1.6rem;
             flex-wrap: wrap;
@@ -107,7 +108,11 @@
                 gap: 8px;
                 @include border-radius(1.2rem);
                 padding: 1.4rem;
-                @media only screen and (max-width: $media-sm) {    width: 100%;}
+
+                @media only screen and (max-width: $media-sm) {
+                    width: 100%;
+                }
+
                 .cont-wrap {
                     max-width: 20rem;
                 }
@@ -139,6 +144,131 @@
                     font-family: $font-medium;
                 }
             }
+        }
+    }
+
+    &.typ-budget-details {
+        border-bottom: 0;
+        padding-bottom: 0;
+
+        .cp-icon-list-wrap {
+            gap: 1.6rem;
+            flex-wrap: wrap;
+
+            .year {
+                color: #00398C;
+                font-size: 1.6rem;
+                display: block;
+                font-family: $font-semiBold;
+            }
+
+            .list-item {
+                font-size: 1.4rem;
+                color: #333333;
+                max-width: 100%;
+                display: flex;
+                flex-direction: initial;
+                align-items: center;
+                text-align: left;
+                justify-content: initial;
+                width: 100%;
+                border: 1px solid #DEDEDE;
+                gap: 8px;
+                @include border-radius(1.2rem);
+                padding: 1.4rem 3rem 1.4rem 1.2rem;
+                position: relative;
+
+                @media only screen and (max-width: $media-sm) {
+                    width: 100%;
+                }
+
+                .cont-wrap {
+                    max-width: 20rem;
+                }
+
+                .expenses {
+                    margin-left: auto;
+                    text-align: right;
+
+                    .price {
+                        font-size: 1.6rem;
+                        font-family: $font-semiBold;
+                        color: $clr-base;
+                        display: block;
+                    }
+
+                    .percent {
+                        font-size: 1.2rem;
+                        color: #666666;
+                        display: block;
+                    }
+                }
+
+                .title {
+                    font-size: 1.4rem;
+                    margin-bottom: 0;
+                }
+
+                .desc {
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    color: $clr-base;
+                }
+
+                .icon {
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    flex: 0 0 3.6rem;
+                    font-size: 2.4rem;
+                    margin-bottom: 0;
+                    padding: 5px;
+                }
+
+                .link {
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    margin-left: auto;
+                    font-family: $font-medium;
+                }
+
+                &:after {
+                    content: "\e907";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    font-size: 1.4rem;
+                    color: #999999;
+                    font-family: 'icomoon' !important;
+                    transform: translate(-50%, -50%) rotate(181deg)
+                }
+            }
+        }
+
+        &.typ-detail-row {
+            .cp-icon-list-wrap {
+                .list-item {
+                    .cont-wrap {
+                        max-width: 100%;
+                        display: flex;
+                        align-items: center;
+                        width: 39%;
+                        justify-content: space-between;
+                    }
+                    .expenses {
+                        text-align: right;
+                        display: flex;
+                        align-items: center;
+                        width: 36%;
+                        justify-content: space-between;
+                        .price{order: 2;}
+                        .percent {
+                            order: 1;
+                        }
+                    }
+                }
+            }
+
+       
         }
     }
 }

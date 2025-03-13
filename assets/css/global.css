@@ -2355,6 +2355,9 @@ p {
     @media only screen and (max-width: 768px) {
       .btn.common-lg-btn {
         min-width: 100%; } }
+  .btn.w-100 {
+    width: 100%;
+    margin-bottom: 2rem; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }

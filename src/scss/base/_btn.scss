@@ -241,4 +241,5 @@
         min-width: 34.3rem;
         @media only screen and (max-width: $media-mobile) { min-width:100%; }
     }
+    &.w-100{ width: 100%; margin-bottom: 2rem;}
 }

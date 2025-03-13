@@ -408,6 +408,8 @@
             width: 100%; }
         .cp-budget-tracker.typ-budget-expenses .budget-details .right-sec .action-wrap .btn {
           min-width: 100%; }
+      .cp-budget-tracker.typ-budget-expenses .budget-details .w-50 {
+        width: 50%; }
     .cp-budget-tracker.typ-budget-expenses .progress-container {
       position: relative;
       display: inline-block; }

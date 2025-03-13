@@ -647,4 +647,31 @@
     }
   }
   &.justify-center{ justify-content: center;}
+  &.typ-budget-grid{
+    margin-bottom: 1.6rem;
+    flex-direction: initial;
+    align-items: initial;
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: initial;
+    }
+
+    .col-67 {
+      flex: 0 0 67%;
+      max-width: 67%;
+
+      @media only screen and (max-width: $media-mobile) {
+        flex: 0 0 100%;
+        max-width:100%;
+      }
+    }
+    .col-33 {
+      flex: 0 0 33%;
+      max-width: 33%;
+
+      @media only screen and (max-width: $media-mobile) {
+        flex: 0 0 100%;
+        max-width:100%;
+      }
+    }
+  }
 }

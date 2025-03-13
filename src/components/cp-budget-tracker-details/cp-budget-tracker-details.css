@@ -1,0 +1,51 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-budget-tracker-details {
+  border: 1px solid #DEDEDE;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  padding: 2.4rem; }
+  .cp-budget-tracker-details.h-100 {
+    height: 100%; }
+  .cp-budget-tracker-details .title {
+    font-size: 2.4rem;
+    color: #000000;
+    font-family: "Poppins Semibold"; }
+  .cp-budget-tracker-details .con-wrap .info-wrap {
+    display: flex;
+    background: #FFF1CC;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    gap: 8px;
+    margin-bottom: 2.4rem; }
+    .cp-budget-tracker-details .con-wrap .info-wrap .icon {
+      font-size: 2.4rem;
+      color: #A77800;
+      background-color: #fff;
+      width: 3.6rem;
+      height: 3.6rem;
+      padding: 6px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .cp-budget-tracker-details .con-wrap .info-wrap .desc {
+      font-size: 1.2rem;
+      font-family: "Poppins Medium";
+      color: #A77800;
+      margin-bottom: 0; }
+  .cp-budget-tracker-details .btn-wrap {
+    margin-top: 2.4rem; }
+    .cp-budget-tracker-details .btn-wrap .btn {
+      min-width: 100%; }
+
+/*# sourceMappingURL=cp-budget-tracker-details.css.map */

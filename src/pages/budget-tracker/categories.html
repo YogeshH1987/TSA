@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Budget Tracker</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
+
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
+    <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
+    <link rel="stylesheet" href="/components/cp-eCommerce-home-banner/cp-eCommerce-home-banner.css" />
+    <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" />
+    <link rel="stylesheet" href="/components/cp-icon-list/cp-icon-list.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="/components/cp-product-type/cp-product-type.css" />
+    <link rel="stylesheet" href="/components/cp-recommend/cp-recommend.css" />
+    <link rel="stylesheet" href="/components/cp-budget-tracker/cp-budget-tracker.css" />
+    <link rel="stylesheet" href="/components/cp-budget-tracker-details/cp-budget-tracker-details.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cp-header">
+            <div class="container">
+                <div class="top-sec">
+                    <div class="hamburger-menu">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="lhs">
+                        <div class="logo-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="container">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop products</a>
+                                <ul class="sub-nav-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home building guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-link-wrap">
+                        <ul class="quick-link-list">
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-search quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-cart quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-profile quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-language quick-link-item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- breadcrumbs starts-->
+        <section class="bs-sec typ-first-sec typ-no-bottom-padding">
+            <div class="container">
+                <div class="sec-cont">
+                    <ul class="cp-breadcrumb">
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link"> Design & calculators</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link active"> Expense diary</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bs-sec">
+            <div class="container">
+                <div class="sec-head budget">
+                    <h2 class="sec-title">Expense diary <span class="icon-setting icon-info2"></span></h2>
+                </div>
+                <div class="sec-cont">
+                    <div class="lyt-grid typ-budget-grid">
+                        <div class="grid-col col-67">
+                            <div class="cp-budget-tracker typ-budget-expenses typ-vertical">
+                                <div class="cp-title cm-mobile-flex">
+                                    <div class="icon-wrap">
+                                        <span class="icon icon-rupee"></span>
+                                    </div>
+                                    <h3 class="title">Budget tracker</h3>
+                                    <span class="budget-price">₹20,00,000 <span class="icon icon-edit  model-open"
+                                            data-toggle="modal" data-modal-class="edit-budget-amount"></span></span>
+                                </div>
+                                <div class="budget-details">
+                                    <div class="left-sec w-50">
+                                        <div class="pie-chart">
+                                            <div class="progress-container">
+                                                <svg class="progress-ring" width="168" height="168">
+                                                    <circle class="progress-ring-background" cx="84" cy="84" r="74"
+                                                        stroke="#FCDACC" stroke-width="20" fill="transparent"></circle>
+                                                    <circle class="progress-ring-circle" cx="84" cy="84" r="74"
+                                                        stroke="#F16933" stroke-width="20" fill="transparent"
+                                                        style="stroke-dasharray: 464.956; stroke-dashoffset: 69.7434;">
+                                                    </circle>
+                                                </svg>
+                                                <div class="progress-text">85% <br> <span class="text">Spent</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-sec w-50">
+                                        <div class="head-wrap cm-desktop-flex">
+                                            <span class="icon icon-rupee"></span>
+                                            <div class="head-sec budget">
+                                                <span class="sub-title"> Total budget</span>
+                                                <h3 class="price">₹20,00,000 <span class=" icon-edit  model-open"
+                                                        data-toggle="modal" data-modal-class="edit-budget-amount">
+                                                    </span></h3>
+                                            </div>
+                                        </div>
+                                        <div class="breakup-wrap">
+                                            <div class="breakup balance">
+                                                <label class="label">Balance</label>
+                                                <div class="amount-wrap">
+                                                    ₹
+                                                    <span class="amount">
+                                                        20,800 </span>
+                                                    <span class="percent">15%</span>
+                                                </div>
+                                            </div>
+                                            <div class="breakup spent">
+                                                <label class="label">Spent</label>
+                                                <div class="amount-wrap">
+                                                    ₹
+                                                    <span class="amount">
+                                                        2,46,000</span>
+                                                    <span class="percent">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="grid-col col-33">
+                            <div class="btn-wrap">
+                                <button class="btn w-100">Add an expense</button>
+                                <button class="btn btn-outline w-100">My home builders</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lyt-grid typ-budget-grid">
+                        <div class="grid-col col-33">
+                            <div class="cp-budget-tracker-details h-100">
+                                <!-- <h3 class="title">Categories</h3> -->
+                                <div class="chart">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-budget-tracker-details/images/chart1.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-budget-tracker-details/images/chart1.png">
+                                        <img src="../components/cp-budget-tracker-details/images/chart1.png"
+                                            alt="blog img" />
+                                    </picture>
+                                </div>
+
+                                <div class="con-wrap">
+                                    <div class="info-wrap">
+                                        <span class="icon icon-bulb"></span>
+                                        <p class="desc">You spent most of your budget on Interiors</p>
+                                    </div>
+                                    <div class="cp-icon-list typ-budget-details">
+                                        <ul class="cp-icon-list-wrap">
+                                            <li class="list-item">
+                                                <div class="icon icon-location-copy orange"></div>
+                                                <div class="cont-wrap">
+                                                    <p class="title">Land prep</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                            <li class="list-item">
+                                                <div class="icon icon-explore-style yellow"></div>
+                                                <div class="cont-wrap">
+                                                    <p class="title">Foundation</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                            <li class="list-item">
+                                                <div class="icon icon-exterior-construction blue"></div>
+                                                <div class="cont-wrap">
+                                                    <p class="title">Structure</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                         
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="btn btn-outline">View all</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col col-33">
+                            <div class="cp-budget-tracker-details h-100">
+                                <!-- <h3 class="title">Categories</h3> -->
+                                <div class="chart">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-budget-tracker-details/images/chart2.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-budget-tracker-details/images/chart2.png">
+                                        <img src="../components/cp-budget-tracker-details/images/chart2.png"
+                                            alt="blog img" />
+                                    </picture>
+                                </div>
+
+                                <div class="con-wrap">
+                                    <div class="info-wrap">
+                                        <span class="icon icon-bulb"></span>
+                                        <p class="desc">You spent most of your budget on Interiors</p>
+                                    </div>
+                                    <div class="cp-icon-list typ-budget-details">
+                                        <ul class="cp-icon-list-wrap">
+                                            <li class="list-item">
+                                                <div class="icon icon-location-copy orange"></div>
+                                                <div class="cont-wrap">
+                                                    <p class="title">Land prep</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                            <li class="list-item">
+                                                <div class="icon icon-explore-style yellow"></div>
+                                                <div class="cont-wrap">
+                                                    <p class="title">Foundation</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                            <li class="list-item">
+                                                <div class="icon icon-exterior-construction blue"></div>
+                                                <div class="cont-wrap">
+                                                    <p class="title">Structure</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                         
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="btn btn-outline">View all</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col col-33">
+                            <div class="cp-budget-tracker-details h-100">
+                                <!-- <h3 class="title">Categories</h3> -->
+                                <div class="chart">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-budget-tracker-details/images/chart3.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-budget-tracker-details/images/chart3.png">
+                                        <img src="../components/cp-budget-tracker-details/images/chart3.png"
+                                            alt="blog img" />
+                                    </picture>
+                                </div>
+
+                                <div class="con-wrap">
+                                    <div class="info-wrap">
+                                        <span class="icon icon-bulb"></span>
+                                        <p class="desc">You spent most of your budget on Interiors</p>
+                                    </div>
+                                    <div class="cp-icon-list typ-budget-details">
+                                        <ul class="cp-icon-list-wrap">
+                                            <span class="year">2025</span>
+                                            <li class="list-item">
+                                                <div class="cont-wrap">
+                                                    <p class="title">Land prep</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                            <span class="year">2025</span>
+                                            <li class="list-item">
+                                                <div class="cont-wrap">
+                                                    <p class="title">Foundation</p>
+                                                    <p class="desc">08 transactions</p>
+                                                </div>
+                                                <div class="expenses">
+                                                    <span class="price">₹12, 24,900</span>
+                                                    <span class="percent">32%</span>
+                                                </div>
+                                            </li>
+                                         
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="btn btn-outline">View all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="bs-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title">Know more about budgeting</h2>
+                </div>
+                <div class="sec-cont">
+                    <div class="lyt-grid typ-col-4">
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">Finding your loan match: Expert advice for selecting the perfect
+                                        home loan</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">The unique struggles for home construction loan approval in
+                                        smaller india...</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">Home loan v/s construction loan: Which one should you choose?
+                                    </h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="cp-blog">
+                                <a href="#" class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <source media="(max-width:991px)"
+                                            srcset="../components/cp-blog/images/blog-img.png">
+                                        <img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+                                    </picture>
+                                </a>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Construction</span>
+                                        </li>
+                                        <li class="tag-item">
+                                            <span class="icon js-add-favorite icon-unfill-like"></span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="c-title">10 reasons for your home construction loan rejection</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+    </main>
+    <!-- Footer Start -->
+    <footer>
+        <div class="cp-footer">
+            <picture>
+                <source media="(max-width:768px)" srcset="/images/footer_mob.png">
+                <img src="/images/footer.png" alt="Footer" />
+            </picture>
+        </div>
+    </footer>
+
+    <!--model pop up start-->
+
+    <div tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share edit-budget-amount">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <button class="close-btn icon-close js-close " type="button"></button>
+                    <div class="cp-model-content">
+                        <p class="title">Edit budget amount</p>
+                        <div class="cp-form typ-edit-budget-amount">
+                            <div class="form-group">
+                                <input type="text" name="" id="budget-amount" class="form-control validate-name"
+                                    value="₹ 40,00,000" placeholder="Enter Amount">
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-outline js-close" type="button">Cancel</button>
+                                <button class="btn">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
+    <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="/components/cp-product-type/cp-product-type.js"></script>
+    <script src="../../components/cp-recommend/cp-recommend.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
