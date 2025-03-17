@@ -114,11 +114,28 @@
     .cp-icon-list.typ-budget-details .cp-icon-list-wrap {
       gap: 1.6rem;
       flex-wrap: wrap; }
-      .cp-icon-list.typ-budget-details .cp-icon-list-wrap .year {
-        color: #00398C;
-        font-size: 1.6rem;
-        display: block;
-        font-family: "Poppins Semibold"; }
+      .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-year {
+        width: 100%; }
+        .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-year .year {
+          color: #00398C;
+          font-size: 1.6rem;
+          display: block;
+          font-family: "Poppins Semibold";
+          margin-top: 1rem; }
+          .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-year .year.typ-2 {
+            font-size: 1.4rem;
+            color: #808080; }
+        .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-year .date-info {
+          display: flex;
+          justify-content: space-between; }
+          .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-year .date-info .date {
+            font-size: 2.4rem;
+            font-family: "Poppins Semibold";
+            color: #00398C; }
+          .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-year .date-info .price {
+            font-size: 2.4rem;
+            color: #333333;
+            font-family: "Poppins Semibold"; }
       .cp-icon-list.typ-budget-details .cp-icon-list-wrap .list-item {
         font-size: 1.4rem;
         color: #333333;
@@ -187,12 +204,18 @@
       align-items: center;
       width: 39%;
       justify-content: space-between; }
+      @media only screen and (max-width: 991px) {
+        .cp-icon-list.typ-budget-details.typ-detail-row .cp-icon-list-wrap .list-item .cont-wrap {
+          display: block; } }
     .cp-icon-list.typ-budget-details.typ-detail-row .cp-icon-list-wrap .list-item .expenses {
       text-align: right;
       display: flex;
       align-items: center;
       width: 36%;
       justify-content: space-between; }
+      @media only screen and (max-width: 991px) {
+        .cp-icon-list.typ-budget-details.typ-detail-row .cp-icon-list-wrap .list-item .expenses {
+          display: block; } }
       .cp-icon-list.typ-budget-details.typ-detail-row .cp-icon-list-wrap .list-item .expenses .price {
         order: 2; }
       .cp-icon-list.typ-budget-details.typ-detail-row .cp-icon-list-wrap .list-item .expenses .percent {

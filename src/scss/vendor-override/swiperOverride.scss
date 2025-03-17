@@ -924,8 +924,9 @@
     @media only screen and (max-width: $media-mobile) {}
 
     .swiper-slide {
-    border-radius:1.2rem;
-    overflow: hidden;
+      border-radius: 1.2rem;
+      overflow: hidden;
+
       img {
         object-fit: cover;
         width: 100%;
@@ -940,7 +941,7 @@
   }
 
   &.typ-home-story-thumb {
-    margin:0;
+    margin: 0;
     padding-bottom: 0rem;
     overflow: hidden;
 
@@ -954,14 +955,17 @@
       border: 1px solid #DEDEDE;
       min-height: 60px;
       overflow: hidden;
+
       @media only screen and (max-width: $media-mobile) {
         min-height: 40px;
       }
+
       img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         min-height: 60px;
+
         @media only screen and (max-width: $media-mobile) {
           min-height: 40px;
         }
@@ -1025,6 +1029,17 @@
   &.typ-design-style-quiz {
     @media only screen and (max-width: $media-mobile) {
       margin-left: -2rem;
+    }
+  }
+
+  &.typ-budget-recommended {
+    .swiper-wrapper {
+      display: block;
+      @media only screen and (max-width: $media-mobile) { display: flex;}
+      .swiper-slide {
+        margin-bottom: 2rem;
+        @media only screen and (max-width: $media-mobile) { margin-bottom: 0;}
+      }
     }
   }
 }

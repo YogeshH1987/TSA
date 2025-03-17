@@ -57,3 +57,49 @@ function architectsNearYou() {
         }
     });
 }
+
+var swiperInstances = {}; // Object to store Swiper instances
+
+function recommendedServiceSlider() {
+    var screenWidth = window.innerWidth;
+    var sliders = document.querySelectorAll(".js-recommended-service");
+
+    sliders.forEach((slider, index) => {
+        var sliderKey = `swiper-${index}`; // Unique key for each slider
+
+        if (screenWidth <= 999) { 
+            if (!swiperInstances[sliderKey]) {
+                swiperInstances[sliderKey] = new Swiper(slider, {
+                    slidesPerView: 1.2,
+                    spaceBetween: 12,
+                    loop: false,
+                    navigation: false,
+                    pagination: false,
+
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 1.2,
+                            spaceBetween: 12,
+                        },
+                        999: {
+                            slidesPerView: 8,
+                            spaceBetween: 20
+                        }
+                    }
+                });
+            }
+        } else {
+            // Destroy Swiper if it exists when screen width is larger than 999px
+            if (swiperInstances[sliderKey]) {
+                swiperInstances[sliderKey].destroy(true, true);
+                delete swiperInstances[sliderKey];
+            }
+        }
+    });
+}
+
+// Run on page load
+recommendedServiceSlider();
+
+// Run on window resize
+window.addEventListener("resize", recommendedServiceSlider);

@@ -2198,4 +2198,61 @@
             }
         }
     }
+
+    &.typ-budget-details {
+        background: transparent;
+        padding: 0 0 2.4rem;
+
+        .feature {
+            .feature-card {
+                padding: 2.4rem 3.2rem;
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+            }
+
+            .feature-item {
+                width: 100%;
+
+                .f-title {
+                    font-size: 2.8rem;
+                }
+
+                .f-desc {
+                    font-family: "Poppins Regular";
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: $clr-base;
+                }
+
+                .f-img {
+                    z-index: 1;
+                    width: 8rem;
+                    height: 8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 0;
+                    bottom: auto;
+
+                    .icon {
+                        font-size: 6.4rem;
+                    }
+
+                    &::after {
+                        background: #ECF2FB;
+                        width: 12rem;
+                        height: 12rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: -28px;
+                        top: -23px;
+                        content: '';
+                        opacity: 1;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
 }

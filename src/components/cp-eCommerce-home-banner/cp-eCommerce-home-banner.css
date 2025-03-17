@@ -1185,5 +1185,44 @@
         background-color: #CCCCCC; }
       .cp-eCommerce-home-banner.typ-budget-tracker .feature .feature-item.grey-card .f-img .icon {
         color: #808080; }
+  .cp-eCommerce-home-banner.typ-budget-details {
+    background: transparent;
+    padding: 0 0 2.4rem; }
+    .cp-eCommerce-home-banner.typ-budget-details .feature .feature-card {
+      padding: 2.4rem 3.2rem;
+      flex-direction: column;
+      justify-content: center;
+      display: flex; }
+    .cp-eCommerce-home-banner.typ-budget-details .feature .feature-item {
+      width: 100%; }
+      .cp-eCommerce-home-banner.typ-budget-details .feature .feature-item .f-title {
+        font-size: 2.8rem; }
+      .cp-eCommerce-home-banner.typ-budget-details .feature .feature-item .f-desc {
+        font-family: "Poppins Regular";
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #333333; }
+      .cp-eCommerce-home-banner.typ-budget-details .feature .feature-item .f-img {
+        z-index: 1;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: auto; }
+        .cp-eCommerce-home-banner.typ-budget-details .feature .feature-item .f-img .icon {
+          font-size: 6.4rem; }
+        .cp-eCommerce-home-banner.typ-budget-details .feature .feature-item .f-img::after {
+          background: #ECF2FB;
+          width: 12rem;
+          height: 12rem;
+          border-radius: 50%;
+          position: absolute;
+          right: -28px;
+          top: -23px;
+          content: '';
+          opacity: 1;
+          z-index: -1; }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */

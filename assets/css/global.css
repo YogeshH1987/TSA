@@ -1156,10 +1156,35 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-sec .sec-head {
         margin-bottom: 1.6rem; } }
+    .bs-sec .sec-head.budget-cate-title {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      justify-content: space-between; }
+      .bs-sec .sec-head.budget-cate-title .sec-title {
+        font-size: 3.6rem; }
+        @media only screen and (max-width: 991px) {
+          .bs-sec .sec-head.budget-cate-title .sec-title {
+            font-size: 2.4rem; } }
+    .bs-sec .sec-head.budget-detail {
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: end;
+      justify-content: space-between; }
+      .bs-sec .sec-head.budget-detail .link {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        white-space: nowrap; }
+      .bs-sec .sec-head.budget-detail .sec-title {
+        font-size: 2.4rem;
+        line-height: 3.2rem; }
     .bs-sec .sec-head.budget .sec-title {
       display: flex;
       align-items: center;
       gap: 2.4rem; }
+      @media only screen and (max-width: 991px) {
+        .bs-sec .sec-head.budget .sec-title {
+          justify-content: space-between; } }
       .bs-sec .sec-head.budget .sec-title .icon-setting {
         width: 4rem;
         height: 4rem;
@@ -2167,6 +2192,17 @@ p {
       .bs-sec.typ-planning-stage .desc {
         font-size: 1.4rem;
         line-height: 2.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .bs-sec.typ-budget-category .typ-budget-category-btn {
+      display: flex;
+      gap: 1.2rem; } }
+  .bs-sec.typ-budget-category .typ-budget-category-btn .btn {
+    width: 100%;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-budget-category .typ-budget-category-btn .btn {
+        margin-bottom: 1.2rem;
+        width: 50%; } }
 
 .mb-24 {
   margin-bottom: 2.4rem; }
@@ -2356,8 +2392,7 @@ p {
       .btn.common-lg-btn {
         min-width: 100%; } }
   .btn.w-100 {
-    width: 100%;
-    margin-bottom: 2rem; }
+    width: 100%; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }
@@ -4294,6 +4329,16 @@ p {
   @media only screen and (max-width: 768px) {
     .bs-swiper.typ-design-style-quiz {
       margin-left: -2rem; } }
+  .bs-swiper.typ-budget-recommended .swiper-wrapper {
+    display: block; }
+    @media only screen and (max-width: 768px) {
+      .bs-swiper.typ-budget-recommended .swiper-wrapper {
+        display: flex; } }
+    .bs-swiper.typ-budget-recommended .swiper-wrapper .swiper-slide {
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .bs-swiper.typ-budget-recommended .swiper-wrapper .swiper-slide {
+          margin-bottom: 0; } }
 
 /* colors */
 /*font family*/

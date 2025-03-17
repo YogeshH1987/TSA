@@ -107,4 +107,36 @@
             overflow: visible;
         }
     }
+
+    &.typ-budget-category {
+
+        .swiper {
+            @media only screen and (max-width: $media-mobile) {
+                overflow: hidden;
+            }
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #DEDEDE;
+        padding: 2rem;
+        @include border-radius(1.6rem);
+
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            gap: 2rem;
+            height: auto;
+
+            @media only screen and (max-width: $media-mobile) {
+                flex-wrap: initial;
+                gap: 0;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                width: calc(33% - 1.2rem);
+            }
+        }
+
+    }
 }

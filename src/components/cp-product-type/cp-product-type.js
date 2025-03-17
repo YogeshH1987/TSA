@@ -35,3 +35,45 @@ function productMaterialSlider() {
       }
   });
 }
+
+var swiperInstance; // Global variable to store Swiper instance
+
+function categoryMaterialSlider() {
+    var screenWidth = window.innerWidth;
+
+    if (screenWidth <= 999) { 
+        // Initialize Swiper only if it's not already initialized
+        if (!swiperInstance) {
+            swiperInstance = new Swiper(".js-category-material", {
+                slidesPerView: 2.8,
+                spaceBetween: 12,
+                loop: false,
+                navigation: false,
+                pagination: false,
+
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2.8,
+                        spaceBetween: 12,
+                    },
+                    999: {
+                        slidesPerView: 8,
+                        spaceBetween: 20
+                    }
+                }
+            });
+        }
+    } else {
+        // Destroy Swiper if it exists when screen width is larger than 999px
+        if (swiperInstance) {
+            swiperInstance.destroy(true, true);
+            swiperInstance = null;
+        }
+    }
+}
+
+// Run on page load
+categoryMaterialSlider();
+
+// Run on window resize
+window.addEventListener('resize', categoryMaterialSlider);

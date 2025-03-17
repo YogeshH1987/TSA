@@ -155,13 +155,24 @@
             gap: 1.6rem;
             flex-wrap: wrap;
 
-            .year {
-                color: #00398C;
-                font-size: 1.6rem;
-                display: block;
-                font-family: $font-semiBold;
+          
+            .list-year{
+                width: 100%;
+                .year {
+                    color: #00398C;
+                    font-size: 1.6rem;
+                    display: block;
+                    font-family: $font-semiBold;
+                    margin-top: 1rem;
+                    &.typ-2{ font-size: 1.4rem; color: #808080;}
+                }
+                .date-info{
+                    display: flex;
+                    justify-content: space-between;
+                    .date{ font-size: 2.4rem; font-family: $font-semiBold; color: #00398C;}
+                    .price{ font-size: 2.4rem;  color: $clr-base;  font-family: $font-semiBold;}
+                }
             }
-
             .list-item {
                 font-size: 1.4rem;
                 color: #333333;
@@ -253,14 +264,27 @@
                         align-items: center;
                         width: 39%;
                         justify-content: space-between;
+
+                        @media only screen and (max-width: $media-sm) {
+                            display: block;
+                        }
                     }
+
                     .expenses {
                         text-align: right;
                         display: flex;
                         align-items: center;
                         width: 36%;
                         justify-content: space-between;
-                        .price{order: 2;}
+
+                        @media only screen and (max-width: $media-sm) {
+                            display: block;
+                        }
+
+                        .price {
+                            order: 2;
+                        }
+
                         .percent {
                             order: 1;
                         }
@@ -268,7 +292,7 @@
                 }
             }
 
-       
+
         }
     }
 }

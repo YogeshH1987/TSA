@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/components/cp-product-type/cp-product-type.css" />
     <link rel="stylesheet" href="/components/cp-recommend/cp-recommend.css" />
     <link rel="stylesheet" href="/components/cp-budget-tracker/cp-budget-tracker.css" />
+    <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-budget-tracker-details/cp-budget-tracker-details.css" />
 </head>
 
@@ -139,7 +140,7 @@
         </section>
 
 
-        <section class="bs-sec">
+        <section class="bs-sec typ-budget-category">
             <div class="container">
                 <div class="sec-head budget">
                     <h2 class="sec-title">Expense diary <span class="icon-setting icon-info2"></span></h2>
@@ -210,193 +211,223 @@
                             </div>
                         </div>
                         <div class="grid-col col-33">
-                            <div class="btn-wrap">
+                            <div class="btn-wrap typ-budget-category-btn">
                                 <button class="btn w-100">Add an expense</button>
                                 <button class="btn btn-outline w-100">My home builders</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="lyt-grid typ-budget-grid">
-                        <div class="grid-col col-33">
-                            <div class="cp-budget-tracker-details h-100">
-                                <!-- <h3 class="title">Categories</h3> -->
-                                <div class="chart">
-                                    <picture>
-                                        <source media="(max-width:768px)"
-                                            srcset="../components/cp-budget-tracker-details/images/chart1.png">
-                                        <source media="(max-width:991px)"
-                                            srcset="../components/cp-budget-tracker-details/images/chart1.png">
-                                        <img src="../components/cp-budget-tracker-details/images/chart1.png"
-                                            alt="blog img" />
-                                    </picture>
+                    <div class="cp-tab typ-budget-category">
+                        <ul class="tab-list">
+                            <li class="tab-item active" data-target="#tab1">
+                                <h3 class="title">Categories</h3>
+                            </li>
+                            <li class="tab-item" data-target="#tab2">
+                                <h3 class="title">Types</h3>
+                            </li>
+                            <li class="tab-item" data-target="#tab3">
+                                <h3 class="title">Timelines</h3>
+                            </li>
+                        </ul>
+                        <div class="tab-container">
+                            <div class="lyt-grid typ-budget-grid">
+                                <div class="grid-col col-33">
+                                    <div class="tab-content active" id="tab1">
+                                        <div class="cp-budget-tracker-details h-100">
+                                            <!-- <h3 class="title">Categories</h3> -->
+                                            <div class="chart">
+                                                <picture>
+                                                    <source media="(max-width:768px)"
+                                                        srcset="../components/cp-budget-tracker-details/images/chart1.png">
+                                                    <source media="(max-width:991px)"
+                                                        srcset="../components/cp-budget-tracker-details/images/chart1.png">
+                                                    <img src="../components/cp-budget-tracker-details/images/chart1.png"
+                                                        alt="blog img" />
+                                                </picture>
+                                            </div>
+            
+                                            <div class="con-wrap">
+                                                <div class="info-wrap">
+                                                    <span class="icon icon-bulb"></span>
+                                                    <p class="desc">You spent most of your budget on Interiors</p>
+                                                </div>
+                                                <div class="cp-icon-list typ-budget-details">
+                                                    <ul class="cp-icon-list-wrap">
+                                                        <li class="list-item">
+                                                            <div class="icon icon-location-copy orange"></div>
+                                                            <div class="cont-wrap">
+                                                                <p class="title">Land prep</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <div class="icon icon-explore-style yellow"></div>
+                                                            <div class="cont-wrap">
+                                                                <p class="title">Foundation</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <div class="icon icon-exterior-construction blue"></div>
+                                                            <div class="cont-wrap">
+                                                                <p class="title">Structure</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+            
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button class="btn btn-outline">View all</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="con-wrap">
-                                    <div class="info-wrap">
-                                        <span class="icon icon-bulb"></span>
-                                        <p class="desc">You spent most of your budget on Interiors</p>
+                                <div class="grid-col col-33">
+                                    <div class="tab-content" id="tab2">
+                                        <div class="cp-budget-tracker-details h-100">
+                                            <!-- <h3 class="title">Categories</h3> -->
+                                            <div class="chart">
+                                                <picture>
+                                                    <source media="(max-width:768px)"
+                                                        srcset="../components/cp-budget-tracker-details/images/chart2.png">
+                                                    <source media="(max-width:991px)"
+                                                        srcset="../components/cp-budget-tracker-details/images/chart2.png">
+                                                    <img src="../components/cp-budget-tracker-details/images/chart2.png"
+                                                        alt="blog img" />
+                                                </picture>
+                                            </div>
+            
+                                            <div class="con-wrap">
+                                                <div class="info-wrap">
+                                                    <span class="icon icon-bulb"></span>
+                                                    <p class="desc">You spent most of your budget on Interiors</p>
+                                                </div>
+                                                <div class="cp-icon-list typ-budget-details">
+                                                    <ul class="cp-icon-list-wrap">
+                                                        <li class="list-item">
+                                                            <div class="icon icon-location-copy orange"></div>
+                                                            <div class="cont-wrap">
+                                                                <p class="title">Land prep</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <div class="icon icon-explore-style yellow"></div>
+                                                            <div class="cont-wrap">
+                                                                <p class="title">Foundation</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <div class="icon icon-exterior-construction blue"></div>
+                                                            <div class="cont-wrap">
+                                                                <p class="title">Structure</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+            
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button class="btn btn-outline">View all</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="cp-icon-list typ-budget-details">
-                                        <ul class="cp-icon-list-wrap">
-                                            <li class="list-item">
-                                                <div class="icon icon-location-copy orange"></div>
-                                                <div class="cont-wrap">
-                                                    <p class="title">Land prep</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-item">
-                                                <div class="icon icon-explore-style yellow"></div>
-                                                <div class="cont-wrap">
-                                                    <p class="title">Foundation</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-item">
-                                                <div class="icon icon-exterior-construction blue"></div>
-                                                <div class="cont-wrap">
-                                                    <p class="title">Structure</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                         
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-wrap">
-                                    <button class="btn btn-outline">View all</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-col col-33">
-                            <div class="cp-budget-tracker-details h-100">
-                                <!-- <h3 class="title">Categories</h3> -->
-                                <div class="chart">
-                                    <picture>
-                                        <source media="(max-width:768px)"
-                                            srcset="../components/cp-budget-tracker-details/images/chart2.png">
-                                        <source media="(max-width:991px)"
-                                            srcset="../components/cp-budget-tracker-details/images/chart2.png">
-                                        <img src="../components/cp-budget-tracker-details/images/chart2.png"
-                                            alt="blog img" />
-                                    </picture>
                                 </div>
 
-                                <div class="con-wrap">
-                                    <div class="info-wrap">
-                                        <span class="icon icon-bulb"></span>
-                                        <p class="desc">You spent most of your budget on Interiors</p>
+                                <div class="grid-col col-33">
+                                    <div class="tab-content" id="tab3">
+                                        <div class="cp-budget-tracker-details h-100">
+                                            <!-- <h3 class="title">Categories</h3> -->
+                                            <div class="chart">
+                                                <picture>
+                                                    <source media="(max-width:768px)"
+                                                        srcset="../components/cp-budget-tracker-details/images/chart3.png">
+                                                    <source media="(max-width:991px)"
+                                                        srcset="../components/cp-budget-tracker-details/images/chart3.png">
+                                                    <img src="../components/cp-budget-tracker-details/images/chart3.png"
+                                                        alt="blog img" />
+                                                </picture>
+                                            </div>
+            
+                                            <div class="con-wrap">
+                                                <div class="info-wrap">
+                                                    <span class="icon icon-bulb"></span>
+                                                    <p class="desc">You spent most of your budget on Interiors</p>
+                                                </div>
+                                                <div class="cp-icon-list typ-budget-details">
+                                                    <ul class="cp-icon-list-wrap">
+                                                        <li class="list-year">
+                                                            <span class="year">2025</span>
+                                                          
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <div class="cont-wrap">
+                                                                <p class="title">January</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-year">
+                                                            <span class="year">2024</span>
+                                                          
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <div class="cont-wrap">
+                                                                <p class="title">December</p>
+                                                                <p class="desc">08 transactions</p>
+                                                            </div>
+                                                            <div class="expenses">
+                                                                <span class="price">₹12, 24,900</span>
+                                                                <span class="percent">32%</span>
+                                                            </div>
+                                                        </li>
+            
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button class="btn btn-outline">View all</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="cp-icon-list typ-budget-details">
-                                        <ul class="cp-icon-list-wrap">
-                                            <li class="list-item">
-                                                <div class="icon icon-location-copy orange"></div>
-                                                <div class="cont-wrap">
-                                                    <p class="title">Land prep</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-item">
-                                                <div class="icon icon-explore-style yellow"></div>
-                                                <div class="cont-wrap">
-                                                    <p class="title">Foundation</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-item">
-                                                <div class="icon icon-exterior-construction blue"></div>
-                                                <div class="cont-wrap">
-                                                    <p class="title">Structure</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                         
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-wrap">
-                                    <button class="btn btn-outline">View all</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-col col-33">
-                            <div class="cp-budget-tracker-details h-100">
-                                <!-- <h3 class="title">Categories</h3> -->
-                                <div class="chart">
-                                    <picture>
-                                        <source media="(max-width:768px)"
-                                            srcset="../components/cp-budget-tracker-details/images/chart3.png">
-                                        <source media="(max-width:991px)"
-                                            srcset="../components/cp-budget-tracker-details/images/chart3.png">
-                                        <img src="../components/cp-budget-tracker-details/images/chart3.png"
-                                            alt="blog img" />
-                                    </picture>
-                                </div>
-
-                                <div class="con-wrap">
-                                    <div class="info-wrap">
-                                        <span class="icon icon-bulb"></span>
-                                        <p class="desc">You spent most of your budget on Interiors</p>
-                                    </div>
-                                    <div class="cp-icon-list typ-budget-details">
-                                        <ul class="cp-icon-list-wrap">
-                                            <span class="year">2025</span>
-                                            <li class="list-item">
-                                                <div class="cont-wrap">
-                                                    <p class="title">Land prep</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                            <span class="year">2025</span>
-                                            <li class="list-item">
-                                                <div class="cont-wrap">
-                                                    <p class="title">Foundation</p>
-                                                    <p class="desc">08 transactions</p>
-                                                </div>
-                                                <div class="expenses">
-                                                    <span class="price">₹12, 24,900</span>
-                                                    <span class="percent">32%</span>
-                                                </div>
-                                            </li>
-                                         
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-wrap">
-                                    <button class="btn btn-outline">View all</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+              
                 </div>
             </div>
         </section>
@@ -576,6 +607,7 @@
     <script src="/js/global.js"></script>
     <script src="/components/cp-product-type/cp-product-type.js"></script>
     <script src="../../components/cp-recommend/cp-recommend.js"></script>
+    <script src="../../components/cp-budget-tracker-details/cp-budget-tracker-details.js"></script>
     <!-- endbuild -->
 </body>
 

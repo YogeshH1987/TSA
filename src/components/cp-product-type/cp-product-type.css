@@ -77,5 +77,27 @@
   @media only screen and (max-width: 768px) {
     .cp-product-material .swiper {
       overflow: visible; } }
+  .cp-product-material.typ-budget-category {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #DEDEDE;
+    padding: 2rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem; }
+    @media only screen and (max-width: 768px) {
+      .cp-product-material.typ-budget-category .swiper {
+        overflow: hidden; } }
+    .cp-product-material.typ-budget-category .swiper-wrapper {
+      flex-wrap: wrap;
+      gap: 2rem;
+      height: auto; }
+      @media only screen and (max-width: 768px) {
+        .cp-product-material.typ-budget-category .swiper-wrapper {
+          flex-wrap: initial;
+          gap: 0;
+          height: 100%; } }
+      .cp-product-material.typ-budget-category .swiper-wrapper .swiper-slide {
+        width: calc(33% - 1.2rem); }
 
 /*# sourceMappingURL=cp-product-type.css.map */

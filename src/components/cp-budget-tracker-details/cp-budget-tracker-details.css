@@ -16,7 +16,7 @@
     font-size: 2.4rem;
     color: #000000;
     font-family: "Poppins Semibold"; }
-  .cp-budget-tracker-details .con-wrap .info-wrap {
+  .cp-budget-tracker-details .info-wrap {
     display: flex;
     background: #FFF1CC;
     justify-content: flex-start;
@@ -25,7 +25,7 @@
     border-radius: 12px;
     gap: 8px;
     margin-bottom: 2.4rem; }
-    .cp-budget-tracker-details .con-wrap .info-wrap .icon {
+    .cp-budget-tracker-details .info-wrap .icon {
       font-size: 2.4rem;
       color: #A77800;
       background-color: #fff;
@@ -38,7 +38,7 @@
       display: flex;
       align-items: center;
       justify-content: center; }
-    .cp-budget-tracker-details .con-wrap .info-wrap .desc {
+    .cp-budget-tracker-details .info-wrap .desc {
       font-size: 1.2rem;
       font-family: "Poppins Medium";
       color: #A77800;
@@ -47,5 +47,7 @@
     margin-top: 2.4rem; }
     .cp-budget-tracker-details .btn-wrap .btn {
       min-width: 100%; }
+  .cp-budget-tracker-details.mb-32 {
+    margin-bottom: 3.2rem; }
 
 /*# sourceMappingURL=cp-budget-tracker-details.css.map */
