@@ -3746,6 +3746,12 @@ p {
     @media only screen and (max-width: 991px) {
       .bs-modal.reset-expense-diary .modal-body {
         padding: 1.6rem 0; } }
+  .bs-modal.delete-expense, .bs-modal.exit-modal {
+    max-width: 400px;
+    max-height: 100%; }
+    @media only screen and (max-width: 991px) {
+      .bs-modal.delete-expense .modal-body, .bs-modal.exit-modal .modal-body {
+        padding: 1.6rem 0; } }
 
 /* colors */
 /*font family*/
@@ -4422,6 +4428,10 @@ p {
       @media only screen and (max-width: 768px) {
         .bs-swiper.typ-budget-recommended .swiper-wrapper .swiper-slide {
           margin-bottom: 0; } }
+  .bs-swiper.typ-budget-thumb-expense {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.6rem; }
 
 /* colors */
 /*font family*/

@@ -130,5 +130,59 @@
     line-height: normal;
     margin-bottom: 0;
     padding-bottom: 0; }
+  .cp-model-content.typ-delete-expense {
+    text-align: left; }
+    .cp-model-content.typ-delete-expense .title {
+      font-size: 2rem;
+      line-height: 2;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      margin-bottom: 1.2rem;
+      line-height: 2.4rem;
+      padding-right: 3rem; }
+    .cp-model-content.typ-delete-expense .expense-sec {
+      background-color: #ECF2FB;
+      border: 1px solid #3D7EDB;
+      padding: 1.6rem 1.2rem;
+      border-radius: 1.2rem;
+      -webkit-border-radius: 1.2rem;
+      -moz-border-radius: 1.2rem; }
+      .cp-model-content.typ-delete-expense .expense-sec .price {
+        font-family: "Poppins Semibold";
+        font-size: 2rem;
+        color: #333333;
+        display: block; }
+      .cp-model-content.typ-delete-expense .expense-sec .product-name {
+        font-size: 1.6rem;
+        color: #333333; }
+    .cp-model-content.typ-delete-expense .btn-wrap {
+      display: flex;
+      gap: 2rem;
+      margin-top: 3.2rem; }
+      .cp-model-content.typ-delete-expense .btn-wrap .btn {
+        width: 48%; }
+  .cp-model-content.typ-exit-modal {
+    text-align: left; }
+    .cp-model-content.typ-exit-modal .title {
+      font-size: 2rem;
+      line-height: 2;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      margin-bottom: 1.2rem;
+      line-height: 2.4rem;
+      padding-right: 3rem; }
+    .cp-model-content.typ-exit-modal .desc {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #333333;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-family: "Poppins Regular"; }
+    .cp-model-content.typ-exit-modal .btn-wrap {
+      display: flex;
+      gap: 2rem;
+      margin-top: 3.2rem; }
+      .cp-model-content.typ-exit-modal .btn-wrap .btn {
+        width: 48%; }
 
 /*# sourceMappingURL=cp-model-content.css.map */

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
@@ -24,6 +26,9 @@
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="../../components/cp-budget-tracker-details/cp-budget-tracker-details.css" />
     <link rel="stylesheet" href="../components/cp-datepicker/cp-datepicker.css" />
+    <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
+    <link rel="stylesheet" href="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.css" />
+    <link rel="stylesheet" href="/components/cp-model-content/cp-model-content.css" />
 </head>
 
 <body>
@@ -143,56 +148,229 @@
                         <p class="desc">Your data will be kept confidential and used solely for its intended purpose. We
                             will not share, sell, or disclose your information to third parties without your consent.
                         </p>
-                        <div class="cp-form">
-                            <div class="form-group error">
-                                <label class="form-label">Expense name</label>
-                                <input type="text" id="expense-name" class="form-control validate-name" value="" placeholder="Enter Expense"
-                                    required="">
-                                <span class="error-msg"></span>
-                            </div>
 
-                            <div class="form-group error">
-                                <label class="form-label">Amount</label>
-                                <input type="text" id="amount" class="form-control validate-text" value="" placeholder="Enter Amount"
-                                    required="">
-                                <span class="error-msg"></span>
-                            </div>
+                    </div>
 
-                            <div class="form-group">
-                                <label class="form-label">Category</label>
-                                <div class="cp-select">
-                                    <div class="select-dropdown">
-                                        <button href="#" role="button" data-value=""
-                                            class="select-dropdown-button">
-                                            <span class="select-text">select</span> <i
-                                                class="zmdi zmdi-chevron-down"></i>
-                                        </button>
-                                        <ul class="select-dropdown-list">
-                                            <li class="dropdown-item">
-                                                <span data-value="1"
-                                                    class="select-dropdown-list-item">Electric work</span>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <span data-value="2"
-                                                    class="select-dropdown-list-item">Electric work</span>
+                    <div class="expense-head typ-d-flex">
+                        <h3 class="title">Expense Details</h3>
+                        <a href="" class="link model-open"
+                        data-toggle="modal" data-modal-class="delete-expense"><span class="icon icon-delate"></span><span class="text">Delete
+                                expense</span></a>
+                    </div>
+                    <div class="cp-form">
+                        <div class="form-group error">
+                            <label class="form-label">Expense name</label>
+                            <input type="text" id="expense-name" class="form-control validate-name" value=""
+                                placeholder="Enter Expense" required="">
+                            <span class="error-msg"></span>
+                        </div>
 
-                                            </li>
+                        <div class="form-group error">
+                            <label class="form-label">Amount</label>
+                            <input type="text" id="amount" class="form-control validate-text" value=""
+                                placeholder="Enter Amount" required="">
+                            <span class="error-msg"></span>
+                        </div>
 
-                                        </ul>
-                                    </div>
+                        <div class="form-group">
+                            <label class="form-label">Category</label>
+                            <div class="cp-select">
+                                <div class="select-dropdown">
+                                    <button href="#" role="button" data-value="" class="select-dropdown-button">
+                                        <span class="select-text">select</span> <i class="zmdi zmdi-chevron-down"></i>
+                                    </button>
+                                    <ul class="select-dropdown-list">
+                                        <li class="dropdown-item">
+                                            <span data-value="1" class="select-dropdown-list-item">Electric
+                                                work</span>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span data-value="2" class="select-dropdown-list-item">Electric
+                                                work</span>
+
+                                        </li>
+
+                                    </ul>
                                 </div>
-                            </div>
-
-                            <div class="form-group error">
-                                <label class="form-label">Start date</label>
-                                <div class="form-input-wrap">
-                                    <input type="text" class="form-control validate-name" value="" id="start-date"
-                                        placeholder="Enter date" required="">
-                                    <span class="icon icon-calender"></span>
-                                </div>
-                                <span class="error-msg"></span>
                             </div>
                         </div>
+
+                        <div class="form-group error">
+                            <label class="form-label">Start date</label>
+                            <div class="form-input-wrap datepicker-wrap">
+                                <input type="text" class="form-control validate-name" value="" id="start-date"
+                                    placeholder="Enter date" required="">
+                                <span class="icon icon-calender"></span>
+                            </div>
+                            <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Select expense type</label>
+                            <div class="radio-wrap typ-wrap-expense">
+                                <div class="bs-radio">
+                                    <input id="expense1" name="expense" type="radio">
+                                    <label for="expense1" class="custom-radio">
+                                        <span>Material</span>
+                                    </label>
+                                </div>
+
+                                <div class="bs-radio">
+                                    <input id="expense2" name="expense" type="radio">
+                                    <label for="expense2" class="custom-radio">
+                                        <span>Labour</span>
+                                    </label>
+                                </div>
+
+                                <div class="bs-radio">
+                                    <input id="expense3" name="expense" type="radio">
+                                    <label for="expense3" class="custom-radio">
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="sec-cont">
+                            <div class="cont-head">
+                                <h2 class="cont-sub-title">Upload photos (optional) </h2>
+                                <p class="small-text">E.g., bills or materials</p>
+                            </div>
+                            <div class="cp-attached-file">
+                                <div class="upload-file-area">
+                                    <span class="icon icon-camera"></span>
+                                    <h3 class="title">Upload photo</h3>
+                                    <!-- <p class="desc">File formats: PNG, JPEG, PDF, PPT, DOC and DOCX. File size should not exceed 2
+                                    MB.</p> -->
+                                    <label class="label"> <input type="file" name="images[]" multiple="" id="upload-img"
+                                            class="default-file-input"> </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="sec-cont">
+                            <div class="cont-head">
+                                <h2 class="cont-sub-title">Reference photo</h2>
+                                <a href="#" class="link">Delete photo</a>
+                            </div>
+                            <div class="upload-img-wrap">
+                                <div class="big-image cm-desktop">
+                                    <picture>
+                                        <img id="mainImage"
+                                            src="../../components/cp-budget-tracker-details/images/img1.png"
+                                            alt="pro-big-img" />
+                                    </picture>
+                                </div>
+                                <div class="thumb-image-wrap">
+                                    <div class="thumb-image">
+                                        <picture>
+                                            <img class="thumb"
+                                                src="../../components/cp-budget-tracker-details/images/img1.png"
+                                                alt="pro-big-img" />
+                                        </picture>
+                                    </div>
+                                    <div class="thumb-image">
+                                        <picture>
+                                            <img class="thumb"
+                                                src="../../components/cp-budget-tracker-details/images/img2.png"
+                                                alt="pro-big-img" />
+                                        </picture>
+                                    </div>
+                                    <div class="thumb-image">
+                                        <picture>
+                                            <img class="thumb"
+                                                src="../../components/cp-prod-thumb-slider/images/architech-big-img.png"
+                                                alt="pro-big-img" />
+                                        </picture>
+                                    </div>
+                                    <div class="thumb-image">
+                                        <picture>
+                                            <img class="thumb"
+                                                src="../../components/cp-budget-tracker-details/images/img2.png"
+                                                alt="pro-big-img" />
+                                        </picture>
+                                    </div>
+
+                                    <div class="thumb-image">
+                                        <picture>
+                                            <img class="thumb"
+                                                src="../../components/cp-prod-thumb-slider/images/architech-big-img.png"
+                                                alt="pro-big-img" />
+                                        </picture>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline btn-dealer"><span class="icon icon-plus"></span>Add
+                                    another
+                                    photo</button>
+
+                            </div>
+                        </div>
+
+                        <div class="sec-cont">
+                            <div class="cont-head">
+                                <h2 class="cont-sub-title">Dealer/service provider details (optional)</h2>
+                            </div>
+                            <button class="btn btn-outline btn-dealer js-drawer" data-id="add-dealer"><span
+                                    class="icon icon-plus"></span>Add dealer / service
+                                provider</button>
+                        </div>
+                        <div class="sec-cont">
+                            <div class="cont-head">
+                                <h2 class="cont-sub-title font-medium">Recently used</h2>
+                            </div>
+                            <ul class="dearler-wrap">
+                                <li class="dearler-tag">S. K. Fabricators <span class="icon icon-plus"></span></li>
+                                <li class="dearler-tag">Arun Yadhav Contractor <span class="icon icon-plus"></span></li>
+
+                            </ul>
+                        </div>
+                        <div class="sec-cont">
+                            <div class="cont-head">
+                                <h2 class="cont-sub-title">Service provider details</h2>
+                            </div>
+
+                            <div class="cp-dealer-card typ-budget-expenses-shop">
+                                <div class="dealer-info">
+                                    <div class="dealer-top">
+                                        <span class="tag">Service provider</span>
+                                        <ul class="tag-list">
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-edit"></button> <!-- printer icon -->
+                                            </li>
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-delate"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title">Naresh Bhai</h2>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-location"></span>
+                                            Shop no 1, Lucknow, 495921
+                                        </li>
+
+                                    </ul>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-call"></span>
+                                            <a href="tel:9809789099" class="link"> 9809789099</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                      <button class="model-open"
+                      data-toggle="modal" data-modal-class="exit-modal"> exit-modal</button> 
+                    </div>
+
+                    <div class="btn-wrap  typ-expense-btn">
+                        <!-- <div class="text-center link">
+                            <a href="#" class="btn-link">Skip for now</a>
+                        </div> -->
+                        <button type="button" class="btn btn-outline">Cancel</button>
+                        <button type="button" class="btn" disabled>Save</button>
                     </div>
                 </div>
             </div>
@@ -211,18 +389,130 @@
         </div>
     </footer>
 
+    <!-- add-dealer -->
+    <div class="cp-drawer" id="add-dealer">
+        <div class="head-sec">
+            <h2 class="drawer-title">Dealer / Service provider</h2>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+            <div class="cp-form typ-shop-dealer">
+                <div class="form-group error">
+                    <label class="form-label">Type</label>
+                    <div class="cp-switch-toggle typ-shop-dealer">
+                        <input class="switch-toggle-checkbox" type="checkbox" id="fence-switch">
+                        <label class="switch-toggle-label" for="fence-switch">
+                            <span>Dealer</span>
+                            <span>Service provider</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control validate-name" value="Ram Kumar" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">Mobile number</label>
+                    <input type="text" id="mobile-number" class="form-control validate-mobile" value="9808765678"
+                        placeholder="" required="">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">Shop, street, area</label>
+                    <input type="text" id="area" class="form-control validate-name" value="Agashi road" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
 
+                <div class="form-group error">
+                    <label class="form-label">Location, sector, landmark</label>
+                    <input type="text" id="location" class="form-control validate-name" value="Near dak bunglow campus"
+                        placeholder="" required="">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="form-group error">
+                    <label class="form-label">Pincode</label>
+                    <input type="text" id="pincode" class="form-control validate-name" value="400004" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">City</label>
+                    <input type="text" id="city" class="form-control validate-name" value="Mumbai" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="btn-wrap">
+                    <button class="btn btn-outline" type="button">Back</button>
+                    <button class="btn" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+        <!--model pop up start-->
+
+        <div tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share delete-expense">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <button class="close-btn icon-close js-close " type="button"></button>
+                        <div class="cp-model-content typ-delete-expense">
+                            <p class="title">Are you sure you want to delete this expense?</p>
+                            <div class="expense-sec">
+                                <span class="price">₹7,830</span>
+                                <span class="product-name">Hanging lighting bulb</span>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-outline"> Cancel</button> <button class="btn"> Yes!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--model pop up end-->
+
+            <!--model pop up start-->
+
+    <div tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share exit-modal">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <button class="close-btn icon-close js-close " type="button"></button>
+                    <div class="cp-model-content typ-exit-modal">
+                        <p class="title">Are you sure you want to exit?</p>
+                        <p class="desc">Your changes haven’t been saved yet. Do you still want to leave?</p>
+                        
+                        <div class="btn-wrap">
+                            <button class="btn btn-outline"> Yes, discard</button> <button class="btn"> Save & Exit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
     <div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-select/cp-select.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
-    <script src="../components/cp-datepicker/cp-datepicker.js"></script>
+    <script src="../../components/cp-budget-tracker-details/budget-expense.js"></script>
+    <script src="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
     <!-- endbuild -->
 </body>
 

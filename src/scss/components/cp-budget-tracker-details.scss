@@ -58,22 +58,287 @@
     &.mb-32 {
         margin-bottom: 3.2rem;
     }
-    &.typ-budget-expenses-log{
+
+    &.typ-budget-expenses-log {
+        padding: 0;
         max-width: 820px;
         margin: auto;
         @include border-radius(2.4rem);
         border: 1px solid #DEDEDE;
-        .title{
-            font-size: 2.8rem;
-            text-align: center;
+
+        @media only screen and (max-width: $media-mobile) {
+            border: 0;
         }
-        .desc{
-            text-align: center;
-            font-size: 1rem;
-            max-width: 565px;
+
+        .expense-head {
+            margin-bottom: 3.2rem;
+            margin-top: 2.4rem;
+
+            .title {
+                font-size: 2.8rem;
+                text-align: center;
+
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 2.4rem;
+                    text-align: left;
+                }
+            }
+
+            .desc {
+                text-align: center;
+                font-size: 1rem;
+                max-width: 565px;
+                margin: auto;
+
+                @media only screen and (max-width: $media-mobile) {
+                    text-align: left;
+                }
+            }
+
+            &.typ-d-flex {
+                display: flex;
+                gap: 3.2rem;
+                justify-content: center;
+                align-items: center;
+
+                @media only screen and (max-width: $media-mobile) {
+                    gap: 1.2rem;
+                    justify-content: space-between;
+                }
+
+                .link {
+                    display: flex;
+                    gap: 1.2rem;
+                    align-items: center;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        gap: 0.4rem;
+                    }
+
+                    .icon {
+                        font-size: 2.4rem;
+                        color: #3D7EDB;
+
+                        @media only screen and (max-width: $media-mobile) {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .text {
+                        font-size: 1.4rem;
+                        color: #3D7EDB;
+                        font-family: $font-medium;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+
+
+        .btn-dealer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 0;
+
+            .icon {
+                font-size: 2.4rem;
+            }
+        }
+
+        .cont-head {
+            margin-bottom: 1.2rem;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+
+            .cont-sub-title {
+                font-size: 1.6rem;
+                font-family: $font-semiBold;
+                font-size: 1.6rem;
+                color: $clr-base;
+            }
+
+            .font-medium {
+                font-family: $font-medium;
+            }
+
+            .small-text {
+                font-size: 1.4rem;
+                color: #666666;
+            }
+
+            .link {
+                font-size: 1.4rem;
+                text-decoration: underline;
+            }
+        }
+
+        .dearler-wrap {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+
+            .dearler-tag {
+                @include border-radius(4px);
+                background-color: #D8E5F8;
+                color: $clr-base;
+                font-size: 1.4rem;
+                font-family: $font-medium;
+                padding: 4px 8px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .icon {
+                    font-size: 1.6rem;
+                    color: #000000;
+                }
+            }
+        }
+
+        .typ-expense-btn {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #DEDEDE;
+            margin-top: 2rem;
+            padding: 2.4rem 3.2rem;
+
+            @media only screen and (max-width: $media-mobile) {
+                border: 0;
+                padding: 0;
+                gap: 1.2rem;
+            }
+
+            .btn {
+                min-width: 15rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    min-width: 48%;
+                }
+
+                &:disabled {
+                    background-color: #EDEDED;
+                    color: #B3B3B3;
+                    pointer-events: none;
+                    border-color: #EDEDED;
+                }
+            }
+        }
+
+        .sec-cont {
+            margin-bottom: 2.4rem;
+        }
+
+        .upload-file-area {
+            margin: 0;
+        }
+
+        .upload-img-wrap {
+            .big-image {
+                height: 300px;
+                @include border-radius(12px);
+                overflow: hidden;
+                margin-bottom: 1.2rem;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .thumb-image-wrap {
+                display: flex;
+                gap: 1.2rem;
+                margin-bottom: 1.2rem;
+
+                @media only screen and (max-width: $media-mobile) {
+                    flex-direction: column;
+                }
+
+                .thumb-image {
+                    width: 7rem;
+                    height: 7rem;
+                    @include border-radius(8px);
+                    overflow: hidden;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .cp-form {
+            max-width: 400px;
             margin: auto;
+
+            .form-group {
+                margin-bottom: 2.4rem;
+            }
+
+            .datepicker-wrap {
+                .icon {
+                    left: 8px;
+                    color: $clr-base;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    right: 6px;
+                    bottom: auto;
+                    top: 50%;
+                    font-size: 1.6rem;
+                    transform: translateY(-50%);
+                }
+
+                .form-control {
+                    padding: 1.1rem 1.6rem 1.1rem 3.2rem;
+                    color: $clr-base;
+                    font-family: $font-medium;
+                }
+            }
+
+            .cp-select {
+                .select-dropdown {
+                    width: 100%;
+
+                    .select-dropdown-button {
+                        width: 100%;
+
+                        .select-text {
+                            font-size: 1.6rem;
+                            font-family: $font-medium;
+                            color: $clr-base;
+                        }
+                    }
+                }
+            }
+
+            .typ-wrap-expense {
+                display: flex;
+                gap: 1.2rem;
+                flex-wrap: wrap;
+
+                .bs-radio {
+                    width: 30.5%;
+                    margin-bottom: 0;
+
+                    .custom-radio {
+                        min-width: auto;
+                        padding: 1.2rem 1.6rem;
+                    }
+                }
+            }
         }
-        .cp-form{max-width: 400px; margin: auto;}
     }
 }
-

@@ -42,3 +42,7 @@ document.addEventListener("click", function(event) {
         document.getElementById("dropdown-menu").classList.remove("show");
     }
 });
+
+$("#start-date").datepicker({
+    dateFormat: "dd-mm-yy",
+});

@@ -805,7 +805,7 @@
         }
     }
 
-   &.reset-expense-diary {
+    &.reset-expense-diary {
         max-width: 400px;
         max-height: 100%;
 
@@ -821,22 +821,34 @@
                 font-size: 1.6rem;
                 color: $clr-base;
                 line-height: 2.4rem;
-    
+
                 &.typ-small {
                     font-size: 1.2rem;
                     color: #666666;
                     line-height: 1.6rem;
                 }
             }
-    
+
             .btn-wrap {
                 display: flex;
                 gap: 2rem;
-    
+
                 .btn {
                     width: 48%;
                 }
             }
+
+            @media only screen and (max-width: $media-sm) {
+                padding: 1.6rem 0;
+            }
+        }
+    }
+
+    &.delete-expense, &.exit-modal {
+        max-width: 400px;
+        max-height: 100%;
+
+        .modal-body {
 
             @media only screen and (max-width: $media-sm) {
                 padding: 1.6rem 0;

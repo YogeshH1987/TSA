@@ -186,4 +186,80 @@
         }
     }
 
+    &.typ-delete-expense {
+        text-align: left;
+
+        .title {
+            font-size: 2rem;
+            line-height: 2;
+            color: $clr-base;
+            font-family: $font-semiBold;
+            margin-bottom: 1.2rem;
+            line-height: 2.4rem;
+            padding-right: 3rem;
+        }
+
+        .expense-sec {
+            background-color: #ECF2FB;
+            border: 1px solid #3D7EDB;
+            padding: 1.6rem 1.2rem;
+            @include border-radius(1.2rem);
+
+            .price {
+                font-family: $font-semiBold;
+                font-size: 2rem;
+                color: $clr-base;
+                display: block;
+            }
+
+            .product-name {
+                font-size: 1.6rem;
+                color: $clr-base;
+            }
+        }
+
+        .btn-wrap {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3.2rem;
+
+            .btn {
+                width: 48%;
+            }
+        }
+    }
+
+    &.typ-exit-modal {
+        text-align: left;
+
+        .title {
+            font-size: 2rem;
+            line-height: 2;
+            color: $clr-base;
+            font-family: $font-semiBold;
+            margin-bottom: 1.2rem;
+            line-height: 2.4rem;
+            padding-right: 3rem;
+        }
+
+        .desc {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-base;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-family: $font-regular;
+        }
+
+        .btn-wrap {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3.2rem;
+
+            .btn {
+                width: 48%;
+            }
+        }
+    }
+
 }

@@ -1035,11 +1035,26 @@
   &.typ-budget-recommended {
     .swiper-wrapper {
       display: block;
-      @media only screen and (max-width: $media-mobile) { display: flex;}
+
+      @media only screen and (max-width: $media-mobile) {
+        display: flex;
+      }
+
       .swiper-slide {
         margin-bottom: 2rem;
-        @media only screen and (max-width: $media-mobile) { margin-bottom: 0;}
+
+        @media only screen and (max-width: $media-mobile) {
+          margin-bottom: 0;
+        }
       }
     }
   }
+
+  &.typ-budget-thumb-expense {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.6rem;
+  }
+
+  &.typ-budget-thumb-expense {}
 }

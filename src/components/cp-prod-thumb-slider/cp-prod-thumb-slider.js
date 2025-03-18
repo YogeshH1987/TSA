@@ -5,7 +5,8 @@ $(document).ready(function () {
   proPopupGalleryThumbSlider();
   proArchitechThumbSlider();
   proPopupMoodboardThumbSlider();
-  drawerHomeSotryThumbSlider()
+  drawerHomeSotryThumbSlider();
+  budgetExpenseThumbSlider()
 });
 
 
@@ -15,7 +16,8 @@ $(window).resize(function () {
   proPopupGalleryThumbSlider();
   proArchitechThumbSlider();
   proPopupMoodboardThumbSlider();
-  drawerHomeSotryThumbSlider()
+  drawerHomeSotryThumbSlider();
+  budgetExpenseThumbSlider()
 });
 
 function proThumbSlider() {
@@ -227,6 +229,45 @@ function proArchitechThumbSlider() {
  });
 
  
+}
+
+function budgetExpenseThumbSlider() {
+  // Initialize the main slider with Swiper
+  var expenseThumbSlider = new Swiper(".js-thumb-budget-expense-slider", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 10
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 5,
+        spaceBetween:10
+      },
+      // when window width is >= 640px
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 10
+      }
+    }
+  });
+  var expensemainSlider = new Swiper(".js-budget-expense-slider", {
+    thumbs: {
+      swiper: expenseThumbSlider,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  });
+
+
 }
 
 
