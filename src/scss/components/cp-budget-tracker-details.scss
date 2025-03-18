@@ -151,10 +151,7 @@
 
         .cont-head {
             margin-bottom: 1.2rem;
-            justify-content: space-between;
-            align-items: center;
-            display: flex;
-
+            
             .cont-sub-title {
                 font-size: 1.6rem;
                 font-family: $font-semiBold;
@@ -175,6 +172,11 @@
                 font-size: 1.4rem;
                 text-decoration: underline;
                 font-family: $font-medium;
+            }
+            &.flex{
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
             }
         }
 

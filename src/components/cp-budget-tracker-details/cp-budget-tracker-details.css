@@ -115,10 +115,7 @@
       .cp-budget-tracker-details.typ-budget-expenses-log .btn-dealer .icon {
         font-size: 2.4rem; }
     .cp-budget-tracker-details.typ-budget-expenses-log .cont-head {
-      margin-bottom: 1.2rem;
-      justify-content: space-between;
-      align-items: center;
-      display: flex; }
+      margin-bottom: 1.2rem; }
       .cp-budget-tracker-details.typ-budget-expenses-log .cont-head .cont-sub-title {
         font-size: 1.6rem;
         font-family: "Poppins Semibold";
@@ -131,7 +128,12 @@
         color: #666666; }
       .cp-budget-tracker-details.typ-budget-expenses-log .cont-head .link {
         font-size: 1.4rem;
-        text-decoration: underline; }
+        text-decoration: underline;
+        font-family: "Poppins Medium"; }
+      .cp-budget-tracker-details.typ-budget-expenses-log .cont-head.flex {
+        justify-content: space-between;
+        align-items: center;
+        display: flex; }
     .cp-budget-tracker-details.typ-budget-expenses-log .dearler-wrap {
       display: flex;
       gap: 1.2rem;
@@ -160,7 +162,7 @@
       @media only screen and (max-width: 768px) {
         .cp-budget-tracker-details.typ-budget-expenses-log .typ-expense-btn {
           border: 0;
-          padding: 2.4rem 0rem;
+          padding: 0;
           gap: 1.2rem; } }
       .cp-budget-tracker-details.typ-budget-expenses-log .typ-expense-btn .btn {
         min-width: 15rem; }
