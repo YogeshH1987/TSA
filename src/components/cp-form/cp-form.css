@@ -485,5 +485,26 @@
     margin-top: 3.2rem; }
     .cp-form.typ-edit-budget-amount .btn-wrap .btn {
       min-width: 48%; }
+  .cp-form.typ-shop-dealer .form-group {
+    margin-bottom: 2.4rem; }
+    .cp-form.typ-shop-dealer .form-group .form-control {
+      color: #333333;
+      font-family: "Poppins Medium"; }
+      .cp-form.typ-shop-dealer .form-group .form-control::placeholder {
+        color: #B3B3B3;
+        opacity: 1;
+        /* Firefox */
+        font-family: "Poppins Regular"; }
+      .cp-form.typ-shop-dealer .form-group .form-control::-ms-input-placeholder {
+        /* Edge 12-18 */
+        color: #B3B3B3;
+        font-family: "Poppins Regular"; }
+    .cp-form.typ-shop-dealer .form-group .btn-wrap {
+      display: flex;
+      gap: 1.6rem;
+      border-top: 1px solid #DEDEDE;
+      padding-top: 1.2rem; }
+      .cp-form.typ-shop-dealer .form-group .btn-wrap .btn {
+        width: 48%; }
 
 /*# sourceMappingURL=cp-form.css.map */

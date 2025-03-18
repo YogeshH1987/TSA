@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/components/cp-budget-tracker/cp-budget-tracker.css" />
     <link rel="stylesheet" href="../../components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-budget-tracker-details/cp-budget-tracker-details.css" />
+
 </head>
 
 <body>
@@ -143,7 +144,18 @@
         <section class="bs-sec typ-budget-category">
             <div class="container">
                 <div class="sec-head budget">
-                    <h2 class="sec-title">Expense diary <span class="icon-setting icon-info2"></span></h2>
+                    <h2 class="sec-title">Expense diary
+                        <div class="dropdown"><span class="icon-setting icon-info2" id="dropdown-toggle"></span>
+                            <div class="dropdown-content" id="dropdown-menu">
+                                <ul class="list-main">
+                                    <li class="list-item">Download expense 
+                                        report</li>
+                                    <li class="list-item model-open"
+                                    data-toggle="modal" data-modal-class="reset-expense-diary">Reset Expense Diary</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </h2>
                 </div>
                 <div class="sec-cont">
                     <div class="lyt-grid typ-budget-grid">
@@ -219,7 +231,7 @@
                     </div>
 
                     <div class="cp-tab typ-budget-category">
-                        <ul class="tab-list">
+                        <ul class="tab-list cm-mobile-flex">
                             <li class="tab-item active" data-target="#tab1">
                                 <h3 class="title">Categories</h3>
                             </li>
@@ -246,7 +258,7 @@
                                                         alt="blog img" />
                                                 </picture>
                                             </div>
-            
+
                                             <div class="con-wrap">
                                                 <div class="info-wrap">
                                                     <span class="icon icon-bulb"></span>
@@ -287,7 +299,7 @@
                                                                 <span class="percent">32%</span>
                                                             </div>
                                                         </li>
-            
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -312,7 +324,7 @@
                                                         alt="blog img" />
                                                 </picture>
                                             </div>
-            
+
                                             <div class="con-wrap">
                                                 <div class="info-wrap">
                                                     <span class="icon icon-bulb"></span>
@@ -353,7 +365,7 @@
                                                                 <span class="percent">32%</span>
                                                             </div>
                                                         </li>
-            
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -378,7 +390,7 @@
                                                         alt="blog img" />
                                                 </picture>
                                             </div>
-            
+
                                             <div class="con-wrap">
                                                 <div class="info-wrap">
                                                     <span class="icon icon-bulb"></span>
@@ -388,7 +400,7 @@
                                                     <ul class="cp-icon-list-wrap">
                                                         <li class="list-year">
                                                             <span class="year">2025</span>
-                                                          
+
                                                         </li>
                                                         <li class="list-item">
                                                             <div class="cont-wrap">
@@ -402,7 +414,7 @@
                                                         </li>
                                                         <li class="list-year">
                                                             <span class="year">2024</span>
-                                                          
+
                                                         </li>
                                                         <li class="list-item">
                                                             <div class="cont-wrap">
@@ -414,7 +426,7 @@
                                                                 <span class="percent">32%</span>
                                                             </div>
                                                         </li>
-            
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -427,7 +439,7 @@
                             </div>
                         </div>
                     </div>
-              
+
                 </div>
             </div>
         </section>
@@ -590,6 +602,30 @@
                                 <button class="btn btn-outline js-close" type="button">Cancel</button>
                                 <button class="btn">Done</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model pop up end-->
+
+    <!--model pop up start-->
+
+    <div tabindex="-1" role="dialog" class="bs-modal type-md fade typ-share reset-expense-diary">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <button class="close-btn icon-close js-close " type="button"></button>
+                    <div class="cp-model-content">
+                        <p class="title">Reset Expense diary</p>
+                        <p class="desc">Are you sure you want to reset your Expense diary? This will delete all logs and
+                            data
+                            permanently, and this action cannot be undone.</p>
+                        <p class="desc typ-small">Note: Resetting will erase all your budget settings, expense logs, and
+                            saved data. Proceed with caution</p>
+                        <div class="btn-wrap">
+                            <button class="btn btn-outline"> Cancel</button> <button class="btn"> Yes!</button>
                         </div>
                     </div>
                 </div>

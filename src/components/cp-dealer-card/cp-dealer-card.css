@@ -224,6 +224,39 @@
       max-width: 100%; }
   .cp-dealer-card .typ-dealer-list {
     padding: 1.6rem; }
+  .cp-dealer-card.typ-budget-expenses-shop .dealer-info .dealer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem; }
+    .cp-dealer-card.typ-budget-expenses-shop .dealer-info .dealer-top .tag {
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      background-color: #D8E5F8;
+      color: #333333;
+      font-family: "Poppins Medium";
+      padding: 4px 8px;
+      font-size: 1.2rem; }
+    .cp-dealer-card.typ-budget-expenses-shop .dealer-info .dealer-top .tag-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 0.8rem; }
+      .cp-dealer-card.typ-budget-expenses-shop .dealer-info .dealer-top .tag-list .tag-link {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        background: #F3F4F6;
+        font-size: 1.6rem;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+  .cp-dealer-card.typ-budget-expenses-shop .dealer-info .location-sec .location-text:nth-child(1)::after {
+    content: none; }
 
 .typ-store {
   min-width: 15rem;

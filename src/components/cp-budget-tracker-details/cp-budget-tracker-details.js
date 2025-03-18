@@ -29,3 +29,16 @@ $(document).ready(function () {
         mobileTabFunction();
     });
 });
+
+
+document.getElementById("dropdown-toggle").addEventListener("click", function(event) {
+    document.getElementById("dropdown-menu").classList.toggle("show");
+    event.stopPropagation(); // Prevents event bubbling
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function(event) {
+    if (!document.querySelector(".dropdown").contains(event.target)) {
+        document.getElementById("dropdown-menu").classList.remove("show");
+    }
+});

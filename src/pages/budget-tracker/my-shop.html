@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Budget Tracker</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
+
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="../../components/cp-dealer-card/cp-dealer-card.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="../../components/cp-switch/cp-switch.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cp-header">
+            <div class="container">
+                <div class="top-sec">
+                    <div class="hamburger-menu">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="lhs">
+                        <div class="logo-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="container">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop products</a>
+                                <ul class="sub-nav-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home building guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-link-wrap">
+                        <ul class="quick-link-list">
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-search quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-cart quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-profile quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-language quick-link-item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- breadcrumbs starts-->
+        <section class="bs-sec typ-first-sec typ-no-bottom-padding">
+            <div class="container">
+                <div class="sec-cont">
+                    <ul class="cp-breadcrumb">
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link"> Design & calculators</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link active"> Expense</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bs-sec typ-budget-expenses-shop">
+            <div class="container">
+                <div class="sec-head">
+                    <div class="sec-head-detail">
+                        <h2 class="sec-title">My home builders</h2>
+                        <p class="desc">Contains details of all your dealers and service providers</p>
+                    </div>
+                    <button class="btn btn-outline btn-dealer js-drawer cm-desktop-flex" data-id="add-dealer"><span
+                            class="icon icon-plus"></span>Add dealer / service
+                        provider</button>
+                </div>
+                <div class="sec-cont">
+
+                    <div class="lyt-grid typ-col-wrap-3">
+                        <div class="grid-col">
+                            <div class="cp-dealer-card typ-budget-expenses-shop">
+                                <div class="dealer-info">
+                                    <div class="dealer-top">
+                                        <span class="tag">Service provider</span>
+                                        <ul class="tag-list">
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-edit"></button> <!-- printer icon -->
+                                            </li>
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-delate"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title">Naresh Bhai</h2>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-location"></span>
+                                            Shop no 1, Lucknow, 495921
+                                        </li>
+
+                                    </ul>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-call"></span>
+                                            <a href="tel:9809789099" class="link"> 9809789099</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-col">
+                            <div class="cp-dealer-card typ-budget-expenses-shop">
+                                <div class="dealer-info">
+                                    <div class="dealer-top">
+                                        <span class="tag">Service provider</span>
+                                        <ul class="tag-list">
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-edit"></button> <!-- printer icon -->
+                                            </li>
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-delate"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title">Naresh Bhai</h2>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-location"></span>
+                                            Shop no 1, Lucknow, 495921
+                                        </li>
+
+                                    </ul>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-call"></span>
+                                            <a href="tel:9809789099" class="link"> 9809789099</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-col">
+                            <div class="cp-dealer-card typ-budget-expenses-shop">
+                                <div class="dealer-info">
+                                    <div class="dealer-top">
+                                        <span class="tag">Service provider</span>
+                                        <ul class="tag-list">
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-edit"></button> <!-- printer icon -->
+                                            </li>
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-delate"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title">Naresh Bhai</h2>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-location"></span>
+                                            Shop no 1, Lucknow, 495921
+                                        </li>
+
+                                    </ul>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-call"></span>
+                                            <a href="tel:9809789099" class="link"> 9809789099</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-col">
+                            <div class="cp-dealer-card typ-budget-expenses-shop">
+                                <div class="dealer-info">
+                                    <div class="dealer-top">
+                                        <span class="tag">Service provider</span>
+                                        <ul class="tag-list">
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-edit"></button> <!-- printer icon -->
+                                            </li>
+                                            <li class="tag-item">
+                                                <button class="tag-link icon-delate"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title">Naresh Bhai</h2>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-location"></span>
+                                            Shop no 1, Lucknow, 495921
+                                        </li>
+
+                                    </ul>
+                                    <ul class="location-sec">
+                                        <li class="location-text">
+                                            <span class="icon icon-call"></span>
+                                            <a href="tel:9809789099" class="link"> 9809789099</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn btn-outline btn-dealer js-drawer cm-mobile-flex" data-id="add-dealer"><span
+                        class="icon icon-plus"></span>Add dealer / service
+                    provider</button>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- Footer Start -->
+    <footer>
+        <div class="cp-footer">
+            <picture>
+                <source media="(max-width:768px)" srcset="/images/footer_mob.png">
+                <img src="/images/footer.png" alt="Footer" />
+            </picture>
+        </div>
+    </footer>
+
+    <!-- Request-->
+    <div class="cp-drawer" id="add-dealer">
+        <div class="head-sec">
+            <h2 class="drawer-title">Dealer / Service provider</h2>
+            <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+            <div class="cp-form typ-shop-dealer">
+                <div class="form-group error">
+                    <label class="form-label">Name</label>
+                    <div class="cp-switch-toggle typ-shop-dealer">
+                        <input class="switch-toggle-checkbox" type="checkbox" id="fence-switch">
+                        <label class="switch-toggle-label" for="fence-switch">
+                            <span>Dealer</span>
+                            <span>Service provider</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control validate-name" value="Ram Kumar" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">Mobile number</label>
+                    <input type="text" id="mobile-number" class="form-control validate-mobile" value="9808765678"
+                        placeholder="" required="">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">Shop, street, area</label>
+                    <input type="text" id="area" class="form-control validate-name" value="Agashi road" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="form-group error">
+                    <label class="form-label">Location, sector, landmark</label>
+                    <input type="text" id="location" class="form-control validate-name" value="Near dak bunglow campus"
+                        placeholder="" required="">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="form-group error">
+                    <label class="form-label">Pincode</label>
+                    <input type="text" id="pincode" class="form-control validate-name" value="400004" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group error">
+                    <label class="form-label">City</label>
+                    <input type="text" id="city" class="form-control validate-name" value="Mumbai" placeholder=""
+                        required="">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="btn-wrap">
+                    <button class="btn btn-outline" type="button">Back</button>
+                    <button class="btn" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

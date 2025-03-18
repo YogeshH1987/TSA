@@ -101,7 +101,8 @@
     }
 
     &.typ-other-info {
-text-align: left;
+        text-align: left;
+
         .title {
             font-family: $font-semiBold;
             color: $clr-base;
@@ -109,6 +110,7 @@ text-align: left;
             margin-bottom: 2rem;
 
             text-align: center;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2rem;
             }
@@ -123,6 +125,7 @@ text-align: left;
             color: $clr-base;
 
             text-align: center;
+
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.4rem;
                 margin-bottom: 0.4rem;
@@ -182,4 +185,5 @@ text-align: left;
             padding-bottom: 0;
         }
     }
+
 }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    <title>Budget Tracker</title>
+    <meta name="description" content="description goes here" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
+    <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
+
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="../../components/cp-dealer-card/cp-dealer-card.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
+    <link rel="stylesheet" href="../../components/cp-budget-tracker-details/cp-budget-tracker-details.css" />
+    <link rel="stylesheet" href="../components/cp-datepicker/cp-datepicker.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cp-header">
+            <div class="container">
+                <div class="top-sec">
+                    <div class="hamburger-menu">
+                        <div class="open-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="lhs">
+                        <div class="logo-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+                                <source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+                                <img src="/images/TSA-logo.png" alt="logo tsa" />
+                            </picture>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-sec">
+                <div class="container">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop products</a>
+                                <ul class="sub-nav-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home building guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-link-wrap">
+                        <ul class="quick-link-list">
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-search quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-cart quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-profile quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-language quick-link-item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- breadcrumbs starts-->
+        <section class="bs-sec typ-first-sec typ-no-bottom-padding">
+            <div class="container">
+                <div class="sec-cont">
+                    <ul class="cp-breadcrumb">
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link"> Design & calculators</a>
+                        </li>
+                        <li class="breadcrumb-items">
+                            <a href="#" class="breadcrumb-link active"> Expense</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bs-sec">
+            <div class="container">
+                <div class="cp-budget-tracker-details typ-budget-expenses-log">
+                    <div class="expense-head">
+                        <h3 class="title">Add an expense</h3>
+                        <p class="desc">Your data will be kept confidential and used solely for its intended purpose. We
+                            will not share, sell, or disclose your information to third parties without your consent.
+                        </p>
+                        <div class="cp-form">
+                            <div class="form-group error">
+                                <label class="form-label">Expense name</label>
+                                <input type="text" id="expense-name" class="form-control validate-name" value="" placeholder="Enter Expense"
+                                    required="">
+                                <span class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group error">
+                                <label class="form-label">Amount</label>
+                                <input type="text" id="amount" class="form-control validate-text" value="" placeholder="Enter Amount"
+                                    required="">
+                                <span class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Category</label>
+                                <div class="cp-select">
+                                    <div class="select-dropdown">
+                                        <button href="#" role="button" data-value=""
+                                            class="select-dropdown-button">
+                                            <span class="select-text">select</span> <i
+                                                class="zmdi zmdi-chevron-down"></i>
+                                        </button>
+                                        <ul class="select-dropdown-list">
+                                            <li class="dropdown-item">
+                                                <span data-value="1"
+                                                    class="select-dropdown-list-item">Electric work</span>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <span data-value="2"
+                                                    class="select-dropdown-list-item">Electric work</span>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group error">
+                                <label class="form-label">Start date</label>
+                                <div class="form-input-wrap">
+                                    <input type="text" class="form-control validate-name" value="" id="start-date"
+                                        placeholder="Enter date" required="">
+                                    <span class="icon icon-calender"></span>
+                                </div>
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- Footer Start -->
+    <footer>
+        <div class="cp-footer">
+            <picture>
+                <source media="(max-width:768px)" srcset="/images/footer_mob.png">
+                <img src="/images/footer.png" alt="Footer" />
+            </picture>
+        </div>
+    </footer>
+
+
+    <div class="cm-overlay"></div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
+    <script src="/components/cp-select/cp-select.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="../components/cp-datepicker/cp-datepicker.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

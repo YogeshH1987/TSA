@@ -1178,27 +1178,59 @@ p {
       .bs-sec .sec-head.budget-detail .sec-title {
         font-size: 2.4rem;
         line-height: 3.2rem; }
-    .bs-sec .sec-head.budget .sec-title {
-      display: flex;
-      align-items: center;
-      gap: 2.4rem; }
-      @media only screen and (max-width: 991px) {
-        .bs-sec .sec-head.budget .sec-title {
-          justify-content: space-between; } }
-      .bs-sec .sec-head.budget .sec-title .icon-setting {
-        width: 4rem;
-        height: 4rem;
-        background-color: #F3F4F6;
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        font-size: 2.4rem;
-        color: #999999;
-        padding: 5px;
-        cursor: pointer;
+    .bs-sec .sec-head.budget {
+      z-index: 3; }
+      .bs-sec .sec-head.budget .sec-title {
         display: flex;
         align-items: center;
-        justify-content: center; }
+        gap: 2.4rem; }
+        @media only screen and (max-width: 991px) {
+          .bs-sec .sec-head.budget .sec-title {
+            justify-content: space-between; } }
+        .bs-sec .sec-head.budget .sec-title .icon-setting {
+          width: 4rem;
+          height: 4rem;
+          background-color: #F3F4F6;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          font-size: 2.4rem;
+          color: #999999;
+          padding: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+      .bs-sec .sec-head.budget .dropdown {
+        position: relative;
+        display: inline-block; }
+      .bs-sec .sec-head.budget .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 240px;
+        box-shadow: 0px 4px 16px 0px #00000026;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        padding: 8px 20px;
+        z-index: 1; }
+        @media only screen and (max-width: 991px) {
+          .bs-sec .sec-head.budget .dropdown-content {
+            right: 0; } }
+      .bs-sec .sec-head.budget .dropdown-content.show {
+        display: block; }
+      .bs-sec .sec-head.budget .list-main .list-item {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #666666;
+        font-family: "Poppins Regular";
+        display: flex;
+        padding: 8px 0px;
+        cursor: pointer; }
+        .bs-sec .sec-head.budget .list-main .list-item:hover {
+          font-family: "Poppins Medium";
+          color: #333333; }
     .bs-sec .sec-head.typ-align-center {
       text-align: center; }
     .bs-sec .sec-head.typ-plp-pravesh {
@@ -2203,6 +2235,23 @@ p {
       .bs-sec.typ-budget-category .typ-budget-category-btn .btn {
         margin-bottom: 1.2rem;
         width: 50%; } }
+  .bs-sec.typ-budget-expenses-shop .sec-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .bs-sec.typ-budget-expenses-shop .sec-head .sec-title {
+      font-size: 2.8rem; }
+  .bs-sec.typ-budget-expenses-shop .btn-dealer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .bs-sec.typ-budget-expenses-shop .btn-dealer {
+        width: 100%;
+        margin-top: 3.2rem; } }
+    .bs-sec.typ-budget-expenses-shop .btn-dealer .icon {
+      font-size: 2.4rem; }
 
 .mb-24 {
   margin-bottom: 2.4rem; }
@@ -3662,6 +3711,40 @@ p {
       font-family: "Poppins Semibold"; }
     @media only screen and (max-width: 991px) {
       .bs-modal.edit-budget-amount .modal-body {
+        padding: 1.6rem 0; } }
+  .bs-modal.edit-budget-amount {
+    max-width: 400px;
+    max-height: 100%; }
+    .bs-modal.edit-budget-amount .modal-body .title {
+      font-size: 2rem;
+      color: #333333;
+      font-family: "Poppins Semibold"; }
+    @media only screen and (max-width: 991px) {
+      .bs-modal.edit-budget-amount .modal-body {
+        padding: 1.6rem 0; } }
+  .bs-modal.reset-expense-diary {
+    max-width: 400px;
+    max-height: 100%; }
+    .bs-modal.reset-expense-diary .modal-body .title {
+      font-size: 2rem;
+      color: #333333;
+      font-family: "Poppins Semibold";
+      margin-bottom: 1.2rem; }
+    .bs-modal.reset-expense-diary .modal-body .desc {
+      font-size: 1.6rem;
+      color: #333333;
+      line-height: 2.4rem; }
+      .bs-modal.reset-expense-diary .modal-body .desc.typ-small {
+        font-size: 1.2rem;
+        color: #666666;
+        line-height: 1.6rem; }
+    .bs-modal.reset-expense-diary .modal-body .btn-wrap {
+      display: flex;
+      gap: 2rem; }
+      .bs-modal.reset-expense-diary .modal-body .btn-wrap .btn {
+        width: 48%; }
+    @media only screen and (max-width: 991px) {
+      .bs-modal.reset-expense-diary .modal-body {
         padding: 1.6rem 0; } }
 
 /* colors */

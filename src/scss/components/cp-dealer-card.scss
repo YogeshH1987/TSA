@@ -338,7 +338,58 @@
         }
     }
 
-    .typ-dealer-list{padding: 1.6rem;}
+    .typ-dealer-list {
+        padding: 1.6rem;
+    }
+
+    &.typ-budget-expenses-shop {
+        .dealer-info {
+            .dealer-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.2rem;
+
+                .tag {
+                    @include border-radius(4px);
+                    background-color: #D8E5F8;
+                    color: $clr-base;
+                    font-family: $font-medium;
+                    padding: 4px 8px;
+                    font-size: 1.2rem;
+                }
+
+                .tag-list {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    gap: 0.8rem;
+
+                    .tag-link {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        @include border-radius(0.8rem);
+                        background: #F3F4F6;
+                        font-size: 1.6rem;
+                        padding: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .location-sec {
+                .location-text {
+                    &:nth-child(1) {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .typ-store {

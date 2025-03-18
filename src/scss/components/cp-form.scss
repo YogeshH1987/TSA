@@ -746,7 +746,8 @@
 
       .form-control {
         color: $clr-base;
-        &:focus{
+
+        &:focus {
           border-color: #3D7EDB;
         }
       }
@@ -756,9 +757,49 @@
       display: flex;
       gap: 1.6rem;
       margin-top: 3.2rem;
+
       .btn {
         min-width: 48%
       }
     }
+  }
+
+  &.typ-shop-dealer {
+    .form-group {
+      margin-bottom: 2.4rem;
+
+      .form-control {
+        color: $clr-base;
+        font-family: $font-medium;
+
+        &::placeholder {
+          color: #B3B3B3;
+          opacity: 1;
+          /* Firefox */
+          font-family: $font-regular;
+        }
+
+        &::-ms-input-placeholder {
+          /* Edge 12-18 */
+          color: #B3B3B3;
+          font-family: $font-regular;
+        }
+
+      }
+
+      .btn-wrap {
+        display: flex;
+        gap: 1.6rem;
+        border-top: 1px solid #DEDEDE;
+        padding-top: 1.2rem;
+
+        .btn {
+          width: 48%;
+        }
+      }
+
+    }
+
+
   }
 }
