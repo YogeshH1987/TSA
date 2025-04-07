@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("jQuery is ready");
+$(document).ready(function () {
+    let scrollTimeout;
+
     const $helpBtn = $('.typ-btn-help');
     const $closeBtn = $('.btn.icon-close');
     const $modal = $('.need-help-modal');
@@ -23,16 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
     $closeBtn.on('click', closeModal);
     $overlay.on('click', closeModal);
 
-
     $(window).on('scroll', function () {
-        console.log("Scroll triggered");
         const scrollTop = $(this).scrollTop();
         console.log("scrolling...", scrollTop);
-        if (scrollTop > 50) {
-            $helpBtn.addClass('small-btn');
-        } else {
+
+        // Add small-btn immediately while scrolling
+        $helpBtn.addClass('small-btn');
+
+        // Clear previous timeout and set new one
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function () {
             $helpBtn.removeClass('small-btn');
-        }
+        }, 200);
     });
 });
-

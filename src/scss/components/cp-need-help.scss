@@ -4,7 +4,7 @@
 
 .cp-need-help {
     position: fixed;
-    bottom: 5rem;
+    bottom: 8rem;
     right: 2rem;
     z-index: 9;
     display: flex;
@@ -65,5 +65,38 @@
         height: 40px;
         color: $clr-base;
         font-size: 24px;
+    }
+
+    .typ-btn-help {
+        background: #D2042D;
+        display: flex;
+        gap: 8px;
+        box-shadow: 0px 0px 7px 0px #00000080;
+        border-color: #D2042D;
+        align-items: center;
+        color: #fff !important;
+        transition: all 5s ease;
+        .icon {
+            font-size: 2.4rem;
+            // transition: font-size 1s ease;
+        }
+
+        &.small-btn {
+            @include border-radius(50%);
+            height: 56px;
+            width: 56px;
+            min-width: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .help-text {
+                display: none;
+            }
+
+            .icon-help {
+                font-size: 2.6rem;
+            }
+        }
     }
 }

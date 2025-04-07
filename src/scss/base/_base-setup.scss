@@ -11,8 +11,8 @@ html,
 body {
   font-family: $font-regular;
   color: $clr-para;
-  font-size: 10px; 
-  height: 100%;
+  font-size: 10px;
+  height: auto;
   position: relative;
   scroll-behavior: smooth;
   scrollbar-gutter: initial;
@@ -137,6 +137,7 @@ p {
     display: block !important;
   }
 }
+
 .cm-mobile-flex {
   display: none !important;
 
@@ -144,6 +145,7 @@ p {
     display: flex !important;
   }
 }
+
 .table-cell-mobile {
   display: none !important;
 
@@ -167,6 +169,7 @@ p {
     display: none !important;
   }
 }
+
 .cm-desktop-flex {
   display: flex !important;
 
@@ -182,7 +185,11 @@ p {
     display: none !important;
   }
 }
-.d-none{   display: none !important;}
+
+.d-none {
+  display: none !important;
+}
+
 .cm-bold {
   font-family: $font-bold;
 }
@@ -218,12 +225,17 @@ p {
 .cm-text-right {
   text-align: right;
 }
-.cm-flex-img{
+
+.cm-flex-img {
   flex-wrap: wrap;
   gap: 2rem;
   display: flex;
-  @media only screen and (max-width: $media-mobile) {  gap: 1.2rem;}
+
+  @media only screen and (max-width: $media-mobile) {
+    gap: 1.2rem;
+  }
 }
+
 .cm-flex {
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -236,6 +248,7 @@ p {
   }
 
 }
+
 .cm-box {
   border: 1px solid #dedede;
   @include border-radius(1.6rem);
@@ -245,8 +258,10 @@ p {
     border: 0;
     padding: 2.4rem 0 0;
   }
-  &.typ-book-demo{
+
+  &.typ-book-demo {
     padding: 3.2rem 6rem;
+
     @media only screen and (max-width: $media-mobile) {
       padding: 0;
     }

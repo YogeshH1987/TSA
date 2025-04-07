@@ -891,7 +891,7 @@ body {
   font-family: "Poppins Regular";
   color: #666666;
   font-size: 10px;
-  height: 100%;
+  height: auto;
   position: relative;
   scroll-behavior: smooth;
   scrollbar-gutter: initial;
@@ -2442,26 +2442,6 @@ p {
         min-width: 100%; } }
   .btn.w-100 {
     width: 100%; }
-  .btn.typ-btn-help {
-    background: #D2042D;
-    display: flex;
-    gap: 8px;
-    box-shadow: 0px 0px 7px 0px #00000080;
-    border-color: #D2042D;
-    align-items: center;
-    color: #fff !important; }
-    .btn.typ-btn-help .icon {
-      font-size: 2.4rem; }
-    .btn.typ-btn-help.small-btn {
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      width: 56px;
-      height: 56px; }
-      .btn.typ-btn-help.small-btn .help-text {
-        display: none; }
-      .btn.typ-btn-help.small-btn .icon-help {
-        font-size: 2.6rem; }
 
 .bs-radio {
   margin-bottom: 1.6rem; }
