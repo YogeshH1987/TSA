@@ -1,0 +1,69 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-need-help {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    z-index: 9;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+
+    .need-help-modal {
+        max-width: 24.8rem;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .need-help-list {
+            width: 100%;
+
+            a {
+                background-color: #FFFFFF;
+                border: 1px solid #DEDEDE;
+                @include border-radius(8px);
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                padding: 1.2rem 1.6rem;
+                margin-bottom: 1.2rem;
+                color: $clr-base;
+                font-size: 1.6rem;
+
+                .icon {
+                    font-size: 2.4rem;
+                    color: #1F1F1F;
+                }
+
+            }
+
+            &.typ-whatsup {
+                a {
+                    background-color: #00A441;
+                    border-color: #00A441;
+                    color: #fff;
+                    .icon {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .icon-close {
+        display: none;
+        min-width: auto;
+        padding: 0;
+        background: #FFFFFF !important;
+        @include border-radius(50%);
+        border-color: #fff;
+        width: 40px;
+        height: 40px;
+        color: $clr-base;
+        font-size: 24px;
+    }
+}

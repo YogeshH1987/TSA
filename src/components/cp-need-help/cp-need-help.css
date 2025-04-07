@@ -1,0 +1,58 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-need-help {
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  z-index: 9;
+  display: flex;
+  align-items: end;
+  flex-direction: column; }
+  .cp-need-help .need-help-modal {
+    max-width: 24.8rem;
+    display: none; }
+    .cp-need-help .need-help-modal.active {
+      display: block; }
+    .cp-need-help .need-help-modal .need-help-list {
+      width: 100%; }
+      .cp-need-help .need-help-modal .need-help-list a {
+        background-color: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1.2rem 1.6rem;
+        margin-bottom: 1.2rem;
+        color: #333333;
+        font-size: 1.6rem; }
+        .cp-need-help .need-help-modal .need-help-list a .icon {
+          font-size: 2.4rem;
+          color: #1F1F1F; }
+      .cp-need-help .need-help-modal .need-help-list.typ-whatsup a {
+        background-color: #00A441;
+        border-color: #00A441;
+        color: #fff; }
+        .cp-need-help .need-help-modal .need-help-list.typ-whatsup a .icon {
+          color: #fff; }
+  .cp-need-help .icon-close {
+    display: none;
+    min-width: auto;
+    padding: 0;
+    background: #FFFFFF !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-color: #fff;
+    width: 40px;
+    height: 40px;
+    color: #333333;
+    font-size: 24px; }
+
+/*# sourceMappingURL=cp-need-help.css.map */
