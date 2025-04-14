@@ -927,7 +927,7 @@
                 <a href="#" class="icon icon-close js-close-btn"></a>
             </div>
 
-            <div class="cp-form">
+            <div class="cp-form mt-0">
                 <div class="successful-msg hide">
                     <span class="icon icon-check"></span>
                     Your password is updated successfully
@@ -997,6 +997,7 @@
                             <div class="form-head">
                                 <h3 class="title">Change password</h3> <button class="btn btn-link">Cancel</button>
                             </div>
+
                             <div class="password-form">
                                 <p class="sub-title">Enter new password
                                     <span class="form-desc">Use at least 8 characters, including uppercase, lowercase,
@@ -1026,13 +1027,71 @@
                                 <button class="btn update-btn">Update password</button>
                             </div>
 
-                            <div class="otp-form">
-                                
+                            <div class="otp-form hide">
+                                <div class="otp-head">
+                                    <h3 class="otp-title">Enter OTP</h3>
+                                    <p class="desc">An OTP has been sent to your mobile number</p>
+                                    <p class="desc dark-text">+91-XXXXXX8200 </p>
+                                </div>
+                                <form action="">
+                                    <div class="otp-form-wrap">
+                                        <div class="form-group">
+                                            <label class="form-label">Enter OTP</label>
+                                            <div class="otp-wrap">
+                                                <input type="number" name="" maxlength="1"
+                                                    class="form-input typ-otp validate-field" placeholder="-"
+                                                    autoComplete="off" pattern="[0-9]*" inputMode="numeric" />
+                                                <input type="number" name="" maxlength="1"
+                                                    class="form-input typ-otp validate-field" placeholder="-"
+                                                    autoComplete="off" pattern="[0-9]*" inputMode="numeric"
+                                                    disabled="true" />
+                                                <input type="number" name="" maxlength="1"
+                                                    class="form-input typ-otp validate-field" placeholder="-"
+                                                    autoComplete="off" pattern="[0-9]*" inputMode="numeric"
+                                                    disabled="true" />
+                                                <input type="number" name="" maxlength="1"
+                                                    class="form-input typ-otp validate-field" placeholder="-"
+                                                    autoComplete="off" pattern="[0-9]*" inputMode="numeric"
+                                                    disabled="true" />
+                                                <input type="number" name="" maxlength="1"
+                                                    class="form-input typ-otp validate-field" placeholder="-"
+                                                    autoComplete="off" pattern="[0-9]*" inputMode="numeric"
+                                                    disabled="true" />
+                                                <span class="error-msg typ-2"></span>
+                                            </div>
+
+                                        </div>
+                                        <button class="btn update-btn">Update password</button>
+                                        <div class="bottom-sec">
+                                            <span class="otp-timer">00:59</span>
+                                            <p class="otp-txt-msg">Didn’t get the OTP?</p>
+                                            <button class="re-send-link" id="btn_otp_resend"
+                                                onclick="startResendTimer()">Resend</button>
+                                        </div>
+                                        <h3 class="valid-message">OTP is valid for 3 minutes</h3>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </li>
                     <li class="details-list text-center-align border-0"><button class="btn btn-link">Delete my
                             account</button></li>
+                    <li class="hide">
+                        <div class="delete-profile-wrap">
+                            <h3 class="title">
+                                Are you sure you want to delete?
+                            </h3>
+                            <p class="desc">By proceeding, you confirm that you understand the implications of this
+                                action. Deleting
+                                this item is irreversible and may affect associated data or functionality. Please ensure
+                                your decision is final.</p>
+
+                                <div class="btn-wrap">
+                                    <button class="btn btn-outline">Yes, delete</button>
+                                    <button class="btn">No, cancel</button>
+                                </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
