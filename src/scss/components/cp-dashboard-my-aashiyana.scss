@@ -61,6 +61,9 @@
             color: $clr-base;
             font-family: $font-semiBold;
             margin-bottom: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .typ-bold {
@@ -397,6 +400,10 @@
                 max-width: 317px;
                 margin: auto;
             }
+        }
+
+        .file-upload {
+            margin-bottom: 0;
         }
 
         .typ-aashiyana {

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
     <link rel="stylesheet" href="/components/cp-sidebar-menu/cp-sidebar-menu.css" />
     <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
+    <link rel="stylesheet" href="/components/cp-drawer/cp-drawer.css" />
     <link rel="stylesheet" href="/components/cp-dashboard-my-aashiyana/cp-dashboard-my-aashiyana.css" />
 
 </head>
@@ -584,7 +585,7 @@
                                                 <input id="radio1" name="stage" type="radio">
                                                 <label for="radio1" class="custom-radio">
                                                     <span class="icon orange icon-exterior-construction">
-    
+
                                                     </span>
                                                     <span>Planning to build a home</span>
                                                 </label>
@@ -593,32 +594,32 @@
                                                 <input id="radio2" name="stage" type="radio">
                                                 <label for="radio2" class="custom-radio">
                                                     <span class="icon blue icon-bricks-2">
-    
+
                                                     </span>
                                                     <span>In progress with home construction</span>
                                                 </label>
                                             </div>
-    
+
                                             <div class="bs-radio typ-stage">
                                                 <input id="radio3" name="stage" type="radio">
                                                 <label for="radio3" class="custom-radio">
                                                     <span class="icon red icon-interiors">
-    
+
                                                     </span>
                                                     <span>Doing interiors for my home</span>
                                                 </label>
                                             </div>
-    
+
                                             <div class="bs-radio typ-stage">
                                                 <input id="radio4" name="stage" type="radio">
                                                 <label for="radio4" class="custom-radio">
                                                     <span class="icon green icon-more-2">
-    
+
                                                     </span>
                                                     <span>Here for something else</span>
                                                 </label>
                                             </div>
-    
+
                                         </div>
 
                                     </div>
@@ -633,14 +634,14 @@
                                                     <span>Less than 800</span>
                                                 </label>
                                             </div>
-    
+
                                             <div class="bs-radio">
                                                 <input id="size2" name="size" type="radio">
                                                 <label for="size2" class="custom-radio">
                                                     <span>800-1200</span>
                                                 </label>
                                             </div>
-    
+
                                             <div class="bs-radio">
                                                 <input id="size3" name="size" type="radio">
                                                 <label for="size3" class="custom-radio">
@@ -653,14 +654,14 @@
                                                     <span>1600-2000</span>
                                                 </label>
                                             </div>
-    
+
                                             <div class="bs-radio">
                                                 <input id="size5" name="size" type="radio">
                                                 <label for="size5" class="custom-radio">
                                                     <span>More than 2000</span>
                                                 </label>
                                             </div>
-    
+
                                         </div>
 
                                         <p class="typ-bold">No. of floors</p>
@@ -669,7 +670,7 @@
                                             <div class="range">
                                                 <input type="range" min="1" max="5" steps="1" value="1">
                                             </div>
-    
+
                                             <ul class="range-labels">
                                                 <li class="active selected">1</li>
                                                 <li>2</li>
@@ -681,23 +682,32 @@
                                     </div>
 
                                     <div class="cont-sec typ-w-680 mb-16">
-                                        <h3 class="sub-title">Photo gallery</h3>
+                                        <h3 class="sub-title">Photo gallery
+                                            <div class="file-upload">
+                                                <label for="upload" class="file-upload__label"> Upload / delete photo</label>
+                                                <input id="upload" class="file-upload__input" type="file"
+                                                    name="images[]" multiple="">
+                                            </div>
+                                        </h3>
 
                                         <div class="cp-attached-file">
-                                            <div class="upload-file-area">
+                                            <div class="upload-file-area js-drawer" data-id="upload-photo">
                                                 <span class="icon icon-camera"></span>
                                                 <h3 class="title">Upload your project photos</h3>
-                                                <p class="desc">Capture your progress! Upload photos to showcase and document your construction journey. <br> Supporting items: PNG, JPEG, PDF or PPT</p>
-                                                <label class="label"> <input type="file" name="images[]" multiple="" id="upload-img" class="default-file-input"> </label>
+                                                <p class="desc">Capture your progress! Upload photos to showcase and
+                                                    document your construction journey. <br> Supporting items: PNG,
+                                                    JPEG, PDF or PPT</p>
+                                                <label class="label"> <input type="file" name="images[]" multiple=""
+                                                        class="default-file-input"> </label>
                                             </div>
-    
+
                                         </div>
                                     </div>
                                     <div class="btn-wrap typ-aashiyana typ-w-680">
                                         <button class="btn btn-outline">Cancel</button>
                                         <button class="btn">Save</button>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -873,6 +883,39 @@
     </footer>
     <!-- Footer end -->
 
+    <!-- Upload Photo-->
+    <div class="cp-drawer" id="upload-photo">
+        <div class="cp-form mt-0 typ-pp-modal">
+            <div class="head-sec">
+                <h2 class="drawer-title">Upload a photo</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+
+            <div class="cp-attached-file typ-project-planner typ-modal">
+                <p class="desc">Capture your progress! Upload photos to showcase and document your construction journey.
+                </p>
+
+                <div class="img-thumbs" id="img-preview">
+
+                </div>
+
+                <div class="upload-file-area">
+                    <span class="icon icon-camera"></span>
+                    <h3 class="title">Upload photo</h3>
+                    <p class="desc">Supported formats: PNG and JPEG. File size should not exceed 5 MB. Maximum up to 5
+                        photos</p>
+                    <label class="label"> <input type="file" name="images[]" multiple id="upload-img"
+                            class="default-file-input"> </label>
+                </div>
+                <div class="btn-wrap text-center typ-upload-file">
+                    <button type="submit" class="btn btn-outline btn-text" id="cancel-btn">Cancel</button>
+                    <button type="submit" class="btn" id="save-btn">Save</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 
     <div class="cm-overlay"></div>
 
@@ -882,8 +925,9 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
-
     <script src="/components/cp-login/range.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="../components/cp-dashboard-my-aashiyana/upload-img.js"></script>
     <!-- endbuild -->
 </body>
 

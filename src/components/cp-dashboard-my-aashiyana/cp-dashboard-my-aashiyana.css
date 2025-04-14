@@ -57,7 +57,10 @@
     font-size: 2rem;
     color: #333333;
     font-family: "Poppins Semibold";
-    margin-bottom: 1.6rem; }
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .cp-dashboard-my-aashiyana .project-detail-wrap .typ-bold {
     font-family: "Poppins Semibold";
     font-size: 1.6rem;
@@ -278,6 +281,8 @@
   .cp-dashboard-my-aashiyana .project-detail-wrap .upload-file-area .desc {
     max-width: 317px;
     margin: auto; }
+  .cp-dashboard-my-aashiyana .project-detail-wrap .file-upload {
+    margin-bottom: 0; }
   .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana {
     display: flex;
     align-items: center;
