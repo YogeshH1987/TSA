@@ -542,6 +542,7 @@
                         </div>
 
                         <div class="grid-col-rht">
+                            <p class="js-drawer" data-id="profile-details"> Profile details</p>
                             <div class="cp-dashboard-my-aashiyana">
                                 <div class="head-wrap">
                                     <span class="icon icon-homeconstruction"></span>
@@ -684,7 +685,8 @@
                                     <div class="cont-sec typ-w-680 mb-16">
                                         <h3 class="sub-title">Photo gallery
                                             <div class="file-upload">
-                                                <label for="upload" class="file-upload__label"> Upload / delete photo</label>
+                                                <label for="upload" class="file-upload__label"> Upload / delete
+                                                    photo</label>
                                                 <input id="upload" class="file-upload__input" type="file"
                                                     name="images[]" multiple="">
                                             </div>
@@ -911,6 +913,127 @@
                     <button type="submit" class="btn btn-outline btn-text" id="cancel-btn">Cancel</button>
                     <button type="submit" class="btn" id="save-btn">Save</button>
                 </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- profile details -->
+    <div class="cp-drawer" id="profile-details">
+        <div class="cp-dashboard-my-aashiyana">
+            <div class="head-sec drawer-head">
+                <h2 class="drawer-title">My profile</h2>
+                <a href="#" class="icon icon-close js-close-btn"></a>
+            </div>
+
+            <div class="cp-form">
+                <div class="successful-msg hide">
+                    <span class="icon icon-check"></span>
+                    Your password is updated successfully
+                </div>
+                <ul class="profile-details-wrap">
+                    <li class="details-list"><span class="label">Username</span> <span class="username">Ajay1980</span>
+                    </li>
+                    <li class="details-list">
+                        <div class="cont-sec">
+                            <span class="label">Username</span>
+                            <span class="detail">
+                                Ajay Kumar Sinha</span>
+                        </div>
+                        <span class="icon icon-edit"></span>
+
+
+                    </li>
+                    <li class="hide">
+                        <div class="form-wrap">
+                            <div class="form-head">
+                                <h3 class="title"> Change name</h3> <button class="btn btn-link">Cancel</button>
+                            </div>
+                            <p class="sub-title"> Enter new name</p>
+
+                            <div class="form-group error">
+                                <label class="form-label">First name</label>
+                                <input type="text" id="firstName" class="form-control validate-name"
+                                    placeholder="Enter Name" required="">
+                                <span class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group error">
+                                <label class="form-label">Last name</label>
+                                <input type="text" id="lastName" class="form-control validate-name"
+                                    placeholder="Enter Name" required="">
+                                <span class="error-msg"></span>
+                            </div>
+                            <button class="btn update-btn">Update name</button>
+                        </div>
+                    </li>
+                    <li class="details-list">
+                        <div class="cont-sec">
+                            <span class="label">Email id</span>
+                            <span class="detail">
+                                ajaykumar@123.com</span>
+                        </div>
+                    </li>
+
+                    <li class="details-list">
+                        <div class="cont-sec">
+                            <span class="label">Mobile number</span>
+                            <span class="detail">
+                                9820098200</span>
+                        </div>
+                    </li>
+
+                    <li class="details-list">
+                        <div class="cont-sec">
+                            <span class="label">Password</span>
+                            <span class="detail">
+                                **********</span>
+                        </div>
+                        <span class="icon icon-edit"></span>
+                    </li>
+                    <li class="hide">
+                        <div class="form-wrap">
+                            <div class="form-head">
+                                <h3 class="title">Change password</h3> <button class="btn btn-link">Cancel</button>
+                            </div>
+                            <div class="password-form">
+                                <p class="sub-title">Enter new password
+                                    <span class="form-desc">Use at least 8 characters, including uppercase, lowercase,
+                                        numbers, and symbols.</span>
+                                </p>
+
+
+                                <div class="form-group error">
+                                    <label class="form-label">Old password</label>
+                                    <input type="text" id="oldPassword" class="form-control validate-name"
+                                        placeholder="Enter old password" required="">
+                                    <span class="error-msg"></span>
+                                </div>
+
+                                <div class="form-group error">
+                                    <label class="form-label">New password</label>
+                                    <input type="text" id="newPassword" class="form-control validate-name"
+                                        placeholder="Enter new password" required="">
+                                    <span class="error-msg"></span>
+                                </div>
+                                <div class="form-group error">
+                                    <label class="form-label">Re-enter password</label>
+                                    <input type="text" id="reEnterPassword" class="form-control validate-name"
+                                        placeholder="Re-enter password" required="">
+                                    <span class="error-msg"></span>
+                                </div>
+                                <button class="btn update-btn">Update password</button>
+                            </div>
+
+                            <div class="otp-form">
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="details-list text-center-align border-0"><button class="btn btn-link">Delete my
+                            account</button></li>
+                </ul>
             </div>
 
 

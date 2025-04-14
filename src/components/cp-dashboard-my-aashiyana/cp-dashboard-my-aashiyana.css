@@ -294,5 +294,81 @@
     @media only screen and (max-width: 768px) {
       .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana .btn {
         min-width: 48%; } }
+.cp-dashboard-my-aashiyana .profile-details-wrap .details-list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 1.6rem 0;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .label {
+    color: #666666;
+    font-size: 1.4rem; }
+  .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .detail {
+    color: #333333;
+    font-family: "Poppins Medium";
+    font-size: 1.6rem;
+    display: block; }
+  .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .icon {
+    font-size: 1.6rem;
+    color: #3D7EDB;
+    cursor: pointer; }
+  .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .username {
+    font-size: 2rem;
+    font-family: "Poppins Bold";
+    margin-left: auto;
+    color: #333333; }
+.cp-dashboard-my-aashiyana .profile-details-wrap .form-wrap {
+  width: 100%;
+  padding: 24px 0; }
+.cp-dashboard-my-aashiyana .profile-details-wrap .form-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem; }
+  .cp-dashboard-my-aashiyana .profile-details-wrap .form-head .title {
+    font-size: 2rem;
+    font-family: "Poppins Semibold";
+    color: #333333; }
+.cp-dashboard-my-aashiyana .profile-details-wrap .sub-title {
+  font-family: "Poppins Semibold";
+  font-size: 1.6rem;
+  color: #333333;
+  margin-bottom: 1.6rem; }
+.cp-dashboard-my-aashiyana .profile-details-wrap .border-0 {
+  border-bottom: 0 !important; }
+.cp-dashboard-my-aashiyana .profile-details-wrap .text-center-align {
+  justify-content: center; }
+.cp-dashboard-my-aashiyana .profile-details-wrap .update-btn {
+  min-width: 100%; }
+.cp-dashboard-my-aashiyana .drawer-head {
+  border-bottom: 1px solid #cccc;
+  margin: 0 -2.4rem;
+  padding: 1.2rem 2rem; }
+.cp-dashboard-my-aashiyana .form-control {
+  font-family: "Poppins Medium"; }
+.cp-dashboard-my-aashiyana .form-desc {
+  font-size: 1rem;
+  color: #333333;
+  display: block;
+  margin-top: 5px;
+  font-family: "Poppins Regular"; }
+.cp-dashboard-my-aashiyana .successful-msg {
+  background: #E5F6EC;
+  border-radius: 8px;
+  border: 1px solid #66C88D;
+  display: flex;
+  max-width: 34.3rem;
+  margin: 0 auto 1.2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #00A441;
+  gap: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0; }
+  .cp-dashboard-my-aashiyana .successful-msg .icon {
+    font-size: 2.4rem; }
 
 /*# sourceMappingURL=cp-dashboard-my-aashiyana.css.map */
