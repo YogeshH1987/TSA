@@ -295,7 +295,7 @@
       .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana .btn {
         min-width: 48%; } }
 .cp-dashboard-my-aashiyana .profile-details-wrap {
-  margin-top: 2rem; }
+  margin-top: 1.6rem; }
   .cp-dashboard-my-aashiyana .profile-details-wrap .details-list {
     display: flex;
     align-items: center;
@@ -458,5 +458,31 @@
     margin-bottom: 1.6rem; }
   .cp-dashboard-my-aashiyana .delete-profile-wrap .btn-wrap {
     margin-top: 20px; }
+.cp-dashboard-my-aashiyana .typ-gallery-big {
+  margin-bottom: 1.6rem; }
+.cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide {
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  overflow: hidden; }
+  .cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide img {
+    height: 43.8rem;
+    width: 100%;
+    object-fit: cover; }
+    @media only screen and (max-width: 768px) {
+      .cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide img {
+        height: 22rem; } }
+.cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide {
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  overflow: hidden; }
+  .cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide img {
+    height: 7rem;
+    width: 100%;
+    object-fit: cover; }
+    @media only screen and (max-width: 768px) {
+      .cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide img {
+        height: 6.4rem; } }
 
 /*# sourceMappingURL=cp-dashboard-my-aashiyana.css.map */

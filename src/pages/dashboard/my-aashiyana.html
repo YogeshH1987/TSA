@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
     <link rel="stylesheet" href="/components/cp-sidebar-menu/cp-sidebar-menu.css" />
     <link rel="stylesheet" href="/components/cp-attached-file/cp-attached-file.css" />
+    <link rel="stylesheet" href="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.css" />
     <link rel="stylesheet" href="/components/cp-drawer/cp-drawer.css" />
     <link rel="stylesheet" href="/components/cp-dashboard-my-aashiyana/cp-dashboard-my-aashiyana.css" />
 
@@ -704,7 +705,86 @@
                                             </div>
 
                                         </div>
+
+                                        <!--Product thumb slider start-->
+                                        <div class="cp-prod-thumb-slider">
+                                            <div class="bs-swiper swiper js-photo-gallery-slider typ-gallery-big">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
+                                                            <img src="../../components/cp-prod-thumb-slider/images/architech-big-img.png"
+                                                                alt="pro-big-img" />
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
+                                                            <img src="../../components/cp-prod-thumb-slider/images/architech-big-img.png"
+                                                                alt="pro-big-img" />
+                                                        </picture>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <picture>
+                                                            <source media="(max-width:768px)"
+                                                                srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
+                                                            <source media="(max-width:991px)"
+                                                                srcset="../../components/cp-prod-thumb-slider/images/architech-big-img.png">
+                                                            <img src="../../components/cp-prod-thumb-slider/images/architech-big-img.png"
+                                                                alt="pro-big-img" />
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="typ-bold">Project photos (12)</p>
+                                            <div thumbsSlider=""
+                                                class="bs-swiper swiper js-thumb-photo-gallery-slider typ-gallery-thumb">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img
+                                                            src="/components/cp-prod-thumb-slider/images/architech-big-img.png" />
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <!--Product thumb slider end-->
+
+
                                     </div>
+
+
                                     <div class="btn-wrap typ-aashiyana typ-w-680">
                                         <button class="btn btn-outline">Cancel</button>
                                         <button class="btn">Save</button>
@@ -1086,10 +1166,10 @@
                                 this item is irreversible and may affect associated data or functionality. Please ensure
                                 your decision is final.</p>
 
-                                <div class="btn-wrap">
-                                    <button class="btn btn-outline">Yes, delete</button>
-                                    <button class="btn">No, cancel</button>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-outline">Yes, delete</button>
+                                <button class="btn">No, cancel</button>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -1103,11 +1183,13 @@
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendor/swiper-bundle.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
     <script src="/components/cp-login/range.js"></script>
+    <script src="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
     <script src="../components/cp-dashboard-my-aashiyana/upload-img.js"></script>
     <!-- endbuild -->

@@ -6,7 +6,8 @@ $(document).ready(function () {
   proArchitechThumbSlider();
   proPopupMoodboardThumbSlider();
   drawerHomeSotryThumbSlider();
-  budgetExpenseThumbSlider()
+  budgetExpenseThumbSlider();
+  photoGallery()
 });
 
 
@@ -18,6 +19,7 @@ $(window).resize(function () {
   proPopupMoodboardThumbSlider();
   drawerHomeSotryThumbSlider();
   budgetExpenseThumbSlider()
+ photoGallery()
 });
 
 function proThumbSlider() {
@@ -270,5 +272,44 @@ function budgetExpenseThumbSlider() {
 
 }
 
+
+function photoGallery() {
+  // Initialize the main slider with Swiper
+  var photoGallerythumbSlider = new Swiper(".js-thumb-photo-gallery-slider", {
+    slidesPerView: 5,
+    spaceBetween: 6,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 6
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 6
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 7,
+        spaceBetween:16
+      },
+      // when window width is >= 640px
+      1280: {
+        slidesPerView: 8,
+        spaceBetween: 16
+      }
+    }
+  });
+  var photoGallerySlider = new Swiper(".js-photo-gallery-slider", {
+    thumbs: {
+      swiper: photoGallerythumbSlider,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  });
+
+
+}
 
 
