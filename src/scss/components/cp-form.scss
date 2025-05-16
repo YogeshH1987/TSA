@@ -394,6 +394,26 @@
     margin-top: 0;
   }
 
+  &.typ-leaving-soon{
+    .head-sec{
+      padding: 0;
+    }
+    .bs-radio .custom-radio{
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding: 1.1rem 0;
+    }
+    .btn{
+      min-width: 100%;
+    }
+    .note{
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: $clr-base;
+      margin-bottom: 1.2rem;
+    }
+  }
+
   .hidden {
     display: none;
   }

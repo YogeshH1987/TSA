@@ -6,19 +6,23 @@
 /*opacity- end*/
 .cp-about-award {
   text-align: center;
-  padding: 1.6rem; }
-  .cp-about-award .img-wrap {
-    max-width: 12.5rem;
-    margin: auto; }
-  .cp-about-award .title {
-    color: #000;
-    font-size: 2rem;
-    font-family: "Poppins Semibold";
-    margin-top: 2.4rem;
-    margin-bottom: 0.8rem; }
-  .cp-about-award .desc {
-    color: #000;
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
+  padding: 1.6rem;
+}
+.cp-about-award .img-wrap {
+  max-width: 12.5rem;
+  margin: auto;
+}
+.cp-about-award .title {
+  color: #000;
+  font-size: 2rem;
+  font-family: "Poppins Semibold";
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.cp-about-award .desc {
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
 
 /*# sourceMappingURL=cp-about-award.css.map */
