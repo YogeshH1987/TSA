@@ -1,0 +1,65 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-face-rating .btn {
+  min-width: 33.5rem;
+  margin-top: 3rem;
+}
+.cp-face-rating .head-wrap {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cp-face-rating .progress-bar {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+}
+.cp-face-rating .progress-bar .progress-item {
+  height: 3px;
+  width: 20%;
+  background: #DEDEDE;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+}
+.cp-face-rating .progress-bar .progress-item.complete {
+  background: #3D7EDB;
+}
+.cp-face-rating .head-title,
+.cp-face-rating .steps {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-face-rating .head-title,
+  .cp-face-rating .steps {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+.cp-face-rating .qnans-wrap .question {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 991px) {
+  .cp-face-rating .qnans-wrap .question {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cp-face-rating .cm-flex {
+    gap: 0.4rem;
+  }
+}
+
+/*# sourceMappingURL=cp-face-rating.css.map */
