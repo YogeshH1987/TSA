@@ -8,36 +8,45 @@
   margin-bottom: 3.2rem;
   display: flex;
   align-items: center;
-  gap: 0.8rem; }
-  @media only screen and (max-width: 768px) {
-    .cp-dashboard-my-aashiyana .head-wrap {
-      border-bottom: 1px solid #DEDEDE;
-      margin: 0 -1.6rem 3.2rem;
-      padding: 0 1.6rem 2.4rem; } }
+  gap: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .head-wrap {
+    border-bottom: 1px solid #DEDEDE;
+    margin: 0 -1.6rem 3.2rem;
+    padding: 0 1.6rem 2.4rem;
+  }
+}
+.cp-dashboard-my-aashiyana .head-wrap .icon {
+  font-size: 3.2rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECF2FB;
+  color: #3D7EDB;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .head-wrap .icon {
-    font-size: 3.2rem;
-    width: 5.6rem;
-    height: 5.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ECF2FB;
-    color: #3D7EDB;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .head-wrap .icon {
-        font-size: 1.6rem;
-        width: 3.2rem;
-        height: 3.2rem; } }
+    font-size: 1.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+.cp-dashboard-my-aashiyana .head-wrap .title {
+  font-size: 2.8rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .head-wrap .title {
-    font-size: 2.8rem;
-    color: #333333;
-    font-family: "Poppins Semibold"; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .head-wrap .title {
-        font-size: 1.6rem; } }
+    font-size: 1.6rem;
+  }
+}
 .cp-dashboard-my-aashiyana .project-detail-wrap {
   border: 1px solid #DEDEDE;
   padding: 4rem;
@@ -45,316 +54,401 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
   overflow: hidden;
-  padding: 2.4rem; }
-  @media only screen and (max-width: 768px) {
-    .cp-dashboard-my-aashiyana .project-detail-wrap {
-      border: 0;
-      padding: 0;
-      border-radius: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0; } }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .sub-title {
-    font-size: 2rem;
-    color: #333333;
-    font-family: "Poppins Semibold";
-    margin-bottom: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-bold {
-    font-family: "Poppins Semibold";
-    font-size: 1.6rem;
-    color: #333333;
-    margin-bottom: 1.6rem; }
+  padding: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .sub-title {
+  font-size: 2rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-bold {
+  font-family: "Poppins Semibold";
+  font-size: 1.6rem;
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .cont-sec {
+  margin-bottom: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .project-detail-wrap .cont-sec {
-    margin-bottom: 4.8rem; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .project-detail-wrap .cont-sec {
-        margin-bottom: 3.2rem; } }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .cont-sec:last-child {
-      margin-bottom: 0; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-w-680 {
-    max-width: 68rem; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .mb-16 {
-    margin-bottom: 1.6rem; }
+    margin-bottom: 3.2rem;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .cont-sec:last-child {
+  margin-bottom: 0;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-w-680 {
+  max-width: 68rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .mb-16 {
+  margin-bottom: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-con-stage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .project-detail-wrap .typ-con-stage {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-con-stage {
-        flex-direction: column; } }
+    flex-direction: column;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage {
+  margin-bottom: 0;
+  width: calc(50% - 0.8rem);
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage {
-    margin-bottom: 0;
-    width: calc(50% - 0.8rem); }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage {
-        width: 100%; } }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio {
-      width: 100%;
-      flex-direction: row;
-      gap: 10px;
-      padding: 1.2rem; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon {
-        width: 4rem;
-        height: 4rem;
-        font-size: 2.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.8rem;
-        background: #fff;
-        border-radius: 50%;
-        flex: 0 0 4rem; }
-        .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.blue {
-          background: #ECF2FB;
-          color: #3D7EDB; }
-        .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.orange {
-          background: #FFF8E5;
-          color: #FFB800; }
-        .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.red {
-          background: #FAE6EA;
-          color: #D2042D; }
-        .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.green {
-          background: #E5F6EC;
-          color: #00A441; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio span:last-child {
-        flex: 0 0 calc(100% - 5rem); }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage input[type="radio"]:checked + .custom-radio {
-      font-family: "Poppins Medium";
-      color: #333333; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .custom-radio {
-      position: relative;
-      font-family: "Poppins Medium";
-      font-size: 1.4rem;
-      color: #333333; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .custom-radio .small-text {
-        display: block;
-        font-family: "Poppins Regular";
-        font-size: 1.2rem;
-        color: #666666; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .checkmark {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 1.6rem;
-      height: 2rem;
-      width: 2rem;
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 50%;
-      border: 2px solid #999999;
-      transition: all 0.3s; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .checkmark::after {
-      content: "";
-      position: absolute;
-      display: none; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .checkmark::after {
-      top: 3px;
-      left: 3px;
-      width: 1.1rem;
-      height: 1.1rem;
-      border-radius: 50%;
-      background: #3D7EDB; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness input[type="radio"]:checked + .custom-radio .checkmark::after {
-      display: block; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size {
-    display: flex;
-    gap: 1.2rem;
-    flex-wrap: wrap;
-    margin-bottom: 2.4rem; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio {
-      margin-bottom: 0; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio .custom-radio {
-        min-width: auto;
-        padding: 1.2rem 1.6rem; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio.col-3 {
-        width: 31.4%; }
-        @media only screen and (max-width: 768px) {
-          .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio.col-3 {
-            width: 30.5%; } }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size.typ-login .bs-radio .custom-radio {
-      min-width: 7.6rem; }
-      @media only screen and (max-width: 768px) {
-        .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size.typ-login .bs-radio .custom-radio {
-          min-width: 7.4rem; } }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .range-main {
-    display: block;
-    padding: 0 1.1rem 0 0; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main {
-        padding: 0 1.5rem 0 0; } }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range {
-      position: relative;
-      width: 100%;
-      height: 5px; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input {
-        width: 100%;
-        position: absolute;
-        top: 2px;
-        height: 0;
-        -webkit-appearance: none; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 4.2rem;
-        height: 4.4rem;
-        margin: -1rem 0 0;
-        border-radius: 50%;
-        background-image: url("../../components/cp-login/image/home-icon.svg");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        border: 0 !important; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-moz-range-thumb {
-        width: 4.2rem;
-        height: 4.4rem;
-        margin: -1rem 0 0;
-        border-radius: 50%;
-        background-image: url("../../components/cp-login/image/home-icon.svg");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        border: 0 !important; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-ms-thumb {
-        width: 4.2rem;
-        height: 4.4rem;
-        margin: -8px 0 0 -8px;
-        border-radius: 50%;
-        background-image: url("../../components/cp-login/image/home-icon.svg");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        border: 0 !important; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-webkit-slider-runnable-track {
-        width: 100%;
-        height: 1.2rem;
-        cursor: pointer;
-        background: #DEDEDE;
-        border-radius: 1.2rem; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-moz-range-track {
-        width: 100%;
-        height: 2px;
-        cursor: pointer;
-        background: #b2b2b2; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-ms-track {
-        width: 100%;
-        height: 2px;
-        cursor: pointer;
-        background: #b2b2b2; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input:focus {
-        background: none;
-        outline: none; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range .range input::-ms-track {
-        width: 100%;
-        cursor: pointer;
-        background: transparent;
-        border-color: transparent;
-        color: transparent; }
-    .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels {
-      margin: 18px -50px 0;
-      padding: 0;
-      list-style: none;
-      display: flex; }
-      @media only screen and (max-width: 768px) {
-        .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels {
-          margin: 18px -19px 0; } }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels li {
-        position: relative;
-        width: 25%;
-        text-align: center;
-        color: #999999;
-        font-size: 14px;
-        cursor: pointer;
-        font-family: "Poppins Semibold"; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .active {
-        color: #333333;
-        font-size: 3.6rem; }
-        @media only screen and (max-width: 768px) {
-          .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .active {
-            font-size: 2rem; } }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .selected::before {
-        background: #333333; }
-      .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .active.selected::before {
-        display: none; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .upload-file-area .desc {
-    max-width: 317px;
-    margin: auto; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .file-upload {
-    margin-bottom: 0; }
-  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 1.2rem; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana {
-        justify-content: center; } }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana .btn {
-        min-width: 48%; } }
-.cp-dashboard-my-aashiyana .profile-details-wrap {
-  margin-top: 1.6rem; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .details-list {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #DEDEDE;
-    padding: 1.6rem 0;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .label {
-      color: #666666;
-      font-size: 1.4rem; }
-    .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .detail {
-      color: #333333;
-      font-family: "Poppins Medium";
-      font-size: 1.6rem;
-      display: block; }
-    .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .icon {
-      font-size: 1.6rem;
-      color: #3D7EDB;
-      cursor: pointer; }
-    .cp-dashboard-my-aashiyana .profile-details-wrap .details-list .username {
-      font-size: 2rem;
-      font-family: "Poppins Bold";
-      margin-left: auto;
-      color: #333333; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .form-wrap {
     width: 100%;
-    padding: 24px 0; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .form-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2.4rem; }
-    .cp-dashboard-my-aashiyana .profile-details-wrap .form-head .title {
-      font-size: 2rem;
-      font-family: "Poppins Semibold";
-      color: #333333; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .sub-title {
-    font-family: "Poppins Semibold";
-    font-size: 1.6rem;
-    color: #333333;
-    margin-bottom: 1.6rem; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .border-0 {
-    border-bottom: 0 !important; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .text-center-align {
-    justify-content: center; }
-  .cp-dashboard-my-aashiyana .profile-details-wrap .update-btn {
-    min-width: 100%; }
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio {
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1.2rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 50%;
+  flex: 0 0 4rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.blue {
+  background: #ECF2FB;
+  color: #3D7EDB;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.orange {
+  background: #FFF8E5;
+  color: #FFB800;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.red {
+  background: #FAE6EA;
+  color: #D2042D;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio .icon.green {
+  background: #E5F6EC;
+  color: #00A441;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage .custom-radio span:last-child {
+  flex: 0 0 calc(100% - 5rem);
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage input[type=radio]:checked + .custom-radio {
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .custom-radio {
+  position: relative;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  color: #333333;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .custom-radio .small-text {
+  display: block;
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  color: #666666;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.6rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 2px solid #999999;
+  transition: all 0.3s;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness .checkmark::after {
+  top: 3px;
+  left: 3px;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: #3D7EDB;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-stage.typ-buisness input[type=radio]:checked + .custom-radio .checkmark::after {
+  display: block;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-size {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.4rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio {
+  margin-bottom: 0;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio .custom-radio {
+  min-width: auto;
+  padding: 1.2rem 1.6rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio.col-3 {
+  width: 31.4%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size .bs-radio.col-3 {
+    width: 30.5%;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-size.typ-login .bs-radio .custom-radio {
+  min-width: 7.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-size.typ-login .bs-radio .custom-radio {
+    min-width: 7.4rem;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main {
+  display: block;
+  padding: 0 1.1rem 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .range-main {
+    padding: 0 1.5rem 0 0;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 4.2rem;
+  height: 4.4rem;
+  margin: -1rem 0 0;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-moz-range-thumb {
+  width: 4.2rem;
+  height: 4.4rem;
+  margin: -1rem 0 0;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-ms-thumb {
+  width: 4.2rem;
+  height: 4.4rem;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background-image: url("../../components/cp-login/image/home-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1.2rem;
+  cursor: pointer;
+  background: #DEDEDE;
+  border-radius: 1.2rem;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range input:focus {
+  background: none;
+  outline: none;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range .range input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels {
+  margin: 18px -50px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels {
+    margin: 18px -19px 0;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels li {
+  position: relative;
+  width: 25%;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Poppins Semibold";
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .active {
+  color: #333333;
+  font-size: 3.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .active {
+    font-size: 2rem;
+  }
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .selected::before {
+  background: #333333;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .range-main .range-labels .active.selected::before {
+  display: none;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .upload-file-area .desc {
+  max-width: 317px;
+  margin: auto;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .file-upload {
+  margin-bottom: 0;
+}
+.cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .project-detail-wrap .typ-aashiyana .btn {
+    min-width: 48%;
+  }
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap {
+  margin-top: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .details-list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 1.6rem 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .details-list .label {
+  color: #666666;
+  font-size: 1.4rem;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .details-list .detail {
+  color: #333333;
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  display: block;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .details-list .icon {
+  font-size: 1.6rem;
+  color: #3D7EDB;
+  cursor: pointer;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .details-list .username {
+  font-size: 2rem;
+  font-family: "Poppins Bold";
+  margin-left: auto;
+  color: #333333;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .form-wrap {
+  width: 100%;
+  padding: 24px 0;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .form-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .form-head .title {
+  font-size: 2rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .sub-title {
+  font-family: "Poppins Semibold";
+  font-size: 1.6rem;
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .border-0 {
+  border-bottom: 0 !important;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .text-center-align {
+  justify-content: center;
+}
+.cp-dashboard-my-aashiyana .profile-details-wrap .update-btn {
+  min-width: 100%;
+}
 .cp-dashboard-my-aashiyana .drawer-head {
-  border-bottom: 1px solid #cccc;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.8);
   margin: 0 -2.4rem;
-  padding: 1.2rem 2rem; }
+  padding: 1.2rem 2rem;
+}
 .cp-dashboard-my-aashiyana .form-control {
-  font-family: "Poppins Medium"; }
+  font-family: "Poppins Medium";
+}
 .cp-dashboard-my-aashiyana .form-desc {
   font-size: 1rem;
   color: #333333;
   display: block;
   margin-top: 5px;
-  font-family: "Poppins Regular"; }
+  font-family: "Poppins Regular";
+}
 .cp-dashboard-my-aashiyana .successful-msg {
   background: #E5F6EC;
   border-radius: 0.8rem;
@@ -369,120 +463,153 @@
   gap: 1rem;
   position: absolute;
   left: 0;
-  right: 0; }
-  .cp-dashboard-my-aashiyana .successful-msg .icon {
-    font-size: 2.4rem; }
+  right: 0;
+}
+.cp-dashboard-my-aashiyana .successful-msg .icon {
+  font-size: 2.4rem;
+}
 .cp-dashboard-my-aashiyana .otp-form .otp-head {
-  margin-bottom: 2.4rem; }
-  .cp-dashboard-my-aashiyana .otp-form .otp-head .otp-title {
-    font-size: 2.8rem;
-    font-family: "Poppins Semibold";
-    color: #333333;
-    margin-bottom: 1.6rem; }
-  .cp-dashboard-my-aashiyana .otp-form .otp-head .desc {
-    font-size: 1.4rem;
-    color: #666666;
-    line-height: 2rem; }
-  .cp-dashboard-my-aashiyana .otp-form .otp-head .dark-text {
-    color: #333333;
-    font-family: "Poppins Medium"; }
+  margin-bottom: 2.4rem;
+}
+.cp-dashboard-my-aashiyana .otp-form .otp-head .otp-title {
+  font-size: 2.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .otp-form .otp-head .desc {
+  font-size: 1.4rem;
+  color: #666666;
+  line-height: 2rem;
+}
+.cp-dashboard-my-aashiyana .otp-form .otp-head .dark-text {
+  color: #333333;
+  font-family: "Poppins Medium";
+}
 .cp-dashboard-my-aashiyana .otp-form-wrap .form-group {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 2.4rem; }
-  .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    gap: 0.5rem;
-    /* Firefox */ }
-    .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input {
-      border-radius: 1.2rem;
-      -webkit-border-radius: 1.2rem;
-      -moz-border-radius: 1.2rem;
-      border: 1px solid #dedede;
-      font-size: 1.6rem;
-      font-family: "Poppins Medium";
-      color: #333333;
-      padding: 1rem;
-      width: 7.5rem;
-      height: 6.4rem;
-      text-align: center;
-      /* Chrome, Safari, Edge, Opera */ }
-      @media only screen and (max-width: 768px) {
-        .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input {
-          width: 6rem; } }
-      .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input::-webkit-outer-spin-button, .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0; }
-    .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap input[type=number] {
-      -moz-appearance: textfield; }
+  margin-bottom: 2.4rem;
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  /* Firefox */
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input {
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  border: 1px solid #dedede;
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding: 1rem;
+  width: 7.5rem;
+  height: 6.4rem;
+  text-align: center;
+  /* Chrome, Safari, Edge, Opera */
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input {
+    width: 6rem;
+  }
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input::-webkit-outer-spin-button, .cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap .form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .form-group .otp-wrap input[type=number] {
+  -moz-appearance: textfield;
+}
 .cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec {
   display: flex;
   justify-content: center;
   gap: 0.8rem;
   margin-bottom: 1.6rem;
-  margin-top: 1.6rem; }
-  @media only screen and (max-width: 768px) {
-    .cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec {
-      margin-bottom: 0.8rem; } }
-  .cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec .otp-timer {
-    font-size: 1.4rem;
-    font-family: "Poppins Regular";
-    color: #EE4400; }
-  .cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec .otp-txt-msg {
-    font-size: 1.4rem; }
-  .cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec .re-send-link {
-    color: #B3B3B3;
-    font-family: "Poppins Medium";
-    font-size: 1.4rem;
-    border-bottom: 1px solid #B3B3B3;
-    padding: 0; }
+  margin-top: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec {
+    margin-bottom: 0.8rem;
+  }
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec .otp-timer {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #EE4400;
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec .otp-txt-msg {
+  font-size: 1.4rem;
+}
+.cp-dashboard-my-aashiyana .otp-form-wrap .bottom-sec .re-send-link {
+  color: #B3B3B3;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  border-bottom: 1px solid #B3B3B3;
+  padding: 0;
+}
 .cp-dashboard-my-aashiyana .otp-form-wrap .valid-message {
   font-size: 1.4rem;
   color: #333333;
   font-family: "Poppins Medium";
-  text-align: center; }
+  text-align: center;
+}
 .cp-dashboard-my-aashiyana .delete-profile-wrap {
   text-align: center;
-  padding-top: 3.2rem; }
-  .cp-dashboard-my-aashiyana .delete-profile-wrap .title {
-    font-family: "Poppins Semibold";
-    font-size: 1.6rem;
-    color: #333333;
-    margin-bottom: 1.6rem; }
-  .cp-dashboard-my-aashiyana .delete-profile-wrap .desc {
-    color: #333333;
-    font-size: 1.4rem;
-    margin-bottom: 1.6rem; }
-  .cp-dashboard-my-aashiyana .delete-profile-wrap .btn-wrap {
-    margin-top: 20px; }
+  padding-top: 3.2rem;
+}
+.cp-dashboard-my-aashiyana .delete-profile-wrap .title {
+  font-family: "Poppins Semibold";
+  font-size: 1.6rem;
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .delete-profile-wrap .desc {
+  color: #333333;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+.cp-dashboard-my-aashiyana .delete-profile-wrap .btn-wrap {
+  margin-top: 20px;
+}
 .cp-dashboard-my-aashiyana .typ-gallery-big {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 1.6rem;
+}
 .cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide {
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
-  overflow: hidden; }
+  overflow: hidden;
+}
+.cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide img {
+  height: 43.8rem;
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide img {
-    height: 43.8rem;
-    width: 100%;
-    object-fit: cover; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .typ-gallery-big .swiper-slide img {
-        height: 22rem; } }
+    height: 22rem;
+  }
+}
 .cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide {
   border-radius: 0.8rem;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
-  overflow: hidden; }
+  overflow: hidden;
+}
+.cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide img {
+  height: 7rem;
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
   .cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide img {
-    height: 7rem;
-    width: 100%;
-    object-fit: cover; }
-    @media only screen and (max-width: 768px) {
-      .cp-dashboard-my-aashiyana .typ-gallery-thumb .swiper-slide img {
-        height: 6.4rem; } }
+    height: 6.4rem;
+  }
+}
 
 /*# sourceMappingURL=cp-dashboard-my-aashiyana.css.map */

@@ -5,449 +5,617 @@
 /*opacity*/
 /*opacity- end*/
 .cp-image-pointers {
-  position: relative; }
-  .cp-image-pointers .img-wrap {
-    border-radius: 1.6rem;
-    -webkit-border-radius: 1.6rem;
-    -moz-border-radius: 1.6rem;
-    overflow: hidden; }
+  position: relative;
+}
+.cp-image-pointers .img-wrap {
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  overflow: hidden;
+}
+.cp-image-pointers .dot {
+  width: 4.2rem;
+  height: 4.2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers .dot {
-    width: 4.2rem;
-    height: 4.2rem;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    cursor: pointer; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers .dot {
-        width: 2.4rem;
-        height: 2.4rem; } }
-    .cp-image-pointers .dot:hover .dropdown-content {
-      display: block;
-      -webkit-animation: fadeIn 1s;
-      animation: fadeIn 1s; }
-    .cp-image-pointers .dot.open {
-      background: rgba(255, 0, 0, 0.3);
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .cp-image-pointers .dot .white-dot {
-      width: 1.6rem;
-      height: 1.6rem;
-      background-color: #fff;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      outline: #FF000080 solid 6px;
-      position: relative;
-      display: block;
-      margin: auto; }
-      @media only screen and (max-width: 768px) {
-        .cp-image-pointers .dot .white-dot {
-          width: 0.8rem;
-          height: 0.8rem; } }
-      .cp-image-pointers .dot .white-dot::after {
-        content: '';
-        width: 3rem;
-        height: 3rem;
-        border: 1px solid #ffffff99;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        position: absolute;
-        left: -7px;
-        /* right: 0; */
-        top: 0;
-        bottom: 0;
-        margin: auto; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers .dot .white-dot::after {
-            width: 1.6rem;
-            height: 1.6rem;
-            left: -4px; } }
-    .cp-image-pointers .dot .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      min-width: 200px;
-      max-width: 200px;
-      left: 0px;
-      top: 100%;
-      z-index: 1;
-      box-shadow: 0px 10.68px 7.78px 0px #00000059;
-      text-align: left;
-      margin: auto;
-      border-radius: 5px;
-      padding: 12px; }
-      @media only screen and (max-width: 768px) {
-        .cp-image-pointers .dot .dropdown-content {
-          min-width: 155px;
-          max-width: 155px;
-          right: 0;
-          transform: translate(-44%, 0%); } }
-      .cp-image-pointers .dot .dropdown-content .title {
-        font-family: "Poppins Medium";
-        font-size: 1.4rem;
-        color: #333333; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers .dot .dropdown-content .title {
-            font-size: 1rem; } }
-      .cp-image-pointers .dot .dropdown-content .desc {
-        font-size: 1.6rem;
-        margin-bottom: 1.2rem; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers .dot .dropdown-content .desc {
-            font-size: 1.2rem; } }
-      .cp-image-pointers .dot .dropdown-content .price {
-        font-size: 2.4rem;
-        font-family: "Poppins Semibold";
-        color: #333333; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers .dot .dropdown-content .price {
-            font-size: 1.6rem; } }
-  .cp-image-pointers .pointer-1 {
-    left: 50%;
-    top: 3%; }
-  .cp-image-pointers .pointer-2 {
-    left: 72%;
-    top: 29%; }
-  .cp-image-pointers .pointer-3 {
-    left: 69%;
-    top: 68%; }
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+.cp-image-pointers .dot:hover .dropdown-content {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.cp-image-pointers .dot.open {
+  background: rgba(255, 0, 0, 0.3);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cp-image-pointers .dot .white-dot {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  outline: rgba(255, 0, 0, 0.5019607843) solid 6px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers .dot .white-dot {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+.cp-image-pointers .dot .white-dot::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  /* right: 0; */
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers .dot .white-dot::after {
+    width: 1.6rem;
+    height: 1.6rem;
+    left: -4px;
+  }
+}
+.cp-image-pointers .dot .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 200px;
+  max-width: 200px;
+  left: 0px;
+  top: 100%;
+  z-index: 1;
+  box-shadow: 0px 10.68px 7.78px 0px rgba(0, 0, 0, 0.3490196078);
+  text-align: left;
+  margin: auto;
+  border-radius: 5px;
+  padding: 12px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers .dot .dropdown-content {
+    min-width: 155px;
+    max-width: 155px;
+    right: 0;
+    transform: translate(-44%, 0%);
+  }
+}
+.cp-image-pointers .dot .dropdown-content .title {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers .dot .dropdown-content .title {
+    font-size: 1rem;
+  }
+}
+.cp-image-pointers .dot .dropdown-content .desc {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers .dot .dropdown-content .desc {
+    font-size: 1.2rem;
+  }
+}
+.cp-image-pointers .dot .dropdown-content .price {
+  font-size: 2.4rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers .dot .dropdown-content .price {
+    font-size: 1.6rem;
+  }
+}
+.cp-image-pointers .pointer-1 {
+  left: 50%;
+  top: 3%;
+}
+.cp-image-pointers .pointer-2 {
+  left: 72%;
+  top: 29%;
+}
+.cp-image-pointers .pointer-3 {
+  left: 69%;
+  top: 68%;
+}
+.cp-image-pointers.typ-calculator-result .dot {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result .dot {
-    width: 2.5rem;
-    height: 2.5rem; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result .dot {
-        width: 2rem;
-        height: 2rem; } }
-    .cp-image-pointers.typ-calculator-result .dot:hover .dropdown-content {
-      -webkit-animation: none;
-      animation: none; }
-    .cp-image-pointers.typ-calculator-result .dot .white-dot {
-      width: 0.8rem;
-      height: 0.8rem;
-      outline: hwb(0 0% 0%/0.616) solid 3px; }
-      @media only screen and (max-width: 768px) {
-        .cp-image-pointers.typ-calculator-result .dot .white-dot {
-          width: 0.6rem;
-          height: 0.6rem; } }
-      .cp-image-pointers.typ-calculator-result .dot .white-dot::after {
-        content: '';
-        width: 1.6rem;
-        height: 1.6rem;
-        left: -4px; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers.typ-calculator-result .dot .white-dot::after {
-            width: 1.6rem;
-            height: 1.6rem;
-            left: -5px; } }
-    .cp-image-pointers.typ-calculator-result .dot .dropdown-content {
-      display: block;
-      min-width: fit-content;
-      max-width: fit-content;
-      box-shadow: 0px 3.94px 6.7px 0px #00000059;
-      transform: none;
-      padding: 6px 8px; }
-      @media only screen and (max-width: 768px) {
-        .cp-image-pointers.typ-calculator-result .dot .dropdown-content {
-          padding: 5px; } }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content .desc {
-        font-size: 1rem;
-        white-space: nowrap;
-        margin-bottom: 0rem;
-        color: #333333;
-        line-height: 1.4rem; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers.typ-calculator-result .dot .dropdown-content .desc {
-            font-size: 1rem;
-            margin-bottom: 0rem; } }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content .price {
-        font-size: 1.4rem;
-        white-space: nowrap;
-        color: #000;
-        font-family: "Poppins Medium"; }
-        @media only screen and (max-width: 768px) {
-          .cp-image-pointers.typ-calculator-result .dot .dropdown-content .price {
-            font-size: 1.2rem; } }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-left {
-        transform: translate(-91%, 0%); }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-top {
-        bottom: 100%;
-        top: auto; }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-right {
-        right: 0;
-        left: inherit; }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-center {
-        right: 0;
-        transform: translate(-30%, 0%); }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-center-right {
-        right: 0;
-        top: 50%;
-        transform: translate(29%, -50%); }
-      .cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-center-left {
-        top: 50%;
-        transform: translate(-100%, -50%); }
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.cp-image-pointers.typ-calculator-result .dot:hover .dropdown-content {
+  -webkit-animation: none;
+  animation: none;
+}
+.cp-image-pointers.typ-calculator-result .dot .white-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  outline: hsla(0, 100%, 50%, 0.616) solid 3px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result .dot .white-dot {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+}
+.cp-image-pointers.typ-calculator-result .dot .white-dot::after {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  left: -4px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result .dot .white-dot::after {
+    width: 1.6rem;
+    height: 1.6rem;
+    left: -5px;
+  }
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content {
+  display: block;
+  min-width: fit-content;
+  max-width: fit-content;
+  box-shadow: 0px 3.94px 6.7px 0px rgba(0, 0, 0, 0.3490196078);
+  transform: none;
+  padding: 6px 8px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result .dot .dropdown-content {
+    padding: 5px;
+  }
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content .desc {
+  font-size: 1rem;
+  white-space: nowrap;
+  margin-bottom: 0rem;
+  color: #333333;
+  line-height: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result .dot .dropdown-content .desc {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content .price {
+  font-size: 1.4rem;
+  white-space: nowrap;
+  color: #000;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result .dot .dropdown-content .price {
+    font-size: 1.2rem;
+  }
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-left {
+  transform: translate(-91%, 0%);
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-top {
+  bottom: 100%;
+  top: auto;
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-right {
+  right: 0;
+  left: inherit;
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-center {
+  right: 0;
+  transform: translate(-30%, 0%);
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-center-right {
+  right: 0;
+  top: 50%;
+  transform: translate(29%, -50%);
+}
+.cp-image-pointers.typ-calculator-result .dot .dropdown-content.position-center-left {
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-1 {
+  left: 70%;
+  top: 42%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-1 {
-    left: 70%;
-    top: 42%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-1 {
-        left: 71%;
-        top: 42%; } }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-1 .position-center-right {
-        transform: translate(6%, -133%); } }
+    left: 71%;
+    top: 42%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g-floor .pointer-1 .position-center-right {
+    transform: translate(6%, -133%);
+  }
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-2 {
+  left: 67%;
+  top: 6%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-2 {
-    left: 67%;
-    top: 6%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-2 {
-        left: 69%;
-        top: 20%; } }
+    left: 69%;
+    top: 20%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-3 {
+  left: 66%;
+  top: 24%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-3 {
-    left: 66%;
-    top: 24%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-3 {
-        left: 67%;
-        top: 60%; } }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-3 .position-center-right {
-        transform: translate(-100%, -25%); } }
+    left: 67%;
+    top: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g-floor .pointer-3 .position-center-right {
+    transform: translate(-100%, -25%);
+  }
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-4 {
+  left: 58%;
+  top: 72%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-4 {
-    left: 58%;
-    top: 72%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-4 {
-        left: 28%;
-        top: 58%; } }
+    left: 28%;
+    top: 58%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-5 {
+  left: 49%;
+  top: 44%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-5 {
-    left: 49%;
-    top: 44%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-5 {
-        left: 46%;
-        top: 42%; } }
+    left: 46%;
+    top: 42%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-6 {
+  left: 35%;
+  top: 27%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-6 {
-    left: 35%;
-    top: 27%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-6 {
-        left: 14%;
-        top: 37%; } }
+    left: 14%;
+    top: 37%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g-floor .pointer-7 {
+  left: 25%;
+  top: 72%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g-floor .pointer-7 {
-    left: 25%;
-    top: 72%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g-floor .pointer-7 {
-        left: 88%;
-        top: 79%; } }
+    left: 88%;
+    top: 79%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-1 {
+  left: 68%;
+  top: 64%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g1-floor .pointer-1 {
-    left: 68%;
-    top: 64%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-1 {
-        left: 69%;
-        top: 57%; } }
+    left: 69%;
+    top: 57%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-2 {
+  left: 65%;
+  top: 10%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g1-floor .pointer-2 {
     left: 65%;
-    top: 10%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-2 {
-        left: 65%;
-        top: 9%; } }
+    top: 9%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-3 {
+  left: 67%;
+  top: 24%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g1-floor .pointer-3 {
-    left: 67%;
-    top: 24%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-3 {
-        left: 69%; } }
+    left: 69%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-4 {
+  left: 60%;
+  top: 84%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g1-floor .pointer-4 {
-    left: 60%;
-    top: 84%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-4 {
-        left: 56%;
-        top: 73%; } }
-  .cp-image-pointers.typ-calculator-result.g1-floor .pointer-5 {
-    left: 28.5%;
-    top: 41%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-5 {
-        left: 8%;
-        top: 36%; } }
-  .cp-image-pointers.typ-calculator-result.g1-floor .pointer-6 {
-    left: 40%;
-    top: 5%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-6 {
-        left: 25%;
-        top: 7%; } }
-  .cp-image-pointers.typ-calculator-result.g1-floor .pointer-7 {
-    left: 28%;
-    top: 82%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g1-floor .pointer-7 {
-        left: 34%;
-        top: 79%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-1 {
-    left: 61%;
-    top: 74%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-1 {
-        left: 70%;
-        top: 73%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-2 {
-    left: 61.5%;
-    top: 13%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-2 {
-        left: 69%;
-        top: 7%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-3 {
-    left: 60%;
-    top: 37%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-3 {
-        left: 67%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-4 {
-    left: 54%;
-    top: 84%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-4 {
-        left: 56%;
-        top: 83%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-5 {
-    left: 31%;
-    top: 53%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-5 {
-        left: 20%;
-        top: 58%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-6 {
-    left: 38%;
-    top: 22%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-6 {
-        left: 25%;
-        top: 22%; } }
-  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-7 {
-    left: 35%;
-    top: 79%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g2-floor .pointer-7 {
-        left: 23%;
-        top: 79%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-1 {
-    left: 59%;
-    top: 78%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-1 {
-        left: 67%;
-        top: 76%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-2 {
-    left: 59%;
-    top: 7%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-2 {
-        left: 67%;
-        top: 9%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-3 {
-    left: 60%;
-    top: 45%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-3 {
-        left: 69%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-4 {
-    left: 54%;
-    top: 86%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-4 {
-        left: 56%;
-        top: 83%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-5 {
-    left: 32%;
-    top: 59%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-5 {
-        left: 20%;
-        top: 58%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-6 {
-    left: 36%;
-    top: 18%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-6 {
-        left: 38%;
-        top: 22%; } }
-  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-7 {
-    left: 35%;
-    top: 82%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g3-floor .pointer-7 {
-        left: 23%;
-        top: 80%; } }
-  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-1 {
-    left: 62%;
-    top: 81%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-1 {
-        left: 69%;
-        top: 78%; } }
-  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-2 {
-    left: 45%;
-    top: 8%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-2 {
-        left: 42%;
-        top: 12%; } }
-  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-3 {
-    left: 62%;
-    top: 39%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-3 {
-        left: 70%; } }
-  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-4 {
     left: 56%;
-    top: 87%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-4 {
-        left: 62%;
-        top: 84%; } }
+    top: 73%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-5 {
+  left: 28.5%;
+  top: 41%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g1-floor .pointer-5 {
+    left: 8%;
+    top: 36%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-6 {
+  left: 40%;
+  top: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g1-floor .pointer-6 {
+    left: 25%;
+    top: 7%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g1-floor .pointer-7 {
+  left: 28%;
+  top: 82%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g1-floor .pointer-7 {
+    left: 34%;
+    top: 79%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-1 {
+  left: 61%;
+  top: 74%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-1 {
+    left: 70%;
+    top: 73%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-2 {
+  left: 61.5%;
+  top: 13%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-2 {
+    left: 69%;
+    top: 7%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-3 {
+  left: 60%;
+  top: 37%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-3 {
+    left: 67%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-4 {
+  left: 54%;
+  top: 84%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-4 {
+    left: 56%;
+    top: 83%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-5 {
+  left: 31%;
+  top: 53%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-5 {
+    left: 20%;
+    top: 58%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-6 {
+  left: 38%;
+  top: 22%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-6 {
+    left: 25%;
+    top: 22%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g2-floor .pointer-7 {
+  left: 35%;
+  top: 79%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g2-floor .pointer-7 {
+    left: 23%;
+    top: 79%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-1 {
+  left: 59%;
+  top: 78%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-1 {
+    left: 67%;
+    top: 76%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-2 {
+  left: 59%;
+  top: 7%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-2 {
+    left: 67%;
+    top: 9%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-3 {
+  left: 60%;
+  top: 45%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-3 {
+    left: 69%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-4 {
+  left: 54%;
+  top: 86%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-4 {
+    left: 56%;
+    top: 83%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-5 {
+  left: 32%;
+  top: 59%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-5 {
+    left: 20%;
+    top: 58%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-6 {
+  left: 36%;
+  top: 18%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-6 {
+    left: 38%;
+    top: 22%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g3-floor .pointer-7 {
+  left: 35%;
+  top: 82%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g3-floor .pointer-7 {
+    left: 23%;
+    top: 80%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-1 {
+  left: 62%;
+  top: 81%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-1 {
+    left: 69%;
+    top: 78%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-2 {
+  left: 45%;
+  top: 8%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-2 {
+    left: 42%;
+    top: 12%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-3 {
+  left: 62%;
+  top: 39%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-3 {
+    left: 70%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-4 {
+  left: 56%;
+  top: 87%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-image-pointers.typ-calculator-result.g4-floor .pointer-4 {
+    left: 62%;
+    top: 84%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-5 {
+  left: 36%;
+  top: 63%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g4-floor .pointer-5 {
-    left: 36%;
-    top: 63%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-5 {
-        left: 26%;
-        top: 63%; } }
+    left: 26%;
+    top: 63%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-6 {
+  left: 40%;
+  top: 13%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g4-floor .pointer-6 {
-    left: 40%;
-    top: 13%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-6 {
-        left: 31%;
-        top: 17%; } }
+    left: 31%;
+    top: 17%;
+  }
+}
+.cp-image-pointers.typ-calculator-result.g4-floor .pointer-7 {
+  left: 35%;
+  top: 83%;
+}
+@media only screen and (max-width: 768px) {
   .cp-image-pointers.typ-calculator-result.g4-floor .pointer-7 {
-    left: 35%;
-    top: 83%; }
-    @media only screen and (max-width: 768px) {
-      .cp-image-pointers.typ-calculator-result.g4-floor .pointer-7 {
-        left: 24%;
-        top: 81%; } }
+    left: 24%;
+    top: 81%;
+  }
+}
 
 @-webkit-keyframes fadeIn {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=cp-image-pointers.css.map */

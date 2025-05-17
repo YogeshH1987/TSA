@@ -6,98 +6,123 @@
 /*opacity- end*/
 .cp-product-type {
   background: #3D7EDB;
-  padding: 1.6rem 0 2.4rem; }
-  .cp-product-type .title {
-    font-family: "Poppins Medium";
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #FFFFFF;
-    margin-bottom: 1.6rem; }
-  .cp-product-type .typ-card {
-    padding: 1rem 0.2rem;
-    border: 1px solid #DEDEDE;
-    background: #FFFFFF;
-    border-radius: 1.2rem;
-    -webkit-border-radius: 1.2rem;
-    -moz-border-radius: 1.2rem; }
-    .cp-product-type .typ-card .img-wrap {
-      max-width: 9.6rem;
-      max-height: 4.8rem; }
-    .cp-product-type .typ-card .prod-name {
-      font-family: "Poppins Medium";
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: #333333;
-      text-align: center; }
-    .cp-product-type .typ-card.active .prod-name {
-      font-family: "Poppins Semibold";
-      color: #3D7EDB; }
-  .cp-product-type .btn-wrap {
-    text-align: center; }
-    .cp-product-type .btn-wrap .btn {
-      min-width: 16.6rem;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      padding: 1.1rem 1.2rem; }
-  .cp-product-type.typ-category {
-    background: #FFFFFF;
-    padding: 0; }
-    .cp-product-type.typ-category .typ-card {
-      height: 100%; }
+  padding: 1.6rem 0 2.4rem;
+}
+.cp-product-type .title {
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+  margin-bottom: 1.6rem;
+}
+.cp-product-type .typ-card {
+  padding: 1rem 0.2rem;
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+}
+.cp-product-type .typ-card .img-wrap {
+  max-width: 9.6rem;
+  max-height: 4.8rem;
+}
+.cp-product-type .typ-card .prod-name {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  text-align: center;
+}
+.cp-product-type .typ-card.active .prod-name {
+  font-family: "Poppins Semibold";
+  color: #3D7EDB;
+}
+.cp-product-type .btn-wrap {
+  text-align: center;
+}
+.cp-product-type .btn-wrap .btn {
+  min-width: 16.6rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.1rem 1.2rem;
+}
+.cp-product-type.typ-category {
+  background: #FFFFFF;
+  padding: 0;
+}
+.cp-product-type.typ-category .typ-card {
+  height: 100%;
+}
 
 .cp-product-material {
-  background-color: transparent; }
-  .cp-product-material .typ-card {
-    background-color: transparent;
-    border: 0; }
-    .cp-product-material .typ-card .img-wrap {
-      background-color: #fff;
-      width: 100%;
-      height: 14rem;
-      border: 1px solid #DEDEDE;
-      padding: 4px;
-      border-radius: 1.2rem;
-      -webkit-border-radius: 1.2rem;
-      -moz-border-radius: 1.2rem;
-      margin-bottom: 1.2rem; }
-      .cp-product-material .typ-card .img-wrap img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%; }
-    .cp-product-material .typ-card .prod-name {
-      font-family: "Poppins Medium";
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: #333333;
-      text-align: center; }
-    .cp-product-material .typ-card .desc {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #666666; }
-  @media only screen and (max-width: 768px) {
-    .cp-product-material .swiper {
-      overflow: visible; } }
-  .cp-product-material.typ-budget-category {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #DEDEDE;
-    padding: 2rem;
-    border-radius: 1.6rem;
-    -webkit-border-radius: 1.6rem;
-    -moz-border-radius: 1.6rem; }
-    @media only screen and (max-width: 768px) {
-      .cp-product-material.typ-budget-category .swiper {
-        overflow: hidden; } }
-    .cp-product-material.typ-budget-category .swiper-wrapper {
-      flex-wrap: wrap;
-      gap: 2rem;
-      height: auto; }
-      @media only screen and (max-width: 768px) {
-        .cp-product-material.typ-budget-category .swiper-wrapper {
-          flex-wrap: initial;
-          gap: 0;
-          height: 100%; } }
-      .cp-product-material.typ-budget-category .swiper-wrapper .swiper-slide {
-        width: calc(33% - 1.2rem); }
+  background-color: transparent;
+}
+.cp-product-material .typ-card {
+  background-color: transparent;
+  border: 0;
+}
+.cp-product-material .typ-card .img-wrap {
+  background-color: #fff;
+  width: 100%;
+  height: 14rem;
+  border: 1px solid #DEDEDE;
+  padding: 4px;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.cp-product-material .typ-card .img-wrap img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.cp-product-material .typ-card .prod-name {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  text-align: center;
+}
+.cp-product-material .typ-card .desc {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-material .swiper {
+    overflow: visible;
+  }
+}
+.cp-product-material.typ-budget-category {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #DEDEDE;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-material.typ-budget-category .swiper {
+    overflow: hidden;
+  }
+}
+.cp-product-material.typ-budget-category .swiper-wrapper {
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-material.typ-budget-category .swiper-wrapper {
+    flex-wrap: initial;
+    gap: 0;
+    height: 100%;
+  }
+}
+.cp-product-material.typ-budget-category .swiper-wrapper .swiper-slide {
+  width: calc(33% - 1.2rem);
+}
 
 /*# sourceMappingURL=cp-product-type.css.map */

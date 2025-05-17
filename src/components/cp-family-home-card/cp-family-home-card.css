@@ -10,186 +10,228 @@
   border-radius: 12px;
   position: relative;
   z-index: 1;
-  background: #FFFFFF; }
-  .cp-family-home-card .cp-title {
-    padding: 0 0 15px 0;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 1px solid #DEDEDE;
-    margin-bottom: 12px;
-    align-items: center;
-    position: relative; }
-    .cp-family-home-card .cp-title .title {
-      color: #333333;
-      font-size: 20px;
-      line-height: 28px;
-      font-family: "Poppins Semibold"; }
-      @media only screen and (max-width: 991px) {
-        .cp-family-home-card .cp-title .title {
-          font-size: 16px;
-          line-height: 24px;
-          padding: 0px 0 10px 0px; } }
-      .cp-family-home-card .cp-title .title .location {
-        font-size: 12px;
-        line-height: 16px;
-        color: #666;
-        font-family: "Poppins Medium";
-        display: block; }
-    .cp-family-home-card .cp-title .icon-wrap {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      background: #ECF2FB;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px; }
-      @media only screen and (max-width: 991px) {
-        .cp-family-home-card .cp-title .icon-wrap {
-          width: 32px;
-          height: 32px; } }
-    .cp-family-home-card .cp-title .icon {
-      color: #3D7EDB;
-      font-size: 20px; }
-      @media only screen and (max-width: 991px) {
-        .cp-family-home-card .cp-title .icon {
-          font-size: 14px; } }
-    .cp-family-home-card .cp-title .btn-link {
-      position: absolute;
-      right: 0;
-      top: 10px; }
-      @media only screen and (max-width: 991px) {
-        .cp-family-home-card .cp-title .btn-link {
-          font-size: 12px;
-          line-height: 16px; } }
-  .cp-family-home-card .current-status {
-    display: flex;
-    width: 100%;
-    padding: 12px 16px 12px 12px;
-    border-radius: 12px;
-    background: #F3F4F6;
-    align-items: center;
-    margin-bottom: 16px; }
-    .cp-family-home-card .current-status .icon-wrap {
-      height: 40px;
-      width: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin-right: 8px; }
-      .cp-family-home-card .current-status .icon-wrap .icon {
-        color: #FFFFFF;
-        font-size: 20px;
-        line-height: 20px; }
-    .cp-family-home-card .current-status.planning .icon-wrap {
-      background: #00A441; }
-    .cp-family-home-card .current-status.construction .icon-wrap {
-      background: #FFB800; }
-    .cp-family-home-card .current-status.interior .icon-wrap {
-      background: #D2042D; }
-    .cp-family-home-card .current-status .content {
-      display: flex;
-      flex-direction: column; }
-      .cp-family-home-card .current-status .content .label {
-        font-size: 12px;
-        line-height: 16px;
-        font-family: "Poppins Regular";
-        color: #333333;
-        margin-bottom: 2px; }
-      .cp-family-home-card .current-status .content .heading {
-        font-size: 16px;
-        line-height: 24px;
-        font-family: "Poppins Medium";
-        color: #333333; }
-  .cp-family-home-card .img-wrap {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 16px; }
-    .cp-family-home-card .img-wrap img {
-      width: 100%; }
-  .cp-family-home-card .action-wrap {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0 0 0 auto; }
-    .cp-family-home-card .action-wrap .btn-primary {
-      width: auto;
-      min-width: auto;
-      max-width: max-content;
-      background: none;
-      border: 0;
-      padding: 0;
-      line-height: 20px;
-      height: auto;
-      display: flex; }
-    .cp-family-home-card .action-wrap .icon-edit {
-      color: #3D7EDB;
-      font-size: 20px;
-      line-height: 20px; }
-  .cp-family-home-card .configuration .heading {
+  background: #FFFFFF;
+}
+.cp-family-home-card .cp-title {
+  padding: 0 0 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 12px;
+  align-items: center;
+  position: relative;
+}
+.cp-family-home-card .cp-title .title {
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 991px) {
+  .cp-family-home-card .cp-title .title {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Poppins Medium";
-    color: #333333;
-    margin-bottom: 8px; }
-  .cp-family-home-card .configuration .details-wrap {
-    display: flex;
-    justify-content: space-between; }
-  .cp-family-home-card .configuration .details {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start; }
-    .cp-family-home-card .configuration .details .list {
-      display: flex;
-      background: #D8E5F8;
-      border-radius: 4px;
-      font-size: 12px;
-      line-height: 16px;
-      font-family: "Poppins Medium";
-      color: #333333;
-      margin-right: 8px;
-      padding: 4px 8px 4px 12px; }
-      .cp-family-home-card .configuration .details .list:last-of-type {
-        margin-right: 0; }
-  .cp-family-home-card .configuration .action-wrap {
-    margin-right: 16px; }
-  .cp-family-home-card .project-photos {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin-top: 16px; }
-    .cp-family-home-card .project-photos .heading {
-      font-size: 16px;
-      line-height: 24px;
-      font-family: "Poppins Medium";
-      color: #333333;
-      margin-bottom: 8px;
-      display: flex; }
-      .cp-family-home-card .project-photos .heading .btn.btn-link {
-        margin: 0 0 0 auto;
-        font-size: 12px;
-        line-height: 24px; }
-    .cp-family-home-card .project-photos .photo-list {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-      .cp-family-home-card .project-photos .photo-list .img-wrap {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        margin-right: 8px;
-        margin-bottom: 0;
-        border-radius: 12px;
-        width: 70px;
-        height: 70px; }
-        .cp-family-home-card .project-photos .photo-list .img-wrap img {
-          width: 100%; }
-        .cp-family-home-card .project-photos .photo-list .img-wrap:last-of-type {
-          margin-right: 0; }
+    padding: 0px 0 10px 0px;
+  }
+}
+.cp-family-home-card .cp-title .title .location {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  font-family: "Poppins Medium";
+  display: block;
+}
+.cp-family-home-card .cp-title .icon-wrap {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ECF2FB;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-family-home-card .cp-title .icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+}
+.cp-family-home-card .cp-title .icon {
+  color: #3D7EDB;
+  font-size: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-family-home-card .cp-title .icon {
+    font-size: 14px;
+  }
+}
+.cp-family-home-card .cp-title .btn-link {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .cp-family-home-card .cp-title .btn-link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.cp-family-home-card .current-status {
+  display: flex;
+  width: 100%;
+  padding: 12px 16px 12px 12px;
+  border-radius: 12px;
+  background: #F3F4F6;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.cp-family-home-card .current-status .icon-wrap {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.cp-family-home-card .current-status .icon-wrap .icon {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 20px;
+}
+.cp-family-home-card .current-status.planning .icon-wrap {
+  background: #00A441;
+}
+.cp-family-home-card .current-status.construction .icon-wrap {
+  background: #FFB800;
+}
+.cp-family-home-card .current-status.interior .icon-wrap {
+  background: #D2042D;
+}
+.cp-family-home-card .current-status .content {
+  display: flex;
+  flex-direction: column;
+}
+.cp-family-home-card .current-status .content .label {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Poppins Regular";
+  color: #333333;
+  margin-bottom: 2px;
+}
+.cp-family-home-card .current-status .content .heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+.cp-family-home-card .img-wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.cp-family-home-card .img-wrap img {
+  width: 100%;
+}
+.cp-family-home-card .action-wrap {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.cp-family-home-card .action-wrap .btn-primary {
+  width: auto;
+  min-width: auto;
+  max-width: max-content;
+  background: none;
+  border: 0;
+  padding: 0;
+  line-height: 20px;
+  height: auto;
+  display: flex;
+}
+.cp-family-home-card .action-wrap .icon-edit {
+  color: #3D7EDB;
+  font-size: 20px;
+  line-height: 20px;
+}
+.cp-family-home-card .configuration .heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins Medium";
+  color: #333333;
+  margin-bottom: 8px;
+}
+.cp-family-home-card .configuration .details-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cp-family-home-card .configuration .details {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.cp-family-home-card .configuration .details .list {
+  display: flex;
+  background: #D8E5F8;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Poppins Medium";
+  color: #333333;
+  margin-right: 8px;
+  padding: 4px 8px 4px 12px;
+}
+.cp-family-home-card .configuration .details .list:last-of-type {
+  margin-right: 0;
+}
+.cp-family-home-card .configuration .action-wrap {
+  margin-right: 16px;
+}
+.cp-family-home-card .project-photos {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.cp-family-home-card .project-photos .heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins Medium";
+  color: #333333;
+  margin-bottom: 8px;
+  display: flex;
+}
+.cp-family-home-card .project-photos .heading .btn.btn-link {
+  margin: 0 0 0 auto;
+  font-size: 12px;
+  line-height: 24px;
+}
+.cp-family-home-card .project-photos .photo-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cp-family-home-card .project-photos .photo-list .img-wrap {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-right: 8px;
+  margin-bottom: 0;
+  border-radius: 12px;
+  width: 70px;
+  height: 70px;
+}
+.cp-family-home-card .project-photos .photo-list .img-wrap img {
+  width: 100%;
+}
+.cp-family-home-card .project-photos .photo-list .img-wrap:last-of-type {
+  margin-right: 0;
+}
 
 .cp-watch-story {
   position: relative;
@@ -198,27 +240,33 @@
   padding: 40px 20px 20px;
   background: #5A245A;
   border-radius: 0 0 16px 16px;
-  margin-top: -20px; }
-  .cp-watch-story .content {
-    display: flex;
-    flex-direction: column; }
-    .cp-watch-story .content p, .cp-watch-story .content a {
-      font-size: 14px;
-      line-height: 20px;
-      font-family: "Poppins Regular";
-      color: #FFFFFF; }
-    .cp-watch-story .content a {
-      margin-top: 16px;
-      font-family: "Poppins Medium";
-      text-decoration: underline; }
-  .cp-watch-story .video-thumb {
-    display: flex;
-    position: relative;
-    width: 128px;
-    height: 70px;
-    border-radius: 12px;
-    overflow: hidden; }
-    .cp-watch-story .video-thumb img {
-      width: 100%; }
+  margin-top: -20px;
+}
+.cp-watch-story .content {
+  display: flex;
+  flex-direction: column;
+}
+.cp-watch-story .content p, .cp-watch-story .content a {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Poppins Regular";
+  color: #FFFFFF;
+}
+.cp-watch-story .content a {
+  margin-top: 16px;
+  font-family: "Poppins Medium";
+  text-decoration: underline;
+}
+.cp-watch-story .video-thumb {
+  display: flex;
+  position: relative;
+  width: 128px;
+  height: 70px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.cp-watch-story .video-thumb img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=cp-family-home-card.css.map */
