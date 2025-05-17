@@ -322,6 +322,23 @@
   display: none;
   margin-top: 0;
 }
+.cp-form.typ-leaving-soon .head-sec {
+  padding: 0;
+}
+.cp-form.typ-leaving-soon .bs-radio .custom-radio {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.1rem 0;
+}
+.cp-form.typ-leaving-soon .btn {
+  min-width: 100%;
+}
+.cp-form.typ-leaving-soon .note {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+  margin-bottom: 1.2rem;
+}
 .cp-form .hidden {
   display: none;
 }

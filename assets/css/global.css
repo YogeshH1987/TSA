@@ -1348,6 +1348,7 @@ p {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1.2rem;
+  display: flex;
 }
 .cm-flex.typ-2 {
   display: flex;
@@ -2999,7 +3000,7 @@ p {
     padding: 0.9rem 1.2rem;
   }
 }
-.btn.btn-disable {
+.btn:disabled, .btn.btn-disable {
   cursor: none;
   opacity: 0.5;
   pointer-events: none;

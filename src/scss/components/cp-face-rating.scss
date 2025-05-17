@@ -1,0 +1,57 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-face-rating{
+    .btn{
+        min-width: 33.5rem;
+        margin-top: 3rem;
+    }
+    .head-wrap{
+        padding-bottom: 1rem;
+        display:  flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .progress-bar{
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.4rem;
+        .progress-item{
+            height: 3px;
+            width: 20%;
+            background: $clr-border; 
+            @include border-radius(1rem);
+            &.complete{
+                background: $clr-primary;
+            }
+        }
+    }
+    .head-title,
+    .steps{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        @media only screen and (max-width: $media-sm) {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+    .qnans-wrap{
+        .question{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
+            font-family: $font-medium;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    .cm-flex{
+        @media only screen and (max-width: $media-sm) {
+            gap: 0.4rem;
+        }
+    }
+}

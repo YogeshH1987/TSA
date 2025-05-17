@@ -77,6 +77,16 @@
     right: 1.6rem;
   }
 }
+.cp-drawer.typ-leaving-soon .head-sec {
+  margin-bottom: 2.4rem;
+}
+.cp-drawer.typ-leaving-soon .drawer-sub-title {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: "Poppins Semibold";
+  margin-bottom: 1.6rem;
+  color: #333333;
+}
 .cp-drawer.typ-prod-detail {
   padding-top: 4rem;
 }
