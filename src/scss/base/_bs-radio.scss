@@ -158,6 +158,35 @@
 
     }
 
+    &.typ-start-rating{
+        margin-bottom: 0;
+        input[type=checkbox]{
+            -webkit-appearance: none;
+            display: none;
+        }
+        .custom-radio{
+            font-size: 2.5rem;
+            line-height: 2.8rem;
+            min-width: auto;
+            border: 0;
+            padding: 0;
+        }
+        input[type=checkbox]:checked + .custom-radio {
+            border: 0;
+            background: $clr-root;
+            color: #FFB800;
+        }
+    }
+
+    &.typ-went-well{
+        margin-bottom: 0.8rem;
+        .custom-radio{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.2rem 1.6rem;
+        }
+    }
+
     &.typ-pravesh {
         width: 47%;
 

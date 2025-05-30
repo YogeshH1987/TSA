@@ -74,11 +74,11 @@
         }
     }
 
-    &.typ-leaving-soon{
-        .head-sec{
+    &.typ-leaving-soon {
+        .head-sec {
             margin-bottom: 2.4rem;
         }
-        .drawer-sub-title{
+        .drawer-sub-title {
             font-size: 2rem;
             line-height: 2.8rem;
             font-family: $font-semiBold;
@@ -125,14 +125,14 @@
             }
 
             .blue-text {
-                color: #3D7EDB;
+                color: #3d7edb;
             }
         }
 
         .typ-privacy {
             .btn {
                 min-width: 47%;
-                border-color: #fff
+                border-color: #fff;
             }
         }
     }
@@ -263,9 +263,9 @@
                 align-items: center;
                 font-size: 1.2rem;
                 padding: 0.8rem 1.6rem;
-                background: #FFF8E5;
-                border: 1px solid #FFD466;
-                color: #A77800;
+                background: #fff8e5;
+                border: 1px solid #ffd466;
+                color: #a77800;
                 gap: 0.4rem;
                 margin-top: 1.2rem;
                 @include border-radius(1.2rem);
@@ -277,13 +277,11 @@
                 }
 
                 .desc {
-                    color: #A77800;
+                    color: #a77800;
                     font-size: 1.2rem;
                     line-height: 1.6rem;
                 }
             }
-
-
         }
 
         .btn-wrap {
@@ -296,7 +294,7 @@
             gap: 2rem;
 
             .btn {
-                min-width: 48%
+                min-width: 48%;
             }
         }
     }
@@ -304,7 +302,7 @@
     &.typ-floor-plans {
         @media only screen and (max-width: $media-mobile) {
             height: 100%;
-            @include border-radius(0)
+            @include border-radius(0);
         }
     }
 
@@ -337,7 +335,6 @@
                 }
             }
         }
-
     }
 
     &.typ-moodboard-preview {
@@ -351,7 +348,7 @@
     }
 
     &.typ-home-story-pp {
-        background-color: #F3F4F6;
+        background-color: #f3f4f6;
         padding: 0;
 
         .head-sec {
@@ -388,7 +385,75 @@
 
     &.budget-help {
         width: 62rem;
-        @media only screen and (max-width: $media-mobile) { width: 100%;}
+        @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+        }
     }
-    
+
+    &.typ-review-product {
+        .head-sec {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1.2rem 0 2.4rem;
+            .drawer-title {
+                font-family: $font-semiBold;
+                margin-bottom: 0.8rem;
+            }
+        }
+        .sec-title{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-family: $font-semiBold;
+            color: $clr-base;
+        }
+        .sec-cont {
+            padding: 2.4rem 0;
+            border-top: 1px solid $clr-border;
+        }
+        .rate-form {
+            .form-label{
+                font-size: 2rem;
+                line-height: 2.8rem;
+                font-family: $font-semiBold;
+                color: $clr-base;
+                margin-bottom: 1.2rem;
+            }
+            .form-group{
+                margin-bottom: 2.4rem;
+            }
+            .radio-wrap{
+                gap: 0.5rem;
+                justify-content: flex-start;
+                display: flex;
+                padding: 1.2rem 0 0;
+                flex-wrap: wrap;
+            }
+        }
+        .cp-cart{
+            .sec-cont{
+                padding: 0;
+                border: 0;
+            }
+            .cart-prod-wrapper{
+                padding: 0;
+                .prod-head{
+                    padding: 1.6rem;
+                    .prod-item{
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+
+            }
+            .cp-cart-card{
+                .prod-head{
+                    padding: 0;
+                    .prod-item{
+                        flex-direction: row;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
 }

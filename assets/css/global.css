@@ -3345,6 +3345,33 @@ p {
     white-space: nowrap;
   }
 }
+.bs-radio.typ-start-rating {
+  margin-bottom: 0;
+}
+.bs-radio.typ-start-rating input[type=checkbox] {
+  -webkit-appearance: none;
+  display: none;
+}
+.bs-radio.typ-start-rating .custom-radio {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  min-width: auto;
+  border: 0;
+  padding: 0;
+}
+.bs-radio.typ-start-rating input[type=checkbox]:checked + .custom-radio {
+  border: 0;
+  background: #FFFFFF;
+  color: #FFB800;
+}
+.bs-radio.typ-went-well {
+  margin-bottom: 0.8rem;
+}
+.bs-radio.typ-went-well .custom-radio {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.2rem 1.6rem;
+}
 .bs-radio.typ-pravesh {
   width: 47%;
 }

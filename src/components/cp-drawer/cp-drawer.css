@@ -116,7 +116,7 @@
   color: #333333;
 }
 .cp-drawer.typ-drawer-login .cont-wrap .blue-text {
-  color: #3D7EDB;
+  color: #3d7edb;
 }
 .cp-drawer.typ-drawer-login .typ-privacy .btn {
   min-width: 47%;
@@ -227,9 +227,9 @@
   align-items: center;
   font-size: 1.2rem;
   padding: 0.8rem 1.6rem;
-  background: #FFF8E5;
-  border: 1px solid #FFD466;
-  color: #A77800;
+  background: #fff8e5;
+  border: 1px solid #ffd466;
+  color: #a77800;
   gap: 0.4rem;
   margin-top: 1.2rem;
   border-radius: 1.2rem;
@@ -242,7 +242,7 @@
   height: 2.4rem;
 }
 .cp-drawer.typ-setback .cont-sec .price-list-item .desc {
-  color: #A77800;
+  color: #a77800;
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
@@ -302,7 +302,7 @@
   }
 }
 .cp-drawer.typ-home-story-pp {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   padding: 0;
 }
 .cp-drawer.typ-home-story-pp .head-sec {
@@ -339,6 +339,63 @@
   .cp-drawer.budget-help {
     width: 100%;
   }
+}
+.cp-drawer.typ-review-product .head-sec {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.2rem 0 2.4rem;
+}
+.cp-drawer.typ-review-product .head-sec .drawer-title {
+  font-family: "Poppins Semibold";
+  margin-bottom: 0.8rem;
+}
+.cp-drawer.typ-review-product .sec-title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.cp-drawer.typ-review-product .sec-cont {
+  padding: 2.4rem 0;
+  border-top: 1px solid #DEDEDE;
+}
+.cp-drawer.typ-review-product .rate-form .form-label {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  margin-bottom: 1.2rem;
+}
+.cp-drawer.typ-review-product .rate-form .form-group {
+  margin-bottom: 2.4rem;
+}
+.cp-drawer.typ-review-product .rate-form .radio-wrap {
+  gap: 0.5rem;
+  justify-content: flex-start;
+  display: flex;
+  padding: 1.2rem 0 0;
+  flex-wrap: wrap;
+}
+.cp-drawer.typ-review-product .cp-cart .sec-cont {
+  padding: 0;
+  border: 0;
+}
+.cp-drawer.typ-review-product .cp-cart .cart-prod-wrapper {
+  padding: 0;
+}
+.cp-drawer.typ-review-product .cp-cart .cart-prod-wrapper .prod-head {
+  padding: 1.6rem;
+}
+.cp-drawer.typ-review-product .cp-cart .cart-prod-wrapper .prod-head .prod-item {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cp-drawer.typ-review-product .cp-cart .cp-cart-card .prod-head {
+  padding: 0;
+}
+.cp-drawer.typ-review-product .cp-cart .cp-cart-card .prod-head .prod-item {
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=cp-drawer.css.map */
